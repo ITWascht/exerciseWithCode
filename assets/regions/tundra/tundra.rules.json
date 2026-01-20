@@ -1,0 +1,98 @@
+{
+  "regionId": "tundra",
+  "terrain": {
+	"noiseScale": 2.0,
+	"heightFactor": 0.5,
+	"offSet": 0,
+	"defaultLayer": "grass",
+	"heightBands": [
+	  { "MinMeters": -100, "MaxMeters": 18, "layerId": "grass", "strength": 1.0 },
+	  { "MinMeters": 18, "MaxMeters": 25, "layerId": "rock", "strength": 0.8 },
+	  { "MinMeters": 25, "MaxMeters": 999, "layerId": "snow", "strength": 0.9 }
+	],
+	"slopeOverrides": [
+	  { "minDeg": 45, "maxDeg": 90, "overrideLayerId": "grass", "appliesTo": ["grass"] },
+	  { "minDeg": 50, "maxDeg": 90, "overrideLayerId": "rock", "appliesTo": ["rock"] },
+	  { "minDeg": 60, "maxDeg": 90, "overrideLayerId": "rock", "appliesTo": ["snow"] },
+	  {
+		"minDeg": 60,
+		"maxDeg": 90,
+		"overrideLayerId": "rock",
+		"appliesTo": ["snow"],
+		"blendStartDeg": 55,
+		"blendEndDeg": 60
+	  }
+	]
+  },
+  "spawning": {
+	"entries": [
+	  {
+		"assetId": "birch_tree",
+		"densityPerKm2": 25000,
+		"minCount": 0,
+		"minDistanceMeters": 1.1,
+		"jitterStrength": 1.0,
+		"alignToSlope": false,
+		"maxTiltDeg": 10,
+		"minHeightMeters": -100,
+		"maxSlopeDeg": 25
+	  },
+	  {
+		"assetId": "tundra_shrub_a",
+		"densityPerKm2": 30000,
+		"minCount": 50,
+		"minDistanceMeters": 0.1,
+		"jitterStrength": 1.0,
+		"alignToSlope": true,
+		"maxTiltDeg": 10,
+		"minHeightMeters": -100,
+		"maxSlopeDeg": 25
+	  },
+	  {
+		"assetId": "tundra_bush",
+		"densityPerKm2": 30000,
+		"minCount": 50,
+		"minDistanceMeters": 0.5,
+		"jitterStrength": 1.0,
+		"alignToSlope": true,
+		"maxTiltDeg": 10,
+		"minHeightMeters": -100,
+		"maxSlopeDeg": 25
+	  },
+	  {
+		"assetId": "tundra_rock_a",
+		"densityPerKm2": 300,
+		"minCount": 0,
+		"minDistanceMeters": 5.1,
+		"jitterStrength": 1.0,
+		"alignToSlope": true,
+		"maxTiltDeg": 10,
+		"minHeightMeters": -100,
+		"maxSlopeDeg": 25
+	  },
+	  {
+		"assetId": "target",
+		"densityPerKm2": 1,
+		"isTarget": true,
+		"minCount": 1,
+		"maxCount": 1,
+		"minDistanceMeters": 3.1,
+		"weight": 8,
+		"minHeightMeters": -100,
+		"maxSlopeDeg": 10
+	  }
+	]
+  },
+  "localSkySettings": {
+	"_comment_sky": [
+	  "Tundra tends to feel overcast: higher cumulus coverage and slightly thicker clouds.",
+      "Use this as a regional baseline; runtime weather (rain/storm) can still override."
+	],
+	"preset": "Cloudy",
+	"cirrusCoverage": 0.45,
+	"cirrusThickness": 1.2,
+	"cumulusCoverage": 0.70,
+	"cumulusThickness": 0.04,
+	"windSpeed": 1.2
+  }
+}

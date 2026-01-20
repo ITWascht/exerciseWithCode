@@ -1,0 +1,95 @@
+{
+  "regionId": "winter_tundra",
+  "terrain": {
+	"noiseScale": 1.5,
+	"heightFactor": 1.0,
+	"offSet": 0,
+	"defaultLayer": "grass",
+	"heightBands": [
+	  { "MinMeters": -100, "MaxMeters": 18, "layerId": "grass", "strength": 1.0 },
+	  { "MinMeters": 18, "MaxMeters": 25, "layerId": "rock", "strength": 0.8 },
+	  { "MinMeters": 25, "MaxMeters": 999, "layerId": "snow", "strength": 0.9 }
+	],
+	"slopeOverrides": [
+	  { "minDeg": 45, "maxDeg": 90, "overrideLayerId": "grass", "appliesTo": ["grass"] },
+	  { "minDeg": 50, "maxDeg": 90, "overrideLayerId": "rock", "appliesTo": ["rock"] },
+	  { "minDeg": 60, "maxDeg": 90, "overrideLayerId": "rock", "appliesTo": ["snow"] },
+	  {
+		"minDeg": 60,
+		"maxDeg": 90,
+		"overrideLayerId": "rock",
+		"appliesTo": ["snow"],
+		"blendStartDeg": 55,
+		"blendEndDeg": 60
+	  }
+	],
+	"biomeOverrides": [
+	  { "biomeId": 0, "layerId": "field_ground" },
+	  { "biomeId": 1, "layerId": "forest_floor" }
+	]
+  },
+  "spawning": {
+	"entries": [
+	  {
+		"assetId": "birch_tree",
+		"densityPerKm2": 30000,
+		"allowedBioms": [1],
+		"minCount": 0,
+		"minDistanceMeters": 1.1,
+		"jitterStrength": 1.0,
+		"alignToSlope": false,
+		"maxTiltDeg": 10,
+		"minHeightMeters": -100,
+		"maxSlopeDeg": 25
+	  },
+	  {
+		"assetId": "tundra_shrub_a",
+		"densityPerKm2": 300000,
+		"allowedBioms": [1, 0],
+		"minCount": 0,
+		"minDistanceMeters": 0.1,
+		"jitterStrength": 1.0,
+		"alignToSlope": true,
+		"maxTiltDeg": 10,
+		"minHeightMeters": -100,
+		"maxSlopeDeg": 25
+	  },
+	  {
+		"assetId": "tundra_rock_a",
+		"densityPerKm2": 300,
+		"minCount": 0,
+		"minDistanceMeters": 5.1,
+		"jitterStrength": 1.0,
+		"alignToSlope": true,
+		"maxTiltDeg": 10,
+		"minHeightMeters": -100,
+		"maxSlopeDeg": 25
+	  },
+	  {
+		"assetId": "target",
+		"densityPerKm2": 1,
+		"minCount": 1,
+		"isTarget": true,
+		"maxCount": 1,
+		"minDistanceMeters": 3.1,
+		"weight": 8,
+		"minHeightMeters": -100,
+		"maxSlopeDeg": 10
+	  }
+	]
+  },
+  "localSkySettings": {
+	"_comment_sky": [
+	  "Winter tundra baseline: darker sky, heavier cloud cover, slightly stronger wind.",
+      "AtmDarkness + Exposure help sell the cold, muted lighting."
+	],
+	"preset": "Cloudy",
+	"cirrusCoverage": 0.55,
+	"cirrusThickness": 1.4,
+	"cumulusCoverage": 0.80,
+	"cumulusThickness": 0.05,
+	"windSpeed": 1.4,
+	"atmDarkness": 0.65,
+	"exposure": 0.90
+  }
+}

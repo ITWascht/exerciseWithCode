@@ -1,0 +1,85 @@
+{
+  "terrain": {
+	/* =========================
+	   TERRAIN-SHAPE (Geometrie)
+	   ========================= */
+
+	/* Größenskala des Noise
+	   - klein  → große, weiche Formen
+	   - groß   → feine, zerklüftete Details */
+	"noiseScale": 100.0,
+
+	/* Höhenverstärkung
+	   - klein  → flach / Ebenen
+	   - groß   → Berge / starke Höhenunterschiede */
+	"heightFactor": 20.0,
+	
+	/*Höhenversatz, erhöht die Szene um x */
+	"offSet": 0,
+
+	/* =========================
+	   DEFAULT-LAYER
+	   ========================= */
+
+	/* Fallback-Textur, wenn keine Regel greift */
+	"defaultLayer": "grass",
+
+	/* =========================
+	   HEIGHT BANDS (nach Höhe)
+	   ========================= */
+
+	"heightBands": [
+	  {
+		"minMeters": -10000,
+		"maxMeters": 0,
+		"layerId": "dirt"
+	  },
+	  {
+		"minMeters": 0,
+		"maxMeters": 40,
+		"layerId": "grass"
+	  },
+	  {
+		"minMeters": 40,
+		"maxMeters": 10000,
+		"layerId": "rock"
+	  }
+	],
+
+	/* =========================
+	   SLOPE OVERRIDES (nach Steigung)
+	   ========================= */
+
+	"slopeOverrides": [
+	  {
+		/* Auf welche Basetexturen diese Regel angewendet wird
+		   leer oder weglassen = gilt für alle */
+		"appliesTo": ["grass", "dirt"],
+
+		/* Ab dieser Steigung beginnt das Blending */
+		"blendStartDeg": 20,
+
+		/* Ab dieser Steigung volle Override-Textur */
+		"blendEndDeg": 35,
+
+		/* Zieltextur für steile Hänge */
+		"overrideLayerId": "rock"
+	  }
+	],
+
+	/* =========================
+	   BIOME OVERRIDES
+	   ========================= */
+
+	"biomeOverrides": [
+	  {
+		/* ID aus der BiomeMap */
+		"biomeId": 0,
+
+		/* Erzwingt eine andere Basetextur
+		   (z. B. Schnee in Tundra) */
+		"layerId": "snow"
+	  }
+	]
+  }
+}

@@ -1,0 +1,89 @@
+[gd_resource type="Resource" script_class="RegionAssetSet" load_steps=27 format=3 uid="uid://c0kyaxl11678j"]
+
+[ext_resource type="Script" uid="uid://doka0ghirbv0k" path="res://Scripts/Regions/Assets/PrefabEntry.cs" id="1_tl8lu"]
+[ext_resource type="PackedScene" uid="uid://gs5ma807tppd" path="res://assets/models/flora/trees/birch_tree.glb" id="2_ofs8w"]
+[ext_resource type="PackedScene" uid="uid://bg5d11cqusikg" path="res://assets/models/rocks/RockA.tscn" id="3_84yfh"]
+[ext_resource type="PackedScene" uid="uid://5ebahvykxihx" path="res://assets/models/flora/grass/tundra_grass_clump_summer.glb" id="4_xlfq7"]
+[ext_resource type="PackedScene" uid="uid://b8i5hhxb2q6ob" path="res://assets/models/target/t-62m.glb" id="5_xlfq7"]
+[ext_resource type="Script" uid="uid://bo2da28h2tuet" path="res://Scripts/Regions/Assets/TerrainSlotEntry.cs" id="6_tgldg"]
+[ext_resource type="Texture2D" uid="uid://bo3mnws3a6pf0" path="res://assets/textures/Grass007_4k/gras007_4k_alb_ht.dds" id="7_no7xb"]
+[ext_resource type="Texture2D" uid="uid://55br6ydp33l6" path="res://assets/textures/Grass007_4k/gras007_4k_nrm_rgh.dds" id="8_au01l"]
+[ext_resource type="Texture2D" uid="uid://c8a6jcvaxdkhq" path="res://assets/textures/Rock060_4k/rock060_alb_ht.dds" id="9_07ts6"]
+[ext_resource type="Texture2D" uid="uid://mlnh2sinnqr0" path="res://assets/textures/Rock060_4k/rock060_nrm_rgh.dds" id="10_v10x2"]
+[ext_resource type="Texture2D" uid="uid://dmflx6mgr4tro" path="res://assets/textures/Snow010_4k/snow010_4k_alb_ht.dds" id="11_jb5q4"]
+[ext_resource type="Texture2D" uid="uid://beeoju1hua4mp" path="res://assets/textures/Snow010_4k/snow010_4k_nrm_rgh.dds" id="12_yx3ud"]
+[ext_resource type="Texture2D" uid="uid://bw65se21gvhvk" path="res://assets/textures/ground068_4k/Ground68_alb_ht.dds" id="13_84yfh"]
+[ext_resource type="Script" uid="uid://c0kb1nujx57yu" path="res://Scripts/Regions/Assets/RegionAssetSet.cs" id="13_s5ih7"]
+[ext_resource type="Texture2D" uid="uid://tqv44qqh53ly" path="res://assets/textures/ground068_4k/Ground68_nrm_rgh.dds" id="14_w6br7"]
+[ext_resource type="Texture2D" uid="uid://sh4s3eio51hd" path="res://assets/textures/ground080_4k/ground080_alb_ht.dds" id="15_xlfq7"]
+[ext_resource type="Texture2D" uid="uid://d3qtw2yg1s8g2" path="res://assets/textures/ground080_4k/ground080_nor_rgh.dds" id="16_tgldg"]
+
+[sub_resource type="Resource" id="Resource_n73v3"]
+script = ExtResource("1_tl8lu")
+AssetId = "birch_tree"
+Scene = ExtResource("2_ofs8w")
+metadata/_custom_type_script = "uid://doka0ghirbv0k"
+
+[sub_resource type="Resource" id="Resource_i4ovs"]
+script = ExtResource("1_tl8lu")
+AssetId = "tundra_rock_a"
+Scene = ExtResource("3_84yfh")
+metadata/_custom_type_script = "uid://doka0ghirbv0k"
+
+[sub_resource type="Resource" id="Resource_iejlc"]
+script = ExtResource("1_tl8lu")
+AssetId = "tundra_shrub_a"
+Scene = ExtResource("4_xlfq7")
+metadata/_custom_type_script = "uid://doka0ghirbv0k"
+
+[sub_resource type="Resource" id="Resource_f1lyv"]
+script = ExtResource("1_tl8lu")
+AssetId = "target"
+Scene = ExtResource("5_xlfq7")
+metadata/_custom_type_script = "uid://doka0ghirbv0k"
+
+[sub_resource type="Resource" id="Resource_svn42"]
+script = ExtResource("6_tgldg")
+LayerId = "grass"
+AlbedoHeight = ExtResource("7_no7xb")
+NormalRoughness = ExtResource("8_au01l")
+metadata/_custom_type_script = "uid://bo2da28h2tuet"
+
+[sub_resource type="Resource" id="Resource_ia2kc"]
+script = ExtResource("6_tgldg")
+SlotIndex = 1
+LayerId = "rock"
+AlbedoHeight = ExtResource("9_07ts6")
+NormalRoughness = ExtResource("10_v10x2")
+metadata/_custom_type_script = "uid://bo2da28h2tuet"
+
+[sub_resource type="Resource" id="Resource_h2l8o"]
+script = ExtResource("6_tgldg")
+SlotIndex = 2
+LayerId = "snow"
+AlbedoHeight = ExtResource("11_jb5q4")
+NormalRoughness = ExtResource("12_yx3ud")
+metadata/_custom_type_script = "uid://bo2da28h2tuet"
+
+[sub_resource type="Resource" id="Resource_xlfq7"]
+script = ExtResource("6_tgldg")
+SlotIndex = 3
+LayerId = "forest_floor"
+AlbedoHeight = ExtResource("13_84yfh")
+NormalRoughness = ExtResource("14_w6br7")
+metadata/_custom_type_script = "uid://bo2da28h2tuet"
+
+[sub_resource type="Resource" id="Resource_no7xb"]
+script = ExtResource("6_tgldg")
+SlotIndex = 4
+LayerId = "field_ground"
+AlbedoHeight = ExtResource("15_xlfq7")
+NormalRoughness = ExtResource("16_tgldg")
+metadata/_custom_type_script = "uid://bo2da28h2tuet"
+
+[resource]
+script = ExtResource("13_s5ih7")
+RegionId = "forest_edge"
+TerrainSlots = Array[ExtResource("6_tgldg")]([SubResource("Resource_svn42"), SubResource("Resource_ia2kc"), SubResource("Resource_h2l8o"), SubResource("Resource_xlfq7"), SubResource("Resource_no7xb")])
+FloraPrefabs = Array[ExtResource("1_tl8lu")]([SubResource("Resource_n73v3"), SubResource("Resource_i4ovs"), SubResource("Resource_iejlc"), SubResource("Resource_f1lyv")])
+metadata/_custom_type_script = "uid://c0kb1nujx57yu"
