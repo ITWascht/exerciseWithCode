@@ -32,10 +32,12 @@
 	"entries": [
 	  {
 		"assetId": "birch_tree",
-		"densityPerKm2": 30000,
-		"allowedBioms": [1],
+		"densityPerKm2": 10000,
+		"allowedBiomes": [1],
 		"minCount": 0,
 		"minDistanceMeters": 1.1,
+		"edgeMinMeters": 0,
+		"edgeMaxMeters": 9999,
 		"jitterStrength": 1.0,
 		"alignToSlope": false,
 		"maxTiltDeg": 10,
@@ -43,9 +45,21 @@
 		"maxSlopeDeg": 25
 	  },
 	  {
-		"assetId": "tundra_shrub_a",
+		"assetId": "realistic_grass",
 		"densityPerKm2": 300000,
-		"allowedBioms": [1, 0],
+		"allowedBiomes": [1],
+		"minCount": 0,
+		"minDistanceMeters": 0.1,
+		"jitterStrength": 1.0,
+		"alignToSlope": true,
+		"maxTiltDeg": 10,
+		"minHeightMeters": -100,
+		"maxSlopeDeg": 25
+	  },
+	{
+		"assetId": "wheat",
+		"densityPerKm2": 300000,
+		"allowedBiomes": [0],
 		"minCount": 0,
 		"minDistanceMeters": 0.1,
 		"jitterStrength": 1.0,
@@ -57,6 +71,7 @@
 	  {
 		"assetId": "tundra_rock_a",
 		"densityPerKm2": 300,
+		"allowedBiomes": [1],
 		"minCount": 0,
 		"minDistanceMeters": 5.1,
 		"jitterStrength": 1.0,
@@ -79,18 +94,13 @@
 	  }
 	]
   },
-  "localSkySettings": {
+  "localSky": {
 	"_comment_sky": [
 	  "Cloudy baseline for a temperate forest edge.",
 	  "Cirrus = high thin clouds (soft haze).",
 	  "Cumulus = low clouds (main cloud mass).",
       "WindSpeed controls cloud movement speed."
 	],
-	"preset": "Cloudy",
-	"cirrusCoverage": 0.35,
-	"cirrusThickness": 1.0,
-	"cumulusCoverage": 0.55,
-	"cumulusThickness": 0.03,
-	"windSpeed": 1.0
+	"preset": "Cloudy"
   }
 }

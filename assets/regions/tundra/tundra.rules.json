@@ -28,7 +28,7 @@
 	"entries": [
 	  {
 		"assetId": "birch_tree",
-		"densityPerKm2": 25000,
+		"densityPerKm2": 5000,
 		"minCount": 0,
 		"minDistanceMeters": 1.1,
 		"jitterStrength": 1.0,
@@ -39,8 +39,8 @@
 	  },
 	  {
 		"assetId": "tundra_shrub_a",
-		"densityPerKm2": 30000,
-		"minCount": 50,
+		"densityPerKm2": 100000,
+		"minCount": 1,
 		"minDistanceMeters": 0.1,
 		"jitterStrength": 1.0,
 		"alignToSlope": true,
@@ -50,7 +50,7 @@
 	  },
 	  {
 		"assetId": "tundra_bush",
-		"densityPerKm2": 30000,
+		"densityPerKm2": 3000,
 		"minCount": 50,
 		"minDistanceMeters": 0.5,
 		"jitterStrength": 1.0,
@@ -83,16 +83,11 @@
 	  }
 	]
   },
-  "localSkySettings": {
+  "localSky": {
 	"_comment_sky": [
 	  "Tundra tends to feel overcast: higher cumulus coverage and slightly thicker clouds.",
       "Use this as a regional baseline; runtime weather (rain/storm) can still override."
 	],
-	"preset": "Cloudy",
-	"cirrusCoverage": 0.45,
-	"cirrusThickness": 1.2,
-	"cumulusCoverage": 0.70,
-	"cumulusThickness": 0.04,
-	"windSpeed": 1.2
+	"preset": "clear"	
   }
 }

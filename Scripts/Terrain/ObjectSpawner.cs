@@ -1,28 +1,29 @@
-using Godot;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using Godot;
 
 namespace SzeneGenerator;
 
-public partial class ObjectSpawner
+public class ObjectSpawner
 {
-	private readonly int _width;
-	private readonly int _depth;
-	private readonly float _metersPerPixel;
-	private readonly float _scale;
-	private readonly float _offset;
+    private readonly int _depth;
+    private readonly float _metersPerPixel;
+    private readonly float _offset;
+    private readonly float _scale;
+    private readonly int _width;
 
-	public ObjectSpawner(int width, int depth, float metersPerPixel, float scale, float offset)
-	{
-		_width = width;
-		_depth = depth;
-		_metersPerPixel = metersPerPixel;
-		_scale = scale;
-		_offset = offset;
-	}
+    public ObjectSpawner(int width, int depth, float metersPerPixel, float scale, float offset)
+    {
+        _width = width;
+        _depth = depth;
+        _metersPerPixel = metersPerPixel;
+        _scale = scale;
+        _offset = offset;
+    }
 
     //Spawnlogic and return target position
-	public List<Node3D> Spawn(
+    public List<Node3D> Spawn(
     Node parent,
     float[,] heights01,
     RegionRules rules,
@@ -31,8 +32,8 @@ public partial class ObjectSpawner
     int[,] biome = null,
     float[,] edgeDist = null)
 {
-    GD.Print($"Spawner: metersPerPixel={_metersPerPixel}, width={_width}, depth={_depth}");
-    
+    //GD.Print($"Spawner: metersPerPixel={_metersPerPixel}, width={_width}, depth={_depth}");
+
     var targets = new List<Node3D>();
     var spawning = rules?.Spawning;
     if (spawning?.Entries == null || spawning.Entries.Length == 0)
@@ -42,267 +43,326 @@ public partial class ObjectSpawner
     }
 
     // Spawn density base: area_km2 = (w*mpp * d*mpp)/1e6
-    float areaM2 = (_width * _metersPerPixel) * (_depth * _metersPerPixel);
-    float areaKm2 = areaM2 / 1_000_000f;
+    var areaM2 = _width * _metersPerPixel * (_depth * _metersPerPixel);
+    var areaKm2 = areaM2 / 1_000_000f;
 
     // Simple random
     var rng = new Random(seed);
 
     // Global defaults (can be overridden per entry via JSON)
-    float defaultJitterStrength = 1.0f;
-    float defaultMinDistanceMeters = 1.5f;
-    float defaultMaxTiltDeg = 50f;
-    bool defaultAlignToSlope = true;
+    var defaultJitterStrength = 1.0f;
+    var defaultMinDistanceMeters = 1.5f;
+    var defaultMaxTiltDeg = 50f;
+    var defaultAlignToSlope = true;
 
     // Spatial hash for min distance (shared across all entries)
-    // We compute the smallest configured distance ONCE, so the grid stays consistent.
-    float baseCellSize = Mathf.Max(0.01f, defaultMinDistanceMeters);
+    // compute the smallest configured distance ONCE, so the grid stays consistent.
+    var baseCellSize = Mathf.Max(0.01f, defaultMinDistanceMeters);
+    
+    // Minimum Margin for Targets to Map Edge
+    var defaultTargetEdgeMarginMeters = 10.0f; // Keep targets away from map borders.
 
     // Find global minimum minDistance across all entries (if any)
     foreach (var e in spawning.Entries)
     {
-        float d = e.MinDistanceMeters ?? defaultMinDistanceMeters;
+        var d = e.MinDistanceMeters ?? defaultMinDistanceMeters;
         if (d > 0f)
             baseCellSize = Mathf.Min(baseCellSize, Mathf.Max(0.01f, d));
     }
 
     var grid = new Dictionary<long, List<Vector2>>();
-
-    int totalSpawned = 0;
-
-    foreach (var entry in spawning.Entries)
+    
+    // MArginCheck for Targets
+    bool IsInsideMapWithMargin(float worldX, float worldZ, float marginMeters)
     {
-        // Skip disabled entries
-        if (entry.DensityPerKm2 <= 0 && entry.MinCount <= 0)
-            continue;
+        var minX = marginMeters;
+        var maxX = (_width - 1) * _metersPerPixel - marginMeters;
+        var minZ = marginMeters;
+        var maxZ = (_depth - 1) * _metersPerPixel - marginMeters;
 
-        // Prefab check
-        if (!prefabMap.TryGetValue(entry.AssetId, out var scene) || scene == null)
-            continue;
+        return worldX >= minX && worldX <= maxX && worldZ >= minZ && worldZ <= maxZ;
+    }
 
-        // Per-entry spawn parameters (optional overrides)
-        float entryJitterStrength = entry.JitterStrength ?? defaultJitterStrength;
-        float entryMinDistance = entry.MinDistanceMeters ?? defaultMinDistanceMeters;
-        float entryMaxTiltDeg = entry.MaxTiltDeg ?? defaultMaxTiltDeg;
-        bool entryAlignToSlope = entry.AlignToSlope ?? defaultAlignToSlope;
 
-        int target = Mathf.RoundToInt(entry.DensityPerKm2 * areaKm2);
+    var totalSpawned = 0;
 
-        // Minimum count (e.g. special objects)
-        target = Mathf.Max(target, entry.MinCount);
-        if (target <= 0)
-            continue;
+    // Two-pass spawn: targets first, then everything else.
+    // This keeps the existing logic intact and avoids LINQ.
+    for (int pass = 0; pass < 2; pass++)
+    {
+        var spawnTargets = (pass == 0);
 
-        int spawned = 0;
-        int attempts = 0;
-        int maxAttempts = target * 30; // buffer for filter losses
-
-        bool enforceDistance = true;
-
-        while (spawned < target && attempts < maxAttempts)
+        foreach (var entry in spawning.Entries)
         {
-            attempts++;
-
-            int x = rng.Next(0, _width);
-            int z = rng.Next(0, _depth);
-
-            // World positioning with jitter (break grid look)
-            float jitter = _metersPerPixel * 0.5f * entryJitterStrength;
-            float worldX = (x * _metersPerPixel) + (float)(rng.NextDouble() * 2.0 - 1.0) * jitter;
-            float worldZ = (z * _metersPerPixel) + (float)(rng.NextDouble() * 2.0 - 1.0) * jitter;
-
-            // Height / slope at jittered position
-            float fx = worldX / _metersPerPixel;
-            float fz = worldZ / _metersPerPixel;
-
-            float hM = SampleHeight01Bilinear(heights01, fx, fz) * _scale + _offset;
-
-            int ix = Mathf.Clamp((int)Mathf.Round(fx), 0, _width - 1);
-            int iz = Mathf.Clamp((int)Mathf.Round(fz), 0, _depth - 1);
-            float slopeDeg = ComputeSlopeDeg(heights01, ix, iz);
-
-            // Height / slope filters
-            if (hM < entry.MinHeightMeters || hM > entry.MaxHeightMeters)
-                continue;
-            if (slopeDeg > entry.MaxSlopeDeg)
+            if (entry.IsTarget != spawnTargets)
                 continue;
 
-            // Biome/edge rules are only active if JSON provides them
-            bool wantsBiomeRules =
-                (entry.AllowedBiomes != null && entry.AllowedBiomes.Length > 0) ||
-                entry.EdgeMinMeters.HasValue ||
-                entry.EdgeMaxMeters.HasValue;
+            // Skip disabled entries
+            if (entry.DensityPerKm2 <= 0 && entry.MinCount <= 0)
+                continue;
 
-            if (wantsBiomeRules)
+            // Prefab check
+            if (!prefabMap.TryGetValue(entry.AssetId, out var scene) || scene == null)
+                continue;
+
+            // Per-entry spawn parameters (optional overrides)
+            var entryJitterStrength = entry.JitterStrength ?? defaultJitterStrength;
+            var entryMinDistance = entry.MinDistanceMeters ?? defaultMinDistanceMeters;
+            var entryMaxTiltDeg = entry.MaxTiltDeg ?? defaultMaxTiltDeg;
+            var entryAlignToSlope = entry.AlignToSlope ?? defaultAlignToSlope;
+
+            var target = Mathf.RoundToInt(entry.DensityPerKm2 * areaKm2);
+
+            // Minimum count (e.g. special objects)
+            target = Mathf.Max(target, entry.MinCount);
+            if (target <= 0)
+                continue;
+
+            var spawned = 0;
+            var attempts = 0;
+            var maxAttempts = target * 30; // buffer for filter losses
+
+            var enforceDistance = true;
+
+            while (spawned < target && attempts < maxAttempts)
             {
-                // If rules require maps, but maps are missing -> reject this spawn position
-                if (biome == null || edgeDist == null)
+                attempts++;
+
+                var x = rng.Next(0, _width);
+                var z = rng.Next(0, _depth);
+
+                // World positioning with jitter (break grid look)
+                var jitter = _metersPerPixel * 0.5f * entryJitterStrength;
+                var worldX = x * _metersPerPixel + (float)(rng.NextDouble() * 2.0 - 1.0) * jitter;
+                var worldZ = z * _metersPerPixel + (float)(rng.NextDouble() * 2.0 - 1.0) * jitter;
+                
+                // Keep targets away from map borders.
+                if (entry.IsTarget && !IsInsideMapWithMargin(worldX, worldZ, defaultTargetEdgeMarginMeters))
                     continue;
 
-                int biomeId = biome[ix, iz];
-                float distToEdge = edgeDist[ix, iz];
+                // Height / slope at jittered position
+                var fx = worldX / _metersPerPixel;
+                var fz = worldZ / _metersPerPixel;
 
-                // Allowed biomes
-                if (entry.AllowedBiomes != null && entry.AllowedBiomes.Length > 0)
-                {
-                    bool ok = false;
-                    for (int i = 0; i < entry.AllowedBiomes.Length; i++)
-                    {
-                        if (entry.AllowedBiomes[i] == biomeId) { ok = true; break; }
-                    }
-                    if (!ok) continue;
-                }
+                var hM = SampleHeight01Bilinear(heights01, fx, fz) * _scale + _offset;
 
-                // Edge distance constraints
-                if (entry.EdgeMinMeters.HasValue && distToEdge < entry.EdgeMinMeters.Value) continue;
-                if (entry.EdgeMaxMeters.HasValue && distToEdge > entry.EdgeMaxMeters.Value) continue;
-            }
+                var ix = Mathf.Clamp((int)Mathf.Round(fx), 0, _width - 1);
+                var iz = Mathf.Clamp((int)Mathf.Round(fz), 0, _depth - 1);
+                var slopeDeg = ComputeSlopeDeg(heights01, ix, iz);
 
-            // Minimum distance (Poisson-disk light via spatial hash)
-            var posXZ = new Vector2(worldX, worldZ);
-            if (enforceDistance && entryMinDistance > 0f &&
-                !PassesMinDistance(grid, baseCellSize, posXZ, entryMinDistance))
-                continue;
+                // Height / slope filters
+                if (hM < entry.MinHeightMeters || hM > entry.MaxHeightMeters)
+                    continue;
+                if (slopeDeg > entry.MaxSlopeDeg)
+                    continue;
 
-            // Instantiate
-            var instance = scene.Instantiate() as Node3D;
-            if (instance == null)
-                continue;
-
-            instance.Position = new Vector3(worldX, hM, worldZ);
-
-            // Align to slope (optional, with tilt limit)
-            if (entryAlignToSlope)
-            {
-                Vector3 n = ComputeNormal(heights01, fx, fz);
-                float tilt = Mathf.RadToDeg(Mathf.Acos(Mathf.Clamp(n.Dot(Vector3.Up), -1f, 1f)));
-                if (tilt <= entryMaxTiltDeg)
-                {
-                    float yaw = (float)(rng.NextDouble() * Math.Tau);
-                    Vector3 forward = new Vector3(Mathf.Cos(yaw), 0f, Mathf.Sin(yaw));
-                    forward = (forward - n * forward.Dot(n)).Normalized();
-                    Vector3 right = forward.Cross(n).Normalized();
-                    forward = n.Cross(right).Normalized();
-                    instance.Basis = new Basis(right, n, forward);
-                }
-            }
-
-            parent.AddChild(instance);
-            if (entry.IsTarget)
-                targets.Add(instance);
-
-            // Add to spatial hash (still useful even if fallback ignores distance)
-            if (entryMinDistance > 0f)
-                AddToGrid(grid, baseCellSize, posXZ);
-
-            spawned++;
-            totalSpawned++;
-        }
-
-        // Fallback: if MinCount not reached, ignore minimum distance (keeps height/slope/biome filters!)
-        if (spawned < entry.MinCount)
-        {
-            int missing = entry.MinCount - spawned;
-            int fallbackPlaced = 0;
-            int fallbackAttempts = 0;
-            int fallbackMaxAttempts = missing * 50;
-
-            if (entry.IsTarget == true)
-            {enforceDistance = true;}
-            else {enforceDistance = false;}
-            
-            while (fallbackPlaced < missing && fallbackAttempts < fallbackMaxAttempts)
-            {
-                fallbackAttempts++;
-
-                int x = rng.Next(0, _width);
-                int z = rng.Next(0, _depth);
-
-                float jitter = _metersPerPixel * 0.5f * entryJitterStrength;
-                float worldX = (x * _metersPerPixel) + (float)(rng.NextDouble() * 2.0 - 1.0) * jitter;
-                float worldZ = (z * _metersPerPixel) + (float)(rng.NextDouble() * 2.0 - 1.0) * jitter;
-
-                float fx = worldX / _metersPerPixel;
-                float fz = worldZ / _metersPerPixel;
-
-                float hM = SampleHeight01Bilinear(heights01, fx, fz) * _scale + _offset;
-
-                int ix = Mathf.Clamp((int)Mathf.Round(fx), 0, _width - 1);
-                int iz = Mathf.Clamp((int)Mathf.Round(fz), 0, _depth - 1);
-                float slopeDeg = ComputeSlopeDeg(heights01, ix, iz);
-
-                if (hM < entry.MinHeightMeters || hM > entry.MaxHeightMeters) continue;
-                if (slopeDeg > entry.MaxSlopeDeg) continue;
-
-                // Biome/edge rules (same as main loop)
-                bool wantsBiomeRules =
+                // Biome/edge rules are only active if JSON provides them
+                var wantsBiomeRules =
                     (entry.AllowedBiomes != null && entry.AllowedBiomes.Length > 0) ||
                     entry.EdgeMinMeters.HasValue ||
                     entry.EdgeMaxMeters.HasValue;
 
                 if (wantsBiomeRules)
                 {
+                    // If rules require maps, but maps are missing -> reject this spawn position
                     if (biome == null || edgeDist == null)
                         continue;
 
-                    int biomeId = biome[ix, iz];
-                    float distToEdge = edgeDist[ix, iz];
+                    var biomeId = biome[ix, iz];
+                    var distToEdge = edgeDist[ix, iz];
 
+                    // Allowed biomes
                     if (entry.AllowedBiomes != null && entry.AllowedBiomes.Length > 0)
                     {
-                        bool ok = false;
-                        for (int i = 0; i < entry.AllowedBiomes.Length; i++)
-                        {
-                            if (entry.AllowedBiomes[i] == biomeId) { ok = true; break; }
-                        }
+                        var ok = false;
+                        for (var i = 0; i < entry.AllowedBiomes.Length; i++)
+                            if (entry.AllowedBiomes[i] == biomeId)
+                            {
+                                ok = true;
+                                break;
+                            }
+
                         if (!ok) continue;
                     }
 
+                    // Edge distance constraints
                     if (entry.EdgeMinMeters.HasValue && distToEdge < entry.EdgeMinMeters.Value) continue;
                     if (entry.EdgeMaxMeters.HasValue && distToEdge > entry.EdgeMaxMeters.Value) continue;
                 }
 
-                // Minimum distance intentionally NOT checked in fallback
+                // Minimum distance (Poisson-disk light via spatial hash)
                 var posXZ = new Vector2(worldX, worldZ);
                 if (enforceDistance && entryMinDistance > 0f &&
                     !PassesMinDistance(grid, baseCellSize, posXZ, entryMinDistance))
                     continue;
 
+                // Instantiate
                 var instance = scene.Instantiate() as Node3D;
-                if (instance == null) continue;
+                if (instance == null)
+                    continue;
 
                 instance.Position = new Vector3(worldX, hM, worldZ);
 
+                // Align to slope (optional, with tilt limit)
                 if (entryAlignToSlope)
                 {
-                    Vector3 n = ComputeNormal(heights01, fx, fz);
-                    float tilt = Mathf.RadToDeg(Mathf.Acos(Mathf.Clamp(n.Dot(Vector3.Up), -1f, 1f)));
+                    var n = ComputeNormal(heights01, fx, fz);
+                    var tilt = Mathf.RadToDeg(Mathf.Acos(Mathf.Clamp(n.Dot(Vector3.Up), -1f, 1f)));
                     if (tilt <= entryMaxTiltDeg)
                     {
-                        float yaw = (float)(rng.NextDouble() * Math.Tau);
-                        Vector3 forward = new Vector3(Mathf.Cos(yaw), 0f, Mathf.Sin(yaw));
+                        var yaw = (float)(rng.NextDouble() * Math.Tau);
+                        var forward = new Vector3(Mathf.Cos(yaw), 0f, Mathf.Sin(yaw));
                         forward = (forward - n * forward.Dot(n)).Normalized();
-                        Vector3 right = forward.Cross(n).Normalized();
+                        var right = forward.Cross(n).Normalized();
                         forward = n.Cross(right).Normalized();
                         instance.Basis = new Basis(right, n, forward);
                     }
                 }
+                // Physics-based overlap check (prevents spawning inside other colliders / objects).
+                if (!IsPlacementFree(parent, instance, extraMarginMeters: 0.10f))
+                {
+                    instance.QueueFree();
+                    continue;
+                }
 
                 parent.AddChild(instance);
+                if (entry.IsTarget)
+                {
+                    // Store identifying info so exports can include the spawned vehicle type
+                    instance.SetMeta("asset_id", entry.AssetId);
 
-            // Still add to grid (optional; helps later entries)
+                    targets.Add(instance);
+                }
+
+                // Add to spatial hash (still useful even if fallback ignores distance)
                 if (entryMinDistance > 0f)
                     AddToGrid(grid, baseCellSize, posXZ);
 
                 spawned++;
                 totalSpawned++;
-                fallbackPlaced++;
             }
 
-            GD.Print($"{entry.AssetId} fallback placed {fallbackPlaced}/{missing} (attempts {fallbackAttempts})");
-        }
+            // Fallback: if MinCount not reached, ignore minimum distance (keeps height/slope/biome filters!)
+            if (spawned < entry.MinCount)
+            {
+                var missing = entry.MinCount - spawned;
+                var fallbackPlaced = 0;
+                var fallbackAttempts = 0;
+                var fallbackMaxAttempts = missing * 50;
 
-        GD.Print($"{entry.AssetId} spawned {spawned}/{target} (attempts {attempts})");
+                if (entry.IsTarget)
+                    enforceDistance = true;
+                else
+                    enforceDistance = false;
+
+                while (fallbackPlaced < missing && fallbackAttempts < fallbackMaxAttempts)
+                {
+                    fallbackAttempts++;
+
+                    var x = rng.Next(0, _width);
+                    var z = rng.Next(0, _depth);
+
+                    var jitter = _metersPerPixel * 0.5f * entryJitterStrength;
+                    var worldX = x * _metersPerPixel + (float)(rng.NextDouble() * 2.0 - 1.0) * jitter;
+                    var worldZ = z * _metersPerPixel + (float)(rng.NextDouble() * 2.0 - 1.0) * jitter;
+
+                    var fx = worldX / _metersPerPixel;
+                    var fz = worldZ / _metersPerPixel;
+
+                    var hM = SampleHeight01Bilinear(heights01, fx, fz) * _scale + _offset;
+
+                    var ix = Mathf.Clamp((int)Mathf.Round(fx), 0, _width - 1);
+                    var iz = Mathf.Clamp((int)Mathf.Round(fz), 0, _depth - 1);
+                    var slopeDeg = ComputeSlopeDeg(heights01, ix, iz);
+
+                    if (hM < entry.MinHeightMeters || hM > entry.MaxHeightMeters) continue;
+                    if (slopeDeg > entry.MaxSlopeDeg) continue;
+
+                    // Biome/edge rules (same as main loop)
+                    var wantsBiomeRules =
+                        (entry.AllowedBiomes != null && entry.AllowedBiomes.Length > 0) ||
+                        entry.EdgeMinMeters.HasValue ||
+                        entry.EdgeMaxMeters.HasValue;
+
+                    if (wantsBiomeRules)
+                    {
+                        if (biome == null || edgeDist == null)
+                            continue;
+
+                        var biomeId = biome[ix, iz];
+                        var distToEdge = edgeDist[ix, iz];
+
+                        if (entry.AllowedBiomes != null && entry.AllowedBiomes.Length > 0)
+                        {
+                            var ok = false;
+                            for (var i = 0; i < entry.AllowedBiomes.Length; i++)
+                                if (entry.AllowedBiomes[i] == biomeId)
+                                {
+                                    ok = true;
+                                    break;
+                                }
+
+                            if (!ok) continue;
+                        }
+
+                        if (entry.EdgeMinMeters.HasValue && distToEdge < entry.EdgeMinMeters.Value) continue;
+                        if (entry.EdgeMaxMeters.HasValue && distToEdge > entry.EdgeMaxMeters.Value) continue;
+                    }
+
+                    // Minimum distance intentionally NOT checked in fallback
+                    var posXZ = new Vector2(worldX, worldZ);
+                    if (enforceDistance && entryMinDistance > 0f &&
+                        !PassesMinDistance(grid, baseCellSize, posXZ, entryMinDistance))
+                        continue;
+
+                    var instance = scene.Instantiate() as Node3D;
+                    if (instance == null) continue;
+
+                    instance.Position = new Vector3(worldX, hM, worldZ);
+
+                    if (entryAlignToSlope)
+                    {
+                        var n = ComputeNormal(heights01, fx, fz);
+                        var tilt = Mathf.RadToDeg(Mathf.Acos(Mathf.Clamp(n.Dot(Vector3.Up), -1f, 1f)));
+                        if (tilt <= entryMaxTiltDeg)
+                        {
+                            var yaw = (float)(rng.NextDouble() * Math.Tau);
+                            var forward = new Vector3(Mathf.Cos(yaw), 0f, Mathf.Sin(yaw));
+                            forward = (forward - n * forward.Dot(n)).Normalized();
+                            var right = forward.Cross(n).Normalized();
+                            forward = n.Cross(right).Normalized();
+                            instance.Basis = new Basis(right, n, forward);
+                        }
+                    }
+                    // Physics-based overlap check (prevents spawning inside other colliders / objects).
+                    if (!IsPlacementFree(parent, instance, extraMarginMeters: 0.10f))
+                    {
+                        instance.QueueFree();
+                        continue;
+                    }
+                    parent.AddChild(instance);
+                    if (entry.IsTarget)
+                    {
+                        // Store identifying info so exports can include the spawned vehicle type
+                        instance.SetMeta("asset_id", entry.AssetId);
+
+                        targets.Add(instance);
+                    }
+
+                    // Still add to grid (optional; helps later entries)
+                    if (entryMinDistance > 0f)
+                        AddToGrid(grid, baseCellSize, posXZ);
+
+                    spawned++;
+                    totalSpawned++;
+                    fallbackPlaced++;
+                }
+
+                GD.Print($"{entry.AssetId} fallback placed {fallbackPlaced}/{missing} (attempts {fallbackAttempts})");
+            }
+
+            GD.Print($"{entry.AssetId} spawned {spawned}/{target} (attempts {attempts})");
+        }
     }
 
     GD.Print($"totalSpawned: {totalSpawned} spawned");
@@ -310,149 +370,261 @@ public partial class ObjectSpawner
 }
 
 
-	private float ComputeSlopeDeg(float[,] heights01, int x, int z)
-	{
-		int x0 = Mathf.Max(x - 1, 0);
-		int x1 = Mathf.Min(x + 1, _width - 1);
-		int z0 = Mathf.Max(z - 1, 0);
-		int z1 = Mathf.Min(z + 1, _depth - 1);
+    private float ComputeSlopeDeg(float[,] heights01, int x, int z)
+    {
+        var x0 = Mathf.Max(x - 1, 0);
+        var x1 = Mathf.Min(x + 1, _width - 1);
+        var z0 = Mathf.Max(z - 1, 0);
+        var z1 = Mathf.Min(z + 1, _depth - 1);
 
-		float hL = heights01[x0, z] * _scale + _offset;
-		float hR = heights01[x1, z] * _scale + _offset;
-		float hD = heights01[x, z0] * _scale + _offset;
-		float hU = heights01[x,z1] * _scale + _offset;
+        var hL = heights01[x0, z] * _scale + _offset;
+        var hR = heights01[x1, z] * _scale + _offset;
+        var hD = heights01[x, z0] * _scale + _offset;
+        var hU = heights01[x, z1] * _scale + _offset;
 
-		float dhdx = (hR - hL) / (2f * _metersPerPixel);
-		float dhdz = (hU - hD) / (2f * _metersPerPixel);
-		
-		float slopeRad = Mathf.Atan(Mathf.Sqrt(dhdx * dhdx + dhdz * dhdz));
-		return slopeRad * 57.29578f;
-	}
+        var dhdx = (hR - hL) / (2f * _metersPerPixel);
+        var dhdz = (hU - hD) / (2f * _metersPerPixel);
 
-	private SpawnEntry PickWeightedEntry(
-		SpawnEntry[] entries,
-		float totalWeight,
-		Random rng,
-		float hM,
-		float slopeDeg,
-		Dictionary<string, PackedScene> prefabMap)
-	{
-		//check for matching, if not --> null
-		for (int tries = 0; tries < 8; tries++)
-		{
-			float r = (float)(rng.NextDouble() * totalWeight);
-			float acc = 0f;
+        var slopeRad = Mathf.Atan(Mathf.Sqrt(dhdx * dhdx + dhdz * dhdz));
+        return slopeRad * 57.29578f;
+    }
 
-			SpawnEntry chosen = null;
-			foreach (var e in entries)
-			{
-				acc += Mathf.Max(0.001f, e.Weight);
-				if (r <= acc)
-				{ chosen = e; break; }
-			}
+    private SpawnEntry PickWeightedEntry(
+        SpawnEntry[] entries,
+        float totalWeight,
+        Random rng,
+        float hM,
+        float slopeDeg,
+        Dictionary<string, PackedScene> prefabMap)
+    {
+        //check for matching, if not --> null
+        for (var tries = 0; tries < 8; tries++)
+        {
+            var r = (float)(rng.NextDouble() * totalWeight);
+            var acc = 0f;
 
-			if (chosen == null) chosen = entries[^1];
-			
-			// Fiter
-			if (hM < chosen.MinHeightMeters || hM > chosen.MaxHeightMeters)
-				continue;
-			if (slopeDeg > chosen.MaxSlopeDeg)
-				continue;
-			
-			//Prefab?
-			if (!prefabMap.ContainsKey(chosen.AssetId))
-				continue;
+            SpawnEntry chosen = null;
+            foreach (var e in entries)
+            {
+                acc += Mathf.Max(0.001f, e.Weight);
+                if (r <= acc)
+                {
+                    chosen = e;
+                    break;
+                }
+            }
 
-			return chosen;
-		}
+            if (chosen == null) chosen = entries[^1];
 
-		return null;
-	}
-	
-	// Bilinear-Sampling for height01 at random (fx,fz) in Pixel-Coordinats
-private float SampleHeight01Bilinear(float[,] h, float fx, float fz)
-{
-    fx = Mathf.Clamp(fx, 0, _width - 1);
-    fz = Mathf.Clamp(fz, 0, _depth - 1);
+            // Fiter
+            if (hM < chosen.MinHeightMeters || hM > chosen.MaxHeightMeters)
+                continue;
+            if (slopeDeg > chosen.MaxSlopeDeg)
+                continue;
 
-    int x0 = (int)Mathf.Floor(fx);
-    int z0 = (int)Mathf.Floor(fz);
-    int x1 = Mathf.Min(x0 + 1, _width - 1);
-    int z1 = Mathf.Min(z0 + 1, _depth - 1);
+            //Prefab?
+            if (!prefabMap.ContainsKey(chosen.AssetId))
+                continue;
 
-    float tx = fx - x0;
-    float tz = fz - z0;
+            return chosen;
+        }
 
-    float a = Mathf.Lerp(h[x0, z0], h[x1, z0], tx);
-    float b = Mathf.Lerp(h[x0, z1], h[x1, z1], tx);
-    return Mathf.Lerp(a, b, tz);
-}
+        return null;
+    }
+
+    // Bilinear-Sampling for height01 at random (fx,fz) in Pixel-Coordinats
+    private float SampleHeight01Bilinear(float[,] h, float fx, float fz)
+    {
+        fx = Mathf.Clamp(fx, 0, _width - 1);
+        fz = Mathf.Clamp(fz, 0, _depth - 1);
+
+        var x0 = (int)Mathf.Floor(fx);
+        var z0 = (int)Mathf.Floor(fz);
+        var x1 = Mathf.Min(x0 + 1, _width - 1);
+        var z1 = Mathf.Min(z0 + 1, _depth - 1);
+
+        var tx = fx - x0;
+        var tz = fz - z0;
+
+        var a = Mathf.Lerp(h[x0, z0], h[x1, z0], tx);
+        var b = Mathf.Lerp(h[x0, z1], h[x1, z1], tx);
+        return Mathf.Lerp(a, b, tz);
+    }
 
 // Normalenvektor from heightmap-gradient (in worldscale)
-private Vector3 ComputeNormal(float[,] heights01, float fx, float fz)
-{
-    float hL = SampleHeight01Bilinear(heights01, fx - 1f, fz) * _scale + _offset;
-    float hR = SampleHeight01Bilinear(heights01, fx + 1f, fz) * _scale + _offset;
-    float hD = SampleHeight01Bilinear(heights01, fx, fz - 1f) * _scale + _offset;
-    float hU = SampleHeight01Bilinear(heights01, fx, fz + 1f) * _scale + _offset;
+    private Vector3 ComputeNormal(float[,] heights01, float fx, float fz)
+    {
+        var hL = SampleHeight01Bilinear(heights01, fx - 1f, fz) * _scale + _offset;
+        var hR = SampleHeight01Bilinear(heights01, fx + 1f, fz) * _scale + _offset;
+        var hD = SampleHeight01Bilinear(heights01, fx, fz - 1f) * _scale + _offset;
+        var hU = SampleHeight01Bilinear(heights01, fx, fz + 1f) * _scale + _offset;
 
-    float dhdx = (hR - hL) / (2f * _metersPerPixel);
-    float dhdz = (hU - hD) / (2f * _metersPerPixel);
+        var dhdx = (hR - hL) / (2f * _metersPerPixel);
+        var dhdz = (hU - hD) / (2f * _metersPerPixel);
 
-    // Surface: y = h(x,z) => Normal ~ (-dhdx, 1, -dhdz)
-    return new Vector3(-dhdx, 1f, -dhdz).Normalized();
-}
+        // Surface: y = h(x,z) => Normal ~ (-dhdx, 1, -dhdz)
+        return new Vector3(-dhdx, 1f, -dhdz).Normalized();
+    }
+
+    private bool PassesMinDistance(
+        Dictionary<long, List<Vector2>> grid,
+        float cellSize,
+        Vector2 posXZ,
+        float minDist)
+    {
+        var cx = (int)Mathf.Floor(posXZ.X / cellSize);
+        var cz = (int)Mathf.Floor(posXZ.Y / cellSize);
+
+        var minDist2 = minDist * minDist;
+
+        for (var gx = cx - 1; gx <= cx + 1; gx++)
+        for (var gz = cz - 1; gz <= cz + 1; gz++)
+        {
+            var key = ((long)gx << 32) ^ (uint)gz;
+            if (!grid.TryGetValue(key, out var list)) continue;
+
+            for (var i = 0; i < list.Count; i++)
+                if (posXZ.DistanceSquaredTo(list[i]) < minDist2)
+                    return false;
+        }
+
+        return true;
+    }
+
+    private void AddToGrid(Dictionary<long, List<Vector2>> grid, float cellSize, Vector2 posXZ)
+    {
+        var cx = (int)Mathf.Floor(posXZ.X / cellSize);
+        var cz = (int)Mathf.Floor(posXZ.Y / cellSize);
+        var key = ((long)cx << 32) ^ (uint)cz;
+
+        if (!grid.TryGetValue(key, out var list))
+        {
+            list = new List<Vector2>();
+            grid[key] = list;
+        }
+
+        list.Add(posXZ);
+    }
 
 // Poisson-Disk light: Spatial Hash
-private struct CellKey
-{
-    public int X;
-    public int Z;
-    public CellKey(int x, int z) { X = x; Z = z; }
-}
-
-private bool PassesMinDistance(
-    Dictionary<long, List<Vector2>> grid,
-    float cellSize,
-    Vector2 posXZ,
-    float minDist)
-{
-    int cx = (int)Mathf.Floor(posXZ.X / cellSize);
-    int cz = (int)Mathf.Floor(posXZ.Y / cellSize);
-
-    float minDist2 = minDist * minDist;
-
-    for (int gx = cx - 1; gx <= cx + 1; gx++)
-    for (int gz = cz - 1; gz <= cz + 1; gz++)
+    private struct CellKey
     {
-        long key = (((long)gx) << 32) ^ (uint)gz;
-        if (!grid.TryGetValue(key, out var list)) continue;
+        public int X;
+        public int Z;
 
-        for (int i = 0; i < list.Count; i++)
+        public CellKey(int x, int z)
         {
-            if (posXZ.DistanceSquaredTo(list[i]) < minDist2)
-                return false;
+            X = x;
+            Z = z;
         }
     }
-
-    return true;
-}
-
-private void AddToGrid(Dictionary<long, List<Vector2>> grid, float cellSize, Vector2 posXZ)
+    
+    // Checks if the placement area is free using physics (and falls back to AABB box if needed).
+private bool IsPlacementFree(Node parent, Node3D instance, float extraMarginMeters = 0.05f)
 {
-    int cx = (int)Mathf.Floor(posXZ.X / cellSize);
-    int cz = (int)Mathf.Floor(posXZ.Y / cellSize);
-    long key = (((long)cx) << 32) ^ (uint)cz;
+    var world3D = instance.GetWorld3D();
+    if (world3D == null)
+        return true; // If no world exists yet, do not block spawning.
 
-    if (!grid.TryGetValue(key, out var list))
+    var spaceState = world3D.DirectSpaceState;
+
+    // Build an approximate shape from the instance bounds (AABB). This works even if the prefab has no colliders.
+    if (!TryGetMergedLocalAabb(instance, out var localAabb))
+        return true; // No geometry found -> don't block.
+
+    var box = new BoxShape3D();
+
+    // AABB size -> box extents (half size). Inflate slightly with margin to avoid near-touching overlaps.
+    var half = localAabb.Size * 0.5f;
+    half += new Vector3(extraMarginMeters, extraMarginMeters, extraMarginMeters);
+    box.Size = half * 2f;
+
+    // Place the query box at the AABB center in the instance local space, then into world space.
+    var centerLocal = localAabb.Position + localAabb.Size * 0.5f;
+    var centerWorld = instance.GlobalTransform * centerLocal;
+
+    var queryXform = instance.GlobalTransform;
+    queryXform.Origin = centerWorld;
+    
+    // Exclude the instance itself (and any collision children) from the query to avoid self-hits.
+    var exclude = new Godot.Collections.Array<Rid>();
+    CollectCollisionRids(instance, exclude);
+
+    var query = new PhysicsShapeQueryParameters3D
     {
-        list = new List<Vector2>();
-        grid[key] = list;
+        Shape = box,
+        Transform = queryXform,
+        // Optional: set collision mask if you want to only test against certain layers.
+        // CollisionMask = 0xFFFFFFFF,
+        Exclude = exclude,
+        Margin = 0.0f
+    };
+
+    // If anything overlaps, reject.
+    var hits = spaceState.IntersectShape(query, maxResults: 1);
+    return hits.Count == 0;
+}
+
+// Merges AABBs of all MeshInstance3D children into one local-space AABB.
+    private bool TryGetMergedLocalAabb(Node3D root, out Aabb merged)
+    {
+        var found = false;
+        var mergedLocal = default(Aabb);
+
+        void Visit(Node n)
+        {
+            if (n is MeshInstance3D mi && mi.Mesh != null)
+            {
+                var a = mi.GetAabb();
+
+                // Transform the mesh-local AABB into root-local space.
+                var xform = mi.Transform;
+
+                var pts = new Vector3[8];
+                var p = a.Position;
+                var s = a.Size;
+
+                pts[0] = p;
+                pts[1] = p + new Vector3(s.X, 0, 0);
+                pts[2] = p + new Vector3(0, s.Y, 0);
+                pts[3] = p + new Vector3(0, 0, s.Z);
+                pts[4] = p + new Vector3(s.X, s.Y, 0);
+                pts[5] = p + new Vector3(s.X, 0, s.Z);
+                pts[6] = p + new Vector3(0, s.Y, s.Z);
+                pts[7] = p + s;
+
+                for (int i = 0; i < 8; i++)
+                    pts[i] = xform * pts[i];
+
+                var ta = new Aabb(pts[0], Vector3.Zero);
+                for (int i = 1; i < 8; i++)
+                    ta = ta.Expand(pts[i]);
+
+                mergedLocal = found ? mergedLocal.Merge(ta) : ta;
+                found = true;
+            }
+
+            foreach (var c in n.GetChildren())
+                Visit((Node)c);
+        }
+
+        Visit(root);
+
+        merged = mergedLocal;
+        return found;
     }
-    list.Add(posXZ);
-}
+    
+    // Collects RID(s) of all CollisionObject3D nodes in the instance tree.
+// This is used to exclude self-collisions in physics queries.
+    private void CollectCollisionRids(Node root, Godot.Collections.Array<Rid> outExclude)
+    {
+        if (root is CollisionObject3D co)
+            outExclude.Add(co.GetRid());
+
+        foreach (var c in root.GetChildren())
+            CollectCollisionRids((Node)c, outExclude);
+    }
+
+
 
 }
-	
-
-

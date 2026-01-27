@@ -4,44 +4,27 @@ namespace SzeneGenerator;
 
 public partial class GlobalSkyManager : Node
 {
-    // Configuration input
-    private GlobalSkySettings _cfg;
-
-    // Sky instance
-    private Node _skyInstance;
-    
-    //Cached SkyDome node(Sky3D)
-    private Node _skyDome;
-    
-    //Region rules (contains LocalSkySettings loaded from JSON)
-    private RegionRules _rules;
-
-    // Rain
-    private Node3D _rainRig;
-    private GpuParticles3D _rainParticles;
-    private Node3D _followTarget;
-
-    // Fog / environment
-    private WorldEnvironment _worldEnv;
-    private Environment _env;
-
-    // Rain enabled/disabled
-    [Export] private bool _rainEnabled = true;
-
-    // Rain rig offset relative to the camera
-    [Export] private Vector3 _rainOffset = new Vector3(0, 8, 0);
-
-    // Rain emission box size
-    [Export] private Vector3 _rainBoxExtents = new Vector3(20, 1, 20);
+    private float _baseFogDensity;
 
     // Cached baseline fog values
     private bool _baseFogEnabled;
-    private float _baseFogDensity;
     private Color _baseFogLightColor;
+
     private float _baseFogLightEnergy;
+
+    // Configuration input
+    private GlobalSkySettings _cfg;
+    private Environment _env;
 
     // Rain → fog interaction
     [Export] private bool _fogAdjustForRain = true;
+    private Node3D _followTarget;
+
+    // Rain emission box size
+    [Export] private Vector3 _rainBoxExtents = new(20, 1, 20);
+
+    // Rain enabled/disabled
+    [Export] private bool _rainEnabled = true;
 
     // Higher value = denser fog
     // 0.004 = very light rain
@@ -50,40 +33,68 @@ public partial class GlobalSkyManager : Node
     // > 0.012 = very thick coastal fog
     [Export] private float _rainFogDensity = 0.012f;
 
+    // Cooler fog color during rain
+    [Export] private Color _rainFogLightTint = new(0.85f, 0.9f, 1.0f);
+
     // Reduces sunlight contribution during rain
     [Export] private float _rainFogSunAmountMultiplier = 0.5f;
 
-    // Cooler fog color during rain
-    [Export] private Color _rainFogLightTint = new Color(0.85f, 0.9f, 1.0f, 1.0f);
+    // Rain rig offset relative to the camera
+    [Export] private Vector3 _rainOffset = new(0, 8, 0);
+    private GpuParticles3D _rainParticles;
+
+    // Rain
+    private Node3D _rainRig;
+
+    //Region rules (contains LocalSkySettings loaded from JSON)
+    private RegionRules _rules;
+
+    //Cached SkyDome node(Sky3D)
+    private Node _skyDome;
+
+    // Sky instance
+    private Node _skyInstance;
 
     // Time of day (0.0 – <24.0)
     private float _timeOfDay = 12.0f;
 
-    public GlobalSkyManager()
-    {
-    }
+    // Fog / environment
+    private WorldEnvironment _worldEnv;
+    
+    //Sky anker
+    private Node3D _skyRoot3D;
+
 
     public override void _Ready()
     {
+        //Debug methodcall
+        GD.Print("[Sky] GlobalSkyManager _Ready() entered");
+
         // Apply configuration overrides (if any)
         ApplyConfigOverridesIfAny();
 
         // Load and instantiate sky scene
         var skyScene = GD.Load<PackedScene>("res://Sky.tscn");
+        if (skyScene == null)
+        {
+            GD.PushError("[Sky] Failed to load res://Sky.tscn (PackedScene is null).");
+            return;
+        }
         _skyInstance = skyScene.Instantiate();
         _skyInstance.Name = "Sky";
         AddChild(_skyInstance);
-        // Apply local sky (preset + JSON overrides) if provided by region rules
-        ApplyLocalSkySettings(_rules?.LocalSky);
+        _skyRoot3D = _skyInstance as Node3D;
+        GD.Print($"[Sky] Sky root type: {_skyInstance.GetType().Name}, is Node3D={_skyRoot3D != null}");
 
+        // Apply local sky (preset + JSON overrides) if provided by region rules
         ApplyStartupParameters();
+        CallDeferred(nameof(ApplyLocalSkyAfterInit));
 
         // Camera follow target
-        _followTarget = GetParent().GetNodeOrNull<Node3D>("MainCamera");
+        // Find the main camera in the active scene tree (robust, independent of parenting)
+        _followTarget = GetTree().CurrentScene.FindChild("MainCamera", true, false) as Node3D;
         if (_followTarget == null)
-        {
-            GD.PushWarning("Follow target not found");
-        }
+            GD.PushWarning("[Sky] Follow target not found (MainCamera).");
 
         // Rain setup
         if (_rainEnabled)
@@ -96,41 +107,37 @@ public partial class GlobalSkyManager : Node
 
         // Fog / environment setup
         EnsureWorldEnvironment();
-        CacheBaseFog();
-        ApplyFogForRain(_rainEnabled);
-
-        // Apply environment override to camera
-        if (_followTarget is Camera3D cam)
-        {
-            cam.Environment = _env;
-            cam.Attributes = null;
-        }
-        else
-        {
-            GD.PushWarning("[Fog] FollowTarget is not a Camera3D - fog override not possible.");
-        }
+        //CacheBaseFog();
+        // ApplyFogForRain(_rainEnabled);
     }
 
     public override void _Process(double delta)
     {
-        if (!_rainEnabled) return;
         if (_followTarget == null) return;
 
-        // Keep rain rig centered on the camera
-        _rainRig.GlobalPosition = _followTarget.GlobalPosition + _rainOffset;
+        // --- Sky root follows camera position ---
+        if (_skyRoot3D != null)
+        {
+            _skyRoot3D.GlobalPosition = _followTarget.GlobalPosition;
+        }
 
-        // Rotate rain rig to match camera Y rotation
-        var t = _rainRig.GlobalTransform;
-        t.Basis = new Basis(new Vector3(0, 1, 0), _followTarget.GlobalBasis.GetEuler().Y);
-        _rainRig.GlobalTransform = t;
+        // --- Rain ---
+        if (_rainEnabled && _rainRig != null)
+        {
+            _rainRig.GlobalPosition = _followTarget.GlobalPosition + _rainOffset;
+
+            var t = _rainRig.GlobalTransform;
+            t.Basis = new Basis(new Vector3(0, 1, 0), _followTarget.GlobalBasis.GetEuler().Y);
+            _rainRig.GlobalTransform = t;
+        }
     }
 
-    //
+    //import settings
     public void Configure(GlobalSkySettings cfg)
     {
         _cfg = cfg;
     }
-    
+
     //Configure region rules (loaded from JSON)
     public void Configure(RegionRules rules)
     {
@@ -141,9 +148,11 @@ public partial class GlobalSkyManager : Node
     {
         // Locate TimeOfDay node inside Sky.tscn
         var tod = _skyInstance.GetNodeOrNull<Node>("TimeOfDay");
+        if (tod != null)
+            tod.Set("current_time", _timeOfDay);
+        else
+            GD.PushWarning("[Sky] TimeOfDay node not found in Sky.tscn");
 
-        // Set initial time of day
-        tod.Set("current_time", _timeOfDay);
     }
 
     private void EnsureWorldEnvironment()
@@ -169,46 +178,23 @@ public partial class GlobalSkyManager : Node
         GD.Print($"[Fog] Using WorldEnvironment: {_worldEnv.GetPath()}");
     }
 
-    private void CacheBaseFog()
+    private void ApplyLocalSkyAfterInit()
     {
-        _baseFogEnabled = _env.FogEnabled;
-        _baseFogDensity = _env.FogDensity;
-        _baseFogLightColor = _env.FogLightColor;
-        _baseFogLightEnergy = _env.FogLightEnergy;
+        EnsureSkyDome();
+        if (_skyDome == null) return;
+
+        // Sky3D builds parts of the scene asynchronously; during build it may overwrite fog parameters.
+        // Wait until SkyDome reports the scene is built.
+        var built = _skyDome.Get("is_scene_built").AsBool();
+        if (!built)
+        {
+            CallDeferred(nameof(ApplyLocalSkyAfterInit));
+            return;
+        }
+
+        ApplyLocalSkySettings(_rules?.LocalSky);
     }
 
-    private void ApplyFogForRain(bool raining)
-    {
-        if (!_fogAdjustForRain || _env == null) return;
-
-        if (raining)
-        {
-            _env.FogEnabled = true;
-            _env.FogMode = Environment.FogModeEnum.Exponential;
-
-            // Directly controlled via inspector
-            _env.FogDensity = _rainFogDensity;
-
-            // Do not multiply with base color (can cause unexpected brightness)
-            _env.FogLightColor = _rainFogLightTint;
-
-            // Light energy scaled relative to base
-            _env.FogLightEnergy = _baseFogLightEnergy * _rainFogSunAmountMultiplier;
-
-            GD.Print($"[Fog] Applied rain fog: Density={_env.FogDensity}, LightEnergy={_env.FogLightEnergy}, Color={_env.FogLightColor}");
-        }
-        else
-        {
-            _env.FogEnabled = _baseFogEnabled;
-            _env.FogMode = Environment.FogModeEnum.Exponential;
-
-            _env.FogDensity = _baseFogDensity;
-            _env.FogLightColor = _baseFogLightColor;
-            _env.FogLightEnergy = _baseFogLightEnergy;
-
-            GD.Print($"[Fog] Restored base fog: Density={_env.FogDensity}");
-        }
-    }
 
     private void CreateRainNodes()
     {
@@ -295,6 +281,39 @@ public partial class GlobalSkyManager : Node
 
         _timeOfDay = _cfg.TimeOfDay;
     }
+    
+    private void SetRainEnabled(bool enabled)
+    {
+        if (_rainEnabled == enabled) return;
+        _rainEnabled = enabled;
+
+        if (_rainEnabled)
+        {
+            // Create rain nodes if they don't exist yet
+            if (_rainRig == null || _rainParticles == null)
+            {
+                CreateRainNodes();
+                ConfigureRainBasics();
+                ConfigureRainMaterial();
+                ConfigureRainDrawPass();
+
+                // Place rain rig immediately at the camera
+                if (_followTarget != null)
+                    _rainRig.GlobalPosition = _followTarget.GlobalPosition + _rainOffset;
+            }
+            else
+            {
+                _rainParticles.Emitting = true;
+            }
+        }
+        else
+        {
+            // Stop emitting (keep nodes for fast re-enable)
+            if (_rainParticles != null)
+                _rainParticles.Emitting = false;
+        }
+    }
+
 
     // ---------------------------------------------------------------------
     // Local sky preset defaults (for LocalSkySettings)
@@ -312,7 +331,7 @@ public partial class GlobalSkyManager : Node
         {
             "clear" => new LocalSkySettings
             {
-                // Clear sky: minimal low clouds, slight high-altitude haze
+                // Clear sky: minimal high clouds, no fog
                 Preset = "Clear",
 
                 CirrusCoverage = 0.10f,
@@ -325,14 +344,19 @@ public partial class GlobalSkyManager : Node
                 AtmDarkness = 0.45f,
                 Exposure = 1.05f,
 
-                FogVisible = null,
+                // No fog in clear weather
+                FogVisible = false,
                 FogDensity = null,
-                RainEnabled = null
+                FogStart = null,
+                FogEnd = null,
+                FogFalloff = null,
+
+                RainEnabled = false
             },
 
             "stormy" => new LocalSkySettings
             {
-                // Stormy sky: dense low clouds and darker atmosphere
+                // Stormy weather: heavy rain haze, reduced visibility (not thick fog)
                 Preset = "Stormy",
 
                 CirrusCoverage = 0.60f,
@@ -345,14 +369,19 @@ public partial class GlobalSkyManager : Node
                 AtmDarkness = 0.70f,
                 Exposure = 0.85f,
 
+                // Rain-induced haze: visibility reduced by rain, not fog wall
                 FogVisible = true,
-                FogDensity = 0.0015f,
+                FogDensity = 0.0035f,
+                FogStart = 0f,
+                FogEnd = 250f,
+                FogFalloff = 2.0f,
+
                 RainEnabled = true
             },
 
             _ => new LocalSkySettings
             {
-                // Cloudy baseline
+                // Cloudy baseline: light atmospheric haze
                 Preset = "Cloudy",
 
                 CirrusCoverage = 0.45f,
@@ -365,136 +394,160 @@ public partial class GlobalSkyManager : Node
                 AtmDarkness = 0.55f,
                 Exposure = 0.95f,
 
-                FogVisible = null,
-                FogDensity = null,
-                RainEnabled = null
+                // Light humidity haze, clear near camera
+                FogVisible = true,
+                FogDensity = 0.0015f,
+                FogStart = 50f,
+                FogEnd = 700f,
+                FogFalloff = 1.2f,
+
+                RainEnabled = false
             }
         };
     }
-    
+
     // ---------------------------------------------------------------------
 // Applies LocalSkySettings to Sky3D's SkyDome.
 // - Loads preset defaults via GetLocalPreset()
 // - Overwrites defaults with any non-null JSON overrides
 // - Writes values to SkyDome via Set("property_name", value)
-//
-// NOTE:
-// SkyDome also has its own fog properties (fog_visible, fog_density).
-// You currently control fog via WorldEnvironment/Environment.
-// If you want, you can still write SkyDome fog values too (see below),
-// but be aware you may end up with "two fog systems" affecting visuals.
 // ---------------------------------------------------------------------
-public void ApplyLocalSkySettings(LocalSkySettings settings)
-{
-    if (settings == null) return;
-
-    // Find SkyDome lazily (only when needed)
-    EnsureSkyDome();
-
-    if (_skyDome == null)
+    public void ApplyLocalSkySettings(LocalSkySettings settings)
     {
-        GD.PushWarning("[Sky] SkyDome node not found. Cannot apply LocalSkySettings.");
-        return;
+        if (settings == null) return;
+
+        // Find SkyDome lazily (only when needed)
+        EnsureSkyDome();
+
+        if (_skyDome == null)
+        {
+            GD.PushWarning("[Sky] SkyDome node not found. Cannot apply LocalSkySettings.");
+            return;
+        }
+
+        // 1) Start with preset defaults
+        var merged = GetLocalPreset(settings.Preset);
+
+        // 2) Overwrite with JSON overrides (only if set)
+        MergeLocalSkySettings(merged, settings);
+
+        // 3) Apply to SkyDome (Sky3D property names from the editor docs)
+        ApplyToSkyDome(merged);
     }
 
-    // 1) Start with preset defaults
-    var merged = GetLocalPreset(settings.Preset);
-
-    // 2) Overwrite with JSON overrides (only if set)
-    MergeLocalSkySettings(merged, settings);
-
-    // 3) Apply to SkyDome (Sky3D property names from the editor docs)
-    ApplyToSkyDome(merged);
-}
-
-private void EnsureSkyDome()
-{
-    if (_skyDome != null) return;
-    if (_skyInstance == null) return;
-
-    // SkyDome is usually a direct child of Sky.tscn root
-    _skyDome = _skyInstance.GetNodeOrNull<Node>("SkyDome");
-
-    // Fallback: search anywhere under the Sky instance
-    if (_skyDome == null)
-        _skyDome = _skyInstance.FindChild("SkyDome", true, false);
-}
-
-private static void MergeLocalSkySettings(LocalSkySettings target, LocalSkySettings overrides)
-{
-    // Preset name itself is not important after merging; it is only used for lookup.
-
-    if (overrides.CirrusCoverage.HasValue)   target.CirrusCoverage = overrides.CirrusCoverage.Value;
-    if (overrides.CirrusThickness.HasValue)  target.CirrusThickness = overrides.CirrusThickness.Value;
-
-    if (overrides.CumulusCoverage.HasValue)  target.CumulusCoverage = overrides.CumulusCoverage.Value;
-    if (overrides.CumulusThickness.HasValue) target.CumulusThickness = overrides.CumulusThickness.Value;
-
-    if (overrides.WindSpeed.HasValue)        target.WindSpeed = overrides.WindSpeed.Value;
-    if (overrides.WindDirection.HasValue)    target.WindDirection = overrides.WindDirection.Value;
-
-    if (overrides.AtmDarkness.HasValue)      target.AtmDarkness = overrides.AtmDarkness.Value;
-    if (overrides.Exposure.HasValue)         target.Exposure = overrides.Exposure.Value;
-
-    if (overrides.FogVisible.HasValue)       target.FogVisible = overrides.FogVisible.Value;
-    if (overrides.FogDensity.HasValue)       target.FogDensity = overrides.FogDensity.Value;
-
-    if (overrides.RainEnabled.HasValue)      target.RainEnabled = overrides.RainEnabled.Value;
-}
-
-private void ApplyToSkyDome(LocalSkySettings s)
-{
-    // --- Cirrus (high thin clouds) ---
-    if (s.CirrusCoverage.HasValue)
+    private void EnsureSkyDome()
     {
-        _skyDome.Set("cirrus_visible", s.CirrusCoverage.Value > 0.001f);
-        _skyDome.Set("cirrus_coverage", s.CirrusCoverage.Value);
-    }
-    if (s.CirrusThickness.HasValue)
-        _skyDome.Set("cirrus_thickness", s.CirrusThickness.Value);
+        if (_skyDome != null) return;
+        if (_skyInstance == null) return;
 
-    // --- Cumulus (low clouds) ---
-    if (s.CumulusCoverage.HasValue)
+        // SkyDome is usually a direct child of Sky.tscn root
+        _skyDome = _skyInstance.GetNodeOrNull<Node>("SkyDome");
+
+        // Fallback: search anywhere under the Sky instance
+        if (_skyDome == null)
+            _skyDome = _skyInstance.FindChild("SkyDome", true, false);
+        if (_skyDome != null)
+            GD.Print($"[Sky] SkyDome resolved to: {_skyDome.GetPath()} ({_skyDome.GetType().Name})");
+        GD.Print($"[Sky] SkyDome type: {_skyDome?.GetType().Name}");
+
+    }
+
+    private static void MergeLocalSkySettings(LocalSkySettings target, LocalSkySettings overrides)
     {
-        _skyDome.Set("cumulus_visible", s.CumulusCoverage.Value > 0.001f);
-        _skyDome.Set("cumulus_coverage", s.CumulusCoverage.Value);
+        // Preset name itself is not important after merging; it is only used for lookup.
+
+        if (overrides.CirrusCoverage.HasValue) target.CirrusCoverage = overrides.CirrusCoverage.Value;
+        if (overrides.CirrusThickness.HasValue) target.CirrusThickness = overrides.CirrusThickness.Value;
+
+        if (overrides.CumulusCoverage.HasValue) target.CumulusCoverage = overrides.CumulusCoverage.Value;
+        if (overrides.CumulusThickness.HasValue) target.CumulusThickness = overrides.CumulusThickness.Value;
+
+        if (overrides.WindSpeed.HasValue) target.WindSpeed = overrides.WindSpeed.Value;
+        if (overrides.WindDirection.HasValue) target.WindDirection = overrides.WindDirection.Value;
+
+        if (overrides.AtmDarkness.HasValue) target.AtmDarkness = overrides.AtmDarkness.Value;
+        if (overrides.Exposure.HasValue) target.Exposure = overrides.Exposure.Value;
+
+        if (overrides.FogVisible.HasValue) target.FogVisible = overrides.FogVisible.Value;
+        if (overrides.FogDensity.HasValue) target.FogDensity = overrides.FogDensity.Value;
+        if (overrides.FogStart.HasValue) target.FogStart = overrides.FogStart.Value;
+        if (overrides.FogEnd.HasValue) target.FogEnd = overrides.FogEnd.Value;
+        if (overrides.FogFalloff.HasValue) target.FogFalloff = overrides.FogFalloff.Value;
+        
+        if (overrides.RainEnabled.HasValue) target.RainEnabled = overrides.RainEnabled.Value;
+        
     }
-    if (s.CumulusThickness.HasValue)
-        _skyDome.Set("cumulus_thickness", s.CumulusThickness.Value);
 
-    // --- Wind ---
-    if (s.WindSpeed.HasValue)
-        _skyDome.Set("wind_speed", s.WindSpeed.Value);
-    if (s.WindDirection.HasValue)
-        _skyDome.Set("wind_direction", s.WindDirection.Value);
-
-    // --- Atmosphere / exposure ---
-    if (s.AtmDarkness.HasValue)
-        _skyDome.Set("atm_darkness", s.AtmDarkness.Value);
-    if (s.Exposure.HasValue)
-        _skyDome.Set("exposure", s.Exposure.Value);
-
-    // --- Optional: SkyDome fog ---
-    // If you want the SkyDome fog layer, uncomment these.
-    // WARNING: You already use Environment fog; using both may look too strong.
-    /*
-    if (s.FogVisible.HasValue)
-        _skyDome.Set("fog_visible", s.FogVisible.Value);
-    if (s.FogDensity.HasValue)
-        _skyDome.Set("fog_density", s.FogDensity.Value);
-    */
-
-    // --- Optional: RainEnabled ---
-    // Your current rain setup creates particles only in _Ready() if _rainEnabled is true.
-    // Toggling rain at runtime requires additional logic (create/remove rain nodes).
-    // For now, we only store the value (no behavior change).
-    if (s.RainEnabled.HasValue)
+    private void ApplyToSkyDome(LocalSkySettings s)
     {
-        // Keep this as a stored flag. Runtime toggling needs extra code.
-        _rainEnabled = s.RainEnabled.Value;
-    }
-}
+        // --- Cirrus (high thin clouds) ---
+        if (s.CirrusCoverage.HasValue)
+        {
+            _skyDome.Set("cirrus_visible", s.CirrusCoverage.Value > 0.001f);
+            _skyDome.Set("cirrus_coverage", s.CirrusCoverage.Value);
+        }
 
-    
-    
+        if (s.CirrusThickness.HasValue)
+            _skyDome.Set("cirrus_thickness", s.CirrusThickness.Value);
+
+        // --- Cumulus (low clouds) ---
+        if (s.CumulusCoverage.HasValue)
+        {
+            _skyDome.Set("cumulus_visible", s.CumulusCoverage.Value > 0.001f);
+            _skyDome.Set("cumulus_coverage", s.CumulusCoverage.Value);
+        }
+
+        if (s.CumulusThickness.HasValue)
+            _skyDome.Set("cumulus_thickness", s.CumulusThickness.Value);
+
+        // --- Wind ---
+        if (s.WindSpeed.HasValue)
+            _skyDome.Set("wind_speed", s.WindSpeed.Value);
+        if (s.WindDirection.HasValue)
+            _skyDome.Set("wind_direction", s.WindDirection.Value);
+
+        // --- Atmosphere / exposure ---
+        if (s.AtmDarkness.HasValue)
+            _skyDome.Set("atm_darkness", s.AtmDarkness.Value);
+        if (s.Exposure.HasValue)
+            _skyDome.Set("exposure", s.Exposure.Value);
+        
+        // Rain
+        if (s.RainEnabled.HasValue)
+            SetRainEnabled(s.RainEnabled.Value);
+
+        // --- Optional: SkyDome fog ---
+        if (s.FogVisible.HasValue || s.FogDensity.HasValue)
+        {
+            // Render fog on layer 1 so the default camera can see it.
+            _skyDome.Set("fog_layers", 1);
+            _skyDome.Set("fog_render_priority", 100);
+        }
+        
+        if (s.FogVisible.HasValue)
+            _skyDome.Set("fog_visible", s.FogVisible.Value);
+        if (s.FogDensity.HasValue)
+            _skyDome.Set("fog_density", s.FogDensity.Value);
+        
+        if (s.FogStart.HasValue)
+            _skyDome.Set("fog_start", s.FogStart.Value);
+
+        if (s.FogEnd.HasValue)
+            _skyDome.Set("fog_end", s.FogEnd.Value);
+
+        if (s.FogFalloff.HasValue)
+            _skyDome.Set("fog_falloff", s.FogFalloff.Value);
+        
+        GD.Print($"[SkyFog] After Set -> end={_skyDome.Get("fog_end")}, falloff={_skyDome.Get("fog_falloff")}");
+
+
+
+        // --- Optional: RainEnabled ---
+        // Your current rain setup creates particles only in _Ready() if _rainEnabled is true.
+        // Toggling rain at runtime requires additional logic (create/remove rain nodes).
+        // For now, we only store the value (no behavior change).
+        // if (s.RainEnabled.HasValue)
+            // Keep this as a stored flag. Runtime toggling needs extra code.
+            // _rainEnabled = s.RainEnabled.Value;
+    }
 }
