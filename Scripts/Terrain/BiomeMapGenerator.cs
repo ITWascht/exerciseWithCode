@@ -1,7 +1,10 @@
 using Godot;
 
 namespace SzeneGenerator;
-
+/// <summary>
+/// Generates biome distribution maps used for terrain texturing and object spawning.
+/// Supports simple splits and height/slope-based procedural biome assignment.
+/// </summary>
 public static class BiomeMapGenerator
 {
     // 0 = field, 1 = forest (minimal)

@@ -4,6 +4,12 @@ using System.Threading.Tasks;
 
 namespace SzeneGenerator;
 
+/// <summary>
+/// Central coordinator responsible for building the procedural world.
+/// Initializes sky, terrain, spawning, camera placement, and triggers
+/// screenshot and metadata export.
+/// </summary>
+
 public partial class WorldManager : Node3D
 {
     private GlobalSkyManager _skyManager;
@@ -13,6 +19,11 @@ public partial class WorldManager : Node3D
 
 
     //configimport Worlsettings
+    /// <summary>
+    /// Entry point of the world generation pipeline.
+    /// Loads region rules, initializes environment systems, spawns terrain and objects,
+    /// positions the camera, and produces the final screenshot and JSON output.
+    /// </summary>
     public override async void _Ready()
     {
         GD.Print("=== WorldManager BUILD MARKER 2026-01-23 A ===");

@@ -1,7 +1,9 @@
 ﻿using Godot;
 
 namespace SzeneGenerator;
-
+/// <summary>
+/// Lightweight noise-based heightmap generator producing normalized values (0..1).
+/// </summary>
 public class SimpleNoiseGenerator
 {
     private readonly FastNoiseLite _noise;

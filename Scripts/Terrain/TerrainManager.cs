@@ -3,6 +3,11 @@ using Godot;
 using Environment = System.Environment;
 
 namespace SzeneGenerator;
+/// <summary>
+/// Generates terrain geometry, applies heightmaps and biome texturing,
+/// and spawns environment objects based on region configuration.
+/// Provides terrain height sampling and target spawn data for camera placement.
+/// </summary>
 
 public partial class TerrainManager : Node
 {
@@ -31,7 +36,10 @@ public partial class TerrainManager : Node
     [Signal]
     public delegate void TargetsReadyEventHandler();
 
-
+    /// <summary>
+    /// Builds terrain data, applies assets and biome rules, and prepares spawn targets.
+    /// Emits the TargetsReady signal when object spawning is completed.
+    /// </summary>
     public void Initialize(Node parent)
     {
         // Seed configuration

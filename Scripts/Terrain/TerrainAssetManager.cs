@@ -1,7 +1,9 @@
 ﻿using Godot;
 
 namespace SzeneGenerator;
-
+/// <summary>
+/// Creates and applies Terrain3D asset resources (textures) from a RegionAssetSet.
+/// </summary>
 public class TerrainAssetManager
 {
     public GodotObject CreateAssetsFrom(RegionAssetSet set)

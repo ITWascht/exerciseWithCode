@@ -4,7 +4,11 @@ using System.Diagnostics.CodeAnalysis;
 using Godot;
 
 namespace SzeneGenerator;
-
+/// <summary>
+/// Places environment objects and targets into the scene based on biome,
+/// height, slope, and distance rules defined in region configuration.
+/// Returns all spawned objects marked as targets.
+/// </summary>
 public class ObjectSpawner
 {
     private readonly int _depth;

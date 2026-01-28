@@ -3,7 +3,10 @@ using Godot;
 using Godot.Collections;
 
 namespace SzeneGenerator;
-
+/// <summary>
+/// Creates procedural heightmaps and control maps for Terrain3D,
+/// applying noise, terrain rules, biome blending, and slope-based layer selection.
+/// </summary>
 public class HeightMapCreator
 {
     private readonly int _depth;
@@ -56,6 +59,10 @@ public class HeightMapCreator
         _biome = biome;
     }
 
+    /// <summary>
+    /// Generates the heightmap image, applies it to Terrain3D data,
+    /// and returns normalized height values for further processing.
+    /// </summary>
     public float[,] GenerateAndApplyHeightMap(GodotObject terrainData)
     {
         // instanziate Noise-Generator 

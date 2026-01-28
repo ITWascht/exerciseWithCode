@@ -1,5 +1,8 @@
 namespace SzeneGenerator;
-
+/// <summary>
+/// Region-specific rules loaded from JSON controlling terrain layers,
+/// spawning behavior, and local sky settings.
+/// </summary>
 public class RegionRules
 {
     public string RegionId { get; set; }
@@ -100,7 +103,18 @@ public class LocalSkySettings
     public float? FogEnd { get; set; }
     public float? FogFalloff { get; set; }
 
-
     // Optional: Region forces Rain
     public bool? RainEnabled { get; set; }
+    // Rain intensity in range [0..1]. Used to scale particle amount and fall feel.
+    public float? RainIntensity { get; set; }
+    // Enable snow particles (visual only).
+    public bool? SnowEnabled { get; set; }
+    // Snow intensity in range [0..1]. Used to scale particle amount.
+    public float? SnowIntensity { get; set; } 
+    // Snow visual profile: "light", "heavy", "blizzard"
+    public string SnowProfile { get; set; }
+    // Rain visual profile: "light", "heavy", "storm" (optional)
+    public string RainProfile { get; set; }
+
+
 }

@@ -5,7 +5,10 @@ using Godot;
 using System.IO;
 
 namespace SzeneGenerator;
-
+/// <summary>
+/// Free-fly camera with preset views and procedural spawn logic.
+/// Can position itself relative to targets while keeping them inside the view frustum.
+/// </summary>
 public partial class SimpleCamera : Camera3D
 {
     private Node3D _currentTarget;
@@ -160,6 +163,10 @@ public partial class SimpleCamera : Camera3D
                pos.Z <= _maxZ - _edgeMarginMeters;
     }
     
+    /// <summary>
+    /// Attempts to spawn the camera at a random valid position based on a preset,
+    /// ensuring terrain bounds, visibility of a target, and optional line-of-sight.
+    /// </summary>
     public bool SpawnRandomFromPreset(int seed, int presetId, CameraTargetPreset focusPreset)
 {
     if (focusPreset == null) return false;
@@ -427,7 +434,7 @@ public partial class SimpleCamera : Camera3D
         int seed = 0)
     {
         // 1) Wait a few frames to ensure everything is rendered (e.g., particles/weather)
-        var framesToWait = 10; // 5–15 is typically enough
+        var framesToWait = 200; // 5–15 is typically enough
         for (var i = 0; i < framesToWait; i++)
             await ToSignal(GetTree(), SceneTree.SignalName.ProcessFrame);
 

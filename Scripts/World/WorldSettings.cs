@@ -2,7 +2,9 @@ using System.Collections.Generic;
 using Godot;
 
 namespace SzeneGenerator;
-
+/// <summary>
+/// Root configuration container for terrain, sky, and camera settings.
+/// </summary>
 public class WorldSettings
 {
     public TerrainSettings Terrain { get; set; } = new();
@@ -70,7 +72,7 @@ public class GlobalSkySettings
     // Rain fog adjustments
     public bool FogAdjustForRain { get; set; } = true;
     public float RainFogDensity { get; set; } = 0.012f;
-    public float RainFogDensityMultiplier { get; set; } = 1.0f;
+    //public float RainFogDensityMultiplier { get; set; } = 1.0f;
     public float RainFogSunAmountMultiplier { get; set; } = 0.5f;
     public Color RainFogLightTint { get; set; } = new(0.85f, 0.9f, 1.0f);
 

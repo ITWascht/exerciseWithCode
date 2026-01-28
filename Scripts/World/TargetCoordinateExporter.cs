@@ -2,7 +2,9 @@ using Godot;
 using System.Collections.Generic;
 
 namespace SzeneGenerator;
-
+/// <summary>
+/// Exports spawned target objects (including metadata like asset_id) to a JSON file.
+/// </summary>
 public static class TargetCoordinateExporter
 {
     // Exports target transforms (and optional metadata) into a JSON file.
