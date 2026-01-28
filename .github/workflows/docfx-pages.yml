@@ -34,14 +34,18 @@ jobs:
       - name: Build (Debug)
         run: dotnet build SzeneGenerator.csproj -c Debug --no-restore
 
-      - name: Install DocFX
-        run: dotnet tool install -g docfx
+      - name: Install DocFX (local tool)
+        working-directory: docs
+        run: |
+          dotnet new tool-manifest
+          dotnet tool install docfx
 
       - name: DocFX Build
         working-directory: docs
         run: |
-          docfx metadata
-          docfx build
+          dotnet tool run docfx metadata
+          dotnet tool run docfx build
+
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
