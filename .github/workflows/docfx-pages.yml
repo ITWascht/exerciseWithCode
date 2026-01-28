@@ -1,0 +1,60 @@
+name: Build & Deploy DocFX to GitHub Pages
+
+on:
+  push:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Restore
+        run: dotnet restore SzeneGenerator.csproj
+
+      # Wichtig: erzeugt DLL + XML in .godot/mono/temp/bin/Debug (wie bei dir lokal)
+      - name: Build (Debug)
+        run: dotnet build SzeneGenerator.csproj -c Debug --no-restore
+
+      - name: Install DocFX
+        run: dotnet tool install -g docfx
+
+      - name: DocFX Build
+        working-directory: docs
+        run: |
+          docfx metadata
+          docfx build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
