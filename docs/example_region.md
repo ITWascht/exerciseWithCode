@@ -89,7 +89,7 @@ This object:
 | Setting | Value | Effect |
 |--------|------|-------|
 | preset | Stormy | Dark sky and heavy clouds |
-| rainEnabled | true | Rain system active |
+| rainEnabled | false | Rain system inactive |
 | rainProfile | storm | Intense rainfall visuals |
 | snowEnabled | false | No snowfall |
 
@@ -192,9 +192,9 @@ This prevents unrealistic snow on cliffs.
 | Setting | Value | Effect |
 |--------|------|-------|
 | preset | Stormy | Dark sky and heavy cloud cover |
-| rainEnabled | true | Rain system active |
+| rainEnabled | false | Rain system inactive |
 | rainProfile | storm | Intense precipitation visuals |
-| snowEnabled | false | Snow particles disabled |
+| snowEnabled | true | Snow particles active |
 
 Despite the snowy terrain, active precipitation is configured as storm rain for dramatic atmosphere.
 
