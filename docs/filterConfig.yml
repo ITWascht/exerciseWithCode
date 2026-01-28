@@ -1,0 +1,30 @@
+apiRules:
+  # Godot-Kram ausblenden (Namespaces)
+  - exclude:
+      uidRegex: ^Godot(\.|$)
+      type: Namespace
+
+  - exclude:
+      uidRegex: ^GodotNativeInterop(\.|$)
+      type: Namespace
+
+  - exclude:
+      uidRegex: ^System(\.|$)
+      type: Namespace
+
+  - exclude:
+      uidRegex: ^Microsoft(\.|$)
+      type: Namespace
+
+  # Godot generiert oft solche Nested-Types -> raus damit
+  - exclude:
+      uidRegex: \.MethodName$
+      type: Type
+
+  - exclude:
+      uidRegex: \.PropertyName$
+      type: Type
+
+  - exclude:
+      uidRegex: \.SignalName$
+      type: Type

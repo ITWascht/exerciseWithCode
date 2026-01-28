@@ -1,0 +1,2086 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct Vector3I | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Vector3I | mysite ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Godot.Vector3I">
+
+
+
+  <h1 id="Godot_Vector3I" data-uid="Godot.Vector3I" class="text-break">
+Struct Vector3I  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Godot.html">Godot</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GodotSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Vector3I : IEquatable&lt;Vector3I&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Godot.Vector3I.html">Vector3I</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Godot_Vector3I__ctor_" data-uid="Godot.Vector3I.#ctor*"></a>
+
+  <h3 id="Godot_Vector3I__ctor_System_Int32_System_Int32_System_Int32_" data-uid="Godot.Vector3I.#ctor(System.Int32,System.Int32,System.Int32)">
+  Vector3I(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3I(int x, int y, int z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>y</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>z</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Godot_Vector3I_X" data-uid="Godot.Vector3I.X">
+  X
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int X</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Godot_Vector3I_Y" data-uid="Godot.Vector3I.Y">
+  Y
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Y</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Godot_Vector3I_Z" data-uid="Godot.Vector3I.Z">
+  Z
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Z</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Godot_Vector3I_Back_" data-uid="Godot.Vector3I.Back*"></a>
+
+  <h3 id="Godot_Vector3I_Back" data-uid="Godot.Vector3I.Back">
+  Back
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I Back { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Down_" data-uid="Godot.Vector3I.Down*"></a>
+
+  <h3 id="Godot_Vector3I_Down" data-uid="Godot.Vector3I.Down">
+  Down
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I Down { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Forward_" data-uid="Godot.Vector3I.Forward*"></a>
+
+  <h3 id="Godot_Vector3I_Forward" data-uid="Godot.Vector3I.Forward">
+  Forward
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I Forward { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Item_" data-uid="Godot.Vector3I.Item*"></a>
+
+  <h3 id="Godot_Vector3I_Item_System_Int32_" data-uid="Godot.Vector3I.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int this[int index] { readonly get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Left_" data-uid="Godot.Vector3I.Left*"></a>
+
+  <h3 id="Godot_Vector3I_Left" data-uid="Godot.Vector3I.Left">
+  Left
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I Left { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_MaxValue_" data-uid="Godot.Vector3I.MaxValue*"></a>
+
+  <h3 id="Godot_Vector3I_MaxValue" data-uid="Godot.Vector3I.MaxValue">
+  MaxValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I MaxValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_MinValue_" data-uid="Godot.Vector3I.MinValue*"></a>
+
+  <h3 id="Godot_Vector3I_MinValue" data-uid="Godot.Vector3I.MinValue">
+  MinValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I MinValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_One_" data-uid="Godot.Vector3I.One*"></a>
+
+  <h3 id="Godot_Vector3I_One" data-uid="Godot.Vector3I.One">
+  One
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I One { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Right_" data-uid="Godot.Vector3I.Right*"></a>
+
+  <h3 id="Godot_Vector3I_Right" data-uid="Godot.Vector3I.Right">
+  Right
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I Right { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Up_" data-uid="Godot.Vector3I.Up*"></a>
+
+  <h3 id="Godot_Vector3I_Up" data-uid="Godot.Vector3I.Up">
+  Up
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I Up { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Zero_" data-uid="Godot.Vector3I.Zero*"></a>
+
+  <h3 id="Godot_Vector3I_Zero" data-uid="Godot.Vector3I.Zero">
+  Zero
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I Zero { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Godot_Vector3I_Abs_" data-uid="Godot.Vector3I.Abs*"></a>
+
+  <h3 id="Godot_Vector3I_Abs" data-uid="Godot.Vector3I.Abs">
+  Abs()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector3I Abs()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Clamp_" data-uid="Godot.Vector3I.Clamp*"></a>
+
+  <h3 id="Godot_Vector3I_Clamp_Godot_Vector3I_Godot_Vector3I_" data-uid="Godot.Vector3I.Clamp(Godot.Vector3I,Godot.Vector3I)">
+  Clamp(Vector3I, Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector3I Clamp(Vector3I min, Vector3I max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>min</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Clamp_" data-uid="Godot.Vector3I.Clamp*"></a>
+
+  <h3 id="Godot_Vector3I_Clamp_System_Int32_System_Int32_" data-uid="Godot.Vector3I.Clamp(System.Int32,System.Int32)">
+  Clamp(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector3I Clamp(int min, int max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>min</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>max</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Deconstruct_" data-uid="Godot.Vector3I.Deconstruct*"></a>
+
+  <h3 id="Godot_Vector3I_Deconstruct_System_Int32__System_Int32__System_Int32__" data-uid="Godot.Vector3I.Deconstruct(System.Int32@,System.Int32@,System.Int32@)">
+  Deconstruct(out int, out int, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly void Deconstruct(out int x, out int y, out int z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>y</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>z</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_DistanceSquaredTo_" data-uid="Godot.Vector3I.DistanceSquaredTo*"></a>
+
+  <h3 id="Godot_Vector3I_DistanceSquaredTo_Godot_Vector3I_" data-uid="Godot.Vector3I.DistanceSquaredTo(Godot.Vector3I)">
+  DistanceSquaredTo(Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int DistanceSquaredTo(Vector3I to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>to</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_DistanceTo_" data-uid="Godot.Vector3I.DistanceTo*"></a>
+
+  <h3 id="Godot_Vector3I_DistanceTo_Godot_Vector3I_" data-uid="Godot.Vector3I.DistanceTo(Godot.Vector3I)">
+  DistanceTo(Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float DistanceTo(Vector3I to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>to</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Equals_" data-uid="Godot.Vector3I.Equals*"></a>
+
+  <h3 id="Godot_Vector3I_Equals_Godot_Vector3I_" data-uid="Godot.Vector3I.Equals(Godot.Vector3I)">
+  Equals(Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(Vector3I other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Equals_" data-uid="Godot.Vector3I.Equals*"></a>
+
+  <h3 id="Godot_Vector3I_Equals_System_Object_" data-uid="Godot.Vector3I.Equals(System.Object)">
+  Equals(object?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">object</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_GetHashCode_" data-uid="Godot.Vector3I.GetHashCode*"></a>
+
+  <h3 id="Godot_Vector3I_GetHashCode" data-uid="Godot.Vector3I.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Length_" data-uid="Godot.Vector3I.Length*"></a>
+
+  <h3 id="Godot_Vector3I_Length" data-uid="Godot.Vector3I.Length">
+  Length()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float Length()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_LengthSquared_" data-uid="Godot.Vector3I.LengthSquared*"></a>
+
+  <h3 id="Godot_Vector3I_LengthSquared" data-uid="Godot.Vector3I.LengthSquared">
+  LengthSquared()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int LengthSquared()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Max_" data-uid="Godot.Vector3I.Max*"></a>
+
+  <h3 id="Godot_Vector3I_Max_Godot_Vector3I_" data-uid="Godot.Vector3I.Max(Godot.Vector3I)">
+  Max(Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector3I Max(Vector3I with)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>with</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Max_" data-uid="Godot.Vector3I.Max*"></a>
+
+  <h3 id="Godot_Vector3I_Max_System_Int32_" data-uid="Godot.Vector3I.Max(System.Int32)">
+  Max(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector3I Max(int with)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>with</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_MaxAxisIndex_" data-uid="Godot.Vector3I.MaxAxisIndex*"></a>
+
+  <h3 id="Godot_Vector3I_MaxAxisIndex" data-uid="Godot.Vector3I.MaxAxisIndex">
+  MaxAxisIndex()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector3I.Axis MaxAxisIndex()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a>.<a class="xref" href="Godot.Vector3I.Axis.html">Axis</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Min_" data-uid="Godot.Vector3I.Min*"></a>
+
+  <h3 id="Godot_Vector3I_Min_Godot_Vector3I_" data-uid="Godot.Vector3I.Min(Godot.Vector3I)">
+  Min(Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector3I Min(Vector3I with)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>with</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Min_" data-uid="Godot.Vector3I.Min*"></a>
+
+  <h3 id="Godot_Vector3I_Min_System_Int32_" data-uid="Godot.Vector3I.Min(System.Int32)">
+  Min(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector3I Min(int with)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>with</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_MinAxisIndex_" data-uid="Godot.Vector3I.MinAxisIndex*"></a>
+
+  <h3 id="Godot_Vector3I_MinAxisIndex" data-uid="Godot.Vector3I.MinAxisIndex">
+  MinAxisIndex()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector3I.Axis MinAxisIndex()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a>.<a class="xref" href="Godot.Vector3I.Axis.html">Axis</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Sign_" data-uid="Godot.Vector3I.Sign*"></a>
+
+  <h3 id="Godot_Vector3I_Sign" data-uid="Godot.Vector3I.Sign">
+  Sign()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector3I Sign()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Snapped_" data-uid="Godot.Vector3I.Snapped*"></a>
+
+  <h3 id="Godot_Vector3I_Snapped_Godot_Vector3I_" data-uid="Godot.Vector3I.Snapped(Godot.Vector3I)">
+  Snapped(Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector3I Snapped(Vector3I step)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>step</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_Snapped_" data-uid="Godot.Vector3I.Snapped*"></a>
+
+  <h3 id="Godot_Vector3I_Snapped_System_Int32_" data-uid="Godot.Vector3I.Snapped(System.Int32)">
+  Snapped(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector3I Snapped(int step)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>step</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_ToString_" data-uid="Godot.Vector3I.ToString*"></a>
+
+  <h3 id="Godot_Vector3I_ToString" data-uid="Godot.Vector3I.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_ToString_" data-uid="Godot.Vector3I.ToString*"></a>
+
+  <h3 id="Godot_Vector3I_ToString_System_String_" data-uid="Godot.Vector3I.ToString(System.String)">
+  ToString(string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string ToString(string? format)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Godot_Vector3I_op_Addition_" data-uid="Godot.Vector3I.op_Addition*"></a>
+
+  <h3 id="Godot_Vector3I_op_Addition_Godot_Vector3I_Godot_Vector3I_" data-uid="Godot.Vector3I.op_Addition(Godot.Vector3I,Godot.Vector3I)">
+  operator +(Vector3I, Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I operator +(Vector3I left, Vector3I right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_Division_" data-uid="Godot.Vector3I.op_Division*"></a>
+
+  <h3 id="Godot_Vector3I_op_Division_Godot_Vector3I_Godot_Vector3I_" data-uid="Godot.Vector3I.op_Division(Godot.Vector3I,Godot.Vector3I)">
+  operator /(Vector3I, Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I operator /(Vector3I vec, Vector3I divisorv)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vec</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+    <dt><code>divisorv</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_Division_" data-uid="Godot.Vector3I.op_Division*"></a>
+
+  <h3 id="Godot_Vector3I_op_Division_Godot_Vector3I_System_Int32_" data-uid="Godot.Vector3I.op_Division(Godot.Vector3I,System.Int32)">
+  operator /(Vector3I, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I operator /(Vector3I vec, int divisor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vec</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+    <dt><code>divisor</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_Equality_" data-uid="Godot.Vector3I.op_Equality*"></a>
+
+  <h3 id="Godot_Vector3I_op_Equality_Godot_Vector3I_Godot_Vector3I_" data-uid="Godot.Vector3I.op_Equality(Godot.Vector3I,Godot.Vector3I)">
+  operator ==(Vector3I, Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Vector3I left, Vector3I right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_Explicit_" data-uid="Godot.Vector3I.op_Explicit*"></a>
+
+  <h3 id="Godot_Vector3I_op_Explicit_Godot_Vector3__Godot_Vector3I" data-uid="Godot.Vector3I.op_Explicit(Godot.Vector3)~Godot.Vector3I">
+  explicit operator Vector3I(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator Vector3I(Vector3 value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_GreaterThan_" data-uid="Godot.Vector3I.op_GreaterThan*"></a>
+
+  <h3 id="Godot_Vector3I_op_GreaterThan_Godot_Vector3I_Godot_Vector3I_" data-uid="Godot.Vector3I.op_GreaterThan(Godot.Vector3I,Godot.Vector3I)">
+  operator &gt;(Vector3I, Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(Vector3I left, Vector3I right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_GreaterThanOrEqual_" data-uid="Godot.Vector3I.op_GreaterThanOrEqual*"></a>
+
+  <h3 id="Godot_Vector3I_op_GreaterThanOrEqual_Godot_Vector3I_Godot_Vector3I_" data-uid="Godot.Vector3I.op_GreaterThanOrEqual(Godot.Vector3I,Godot.Vector3I)">
+  operator &gt;=(Vector3I, Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(Vector3I left, Vector3I right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_Implicit_" data-uid="Godot.Vector3I.op_Implicit*"></a>
+
+  <h3 id="Godot_Vector3I_op_Implicit_Godot_Vector3I__Godot_Vector3" data-uid="Godot.Vector3I.op_Implicit(Godot.Vector3I)~Godot.Vector3">
+  implicit operator Vector3(Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Vector3(Vector3I value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_Inequality_" data-uid="Godot.Vector3I.op_Inequality*"></a>
+
+  <h3 id="Godot_Vector3I_op_Inequality_Godot_Vector3I_Godot_Vector3I_" data-uid="Godot.Vector3I.op_Inequality(Godot.Vector3I,Godot.Vector3I)">
+  operator !=(Vector3I, Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Vector3I left, Vector3I right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_LessThan_" data-uid="Godot.Vector3I.op_LessThan*"></a>
+
+  <h3 id="Godot_Vector3I_op_LessThan_Godot_Vector3I_Godot_Vector3I_" data-uid="Godot.Vector3I.op_LessThan(Godot.Vector3I,Godot.Vector3I)">
+  operator &lt;(Vector3I, Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(Vector3I left, Vector3I right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_LessThanOrEqual_" data-uid="Godot.Vector3I.op_LessThanOrEqual*"></a>
+
+  <h3 id="Godot_Vector3I_op_LessThanOrEqual_Godot_Vector3I_Godot_Vector3I_" data-uid="Godot.Vector3I.op_LessThanOrEqual(Godot.Vector3I,Godot.Vector3I)">
+  operator &lt;=(Vector3I, Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(Vector3I left, Vector3I right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_Modulus_" data-uid="Godot.Vector3I.op_Modulus*"></a>
+
+  <h3 id="Godot_Vector3I_op_Modulus_Godot_Vector3I_Godot_Vector3I_" data-uid="Godot.Vector3I.op_Modulus(Godot.Vector3I,Godot.Vector3I)">
+  operator %(Vector3I, Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I operator %(Vector3I vec, Vector3I divisorv)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vec</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+    <dt><code>divisorv</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_Modulus_" data-uid="Godot.Vector3I.op_Modulus*"></a>
+
+  <h3 id="Godot_Vector3I_op_Modulus_Godot_Vector3I_System_Int32_" data-uid="Godot.Vector3I.op_Modulus(Godot.Vector3I,System.Int32)">
+  operator %(Vector3I, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I operator %(Vector3I vec, int divisor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vec</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+    <dt><code>divisor</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_Multiply_" data-uid="Godot.Vector3I.op_Multiply*"></a>
+
+  <h3 id="Godot_Vector3I_op_Multiply_Godot_Vector3I_Godot_Vector3I_" data-uid="Godot.Vector3I.op_Multiply(Godot.Vector3I,Godot.Vector3I)">
+  operator *(Vector3I, Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I operator *(Vector3I left, Vector3I right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_Multiply_" data-uid="Godot.Vector3I.op_Multiply*"></a>
+
+  <h3 id="Godot_Vector3I_op_Multiply_Godot_Vector3I_System_Int32_" data-uid="Godot.Vector3I.op_Multiply(Godot.Vector3I,System.Int32)">
+  operator *(Vector3I, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I operator *(Vector3I vec, int scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vec</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+    <dt><code>scale</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_Multiply_" data-uid="Godot.Vector3I.op_Multiply*"></a>
+
+  <h3 id="Godot_Vector3I_op_Multiply_System_Int32_Godot_Vector3I_" data-uid="Godot.Vector3I.op_Multiply(System.Int32,Godot.Vector3I)">
+  operator *(int, Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I operator *(int scale, Vector3I vec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scale</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>vec</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_Subtraction_" data-uid="Godot.Vector3I.op_Subtraction*"></a>
+
+  <h3 id="Godot_Vector3I_op_Subtraction_Godot_Vector3I_Godot_Vector3I_" data-uid="Godot.Vector3I.op_Subtraction(Godot.Vector3I,Godot.Vector3I)">
+  operator -(Vector3I, Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I operator -(Vector3I left, Vector3I right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Vector3I_op_UnaryNegation_" data-uid="Godot.Vector3I.op_UnaryNegation*"></a>
+
+  <h3 id="Godot_Vector3I_op_UnaryNegation_Godot_Vector3I_" data-uid="Godot.Vector3I.op_UnaryNegation(Godot.Vector3I)">
+  operator -(Vector3I)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3I operator -(Vector3I vec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vec</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3I.html">Vector3I</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

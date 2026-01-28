@@ -1,0 +1,1495 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.Plane
+  commentId: T:Godot.Plane
+  id: Plane
+  parent: Godot
+  children:
+  - Godot.Plane.#ctor(Godot.Vector3)
+  - Godot.Plane.#ctor(Godot.Vector3,Godot.Vector3)
+  - Godot.Plane.#ctor(Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  - Godot.Plane.#ctor(Godot.Vector3,System.Single)
+  - Godot.Plane.#ctor(System.Single,System.Single,System.Single,System.Single)
+  - Godot.Plane.D
+  - Godot.Plane.DistanceTo(Godot.Vector3)
+  - Godot.Plane.Equals(Godot.Plane)
+  - Godot.Plane.Equals(System.Object)
+  - Godot.Plane.GetCenter
+  - Godot.Plane.GetHashCode
+  - Godot.Plane.HasPoint(Godot.Vector3,System.Single)
+  - Godot.Plane.Intersect3(Godot.Plane,Godot.Plane)
+  - Godot.Plane.IntersectsRay(Godot.Vector3,Godot.Vector3)
+  - Godot.Plane.IntersectsSegment(Godot.Vector3,Godot.Vector3)
+  - Godot.Plane.IsEqualApprox(Godot.Plane)
+  - Godot.Plane.IsFinite
+  - Godot.Plane.IsPointOver(Godot.Vector3)
+  - Godot.Plane.Normal
+  - Godot.Plane.Normalized
+  - Godot.Plane.PlaneXY
+  - Godot.Plane.PlaneXZ
+  - Godot.Plane.PlaneYZ
+  - Godot.Plane.Project(Godot.Vector3)
+  - Godot.Plane.ToString
+  - Godot.Plane.ToString(System.String)
+  - Godot.Plane.X
+  - Godot.Plane.Y
+  - Godot.Plane.Z
+  - Godot.Plane.op_Equality(Godot.Plane,Godot.Plane)
+  - Godot.Plane.op_Inequality(Godot.Plane,Godot.Plane)
+  - Godot.Plane.op_UnaryNegation(Godot.Plane)
+  langs:
+  - csharp
+  - vb
+  name: Plane
+  nameWithType: Plane
+  fullName: Godot.Plane
+  type: Struct
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: 'public struct Plane : IEquatable<Plane>'
+    content.vb: Public Structure Plane Implements IEquatable(Of Plane)
+  implements:
+  - System.IEquatable{Godot.Plane}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Godot.Plane.DistanceTo(Godot.Vector3)
+  commentId: M:Godot.Plane.DistanceTo(Godot.Vector3)
+  id: DistanceTo(Godot.Vector3)
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: DistanceTo(Vector3)
+  nameWithType: Plane.DistanceTo(Vector3)
+  fullName: Godot.Plane.DistanceTo(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly float DistanceTo(Vector3 point)
+    parameters:
+    - id: point
+      type: Godot.Vector3
+    return:
+      type: System.Single
+    content.vb: Public Function DistanceTo(point As Vector3) As Single
+  overload: Godot.Plane.DistanceTo*
+- uid: Godot.Plane.GetCenter
+  commentId: M:Godot.Plane.GetCenter
+  id: GetCenter
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: GetCenter()
+  nameWithType: Plane.GetCenter()
+  fullName: Godot.Plane.GetCenter()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3 GetCenter()
+    return:
+      type: Godot.Vector3
+    content.vb: Public Function GetCenter() As Vector3
+  overload: Godot.Plane.GetCenter*
+- uid: Godot.Plane.HasPoint(Godot.Vector3,System.Single)
+  commentId: M:Godot.Plane.HasPoint(Godot.Vector3,System.Single)
+  id: HasPoint(Godot.Vector3,System.Single)
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: HasPoint(Vector3, float)
+  nameWithType: Plane.HasPoint(Vector3, float)
+  fullName: Godot.Plane.HasPoint(Godot.Vector3, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool HasPoint(Vector3 point, float tolerance = 1E-06)
+    parameters:
+    - id: point
+      type: Godot.Vector3
+    - id: tolerance
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasPoint(point As Vector3, tolerance As Single = 1E-06) As Boolean
+  overload: Godot.Plane.HasPoint*
+  nameWithType.vb: Plane.HasPoint(Vector3, Single)
+  fullName.vb: Godot.Plane.HasPoint(Godot.Vector3, Single)
+  name.vb: HasPoint(Vector3, Single)
+- uid: Godot.Plane.Intersect3(Godot.Plane,Godot.Plane)
+  commentId: M:Godot.Plane.Intersect3(Godot.Plane,Godot.Plane)
+  id: Intersect3(Godot.Plane,Godot.Plane)
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: Intersect3(Plane, Plane)
+  nameWithType: Plane.Intersect3(Plane, Plane)
+  fullName: Godot.Plane.Intersect3(Godot.Plane, Godot.Plane)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3? Intersect3(Plane b, Plane c)
+    parameters:
+    - id: b
+      type: Godot.Plane
+    - id: c
+      type: Godot.Plane
+    return:
+      type: System.Nullable{Godot.Vector3}
+    content.vb: Public Function Intersect3(b As Plane, c As Plane) As Vector3?
+  overload: Godot.Plane.Intersect3*
+- uid: Godot.Plane.IntersectsRay(Godot.Vector3,Godot.Vector3)
+  commentId: M:Godot.Plane.IntersectsRay(Godot.Vector3,Godot.Vector3)
+  id: IntersectsRay(Godot.Vector3,Godot.Vector3)
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: IntersectsRay(Vector3, Vector3)
+  nameWithType: Plane.IntersectsRay(Vector3, Vector3)
+  fullName: Godot.Plane.IntersectsRay(Godot.Vector3, Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3? IntersectsRay(Vector3 from, Vector3 dir)
+    parameters:
+    - id: from
+      type: Godot.Vector3
+    - id: dir
+      type: Godot.Vector3
+    return:
+      type: System.Nullable{Godot.Vector3}
+    content.vb: Public Function IntersectsRay(from As Vector3, dir As Vector3) As Vector3?
+  overload: Godot.Plane.IntersectsRay*
+- uid: Godot.Plane.IntersectsSegment(Godot.Vector3,Godot.Vector3)
+  commentId: M:Godot.Plane.IntersectsSegment(Godot.Vector3,Godot.Vector3)
+  id: IntersectsSegment(Godot.Vector3,Godot.Vector3)
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: IntersectsSegment(Vector3, Vector3)
+  nameWithType: Plane.IntersectsSegment(Vector3, Vector3)
+  fullName: Godot.Plane.IntersectsSegment(Godot.Vector3, Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3? IntersectsSegment(Vector3 begin, Vector3 end)
+    parameters:
+    - id: begin
+      type: Godot.Vector3
+    - id: end
+      type: Godot.Vector3
+    return:
+      type: System.Nullable{Godot.Vector3}
+    content.vb: Public Function IntersectsSegment(begin As Vector3, [end] As Vector3) As Vector3?
+  overload: Godot.Plane.IntersectsSegment*
+- uid: Godot.Plane.IsFinite
+  commentId: M:Godot.Plane.IsFinite
+  id: IsFinite
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: IsFinite()
+  nameWithType: Plane.IsFinite()
+  fullName: Godot.Plane.IsFinite()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool IsFinite()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsFinite() As Boolean
+  overload: Godot.Plane.IsFinite*
+- uid: Godot.Plane.IsPointOver(Godot.Vector3)
+  commentId: M:Godot.Plane.IsPointOver(Godot.Vector3)
+  id: IsPointOver(Godot.Vector3)
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: IsPointOver(Vector3)
+  nameWithType: Plane.IsPointOver(Vector3)
+  fullName: Godot.Plane.IsPointOver(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool IsPointOver(Vector3 point)
+    parameters:
+    - id: point
+      type: Godot.Vector3
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsPointOver(point As Vector3) As Boolean
+  overload: Godot.Plane.IsPointOver*
+- uid: Godot.Plane.Normalized
+  commentId: M:Godot.Plane.Normalized
+  id: Normalized
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: Normalized()
+  nameWithType: Plane.Normalized()
+  fullName: Godot.Plane.Normalized()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Plane Normalized()
+    return:
+      type: Godot.Plane
+    content.vb: Public Function Normalized() As Plane
+  overload: Godot.Plane.Normalized*
+- uid: Godot.Plane.Project(Godot.Vector3)
+  commentId: M:Godot.Plane.Project(Godot.Vector3)
+  id: Project(Godot.Vector3)
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: Project(Vector3)
+  nameWithType: Plane.Project(Vector3)
+  fullName: Godot.Plane.Project(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3 Project(Vector3 point)
+    parameters:
+    - id: point
+      type: Godot.Vector3
+    return:
+      type: Godot.Vector3
+    content.vb: Public Function Project(point As Vector3) As Vector3
+  overload: Godot.Plane.Project*
+- uid: Godot.Plane.#ctor(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Godot.Plane.#ctor(System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single)'
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: Plane(float, float, float, float)
+  nameWithType: Plane.Plane(float, float, float, float)
+  fullName: Godot.Plane.Plane(float, float, float, float)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Plane(float a, float b, float c, float d)
+    parameters:
+    - id: a
+      type: System.Single
+    - id: b
+      type: System.Single
+    - id: c
+      type: System.Single
+    - id: d
+      type: System.Single
+    content.vb: Public Sub New(a As Single, b As Single, c As Single, d As Single)
+  overload: Godot.Plane.#ctor*
+  nameWithType.vb: Plane.New(Single, Single, Single, Single)
+  fullName.vb: Godot.Plane.New(Single, Single, Single, Single)
+  name.vb: New(Single, Single, Single, Single)
+- uid: Godot.Plane.#ctor(Godot.Vector3)
+  commentId: M:Godot.Plane.#ctor(Godot.Vector3)
+  id: '#ctor(Godot.Vector3)'
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: Plane(Vector3)
+  nameWithType: Plane.Plane(Vector3)
+  fullName: Godot.Plane.Plane(Godot.Vector3)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Plane(Vector3 normal)
+    parameters:
+    - id: normal
+      type: Godot.Vector3
+    content.vb: Public Sub New(normal As Vector3)
+  overload: Godot.Plane.#ctor*
+  nameWithType.vb: Plane.New(Vector3)
+  fullName.vb: Godot.Plane.New(Godot.Vector3)
+  name.vb: New(Vector3)
+- uid: Godot.Plane.#ctor(Godot.Vector3,System.Single)
+  commentId: M:Godot.Plane.#ctor(Godot.Vector3,System.Single)
+  id: '#ctor(Godot.Vector3,System.Single)'
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: Plane(Vector3, float)
+  nameWithType: Plane.Plane(Vector3, float)
+  fullName: Godot.Plane.Plane(Godot.Vector3, float)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Plane(Vector3 normal, float d)
+    parameters:
+    - id: normal
+      type: Godot.Vector3
+    - id: d
+      type: System.Single
+    content.vb: Public Sub New(normal As Vector3, d As Single)
+  overload: Godot.Plane.#ctor*
+  nameWithType.vb: Plane.New(Vector3, Single)
+  fullName.vb: Godot.Plane.New(Godot.Vector3, Single)
+  name.vb: New(Vector3, Single)
+- uid: Godot.Plane.#ctor(Godot.Vector3,Godot.Vector3)
+  commentId: M:Godot.Plane.#ctor(Godot.Vector3,Godot.Vector3)
+  id: '#ctor(Godot.Vector3,Godot.Vector3)'
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: Plane(Vector3, Vector3)
+  nameWithType: Plane.Plane(Vector3, Vector3)
+  fullName: Godot.Plane.Plane(Godot.Vector3, Godot.Vector3)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Plane(Vector3 normal, Vector3 point)
+    parameters:
+    - id: normal
+      type: Godot.Vector3
+    - id: point
+      type: Godot.Vector3
+    content.vb: Public Sub New(normal As Vector3, point As Vector3)
+  overload: Godot.Plane.#ctor*
+  nameWithType.vb: Plane.New(Vector3, Vector3)
+  fullName.vb: Godot.Plane.New(Godot.Vector3, Godot.Vector3)
+  name.vb: New(Vector3, Vector3)
+- uid: Godot.Plane.#ctor(Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  commentId: M:Godot.Plane.#ctor(Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  id: '#ctor(Godot.Vector3,Godot.Vector3,Godot.Vector3)'
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: Plane(Vector3, Vector3, Vector3)
+  nameWithType: Plane.Plane(Vector3, Vector3, Vector3)
+  fullName: Godot.Plane.Plane(Godot.Vector3, Godot.Vector3, Godot.Vector3)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Plane(Vector3 v1, Vector3 v2, Vector3 v3)
+    parameters:
+    - id: v1
+      type: Godot.Vector3
+    - id: v2
+      type: Godot.Vector3
+    - id: v3
+      type: Godot.Vector3
+    content.vb: Public Sub New(v1 As Vector3, v2 As Vector3, v3 As Vector3)
+  overload: Godot.Plane.#ctor*
+  nameWithType.vb: Plane.New(Vector3, Vector3, Vector3)
+  fullName.vb: Godot.Plane.New(Godot.Vector3, Godot.Vector3, Godot.Vector3)
+  name.vb: New(Vector3, Vector3, Vector3)
+- uid: Godot.Plane.op_UnaryNegation(Godot.Plane)
+  commentId: M:Godot.Plane.op_UnaryNegation(Godot.Plane)
+  id: op_UnaryNegation(Godot.Plane)
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: operator -(Plane)
+  nameWithType: Plane.operator -(Plane)
+  fullName: Godot.Plane.operator -(Godot.Plane)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Plane operator -(Plane plane)
+    parameters:
+    - id: plane
+      type: Godot.Plane
+    return:
+      type: Godot.Plane
+    content.vb: Public Shared Operator -(plane As Plane) As Plane
+  overload: Godot.Plane.op_UnaryNegation*
+  nameWithType.vb: Plane.-(Plane)
+  fullName.vb: Godot.Plane.-(Godot.Plane)
+  name.vb: -(Plane)
+- uid: Godot.Plane.op_Equality(Godot.Plane,Godot.Plane)
+  commentId: M:Godot.Plane.op_Equality(Godot.Plane,Godot.Plane)
+  id: op_Equality(Godot.Plane,Godot.Plane)
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Plane, Plane)
+  nameWithType: Plane.operator ==(Plane, Plane)
+  fullName: Godot.Plane.operator ==(Godot.Plane, Godot.Plane)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool operator ==(Plane left, Plane right)
+    parameters:
+    - id: left
+      type: Godot.Plane
+    - id: right
+      type: Godot.Plane
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Plane, right As Plane) As Boolean
+  overload: Godot.Plane.op_Equality*
+  nameWithType.vb: Plane.=(Plane, Plane)
+  fullName.vb: Godot.Plane.=(Godot.Plane, Godot.Plane)
+  name.vb: =(Plane, Plane)
+- uid: Godot.Plane.op_Inequality(Godot.Plane,Godot.Plane)
+  commentId: M:Godot.Plane.op_Inequality(Godot.Plane,Godot.Plane)
+  id: op_Inequality(Godot.Plane,Godot.Plane)
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Plane, Plane)
+  nameWithType: Plane.operator !=(Plane, Plane)
+  fullName: Godot.Plane.operator !=(Godot.Plane, Godot.Plane)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool operator !=(Plane left, Plane right)
+    parameters:
+    - id: left
+      type: Godot.Plane
+    - id: right
+      type: Godot.Plane
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Plane, right As Plane) As Boolean
+  overload: Godot.Plane.op_Inequality*
+  nameWithType.vb: Plane.<>(Plane, Plane)
+  fullName.vb: Godot.Plane.<>(Godot.Plane, Godot.Plane)
+  name.vb: <>(Plane, Plane)
+- uid: Godot.Plane.Equals(System.Object)
+  commentId: M:Godot.Plane.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Plane.Equals(object?)
+  fullName: Godot.Plane.Equals(object?)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)
+        arguments:
+        - type: System.Boolean
+          value: true
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Godot.Plane.Equals*
+  nameWithType.vb: Plane.Equals(Object)
+  fullName.vb: Godot.Plane.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Godot.Plane.Equals(Godot.Plane)
+  commentId: M:Godot.Plane.Equals(Godot.Plane)
+  id: Equals(Godot.Plane)
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: Equals(Plane)
+  nameWithType: Plane.Equals(Plane)
+  fullName: Godot.Plane.Equals(Godot.Plane)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public readonly bool Equals(Plane other)
+    parameters:
+    - id: other
+      type: Godot.Plane
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Plane) As Boolean
+  overload: Godot.Plane.Equals*
+  implements:
+  - System.IEquatable{Godot.Plane}.Equals(Godot.Plane)
+- uid: Godot.Plane.IsEqualApprox(Godot.Plane)
+  commentId: M:Godot.Plane.IsEqualApprox(Godot.Plane)
+  id: IsEqualApprox(Godot.Plane)
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: IsEqualApprox(Plane)
+  nameWithType: Plane.IsEqualApprox(Plane)
+  fullName: Godot.Plane.IsEqualApprox(Godot.Plane)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool IsEqualApprox(Plane other)
+    parameters:
+    - id: other
+      type: Godot.Plane
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsEqualApprox(other As Plane) As Boolean
+  overload: Godot.Plane.IsEqualApprox*
+- uid: Godot.Plane.GetHashCode
+  commentId: M:Godot.Plane.GetHashCode
+  id: GetHashCode
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Plane.GetHashCode()
+  fullName: Godot.Plane.GetHashCode()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Godot.Plane.GetHashCode*
+- uid: Godot.Plane.ToString
+  commentId: M:Godot.Plane.ToString
+  id: ToString
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Plane.ToString()
+  fullName: Godot.Plane.ToString()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Godot.Plane.ToString*
+- uid: Godot.Plane.ToString(System.String)
+  commentId: M:Godot.Plane.ToString(System.String)
+  id: ToString(System.String)
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: ToString(string?)
+  nameWithType: Plane.ToString(string?)
+  fullName: Godot.Plane.ToString(string?)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly string ToString(string? format)
+    parameters:
+    - id: format
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function ToString(format As String) As String
+  overload: Godot.Plane.ToString*
+  nameWithType.vb: Plane.ToString(String)
+  fullName.vb: Godot.Plane.ToString(String)
+  name.vb: ToString(String)
+- uid: Godot.Plane.Normal
+  commentId: P:Godot.Plane.Normal
+  id: Normal
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: Plane.Normal
+  fullName: Godot.Plane.Normal
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 Normal { readonly get; set; }
+    parameters: []
+    return:
+      type: Godot.Vector3
+    content.vb: Public Property Normal As Vector3
+  overload: Godot.Plane.Normal*
+- uid: Godot.Plane.D
+  commentId: P:Godot.Plane.D
+  id: D
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: D
+  nameWithType: Plane.D
+  fullName: Godot.Plane.D
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public float D { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property D As Single
+  overload: Godot.Plane.D*
+- uid: Godot.Plane.X
+  commentId: P:Godot.Plane.X
+  id: X
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: Plane.X
+  fullName: Godot.Plane.X
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public float X { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property X As Single
+  overload: Godot.Plane.X*
+- uid: Godot.Plane.Y
+  commentId: P:Godot.Plane.Y
+  id: Y
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: Plane.Y
+  fullName: Godot.Plane.Y
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public float Y { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Y As Single
+  overload: Godot.Plane.Y*
+- uid: Godot.Plane.Z
+  commentId: P:Godot.Plane.Z
+  id: Z
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: Z
+  nameWithType: Plane.Z
+  fullName: Godot.Plane.Z
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public float Z { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Z As Single
+  overload: Godot.Plane.Z*
+- uid: Godot.Plane.PlaneYZ
+  commentId: P:Godot.Plane.PlaneYZ
+  id: PlaneYZ
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: PlaneYZ
+  nameWithType: Plane.PlaneYZ
+  fullName: Godot.Plane.PlaneYZ
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Plane PlaneYZ { get; }
+    parameters: []
+    return:
+      type: Godot.Plane
+    content.vb: Public Shared ReadOnly Property PlaneYZ As Plane
+  overload: Godot.Plane.PlaneYZ*
+- uid: Godot.Plane.PlaneXZ
+  commentId: P:Godot.Plane.PlaneXZ
+  id: PlaneXZ
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: PlaneXZ
+  nameWithType: Plane.PlaneXZ
+  fullName: Godot.Plane.PlaneXZ
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Plane PlaneXZ { get; }
+    parameters: []
+    return:
+      type: Godot.Plane
+    content.vb: Public Shared ReadOnly Property PlaneXZ As Plane
+  overload: Godot.Plane.PlaneXZ*
+- uid: Godot.Plane.PlaneXY
+  commentId: P:Godot.Plane.PlaneXY
+  id: PlaneXY
+  parent: Godot.Plane
+  langs:
+  - csharp
+  - vb
+  name: PlaneXY
+  nameWithType: Plane.PlaneXY
+  fullName: Godot.Plane.PlaneXY
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Plane PlaneXY { get; }
+    parameters: []
+    return:
+      type: Godot.Plane
+    content.vb: Public Shared ReadOnly Property PlaneXY As Plane
+  overload: Godot.Plane.PlaneXY*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.IEquatable{Godot.Plane}
+  commentId: T:System.IEquatable{Godot.Plane}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Plane>
+  nameWithType: IEquatable<Plane>
+  fullName: System.IEquatable<Godot.Plane>
+  nameWithType.vb: IEquatable(Of Plane)
+  fullName.vb: System.IEquatable(Of Godot.Plane)
+  name.vb: IEquatable(Of Plane)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Godot.Plane
+    name: Plane
+    isExternal: true
+    href: Godot.Plane.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Plane
+    name: Plane
+    isExternal: true
+    href: Godot.Plane.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Godot.Plane.DistanceTo*
+  commentId: Overload:Godot.Plane.DistanceTo
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_DistanceTo_Godot_Vector3_
+  name: DistanceTo
+  nameWithType: Plane.DistanceTo
+  fullName: Godot.Plane.DistanceTo
+- uid: Godot.Vector3
+  commentId: T:Godot.Vector3
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector3.html
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Godot.Vector3
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Godot.Plane.GetCenter*
+  commentId: Overload:Godot.Plane.GetCenter
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_GetCenter
+  name: GetCenter
+  nameWithType: Plane.GetCenter
+  fullName: Godot.Plane.GetCenter
+- uid: Godot.Plane.HasPoint*
+  commentId: Overload:Godot.Plane.HasPoint
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_HasPoint_Godot_Vector3_System_Single_
+  name: HasPoint
+  nameWithType: Plane.HasPoint
+  fullName: Godot.Plane.HasPoint
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.Plane.Intersect3*
+  commentId: Overload:Godot.Plane.Intersect3
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_Intersect3_Godot_Plane_Godot_Plane_
+  name: Intersect3
+  nameWithType: Plane.Intersect3
+  fullName: Godot.Plane.Intersect3
+- uid: Godot.Plane
+  commentId: T:Godot.Plane
+  parent: Godot
+  isExternal: true
+  href: Godot.Plane.html
+  name: Plane
+  nameWithType: Plane
+  fullName: Godot.Plane
+- uid: System.Nullable{Godot.Vector3}
+  commentId: T:System.Nullable{Godot.Vector3}
+  parent: System
+  definition: System.Nullable`1
+  href: Godot.Vector3.html
+  name: Vector3?
+  nameWithType: Vector3?
+  fullName: Godot.Vector3?
+  spec.csharp:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: '?'
+  spec.vb:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.Plane.IntersectsRay*
+  commentId: Overload:Godot.Plane.IntersectsRay
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_IntersectsRay_Godot_Vector3_Godot_Vector3_
+  name: IntersectsRay
+  nameWithType: Plane.IntersectsRay
+  fullName: Godot.Plane.IntersectsRay
+- uid: Godot.Plane.IntersectsSegment*
+  commentId: Overload:Godot.Plane.IntersectsSegment
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_IntersectsSegment_Godot_Vector3_Godot_Vector3_
+  name: IntersectsSegment
+  nameWithType: Plane.IntersectsSegment
+  fullName: Godot.Plane.IntersectsSegment
+- uid: Godot.Plane.IsFinite*
+  commentId: Overload:Godot.Plane.IsFinite
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_IsFinite
+  name: IsFinite
+  nameWithType: Plane.IsFinite
+  fullName: Godot.Plane.IsFinite
+- uid: Godot.Plane.IsPointOver*
+  commentId: Overload:Godot.Plane.IsPointOver
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_IsPointOver_Godot_Vector3_
+  name: IsPointOver
+  nameWithType: Plane.IsPointOver
+  fullName: Godot.Plane.IsPointOver
+- uid: Godot.Plane.Normalized*
+  commentId: Overload:Godot.Plane.Normalized
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_Normalized
+  name: Normalized
+  nameWithType: Plane.Normalized
+  fullName: Godot.Plane.Normalized
+- uid: Godot.Plane.Project*
+  commentId: Overload:Godot.Plane.Project
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_Project_Godot_Vector3_
+  name: Project
+  nameWithType: Plane.Project
+  fullName: Godot.Plane.Project
+- uid: Godot.Plane.#ctor*
+  commentId: Overload:Godot.Plane.#ctor
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane__ctor_System_Single_System_Single_System_Single_System_Single_
+  name: Plane
+  nameWithType: Plane.Plane
+  fullName: Godot.Plane.Plane
+  nameWithType.vb: Plane.New
+  fullName.vb: Godot.Plane.New
+  name.vb: New
+- uid: Godot.Plane.op_UnaryNegation*
+  commentId: Overload:Godot.Plane.op_UnaryNegation
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_op_UnaryNegation_Godot_Plane_
+  name: operator -
+  nameWithType: Plane.operator -
+  fullName: Godot.Plane.operator -
+  nameWithType.vb: Plane.-
+  fullName.vb: Godot.Plane.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Plane.op_UnaryNegation*
+    name: '-'
+    isExternal: true
+    href: Godot.Plane.html#Godot_Plane_op_UnaryNegation_Godot_Plane_
+- uid: Godot.Plane.op_Equality*
+  commentId: Overload:Godot.Plane.op_Equality
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_op_Equality_Godot_Plane_Godot_Plane_
+  name: operator ==
+  nameWithType: Plane.operator ==
+  fullName: Godot.Plane.operator ==
+  nameWithType.vb: Plane.=
+  fullName.vb: Godot.Plane.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Plane.op_Equality*
+    name: ==
+    isExternal: true
+    href: Godot.Plane.html#Godot_Plane_op_Equality_Godot_Plane_Godot_Plane_
+- uid: Godot.Plane.op_Inequality*
+  commentId: Overload:Godot.Plane.op_Inequality
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_op_Inequality_Godot_Plane_Godot_Plane_
+  name: operator !=
+  nameWithType: Plane.operator !=
+  fullName: Godot.Plane.operator !=
+  nameWithType.vb: Plane.<>
+  fullName.vb: Godot.Plane.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Plane.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: Godot.Plane.html#Godot_Plane_op_Inequality_Godot_Plane_Godot_Plane_
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Godot.Plane.Equals*
+  commentId: Overload:Godot.Plane.Equals
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_Equals_System_Object_
+  name: Equals
+  nameWithType: Plane.Equals
+  fullName: Godot.Plane.Equals
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.IEquatable{Godot.Plane}.Equals(Godot.Plane)
+  commentId: M:System.IEquatable{Godot.Plane}.Equals(Godot.Plane)
+  parent: System.IEquatable{Godot.Plane}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Plane)
+  nameWithType: IEquatable<Plane>.Equals(Plane)
+  fullName: System.IEquatable<Godot.Plane>.Equals(Godot.Plane)
+  nameWithType.vb: IEquatable(Of Plane).Equals(Plane)
+  fullName.vb: System.IEquatable(Of Godot.Plane).Equals(Godot.Plane)
+  spec.csharp:
+  - uid: System.IEquatable{Godot.Plane}.Equals(Godot.Plane)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.Plane
+    name: Plane
+    isExternal: true
+    href: Godot.Plane.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Godot.Plane}.Equals(Godot.Plane)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.Plane
+    name: Plane
+    isExternal: true
+    href: Godot.Plane.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Godot.Plane.IsEqualApprox*
+  commentId: Overload:Godot.Plane.IsEqualApprox
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_IsEqualApprox_Godot_Plane_
+  name: IsEqualApprox
+  nameWithType: Plane.IsEqualApprox
+  fullName: Godot.Plane.IsEqualApprox
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Godot.Plane.GetHashCode*
+  commentId: Overload:Godot.Plane.GetHashCode
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_GetHashCode
+  name: GetHashCode
+  nameWithType: Plane.GetHashCode
+  fullName: Godot.Plane.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Godot.Plane.ToString*
+  commentId: Overload:Godot.Plane.ToString
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_ToString
+  name: ToString
+  nameWithType: Plane.ToString
+  fullName: Godot.Plane.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.Plane.Normal*
+  commentId: Overload:Godot.Plane.Normal
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_Normal
+  name: Normal
+  nameWithType: Plane.Normal
+  fullName: Godot.Plane.Normal
+- uid: Godot.Plane.D*
+  commentId: Overload:Godot.Plane.D
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_D
+  name: D
+  nameWithType: Plane.D
+  fullName: Godot.Plane.D
+- uid: Godot.Plane.X*
+  commentId: Overload:Godot.Plane.X
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_X
+  name: X
+  nameWithType: Plane.X
+  fullName: Godot.Plane.X
+- uid: Godot.Plane.Y*
+  commentId: Overload:Godot.Plane.Y
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_Y
+  name: Y
+  nameWithType: Plane.Y
+  fullName: Godot.Plane.Y
+- uid: Godot.Plane.Z*
+  commentId: Overload:Godot.Plane.Z
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_Z
+  name: Z
+  nameWithType: Plane.Z
+  fullName: Godot.Plane.Z
+- uid: Godot.Plane.PlaneYZ*
+  commentId: Overload:Godot.Plane.PlaneYZ
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_PlaneYZ
+  name: PlaneYZ
+  nameWithType: Plane.PlaneYZ
+  fullName: Godot.Plane.PlaneYZ
+- uid: Godot.Plane.PlaneXZ*
+  commentId: Overload:Godot.Plane.PlaneXZ
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_PlaneXZ
+  name: PlaneXZ
+  nameWithType: Plane.PlaneXZ
+  fullName: Godot.Plane.PlaneXZ
+- uid: Godot.Plane.PlaneXY*
+  commentId: Overload:Godot.Plane.PlaneXY
+  isExternal: true
+  href: Godot.Plane.html#Godot_Plane_PlaneXY
+  name: PlaneXY
+  nameWithType: Plane.PlaneXY
+  fullName: Godot.Plane.PlaneXY

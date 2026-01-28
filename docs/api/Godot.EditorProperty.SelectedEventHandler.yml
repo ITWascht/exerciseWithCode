@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.EditorProperty.SelectedEventHandler
+  commentId: T:Godot.EditorProperty.SelectedEventHandler
+  id: EditorProperty.SelectedEventHandler
+  parent: Godot
+  children:
+  - Godot.EditorProperty.SelectedEventHandler.#ctor(System.Object,System.IntPtr)
+  - Godot.EditorProperty.SelectedEventHandler.BeginInvoke(System.String,System.Int64,System.AsyncCallback,System.Object)
+  - Godot.EditorProperty.SelectedEventHandler.EndInvoke(System.IAsyncResult)
+  - Godot.EditorProperty.SelectedEventHandler.Invoke(System.String,System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: EditorProperty.SelectedEventHandler
+  nameWithType: EditorProperty.SelectedEventHandler
+  fullName: Godot.EditorProperty.SelectedEventHandler
+  type: Delegate
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public delegate void EditorProperty.SelectedEventHandler(string path, long focusableIdx)
+    parameters:
+    - id: path
+      type: System.String
+    - id: focusableIdx
+      type: System.Int64
+    content.vb: Public Delegate Sub EditorProperty.SelectedEventHandler(path As String, focusableIdx As Long)
+- uid: Godot.EditorProperty.SelectedEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Godot.EditorProperty.SelectedEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Godot.EditorProperty.SelectedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: SelectedEventHandler(object, nint)
+  nameWithType: EditorProperty.SelectedEventHandler.SelectedEventHandler(object, nint)
+  fullName: Godot.EditorProperty.SelectedEventHandler.SelectedEventHandler(object, nint)
+  type: Constructor
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public SelectedEventHandler(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Godot.EditorProperty.SelectedEventHandler.#ctor*
+  nameWithType.vb: EditorProperty.SelectedEventHandler.New(Object, IntPtr)
+  fullName.vb: Godot.EditorProperty.SelectedEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Godot.EditorProperty.SelectedEventHandler.Invoke(System.String,System.Int64)
+  commentId: M:Godot.EditorProperty.SelectedEventHandler.Invoke(System.String,System.Int64)
+  id: Invoke(System.String,System.Int64)
+  parent: Godot.EditorProperty.SelectedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(string, long)
+  nameWithType: EditorProperty.SelectedEventHandler.Invoke(string, long)
+  fullName: Godot.EditorProperty.SelectedEventHandler.Invoke(string, long)
+  type: Method
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public virtual void Invoke(string path, long focusableIdx)
+    parameters:
+    - id: path
+      type: System.String
+    - id: focusableIdx
+      type: System.Int64
+    content.vb: Public Overridable Sub Invoke(path As String, focusableIdx As Long)
+  overload: Godot.EditorProperty.SelectedEventHandler.Invoke*
+  nameWithType.vb: EditorProperty.SelectedEventHandler.Invoke(String, Long)
+  fullName.vb: Godot.EditorProperty.SelectedEventHandler.Invoke(String, Long)
+  name.vb: Invoke(String, Long)
+- uid: Godot.EditorProperty.SelectedEventHandler.BeginInvoke(System.String,System.Int64,System.AsyncCallback,System.Object)
+  commentId: M:Godot.EditorProperty.SelectedEventHandler.BeginInvoke(System.String,System.Int64,System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.String,System.Int64,System.AsyncCallback,System.Object)
+  parent: Godot.EditorProperty.SelectedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(string, long, AsyncCallback, object)
+  nameWithType: EditorProperty.SelectedEventHandler.BeginInvoke(string, long, AsyncCallback, object)
+  fullName: Godot.EditorProperty.SelectedEventHandler.BeginInvoke(string, long, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(string path, long focusableIdx, AsyncCallback callback, object @object)
+    parameters:
+    - id: path
+      type: System.String
+    - id: focusableIdx
+      type: System.Int64
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(path As String, focusableIdx As Long, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Godot.EditorProperty.SelectedEventHandler.BeginInvoke*
+  nameWithType.vb: EditorProperty.SelectedEventHandler.BeginInvoke(String, Long, AsyncCallback, Object)
+  fullName.vb: Godot.EditorProperty.SelectedEventHandler.BeginInvoke(String, Long, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(String, Long, AsyncCallback, Object)
+- uid: Godot.EditorProperty.SelectedEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Godot.EditorProperty.SelectedEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Godot.EditorProperty.SelectedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: EditorProperty.SelectedEventHandler.EndInvoke(IAsyncResult)
+  fullName: Godot.EditorProperty.SelectedEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: Godot.EditorProperty.SelectedEventHandler.EndInvoke*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.EditorProperty.SelectedEventHandler.#ctor*
+  commentId: Overload:Godot.EditorProperty.SelectedEventHandler.#ctor
+  isExternal: true
+  href: Godot.EditorProperty.SelectedEventHandler.html#Godot_EditorProperty_SelectedEventHandler__ctor_System_Object_System_IntPtr_
+  name: SelectedEventHandler
+  nameWithType: EditorProperty.SelectedEventHandler.SelectedEventHandler
+  fullName: Godot.EditorProperty.SelectedEventHandler.SelectedEventHandler
+  nameWithType.vb: EditorProperty.SelectedEventHandler.New
+  fullName.vb: Godot.EditorProperty.SelectedEventHandler.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Godot.EditorProperty.SelectedEventHandler.Invoke*
+  commentId: Overload:Godot.EditorProperty.SelectedEventHandler.Invoke
+  isExternal: true
+  href: Godot.EditorProperty.SelectedEventHandler.html#Godot_EditorProperty_SelectedEventHandler_Invoke_System_String_System_Int64_
+  name: Invoke
+  nameWithType: EditorProperty.SelectedEventHandler.Invoke
+  fullName: Godot.EditorProperty.SelectedEventHandler.Invoke
+- uid: Godot.EditorProperty.SelectedEventHandler.BeginInvoke*
+  commentId: Overload:Godot.EditorProperty.SelectedEventHandler.BeginInvoke
+  isExternal: true
+  href: Godot.EditorProperty.SelectedEventHandler.html#Godot_EditorProperty_SelectedEventHandler_BeginInvoke_System_String_System_Int64_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: EditorProperty.SelectedEventHandler.BeginInvoke
+  fullName: Godot.EditorProperty.SelectedEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Godot.EditorProperty.SelectedEventHandler.EndInvoke*
+  commentId: Overload:Godot.EditorProperty.SelectedEventHandler.EndInvoke
+  isExternal: true
+  href: Godot.EditorProperty.SelectedEventHandler.html#Godot_EditorProperty_SelectedEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: EditorProperty.SelectedEventHandler.EndInvoke
+  fullName: Godot.EditorProperty.SelectedEventHandler.EndInvoke

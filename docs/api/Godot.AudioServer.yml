@@ -1,0 +1,2100 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.AudioServer
+  commentId: T:Godot.AudioServer
+  id: AudioServer
+  parent: Godot
+  children:
+  - Godot.AudioServer.AddBus(System.Int32)
+  - Godot.AudioServer.AddBusEffect(System.Int32,Godot.AudioEffect,System.Int32)
+  - Godot.AudioServer.BusCount
+  - Godot.AudioServer.BusLayoutChanged
+  - Godot.AudioServer.BusRenamed
+  - Godot.AudioServer.GenerateBusLayout
+  - Godot.AudioServer.GetBusChannels(System.Int32)
+  - Godot.AudioServer.GetBusEffect(System.Int32,System.Int32)
+  - Godot.AudioServer.GetBusEffectCount(System.Int32)
+  - Godot.AudioServer.GetBusEffectInstance(System.Int32,System.Int32,System.Int32)
+  - Godot.AudioServer.GetBusIndex(Godot.StringName)
+  - Godot.AudioServer.GetBusName(System.Int32)
+  - Godot.AudioServer.GetBusPeakVolumeLeftDb(System.Int32,System.Int32)
+  - Godot.AudioServer.GetBusPeakVolumeRightDb(System.Int32,System.Int32)
+  - Godot.AudioServer.GetBusSend(System.Int32)
+  - Godot.AudioServer.GetBusVolumeDb(System.Int32)
+  - Godot.AudioServer.GetBusVolumeLinear(System.Int32)
+  - Godot.AudioServer.GetDriverName
+  - Godot.AudioServer.GetInputDeviceList
+  - Godot.AudioServer.GetInputMixRate
+  - Godot.AudioServer.GetMixRate
+  - Godot.AudioServer.GetOutputDeviceList
+  - Godot.AudioServer.GetOutputLatency
+  - Godot.AudioServer.GetSpeakerMode
+  - Godot.AudioServer.GetTimeSinceLastMix
+  - Godot.AudioServer.GetTimeToNextMix
+  - Godot.AudioServer.InputDevice
+  - Godot.AudioServer.IsBusBypassingEffects(System.Int32)
+  - Godot.AudioServer.IsBusEffectEnabled(System.Int32,System.Int32)
+  - Godot.AudioServer.IsBusMute(System.Int32)
+  - Godot.AudioServer.IsBusSolo(System.Int32)
+  - Godot.AudioServer.IsStreamRegisteredAsSample(Godot.AudioStream)
+  - Godot.AudioServer.Lock
+  - Godot.AudioServer.MoveBus(System.Int32,System.Int32)
+  - Godot.AudioServer.OutputDevice
+  - Godot.AudioServer.PlaybackSpeedScale
+  - Godot.AudioServer.RegisterStreamAsSample(Godot.AudioStream)
+  - Godot.AudioServer.RemoveBus(System.Int32)
+  - Godot.AudioServer.RemoveBusEffect(System.Int32,System.Int32)
+  - Godot.AudioServer.SetBusBypassEffects(System.Int32,System.Boolean)
+  - Godot.AudioServer.SetBusEffectEnabled(System.Int32,System.Int32,System.Boolean)
+  - Godot.AudioServer.SetBusLayout(Godot.AudioBusLayout)
+  - Godot.AudioServer.SetBusMute(System.Int32,System.Boolean)
+  - Godot.AudioServer.SetBusName(System.Int32,System.String)
+  - Godot.AudioServer.SetBusSend(System.Int32,Godot.StringName)
+  - Godot.AudioServer.SetBusSolo(System.Int32,System.Boolean)
+  - Godot.AudioServer.SetBusVolumeDb(System.Int32,System.Single)
+  - Godot.AudioServer.SetBusVolumeLinear(System.Int32,System.Single)
+  - Godot.AudioServer.SetEnableTaggingUsedAudioStreams(System.Boolean)
+  - Godot.AudioServer.Singleton
+  - Godot.AudioServer.SwapBusEffects(System.Int32,System.Int32,System.Int32)
+  - Godot.AudioServer.Unlock
+  langs:
+  - csharp
+  - vb
+  name: AudioServer
+  nameWithType: AudioServer
+  fullName: Godot.AudioServer
+  type: Class
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static class AudioServer
+    content.vb: Public Module AudioServer
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Godot.AudioServer.RemoveBus(System.Int32)
+  commentId: M:Godot.AudioServer.RemoveBus(System.Int32)
+  id: RemoveBus(System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: RemoveBus(int)
+  nameWithType: AudioServer.RemoveBus(int)
+  fullName: Godot.AudioServer.RemoveBus(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void RemoveBus(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Shared Sub RemoveBus(index As Integer)
+  overload: Godot.AudioServer.RemoveBus*
+  nameWithType.vb: AudioServer.RemoveBus(Integer)
+  fullName.vb: Godot.AudioServer.RemoveBus(Integer)
+  name.vb: RemoveBus(Integer)
+- uid: Godot.AudioServer.AddBus(System.Int32)
+  commentId: M:Godot.AudioServer.AddBus(System.Int32)
+  id: AddBus(System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: AddBus(int)
+  nameWithType: AudioServer.AddBus(int)
+  fullName: Godot.AudioServer.AddBus(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void AddBus(int atPosition = -1)
+    parameters:
+    - id: atPosition
+      type: System.Int32
+    content.vb: Public Shared Sub AddBus(atPosition As Integer = -1)
+  overload: Godot.AudioServer.AddBus*
+  nameWithType.vb: AudioServer.AddBus(Integer)
+  fullName.vb: Godot.AudioServer.AddBus(Integer)
+  name.vb: AddBus(Integer)
+- uid: Godot.AudioServer.MoveBus(System.Int32,System.Int32)
+  commentId: M:Godot.AudioServer.MoveBus(System.Int32,System.Int32)
+  id: MoveBus(System.Int32,System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: MoveBus(int, int)
+  nameWithType: AudioServer.MoveBus(int, int)
+  fullName: Godot.AudioServer.MoveBus(int, int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void MoveBus(int index, int toIndex)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: toIndex
+      type: System.Int32
+    content.vb: Public Shared Sub MoveBus(index As Integer, toIndex As Integer)
+  overload: Godot.AudioServer.MoveBus*
+  nameWithType.vb: AudioServer.MoveBus(Integer, Integer)
+  fullName.vb: Godot.AudioServer.MoveBus(Integer, Integer)
+  name.vb: MoveBus(Integer, Integer)
+- uid: Godot.AudioServer.SetBusName(System.Int32,System.String)
+  commentId: M:Godot.AudioServer.SetBusName(System.Int32,System.String)
+  id: SetBusName(System.Int32,System.String)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: SetBusName(int, string)
+  nameWithType: AudioServer.SetBusName(int, string)
+  fullName: Godot.AudioServer.SetBusName(int, string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetBusName(int busIdx, string name)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: name
+      type: System.String
+    content.vb: Public Shared Sub SetBusName(busIdx As Integer, name As String)
+  overload: Godot.AudioServer.SetBusName*
+  nameWithType.vb: AudioServer.SetBusName(Integer, String)
+  fullName.vb: Godot.AudioServer.SetBusName(Integer, String)
+  name.vb: SetBusName(Integer, String)
+- uid: Godot.AudioServer.GetBusName(System.Int32)
+  commentId: M:Godot.AudioServer.GetBusName(System.Int32)
+  id: GetBusName(System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetBusName(int)
+  nameWithType: AudioServer.GetBusName(int)
+  fullName: Godot.AudioServer.GetBusName(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetBusName(int busIdx)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetBusName(busIdx As Integer) As String
+  overload: Godot.AudioServer.GetBusName*
+  nameWithType.vb: AudioServer.GetBusName(Integer)
+  fullName.vb: Godot.AudioServer.GetBusName(Integer)
+  name.vb: GetBusName(Integer)
+- uid: Godot.AudioServer.GetBusIndex(Godot.StringName)
+  commentId: M:Godot.AudioServer.GetBusIndex(Godot.StringName)
+  id: GetBusIndex(Godot.StringName)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetBusIndex(StringName)
+  nameWithType: AudioServer.GetBusIndex(StringName)
+  fullName: Godot.AudioServer.GetBusIndex(Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int GetBusIndex(StringName busName)
+    parameters:
+    - id: busName
+      type: Godot.StringName
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetBusIndex(busName As StringName) As Integer
+  overload: Godot.AudioServer.GetBusIndex*
+- uid: Godot.AudioServer.GetBusChannels(System.Int32)
+  commentId: M:Godot.AudioServer.GetBusChannels(System.Int32)
+  id: GetBusChannels(System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetBusChannels(int)
+  nameWithType: AudioServer.GetBusChannels(int)
+  fullName: Godot.AudioServer.GetBusChannels(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int GetBusChannels(int busIdx)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetBusChannels(busIdx As Integer) As Integer
+  overload: Godot.AudioServer.GetBusChannels*
+  nameWithType.vb: AudioServer.GetBusChannels(Integer)
+  fullName.vb: Godot.AudioServer.GetBusChannels(Integer)
+  name.vb: GetBusChannels(Integer)
+- uid: Godot.AudioServer.SetBusVolumeDb(System.Int32,System.Single)
+  commentId: M:Godot.AudioServer.SetBusVolumeDb(System.Int32,System.Single)
+  id: SetBusVolumeDb(System.Int32,System.Single)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: SetBusVolumeDb(int, float)
+  nameWithType: AudioServer.SetBusVolumeDb(int, float)
+  fullName: Godot.AudioServer.SetBusVolumeDb(int, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetBusVolumeDb(int busIdx, float volumeDb)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: volumeDb
+      type: System.Single
+    content.vb: Public Shared Sub SetBusVolumeDb(busIdx As Integer, volumeDb As Single)
+  overload: Godot.AudioServer.SetBusVolumeDb*
+  nameWithType.vb: AudioServer.SetBusVolumeDb(Integer, Single)
+  fullName.vb: Godot.AudioServer.SetBusVolumeDb(Integer, Single)
+  name.vb: SetBusVolumeDb(Integer, Single)
+- uid: Godot.AudioServer.GetBusVolumeDb(System.Int32)
+  commentId: M:Godot.AudioServer.GetBusVolumeDb(System.Int32)
+  id: GetBusVolumeDb(System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetBusVolumeDb(int)
+  nameWithType: AudioServer.GetBusVolumeDb(int)
+  fullName: Godot.AudioServer.GetBusVolumeDb(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static float GetBusVolumeDb(int busIdx)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetBusVolumeDb(busIdx As Integer) As Single
+  overload: Godot.AudioServer.GetBusVolumeDb*
+  nameWithType.vb: AudioServer.GetBusVolumeDb(Integer)
+  fullName.vb: Godot.AudioServer.GetBusVolumeDb(Integer)
+  name.vb: GetBusVolumeDb(Integer)
+- uid: Godot.AudioServer.SetBusVolumeLinear(System.Int32,System.Single)
+  commentId: M:Godot.AudioServer.SetBusVolumeLinear(System.Int32,System.Single)
+  id: SetBusVolumeLinear(System.Int32,System.Single)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: SetBusVolumeLinear(int, float)
+  nameWithType: AudioServer.SetBusVolumeLinear(int, float)
+  fullName: Godot.AudioServer.SetBusVolumeLinear(int, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetBusVolumeLinear(int busIdx, float volumeLinear)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: volumeLinear
+      type: System.Single
+    content.vb: Public Shared Sub SetBusVolumeLinear(busIdx As Integer, volumeLinear As Single)
+  overload: Godot.AudioServer.SetBusVolumeLinear*
+  nameWithType.vb: AudioServer.SetBusVolumeLinear(Integer, Single)
+  fullName.vb: Godot.AudioServer.SetBusVolumeLinear(Integer, Single)
+  name.vb: SetBusVolumeLinear(Integer, Single)
+- uid: Godot.AudioServer.GetBusVolumeLinear(System.Int32)
+  commentId: M:Godot.AudioServer.GetBusVolumeLinear(System.Int32)
+  id: GetBusVolumeLinear(System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetBusVolumeLinear(int)
+  nameWithType: AudioServer.GetBusVolumeLinear(int)
+  fullName: Godot.AudioServer.GetBusVolumeLinear(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static float GetBusVolumeLinear(int busIdx)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetBusVolumeLinear(busIdx As Integer) As Single
+  overload: Godot.AudioServer.GetBusVolumeLinear*
+  nameWithType.vb: AudioServer.GetBusVolumeLinear(Integer)
+  fullName.vb: Godot.AudioServer.GetBusVolumeLinear(Integer)
+  name.vb: GetBusVolumeLinear(Integer)
+- uid: Godot.AudioServer.SetBusSend(System.Int32,Godot.StringName)
+  commentId: M:Godot.AudioServer.SetBusSend(System.Int32,Godot.StringName)
+  id: SetBusSend(System.Int32,Godot.StringName)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: SetBusSend(int, StringName)
+  nameWithType: AudioServer.SetBusSend(int, StringName)
+  fullName: Godot.AudioServer.SetBusSend(int, Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetBusSend(int busIdx, StringName send)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: send
+      type: Godot.StringName
+    content.vb: Public Shared Sub SetBusSend(busIdx As Integer, send As StringName)
+  overload: Godot.AudioServer.SetBusSend*
+  nameWithType.vb: AudioServer.SetBusSend(Integer, StringName)
+  fullName.vb: Godot.AudioServer.SetBusSend(Integer, Godot.StringName)
+  name.vb: SetBusSend(Integer, StringName)
+- uid: Godot.AudioServer.GetBusSend(System.Int32)
+  commentId: M:Godot.AudioServer.GetBusSend(System.Int32)
+  id: GetBusSend(System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetBusSend(int)
+  nameWithType: AudioServer.GetBusSend(int)
+  fullName: Godot.AudioServer.GetBusSend(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static StringName GetBusSend(int busIdx)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared Function GetBusSend(busIdx As Integer) As StringName
+  overload: Godot.AudioServer.GetBusSend*
+  nameWithType.vb: AudioServer.GetBusSend(Integer)
+  fullName.vb: Godot.AudioServer.GetBusSend(Integer)
+  name.vb: GetBusSend(Integer)
+- uid: Godot.AudioServer.SetBusSolo(System.Int32,System.Boolean)
+  commentId: M:Godot.AudioServer.SetBusSolo(System.Int32,System.Boolean)
+  id: SetBusSolo(System.Int32,System.Boolean)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: SetBusSolo(int, bool)
+  nameWithType: AudioServer.SetBusSolo(int, bool)
+  fullName: Godot.AudioServer.SetBusSolo(int, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetBusSolo(int busIdx, bool enable)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: enable
+      type: System.Boolean
+    content.vb: Public Shared Sub SetBusSolo(busIdx As Integer, enable As Boolean)
+  overload: Godot.AudioServer.SetBusSolo*
+  nameWithType.vb: AudioServer.SetBusSolo(Integer, Boolean)
+  fullName.vb: Godot.AudioServer.SetBusSolo(Integer, Boolean)
+  name.vb: SetBusSolo(Integer, Boolean)
+- uid: Godot.AudioServer.IsBusSolo(System.Int32)
+  commentId: M:Godot.AudioServer.IsBusSolo(System.Int32)
+  id: IsBusSolo(System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: IsBusSolo(int)
+  nameWithType: AudioServer.IsBusSolo(int)
+  fullName: Godot.AudioServer.IsBusSolo(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsBusSolo(int busIdx)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsBusSolo(busIdx As Integer) As Boolean
+  overload: Godot.AudioServer.IsBusSolo*
+  nameWithType.vb: AudioServer.IsBusSolo(Integer)
+  fullName.vb: Godot.AudioServer.IsBusSolo(Integer)
+  name.vb: IsBusSolo(Integer)
+- uid: Godot.AudioServer.SetBusMute(System.Int32,System.Boolean)
+  commentId: M:Godot.AudioServer.SetBusMute(System.Int32,System.Boolean)
+  id: SetBusMute(System.Int32,System.Boolean)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: SetBusMute(int, bool)
+  nameWithType: AudioServer.SetBusMute(int, bool)
+  fullName: Godot.AudioServer.SetBusMute(int, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetBusMute(int busIdx, bool enable)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: enable
+      type: System.Boolean
+    content.vb: Public Shared Sub SetBusMute(busIdx As Integer, enable As Boolean)
+  overload: Godot.AudioServer.SetBusMute*
+  nameWithType.vb: AudioServer.SetBusMute(Integer, Boolean)
+  fullName.vb: Godot.AudioServer.SetBusMute(Integer, Boolean)
+  name.vb: SetBusMute(Integer, Boolean)
+- uid: Godot.AudioServer.IsBusMute(System.Int32)
+  commentId: M:Godot.AudioServer.IsBusMute(System.Int32)
+  id: IsBusMute(System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: IsBusMute(int)
+  nameWithType: AudioServer.IsBusMute(int)
+  fullName: Godot.AudioServer.IsBusMute(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsBusMute(int busIdx)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsBusMute(busIdx As Integer) As Boolean
+  overload: Godot.AudioServer.IsBusMute*
+  nameWithType.vb: AudioServer.IsBusMute(Integer)
+  fullName.vb: Godot.AudioServer.IsBusMute(Integer)
+  name.vb: IsBusMute(Integer)
+- uid: Godot.AudioServer.SetBusBypassEffects(System.Int32,System.Boolean)
+  commentId: M:Godot.AudioServer.SetBusBypassEffects(System.Int32,System.Boolean)
+  id: SetBusBypassEffects(System.Int32,System.Boolean)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: SetBusBypassEffects(int, bool)
+  nameWithType: AudioServer.SetBusBypassEffects(int, bool)
+  fullName: Godot.AudioServer.SetBusBypassEffects(int, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetBusBypassEffects(int busIdx, bool enable)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: enable
+      type: System.Boolean
+    content.vb: Public Shared Sub SetBusBypassEffects(busIdx As Integer, enable As Boolean)
+  overload: Godot.AudioServer.SetBusBypassEffects*
+  nameWithType.vb: AudioServer.SetBusBypassEffects(Integer, Boolean)
+  fullName.vb: Godot.AudioServer.SetBusBypassEffects(Integer, Boolean)
+  name.vb: SetBusBypassEffects(Integer, Boolean)
+- uid: Godot.AudioServer.IsBusBypassingEffects(System.Int32)
+  commentId: M:Godot.AudioServer.IsBusBypassingEffects(System.Int32)
+  id: IsBusBypassingEffects(System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: IsBusBypassingEffects(int)
+  nameWithType: AudioServer.IsBusBypassingEffects(int)
+  fullName: Godot.AudioServer.IsBusBypassingEffects(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsBusBypassingEffects(int busIdx)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsBusBypassingEffects(busIdx As Integer) As Boolean
+  overload: Godot.AudioServer.IsBusBypassingEffects*
+  nameWithType.vb: AudioServer.IsBusBypassingEffects(Integer)
+  fullName.vb: Godot.AudioServer.IsBusBypassingEffects(Integer)
+  name.vb: IsBusBypassingEffects(Integer)
+- uid: Godot.AudioServer.AddBusEffect(System.Int32,Godot.AudioEffect,System.Int32)
+  commentId: M:Godot.AudioServer.AddBusEffect(System.Int32,Godot.AudioEffect,System.Int32)
+  id: AddBusEffect(System.Int32,Godot.AudioEffect,System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: AddBusEffect(int, AudioEffect, int)
+  nameWithType: AudioServer.AddBusEffect(int, AudioEffect, int)
+  fullName: Godot.AudioServer.AddBusEffect(int, Godot.AudioEffect, int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void AddBusEffect(int busIdx, AudioEffect effect, int atPosition = -1)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: effect
+      type: Godot.AudioEffect
+    - id: atPosition
+      type: System.Int32
+    content.vb: Public Shared Sub AddBusEffect(busIdx As Integer, effect As AudioEffect, atPosition As Integer = -1)
+  overload: Godot.AudioServer.AddBusEffect*
+  nameWithType.vb: AudioServer.AddBusEffect(Integer, AudioEffect, Integer)
+  fullName.vb: Godot.AudioServer.AddBusEffect(Integer, Godot.AudioEffect, Integer)
+  name.vb: AddBusEffect(Integer, AudioEffect, Integer)
+- uid: Godot.AudioServer.RemoveBusEffect(System.Int32,System.Int32)
+  commentId: M:Godot.AudioServer.RemoveBusEffect(System.Int32,System.Int32)
+  id: RemoveBusEffect(System.Int32,System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: RemoveBusEffect(int, int)
+  nameWithType: AudioServer.RemoveBusEffect(int, int)
+  fullName: Godot.AudioServer.RemoveBusEffect(int, int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void RemoveBusEffect(int busIdx, int effectIdx)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: effectIdx
+      type: System.Int32
+    content.vb: Public Shared Sub RemoveBusEffect(busIdx As Integer, effectIdx As Integer)
+  overload: Godot.AudioServer.RemoveBusEffect*
+  nameWithType.vb: AudioServer.RemoveBusEffect(Integer, Integer)
+  fullName.vb: Godot.AudioServer.RemoveBusEffect(Integer, Integer)
+  name.vb: RemoveBusEffect(Integer, Integer)
+- uid: Godot.AudioServer.GetBusEffectCount(System.Int32)
+  commentId: M:Godot.AudioServer.GetBusEffectCount(System.Int32)
+  id: GetBusEffectCount(System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetBusEffectCount(int)
+  nameWithType: AudioServer.GetBusEffectCount(int)
+  fullName: Godot.AudioServer.GetBusEffectCount(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int GetBusEffectCount(int busIdx)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetBusEffectCount(busIdx As Integer) As Integer
+  overload: Godot.AudioServer.GetBusEffectCount*
+  nameWithType.vb: AudioServer.GetBusEffectCount(Integer)
+  fullName.vb: Godot.AudioServer.GetBusEffectCount(Integer)
+  name.vb: GetBusEffectCount(Integer)
+- uid: Godot.AudioServer.GetBusEffect(System.Int32,System.Int32)
+  commentId: M:Godot.AudioServer.GetBusEffect(System.Int32,System.Int32)
+  id: GetBusEffect(System.Int32,System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetBusEffect(int, int)
+  nameWithType: AudioServer.GetBusEffect(int, int)
+  fullName: Godot.AudioServer.GetBusEffect(int, int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static AudioEffect GetBusEffect(int busIdx, int effectIdx)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: effectIdx
+      type: System.Int32
+    return:
+      type: Godot.AudioEffect
+    content.vb: Public Shared Function GetBusEffect(busIdx As Integer, effectIdx As Integer) As AudioEffect
+  overload: Godot.AudioServer.GetBusEffect*
+  nameWithType.vb: AudioServer.GetBusEffect(Integer, Integer)
+  fullName.vb: Godot.AudioServer.GetBusEffect(Integer, Integer)
+  name.vb: GetBusEffect(Integer, Integer)
+- uid: Godot.AudioServer.GetBusEffectInstance(System.Int32,System.Int32,System.Int32)
+  commentId: M:Godot.AudioServer.GetBusEffectInstance(System.Int32,System.Int32,System.Int32)
+  id: GetBusEffectInstance(System.Int32,System.Int32,System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetBusEffectInstance(int, int, int)
+  nameWithType: AudioServer.GetBusEffectInstance(int, int, int)
+  fullName: Godot.AudioServer.GetBusEffectInstance(int, int, int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static AudioEffectInstance GetBusEffectInstance(int busIdx, int effectIdx, int channel = 0)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: effectIdx
+      type: System.Int32
+    - id: channel
+      type: System.Int32
+    return:
+      type: Godot.AudioEffectInstance
+    content.vb: Public Shared Function GetBusEffectInstance(busIdx As Integer, effectIdx As Integer, channel As Integer = 0) As AudioEffectInstance
+  overload: Godot.AudioServer.GetBusEffectInstance*
+  nameWithType.vb: AudioServer.GetBusEffectInstance(Integer, Integer, Integer)
+  fullName.vb: Godot.AudioServer.GetBusEffectInstance(Integer, Integer, Integer)
+  name.vb: GetBusEffectInstance(Integer, Integer, Integer)
+- uid: Godot.AudioServer.SwapBusEffects(System.Int32,System.Int32,System.Int32)
+  commentId: M:Godot.AudioServer.SwapBusEffects(System.Int32,System.Int32,System.Int32)
+  id: SwapBusEffects(System.Int32,System.Int32,System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: SwapBusEffects(int, int, int)
+  nameWithType: AudioServer.SwapBusEffects(int, int, int)
+  fullName: Godot.AudioServer.SwapBusEffects(int, int, int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SwapBusEffects(int busIdx, int effectIdx, int byEffectIdx)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: effectIdx
+      type: System.Int32
+    - id: byEffectIdx
+      type: System.Int32
+    content.vb: Public Shared Sub SwapBusEffects(busIdx As Integer, effectIdx As Integer, byEffectIdx As Integer)
+  overload: Godot.AudioServer.SwapBusEffects*
+  nameWithType.vb: AudioServer.SwapBusEffects(Integer, Integer, Integer)
+  fullName.vb: Godot.AudioServer.SwapBusEffects(Integer, Integer, Integer)
+  name.vb: SwapBusEffects(Integer, Integer, Integer)
+- uid: Godot.AudioServer.SetBusEffectEnabled(System.Int32,System.Int32,System.Boolean)
+  commentId: M:Godot.AudioServer.SetBusEffectEnabled(System.Int32,System.Int32,System.Boolean)
+  id: SetBusEffectEnabled(System.Int32,System.Int32,System.Boolean)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: SetBusEffectEnabled(int, int, bool)
+  nameWithType: AudioServer.SetBusEffectEnabled(int, int, bool)
+  fullName: Godot.AudioServer.SetBusEffectEnabled(int, int, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetBusEffectEnabled(int busIdx, int effectIdx, bool enabled)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: effectIdx
+      type: System.Int32
+    - id: enabled
+      type: System.Boolean
+    content.vb: Public Shared Sub SetBusEffectEnabled(busIdx As Integer, effectIdx As Integer, enabled As Boolean)
+  overload: Godot.AudioServer.SetBusEffectEnabled*
+  nameWithType.vb: AudioServer.SetBusEffectEnabled(Integer, Integer, Boolean)
+  fullName.vb: Godot.AudioServer.SetBusEffectEnabled(Integer, Integer, Boolean)
+  name.vb: SetBusEffectEnabled(Integer, Integer, Boolean)
+- uid: Godot.AudioServer.IsBusEffectEnabled(System.Int32,System.Int32)
+  commentId: M:Godot.AudioServer.IsBusEffectEnabled(System.Int32,System.Int32)
+  id: IsBusEffectEnabled(System.Int32,System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: IsBusEffectEnabled(int, int)
+  nameWithType: AudioServer.IsBusEffectEnabled(int, int)
+  fullName: Godot.AudioServer.IsBusEffectEnabled(int, int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsBusEffectEnabled(int busIdx, int effectIdx)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: effectIdx
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsBusEffectEnabled(busIdx As Integer, effectIdx As Integer) As Boolean
+  overload: Godot.AudioServer.IsBusEffectEnabled*
+  nameWithType.vb: AudioServer.IsBusEffectEnabled(Integer, Integer)
+  fullName.vb: Godot.AudioServer.IsBusEffectEnabled(Integer, Integer)
+  name.vb: IsBusEffectEnabled(Integer, Integer)
+- uid: Godot.AudioServer.GetBusPeakVolumeLeftDb(System.Int32,System.Int32)
+  commentId: M:Godot.AudioServer.GetBusPeakVolumeLeftDb(System.Int32,System.Int32)
+  id: GetBusPeakVolumeLeftDb(System.Int32,System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetBusPeakVolumeLeftDb(int, int)
+  nameWithType: AudioServer.GetBusPeakVolumeLeftDb(int, int)
+  fullName: Godot.AudioServer.GetBusPeakVolumeLeftDb(int, int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static float GetBusPeakVolumeLeftDb(int busIdx, int channel)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: channel
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetBusPeakVolumeLeftDb(busIdx As Integer, channel As Integer) As Single
+  overload: Godot.AudioServer.GetBusPeakVolumeLeftDb*
+  nameWithType.vb: AudioServer.GetBusPeakVolumeLeftDb(Integer, Integer)
+  fullName.vb: Godot.AudioServer.GetBusPeakVolumeLeftDb(Integer, Integer)
+  name.vb: GetBusPeakVolumeLeftDb(Integer, Integer)
+- uid: Godot.AudioServer.GetBusPeakVolumeRightDb(System.Int32,System.Int32)
+  commentId: M:Godot.AudioServer.GetBusPeakVolumeRightDb(System.Int32,System.Int32)
+  id: GetBusPeakVolumeRightDb(System.Int32,System.Int32)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetBusPeakVolumeRightDb(int, int)
+  nameWithType: AudioServer.GetBusPeakVolumeRightDb(int, int)
+  fullName: Godot.AudioServer.GetBusPeakVolumeRightDb(int, int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static float GetBusPeakVolumeRightDb(int busIdx, int channel)
+    parameters:
+    - id: busIdx
+      type: System.Int32
+    - id: channel
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetBusPeakVolumeRightDb(busIdx As Integer, channel As Integer) As Single
+  overload: Godot.AudioServer.GetBusPeakVolumeRightDb*
+  nameWithType.vb: AudioServer.GetBusPeakVolumeRightDb(Integer, Integer)
+  fullName.vb: Godot.AudioServer.GetBusPeakVolumeRightDb(Integer, Integer)
+  name.vb: GetBusPeakVolumeRightDb(Integer, Integer)
+- uid: Godot.AudioServer.Lock
+  commentId: M:Godot.AudioServer.Lock
+  id: Lock
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: Lock()
+  nameWithType: AudioServer.Lock()
+  fullName: Godot.AudioServer.Lock()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void Lock()
+    content.vb: Public Shared Sub Lock()
+  overload: Godot.AudioServer.Lock*
+- uid: Godot.AudioServer.Unlock
+  commentId: M:Godot.AudioServer.Unlock
+  id: Unlock
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: Unlock()
+  nameWithType: AudioServer.Unlock()
+  fullName: Godot.AudioServer.Unlock()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void Unlock()
+    content.vb: Public Shared Sub Unlock()
+  overload: Godot.AudioServer.Unlock*
+- uid: Godot.AudioServer.GetSpeakerMode
+  commentId: M:Godot.AudioServer.GetSpeakerMode
+  id: GetSpeakerMode
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetSpeakerMode()
+  nameWithType: AudioServer.GetSpeakerMode()
+  fullName: Godot.AudioServer.GetSpeakerMode()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static AudioServer.SpeakerMode GetSpeakerMode()
+    return:
+      type: Godot.AudioServer.SpeakerMode
+    content.vb: Public Shared Function GetSpeakerMode() As AudioServer.SpeakerMode
+  overload: Godot.AudioServer.GetSpeakerMode*
+- uid: Godot.AudioServer.GetMixRate
+  commentId: M:Godot.AudioServer.GetMixRate
+  id: GetMixRate
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetMixRate()
+  nameWithType: AudioServer.GetMixRate()
+  fullName: Godot.AudioServer.GetMixRate()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static float GetMixRate()
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetMixRate() As Single
+  overload: Godot.AudioServer.GetMixRate*
+- uid: Godot.AudioServer.GetInputMixRate
+  commentId: M:Godot.AudioServer.GetInputMixRate
+  id: GetInputMixRate
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetInputMixRate()
+  nameWithType: AudioServer.GetInputMixRate()
+  fullName: Godot.AudioServer.GetInputMixRate()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static float GetInputMixRate()
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetInputMixRate() As Single
+  overload: Godot.AudioServer.GetInputMixRate*
+- uid: Godot.AudioServer.GetDriverName
+  commentId: M:Godot.AudioServer.GetDriverName
+  id: GetDriverName
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetDriverName()
+  nameWithType: AudioServer.GetDriverName()
+  fullName: Godot.AudioServer.GetDriverName()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetDriverName()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetDriverName() As String
+  overload: Godot.AudioServer.GetDriverName*
+- uid: Godot.AudioServer.GetOutputDeviceList
+  commentId: M:Godot.AudioServer.GetOutputDeviceList
+  id: GetOutputDeviceList
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetOutputDeviceList()
+  nameWithType: AudioServer.GetOutputDeviceList()
+  fullName: Godot.AudioServer.GetOutputDeviceList()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] GetOutputDeviceList()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetOutputDeviceList() As String()
+  overload: Godot.AudioServer.GetOutputDeviceList*
+- uid: Godot.AudioServer.GetTimeToNextMix
+  commentId: M:Godot.AudioServer.GetTimeToNextMix
+  id: GetTimeToNextMix
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetTimeToNextMix()
+  nameWithType: AudioServer.GetTimeToNextMix()
+  fullName: Godot.AudioServer.GetTimeToNextMix()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static double GetTimeToNextMix()
+    return:
+      type: System.Double
+    content.vb: Public Shared Function GetTimeToNextMix() As Double
+  overload: Godot.AudioServer.GetTimeToNextMix*
+- uid: Godot.AudioServer.GetTimeSinceLastMix
+  commentId: M:Godot.AudioServer.GetTimeSinceLastMix
+  id: GetTimeSinceLastMix
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetTimeSinceLastMix()
+  nameWithType: AudioServer.GetTimeSinceLastMix()
+  fullName: Godot.AudioServer.GetTimeSinceLastMix()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static double GetTimeSinceLastMix()
+    return:
+      type: System.Double
+    content.vb: Public Shared Function GetTimeSinceLastMix() As Double
+  overload: Godot.AudioServer.GetTimeSinceLastMix*
+- uid: Godot.AudioServer.GetOutputLatency
+  commentId: M:Godot.AudioServer.GetOutputLatency
+  id: GetOutputLatency
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetOutputLatency()
+  nameWithType: AudioServer.GetOutputLatency()
+  fullName: Godot.AudioServer.GetOutputLatency()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static double GetOutputLatency()
+    return:
+      type: System.Double
+    content.vb: Public Shared Function GetOutputLatency() As Double
+  overload: Godot.AudioServer.GetOutputLatency*
+- uid: Godot.AudioServer.GetInputDeviceList
+  commentId: M:Godot.AudioServer.GetInputDeviceList
+  id: GetInputDeviceList
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GetInputDeviceList()
+  nameWithType: AudioServer.GetInputDeviceList()
+  fullName: Godot.AudioServer.GetInputDeviceList()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] GetInputDeviceList()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetInputDeviceList() As String()
+  overload: Godot.AudioServer.GetInputDeviceList*
+- uid: Godot.AudioServer.SetBusLayout(Godot.AudioBusLayout)
+  commentId: M:Godot.AudioServer.SetBusLayout(Godot.AudioBusLayout)
+  id: SetBusLayout(Godot.AudioBusLayout)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: SetBusLayout(AudioBusLayout)
+  nameWithType: AudioServer.SetBusLayout(AudioBusLayout)
+  fullName: Godot.AudioServer.SetBusLayout(Godot.AudioBusLayout)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetBusLayout(AudioBusLayout busLayout)
+    parameters:
+    - id: busLayout
+      type: Godot.AudioBusLayout
+    content.vb: Public Shared Sub SetBusLayout(busLayout As AudioBusLayout)
+  overload: Godot.AudioServer.SetBusLayout*
+- uid: Godot.AudioServer.GenerateBusLayout
+  commentId: M:Godot.AudioServer.GenerateBusLayout
+  id: GenerateBusLayout
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: GenerateBusLayout()
+  nameWithType: AudioServer.GenerateBusLayout()
+  fullName: Godot.AudioServer.GenerateBusLayout()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static AudioBusLayout GenerateBusLayout()
+    return:
+      type: Godot.AudioBusLayout
+    content.vb: Public Shared Function GenerateBusLayout() As AudioBusLayout
+  overload: Godot.AudioServer.GenerateBusLayout*
+- uid: Godot.AudioServer.SetEnableTaggingUsedAudioStreams(System.Boolean)
+  commentId: M:Godot.AudioServer.SetEnableTaggingUsedAudioStreams(System.Boolean)
+  id: SetEnableTaggingUsedAudioStreams(System.Boolean)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: SetEnableTaggingUsedAudioStreams(bool)
+  nameWithType: AudioServer.SetEnableTaggingUsedAudioStreams(bool)
+  fullName: Godot.AudioServer.SetEnableTaggingUsedAudioStreams(bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetEnableTaggingUsedAudioStreams(bool enable)
+    parameters:
+    - id: enable
+      type: System.Boolean
+    content.vb: Public Shared Sub SetEnableTaggingUsedAudioStreams(enable As Boolean)
+  overload: Godot.AudioServer.SetEnableTaggingUsedAudioStreams*
+  nameWithType.vb: AudioServer.SetEnableTaggingUsedAudioStreams(Boolean)
+  fullName.vb: Godot.AudioServer.SetEnableTaggingUsedAudioStreams(Boolean)
+  name.vb: SetEnableTaggingUsedAudioStreams(Boolean)
+- uid: Godot.AudioServer.IsStreamRegisteredAsSample(Godot.AudioStream)
+  commentId: M:Godot.AudioServer.IsStreamRegisteredAsSample(Godot.AudioStream)
+  id: IsStreamRegisteredAsSample(Godot.AudioStream)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: IsStreamRegisteredAsSample(AudioStream)
+  nameWithType: AudioServer.IsStreamRegisteredAsSample(AudioStream)
+  fullName: Godot.AudioServer.IsStreamRegisteredAsSample(Godot.AudioStream)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsStreamRegisteredAsSample(AudioStream stream)
+    parameters:
+    - id: stream
+      type: Godot.AudioStream
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsStreamRegisteredAsSample(stream As AudioStream) As Boolean
+  overload: Godot.AudioServer.IsStreamRegisteredAsSample*
+- uid: Godot.AudioServer.RegisterStreamAsSample(Godot.AudioStream)
+  commentId: M:Godot.AudioServer.RegisterStreamAsSample(Godot.AudioStream)
+  id: RegisterStreamAsSample(Godot.AudioStream)
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: RegisterStreamAsSample(AudioStream)
+  nameWithType: AudioServer.RegisterStreamAsSample(AudioStream)
+  fullName: Godot.AudioServer.RegisterStreamAsSample(Godot.AudioStream)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void RegisterStreamAsSample(AudioStream stream)
+    parameters:
+    - id: stream
+      type: Godot.AudioStream
+    content.vb: Public Shared Sub RegisterStreamAsSample(stream As AudioStream)
+  overload: Godot.AudioServer.RegisterStreamAsSample*
+- uid: Godot.AudioServer.BusCount
+  commentId: P:Godot.AudioServer.BusCount
+  id: BusCount
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: BusCount
+  nameWithType: AudioServer.BusCount
+  fullName: Godot.AudioServer.BusCount
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int BusCount { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared Property BusCount As Integer
+  overload: Godot.AudioServer.BusCount*
+- uid: Godot.AudioServer.OutputDevice
+  commentId: P:Godot.AudioServer.OutputDevice
+  id: OutputDevice
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: OutputDevice
+  nameWithType: AudioServer.OutputDevice
+  fullName: Godot.AudioServer.OutputDevice
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string OutputDevice { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared Property OutputDevice As String
+  overload: Godot.AudioServer.OutputDevice*
+- uid: Godot.AudioServer.InputDevice
+  commentId: P:Godot.AudioServer.InputDevice
+  id: InputDevice
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: InputDevice
+  nameWithType: AudioServer.InputDevice
+  fullName: Godot.AudioServer.InputDevice
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string InputDevice { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared Property InputDevice As String
+  overload: Godot.AudioServer.InputDevice*
+- uid: Godot.AudioServer.PlaybackSpeedScale
+  commentId: P:Godot.AudioServer.PlaybackSpeedScale
+  id: PlaybackSpeedScale
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: PlaybackSpeedScale
+  nameWithType: AudioServer.PlaybackSpeedScale
+  fullName: Godot.AudioServer.PlaybackSpeedScale
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static float PlaybackSpeedScale { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Shared Property PlaybackSpeedScale As Single
+  overload: Godot.AudioServer.PlaybackSpeedScale*
+- uid: Godot.AudioServer.Singleton
+  commentId: P:Godot.AudioServer.Singleton
+  id: Singleton
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: Singleton
+  nameWithType: AudioServer.Singleton
+  fullName: Godot.AudioServer.Singleton
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static AudioServerInstance Singleton { get; }
+    parameters: []
+    return:
+      type: Godot.AudioServerInstance
+    content.vb: Public Shared ReadOnly Property Singleton As AudioServerInstance
+  overload: Godot.AudioServer.Singleton*
+- uid: Godot.AudioServer.BusLayoutChanged
+  commentId: E:Godot.AudioServer.BusLayoutChanged
+  id: BusLayoutChanged
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: BusLayoutChanged
+  nameWithType: AudioServer.BusLayoutChanged
+  fullName: Godot.AudioServer.BusLayoutChanged
+  type: Event
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static event Action BusLayoutChanged
+    return:
+      type: System.Action
+    content.vb: Public Shared Event BusLayoutChanged As Action
+- uid: Godot.AudioServer.BusRenamed
+  commentId: E:Godot.AudioServer.BusRenamed
+  id: BusRenamed
+  parent: Godot.AudioServer
+  langs:
+  - csharp
+  - vb
+  name: BusRenamed
+  nameWithType: AudioServer.BusRenamed
+  fullName: Godot.AudioServer.BusRenamed
+  type: Event
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static event AudioServer.BusRenamedEventHandler BusRenamed
+    return:
+      type: Godot.AudioServer.BusRenamedEventHandler
+    content.vb: Public Shared Event BusRenamed As AudioServer.BusRenamedEventHandler
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.AudioServer.RemoveBus*
+  commentId: Overload:Godot.AudioServer.RemoveBus
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_RemoveBus_System_Int32_
+  name: RemoveBus
+  nameWithType: AudioServer.RemoveBus
+  fullName: Godot.AudioServer.RemoveBus
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Godot.AudioServer.AddBus*
+  commentId: Overload:Godot.AudioServer.AddBus
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_AddBus_System_Int32_
+  name: AddBus
+  nameWithType: AudioServer.AddBus
+  fullName: Godot.AudioServer.AddBus
+- uid: Godot.AudioServer.MoveBus*
+  commentId: Overload:Godot.AudioServer.MoveBus
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_MoveBus_System_Int32_System_Int32_
+  name: MoveBus
+  nameWithType: AudioServer.MoveBus
+  fullName: Godot.AudioServer.MoveBus
+- uid: Godot.AudioServer.SetBusName*
+  commentId: Overload:Godot.AudioServer.SetBusName
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_SetBusName_System_Int32_System_String_
+  name: SetBusName
+  nameWithType: AudioServer.SetBusName
+  fullName: Godot.AudioServer.SetBusName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.AudioServer.GetBusName*
+  commentId: Overload:Godot.AudioServer.GetBusName
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetBusName_System_Int32_
+  name: GetBusName
+  nameWithType: AudioServer.GetBusName
+  fullName: Godot.AudioServer.GetBusName
+- uid: Godot.AudioServer.GetBusIndex*
+  commentId: Overload:Godot.AudioServer.GetBusIndex
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetBusIndex_Godot_StringName_
+  name: GetBusIndex
+  nameWithType: AudioServer.GetBusIndex
+  fullName: Godot.AudioServer.GetBusIndex
+- uid: Godot.StringName
+  commentId: T:Godot.StringName
+  parent: Godot
+  isExternal: true
+  href: Godot.StringName.html
+  name: StringName
+  nameWithType: StringName
+  fullName: Godot.StringName
+- uid: Godot.AudioServer.GetBusChannels*
+  commentId: Overload:Godot.AudioServer.GetBusChannels
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetBusChannels_System_Int32_
+  name: GetBusChannels
+  nameWithType: AudioServer.GetBusChannels
+  fullName: Godot.AudioServer.GetBusChannels
+- uid: Godot.AudioServer.SetBusVolumeDb*
+  commentId: Overload:Godot.AudioServer.SetBusVolumeDb
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_SetBusVolumeDb_System_Int32_System_Single_
+  name: SetBusVolumeDb
+  nameWithType: AudioServer.SetBusVolumeDb
+  fullName: Godot.AudioServer.SetBusVolumeDb
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Godot.AudioServer.GetBusVolumeDb*
+  commentId: Overload:Godot.AudioServer.GetBusVolumeDb
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetBusVolumeDb_System_Int32_
+  name: GetBusVolumeDb
+  nameWithType: AudioServer.GetBusVolumeDb
+  fullName: Godot.AudioServer.GetBusVolumeDb
+- uid: Godot.AudioServer.SetBusVolumeLinear*
+  commentId: Overload:Godot.AudioServer.SetBusVolumeLinear
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_SetBusVolumeLinear_System_Int32_System_Single_
+  name: SetBusVolumeLinear
+  nameWithType: AudioServer.SetBusVolumeLinear
+  fullName: Godot.AudioServer.SetBusVolumeLinear
+- uid: Godot.AudioServer.GetBusVolumeLinear*
+  commentId: Overload:Godot.AudioServer.GetBusVolumeLinear
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetBusVolumeLinear_System_Int32_
+  name: GetBusVolumeLinear
+  nameWithType: AudioServer.GetBusVolumeLinear
+  fullName: Godot.AudioServer.GetBusVolumeLinear
+- uid: Godot.AudioServer.SetBusSend*
+  commentId: Overload:Godot.AudioServer.SetBusSend
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_SetBusSend_System_Int32_Godot_StringName_
+  name: SetBusSend
+  nameWithType: AudioServer.SetBusSend
+  fullName: Godot.AudioServer.SetBusSend
+- uid: Godot.AudioServer.GetBusSend*
+  commentId: Overload:Godot.AudioServer.GetBusSend
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetBusSend_System_Int32_
+  name: GetBusSend
+  nameWithType: AudioServer.GetBusSend
+  fullName: Godot.AudioServer.GetBusSend
+- uid: Godot.AudioServer.SetBusSolo*
+  commentId: Overload:Godot.AudioServer.SetBusSolo
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_SetBusSolo_System_Int32_System_Boolean_
+  name: SetBusSolo
+  nameWithType: AudioServer.SetBusSolo
+  fullName: Godot.AudioServer.SetBusSolo
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.AudioServer.IsBusSolo*
+  commentId: Overload:Godot.AudioServer.IsBusSolo
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_IsBusSolo_System_Int32_
+  name: IsBusSolo
+  nameWithType: AudioServer.IsBusSolo
+  fullName: Godot.AudioServer.IsBusSolo
+- uid: Godot.AudioServer.SetBusMute*
+  commentId: Overload:Godot.AudioServer.SetBusMute
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_SetBusMute_System_Int32_System_Boolean_
+  name: SetBusMute
+  nameWithType: AudioServer.SetBusMute
+  fullName: Godot.AudioServer.SetBusMute
+- uid: Godot.AudioServer.IsBusMute*
+  commentId: Overload:Godot.AudioServer.IsBusMute
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_IsBusMute_System_Int32_
+  name: IsBusMute
+  nameWithType: AudioServer.IsBusMute
+  fullName: Godot.AudioServer.IsBusMute
+- uid: Godot.AudioServer.SetBusBypassEffects*
+  commentId: Overload:Godot.AudioServer.SetBusBypassEffects
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_SetBusBypassEffects_System_Int32_System_Boolean_
+  name: SetBusBypassEffects
+  nameWithType: AudioServer.SetBusBypassEffects
+  fullName: Godot.AudioServer.SetBusBypassEffects
+- uid: Godot.AudioServer.IsBusBypassingEffects*
+  commentId: Overload:Godot.AudioServer.IsBusBypassingEffects
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_IsBusBypassingEffects_System_Int32_
+  name: IsBusBypassingEffects
+  nameWithType: AudioServer.IsBusBypassingEffects
+  fullName: Godot.AudioServer.IsBusBypassingEffects
+- uid: Godot.AudioServer.AddBusEffect*
+  commentId: Overload:Godot.AudioServer.AddBusEffect
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_AddBusEffect_System_Int32_Godot_AudioEffect_System_Int32_
+  name: AddBusEffect
+  nameWithType: AudioServer.AddBusEffect
+  fullName: Godot.AudioServer.AddBusEffect
+- uid: Godot.AudioEffect
+  commentId: T:Godot.AudioEffect
+  parent: Godot
+  isExternal: true
+  href: Godot.AudioEffect.html
+  name: AudioEffect
+  nameWithType: AudioEffect
+  fullName: Godot.AudioEffect
+- uid: Godot.AudioServer.RemoveBusEffect*
+  commentId: Overload:Godot.AudioServer.RemoveBusEffect
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_RemoveBusEffect_System_Int32_System_Int32_
+  name: RemoveBusEffect
+  nameWithType: AudioServer.RemoveBusEffect
+  fullName: Godot.AudioServer.RemoveBusEffect
+- uid: Godot.AudioServer.GetBusEffectCount*
+  commentId: Overload:Godot.AudioServer.GetBusEffectCount
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetBusEffectCount_System_Int32_
+  name: GetBusEffectCount
+  nameWithType: AudioServer.GetBusEffectCount
+  fullName: Godot.AudioServer.GetBusEffectCount
+- uid: Godot.AudioServer.GetBusEffect*
+  commentId: Overload:Godot.AudioServer.GetBusEffect
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetBusEffect_System_Int32_System_Int32_
+  name: GetBusEffect
+  nameWithType: AudioServer.GetBusEffect
+  fullName: Godot.AudioServer.GetBusEffect
+- uid: Godot.AudioServer.GetBusEffectInstance*
+  commentId: Overload:Godot.AudioServer.GetBusEffectInstance
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetBusEffectInstance_System_Int32_System_Int32_System_Int32_
+  name: GetBusEffectInstance
+  nameWithType: AudioServer.GetBusEffectInstance
+  fullName: Godot.AudioServer.GetBusEffectInstance
+- uid: Godot.AudioEffectInstance
+  commentId: T:Godot.AudioEffectInstance
+  parent: Godot
+  isExternal: true
+  href: Godot.AudioEffectInstance.html
+  name: AudioEffectInstance
+  nameWithType: AudioEffectInstance
+  fullName: Godot.AudioEffectInstance
+- uid: Godot.AudioServer.SwapBusEffects*
+  commentId: Overload:Godot.AudioServer.SwapBusEffects
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_SwapBusEffects_System_Int32_System_Int32_System_Int32_
+  name: SwapBusEffects
+  nameWithType: AudioServer.SwapBusEffects
+  fullName: Godot.AudioServer.SwapBusEffects
+- uid: Godot.AudioServer.SetBusEffectEnabled*
+  commentId: Overload:Godot.AudioServer.SetBusEffectEnabled
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_SetBusEffectEnabled_System_Int32_System_Int32_System_Boolean_
+  name: SetBusEffectEnabled
+  nameWithType: AudioServer.SetBusEffectEnabled
+  fullName: Godot.AudioServer.SetBusEffectEnabled
+- uid: Godot.AudioServer.IsBusEffectEnabled*
+  commentId: Overload:Godot.AudioServer.IsBusEffectEnabled
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_IsBusEffectEnabled_System_Int32_System_Int32_
+  name: IsBusEffectEnabled
+  nameWithType: AudioServer.IsBusEffectEnabled
+  fullName: Godot.AudioServer.IsBusEffectEnabled
+- uid: Godot.AudioServer.GetBusPeakVolumeLeftDb*
+  commentId: Overload:Godot.AudioServer.GetBusPeakVolumeLeftDb
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetBusPeakVolumeLeftDb_System_Int32_System_Int32_
+  name: GetBusPeakVolumeLeftDb
+  nameWithType: AudioServer.GetBusPeakVolumeLeftDb
+  fullName: Godot.AudioServer.GetBusPeakVolumeLeftDb
+- uid: Godot.AudioServer.GetBusPeakVolumeRightDb*
+  commentId: Overload:Godot.AudioServer.GetBusPeakVolumeRightDb
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetBusPeakVolumeRightDb_System_Int32_System_Int32_
+  name: GetBusPeakVolumeRightDb
+  nameWithType: AudioServer.GetBusPeakVolumeRightDb
+  fullName: Godot.AudioServer.GetBusPeakVolumeRightDb
+- uid: Godot.AudioServer.Lock*
+  commentId: Overload:Godot.AudioServer.Lock
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_Lock
+  name: Lock
+  nameWithType: AudioServer.Lock
+  fullName: Godot.AudioServer.Lock
+- uid: Godot.AudioServer.Unlock*
+  commentId: Overload:Godot.AudioServer.Unlock
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_Unlock
+  name: Unlock
+  nameWithType: AudioServer.Unlock
+  fullName: Godot.AudioServer.Unlock
+- uid: Godot.AudioServer.GetSpeakerMode*
+  commentId: Overload:Godot.AudioServer.GetSpeakerMode
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetSpeakerMode
+  name: GetSpeakerMode
+  nameWithType: AudioServer.GetSpeakerMode
+  fullName: Godot.AudioServer.GetSpeakerMode
+- uid: Godot.AudioServer.SpeakerMode
+  commentId: T:Godot.AudioServer.SpeakerMode
+  parent: Godot
+  isExternal: true
+  href: Godot.AudioServer.html
+  name: AudioServer.SpeakerMode
+  nameWithType: AudioServer.SpeakerMode
+  fullName: Godot.AudioServer.SpeakerMode
+  spec.csharp:
+  - uid: Godot.AudioServer
+    name: AudioServer
+    isExternal: true
+    href: Godot.AudioServer.html
+  - name: .
+  - uid: Godot.AudioServer.SpeakerMode
+    name: SpeakerMode
+    isExternal: true
+    href: Godot.AudioServer.SpeakerMode.html
+  spec.vb:
+  - uid: Godot.AudioServer
+    name: AudioServer
+    isExternal: true
+    href: Godot.AudioServer.html
+  - name: .
+  - uid: Godot.AudioServer.SpeakerMode
+    name: SpeakerMode
+    isExternal: true
+    href: Godot.AudioServer.SpeakerMode.html
+- uid: Godot.AudioServer.GetMixRate*
+  commentId: Overload:Godot.AudioServer.GetMixRate
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetMixRate
+  name: GetMixRate
+  nameWithType: AudioServer.GetMixRate
+  fullName: Godot.AudioServer.GetMixRate
+- uid: Godot.AudioServer.GetInputMixRate*
+  commentId: Overload:Godot.AudioServer.GetInputMixRate
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetInputMixRate
+  name: GetInputMixRate
+  nameWithType: AudioServer.GetInputMixRate
+  fullName: Godot.AudioServer.GetInputMixRate
+- uid: Godot.AudioServer.GetDriverName*
+  commentId: Overload:Godot.AudioServer.GetDriverName
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetDriverName
+  name: GetDriverName
+  nameWithType: AudioServer.GetDriverName
+  fullName: Godot.AudioServer.GetDriverName
+- uid: Godot.AudioServer.GetOutputDeviceList*
+  commentId: Overload:Godot.AudioServer.GetOutputDeviceList
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetOutputDeviceList
+  name: GetOutputDeviceList
+  nameWithType: AudioServer.GetOutputDeviceList
+  fullName: Godot.AudioServer.GetOutputDeviceList
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Godot.AudioServer.GetTimeToNextMix*
+  commentId: Overload:Godot.AudioServer.GetTimeToNextMix
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetTimeToNextMix
+  name: GetTimeToNextMix
+  nameWithType: AudioServer.GetTimeToNextMix
+  fullName: Godot.AudioServer.GetTimeToNextMix
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Godot.AudioServer.GetTimeSinceLastMix*
+  commentId: Overload:Godot.AudioServer.GetTimeSinceLastMix
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetTimeSinceLastMix
+  name: GetTimeSinceLastMix
+  nameWithType: AudioServer.GetTimeSinceLastMix
+  fullName: Godot.AudioServer.GetTimeSinceLastMix
+- uid: Godot.AudioServer.GetOutputLatency*
+  commentId: Overload:Godot.AudioServer.GetOutputLatency
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetOutputLatency
+  name: GetOutputLatency
+  nameWithType: AudioServer.GetOutputLatency
+  fullName: Godot.AudioServer.GetOutputLatency
+- uid: Godot.AudioServer.GetInputDeviceList*
+  commentId: Overload:Godot.AudioServer.GetInputDeviceList
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GetInputDeviceList
+  name: GetInputDeviceList
+  nameWithType: AudioServer.GetInputDeviceList
+  fullName: Godot.AudioServer.GetInputDeviceList
+- uid: Godot.AudioServer.SetBusLayout*
+  commentId: Overload:Godot.AudioServer.SetBusLayout
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_SetBusLayout_Godot_AudioBusLayout_
+  name: SetBusLayout
+  nameWithType: AudioServer.SetBusLayout
+  fullName: Godot.AudioServer.SetBusLayout
+- uid: Godot.AudioBusLayout
+  commentId: T:Godot.AudioBusLayout
+  parent: Godot
+  isExternal: true
+  href: Godot.AudioBusLayout.html
+  name: AudioBusLayout
+  nameWithType: AudioBusLayout
+  fullName: Godot.AudioBusLayout
+- uid: Godot.AudioServer.GenerateBusLayout*
+  commentId: Overload:Godot.AudioServer.GenerateBusLayout
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_GenerateBusLayout
+  name: GenerateBusLayout
+  nameWithType: AudioServer.GenerateBusLayout
+  fullName: Godot.AudioServer.GenerateBusLayout
+- uid: Godot.AudioServer.SetEnableTaggingUsedAudioStreams*
+  commentId: Overload:Godot.AudioServer.SetEnableTaggingUsedAudioStreams
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_SetEnableTaggingUsedAudioStreams_System_Boolean_
+  name: SetEnableTaggingUsedAudioStreams
+  nameWithType: AudioServer.SetEnableTaggingUsedAudioStreams
+  fullName: Godot.AudioServer.SetEnableTaggingUsedAudioStreams
+- uid: Godot.AudioServer.IsStreamRegisteredAsSample*
+  commentId: Overload:Godot.AudioServer.IsStreamRegisteredAsSample
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_IsStreamRegisteredAsSample_Godot_AudioStream_
+  name: IsStreamRegisteredAsSample
+  nameWithType: AudioServer.IsStreamRegisteredAsSample
+  fullName: Godot.AudioServer.IsStreamRegisteredAsSample
+- uid: Godot.AudioStream
+  commentId: T:Godot.AudioStream
+  parent: Godot
+  isExternal: true
+  href: Godot.AudioStream.html
+  name: AudioStream
+  nameWithType: AudioStream
+  fullName: Godot.AudioStream
+- uid: Godot.AudioServer.RegisterStreamAsSample*
+  commentId: Overload:Godot.AudioServer.RegisterStreamAsSample
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_RegisterStreamAsSample_Godot_AudioStream_
+  name: RegisterStreamAsSample
+  nameWithType: AudioServer.RegisterStreamAsSample
+  fullName: Godot.AudioServer.RegisterStreamAsSample
+- uid: Godot.AudioServer.BusCount*
+  commentId: Overload:Godot.AudioServer.BusCount
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_BusCount
+  name: BusCount
+  nameWithType: AudioServer.BusCount
+  fullName: Godot.AudioServer.BusCount
+- uid: Godot.AudioServer.OutputDevice*
+  commentId: Overload:Godot.AudioServer.OutputDevice
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_OutputDevice
+  name: OutputDevice
+  nameWithType: AudioServer.OutputDevice
+  fullName: Godot.AudioServer.OutputDevice
+- uid: Godot.AudioServer.InputDevice*
+  commentId: Overload:Godot.AudioServer.InputDevice
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_InputDevice
+  name: InputDevice
+  nameWithType: AudioServer.InputDevice
+  fullName: Godot.AudioServer.InputDevice
+- uid: Godot.AudioServer.PlaybackSpeedScale*
+  commentId: Overload:Godot.AudioServer.PlaybackSpeedScale
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_PlaybackSpeedScale
+  name: PlaybackSpeedScale
+  nameWithType: AudioServer.PlaybackSpeedScale
+  fullName: Godot.AudioServer.PlaybackSpeedScale
+- uid: Godot.AudioServer.Singleton*
+  commentId: Overload:Godot.AudioServer.Singleton
+  isExternal: true
+  href: Godot.AudioServer.html#Godot_AudioServer_Singleton
+  name: Singleton
+  nameWithType: AudioServer.Singleton
+  fullName: Godot.AudioServer.Singleton
+- uid: Godot.AudioServerInstance
+  commentId: T:Godot.AudioServerInstance
+  parent: Godot
+  isExternal: true
+  href: Godot.AudioServerInstance.html
+  name: AudioServerInstance
+  nameWithType: AudioServerInstance
+  fullName: Godot.AudioServerInstance
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Godot.AudioServer.BusRenamedEventHandler
+  commentId: T:Godot.AudioServer.BusRenamedEventHandler
+  parent: Godot
+  isExternal: true
+  href: Godot.AudioServer.html
+  name: AudioServer.BusRenamedEventHandler
+  nameWithType: AudioServer.BusRenamedEventHandler
+  fullName: Godot.AudioServer.BusRenamedEventHandler
+  spec.csharp:
+  - uid: Godot.AudioServer
+    name: AudioServer
+    isExternal: true
+    href: Godot.AudioServer.html
+  - name: .
+  - uid: Godot.AudioServer.BusRenamedEventHandler
+    name: BusRenamedEventHandler
+    isExternal: true
+    href: Godot.AudioServer.BusRenamedEventHandler.html
+  spec.vb:
+  - uid: Godot.AudioServer
+    name: AudioServer
+    isExternal: true
+    href: Godot.AudioServer.html
+  - name: .
+  - uid: Godot.AudioServer.BusRenamedEventHandler
+    name: BusRenamedEventHandler
+    isExternal: true
+    href: Godot.AudioServer.BusRenamedEventHandler.html

@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct Projection | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Projection | mysite ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Godot.Projection">
+
+
+
+  <h1 id="Godot_Projection" data-uid="Godot.Projection" class="text-break">
+Struct Projection  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Godot.html">Godot</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GodotSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Projection : IEquatable&lt;Projection&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Godot.Projection.html">Projection</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Godot_Projection__ctor_" data-uid="Godot.Projection.#ctor*"></a>
+
+  <h3 id="Godot_Projection__ctor_Godot_Transform3D_" data-uid="Godot.Projection.#ctor(Godot.Transform3D)">
+  Projection(Transform3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Projection(Transform3D transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection__ctor_" data-uid="Godot.Projection.#ctor*"></a>
+
+  <h3 id="Godot_Projection__ctor_Godot_Vector4_Godot_Vector4_Godot_Vector4_Godot_Vector4_" data-uid="Godot.Projection.#ctor(Godot.Vector4,Godot.Vector4,Godot.Vector4,Godot.Vector4)">
+  Projection(Vector4, Vector4, Vector4, Vector4)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Projection(Vector4 x, Vector4 y, Vector4 z, Vector4 w)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Godot.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Godot.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="Godot.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+    <dt><code>w</code> <a class="xref" href="Godot.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection__ctor_" data-uid="Godot.Projection.#ctor*"></a>
+
+  <h3 id="Godot_Projection__ctor_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="Godot.Projection.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+  Projection(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Projection(float xx, float xy, float xz, float xw, float yx, float yy, float yz, float yw, float zx, float zy, float zz, float zw, float wx, float wy, float wz, float ww)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xx</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>xy</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>xz</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>xw</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>yx</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>yy</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>yz</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>yw</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zx</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zy</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zz</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zw</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>wx</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>wy</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>wz</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ww</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Godot_Projection_W" data-uid="Godot.Projection.W">
+  W
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 W</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Godot_Projection_X" data-uid="Godot.Projection.X">
+  X
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 X</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Godot_Projection_Y" data-uid="Godot.Projection.Y">
+  Y
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 Y</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Godot_Projection_Z" data-uid="Godot.Projection.Z">
+  Z
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 Z</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Godot_Projection_Identity_" data-uid="Godot.Projection.Identity*"></a>
+
+  <h3 id="Godot_Projection_Identity" data-uid="Godot.Projection.Identity">
+  Identity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Projection Identity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_Item_" data-uid="Godot.Projection.Item*"></a>
+
+  <h3 id="Godot_Projection_Item_System_Int32_" data-uid="Godot.Projection.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 this[int column] { readonly get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>column</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_Item_" data-uid="Godot.Projection.Item*"></a>
+
+  <h3 id="Godot_Projection_Item_System_Int32_System_Int32_" data-uid="Godot.Projection.Item(System.Int32,System.Int32)">
+  this[int, int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float this[int column, int row] { readonly get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>column</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>row</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_Zero_" data-uid="Godot.Projection.Zero*"></a>
+
+  <h3 id="Godot_Projection_Zero" data-uid="Godot.Projection.Zero">
+  Zero
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Projection Zero { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Godot_Projection_CreateDepthCorrection_" data-uid="Godot.Projection.CreateDepthCorrection*"></a>
+
+  <h3 id="Godot_Projection_CreateDepthCorrection_System_Boolean_" data-uid="Godot.Projection.CreateDepthCorrection(System.Boolean)">
+  CreateDepthCorrection(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Projection CreateDepthCorrection(bool flipY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flipY</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_CreateFitAabb_" data-uid="Godot.Projection.CreateFitAabb*"></a>
+
+  <h3 id="Godot_Projection_CreateFitAabb_Godot_Aabb_" data-uid="Godot.Projection.CreateFitAabb(Godot.Aabb)">
+  CreateFitAabb(Aabb)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Projection CreateFitAabb(Aabb aabb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aabb</code> <a class="xref" href="Godot.Aabb.html">Aabb</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_CreateForHmd_" data-uid="Godot.Projection.CreateForHmd*"></a>
+
+  <h3 id="Godot_Projection_CreateForHmd_System_Int32_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="Godot.Projection.CreateForHmd(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+  CreateForHmd(int, float, float, float, float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Projection CreateForHmd(int eye, float aspect, float intraocularDist, float displayWidth, float displayToLens, float oversample, float zNear, float zFar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eye</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>aspect</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>intraocularDist</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>displayWidth</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>displayToLens</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>oversample</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zNear</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zFar</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_CreateFrustum_" data-uid="Godot.Projection.CreateFrustum*"></a>
+
+  <h3 id="Godot_Projection_CreateFrustum_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="Godot.Projection.CreateFrustum(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+  CreateFrustum(float, float, float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Projection CreateFrustum(float left, float right, float bottom, float top, float depthNear, float depthFar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>right</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>bottom</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>top</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>depthNear</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>depthFar</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_CreateFrustumAspect_" data-uid="Godot.Projection.CreateFrustumAspect*"></a>
+
+  <h3 id="Godot_Projection_CreateFrustumAspect_System_Single_System_Single_Godot_Vector2_System_Single_System_Single_System_Boolean_" data-uid="Godot.Projection.CreateFrustumAspect(System.Single,System.Single,Godot.Vector2,System.Single,System.Single,System.Boolean)">
+  CreateFrustumAspect(float, float, Vector2, float, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Projection CreateFrustumAspect(float size, float aspect, Vector2 offset, float depthNear, float depthFar, bool flipFov)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>size</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>aspect</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>offset</code> <a class="xref" href="Godot.Vector2.html">Vector2</a></dt>
+    <dd></dd>
+    <dt><code>depthNear</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>depthFar</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>flipFov</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_CreateLightAtlasRect_" data-uid="Godot.Projection.CreateLightAtlasRect*"></a>
+
+  <h3 id="Godot_Projection_CreateLightAtlasRect_Godot_Rect2_" data-uid="Godot.Projection.CreateLightAtlasRect(Godot.Rect2)">
+  CreateLightAtlasRect(Rect2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Projection CreateLightAtlasRect(Rect2 rect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <a class="xref" href="Godot.Rect2.html">Rect2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_CreateOrthogonal_" data-uid="Godot.Projection.CreateOrthogonal*"></a>
+
+  <h3 id="Godot_Projection_CreateOrthogonal_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="Godot.Projection.CreateOrthogonal(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+  CreateOrthogonal(float, float, float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Projection CreateOrthogonal(float left, float right, float bottom, float top, float zNear, float zFar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>right</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>bottom</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>top</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zNear</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zFar</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_CreateOrthogonalAspect_" data-uid="Godot.Projection.CreateOrthogonalAspect*"></a>
+
+  <h3 id="Godot_Projection_CreateOrthogonalAspect_System_Single_System_Single_System_Single_System_Single_System_Boolean_" data-uid="Godot.Projection.CreateOrthogonalAspect(System.Single,System.Single,System.Single,System.Single,System.Boolean)">
+  CreateOrthogonalAspect(float, float, float, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Projection CreateOrthogonalAspect(float size, float aspect, float zNear, float zFar, bool flipFov)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>size</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>aspect</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zNear</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zFar</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>flipFov</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_CreatePerspective_" data-uid="Godot.Projection.CreatePerspective*"></a>
+
+  <h3 id="Godot_Projection_CreatePerspective_System_Single_System_Single_System_Single_System_Single_System_Boolean_" data-uid="Godot.Projection.CreatePerspective(System.Single,System.Single,System.Single,System.Single,System.Boolean)">
+  CreatePerspective(float, float, float, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Projection CreatePerspective(float fovyDegrees, float aspect, float zNear, float zFar, bool flipFov)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fovyDegrees</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>aspect</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zNear</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zFar</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>flipFov</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_CreatePerspectiveHmd_" data-uid="Godot.Projection.CreatePerspectiveHmd*"></a>
+
+  <h3 id="Godot_Projection_CreatePerspectiveHmd_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Int32_System_Single_System_Single_" data-uid="Godot.Projection.CreatePerspectiveHmd(System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Int32,System.Single,System.Single)">
+  CreatePerspectiveHmd(float, float, float, float, bool, int, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Projection CreatePerspectiveHmd(float fovyDegrees, float aspect, float zNear, float zFar, bool flipFov, int eye, float intraocularDist, float convergenceDist)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fovyDegrees</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>aspect</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zNear</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zFar</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>flipFov</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>eye</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>intraocularDist</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>convergenceDist</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_Determinant_" data-uid="Godot.Projection.Determinant*"></a>
+
+  <h3 id="Godot_Projection_Determinant" data-uid="Godot.Projection.Determinant">
+  Determinant()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float Determinant()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_Equals_" data-uid="Godot.Projection.Equals*"></a>
+
+  <h3 id="Godot_Projection_Equals_Godot_Projection_" data-uid="Godot.Projection.Equals(Godot.Projection)">
+  Equals(Projection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(Projection other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_Equals_" data-uid="Godot.Projection.Equals*"></a>
+
+  <h3 id="Godot_Projection_Equals_System_Object_" data-uid="Godot.Projection.Equals(System.Object)">
+  Equals(object?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">object</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_FlippedY_" data-uid="Godot.Projection.FlippedY*"></a>
+
+  <h3 id="Godot_Projection_FlippedY" data-uid="Godot.Projection.FlippedY">
+  FlippedY()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Projection FlippedY()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_GetAspect_" data-uid="Godot.Projection.GetAspect*"></a>
+
+  <h3 id="Godot_Projection_GetAspect" data-uid="Godot.Projection.GetAspect">
+  GetAspect()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float GetAspect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_GetFarPlaneHalfExtents_" data-uid="Godot.Projection.GetFarPlaneHalfExtents*"></a>
+
+  <h3 id="Godot_Projection_GetFarPlaneHalfExtents" data-uid="Godot.Projection.GetFarPlaneHalfExtents">
+  GetFarPlaneHalfExtents()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector2 GetFarPlaneHalfExtents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_GetFov_" data-uid="Godot.Projection.GetFov*"></a>
+
+  <h3 id="Godot_Projection_GetFov" data-uid="Godot.Projection.GetFov">
+  GetFov()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float GetFov()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_GetFovy_" data-uid="Godot.Projection.GetFovy*"></a>
+
+  <h3 id="Godot_Projection_GetFovy_System_Single_System_Single_" data-uid="Godot.Projection.GetFovy(System.Single,System.Single)">
+  GetFovy(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetFovy(float fovx, float aspect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fovx</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>aspect</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_GetHashCode_" data-uid="Godot.Projection.GetHashCode*"></a>
+
+  <h3 id="Godot_Projection_GetHashCode" data-uid="Godot.Projection.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_GetLodMultiplier_" data-uid="Godot.Projection.GetLodMultiplier*"></a>
+
+  <h3 id="Godot_Projection_GetLodMultiplier" data-uid="Godot.Projection.GetLodMultiplier">
+  GetLodMultiplier()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float GetLodMultiplier()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_GetPixelsPerMeter_" data-uid="Godot.Projection.GetPixelsPerMeter*"></a>
+
+  <h3 id="Godot_Projection_GetPixelsPerMeter_System_Int32_" data-uid="Godot.Projection.GetPixelsPerMeter(System.Int32)">
+  GetPixelsPerMeter(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int GetPixelsPerMeter(int forPixelWidth)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>forPixelWidth</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_GetProjectionPlane_" data-uid="Godot.Projection.GetProjectionPlane*"></a>
+
+  <h3 id="Godot_Projection_GetProjectionPlane_Godot_Projection_Planes_" data-uid="Godot.Projection.GetProjectionPlane(Godot.Projection.Planes)">
+  GetProjectionPlane(Planes)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Plane GetProjectionPlane(Projection.Planes plane)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>plane</code> <a class="xref" href="Godot.Projection.html">Projection</a>.<a class="xref" href="Godot.Projection.Planes.html">Planes</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Plane.html">Plane</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_GetViewportHalfExtents_" data-uid="Godot.Projection.GetViewportHalfExtents*"></a>
+
+  <h3 id="Godot_Projection_GetViewportHalfExtents" data-uid="Godot.Projection.GetViewportHalfExtents">
+  GetViewportHalfExtents()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector2 GetViewportHalfExtents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_GetZFar_" data-uid="Godot.Projection.GetZFar*"></a>
+
+  <h3 id="Godot_Projection_GetZFar" data-uid="Godot.Projection.GetZFar">
+  GetZFar()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float GetZFar()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_GetZNear_" data-uid="Godot.Projection.GetZNear*"></a>
+
+  <h3 id="Godot_Projection_GetZNear" data-uid="Godot.Projection.GetZNear">
+  GetZNear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float GetZNear()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_Inverse_" data-uid="Godot.Projection.Inverse*"></a>
+
+  <h3 id="Godot_Projection_Inverse" data-uid="Godot.Projection.Inverse">
+  Inverse()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Projection Inverse()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_IsOrthogonal_" data-uid="Godot.Projection.IsOrthogonal*"></a>
+
+  <h3 id="Godot_Projection_IsOrthogonal" data-uid="Godot.Projection.IsOrthogonal">
+  IsOrthogonal()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool IsOrthogonal()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_JitterOffseted_" data-uid="Godot.Projection.JitterOffseted*"></a>
+
+  <h3 id="Godot_Projection_JitterOffseted_Godot_Vector2_" data-uid="Godot.Projection.JitterOffseted(Godot.Vector2)">
+  JitterOffseted(Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Projection JitterOffseted(Vector2 offset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>offset</code> <a class="xref" href="Godot.Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_PerspectiveZNearAdjusted_" data-uid="Godot.Projection.PerspectiveZNearAdjusted*"></a>
+
+  <h3 id="Godot_Projection_PerspectiveZNearAdjusted_System_Single_" data-uid="Godot.Projection.PerspectiveZNearAdjusted(System.Single)">
+  PerspectiveZNearAdjusted(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Projection PerspectiveZNearAdjusted(float newZNear)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newZNear</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_ToString_" data-uid="Godot.Projection.ToString*"></a>
+
+  <h3 id="Godot_Projection_ToString" data-uid="Godot.Projection.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_ToString_" data-uid="Godot.Projection.ToString*"></a>
+
+  <h3 id="Godot_Projection_ToString_System_String_" data-uid="Godot.Projection.ToString(System.String)">
+  ToString(string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string ToString(string? format)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Godot_Projection_op_Equality_" data-uid="Godot.Projection.op_Equality*"></a>
+
+  <h3 id="Godot_Projection_op_Equality_Godot_Projection_Godot_Projection_" data-uid="Godot.Projection.op_Equality(Godot.Projection,Godot.Projection)">
+  operator ==(Projection, Projection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Projection left, Projection right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_op_Explicit_" data-uid="Godot.Projection.op_Explicit*"></a>
+
+  <h3 id="Godot_Projection_op_Explicit_Godot_Projection__Godot_Transform3D" data-uid="Godot.Projection.op_Explicit(Godot.Projection)~Godot.Transform3D">
+  explicit operator Transform3D(Projection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator Transform3D(Projection proj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>proj</code> <a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_op_Inequality_" data-uid="Godot.Projection.op_Inequality*"></a>
+
+  <h3 id="Godot_Projection_op_Inequality_Godot_Projection_Godot_Projection_" data-uid="Godot.Projection.op_Inequality(Godot.Projection,Godot.Projection)">
+  operator !=(Projection, Projection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Projection left, Projection right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_op_Multiply_" data-uid="Godot.Projection.op_Multiply*"></a>
+
+  <h3 id="Godot_Projection_op_Multiply_Godot_Projection_Godot_Projection_" data-uid="Godot.Projection.op_Multiply(Godot.Projection,Godot.Projection)">
+  operator *(Projection, Projection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Projection operator *(Projection left, Projection right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_op_Multiply_" data-uid="Godot.Projection.op_Multiply*"></a>
+
+  <h3 id="Godot_Projection_op_Multiply_Godot_Projection_Godot_Vector3_" data-uid="Godot.Projection.op_Multiply(Godot.Projection,Godot.Vector3)">
+  operator *(Projection, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 operator *(Projection proj, Vector3 vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>proj</code> <a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+    <dt><code>vector</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_op_Multiply_" data-uid="Godot.Projection.op_Multiply*"></a>
+
+  <h3 id="Godot_Projection_op_Multiply_Godot_Projection_Godot_Vector4_" data-uid="Godot.Projection.op_Multiply(Godot.Projection,Godot.Vector4)">
+  operator *(Projection, Vector4)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4 operator *(Projection proj, Vector4 vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>proj</code> <a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+    <dt><code>vector</code> <a class="xref" href="Godot.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Projection_op_Multiply_" data-uid="Godot.Projection.op_Multiply*"></a>
+
+  <h3 id="Godot_Projection_op_Multiply_Godot_Vector4_Godot_Projection_" data-uid="Godot.Projection.op_Multiply(Godot.Vector4,Godot.Projection)">
+  operator *(Vector4, Projection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4 operator *(Vector4 vector, Projection proj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <a class="xref" href="Godot.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+    <dt><code>proj</code> <a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

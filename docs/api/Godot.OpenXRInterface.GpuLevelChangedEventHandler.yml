@@ -1,0 +1,235 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.OpenXRInterface.GpuLevelChangedEventHandler
+  commentId: T:Godot.OpenXRInterface.GpuLevelChangedEventHandler
+  id: OpenXRInterface.GpuLevelChangedEventHandler
+  parent: Godot
+  children:
+  - Godot.OpenXRInterface.GpuLevelChangedEventHandler.#ctor(System.Object,System.IntPtr)
+  - Godot.OpenXRInterface.GpuLevelChangedEventHandler.BeginInvoke(System.Int64,System.Int64,System.Int64,System.AsyncCallback,System.Object)
+  - Godot.OpenXRInterface.GpuLevelChangedEventHandler.EndInvoke(System.IAsyncResult)
+  - Godot.OpenXRInterface.GpuLevelChangedEventHandler.Invoke(System.Int64,System.Int64,System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: OpenXRInterface.GpuLevelChangedEventHandler
+  nameWithType: OpenXRInterface.GpuLevelChangedEventHandler
+  fullName: Godot.OpenXRInterface.GpuLevelChangedEventHandler
+  type: Delegate
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public delegate void OpenXRInterface.GpuLevelChangedEventHandler(long subDomain, long fromLevel, long toLevel)
+    parameters:
+    - id: subDomain
+      type: System.Int64
+    - id: fromLevel
+      type: System.Int64
+    - id: toLevel
+      type: System.Int64
+    content.vb: Public Delegate Sub OpenXRInterface.GpuLevelChangedEventHandler(subDomain As Long, fromLevel As Long, toLevel As Long)
+- uid: Godot.OpenXRInterface.GpuLevelChangedEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Godot.OpenXRInterface.GpuLevelChangedEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Godot.OpenXRInterface.GpuLevelChangedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: GpuLevelChangedEventHandler(object, nint)
+  nameWithType: OpenXRInterface.GpuLevelChangedEventHandler.GpuLevelChangedEventHandler(object, nint)
+  fullName: Godot.OpenXRInterface.GpuLevelChangedEventHandler.GpuLevelChangedEventHandler(object, nint)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public GpuLevelChangedEventHandler(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Godot.OpenXRInterface.GpuLevelChangedEventHandler.#ctor*
+  nameWithType.vb: OpenXRInterface.GpuLevelChangedEventHandler.New(Object, IntPtr)
+  fullName.vb: Godot.OpenXRInterface.GpuLevelChangedEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Godot.OpenXRInterface.GpuLevelChangedEventHandler.Invoke(System.Int64,System.Int64,System.Int64)
+  commentId: M:Godot.OpenXRInterface.GpuLevelChangedEventHandler.Invoke(System.Int64,System.Int64,System.Int64)
+  id: Invoke(System.Int64,System.Int64,System.Int64)
+  parent: Godot.OpenXRInterface.GpuLevelChangedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(long, long, long)
+  nameWithType: OpenXRInterface.GpuLevelChangedEventHandler.Invoke(long, long, long)
+  fullName: Godot.OpenXRInterface.GpuLevelChangedEventHandler.Invoke(long, long, long)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void Invoke(long subDomain, long fromLevel, long toLevel)
+    parameters:
+    - id: subDomain
+      type: System.Int64
+    - id: fromLevel
+      type: System.Int64
+    - id: toLevel
+      type: System.Int64
+    content.vb: Public Overridable Sub Invoke(subDomain As Long, fromLevel As Long, toLevel As Long)
+  overload: Godot.OpenXRInterface.GpuLevelChangedEventHandler.Invoke*
+  nameWithType.vb: OpenXRInterface.GpuLevelChangedEventHandler.Invoke(Long, Long, Long)
+  fullName.vb: Godot.OpenXRInterface.GpuLevelChangedEventHandler.Invoke(Long, Long, Long)
+  name.vb: Invoke(Long, Long, Long)
+- uid: Godot.OpenXRInterface.GpuLevelChangedEventHandler.BeginInvoke(System.Int64,System.Int64,System.Int64,System.AsyncCallback,System.Object)
+  commentId: M:Godot.OpenXRInterface.GpuLevelChangedEventHandler.BeginInvoke(System.Int64,System.Int64,System.Int64,System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.Int64,System.Int64,System.Int64,System.AsyncCallback,System.Object)
+  parent: Godot.OpenXRInterface.GpuLevelChangedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(long, long, long, AsyncCallback, object)
+  nameWithType: OpenXRInterface.GpuLevelChangedEventHandler.BeginInvoke(long, long, long, AsyncCallback, object)
+  fullName: Godot.OpenXRInterface.GpuLevelChangedEventHandler.BeginInvoke(long, long, long, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(long subDomain, long fromLevel, long toLevel, AsyncCallback callback, object @object)
+    parameters:
+    - id: subDomain
+      type: System.Int64
+    - id: fromLevel
+      type: System.Int64
+    - id: toLevel
+      type: System.Int64
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(subDomain As Long, fromLevel As Long, toLevel As Long, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Godot.OpenXRInterface.GpuLevelChangedEventHandler.BeginInvoke*
+  nameWithType.vb: OpenXRInterface.GpuLevelChangedEventHandler.BeginInvoke(Long, Long, Long, AsyncCallback, Object)
+  fullName.vb: Godot.OpenXRInterface.GpuLevelChangedEventHandler.BeginInvoke(Long, Long, Long, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(Long, Long, Long, AsyncCallback, Object)
+- uid: Godot.OpenXRInterface.GpuLevelChangedEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Godot.OpenXRInterface.GpuLevelChangedEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Godot.OpenXRInterface.GpuLevelChangedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: OpenXRInterface.GpuLevelChangedEventHandler.EndInvoke(IAsyncResult)
+  fullName: Godot.OpenXRInterface.GpuLevelChangedEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: Godot.OpenXRInterface.GpuLevelChangedEventHandler.EndInvoke*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.OpenXRInterface.GpuLevelChangedEventHandler.#ctor*
+  commentId: Overload:Godot.OpenXRInterface.GpuLevelChangedEventHandler.#ctor
+  isExternal: true
+  href: Godot.OpenXRInterface.GpuLevelChangedEventHandler.html#Godot_OpenXRInterface_GpuLevelChangedEventHandler__ctor_System_Object_System_IntPtr_
+  name: GpuLevelChangedEventHandler
+  nameWithType: OpenXRInterface.GpuLevelChangedEventHandler.GpuLevelChangedEventHandler
+  fullName: Godot.OpenXRInterface.GpuLevelChangedEventHandler.GpuLevelChangedEventHandler
+  nameWithType.vb: OpenXRInterface.GpuLevelChangedEventHandler.New
+  fullName.vb: Godot.OpenXRInterface.GpuLevelChangedEventHandler.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Godot.OpenXRInterface.GpuLevelChangedEventHandler.Invoke*
+  commentId: Overload:Godot.OpenXRInterface.GpuLevelChangedEventHandler.Invoke
+  isExternal: true
+  href: Godot.OpenXRInterface.GpuLevelChangedEventHandler.html#Godot_OpenXRInterface_GpuLevelChangedEventHandler_Invoke_System_Int64_System_Int64_System_Int64_
+  name: Invoke
+  nameWithType: OpenXRInterface.GpuLevelChangedEventHandler.Invoke
+  fullName: Godot.OpenXRInterface.GpuLevelChangedEventHandler.Invoke
+- uid: Godot.OpenXRInterface.GpuLevelChangedEventHandler.BeginInvoke*
+  commentId: Overload:Godot.OpenXRInterface.GpuLevelChangedEventHandler.BeginInvoke
+  isExternal: true
+  href: Godot.OpenXRInterface.GpuLevelChangedEventHandler.html#Godot_OpenXRInterface_GpuLevelChangedEventHandler_BeginInvoke_System_Int64_System_Int64_System_Int64_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: OpenXRInterface.GpuLevelChangedEventHandler.BeginInvoke
+  fullName: Godot.OpenXRInterface.GpuLevelChangedEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Godot.OpenXRInterface.GpuLevelChangedEventHandler.EndInvoke*
+  commentId: Overload:Godot.OpenXRInterface.GpuLevelChangedEventHandler.EndInvoke
+  isExternal: true
+  href: Godot.OpenXRInterface.GpuLevelChangedEventHandler.html#Godot_OpenXRInterface_GpuLevelChangedEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: OpenXRInterface.GpuLevelChangedEventHandler.EndInvoke
+  fullName: Godot.OpenXRInterface.GpuLevelChangedEventHandler.EndInvoke

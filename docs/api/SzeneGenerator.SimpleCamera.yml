@@ -1,0 +1,1008 @@
+### YamlMime:ManagedReference
+items:
+- uid: SzeneGenerator.SimpleCamera
+  commentId: T:SzeneGenerator.SimpleCamera
+  id: SimpleCamera
+  parent: SzeneGenerator
+  children:
+  - SzeneGenerator.SimpleCamera.#ctor
+  - SzeneGenerator.SimpleCamera.ApplyPreset(System.Int32)
+  - SzeneGenerator.SimpleCamera.AutoLookAtTarget
+  - SzeneGenerator.SimpleCamera.Configure(SzeneGenerator.CameraSettings)
+  - SzeneGenerator.SimpleCamera.FocusHeight
+  - SzeneGenerator.SimpleCamera.FocusRandomTarget(System.Int32,SzeneGenerator.CameraTargetPreset)
+  - SzeneGenerator.SimpleCamera.MouseSensitivity
+  - SzeneGenerator.SimpleCamera.SetHeightSampler(System.Func{Godot.Vector3,System.Single})
+  - SzeneGenerator.SimpleCamera.SetTargets(System.Collections.Generic.List{Godot.Node3D})
+  - SzeneGenerator.SimpleCamera.SetWorldBounds(System.Single,System.Single,System.Single,System.Single,System.Single)
+  - SzeneGenerator.SimpleCamera.SpawnRandomFromPreset(System.Int32,System.Int32,SzeneGenerator.CameraTargetPreset)
+  - SzeneGenerator.SimpleCamera.Speed
+  - SzeneGenerator.SimpleCamera.TakeScreenshotAsync(System.String,System.Boolean,System.String,System.Int32)
+  - SzeneGenerator.SimpleCamera._Input(Godot.InputEvent)
+  - SzeneGenerator.SimpleCamera._Process(System.Double)
+  - SzeneGenerator.SimpleCamera._Ready
+  langs:
+  - csharp
+  - vb
+  name: SimpleCamera
+  nameWithType: SimpleCamera
+  fullName: SzeneGenerator.SimpleCamera
+  type: Class
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.SimpleCamera_ScriptMethods.generated.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  summary: >-
+    Free-fly camera with preset views and procedural spawn logic.
+
+    Can position itself relative to targets while keeping them inside the view frustum.
+  example: []
+  syntax:
+    content: >-
+      [ScriptPath("res://Scripts/World/SimpleCamera.cs")]
+
+      public class SimpleCamera : Camera3D
+    content.vb: >-
+      <ScriptPath("res://Scripts/World/SimpleCamera.cs")>
+
+      Public Class SimpleCamera Inherits Camera3D
+  inheritance:
+  - System.Object
+  - Godot.GodotObject
+  - Godot.Node
+  - Godot.Node3D
+  - Godot.Camera3D
+  attributes:
+  - type: Godot.ScriptPathAttribute
+    ctor: Godot.ScriptPathAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: res://Scripts/World/SimpleCamera.cs
+- uid: SzeneGenerator.SimpleCamera.AutoLookAtTarget
+  commentId: F:SzeneGenerator.SimpleCamera.AutoLookAtTarget
+  id: AutoLookAtTarget
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: AutoLookAtTarget
+  nameWithType: SimpleCamera.AutoLookAtTarget
+  fullName: SzeneGenerator.SimpleCamera.AutoLookAtTarget
+  type: Field
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.SimpleCamera_ScriptMethods.generated.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public bool AutoLookAtTarget
+    return:
+      type: System.Boolean
+    content.vb: Public AutoLookAtTarget As Boolean
+- uid: SzeneGenerator.SimpleCamera.FocusHeight
+  commentId: F:SzeneGenerator.SimpleCamera.FocusHeight
+  id: FocusHeight
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: FocusHeight
+  nameWithType: SimpleCamera.FocusHeight
+  fullName: SzeneGenerator.SimpleCamera.FocusHeight
+  type: Field
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.SimpleCamera_ScriptMethods.generated.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public float FocusHeight
+    return:
+      type: System.Single
+    content.vb: Public FocusHeight As Single
+- uid: SzeneGenerator.SimpleCamera.MouseSensitivity
+  commentId: F:SzeneGenerator.SimpleCamera.MouseSensitivity
+  id: MouseSensitivity
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: MouseSensitivity
+  nameWithType: SimpleCamera.MouseSensitivity
+  fullName: SzeneGenerator.SimpleCamera.MouseSensitivity
+  type: Field
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.SimpleCamera_ScriptMethods.generated.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public float MouseSensitivity
+    return:
+      type: System.Single
+    content.vb: Public MouseSensitivity As Single
+- uid: SzeneGenerator.SimpleCamera.Speed
+  commentId: F:SzeneGenerator.SimpleCamera.Speed
+  id: Speed
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: Speed
+  nameWithType: SimpleCamera.Speed
+  fullName: SzeneGenerator.SimpleCamera.Speed
+  type: Field
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.SimpleCamera_ScriptMethods.generated.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public float Speed
+    return:
+      type: System.Single
+    content.vb: Public Speed As Single
+- uid: SzeneGenerator.SimpleCamera._Ready
+  commentId: M:SzeneGenerator.SimpleCamera._Ready
+  id: _Ready
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: _Ready()
+  nameWithType: SimpleCamera._Ready()
+  fullName: SzeneGenerator.SimpleCamera._Ready()
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  example: []
+  syntax:
+    content: public override void _Ready()
+    content.vb: Public Overrides Sub _Ready()
+  overridden: Godot.Node._Ready
+  overload: SzeneGenerator.SimpleCamera._Ready*
+- uid: SzeneGenerator.SimpleCamera._Process(System.Double)
+  commentId: M:SzeneGenerator.SimpleCamera._Process(System.Double)
+  id: _Process(System.Double)
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: _Process(double)
+  nameWithType: SimpleCamera._Process(double)
+  fullName: SzeneGenerator.SimpleCamera._Process(double)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  example: []
+  syntax:
+    content: public override void _Process(double delta)
+    parameters:
+    - id: delta
+      type: System.Double
+    content.vb: Public Overrides Sub _Process(delta As Double)
+  overridden: Godot.Node._Process(System.Double)
+  overload: SzeneGenerator.SimpleCamera._Process*
+  nameWithType.vb: SimpleCamera._Process(Double)
+  fullName.vb: SzeneGenerator.SimpleCamera._Process(Double)
+  name.vb: _Process(Double)
+- uid: SzeneGenerator.SimpleCamera._Input(Godot.InputEvent)
+  commentId: M:SzeneGenerator.SimpleCamera._Input(Godot.InputEvent)
+  id: _Input(Godot.InputEvent)
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: _Input(InputEvent)
+  nameWithType: SimpleCamera._Input(InputEvent)
+  fullName: SzeneGenerator.SimpleCamera._Input(Godot.InputEvent)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  example: []
+  syntax:
+    content: public override void _Input(InputEvent @event)
+    parameters:
+    - id: event
+      type: Godot.InputEvent
+    content.vb: Public Overrides Sub _Input([event] As InputEvent)
+  overridden: Godot.Node._Input(Godot.InputEvent)
+  overload: SzeneGenerator.SimpleCamera._Input*
+- uid: SzeneGenerator.SimpleCamera.Configure(SzeneGenerator.CameraSettings)
+  commentId: M:SzeneGenerator.SimpleCamera.Configure(SzeneGenerator.CameraSettings)
+  id: Configure(SzeneGenerator.CameraSettings)
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: Configure(CameraSettings)
+  nameWithType: SimpleCamera.Configure(CameraSettings)
+  fullName: SzeneGenerator.SimpleCamera.Configure(SzeneGenerator.CameraSettings)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public void Configure(CameraSettings cfg)
+    parameters:
+    - id: cfg
+      type: SzeneGenerator.CameraSettings
+    content.vb: Public Sub Configure(cfg As CameraSettings)
+  overload: SzeneGenerator.SimpleCamera.Configure*
+- uid: SzeneGenerator.SimpleCamera.ApplyPreset(System.Int32)
+  commentId: M:SzeneGenerator.SimpleCamera.ApplyPreset(System.Int32)
+  id: ApplyPreset(System.Int32)
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: ApplyPreset(int)
+  nameWithType: SimpleCamera.ApplyPreset(int)
+  fullName: SzeneGenerator.SimpleCamera.ApplyPreset(int)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public void ApplyPreset(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub ApplyPreset(id As Integer)
+  overload: SzeneGenerator.SimpleCamera.ApplyPreset*
+  nameWithType.vb: SimpleCamera.ApplyPreset(Integer)
+  fullName.vb: SzeneGenerator.SimpleCamera.ApplyPreset(Integer)
+  name.vb: ApplyPreset(Integer)
+- uid: SzeneGenerator.SimpleCamera.SetTargets(System.Collections.Generic.List{Godot.Node3D})
+  commentId: M:SzeneGenerator.SimpleCamera.SetTargets(System.Collections.Generic.List{Godot.Node3D})
+  id: SetTargets(System.Collections.Generic.List{Godot.Node3D})
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: SetTargets(List<Node3D>)
+  nameWithType: SimpleCamera.SetTargets(List<Node3D>)
+  fullName: SzeneGenerator.SimpleCamera.SetTargets(System.Collections.Generic.List<Godot.Node3D>)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public void SetTargets(List<Node3D> targets)
+    parameters:
+    - id: targets
+      type: System.Collections.Generic.List{Godot.Node3D}
+    content.vb: Public Sub SetTargets(targets As List(Of Node3D))
+  overload: SzeneGenerator.SimpleCamera.SetTargets*
+  nameWithType.vb: SimpleCamera.SetTargets(List(Of Node3D))
+  fullName.vb: SzeneGenerator.SimpleCamera.SetTargets(System.Collections.Generic.List(Of Godot.Node3D))
+  name.vb: SetTargets(List(Of Node3D))
+- uid: SzeneGenerator.SimpleCamera.SetHeightSampler(System.Func{Godot.Vector3,System.Single})
+  commentId: M:SzeneGenerator.SimpleCamera.SetHeightSampler(System.Func{Godot.Vector3,System.Single})
+  id: SetHeightSampler(System.Func{Godot.Vector3,System.Single})
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: SetHeightSampler(Func<Vector3, float>)
+  nameWithType: SimpleCamera.SetHeightSampler(Func<Vector3, float>)
+  fullName: SzeneGenerator.SimpleCamera.SetHeightSampler(System.Func<Godot.Vector3, float>)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public void SetHeightSampler(Func<Vector3, float> sampler)
+    parameters:
+    - id: sampler
+      type: System.Func{Godot.Vector3,System.Single}
+    content.vb: Public Sub SetHeightSampler(sampler As Func(Of Vector3, Single))
+  overload: SzeneGenerator.SimpleCamera.SetHeightSampler*
+  nameWithType.vb: SimpleCamera.SetHeightSampler(Func(Of Vector3, Single))
+  fullName.vb: SzeneGenerator.SimpleCamera.SetHeightSampler(System.Func(Of Godot.Vector3, Single))
+  name.vb: SetHeightSampler(Func(Of Vector3, Single))
+- uid: SzeneGenerator.SimpleCamera.SetWorldBounds(System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:SzeneGenerator.SimpleCamera.SetWorldBounds(System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: SetWorldBounds(System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: SetWorldBounds(float, float, float, float, float)
+  nameWithType: SimpleCamera.SetWorldBounds(float, float, float, float, float)
+  fullName: SzeneGenerator.SimpleCamera.SetWorldBounds(float, float, float, float, float)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public void SetWorldBounds(float minX, float maxX, float minZ, float maxZ, float edgeMarginMeters)
+    parameters:
+    - id: minX
+      type: System.Single
+    - id: maxX
+      type: System.Single
+    - id: minZ
+      type: System.Single
+    - id: maxZ
+      type: System.Single
+    - id: edgeMarginMeters
+      type: System.Single
+    content.vb: Public Sub SetWorldBounds(minX As Single, maxX As Single, minZ As Single, maxZ As Single, edgeMarginMeters As Single)
+  overload: SzeneGenerator.SimpleCamera.SetWorldBounds*
+  nameWithType.vb: SimpleCamera.SetWorldBounds(Single, Single, Single, Single, Single)
+  fullName.vb: SzeneGenerator.SimpleCamera.SetWorldBounds(Single, Single, Single, Single, Single)
+  name.vb: SetWorldBounds(Single, Single, Single, Single, Single)
+- uid: SzeneGenerator.SimpleCamera.SpawnRandomFromPreset(System.Int32,System.Int32,SzeneGenerator.CameraTargetPreset)
+  commentId: M:SzeneGenerator.SimpleCamera.SpawnRandomFromPreset(System.Int32,System.Int32,SzeneGenerator.CameraTargetPreset)
+  id: SpawnRandomFromPreset(System.Int32,System.Int32,SzeneGenerator.CameraTargetPreset)
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: SpawnRandomFromPreset(int, int, CameraTargetPreset)
+  nameWithType: SimpleCamera.SpawnRandomFromPreset(int, int, CameraTargetPreset)
+  fullName: SzeneGenerator.SimpleCamera.SpawnRandomFromPreset(int, int, SzeneGenerator.CameraTargetPreset)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  summary: >-
+    Attempts to spawn the camera at a random valid position based on a preset,
+
+    ensuring terrain bounds, visibility of a target, and optional line-of-sight.
+  example: []
+  syntax:
+    content: public bool SpawnRandomFromPreset(int seed, int presetId, CameraTargetPreset focusPreset)
+    parameters:
+    - id: seed
+      type: System.Int32
+    - id: presetId
+      type: System.Int32
+    - id: focusPreset
+      type: SzeneGenerator.CameraTargetPreset
+    return:
+      type: System.Boolean
+    content.vb: Public Function SpawnRandomFromPreset(seed As Integer, presetId As Integer, focusPreset As CameraTargetPreset) As Boolean
+  overload: SzeneGenerator.SimpleCamera.SpawnRandomFromPreset*
+  nameWithType.vb: SimpleCamera.SpawnRandomFromPreset(Integer, Integer, CameraTargetPreset)
+  fullName.vb: SzeneGenerator.SimpleCamera.SpawnRandomFromPreset(Integer, Integer, SzeneGenerator.CameraTargetPreset)
+  name.vb: SpawnRandomFromPreset(Integer, Integer, CameraTargetPreset)
+- uid: SzeneGenerator.SimpleCamera.FocusRandomTarget(System.Int32,SzeneGenerator.CameraTargetPreset)
+  commentId: M:SzeneGenerator.SimpleCamera.FocusRandomTarget(System.Int32,SzeneGenerator.CameraTargetPreset)
+  id: FocusRandomTarget(System.Int32,SzeneGenerator.CameraTargetPreset)
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: FocusRandomTarget(int, CameraTargetPreset)
+  nameWithType: SimpleCamera.FocusRandomTarget(int, CameraTargetPreset)
+  fullName: SzeneGenerator.SimpleCamera.FocusRandomTarget(int, SzeneGenerator.CameraTargetPreset)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public void FocusRandomTarget(int seed, CameraTargetPreset preset)
+    parameters:
+    - id: seed
+      type: System.Int32
+    - id: preset
+      type: SzeneGenerator.CameraTargetPreset
+    content.vb: Public Sub FocusRandomTarget(seed As Integer, preset As CameraTargetPreset)
+  overload: SzeneGenerator.SimpleCamera.FocusRandomTarget*
+  nameWithType.vb: SimpleCamera.FocusRandomTarget(Integer, CameraTargetPreset)
+  fullName.vb: SzeneGenerator.SimpleCamera.FocusRandomTarget(Integer, SzeneGenerator.CameraTargetPreset)
+  name.vb: FocusRandomTarget(Integer, CameraTargetPreset)
+- uid: SzeneGenerator.SimpleCamera.TakeScreenshotAsync(System.String,System.Boolean,System.String,System.Int32)
+  commentId: M:SzeneGenerator.SimpleCamera.TakeScreenshotAsync(System.String,System.Boolean,System.String,System.Int32)
+  id: TakeScreenshotAsync(System.String,System.Boolean,System.String,System.Int32)
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: TakeScreenshotAsync(string, bool, string, int)
+  nameWithType: SimpleCamera.TakeScreenshotAsync(string, bool, string, int)
+  fullName: SzeneGenerator.SimpleCamera.TakeScreenshotAsync(string, bool, string, int)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.SimpleCamera_ScriptMethods.generated.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public Task<string> TakeScreenshotAsync(string fileNameWithoutExt = "", bool exportTargetCoordinates = false, string regionId = "", int seed = 0)
+    parameters:
+    - id: fileNameWithoutExt
+      type: System.String
+    - id: exportTargetCoordinates
+      type: System.Boolean
+    - id: regionId
+      type: System.String
+    - id: seed
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Public Function TakeScreenshotAsync(fileNameWithoutExt As String = "", exportTargetCoordinates As Boolean = False, regionId As String = "", seed As Integer = 0) As Task(Of String)
+  overload: SzeneGenerator.SimpleCamera.TakeScreenshotAsync*
+  nameWithType.vb: SimpleCamera.TakeScreenshotAsync(String, Boolean, String, Integer)
+  fullName.vb: SzeneGenerator.SimpleCamera.TakeScreenshotAsync(String, Boolean, String, Integer)
+  name.vb: TakeScreenshotAsync(String, Boolean, String, Integer)
+- uid: SzeneGenerator.SimpleCamera.#ctor
+  commentId: M:SzeneGenerator.SimpleCamera.#ctor
+  id: '#ctor'
+  parent: SzeneGenerator.SimpleCamera
+  langs:
+  - csharp
+  - vb
+  name: SimpleCamera()
+  nameWithType: SimpleCamera.SimpleCamera()
+  fullName: SzeneGenerator.SimpleCamera.SimpleCamera()
+  type: Constructor
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public SimpleCamera()
+    content.vb: Public Sub New()
+  overload: SzeneGenerator.SimpleCamera.#ctor*
+  nameWithType.vb: SimpleCamera.New()
+  fullName.vb: SzeneGenerator.SimpleCamera.New()
+  name.vb: New()
+references:
+- uid: SzeneGenerator
+  commentId: N:SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.html
+  name: SzeneGenerator
+  nameWithType: SzeneGenerator
+  fullName: SzeneGenerator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Godot.GodotObject
+  commentId: T:Godot.GodotObject
+  parent: Godot
+  isExternal: true
+  name: GodotObject
+  nameWithType: GodotObject
+  fullName: Godot.GodotObject
+- uid: Godot.Node
+  commentId: T:Godot.Node
+  parent: Godot
+  isExternal: true
+  name: Node
+  nameWithType: Node
+  fullName: Godot.Node
+- uid: Godot.Node3D
+  commentId: T:Godot.Node3D
+  parent: Godot
+  isExternal: true
+  name: Node3D
+  nameWithType: Node3D
+  fullName: Godot.Node3D
+- uid: Godot.Camera3D
+  commentId: T:Godot.Camera3D
+  parent: Godot
+  isExternal: true
+  name: Camera3D
+  nameWithType: Camera3D
+  fullName: Godot.Camera3D
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Godot.Node._Ready
+  commentId: M:Godot.Node._Ready
+  parent: Godot.Node
+  isExternal: true
+  name: _Ready()
+  nameWithType: Node._Ready()
+  fullName: Godot.Node._Ready()
+  spec.csharp:
+  - uid: Godot.Node._Ready
+    name: _Ready
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.Node._Ready
+    name: _Ready
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SzeneGenerator.SimpleCamera._Ready*
+  commentId: Overload:SzeneGenerator.SimpleCamera._Ready
+  isExternal: true
+  href: SzeneGenerator.SimpleCamera.html#SzeneGenerator_SimpleCamera__Ready
+  name: _Ready
+  nameWithType: SimpleCamera._Ready
+  fullName: SzeneGenerator.SimpleCamera._Ready
+- uid: Godot.Node._Process(System.Double)
+  commentId: M:Godot.Node._Process(System.Double)
+  parent: Godot.Node
+  isExternal: true
+  name: _Process(double)
+  nameWithType: Node._Process(double)
+  fullName: Godot.Node._Process(double)
+  nameWithType.vb: Node._Process(Double)
+  fullName.vb: Godot.Node._Process(Double)
+  name.vb: _Process(Double)
+  spec.csharp:
+  - uid: Godot.Node._Process(System.Double)
+    name: _Process
+    isExternal: true
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Godot.Node._Process(System.Double)
+    name: _Process
+    isExternal: true
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+  - name: )
+- uid: SzeneGenerator.SimpleCamera._Process*
+  commentId: Overload:SzeneGenerator.SimpleCamera._Process
+  isExternal: true
+  href: SzeneGenerator.SimpleCamera.html#SzeneGenerator_SimpleCamera__Process_System_Double_
+  name: _Process
+  nameWithType: SimpleCamera._Process
+  fullName: SzeneGenerator.SimpleCamera._Process
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Godot.Node._Input(Godot.InputEvent)
+  commentId: M:Godot.Node._Input(Godot.InputEvent)
+  parent: Godot.Node
+  isExternal: true
+  name: _Input(InputEvent)
+  nameWithType: Node._Input(InputEvent)
+  fullName: Godot.Node._Input(Godot.InputEvent)
+  spec.csharp:
+  - uid: Godot.Node._Input(Godot.InputEvent)
+    name: _Input
+    isExternal: true
+  - name: (
+  - uid: Godot.InputEvent
+    name: InputEvent
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Godot.Node._Input(Godot.InputEvent)
+    name: _Input
+    isExternal: true
+  - name: (
+  - uid: Godot.InputEvent
+    name: InputEvent
+    isExternal: true
+  - name: )
+- uid: SzeneGenerator.SimpleCamera._Input*
+  commentId: Overload:SzeneGenerator.SimpleCamera._Input
+  isExternal: true
+  href: SzeneGenerator.SimpleCamera.html#SzeneGenerator_SimpleCamera__Input_Godot_InputEvent_
+  name: _Input
+  nameWithType: SimpleCamera._Input
+  fullName: SzeneGenerator.SimpleCamera._Input
+- uid: Godot.InputEvent
+  commentId: T:Godot.InputEvent
+  parent: Godot
+  isExternal: true
+  name: InputEvent
+  nameWithType: InputEvent
+  fullName: Godot.InputEvent
+- uid: SzeneGenerator.SimpleCamera.Configure*
+  commentId: Overload:SzeneGenerator.SimpleCamera.Configure
+  isExternal: true
+  href: SzeneGenerator.SimpleCamera.html#SzeneGenerator_SimpleCamera_Configure_SzeneGenerator_CameraSettings_
+  name: Configure
+  nameWithType: SimpleCamera.Configure
+  fullName: SzeneGenerator.SimpleCamera.Configure
+- uid: SzeneGenerator.CameraSettings
+  commentId: T:SzeneGenerator.CameraSettings
+  parent: SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.CameraSettings.html
+  name: CameraSettings
+  nameWithType: CameraSettings
+  fullName: SzeneGenerator.CameraSettings
+- uid: SzeneGenerator.SimpleCamera.ApplyPreset*
+  commentId: Overload:SzeneGenerator.SimpleCamera.ApplyPreset
+  isExternal: true
+  href: SzeneGenerator.SimpleCamera.html#SzeneGenerator_SimpleCamera_ApplyPreset_System_Int32_
+  name: ApplyPreset
+  nameWithType: SimpleCamera.ApplyPreset
+  fullName: SzeneGenerator.SimpleCamera.ApplyPreset
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SzeneGenerator.SimpleCamera.SetTargets*
+  commentId: Overload:SzeneGenerator.SimpleCamera.SetTargets
+  isExternal: true
+  href: SzeneGenerator.SimpleCamera.html#SzeneGenerator_SimpleCamera_SetTargets_System_Collections_Generic_List_Godot_Node3D__
+  name: SetTargets
+  nameWithType: SimpleCamera.SetTargets
+  fullName: SzeneGenerator.SimpleCamera.SetTargets
+- uid: System.Collections.Generic.List{Godot.Node3D}
+  commentId: T:System.Collections.Generic.List{Godot.Node3D}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Node3D>
+  nameWithType: List<Node3D>
+  fullName: System.Collections.Generic.List<Godot.Node3D>
+  nameWithType.vb: List(Of Node3D)
+  fullName.vb: System.Collections.Generic.List(Of Godot.Node3D)
+  name.vb: List(Of Node3D)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Godot.Node3D
+    name: Node3D
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Node3D
+    name: Node3D
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: SzeneGenerator.SimpleCamera.SetHeightSampler*
+  commentId: Overload:SzeneGenerator.SimpleCamera.SetHeightSampler
+  isExternal: true
+  href: SzeneGenerator.SimpleCamera.html#SzeneGenerator_SimpleCamera_SetHeightSampler_System_Func_Godot_Vector3_System_Single__
+  name: SetHeightSampler
+  nameWithType: SimpleCamera.SetHeightSampler
+  fullName: SzeneGenerator.SimpleCamera.SetHeightSampler
+- uid: System.Func{Godot.Vector3,System.Single}
+  commentId: T:System.Func{Godot.Vector3,System.Single}
+  parent: System
+  definition: System.Func`2
+  name: Func<Vector3, float>
+  nameWithType: Func<Vector3, float>
+  fullName: System.Func<Godot.Vector3, float>
+  nameWithType.vb: Func(Of Vector3, Single)
+  fullName.vb: System.Func(Of Godot.Vector3, Single)
+  name.vb: Func(Of Vector3, Single)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: <
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: SzeneGenerator.SimpleCamera.SetWorldBounds*
+  commentId: Overload:SzeneGenerator.SimpleCamera.SetWorldBounds
+  isExternal: true
+  href: SzeneGenerator.SimpleCamera.html#SzeneGenerator_SimpleCamera_SetWorldBounds_System_Single_System_Single_System_Single_System_Single_System_Single_
+  name: SetWorldBounds
+  nameWithType: SimpleCamera.SetWorldBounds
+  fullName: SzeneGenerator.SimpleCamera.SetWorldBounds
+- uid: SzeneGenerator.SimpleCamera.SpawnRandomFromPreset*
+  commentId: Overload:SzeneGenerator.SimpleCamera.SpawnRandomFromPreset
+  isExternal: true
+  href: SzeneGenerator.SimpleCamera.html#SzeneGenerator_SimpleCamera_SpawnRandomFromPreset_System_Int32_System_Int32_SzeneGenerator_CameraTargetPreset_
+  name: SpawnRandomFromPreset
+  nameWithType: SimpleCamera.SpawnRandomFromPreset
+  fullName: SzeneGenerator.SimpleCamera.SpawnRandomFromPreset
+- uid: SzeneGenerator.CameraTargetPreset
+  commentId: T:SzeneGenerator.CameraTargetPreset
+  parent: SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.CameraTargetPreset.html
+  name: CameraTargetPreset
+  nameWithType: CameraTargetPreset
+  fullName: SzeneGenerator.CameraTargetPreset
+- uid: SzeneGenerator.SimpleCamera.FocusRandomTarget*
+  commentId: Overload:SzeneGenerator.SimpleCamera.FocusRandomTarget
+  isExternal: true
+  href: SzeneGenerator.SimpleCamera.html#SzeneGenerator_SimpleCamera_FocusRandomTarget_System_Int32_SzeneGenerator_CameraTargetPreset_
+  name: FocusRandomTarget
+  nameWithType: SimpleCamera.FocusRandomTarget
+  fullName: SzeneGenerator.SimpleCamera.FocusRandomTarget
+- uid: SzeneGenerator.SimpleCamera.TakeScreenshotAsync*
+  commentId: Overload:SzeneGenerator.SimpleCamera.TakeScreenshotAsync
+  isExternal: true
+  href: SzeneGenerator.SimpleCamera.html#SzeneGenerator_SimpleCamera_TakeScreenshotAsync_System_String_System_Boolean_System_String_System_Int32_
+  name: TakeScreenshotAsync
+  nameWithType: SimpleCamera.TakeScreenshotAsync
+  fullName: SzeneGenerator.SimpleCamera.TakeScreenshotAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+- uid: SzeneGenerator.SimpleCamera.#ctor*
+  commentId: Overload:SzeneGenerator.SimpleCamera.#ctor
+  isExternal: true
+  href: SzeneGenerator.SimpleCamera.html#SzeneGenerator_SimpleCamera__ctor
+  name: SimpleCamera
+  nameWithType: SimpleCamera.SimpleCamera
+  fullName: SzeneGenerator.SimpleCamera.SimpleCamera
+  nameWithType.vb: SimpleCamera.New
+  fullName.vb: SzeneGenerator.SimpleCamera.New
+  name.vb: New

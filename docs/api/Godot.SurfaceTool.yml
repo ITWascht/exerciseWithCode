@@ -1,0 +1,4979 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.SurfaceTool
+  commentId: T:Godot.SurfaceTool
+  id: SurfaceTool
+  parent: Godot
+  children:
+  - Godot.SurfaceTool.#ctor
+  - Godot.SurfaceTool.AddIndex(System.Int32)
+  - Godot.SurfaceTool.AddTriangleFan(Godot.Vector3[],Godot.Vector2[],Godot.Color[],Godot.Vector2[],Godot.Vector3[],Godot.Collections.Array{Godot.Plane})
+  - Godot.SurfaceTool.AddTriangleFan(System.ReadOnlySpan{Godot.Vector3},System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Color},System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector3},Godot.Collections.Array{Godot.Plane})
+  - Godot.SurfaceTool.AddVertex(Godot.Vector3)
+  - Godot.SurfaceTool.AppendFrom(Godot.Mesh,System.Int32,Godot.Transform3D)
+  - Godot.SurfaceTool.Begin(Godot.Mesh.PrimitiveType)
+  - Godot.SurfaceTool.Clear
+  - Godot.SurfaceTool.Commit(Godot.ArrayMesh,System.UInt64)
+  - Godot.SurfaceTool.CommitToArrays
+  - Godot.SurfaceTool.CreateFrom(Godot.Mesh,System.Int32)
+  - Godot.SurfaceTool.CreateFromArrays(Godot.Collections.Array,Godot.Mesh.PrimitiveType)
+  - Godot.SurfaceTool.CreateFromBlendShape(Godot.Mesh,System.Int32,System.String)
+  - Godot.SurfaceTool.Deindex
+  - Godot.SurfaceTool.GenerateLod(System.Single,System.Int32)
+  - Godot.SurfaceTool.GenerateNormals(System.Boolean)
+  - Godot.SurfaceTool.GenerateTangents
+  - Godot.SurfaceTool.GetAabb
+  - Godot.SurfaceTool.GetCustomFormat(System.Int32)
+  - Godot.SurfaceTool.GetPrimitiveType
+  - Godot.SurfaceTool.GetSkinWeightCount
+  - Godot.SurfaceTool.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+  - Godot.SurfaceTool.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+  - Godot.SurfaceTool.Index
+  - Godot.SurfaceTool.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+  - Godot.SurfaceTool.OptimizeIndicesForCache
+  - Godot.SurfaceTool.SetBones(System.Int32[])
+  - Godot.SurfaceTool.SetBones(System.ReadOnlySpan{System.Int32})
+  - Godot.SurfaceTool.SetColor(Godot.Color)
+  - Godot.SurfaceTool.SetCustom(System.Int32,Godot.Color)
+  - Godot.SurfaceTool.SetCustomFormat(System.Int32,Godot.SurfaceTool.CustomFormat)
+  - Godot.SurfaceTool.SetMaterial(Godot.Material)
+  - Godot.SurfaceTool.SetNormal(Godot.Vector3)
+  - Godot.SurfaceTool.SetSkinWeightCount(Godot.SurfaceTool.SkinWeightCount)
+  - Godot.SurfaceTool.SetSmoothGroup(System.UInt32)
+  - Godot.SurfaceTool.SetTangent(Godot.Plane)
+  - Godot.SurfaceTool.SetUV(Godot.Vector2)
+  - Godot.SurfaceTool.SetUV2(Godot.Vector2)
+  - Godot.SurfaceTool.SetWeights(System.ReadOnlySpan{System.Single})
+  - Godot.SurfaceTool.SetWeights(System.Single[])
+  langs:
+  - csharp
+  - vb
+  name: SurfaceTool
+  nameWithType: SurfaceTool
+  fullName: Godot.SurfaceTool
+  type: Class
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: 'public class SurfaceTool : RefCounted, IDisposable'
+    content.vb: Public Class SurfaceTool Inherits RefCounted Implements IDisposable
+  inheritance:
+  - System.Object
+  - Godot.GodotObject
+  - Godot.RefCounted
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - Godot.RefCounted.InitRef
+  - Godot.RefCounted.Reference
+  - Godot.RefCounted.Unreference
+  - Godot.RefCounted.GetReferenceCount
+  - Godot.GodotObject.NotificationPostinitialize
+  - Godot.GodotObject.NotificationPredelete
+  - Godot.GodotObject.NotificationExtensionReloaded
+  - Godot.GodotObject.InstanceFromId(System.UInt64)
+  - Godot.GodotObject.IsInstanceIdValid(System.UInt64)
+  - Godot.GodotObject.IsInstanceValid(Godot.GodotObject)
+  - Godot.GodotObject.WeakRef(Godot.GodotObject)
+  - Godot.GodotObject.Dispose
+  - Godot.GodotObject.Dispose(System.Boolean)
+  - Godot.GodotObject.ToString
+  - Godot.GodotObject.ToSignal(Godot.GodotObject,Godot.StringName)
+  - Godot.GodotObject._Get(Godot.StringName)
+  - Godot.GodotObject._GetPropertyList
+  - Godot.GodotObject._IterGet(Godot.Variant)
+  - Godot.GodotObject._IterInit(Godot.Collections.Array)
+  - Godot.GodotObject._IterNext(Godot.Collections.Array)
+  - Godot.GodotObject._Notification(System.Int32)
+  - Godot.GodotObject._PropertyCanRevert(Godot.StringName)
+  - Godot.GodotObject._PropertyGetRevert(Godot.StringName)
+  - Godot.GodotObject._Set(Godot.StringName,Godot.Variant)
+  - Godot.GodotObject._ValidateProperty(Godot.Collections.Dictionary)
+  - Godot.GodotObject.Free
+  - Godot.GodotObject.GetClass
+  - Godot.GodotObject.IsClass(System.String)
+  - Godot.GodotObject.Set(Godot.StringName,Godot.Variant)
+  - Godot.GodotObject.Get(Godot.StringName)
+  - Godot.GodotObject.SetIndexed(Godot.NodePath,Godot.Variant)
+  - Godot.GodotObject.GetIndexed(Godot.NodePath)
+  - Godot.GodotObject.GetPropertyList
+  - Godot.GodotObject.GetMethodList
+  - Godot.GodotObject.PropertyCanRevert(Godot.StringName)
+  - Godot.GodotObject.PropertyGetRevert(Godot.StringName)
+  - Godot.GodotObject.Notification(System.Int32,System.Boolean)
+  - Godot.GodotObject.GetInstanceId
+  - Godot.GodotObject.SetScript(Godot.Variant)
+  - Godot.GodotObject.GetScript
+  - Godot.GodotObject.SetMeta(Godot.StringName,Godot.Variant)
+  - Godot.GodotObject.RemoveMeta(Godot.StringName)
+  - Godot.GodotObject.GetMeta(Godot.StringName,Godot.Variant)
+  - Godot.GodotObject.HasMeta(Godot.StringName)
+  - Godot.GodotObject.GetMetaList
+  - Godot.GodotObject.AddUserSignal(System.String,Godot.Collections.Array)
+  - Godot.GodotObject.HasUserSignal(Godot.StringName)
+  - Godot.GodotObject.RemoveUserSignal(Godot.StringName)
+  - Godot.GodotObject.EmitSignal(Godot.StringName,Godot.Variant[])
+  - Godot.GodotObject.EmitSignal(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  - Godot.GodotObject.Call(Godot.StringName,Godot.Variant[])
+  - Godot.GodotObject.Call(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  - Godot.GodotObject.CallDeferred(Godot.StringName,Godot.Variant[])
+  - Godot.GodotObject.CallDeferred(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  - Godot.GodotObject.SetDeferred(Godot.StringName,Godot.Variant)
+  - Godot.GodotObject.Callv(Godot.StringName,Godot.Collections.Array)
+  - Godot.GodotObject.HasMethod(Godot.StringName)
+  - Godot.GodotObject.GetMethodArgumentCount(Godot.StringName)
+  - Godot.GodotObject.HasSignal(Godot.StringName)
+  - Godot.GodotObject.GetSignalList
+  - Godot.GodotObject.GetSignalConnectionList(Godot.StringName)
+  - Godot.GodotObject.GetIncomingConnections
+  - Godot.GodotObject.Connect(Godot.StringName,Godot.Callable,System.UInt32)
+  - Godot.GodotObject.Disconnect(Godot.StringName,Godot.Callable)
+  - Godot.GodotObject.IsConnected(Godot.StringName,Godot.Callable)
+  - Godot.GodotObject.HasConnections(Godot.StringName)
+  - Godot.GodotObject.SetBlockSignals(System.Boolean)
+  - Godot.GodotObject.IsBlockingSignals
+  - Godot.GodotObject.NotifyPropertyListChanged
+  - Godot.GodotObject.SetMessageTranslation(System.Boolean)
+  - Godot.GodotObject.CanTranslateMessages
+  - Godot.GodotObject.Tr(Godot.StringName,Godot.StringName)
+  - Godot.GodotObject.TrN(Godot.StringName,Godot.StringName,System.Int32,Godot.StringName)
+  - Godot.GodotObject.GetTranslationDomain
+  - Godot.GodotObject.SetTranslationDomain(Godot.StringName)
+  - Godot.GodotObject.IsQueuedForDeletion
+  - Godot.GodotObject.CancelFree
+  - Godot.GodotObject.EmitSignalScriptChanged
+  - Godot.GodotObject.EmitSignalPropertyListChanged
+  - Godot.GodotObject.NativeInstance
+  - Godot.GodotObject.ScriptChanged
+  - Godot.GodotObject.PropertyListChanged
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Godot.SurfaceTool.#ctor
+  commentId: M:Godot.SurfaceTool.#ctor
+  id: '#ctor'
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: SurfaceTool()
+  nameWithType: SurfaceTool.SurfaceTool()
+  fullName: Godot.SurfaceTool.SurfaceTool()
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public SurfaceTool()
+    content.vb: Public Sub New()
+  overload: Godot.SurfaceTool.#ctor*
+  nameWithType.vb: SurfaceTool.New()
+  fullName.vb: Godot.SurfaceTool.New()
+  name.vb: New()
+- uid: Godot.SurfaceTool.SetSkinWeightCount(Godot.SurfaceTool.SkinWeightCount)
+  commentId: M:Godot.SurfaceTool.SetSkinWeightCount(Godot.SurfaceTool.SkinWeightCount)
+  id: SetSkinWeightCount(Godot.SurfaceTool.SkinWeightCount)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: SetSkinWeightCount(SkinWeightCount)
+  nameWithType: SurfaceTool.SetSkinWeightCount(SurfaceTool.SkinWeightCount)
+  fullName: Godot.SurfaceTool.SetSkinWeightCount(Godot.SurfaceTool.SkinWeightCount)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void SetSkinWeightCount(SurfaceTool.SkinWeightCount count)
+    parameters:
+    - id: count
+      type: Godot.SurfaceTool.SkinWeightCount
+    content.vb: Public Sub SetSkinWeightCount(count As SurfaceTool.SkinWeightCount)
+  overload: Godot.SurfaceTool.SetSkinWeightCount*
+- uid: Godot.SurfaceTool.GetSkinWeightCount
+  commentId: M:Godot.SurfaceTool.GetSkinWeightCount
+  id: GetSkinWeightCount
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: GetSkinWeightCount()
+  nameWithType: SurfaceTool.GetSkinWeightCount()
+  fullName: Godot.SurfaceTool.GetSkinWeightCount()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public SurfaceTool.SkinWeightCount GetSkinWeightCount()
+    return:
+      type: Godot.SurfaceTool.SkinWeightCount
+    content.vb: Public Function GetSkinWeightCount() As SurfaceTool.SkinWeightCount
+  overload: Godot.SurfaceTool.GetSkinWeightCount*
+- uid: Godot.SurfaceTool.SetCustomFormat(System.Int32,Godot.SurfaceTool.CustomFormat)
+  commentId: M:Godot.SurfaceTool.SetCustomFormat(System.Int32,Godot.SurfaceTool.CustomFormat)
+  id: SetCustomFormat(System.Int32,Godot.SurfaceTool.CustomFormat)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: SetCustomFormat(int, CustomFormat)
+  nameWithType: SurfaceTool.SetCustomFormat(int, SurfaceTool.CustomFormat)
+  fullName: Godot.SurfaceTool.SetCustomFormat(int, Godot.SurfaceTool.CustomFormat)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void SetCustomFormat(int channelIndex, SurfaceTool.CustomFormat format)
+    parameters:
+    - id: channelIndex
+      type: System.Int32
+    - id: format
+      type: Godot.SurfaceTool.CustomFormat
+    content.vb: Public Sub SetCustomFormat(channelIndex As Integer, format As SurfaceTool.CustomFormat)
+  overload: Godot.SurfaceTool.SetCustomFormat*
+  nameWithType.vb: SurfaceTool.SetCustomFormat(Integer, SurfaceTool.CustomFormat)
+  fullName.vb: Godot.SurfaceTool.SetCustomFormat(Integer, Godot.SurfaceTool.CustomFormat)
+  name.vb: SetCustomFormat(Integer, CustomFormat)
+- uid: Godot.SurfaceTool.GetCustomFormat(System.Int32)
+  commentId: M:Godot.SurfaceTool.GetCustomFormat(System.Int32)
+  id: GetCustomFormat(System.Int32)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: GetCustomFormat(int)
+  nameWithType: SurfaceTool.GetCustomFormat(int)
+  fullName: Godot.SurfaceTool.GetCustomFormat(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public SurfaceTool.CustomFormat GetCustomFormat(int channelIndex)
+    parameters:
+    - id: channelIndex
+      type: System.Int32
+    return:
+      type: Godot.SurfaceTool.CustomFormat
+    content.vb: Public Function GetCustomFormat(channelIndex As Integer) As SurfaceTool.CustomFormat
+  overload: Godot.SurfaceTool.GetCustomFormat*
+  nameWithType.vb: SurfaceTool.GetCustomFormat(Integer)
+  fullName.vb: Godot.SurfaceTool.GetCustomFormat(Integer)
+  name.vb: GetCustomFormat(Integer)
+- uid: Godot.SurfaceTool.Begin(Godot.Mesh.PrimitiveType)
+  commentId: M:Godot.SurfaceTool.Begin(Godot.Mesh.PrimitiveType)
+  id: Begin(Godot.Mesh.PrimitiveType)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: Begin(PrimitiveType)
+  nameWithType: SurfaceTool.Begin(Mesh.PrimitiveType)
+  fullName: Godot.SurfaceTool.Begin(Godot.Mesh.PrimitiveType)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void Begin(Mesh.PrimitiveType primitive)
+    parameters:
+    - id: primitive
+      type: Godot.Mesh.PrimitiveType
+    content.vb: Public Sub Begin(primitive As Mesh.PrimitiveType)
+  overload: Godot.SurfaceTool.Begin*
+- uid: Godot.SurfaceTool.AddVertex(Godot.Vector3)
+  commentId: M:Godot.SurfaceTool.AddVertex(Godot.Vector3)
+  id: AddVertex(Godot.Vector3)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: AddVertex(Vector3)
+  nameWithType: SurfaceTool.AddVertex(Vector3)
+  fullName: Godot.SurfaceTool.AddVertex(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void AddVertex(Vector3 vertex)
+    parameters:
+    - id: vertex
+      type: Godot.Vector3
+    content.vb: Public Sub AddVertex(vertex As Vector3)
+  overload: Godot.SurfaceTool.AddVertex*
+- uid: Godot.SurfaceTool.SetColor(Godot.Color)
+  commentId: M:Godot.SurfaceTool.SetColor(Godot.Color)
+  id: SetColor(Godot.Color)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: SetColor(Color)
+  nameWithType: SurfaceTool.SetColor(Color)
+  fullName: Godot.SurfaceTool.SetColor(Godot.Color)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void SetColor(Color color)
+    parameters:
+    - id: color
+      type: Godot.Color
+    content.vb: Public Sub SetColor(color As Color)
+  overload: Godot.SurfaceTool.SetColor*
+- uid: Godot.SurfaceTool.SetNormal(Godot.Vector3)
+  commentId: M:Godot.SurfaceTool.SetNormal(Godot.Vector3)
+  id: SetNormal(Godot.Vector3)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: SetNormal(Vector3)
+  nameWithType: SurfaceTool.SetNormal(Vector3)
+  fullName: Godot.SurfaceTool.SetNormal(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void SetNormal(Vector3 normal)
+    parameters:
+    - id: normal
+      type: Godot.Vector3
+    content.vb: Public Sub SetNormal(normal As Vector3)
+  overload: Godot.SurfaceTool.SetNormal*
+- uid: Godot.SurfaceTool.SetTangent(Godot.Plane)
+  commentId: M:Godot.SurfaceTool.SetTangent(Godot.Plane)
+  id: SetTangent(Godot.Plane)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: SetTangent(Plane)
+  nameWithType: SurfaceTool.SetTangent(Plane)
+  fullName: Godot.SurfaceTool.SetTangent(Godot.Plane)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void SetTangent(Plane tangent)
+    parameters:
+    - id: tangent
+      type: Godot.Plane
+    content.vb: Public Sub SetTangent(tangent As Plane)
+  overload: Godot.SurfaceTool.SetTangent*
+- uid: Godot.SurfaceTool.SetUV(Godot.Vector2)
+  commentId: M:Godot.SurfaceTool.SetUV(Godot.Vector2)
+  id: SetUV(Godot.Vector2)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: SetUV(Vector2)
+  nameWithType: SurfaceTool.SetUV(Vector2)
+  fullName: Godot.SurfaceTool.SetUV(Godot.Vector2)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void SetUV(Vector2 uV)
+    parameters:
+    - id: uV
+      type: Godot.Vector2
+    content.vb: Public Sub SetUV(uV As Vector2)
+  overload: Godot.SurfaceTool.SetUV*
+- uid: Godot.SurfaceTool.SetUV2(Godot.Vector2)
+  commentId: M:Godot.SurfaceTool.SetUV2(Godot.Vector2)
+  id: SetUV2(Godot.Vector2)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: SetUV2(Vector2)
+  nameWithType: SurfaceTool.SetUV2(Vector2)
+  fullName: Godot.SurfaceTool.SetUV2(Godot.Vector2)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void SetUV2(Vector2 uV2)
+    parameters:
+    - id: uV2
+      type: Godot.Vector2
+    content.vb: Public Sub SetUV2(uV2 As Vector2)
+  overload: Godot.SurfaceTool.SetUV2*
+- uid: Godot.SurfaceTool.SetBones(System.Int32[])
+  commentId: M:Godot.SurfaceTool.SetBones(System.Int32[])
+  id: SetBones(System.Int32[])
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: SetBones(int[])
+  nameWithType: SurfaceTool.SetBones(int[])
+  fullName: Godot.SurfaceTool.SetBones(int[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void SetBones(int[] bones)
+    parameters:
+    - id: bones
+      type: System.Int32[]
+    content.vb: Public Sub SetBones(bones As Integer())
+  overload: Godot.SurfaceTool.SetBones*
+  nameWithType.vb: SurfaceTool.SetBones(Integer())
+  fullName.vb: Godot.SurfaceTool.SetBones(Integer())
+  name.vb: SetBones(Integer())
+- uid: Godot.SurfaceTool.SetBones(System.ReadOnlySpan{System.Int32})
+  commentId: M:Godot.SurfaceTool.SetBones(System.ReadOnlySpan{System.Int32})
+  id: SetBones(System.ReadOnlySpan{System.Int32})
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: SetBones(ReadOnlySpan<int>)
+  nameWithType: SurfaceTool.SetBones(ReadOnlySpan<int>)
+  fullName: Godot.SurfaceTool.SetBones(System.ReadOnlySpan<int>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void SetBones(ReadOnlySpan<int> bones)
+    parameters:
+    - id: bones
+      type: System.ReadOnlySpan{System.Int32}
+    content.vb: Public Sub SetBones(bones As ReadOnlySpan(Of Integer))
+  overload: Godot.SurfaceTool.SetBones*
+  nameWithType.vb: SurfaceTool.SetBones(ReadOnlySpan(Of Integer))
+  fullName.vb: Godot.SurfaceTool.SetBones(System.ReadOnlySpan(Of Integer))
+  name.vb: SetBones(ReadOnlySpan(Of Integer))
+- uid: Godot.SurfaceTool.SetWeights(System.Single[])
+  commentId: M:Godot.SurfaceTool.SetWeights(System.Single[])
+  id: SetWeights(System.Single[])
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: SetWeights(float[])
+  nameWithType: SurfaceTool.SetWeights(float[])
+  fullName: Godot.SurfaceTool.SetWeights(float[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void SetWeights(float[] weights)
+    parameters:
+    - id: weights
+      type: System.Single[]
+    content.vb: Public Sub SetWeights(weights As Single())
+  overload: Godot.SurfaceTool.SetWeights*
+  nameWithType.vb: SurfaceTool.SetWeights(Single())
+  fullName.vb: Godot.SurfaceTool.SetWeights(Single())
+  name.vb: SetWeights(Single())
+- uid: Godot.SurfaceTool.SetWeights(System.ReadOnlySpan{System.Single})
+  commentId: M:Godot.SurfaceTool.SetWeights(System.ReadOnlySpan{System.Single})
+  id: SetWeights(System.ReadOnlySpan{System.Single})
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: SetWeights(ReadOnlySpan<float>)
+  nameWithType: SurfaceTool.SetWeights(ReadOnlySpan<float>)
+  fullName: Godot.SurfaceTool.SetWeights(System.ReadOnlySpan<float>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void SetWeights(ReadOnlySpan<float> weights)
+    parameters:
+    - id: weights
+      type: System.ReadOnlySpan{System.Single}
+    content.vb: Public Sub SetWeights(weights As ReadOnlySpan(Of Single))
+  overload: Godot.SurfaceTool.SetWeights*
+  nameWithType.vb: SurfaceTool.SetWeights(ReadOnlySpan(Of Single))
+  fullName.vb: Godot.SurfaceTool.SetWeights(System.ReadOnlySpan(Of Single))
+  name.vb: SetWeights(ReadOnlySpan(Of Single))
+- uid: Godot.SurfaceTool.SetCustom(System.Int32,Godot.Color)
+  commentId: M:Godot.SurfaceTool.SetCustom(System.Int32,Godot.Color)
+  id: SetCustom(System.Int32,Godot.Color)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: SetCustom(int, Color)
+  nameWithType: SurfaceTool.SetCustom(int, Color)
+  fullName: Godot.SurfaceTool.SetCustom(int, Godot.Color)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void SetCustom(int channelIndex, Color customColor)
+    parameters:
+    - id: channelIndex
+      type: System.Int32
+    - id: customColor
+      type: Godot.Color
+    content.vb: Public Sub SetCustom(channelIndex As Integer, customColor As Color)
+  overload: Godot.SurfaceTool.SetCustom*
+  nameWithType.vb: SurfaceTool.SetCustom(Integer, Color)
+  fullName.vb: Godot.SurfaceTool.SetCustom(Integer, Godot.Color)
+  name.vb: SetCustom(Integer, Color)
+- uid: Godot.SurfaceTool.SetSmoothGroup(System.UInt32)
+  commentId: M:Godot.SurfaceTool.SetSmoothGroup(System.UInt32)
+  id: SetSmoothGroup(System.UInt32)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: SetSmoothGroup(uint)
+  nameWithType: SurfaceTool.SetSmoothGroup(uint)
+  fullName: Godot.SurfaceTool.SetSmoothGroup(uint)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void SetSmoothGroup(uint index)
+    parameters:
+    - id: index
+      type: System.UInt32
+    content.vb: Public Sub SetSmoothGroup(index As UInteger)
+  overload: Godot.SurfaceTool.SetSmoothGroup*
+  nameWithType.vb: SurfaceTool.SetSmoothGroup(UInteger)
+  fullName.vb: Godot.SurfaceTool.SetSmoothGroup(UInteger)
+  name.vb: SetSmoothGroup(UInteger)
+- uid: Godot.SurfaceTool.AddTriangleFan(Godot.Vector3[],Godot.Vector2[],Godot.Color[],Godot.Vector2[],Godot.Vector3[],Godot.Collections.Array{Godot.Plane})
+  commentId: M:Godot.SurfaceTool.AddTriangleFan(Godot.Vector3[],Godot.Vector2[],Godot.Color[],Godot.Vector2[],Godot.Vector3[],Godot.Collections.Array{Godot.Plane})
+  id: AddTriangleFan(Godot.Vector3[],Godot.Vector2[],Godot.Color[],Godot.Vector2[],Godot.Vector3[],Godot.Collections.Array{Godot.Plane})
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: AddTriangleFan(Vector3[], Vector2[], Color[], Vector2[], Vector3[], Array<Plane>)
+  nameWithType: SurfaceTool.AddTriangleFan(Vector3[], Vector2[], Color[], Vector2[], Vector3[], Array<Plane>)
+  fullName: Godot.SurfaceTool.AddTriangleFan(Godot.Vector3[], Godot.Vector2[], Godot.Color[], Godot.Vector2[], Godot.Vector3[], Godot.Collections.Array<Godot.Plane>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void AddTriangleFan(Vector3[] vertices, Vector2[] uvs = null, Color[] colors = null, Vector2[] uv2S = null, Vector3[] normals = null, Array<Plane> tangents = null)
+    parameters:
+    - id: vertices
+      type: Godot.Vector3[]
+    - id: uvs
+      type: Godot.Vector2[]
+    - id: colors
+      type: Godot.Color[]
+    - id: uv2S
+      type: Godot.Vector2[]
+    - id: normals
+      type: Godot.Vector3[]
+    - id: tangents
+      type: Godot.Collections.Array{Godot.Plane}
+    content.vb: Public Sub AddTriangleFan(vertices As Vector3(), uvs As Vector2() = Nothing, colors As Color() = Nothing, uv2S As Vector2() = Nothing, normals As Vector3() = Nothing, tangents As Array(Of Plane) = Nothing)
+  overload: Godot.SurfaceTool.AddTriangleFan*
+  nameWithType.vb: SurfaceTool.AddTriangleFan(Vector3(), Vector2(), Color(), Vector2(), Vector3(), Array(Of Plane))
+  fullName.vb: Godot.SurfaceTool.AddTriangleFan(Godot.Vector3(), Godot.Vector2(), Godot.Color(), Godot.Vector2(), Godot.Vector3(), Godot.Collections.Array(Of Godot.Plane))
+  name.vb: AddTriangleFan(Vector3(), Vector2(), Color(), Vector2(), Vector3(), Array(Of Plane))
+- uid: Godot.SurfaceTool.AddTriangleFan(System.ReadOnlySpan{Godot.Vector3},System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Color},System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector3},Godot.Collections.Array{Godot.Plane})
+  commentId: M:Godot.SurfaceTool.AddTriangleFan(System.ReadOnlySpan{Godot.Vector3},System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Color},System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector3},Godot.Collections.Array{Godot.Plane})
+  id: AddTriangleFan(System.ReadOnlySpan{Godot.Vector3},System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Color},System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector3},Godot.Collections.Array{Godot.Plane})
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: AddTriangleFan(ReadOnlySpan<Vector3>, ReadOnlySpan<Vector2>, ReadOnlySpan<Color>, ReadOnlySpan<Vector2>, ReadOnlySpan<Vector3>, Array<Plane>)
+  nameWithType: SurfaceTool.AddTriangleFan(ReadOnlySpan<Vector3>, ReadOnlySpan<Vector2>, ReadOnlySpan<Color>, ReadOnlySpan<Vector2>, ReadOnlySpan<Vector3>, Array<Plane>)
+  fullName: Godot.SurfaceTool.AddTriangleFan(System.ReadOnlySpan<Godot.Vector3>, System.ReadOnlySpan<Godot.Vector2>, System.ReadOnlySpan<Godot.Color>, System.ReadOnlySpan<Godot.Vector2>, System.ReadOnlySpan<Godot.Vector3>, Godot.Collections.Array<Godot.Plane>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void AddTriangleFan(ReadOnlySpan<Vector3> vertices, ReadOnlySpan<Vector2> uvs, ReadOnlySpan<Color> colors, ReadOnlySpan<Vector2> uv2S, ReadOnlySpan<Vector3> normals, Array<Plane> tangents)
+    parameters:
+    - id: vertices
+      type: System.ReadOnlySpan{Godot.Vector3}
+    - id: uvs
+      type: System.ReadOnlySpan{Godot.Vector2}
+    - id: colors
+      type: System.ReadOnlySpan{Godot.Color}
+    - id: uv2S
+      type: System.ReadOnlySpan{Godot.Vector2}
+    - id: normals
+      type: System.ReadOnlySpan{Godot.Vector3}
+    - id: tangents
+      type: Godot.Collections.Array{Godot.Plane}
+    content.vb: Public Sub AddTriangleFan(vertices As ReadOnlySpan(Of Vector3), uvs As ReadOnlySpan(Of Vector2), colors As ReadOnlySpan(Of Color), uv2S As ReadOnlySpan(Of Vector2), normals As ReadOnlySpan(Of Vector3), tangents As Array(Of Plane))
+  overload: Godot.SurfaceTool.AddTriangleFan*
+  nameWithType.vb: SurfaceTool.AddTriangleFan(ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Color), ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Vector3), Array(Of Plane))
+  fullName.vb: Godot.SurfaceTool.AddTriangleFan(System.ReadOnlySpan(Of Godot.Vector3), System.ReadOnlySpan(Of Godot.Vector2), System.ReadOnlySpan(Of Godot.Color), System.ReadOnlySpan(Of Godot.Vector2), System.ReadOnlySpan(Of Godot.Vector3), Godot.Collections.Array(Of Godot.Plane))
+  name.vb: AddTriangleFan(ReadOnlySpan(Of Vector3), ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Color), ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Vector3), Array(Of Plane))
+- uid: Godot.SurfaceTool.AddIndex(System.Int32)
+  commentId: M:Godot.SurfaceTool.AddIndex(System.Int32)
+  id: AddIndex(System.Int32)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: AddIndex(int)
+  nameWithType: SurfaceTool.AddIndex(int)
+  fullName: Godot.SurfaceTool.AddIndex(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void AddIndex(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub AddIndex(index As Integer)
+  overload: Godot.SurfaceTool.AddIndex*
+  nameWithType.vb: SurfaceTool.AddIndex(Integer)
+  fullName.vb: Godot.SurfaceTool.AddIndex(Integer)
+  name.vb: AddIndex(Integer)
+- uid: Godot.SurfaceTool.Index
+  commentId: M:Godot.SurfaceTool.Index
+  id: Index
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: Index()
+  nameWithType: SurfaceTool.Index()
+  fullName: Godot.SurfaceTool.Index()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void Index()
+    content.vb: Public Sub Index()
+  overload: Godot.SurfaceTool.Index*
+- uid: Godot.SurfaceTool.Deindex
+  commentId: M:Godot.SurfaceTool.Deindex
+  id: Deindex
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: Deindex()
+  nameWithType: SurfaceTool.Deindex()
+  fullName: Godot.SurfaceTool.Deindex()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void Deindex()
+    content.vb: Public Sub Deindex()
+  overload: Godot.SurfaceTool.Deindex*
+- uid: Godot.SurfaceTool.GenerateNormals(System.Boolean)
+  commentId: M:Godot.SurfaceTool.GenerateNormals(System.Boolean)
+  id: GenerateNormals(System.Boolean)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: GenerateNormals(bool)
+  nameWithType: SurfaceTool.GenerateNormals(bool)
+  fullName: Godot.SurfaceTool.GenerateNormals(bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void GenerateNormals(bool flip = false)
+    parameters:
+    - id: flip
+      type: System.Boolean
+    content.vb: Public Sub GenerateNormals(flip As Boolean = False)
+  overload: Godot.SurfaceTool.GenerateNormals*
+  nameWithType.vb: SurfaceTool.GenerateNormals(Boolean)
+  fullName.vb: Godot.SurfaceTool.GenerateNormals(Boolean)
+  name.vb: GenerateNormals(Boolean)
+- uid: Godot.SurfaceTool.GenerateTangents
+  commentId: M:Godot.SurfaceTool.GenerateTangents
+  id: GenerateTangents
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: GenerateTangents()
+  nameWithType: SurfaceTool.GenerateTangents()
+  fullName: Godot.SurfaceTool.GenerateTangents()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void GenerateTangents()
+    content.vb: Public Sub GenerateTangents()
+  overload: Godot.SurfaceTool.GenerateTangents*
+- uid: Godot.SurfaceTool.OptimizeIndicesForCache
+  commentId: M:Godot.SurfaceTool.OptimizeIndicesForCache
+  id: OptimizeIndicesForCache
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: OptimizeIndicesForCache()
+  nameWithType: SurfaceTool.OptimizeIndicesForCache()
+  fullName: Godot.SurfaceTool.OptimizeIndicesForCache()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void OptimizeIndicesForCache()
+    content.vb: Public Sub OptimizeIndicesForCache()
+  overload: Godot.SurfaceTool.OptimizeIndicesForCache*
+- uid: Godot.SurfaceTool.GetAabb
+  commentId: M:Godot.SurfaceTool.GetAabb
+  id: GetAabb
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: GetAabb()
+  nameWithType: SurfaceTool.GetAabb()
+  fullName: Godot.SurfaceTool.GetAabb()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Aabb GetAabb()
+    return:
+      type: Godot.Aabb
+    content.vb: Public Function GetAabb() As Aabb
+  overload: Godot.SurfaceTool.GetAabb*
+- uid: Godot.SurfaceTool.GenerateLod(System.Single,System.Int32)
+  commentId: M:Godot.SurfaceTool.GenerateLod(System.Single,System.Int32)
+  id: GenerateLod(System.Single,System.Int32)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: GenerateLod(float, int)
+  nameWithType: SurfaceTool.GenerateLod(float, int)
+  fullName: Godot.SurfaceTool.GenerateLod(float, int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: >-
+      [Obsolete("This method is unused internally, as it does not preserve normals or UVs. Consider using 'Godot.ImporterMesh.GenerateLods(float, float, Godot.Collections.Array)' instead.")]
+
+      public int[] GenerateLod(float ndThreshold, int targetIndexCount = 3)
+    parameters:
+    - id: ndThreshold
+      type: System.Single
+    - id: targetIndexCount
+      type: System.Int32
+    return:
+      type: System.Int32[]
+    content.vb: >-
+      <Obsolete("This method is unused internally, as it does not preserve normals or UVs. Consider using 'Godot.ImporterMesh.GenerateLods(float, float, Godot.Collections.Array)' instead.")>
+
+      Public Function GenerateLod(ndThreshold As Single, targetIndexCount As Integer = 3) As Integer()
+  overload: Godot.SurfaceTool.GenerateLod*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: This method is unused internally, as it does not preserve normals or UVs. Consider using 'Godot.ImporterMesh.GenerateLods(float, float, Godot.Collections.Array)' instead.
+  nameWithType.vb: SurfaceTool.GenerateLod(Single, Integer)
+  fullName.vb: Godot.SurfaceTool.GenerateLod(Single, Integer)
+  name.vb: GenerateLod(Single, Integer)
+- uid: Godot.SurfaceTool.SetMaterial(Godot.Material)
+  commentId: M:Godot.SurfaceTool.SetMaterial(Godot.Material)
+  id: SetMaterial(Godot.Material)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: SetMaterial(Material)
+  nameWithType: SurfaceTool.SetMaterial(Material)
+  fullName: Godot.SurfaceTool.SetMaterial(Godot.Material)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void SetMaterial(Material material)
+    parameters:
+    - id: material
+      type: Godot.Material
+    content.vb: Public Sub SetMaterial(material As Material)
+  overload: Godot.SurfaceTool.SetMaterial*
+- uid: Godot.SurfaceTool.GetPrimitiveType
+  commentId: M:Godot.SurfaceTool.GetPrimitiveType
+  id: GetPrimitiveType
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: GetPrimitiveType()
+  nameWithType: SurfaceTool.GetPrimitiveType()
+  fullName: Godot.SurfaceTool.GetPrimitiveType()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Mesh.PrimitiveType GetPrimitiveType()
+    return:
+      type: Godot.Mesh.PrimitiveType
+    content.vb: Public Function GetPrimitiveType() As Mesh.PrimitiveType
+  overload: Godot.SurfaceTool.GetPrimitiveType*
+- uid: Godot.SurfaceTool.Clear
+  commentId: M:Godot.SurfaceTool.Clear
+  id: Clear
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: SurfaceTool.Clear()
+  fullName: Godot.SurfaceTool.Clear()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: Godot.SurfaceTool.Clear*
+- uid: Godot.SurfaceTool.CreateFrom(Godot.Mesh,System.Int32)
+  commentId: M:Godot.SurfaceTool.CreateFrom(Godot.Mesh,System.Int32)
+  id: CreateFrom(Godot.Mesh,System.Int32)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: CreateFrom(Mesh, int)
+  nameWithType: SurfaceTool.CreateFrom(Mesh, int)
+  fullName: Godot.SurfaceTool.CreateFrom(Godot.Mesh, int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void CreateFrom(Mesh existing, int surface)
+    parameters:
+    - id: existing
+      type: Godot.Mesh
+    - id: surface
+      type: System.Int32
+    content.vb: Public Sub CreateFrom(existing As Mesh, surface As Integer)
+  overload: Godot.SurfaceTool.CreateFrom*
+  nameWithType.vb: SurfaceTool.CreateFrom(Mesh, Integer)
+  fullName.vb: Godot.SurfaceTool.CreateFrom(Godot.Mesh, Integer)
+  name.vb: CreateFrom(Mesh, Integer)
+- uid: Godot.SurfaceTool.CreateFromArrays(Godot.Collections.Array,Godot.Mesh.PrimitiveType)
+  commentId: M:Godot.SurfaceTool.CreateFromArrays(Godot.Collections.Array,Godot.Mesh.PrimitiveType)
+  id: CreateFromArrays(Godot.Collections.Array,Godot.Mesh.PrimitiveType)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: CreateFromArrays(Array, PrimitiveType)
+  nameWithType: SurfaceTool.CreateFromArrays(Array, Mesh.PrimitiveType)
+  fullName: Godot.SurfaceTool.CreateFromArrays(Godot.Collections.Array, Godot.Mesh.PrimitiveType)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void CreateFromArrays(Array arrays, Mesh.PrimitiveType primitiveType = PrimitiveType.Triangles)
+    parameters:
+    - id: arrays
+      type: Godot.Collections.Array
+    - id: primitiveType
+      type: Godot.Mesh.PrimitiveType
+    content.vb: Public Sub CreateFromArrays(arrays As Array, primitiveType As Mesh.PrimitiveType = PrimitiveType.Triangles)
+  overload: Godot.SurfaceTool.CreateFromArrays*
+- uid: Godot.SurfaceTool.CreateFromBlendShape(Godot.Mesh,System.Int32,System.String)
+  commentId: M:Godot.SurfaceTool.CreateFromBlendShape(Godot.Mesh,System.Int32,System.String)
+  id: CreateFromBlendShape(Godot.Mesh,System.Int32,System.String)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: CreateFromBlendShape(Mesh, int, string)
+  nameWithType: SurfaceTool.CreateFromBlendShape(Mesh, int, string)
+  fullName: Godot.SurfaceTool.CreateFromBlendShape(Godot.Mesh, int, string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void CreateFromBlendShape(Mesh existing, int surface, string blendShape)
+    parameters:
+    - id: existing
+      type: Godot.Mesh
+    - id: surface
+      type: System.Int32
+    - id: blendShape
+      type: System.String
+    content.vb: Public Sub CreateFromBlendShape(existing As Mesh, surface As Integer, blendShape As String)
+  overload: Godot.SurfaceTool.CreateFromBlendShape*
+  nameWithType.vb: SurfaceTool.CreateFromBlendShape(Mesh, Integer, String)
+  fullName.vb: Godot.SurfaceTool.CreateFromBlendShape(Godot.Mesh, Integer, String)
+  name.vb: CreateFromBlendShape(Mesh, Integer, String)
+- uid: Godot.SurfaceTool.AppendFrom(Godot.Mesh,System.Int32,Godot.Transform3D)
+  commentId: M:Godot.SurfaceTool.AppendFrom(Godot.Mesh,System.Int32,Godot.Transform3D)
+  id: AppendFrom(Godot.Mesh,System.Int32,Godot.Transform3D)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: AppendFrom(Mesh, int, Transform3D)
+  nameWithType: SurfaceTool.AppendFrom(Mesh, int, Transform3D)
+  fullName: Godot.SurfaceTool.AppendFrom(Godot.Mesh, int, Godot.Transform3D)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void AppendFrom(Mesh existing, int surface, Transform3D transform)
+    parameters:
+    - id: existing
+      type: Godot.Mesh
+    - id: surface
+      type: System.Int32
+    - id: transform
+      type: Godot.Transform3D
+    content.vb: Public Sub AppendFrom(existing As Mesh, surface As Integer, transform As Transform3D)
+  overload: Godot.SurfaceTool.AppendFrom*
+  nameWithType.vb: SurfaceTool.AppendFrom(Mesh, Integer, Transform3D)
+  fullName.vb: Godot.SurfaceTool.AppendFrom(Godot.Mesh, Integer, Godot.Transform3D)
+  name.vb: AppendFrom(Mesh, Integer, Transform3D)
+- uid: Godot.SurfaceTool.Commit(Godot.ArrayMesh,System.UInt64)
+  commentId: M:Godot.SurfaceTool.Commit(Godot.ArrayMesh,System.UInt64)
+  id: Commit(Godot.ArrayMesh,System.UInt64)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: Commit(ArrayMesh, ulong)
+  nameWithType: SurfaceTool.Commit(ArrayMesh, ulong)
+  fullName: Godot.SurfaceTool.Commit(Godot.ArrayMesh, ulong)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public ArrayMesh Commit(ArrayMesh existing = null, ulong flags = 0)
+    parameters:
+    - id: existing
+      type: Godot.ArrayMesh
+    - id: flags
+      type: System.UInt64
+    return:
+      type: Godot.ArrayMesh
+    content.vb: Public Function Commit(existing As ArrayMesh = Nothing, flags As ULong = 0) As ArrayMesh
+  overload: Godot.SurfaceTool.Commit*
+  nameWithType.vb: SurfaceTool.Commit(ArrayMesh, ULong)
+  fullName.vb: Godot.SurfaceTool.Commit(Godot.ArrayMesh, ULong)
+  name.vb: Commit(ArrayMesh, ULong)
+- uid: Godot.SurfaceTool.CommitToArrays
+  commentId: M:Godot.SurfaceTool.CommitToArrays
+  id: CommitToArrays
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: CommitToArrays()
+  nameWithType: SurfaceTool.CommitToArrays()
+  fullName: Godot.SurfaceTool.CommitToArrays()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Array CommitToArrays()
+    return:
+      type: Godot.Collections.Array
+    content.vb: Public Function CommitToArrays() As Array
+  overload: Godot.SurfaceTool.CommitToArrays*
+- uid: Godot.SurfaceTool.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+  commentId: M:Godot.SurfaceTool.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+  id: InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)
+  nameWithType: SurfaceTool.InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)
+  fullName: Godot.SurfaceTool.InvokeGodotClassMethod(in Godot.NativeInterop.godot_string_name, Godot.NativeInterop.NativeVariantPtrArgs, out Godot.NativeInterop.godot_variant)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: protected override bool InvokeGodotClassMethod(in godot_string_name method, NativeVariantPtrArgs args, out godot_variant ret)
+    parameters:
+    - id: method
+      type: Godot.NativeInterop.godot_string_name
+    - id: args
+      type: Godot.NativeInterop.NativeVariantPtrArgs
+    - id: ret
+      type: Godot.NativeInterop.godot_variant
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function InvokeGodotClassMethod(method As godot_string_name, args As NativeVariantPtrArgs, ret As godot_variant) As Boolean
+  overridden: Godot.RefCounted.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+  overload: Godot.SurfaceTool.InvokeGodotClassMethod*
+  nameWithType.vb: SurfaceTool.InvokeGodotClassMethod(godot_string_name, NativeVariantPtrArgs, godot_variant)
+  fullName.vb: Godot.SurfaceTool.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant)
+  name.vb: InvokeGodotClassMethod(godot_string_name, NativeVariantPtrArgs, godot_variant)
+- uid: Godot.SurfaceTool.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+  commentId: M:Godot.SurfaceTool.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+  id: HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: HasGodotClassMethod(in godot_string_name)
+  nameWithType: SurfaceTool.HasGodotClassMethod(in godot_string_name)
+  fullName: Godot.SurfaceTool.HasGodotClassMethod(in Godot.NativeInterop.godot_string_name)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: protected override bool HasGodotClassMethod(in godot_string_name method)
+    parameters:
+    - id: method
+      type: Godot.NativeInterop.godot_string_name
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function HasGodotClassMethod(method As godot_string_name) As Boolean
+  overridden: Godot.RefCounted.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+  overload: Godot.SurfaceTool.HasGodotClassMethod*
+  nameWithType.vb: SurfaceTool.HasGodotClassMethod(godot_string_name)
+  fullName.vb: Godot.SurfaceTool.HasGodotClassMethod(Godot.NativeInterop.godot_string_name)
+  name.vb: HasGodotClassMethod(godot_string_name)
+- uid: Godot.SurfaceTool.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+  commentId: M:Godot.SurfaceTool.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+  id: HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+  parent: Godot.SurfaceTool
+  langs:
+  - csharp
+  - vb
+  name: HasGodotClassSignal(in godot_string_name)
+  nameWithType: SurfaceTool.HasGodotClassSignal(in godot_string_name)
+  fullName: Godot.SurfaceTool.HasGodotClassSignal(in Godot.NativeInterop.godot_string_name)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: protected override bool HasGodotClassSignal(in godot_string_name signal)
+    parameters:
+    - id: signal
+      type: Godot.NativeInterop.godot_string_name
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function HasGodotClassSignal(signal As godot_string_name) As Boolean
+  overridden: Godot.RefCounted.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+  overload: Godot.SurfaceTool.HasGodotClassSignal*
+  nameWithType.vb: SurfaceTool.HasGodotClassSignal(godot_string_name)
+  fullName.vb: Godot.SurfaceTool.HasGodotClassSignal(Godot.NativeInterop.godot_string_name)
+  name.vb: HasGodotClassSignal(godot_string_name)
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Godot.GodotObject
+  commentId: T:Godot.GodotObject
+  parent: Godot
+  isExternal: true
+  href: Godot.GodotObject.html
+  name: GodotObject
+  nameWithType: GodotObject
+  fullName: Godot.GodotObject
+- uid: Godot.RefCounted
+  commentId: T:Godot.RefCounted
+  parent: Godot
+  isExternal: true
+  href: Godot.RefCounted.html
+  name: RefCounted
+  nameWithType: RefCounted
+  fullName: Godot.RefCounted
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Godot.RefCounted.InitRef
+  commentId: M:Godot.RefCounted.InitRef
+  parent: Godot.RefCounted
+  isExternal: true
+  href: Godot.RefCounted.html#Godot_RefCounted_InitRef
+  name: InitRef()
+  nameWithType: RefCounted.InitRef()
+  fullName: Godot.RefCounted.InitRef()
+  spec.csharp:
+  - uid: Godot.RefCounted.InitRef
+    name: InitRef
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_InitRef
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.RefCounted.InitRef
+    name: InitRef
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_InitRef
+  - name: (
+  - name: )
+- uid: Godot.RefCounted.Reference
+  commentId: M:Godot.RefCounted.Reference
+  parent: Godot.RefCounted
+  isExternal: true
+  href: Godot.RefCounted.html#Godot_RefCounted_Reference
+  name: Reference()
+  nameWithType: RefCounted.Reference()
+  fullName: Godot.RefCounted.Reference()
+  spec.csharp:
+  - uid: Godot.RefCounted.Reference
+    name: Reference
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_Reference
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.RefCounted.Reference
+    name: Reference
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_Reference
+  - name: (
+  - name: )
+- uid: Godot.RefCounted.Unreference
+  commentId: M:Godot.RefCounted.Unreference
+  parent: Godot.RefCounted
+  isExternal: true
+  href: Godot.RefCounted.html#Godot_RefCounted_Unreference
+  name: Unreference()
+  nameWithType: RefCounted.Unreference()
+  fullName: Godot.RefCounted.Unreference()
+  spec.csharp:
+  - uid: Godot.RefCounted.Unreference
+    name: Unreference
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_Unreference
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.RefCounted.Unreference
+    name: Unreference
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_Unreference
+  - name: (
+  - name: )
+- uid: Godot.RefCounted.GetReferenceCount
+  commentId: M:Godot.RefCounted.GetReferenceCount
+  parent: Godot.RefCounted
+  isExternal: true
+  href: Godot.RefCounted.html#Godot_RefCounted_GetReferenceCount
+  name: GetReferenceCount()
+  nameWithType: RefCounted.GetReferenceCount()
+  fullName: Godot.RefCounted.GetReferenceCount()
+  spec.csharp:
+  - uid: Godot.RefCounted.GetReferenceCount
+    name: GetReferenceCount
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_GetReferenceCount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.RefCounted.GetReferenceCount
+    name: GetReferenceCount
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_GetReferenceCount
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.NotificationPostinitialize
+  commentId: F:Godot.GodotObject.NotificationPostinitialize
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_NotificationPostinitialize
+  name: NotificationPostinitialize
+  nameWithType: GodotObject.NotificationPostinitialize
+  fullName: Godot.GodotObject.NotificationPostinitialize
+- uid: Godot.GodotObject.NotificationPredelete
+  commentId: F:Godot.GodotObject.NotificationPredelete
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_NotificationPredelete
+  name: NotificationPredelete
+  nameWithType: GodotObject.NotificationPredelete
+  fullName: Godot.GodotObject.NotificationPredelete
+- uid: Godot.GodotObject.NotificationExtensionReloaded
+  commentId: F:Godot.GodotObject.NotificationExtensionReloaded
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_NotificationExtensionReloaded
+  name: NotificationExtensionReloaded
+  nameWithType: GodotObject.NotificationExtensionReloaded
+  fullName: Godot.GodotObject.NotificationExtensionReloaded
+- uid: Godot.GodotObject.InstanceFromId(System.UInt64)
+  commentId: M:Godot.GodotObject.InstanceFromId(System.UInt64)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_
+  name: InstanceFromId(ulong)
+  nameWithType: GodotObject.InstanceFromId(ulong)
+  fullName: Godot.GodotObject.InstanceFromId(ulong)
+  nameWithType.vb: GodotObject.InstanceFromId(ULong)
+  fullName.vb: Godot.GodotObject.InstanceFromId(ULong)
+  name.vb: InstanceFromId(ULong)
+  spec.csharp:
+  - uid: Godot.GodotObject.InstanceFromId(System.UInt64)
+    name: InstanceFromId
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.InstanceFromId(System.UInt64)
+    name: InstanceFromId
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: Godot.GodotObject.IsInstanceIdValid(System.UInt64)
+  commentId: M:Godot.GodotObject.IsInstanceIdValid(System.UInt64)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_
+  name: IsInstanceIdValid(ulong)
+  nameWithType: GodotObject.IsInstanceIdValid(ulong)
+  fullName: Godot.GodotObject.IsInstanceIdValid(ulong)
+  nameWithType.vb: GodotObject.IsInstanceIdValid(ULong)
+  fullName.vb: Godot.GodotObject.IsInstanceIdValid(ULong)
+  name.vb: IsInstanceIdValid(ULong)
+  spec.csharp:
+  - uid: Godot.GodotObject.IsInstanceIdValid(System.UInt64)
+    name: IsInstanceIdValid
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.IsInstanceIdValid(System.UInt64)
+    name: IsInstanceIdValid
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: Godot.GodotObject.IsInstanceValid(Godot.GodotObject)
+  commentId: M:Godot.GodotObject.IsInstanceValid(Godot.GodotObject)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_
+  name: IsInstanceValid(GodotObject)
+  nameWithType: GodotObject.IsInstanceValid(GodotObject)
+  fullName: Godot.GodotObject.IsInstanceValid(Godot.GodotObject)
+  spec.csharp:
+  - uid: Godot.GodotObject.IsInstanceValid(Godot.GodotObject)
+    name: IsInstanceValid
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_
+  - name: (
+  - uid: Godot.GodotObject
+    name: GodotObject
+    isExternal: true
+    href: Godot.GodotObject.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.IsInstanceValid(Godot.GodotObject)
+    name: IsInstanceValid
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_
+  - name: (
+  - uid: Godot.GodotObject
+    name: GodotObject
+    isExternal: true
+    href: Godot.GodotObject.html
+  - name: )
+- uid: Godot.GodotObject.WeakRef(Godot.GodotObject)
+  commentId: M:Godot.GodotObject.WeakRef(Godot.GodotObject)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_
+  name: WeakRef(GodotObject)
+  nameWithType: GodotObject.WeakRef(GodotObject)
+  fullName: Godot.GodotObject.WeakRef(Godot.GodotObject)
+  spec.csharp:
+  - uid: Godot.GodotObject.WeakRef(Godot.GodotObject)
+    name: WeakRef
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_
+  - name: (
+  - uid: Godot.GodotObject
+    name: GodotObject
+    isExternal: true
+    href: Godot.GodotObject.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.WeakRef(Godot.GodotObject)
+    name: WeakRef
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_
+  - name: (
+  - uid: Godot.GodotObject
+    name: GodotObject
+    isExternal: true
+    href: Godot.GodotObject.html
+  - name: )
+- uid: Godot.GodotObject.Dispose
+  commentId: M:Godot.GodotObject.Dispose
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Dispose
+  name: Dispose()
+  nameWithType: GodotObject.Dispose()
+  fullName: Godot.GodotObject.Dispose()
+  spec.csharp:
+  - uid: Godot.GodotObject.Dispose
+    name: Dispose
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Dispose
+    name: Dispose
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Dispose
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.Dispose(System.Boolean)
+  commentId: M:Godot.GodotObject.Dispose(System.Boolean)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_
+  name: Dispose(bool)
+  nameWithType: GodotObject.Dispose(bool)
+  fullName: Godot.GodotObject.Dispose(bool)
+  nameWithType.vb: GodotObject.Dispose(Boolean)
+  fullName.vb: Godot.GodotObject.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: Godot.GodotObject.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Godot.GodotObject.ToString
+  commentId: M:Godot.GodotObject.ToString
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_ToString
+  name: ToString()
+  nameWithType: GodotObject.ToString()
+  fullName: Godot.GodotObject.ToString()
+  spec.csharp:
+  - uid: Godot.GodotObject.ToString
+    name: ToString
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.ToString
+    name: ToString
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_ToString
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.ToSignal(Godot.GodotObject,Godot.StringName)
+  commentId: M:Godot.GodotObject.ToSignal(Godot.GodotObject,Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_
+  name: ToSignal(GodotObject, StringName)
+  nameWithType: GodotObject.ToSignal(GodotObject, StringName)
+  fullName: Godot.GodotObject.ToSignal(Godot.GodotObject, Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.ToSignal(Godot.GodotObject,Godot.StringName)
+    name: ToSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_
+  - name: (
+  - uid: Godot.GodotObject
+    name: GodotObject
+    isExternal: true
+    href: Godot.GodotObject.html
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.ToSignal(Godot.GodotObject,Godot.StringName)
+    name: ToSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_
+  - name: (
+  - uid: Godot.GodotObject
+    name: GodotObject
+    isExternal: true
+    href: Godot.GodotObject.html
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject._Get(Godot.StringName)
+  commentId: M:Godot.GodotObject._Get(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_
+  name: _Get(StringName)
+  nameWithType: GodotObject._Get(StringName)
+  fullName: Godot.GodotObject._Get(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject._Get(Godot.StringName)
+    name: _Get
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._Get(Godot.StringName)
+    name: _Get
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject._GetPropertyList
+  commentId: M:Godot.GodotObject._GetPropertyList
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__GetPropertyList
+  name: _GetPropertyList()
+  nameWithType: GodotObject._GetPropertyList()
+  fullName: Godot.GodotObject._GetPropertyList()
+  spec.csharp:
+  - uid: Godot.GodotObject._GetPropertyList
+    name: _GetPropertyList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__GetPropertyList
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._GetPropertyList
+    name: _GetPropertyList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__GetPropertyList
+  - name: (
+  - name: )
+- uid: Godot.GodotObject._IterGet(Godot.Variant)
+  commentId: M:Godot.GodotObject._IterGet(Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__IterGet_Godot_Variant_
+  name: _IterGet(Variant)
+  nameWithType: GodotObject._IterGet(Variant)
+  fullName: Godot.GodotObject._IterGet(Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject._IterGet(Godot.Variant)
+    name: _IterGet
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__IterGet_Godot_Variant_
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._IterGet(Godot.Variant)
+    name: _IterGet
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__IterGet_Godot_Variant_
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject._IterInit(Godot.Collections.Array)
+  commentId: M:Godot.GodotObject._IterInit(Godot.Collections.Array)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__IterInit_Godot_Collections_Array_
+  name: _IterInit(Array)
+  nameWithType: GodotObject._IterInit(Array)
+  fullName: Godot.GodotObject._IterInit(Godot.Collections.Array)
+  spec.csharp:
+  - uid: Godot.GodotObject._IterInit(Godot.Collections.Array)
+    name: _IterInit
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__IterInit_Godot_Collections_Array_
+  - name: (
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._IterInit(Godot.Collections.Array)
+    name: _IterInit
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__IterInit_Godot_Collections_Array_
+  - name: (
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+- uid: Godot.GodotObject._IterNext(Godot.Collections.Array)
+  commentId: M:Godot.GodotObject._IterNext(Godot.Collections.Array)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__IterNext_Godot_Collections_Array_
+  name: _IterNext(Array)
+  nameWithType: GodotObject._IterNext(Array)
+  fullName: Godot.GodotObject._IterNext(Godot.Collections.Array)
+  spec.csharp:
+  - uid: Godot.GodotObject._IterNext(Godot.Collections.Array)
+    name: _IterNext
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__IterNext_Godot_Collections_Array_
+  - name: (
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._IterNext(Godot.Collections.Array)
+    name: _IterNext
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__IterNext_Godot_Collections_Array_
+  - name: (
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+- uid: Godot.GodotObject._Notification(System.Int32)
+  commentId: M:Godot.GodotObject._Notification(System.Int32)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_
+  name: _Notification(int)
+  nameWithType: GodotObject._Notification(int)
+  fullName: Godot.GodotObject._Notification(int)
+  nameWithType.vb: GodotObject._Notification(Integer)
+  fullName.vb: Godot.GodotObject._Notification(Integer)
+  name.vb: _Notification(Integer)
+  spec.csharp:
+  - uid: Godot.GodotObject._Notification(System.Int32)
+    name: _Notification
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._Notification(System.Int32)
+    name: _Notification
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Godot.GodotObject._PropertyCanRevert(Godot.StringName)
+  commentId: M:Godot.GodotObject._PropertyCanRevert(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_
+  name: _PropertyCanRevert(StringName)
+  nameWithType: GodotObject._PropertyCanRevert(StringName)
+  fullName: Godot.GodotObject._PropertyCanRevert(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject._PropertyCanRevert(Godot.StringName)
+    name: _PropertyCanRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._PropertyCanRevert(Godot.StringName)
+    name: _PropertyCanRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject._PropertyGetRevert(Godot.StringName)
+  commentId: M:Godot.GodotObject._PropertyGetRevert(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_
+  name: _PropertyGetRevert(StringName)
+  nameWithType: GodotObject._PropertyGetRevert(StringName)
+  fullName: Godot.GodotObject._PropertyGetRevert(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject._PropertyGetRevert(Godot.StringName)
+    name: _PropertyGetRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._PropertyGetRevert(Godot.StringName)
+    name: _PropertyGetRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject._Set(Godot.StringName,Godot.Variant)
+  commentId: M:Godot.GodotObject._Set(Godot.StringName,Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_
+  name: _Set(StringName, Variant)
+  nameWithType: GodotObject._Set(StringName, Variant)
+  fullName: Godot.GodotObject._Set(Godot.StringName, Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject._Set(Godot.StringName,Godot.Variant)
+    name: _Set
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._Set(Godot.StringName,Godot.Variant)
+    name: _Set
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject._ValidateProperty(Godot.Collections.Dictionary)
+  commentId: M:Godot.GodotObject._ValidateProperty(Godot.Collections.Dictionary)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__ValidateProperty_Godot_Collections_Dictionary_
+  name: _ValidateProperty(Dictionary)
+  nameWithType: GodotObject._ValidateProperty(Dictionary)
+  fullName: Godot.GodotObject._ValidateProperty(Godot.Collections.Dictionary)
+  spec.csharp:
+  - uid: Godot.GodotObject._ValidateProperty(Godot.Collections.Dictionary)
+    name: _ValidateProperty
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__ValidateProperty_Godot_Collections_Dictionary_
+  - name: (
+  - uid: Godot.Collections.Dictionary
+    name: Dictionary
+    isExternal: true
+    href: Godot.Collections.Dictionary.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._ValidateProperty(Godot.Collections.Dictionary)
+    name: _ValidateProperty
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__ValidateProperty_Godot_Collections_Dictionary_
+  - name: (
+  - uid: Godot.Collections.Dictionary
+    name: Dictionary
+    isExternal: true
+    href: Godot.Collections.Dictionary.html
+  - name: )
+- uid: Godot.GodotObject.Free
+  commentId: M:Godot.GodotObject.Free
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Free
+  name: Free()
+  nameWithType: GodotObject.Free()
+  fullName: Godot.GodotObject.Free()
+  spec.csharp:
+  - uid: Godot.GodotObject.Free
+    name: Free
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Free
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Free
+    name: Free
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Free
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.GetClass
+  commentId: M:Godot.GodotObject.GetClass
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetClass
+  name: GetClass()
+  nameWithType: GodotObject.GetClass()
+  fullName: Godot.GodotObject.GetClass()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetClass
+    name: GetClass
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetClass
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetClass
+    name: GetClass
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetClass
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.IsClass(System.String)
+  commentId: M:Godot.GodotObject.IsClass(System.String)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_
+  name: IsClass(string)
+  nameWithType: GodotObject.IsClass(string)
+  fullName: Godot.GodotObject.IsClass(string)
+  nameWithType.vb: GodotObject.IsClass(String)
+  fullName.vb: Godot.GodotObject.IsClass(String)
+  name.vb: IsClass(String)
+  spec.csharp:
+  - uid: Godot.GodotObject.IsClass(System.String)
+    name: IsClass
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.IsClass(System.String)
+    name: IsClass
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Godot.GodotObject.Set(Godot.StringName,Godot.Variant)
+  commentId: M:Godot.GodotObject.Set(Godot.StringName,Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_
+  name: Set(StringName, Variant)
+  nameWithType: GodotObject.Set(StringName, Variant)
+  fullName: Godot.GodotObject.Set(Godot.StringName, Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject.Set(Godot.StringName,Godot.Variant)
+    name: Set
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Set(Godot.StringName,Godot.Variant)
+    name: Set
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject.Get(Godot.StringName)
+  commentId: M:Godot.GodotObject.Get(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_
+  name: Get(StringName)
+  nameWithType: GodotObject.Get(StringName)
+  fullName: Godot.GodotObject.Get(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.Get(Godot.StringName)
+    name: Get
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Get(Godot.StringName)
+    name: Get
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.SetIndexed(Godot.NodePath,Godot.Variant)
+  commentId: M:Godot.GodotObject.SetIndexed(Godot.NodePath,Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_
+  name: SetIndexed(NodePath, Variant)
+  nameWithType: GodotObject.SetIndexed(NodePath, Variant)
+  fullName: Godot.GodotObject.SetIndexed(Godot.NodePath, Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject.SetIndexed(Godot.NodePath,Godot.Variant)
+    name: SetIndexed
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_
+  - name: (
+  - uid: Godot.NodePath
+    name: NodePath
+    isExternal: true
+    href: Godot.NodePath.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.SetIndexed(Godot.NodePath,Godot.Variant)
+    name: SetIndexed
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_
+  - name: (
+  - uid: Godot.NodePath
+    name: NodePath
+    isExternal: true
+    href: Godot.NodePath.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject.GetIndexed(Godot.NodePath)
+  commentId: M:Godot.GodotObject.GetIndexed(Godot.NodePath)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_
+  name: GetIndexed(NodePath)
+  nameWithType: GodotObject.GetIndexed(NodePath)
+  fullName: Godot.GodotObject.GetIndexed(Godot.NodePath)
+  spec.csharp:
+  - uid: Godot.GodotObject.GetIndexed(Godot.NodePath)
+    name: GetIndexed
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_
+  - name: (
+  - uid: Godot.NodePath
+    name: NodePath
+    isExternal: true
+    href: Godot.NodePath.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetIndexed(Godot.NodePath)
+    name: GetIndexed
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_
+  - name: (
+  - uid: Godot.NodePath
+    name: NodePath
+    isExternal: true
+    href: Godot.NodePath.html
+  - name: )
+- uid: Godot.GodotObject.GetPropertyList
+  commentId: M:Godot.GodotObject.GetPropertyList
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetPropertyList
+  name: GetPropertyList()
+  nameWithType: GodotObject.GetPropertyList()
+  fullName: Godot.GodotObject.GetPropertyList()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetPropertyList
+    name: GetPropertyList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetPropertyList
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetPropertyList
+    name: GetPropertyList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetPropertyList
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.GetMethodList
+  commentId: M:Godot.GodotObject.GetMethodList
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetMethodList
+  name: GetMethodList()
+  nameWithType: GodotObject.GetMethodList()
+  fullName: Godot.GodotObject.GetMethodList()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetMethodList
+    name: GetMethodList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMethodList
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetMethodList
+    name: GetMethodList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMethodList
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.PropertyCanRevert(Godot.StringName)
+  commentId: M:Godot.GodotObject.PropertyCanRevert(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_
+  name: PropertyCanRevert(StringName)
+  nameWithType: GodotObject.PropertyCanRevert(StringName)
+  fullName: Godot.GodotObject.PropertyCanRevert(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.PropertyCanRevert(Godot.StringName)
+    name: PropertyCanRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.PropertyCanRevert(Godot.StringName)
+    name: PropertyCanRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.PropertyGetRevert(Godot.StringName)
+  commentId: M:Godot.GodotObject.PropertyGetRevert(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_
+  name: PropertyGetRevert(StringName)
+  nameWithType: GodotObject.PropertyGetRevert(StringName)
+  fullName: Godot.GodotObject.PropertyGetRevert(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.PropertyGetRevert(Godot.StringName)
+    name: PropertyGetRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.PropertyGetRevert(Godot.StringName)
+    name: PropertyGetRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.Notification(System.Int32,System.Boolean)
+  commentId: M:Godot.GodotObject.Notification(System.Int32,System.Boolean)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_
+  name: Notification(int, bool)
+  nameWithType: GodotObject.Notification(int, bool)
+  fullName: Godot.GodotObject.Notification(int, bool)
+  nameWithType.vb: GodotObject.Notification(Integer, Boolean)
+  fullName.vb: Godot.GodotObject.Notification(Integer, Boolean)
+  name.vb: Notification(Integer, Boolean)
+  spec.csharp:
+  - uid: Godot.GodotObject.Notification(System.Int32,System.Boolean)
+    name: Notification
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Notification(System.Int32,System.Boolean)
+    name: Notification
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Godot.GodotObject.GetInstanceId
+  commentId: M:Godot.GodotObject.GetInstanceId
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetInstanceId
+  name: GetInstanceId()
+  nameWithType: GodotObject.GetInstanceId()
+  fullName: Godot.GodotObject.GetInstanceId()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetInstanceId
+    name: GetInstanceId
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetInstanceId
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetInstanceId
+    name: GetInstanceId
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetInstanceId
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.SetScript(Godot.Variant)
+  commentId: M:Godot.GodotObject.SetScript(Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_
+  name: SetScript(Variant)
+  nameWithType: GodotObject.SetScript(Variant)
+  fullName: Godot.GodotObject.SetScript(Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject.SetScript(Godot.Variant)
+    name: SetScript
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.SetScript(Godot.Variant)
+    name: SetScript
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject.GetScript
+  commentId: M:Godot.GodotObject.GetScript
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetScript
+  name: GetScript()
+  nameWithType: GodotObject.GetScript()
+  fullName: Godot.GodotObject.GetScript()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetScript
+    name: GetScript
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetScript
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetScript
+    name: GetScript
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetScript
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.SetMeta(Godot.StringName,Godot.Variant)
+  commentId: M:Godot.GodotObject.SetMeta(Godot.StringName,Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_
+  name: SetMeta(StringName, Variant)
+  nameWithType: GodotObject.SetMeta(StringName, Variant)
+  fullName: Godot.GodotObject.SetMeta(Godot.StringName, Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject.SetMeta(Godot.StringName,Godot.Variant)
+    name: SetMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.SetMeta(Godot.StringName,Godot.Variant)
+    name: SetMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject.RemoveMeta(Godot.StringName)
+  commentId: M:Godot.GodotObject.RemoveMeta(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_
+  name: RemoveMeta(StringName)
+  nameWithType: GodotObject.RemoveMeta(StringName)
+  fullName: Godot.GodotObject.RemoveMeta(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.RemoveMeta(Godot.StringName)
+    name: RemoveMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.RemoveMeta(Godot.StringName)
+    name: RemoveMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.GetMeta(Godot.StringName,Godot.Variant)
+  commentId: M:Godot.GodotObject.GetMeta(Godot.StringName,Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_
+  name: GetMeta(StringName, Variant)
+  nameWithType: GodotObject.GetMeta(StringName, Variant)
+  fullName: Godot.GodotObject.GetMeta(Godot.StringName, Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject.GetMeta(Godot.StringName,Godot.Variant)
+    name: GetMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetMeta(Godot.StringName,Godot.Variant)
+    name: GetMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject.HasMeta(Godot.StringName)
+  commentId: M:Godot.GodotObject.HasMeta(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_
+  name: HasMeta(StringName)
+  nameWithType: GodotObject.HasMeta(StringName)
+  fullName: Godot.GodotObject.HasMeta(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.HasMeta(Godot.StringName)
+    name: HasMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.HasMeta(Godot.StringName)
+    name: HasMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.GetMetaList
+  commentId: M:Godot.GodotObject.GetMetaList
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetMetaList
+  name: GetMetaList()
+  nameWithType: GodotObject.GetMetaList()
+  fullName: Godot.GodotObject.GetMetaList()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetMetaList
+    name: GetMetaList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMetaList
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetMetaList
+    name: GetMetaList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMetaList
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.AddUserSignal(System.String,Godot.Collections.Array)
+  commentId: M:Godot.GodotObject.AddUserSignal(System.String,Godot.Collections.Array)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_
+  name: AddUserSignal(string, Array)
+  nameWithType: GodotObject.AddUserSignal(string, Array)
+  fullName: Godot.GodotObject.AddUserSignal(string, Godot.Collections.Array)
+  nameWithType.vb: GodotObject.AddUserSignal(String, Array)
+  fullName.vb: Godot.GodotObject.AddUserSignal(String, Godot.Collections.Array)
+  name.vb: AddUserSignal(String, Array)
+  spec.csharp:
+  - uid: Godot.GodotObject.AddUserSignal(System.String,Godot.Collections.Array)
+    name: AddUserSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.AddUserSignal(System.String,Godot.Collections.Array)
+    name: AddUserSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+- uid: Godot.GodotObject.HasUserSignal(Godot.StringName)
+  commentId: M:Godot.GodotObject.HasUserSignal(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_
+  name: HasUserSignal(StringName)
+  nameWithType: GodotObject.HasUserSignal(StringName)
+  fullName: Godot.GodotObject.HasUserSignal(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.HasUserSignal(Godot.StringName)
+    name: HasUserSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.HasUserSignal(Godot.StringName)
+    name: HasUserSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.RemoveUserSignal(Godot.StringName)
+  commentId: M:Godot.GodotObject.RemoveUserSignal(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_RemoveUserSignal_Godot_StringName_
+  name: RemoveUserSignal(StringName)
+  nameWithType: GodotObject.RemoveUserSignal(StringName)
+  fullName: Godot.GodotObject.RemoveUserSignal(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.RemoveUserSignal(Godot.StringName)
+    name: RemoveUserSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_RemoveUserSignal_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.RemoveUserSignal(Godot.StringName)
+    name: RemoveUserSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_RemoveUserSignal_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.EmitSignal(Godot.StringName,Godot.Variant[])
+  commentId: M:Godot.GodotObject.EmitSignal(Godot.StringName,Godot.Variant[])
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___
+  name: EmitSignal(StringName, params Variant[])
+  nameWithType: GodotObject.EmitSignal(StringName, params Variant[])
+  fullName: Godot.GodotObject.EmitSignal(Godot.StringName, params Godot.Variant[])
+  nameWithType.vb: GodotObject.EmitSignal(StringName, ParamArray Variant())
+  fullName.vb: Godot.GodotObject.EmitSignal(Godot.StringName, ParamArray Godot.Variant())
+  name.vb: EmitSignal(StringName, ParamArray Variant())
+  spec.csharp:
+  - uid: Godot.GodotObject.EmitSignal(Godot.StringName,Godot.Variant[])
+    name: EmitSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.EmitSignal(Godot.StringName,Godot.Variant[])
+    name: EmitSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: (
+  - name: )
+  - name: )
+- uid: Godot.GodotObject.EmitSignal(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  commentId: M:Godot.GodotObject.EmitSignal(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  name: EmitSignal(StringName, ReadOnlySpan<Variant>)
+  nameWithType: GodotObject.EmitSignal(StringName, ReadOnlySpan<Variant>)
+  fullName: Godot.GodotObject.EmitSignal(Godot.StringName, System.ReadOnlySpan<Godot.Variant>)
+  nameWithType.vb: GodotObject.EmitSignal(StringName, ReadOnlySpan(Of Variant))
+  fullName.vb: Godot.GodotObject.EmitSignal(Godot.StringName, System.ReadOnlySpan(Of Godot.Variant))
+  name.vb: EmitSignal(StringName, ReadOnlySpan(Of Variant))
+  spec.csharp:
+  - uid: Godot.GodotObject.EmitSignal(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+    name: EmitSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.EmitSignal(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+    name: EmitSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  - name: )
+- uid: Godot.GodotObject.Call(Godot.StringName,Godot.Variant[])
+  commentId: M:Godot.GodotObject.Call(Godot.StringName,Godot.Variant[])
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___
+  name: Call(StringName, params Variant[])
+  nameWithType: GodotObject.Call(StringName, params Variant[])
+  fullName: Godot.GodotObject.Call(Godot.StringName, params Godot.Variant[])
+  nameWithType.vb: GodotObject.Call(StringName, ParamArray Variant())
+  fullName.vb: Godot.GodotObject.Call(Godot.StringName, ParamArray Godot.Variant())
+  name.vb: Call(StringName, ParamArray Variant())
+  spec.csharp:
+  - uid: Godot.GodotObject.Call(Godot.StringName,Godot.Variant[])
+    name: Call
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Call(Godot.StringName,Godot.Variant[])
+    name: Call
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: (
+  - name: )
+  - name: )
+- uid: Godot.GodotObject.Call(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  commentId: M:Godot.GodotObject.Call(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  name: Call(StringName, ReadOnlySpan<Variant>)
+  nameWithType: GodotObject.Call(StringName, ReadOnlySpan<Variant>)
+  fullName: Godot.GodotObject.Call(Godot.StringName, System.ReadOnlySpan<Godot.Variant>)
+  nameWithType.vb: GodotObject.Call(StringName, ReadOnlySpan(Of Variant))
+  fullName.vb: Godot.GodotObject.Call(Godot.StringName, System.ReadOnlySpan(Of Godot.Variant))
+  name.vb: Call(StringName, ReadOnlySpan(Of Variant))
+  spec.csharp:
+  - uid: Godot.GodotObject.Call(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+    name: Call
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Call(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+    name: Call
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  - name: )
+- uid: Godot.GodotObject.CallDeferred(Godot.StringName,Godot.Variant[])
+  commentId: M:Godot.GodotObject.CallDeferred(Godot.StringName,Godot.Variant[])
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___
+  name: CallDeferred(StringName, params Variant[])
+  nameWithType: GodotObject.CallDeferred(StringName, params Variant[])
+  fullName: Godot.GodotObject.CallDeferred(Godot.StringName, params Godot.Variant[])
+  nameWithType.vb: GodotObject.CallDeferred(StringName, ParamArray Variant())
+  fullName.vb: Godot.GodotObject.CallDeferred(Godot.StringName, ParamArray Godot.Variant())
+  name.vb: CallDeferred(StringName, ParamArray Variant())
+  spec.csharp:
+  - uid: Godot.GodotObject.CallDeferred(Godot.StringName,Godot.Variant[])
+    name: CallDeferred
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.CallDeferred(Godot.StringName,Godot.Variant[])
+    name: CallDeferred
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: (
+  - name: )
+  - name: )
+- uid: Godot.GodotObject.CallDeferred(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  commentId: M:Godot.GodotObject.CallDeferred(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  name: CallDeferred(StringName, ReadOnlySpan<Variant>)
+  nameWithType: GodotObject.CallDeferred(StringName, ReadOnlySpan<Variant>)
+  fullName: Godot.GodotObject.CallDeferred(Godot.StringName, System.ReadOnlySpan<Godot.Variant>)
+  nameWithType.vb: GodotObject.CallDeferred(StringName, ReadOnlySpan(Of Variant))
+  fullName.vb: Godot.GodotObject.CallDeferred(Godot.StringName, System.ReadOnlySpan(Of Godot.Variant))
+  name.vb: CallDeferred(StringName, ReadOnlySpan(Of Variant))
+  spec.csharp:
+  - uid: Godot.GodotObject.CallDeferred(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+    name: CallDeferred
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.CallDeferred(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+    name: CallDeferred
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  - name: )
+- uid: Godot.GodotObject.SetDeferred(Godot.StringName,Godot.Variant)
+  commentId: M:Godot.GodotObject.SetDeferred(Godot.StringName,Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_
+  name: SetDeferred(StringName, Variant)
+  nameWithType: GodotObject.SetDeferred(StringName, Variant)
+  fullName: Godot.GodotObject.SetDeferred(Godot.StringName, Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject.SetDeferred(Godot.StringName,Godot.Variant)
+    name: SetDeferred
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.SetDeferred(Godot.StringName,Godot.Variant)
+    name: SetDeferred
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject.Callv(Godot.StringName,Godot.Collections.Array)
+  commentId: M:Godot.GodotObject.Callv(Godot.StringName,Godot.Collections.Array)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_
+  name: Callv(StringName, Array)
+  nameWithType: GodotObject.Callv(StringName, Array)
+  fullName: Godot.GodotObject.Callv(Godot.StringName, Godot.Collections.Array)
+  spec.csharp:
+  - uid: Godot.GodotObject.Callv(Godot.StringName,Godot.Collections.Array)
+    name: Callv
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Callv(Godot.StringName,Godot.Collections.Array)
+    name: Callv
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+- uid: Godot.GodotObject.HasMethod(Godot.StringName)
+  commentId: M:Godot.GodotObject.HasMethod(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_
+  name: HasMethod(StringName)
+  nameWithType: GodotObject.HasMethod(StringName)
+  fullName: Godot.GodotObject.HasMethod(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.HasMethod(Godot.StringName)
+    name: HasMethod
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.HasMethod(Godot.StringName)
+    name: HasMethod
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.GetMethodArgumentCount(Godot.StringName)
+  commentId: M:Godot.GodotObject.GetMethodArgumentCount(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetMethodArgumentCount_Godot_StringName_
+  name: GetMethodArgumentCount(StringName)
+  nameWithType: GodotObject.GetMethodArgumentCount(StringName)
+  fullName: Godot.GodotObject.GetMethodArgumentCount(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.GetMethodArgumentCount(Godot.StringName)
+    name: GetMethodArgumentCount
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMethodArgumentCount_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetMethodArgumentCount(Godot.StringName)
+    name: GetMethodArgumentCount
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMethodArgumentCount_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.HasSignal(Godot.StringName)
+  commentId: M:Godot.GodotObject.HasSignal(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_
+  name: HasSignal(StringName)
+  nameWithType: GodotObject.HasSignal(StringName)
+  fullName: Godot.GodotObject.HasSignal(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.HasSignal(Godot.StringName)
+    name: HasSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.HasSignal(Godot.StringName)
+    name: HasSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.GetSignalList
+  commentId: M:Godot.GodotObject.GetSignalList
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetSignalList
+  name: GetSignalList()
+  nameWithType: GodotObject.GetSignalList()
+  fullName: Godot.GodotObject.GetSignalList()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetSignalList
+    name: GetSignalList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetSignalList
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetSignalList
+    name: GetSignalList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetSignalList
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.GetSignalConnectionList(Godot.StringName)
+  commentId: M:Godot.GodotObject.GetSignalConnectionList(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_
+  name: GetSignalConnectionList(StringName)
+  nameWithType: GodotObject.GetSignalConnectionList(StringName)
+  fullName: Godot.GodotObject.GetSignalConnectionList(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.GetSignalConnectionList(Godot.StringName)
+    name: GetSignalConnectionList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetSignalConnectionList(Godot.StringName)
+    name: GetSignalConnectionList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.GetIncomingConnections
+  commentId: M:Godot.GodotObject.GetIncomingConnections
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections
+  name: GetIncomingConnections()
+  nameWithType: GodotObject.GetIncomingConnections()
+  fullName: Godot.GodotObject.GetIncomingConnections()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetIncomingConnections
+    name: GetIncomingConnections
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetIncomingConnections
+    name: GetIncomingConnections
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.Connect(Godot.StringName,Godot.Callable,System.UInt32)
+  commentId: M:Godot.GodotObject.Connect(Godot.StringName,Godot.Callable,System.UInt32)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_
+  name: Connect(StringName, Callable, uint)
+  nameWithType: GodotObject.Connect(StringName, Callable, uint)
+  fullName: Godot.GodotObject.Connect(Godot.StringName, Godot.Callable, uint)
+  nameWithType.vb: GodotObject.Connect(StringName, Callable, UInteger)
+  fullName.vb: Godot.GodotObject.Connect(Godot.StringName, Godot.Callable, UInteger)
+  name.vb: Connect(StringName, Callable, UInteger)
+  spec.csharp:
+  - uid: Godot.GodotObject.Connect(Godot.StringName,Godot.Callable,System.UInt32)
+    name: Connect
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Callable
+    name: Callable
+    isExternal: true
+    href: Godot.Callable.html
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Connect(Godot.StringName,Godot.Callable,System.UInt32)
+    name: Connect
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Callable
+    name: Callable
+    isExternal: true
+    href: Godot.Callable.html
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+- uid: Godot.GodotObject.Disconnect(Godot.StringName,Godot.Callable)
+  commentId: M:Godot.GodotObject.Disconnect(Godot.StringName,Godot.Callable)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_
+  name: Disconnect(StringName, Callable)
+  nameWithType: GodotObject.Disconnect(StringName, Callable)
+  fullName: Godot.GodotObject.Disconnect(Godot.StringName, Godot.Callable)
+  spec.csharp:
+  - uid: Godot.GodotObject.Disconnect(Godot.StringName,Godot.Callable)
+    name: Disconnect
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Callable
+    name: Callable
+    isExternal: true
+    href: Godot.Callable.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Disconnect(Godot.StringName,Godot.Callable)
+    name: Disconnect
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Callable
+    name: Callable
+    isExternal: true
+    href: Godot.Callable.html
+  - name: )
+- uid: Godot.GodotObject.IsConnected(Godot.StringName,Godot.Callable)
+  commentId: M:Godot.GodotObject.IsConnected(Godot.StringName,Godot.Callable)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_
+  name: IsConnected(StringName, Callable)
+  nameWithType: GodotObject.IsConnected(StringName, Callable)
+  fullName: Godot.GodotObject.IsConnected(Godot.StringName, Godot.Callable)
+  spec.csharp:
+  - uid: Godot.GodotObject.IsConnected(Godot.StringName,Godot.Callable)
+    name: IsConnected
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Callable
+    name: Callable
+    isExternal: true
+    href: Godot.Callable.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.IsConnected(Godot.StringName,Godot.Callable)
+    name: IsConnected
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Callable
+    name: Callable
+    isExternal: true
+    href: Godot.Callable.html
+  - name: )
+- uid: Godot.GodotObject.HasConnections(Godot.StringName)
+  commentId: M:Godot.GodotObject.HasConnections(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_HasConnections_Godot_StringName_
+  name: HasConnections(StringName)
+  nameWithType: GodotObject.HasConnections(StringName)
+  fullName: Godot.GodotObject.HasConnections(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.HasConnections(Godot.StringName)
+    name: HasConnections
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasConnections_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.HasConnections(Godot.StringName)
+    name: HasConnections
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasConnections_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.SetBlockSignals(System.Boolean)
+  commentId: M:Godot.GodotObject.SetBlockSignals(System.Boolean)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_
+  name: SetBlockSignals(bool)
+  nameWithType: GodotObject.SetBlockSignals(bool)
+  fullName: Godot.GodotObject.SetBlockSignals(bool)
+  nameWithType.vb: GodotObject.SetBlockSignals(Boolean)
+  fullName.vb: Godot.GodotObject.SetBlockSignals(Boolean)
+  name.vb: SetBlockSignals(Boolean)
+  spec.csharp:
+  - uid: Godot.GodotObject.SetBlockSignals(System.Boolean)
+    name: SetBlockSignals
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.SetBlockSignals(System.Boolean)
+    name: SetBlockSignals
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Godot.GodotObject.IsBlockingSignals
+  commentId: M:Godot.GodotObject.IsBlockingSignals
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals
+  name: IsBlockingSignals()
+  nameWithType: GodotObject.IsBlockingSignals()
+  fullName: Godot.GodotObject.IsBlockingSignals()
+  spec.csharp:
+  - uid: Godot.GodotObject.IsBlockingSignals
+    name: IsBlockingSignals
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.IsBlockingSignals
+    name: IsBlockingSignals
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.NotifyPropertyListChanged
+  commentId: M:Godot.GodotObject.NotifyPropertyListChanged
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged
+  name: NotifyPropertyListChanged()
+  nameWithType: GodotObject.NotifyPropertyListChanged()
+  fullName: Godot.GodotObject.NotifyPropertyListChanged()
+  spec.csharp:
+  - uid: Godot.GodotObject.NotifyPropertyListChanged
+    name: NotifyPropertyListChanged
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.NotifyPropertyListChanged
+    name: NotifyPropertyListChanged
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.SetMessageTranslation(System.Boolean)
+  commentId: M:Godot.GodotObject.SetMessageTranslation(System.Boolean)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_
+  name: SetMessageTranslation(bool)
+  nameWithType: GodotObject.SetMessageTranslation(bool)
+  fullName: Godot.GodotObject.SetMessageTranslation(bool)
+  nameWithType.vb: GodotObject.SetMessageTranslation(Boolean)
+  fullName.vb: Godot.GodotObject.SetMessageTranslation(Boolean)
+  name.vb: SetMessageTranslation(Boolean)
+  spec.csharp:
+  - uid: Godot.GodotObject.SetMessageTranslation(System.Boolean)
+    name: SetMessageTranslation
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.SetMessageTranslation(System.Boolean)
+    name: SetMessageTranslation
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Godot.GodotObject.CanTranslateMessages
+  commentId: M:Godot.GodotObject.CanTranslateMessages
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages
+  name: CanTranslateMessages()
+  nameWithType: GodotObject.CanTranslateMessages()
+  fullName: Godot.GodotObject.CanTranslateMessages()
+  spec.csharp:
+  - uid: Godot.GodotObject.CanTranslateMessages
+    name: CanTranslateMessages
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.CanTranslateMessages
+    name: CanTranslateMessages
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.Tr(Godot.StringName,Godot.StringName)
+  commentId: M:Godot.GodotObject.Tr(Godot.StringName,Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_
+  name: Tr(StringName, StringName)
+  nameWithType: GodotObject.Tr(StringName, StringName)
+  fullName: Godot.GodotObject.Tr(Godot.StringName, Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.Tr(Godot.StringName,Godot.StringName)
+    name: Tr
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Tr(Godot.StringName,Godot.StringName)
+    name: Tr
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.TrN(Godot.StringName,Godot.StringName,System.Int32,Godot.StringName)
+  commentId: M:Godot.GodotObject.TrN(Godot.StringName,Godot.StringName,System.Int32,Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_
+  name: TrN(StringName, StringName, int, StringName)
+  nameWithType: GodotObject.TrN(StringName, StringName, int, StringName)
+  fullName: Godot.GodotObject.TrN(Godot.StringName, Godot.StringName, int, Godot.StringName)
+  nameWithType.vb: GodotObject.TrN(StringName, StringName, Integer, StringName)
+  fullName.vb: Godot.GodotObject.TrN(Godot.StringName, Godot.StringName, Integer, Godot.StringName)
+  name.vb: TrN(StringName, StringName, Integer, StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.TrN(Godot.StringName,Godot.StringName,System.Int32,Godot.StringName)
+    name: TrN
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.TrN(Godot.StringName,Godot.StringName,System.Int32,Godot.StringName)
+    name: TrN
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.GetTranslationDomain
+  commentId: M:Godot.GodotObject.GetTranslationDomain
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetTranslationDomain
+  name: GetTranslationDomain()
+  nameWithType: GodotObject.GetTranslationDomain()
+  fullName: Godot.GodotObject.GetTranslationDomain()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetTranslationDomain
+    name: GetTranslationDomain
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetTranslationDomain
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetTranslationDomain
+    name: GetTranslationDomain
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetTranslationDomain
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.SetTranslationDomain(Godot.StringName)
+  commentId: M:Godot.GodotObject.SetTranslationDomain(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_SetTranslationDomain_Godot_StringName_
+  name: SetTranslationDomain(StringName)
+  nameWithType: GodotObject.SetTranslationDomain(StringName)
+  fullName: Godot.GodotObject.SetTranslationDomain(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.SetTranslationDomain(Godot.StringName)
+    name: SetTranslationDomain
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetTranslationDomain_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.SetTranslationDomain(Godot.StringName)
+    name: SetTranslationDomain
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetTranslationDomain_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.IsQueuedForDeletion
+  commentId: M:Godot.GodotObject.IsQueuedForDeletion
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion
+  name: IsQueuedForDeletion()
+  nameWithType: GodotObject.IsQueuedForDeletion()
+  fullName: Godot.GodotObject.IsQueuedForDeletion()
+  spec.csharp:
+  - uid: Godot.GodotObject.IsQueuedForDeletion
+    name: IsQueuedForDeletion
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.IsQueuedForDeletion
+    name: IsQueuedForDeletion
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.CancelFree
+  commentId: M:Godot.GodotObject.CancelFree
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_CancelFree
+  name: CancelFree()
+  nameWithType: GodotObject.CancelFree()
+  fullName: Godot.GodotObject.CancelFree()
+  spec.csharp:
+  - uid: Godot.GodotObject.CancelFree
+    name: CancelFree
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CancelFree
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.CancelFree
+    name: CancelFree
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CancelFree
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.EmitSignalScriptChanged
+  commentId: M:Godot.GodotObject.EmitSignalScriptChanged
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_EmitSignalScriptChanged
+  name: EmitSignalScriptChanged()
+  nameWithType: GodotObject.EmitSignalScriptChanged()
+  fullName: Godot.GodotObject.EmitSignalScriptChanged()
+  spec.csharp:
+  - uid: Godot.GodotObject.EmitSignalScriptChanged
+    name: EmitSignalScriptChanged
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignalScriptChanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.EmitSignalScriptChanged
+    name: EmitSignalScriptChanged
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignalScriptChanged
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.EmitSignalPropertyListChanged
+  commentId: M:Godot.GodotObject.EmitSignalPropertyListChanged
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_EmitSignalPropertyListChanged
+  name: EmitSignalPropertyListChanged()
+  nameWithType: GodotObject.EmitSignalPropertyListChanged()
+  fullName: Godot.GodotObject.EmitSignalPropertyListChanged()
+  spec.csharp:
+  - uid: Godot.GodotObject.EmitSignalPropertyListChanged
+    name: EmitSignalPropertyListChanged
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignalPropertyListChanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.EmitSignalPropertyListChanged
+    name: EmitSignalPropertyListChanged
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignalPropertyListChanged
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.NativeInstance
+  commentId: P:Godot.GodotObject.NativeInstance
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_NativeInstance
+  name: NativeInstance
+  nameWithType: GodotObject.NativeInstance
+  fullName: Godot.GodotObject.NativeInstance
+- uid: Godot.GodotObject.ScriptChanged
+  commentId: E:Godot.GodotObject.ScriptChanged
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_ScriptChanged
+  name: ScriptChanged
+  nameWithType: GodotObject.ScriptChanged
+  fullName: Godot.GodotObject.ScriptChanged
+- uid: Godot.GodotObject.PropertyListChanged
+  commentId: E:Godot.GodotObject.PropertyListChanged
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_PropertyListChanged
+  name: PropertyListChanged
+  nameWithType: GodotObject.PropertyListChanged
+  fullName: Godot.GodotObject.PropertyListChanged
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.SurfaceTool.#ctor*
+  commentId: Overload:Godot.SurfaceTool.#ctor
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool__ctor
+  name: SurfaceTool
+  nameWithType: SurfaceTool.SurfaceTool
+  fullName: Godot.SurfaceTool.SurfaceTool
+  nameWithType.vb: SurfaceTool.New
+  fullName.vb: Godot.SurfaceTool.New
+  name.vb: New
+- uid: Godot.SurfaceTool.SetSkinWeightCount*
+  commentId: Overload:Godot.SurfaceTool.SetSkinWeightCount
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_SetSkinWeightCount_Godot_SurfaceTool_SkinWeightCount_
+  name: SetSkinWeightCount
+  nameWithType: SurfaceTool.SetSkinWeightCount
+  fullName: Godot.SurfaceTool.SetSkinWeightCount
+- uid: Godot.SurfaceTool.SkinWeightCount
+  commentId: T:Godot.SurfaceTool.SkinWeightCount
+  parent: Godot
+  isExternal: true
+  href: Godot.SurfaceTool.html
+  name: SurfaceTool.SkinWeightCount
+  nameWithType: SurfaceTool.SkinWeightCount
+  fullName: Godot.SurfaceTool.SkinWeightCount
+  spec.csharp:
+  - uid: Godot.SurfaceTool
+    name: SurfaceTool
+    isExternal: true
+    href: Godot.SurfaceTool.html
+  - name: .
+  - uid: Godot.SurfaceTool.SkinWeightCount
+    name: SkinWeightCount
+    isExternal: true
+    href: Godot.SurfaceTool.SkinWeightCount.html
+  spec.vb:
+  - uid: Godot.SurfaceTool
+    name: SurfaceTool
+    isExternal: true
+    href: Godot.SurfaceTool.html
+  - name: .
+  - uid: Godot.SurfaceTool.SkinWeightCount
+    name: SkinWeightCount
+    isExternal: true
+    href: Godot.SurfaceTool.SkinWeightCount.html
+- uid: Godot.SurfaceTool.GetSkinWeightCount*
+  commentId: Overload:Godot.SurfaceTool.GetSkinWeightCount
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_GetSkinWeightCount
+  name: GetSkinWeightCount
+  nameWithType: SurfaceTool.GetSkinWeightCount
+  fullName: Godot.SurfaceTool.GetSkinWeightCount
+- uid: Godot.SurfaceTool.SetCustomFormat*
+  commentId: Overload:Godot.SurfaceTool.SetCustomFormat
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_SetCustomFormat_System_Int32_Godot_SurfaceTool_CustomFormat_
+  name: SetCustomFormat
+  nameWithType: SurfaceTool.SetCustomFormat
+  fullName: Godot.SurfaceTool.SetCustomFormat
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Godot.SurfaceTool.CustomFormat
+  commentId: T:Godot.SurfaceTool.CustomFormat
+  parent: Godot
+  isExternal: true
+  href: Godot.SurfaceTool.html
+  name: SurfaceTool.CustomFormat
+  nameWithType: SurfaceTool.CustomFormat
+  fullName: Godot.SurfaceTool.CustomFormat
+  spec.csharp:
+  - uid: Godot.SurfaceTool
+    name: SurfaceTool
+    isExternal: true
+    href: Godot.SurfaceTool.html
+  - name: .
+  - uid: Godot.SurfaceTool.CustomFormat
+    name: CustomFormat
+    isExternal: true
+    href: Godot.SurfaceTool.CustomFormat.html
+  spec.vb:
+  - uid: Godot.SurfaceTool
+    name: SurfaceTool
+    isExternal: true
+    href: Godot.SurfaceTool.html
+  - name: .
+  - uid: Godot.SurfaceTool.CustomFormat
+    name: CustomFormat
+    isExternal: true
+    href: Godot.SurfaceTool.CustomFormat.html
+- uid: Godot.SurfaceTool.GetCustomFormat*
+  commentId: Overload:Godot.SurfaceTool.GetCustomFormat
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_GetCustomFormat_System_Int32_
+  name: GetCustomFormat
+  nameWithType: SurfaceTool.GetCustomFormat
+  fullName: Godot.SurfaceTool.GetCustomFormat
+- uid: Godot.SurfaceTool.Begin*
+  commentId: Overload:Godot.SurfaceTool.Begin
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_Begin_Godot_Mesh_PrimitiveType_
+  name: Begin
+  nameWithType: SurfaceTool.Begin
+  fullName: Godot.SurfaceTool.Begin
+- uid: Godot.Mesh.PrimitiveType
+  commentId: T:Godot.Mesh.PrimitiveType
+  parent: Godot
+  isExternal: true
+  href: Godot.Mesh.html
+  name: Mesh.PrimitiveType
+  nameWithType: Mesh.PrimitiveType
+  fullName: Godot.Mesh.PrimitiveType
+  spec.csharp:
+  - uid: Godot.Mesh
+    name: Mesh
+    isExternal: true
+    href: Godot.Mesh.html
+  - name: .
+  - uid: Godot.Mesh.PrimitiveType
+    name: PrimitiveType
+    isExternal: true
+    href: Godot.Mesh.PrimitiveType.html
+  spec.vb:
+  - uid: Godot.Mesh
+    name: Mesh
+    isExternal: true
+    href: Godot.Mesh.html
+  - name: .
+  - uid: Godot.Mesh.PrimitiveType
+    name: PrimitiveType
+    isExternal: true
+    href: Godot.Mesh.PrimitiveType.html
+- uid: Godot.SurfaceTool.AddVertex*
+  commentId: Overload:Godot.SurfaceTool.AddVertex
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_AddVertex_Godot_Vector3_
+  name: AddVertex
+  nameWithType: SurfaceTool.AddVertex
+  fullName: Godot.SurfaceTool.AddVertex
+- uid: Godot.Vector3
+  commentId: T:Godot.Vector3
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector3.html
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Godot.Vector3
+- uid: Godot.SurfaceTool.SetColor*
+  commentId: Overload:Godot.SurfaceTool.SetColor
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_SetColor_Godot_Color_
+  name: SetColor
+  nameWithType: SurfaceTool.SetColor
+  fullName: Godot.SurfaceTool.SetColor
+- uid: Godot.Color
+  commentId: T:Godot.Color
+  parent: Godot
+  isExternal: true
+  href: Godot.Color.html
+  name: Color
+  nameWithType: Color
+  fullName: Godot.Color
+- uid: Godot.SurfaceTool.SetNormal*
+  commentId: Overload:Godot.SurfaceTool.SetNormal
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_SetNormal_Godot_Vector3_
+  name: SetNormal
+  nameWithType: SurfaceTool.SetNormal
+  fullName: Godot.SurfaceTool.SetNormal
+- uid: Godot.SurfaceTool.SetTangent*
+  commentId: Overload:Godot.SurfaceTool.SetTangent
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_SetTangent_Godot_Plane_
+  name: SetTangent
+  nameWithType: SurfaceTool.SetTangent
+  fullName: Godot.SurfaceTool.SetTangent
+- uid: Godot.Plane
+  commentId: T:Godot.Plane
+  parent: Godot
+  isExternal: true
+  href: Godot.Plane.html
+  name: Plane
+  nameWithType: Plane
+  fullName: Godot.Plane
+- uid: Godot.SurfaceTool.SetUV*
+  commentId: Overload:Godot.SurfaceTool.SetUV
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_SetUV_Godot_Vector2_
+  name: SetUV
+  nameWithType: SurfaceTool.SetUV
+  fullName: Godot.SurfaceTool.SetUV
+- uid: Godot.Vector2
+  commentId: T:Godot.Vector2
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector2.html
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Godot.Vector2
+- uid: Godot.SurfaceTool.SetUV2*
+  commentId: Overload:Godot.SurfaceTool.SetUV2
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_SetUV2_Godot_Vector2_
+  name: SetUV2
+  nameWithType: SurfaceTool.SetUV2
+  fullName: Godot.SurfaceTool.SetUV2
+- uid: Godot.SurfaceTool.SetBones*
+  commentId: Overload:Godot.SurfaceTool.SetBones
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_SetBones_System_Int32___
+  name: SetBones
+  nameWithType: SurfaceTool.SetBones
+  fullName: Godot.SurfaceTool.SetBones
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: System.ReadOnlySpan{System.Int32}
+  commentId: T:System.ReadOnlySpan{System.Int32}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<int>
+  nameWithType: ReadOnlySpan<int>
+  fullName: System.ReadOnlySpan<int>
+  nameWithType.vb: ReadOnlySpan(Of Integer)
+  fullName.vb: System.ReadOnlySpan(Of Integer)
+  name.vb: ReadOnlySpan(Of Integer)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.SurfaceTool.SetWeights*
+  commentId: Overload:Godot.SurfaceTool.SetWeights
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_SetWeights_System_Single___
+  name: SetWeights
+  nameWithType: SurfaceTool.SetWeights
+  fullName: Godot.SurfaceTool.SetWeights
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: System.ReadOnlySpan{System.Single}
+  commentId: T:System.ReadOnlySpan{System.Single}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<float>
+  nameWithType: ReadOnlySpan<float>
+  fullName: System.ReadOnlySpan<float>
+  nameWithType.vb: ReadOnlySpan(Of Single)
+  fullName.vb: System.ReadOnlySpan(Of Single)
+  name.vb: ReadOnlySpan(Of Single)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Godot.SurfaceTool.SetCustom*
+  commentId: Overload:Godot.SurfaceTool.SetCustom
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_SetCustom_System_Int32_Godot_Color_
+  name: SetCustom
+  nameWithType: SurfaceTool.SetCustom
+  fullName: Godot.SurfaceTool.SetCustom
+- uid: Godot.SurfaceTool.SetSmoothGroup*
+  commentId: Overload:Godot.SurfaceTool.SetSmoothGroup
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_SetSmoothGroup_System_UInt32_
+  name: SetSmoothGroup
+  nameWithType: SurfaceTool.SetSmoothGroup
+  fullName: Godot.SurfaceTool.SetSmoothGroup
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Godot.SurfaceTool.AddTriangleFan*
+  commentId: Overload:Godot.SurfaceTool.AddTriangleFan
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_AddTriangleFan_Godot_Vector3___Godot_Vector2___Godot_Color___Godot_Vector2___Godot_Vector3___Godot_Collections_Array_Godot_Plane__
+  name: AddTriangleFan
+  nameWithType: SurfaceTool.AddTriangleFan
+  fullName: Godot.SurfaceTool.AddTriangleFan
+- uid: Godot.Vector3[]
+  isExternal: true
+  href: Godot.Vector3.html
+  name: Vector3[]
+  nameWithType: Vector3[]
+  fullName: Godot.Vector3[]
+  nameWithType.vb: Vector3()
+  fullName.vb: Godot.Vector3()
+  name.vb: Vector3()
+  spec.csharp:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: (
+  - name: )
+- uid: Godot.Vector2[]
+  isExternal: true
+  href: Godot.Vector2.html
+  name: Vector2[]
+  nameWithType: Vector2[]
+  fullName: Godot.Vector2[]
+  nameWithType.vb: Vector2()
+  fullName.vb: Godot.Vector2()
+  name.vb: Vector2()
+  spec.csharp:
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+    href: Godot.Vector2.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+    href: Godot.Vector2.html
+  - name: (
+  - name: )
+- uid: Godot.Color[]
+  isExternal: true
+  href: Godot.Color.html
+  name: Color[]
+  nameWithType: Color[]
+  fullName: Godot.Color[]
+  nameWithType.vb: Color()
+  fullName.vb: Godot.Color()
+  name.vb: Color()
+  spec.csharp:
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+    href: Godot.Color.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+    href: Godot.Color.html
+  - name: (
+  - name: )
+- uid: Godot.Collections.Array{Godot.Plane}
+  commentId: T:Godot.Collections.Array{Godot.Plane}
+  parent: Godot.Collections
+  definition: Godot.Collections.Array`1
+  href: Godot.Collections.Array-1.html
+  name: Array<Plane>
+  nameWithType: Array<Plane>
+  fullName: Godot.Collections.Array<Godot.Plane>
+  nameWithType.vb: Array(Of Plane)
+  fullName.vb: Godot.Collections.Array(Of Godot.Plane)
+  name.vb: Array(Of Plane)
+  spec.csharp:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: <
+  - uid: Godot.Plane
+    name: Plane
+    isExternal: true
+    href: Godot.Plane.html
+  - name: '>'
+  spec.vb:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Plane
+    name: Plane
+    isExternal: true
+    href: Godot.Plane.html
+  - name: )
+- uid: Godot.Collections.Array`1
+  commentId: T:Godot.Collections.Array`1
+  parent: Godot.Collections
+  isExternal: true
+  href: Godot.Collections.Array-1.html
+  name: Array<T>
+  nameWithType: Array<T>
+  fullName: Godot.Collections.Array<T>
+  nameWithType.vb: Array(Of T)
+  fullName.vb: Godot.Collections.Array(Of T)
+  name.vb: Array(Of T)
+  spec.csharp:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.Collections
+  commentId: N:Godot.Collections
+  isExternal: true
+  href: Godot.html
+  name: Godot.Collections
+  nameWithType: Godot.Collections
+  fullName: Godot.Collections
+  spec.csharp:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+  spec.vb:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+- uid: System.ReadOnlySpan{Godot.Vector3}
+  commentId: T:System.ReadOnlySpan{Godot.Vector3}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<Vector3>
+  nameWithType: ReadOnlySpan<Vector3>
+  fullName: System.ReadOnlySpan<Godot.Vector3>
+  nameWithType.vb: ReadOnlySpan(Of Vector3)
+  fullName.vb: System.ReadOnlySpan(Of Godot.Vector3)
+  name.vb: ReadOnlySpan(Of Vector3)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: )
+- uid: System.ReadOnlySpan{Godot.Vector2}
+  commentId: T:System.ReadOnlySpan{Godot.Vector2}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<Vector2>
+  nameWithType: ReadOnlySpan<Vector2>
+  fullName: System.ReadOnlySpan<Godot.Vector2>
+  nameWithType.vb: ReadOnlySpan(Of Vector2)
+  fullName.vb: System.ReadOnlySpan(Of Godot.Vector2)
+  name.vb: ReadOnlySpan(Of Vector2)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+    href: Godot.Vector2.html
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+    href: Godot.Vector2.html
+  - name: )
+- uid: System.ReadOnlySpan{Godot.Color}
+  commentId: T:System.ReadOnlySpan{Godot.Color}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<Color>
+  nameWithType: ReadOnlySpan<Color>
+  fullName: System.ReadOnlySpan<Godot.Color>
+  nameWithType.vb: ReadOnlySpan(Of Color)
+  fullName.vb: System.ReadOnlySpan(Of Godot.Color)
+  name.vb: ReadOnlySpan(Of Color)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+    href: Godot.Color.html
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Color
+    name: Color
+    isExternal: true
+    href: Godot.Color.html
+  - name: )
+- uid: Godot.SurfaceTool.AddIndex*
+  commentId: Overload:Godot.SurfaceTool.AddIndex
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_AddIndex_System_Int32_
+  name: AddIndex
+  nameWithType: SurfaceTool.AddIndex
+  fullName: Godot.SurfaceTool.AddIndex
+- uid: Godot.SurfaceTool.Index*
+  commentId: Overload:Godot.SurfaceTool.Index
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_Index
+  name: Index
+  nameWithType: SurfaceTool.Index
+  fullName: Godot.SurfaceTool.Index
+- uid: Godot.SurfaceTool.Deindex*
+  commentId: Overload:Godot.SurfaceTool.Deindex
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_Deindex
+  name: Deindex
+  nameWithType: SurfaceTool.Deindex
+  fullName: Godot.SurfaceTool.Deindex
+- uid: Godot.SurfaceTool.GenerateNormals*
+  commentId: Overload:Godot.SurfaceTool.GenerateNormals
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_GenerateNormals_System_Boolean_
+  name: GenerateNormals
+  nameWithType: SurfaceTool.GenerateNormals
+  fullName: Godot.SurfaceTool.GenerateNormals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.SurfaceTool.GenerateTangents*
+  commentId: Overload:Godot.SurfaceTool.GenerateTangents
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_GenerateTangents
+  name: GenerateTangents
+  nameWithType: SurfaceTool.GenerateTangents
+  fullName: Godot.SurfaceTool.GenerateTangents
+- uid: Godot.SurfaceTool.OptimizeIndicesForCache*
+  commentId: Overload:Godot.SurfaceTool.OptimizeIndicesForCache
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_OptimizeIndicesForCache
+  name: OptimizeIndicesForCache
+  nameWithType: SurfaceTool.OptimizeIndicesForCache
+  fullName: Godot.SurfaceTool.OptimizeIndicesForCache
+- uid: Godot.SurfaceTool.GetAabb*
+  commentId: Overload:Godot.SurfaceTool.GetAabb
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_GetAabb
+  name: GetAabb
+  nameWithType: SurfaceTool.GetAabb
+  fullName: Godot.SurfaceTool.GetAabb
+- uid: Godot.Aabb
+  commentId: T:Godot.Aabb
+  parent: Godot
+  isExternal: true
+  href: Godot.Aabb.html
+  name: Aabb
+  nameWithType: Aabb
+  fullName: Godot.Aabb
+- uid: Godot.SurfaceTool.GenerateLod*
+  commentId: Overload:Godot.SurfaceTool.GenerateLod
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_GenerateLod_System_Single_System_Int32_
+  name: GenerateLod
+  nameWithType: SurfaceTool.GenerateLod
+  fullName: Godot.SurfaceTool.GenerateLod
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Godot.SurfaceTool.SetMaterial*
+  commentId: Overload:Godot.SurfaceTool.SetMaterial
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_SetMaterial_Godot_Material_
+  name: SetMaterial
+  nameWithType: SurfaceTool.SetMaterial
+  fullName: Godot.SurfaceTool.SetMaterial
+- uid: Godot.Material
+  commentId: T:Godot.Material
+  parent: Godot
+  isExternal: true
+  href: Godot.Material.html
+  name: Material
+  nameWithType: Material
+  fullName: Godot.Material
+- uid: Godot.SurfaceTool.GetPrimitiveType*
+  commentId: Overload:Godot.SurfaceTool.GetPrimitiveType
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_GetPrimitiveType
+  name: GetPrimitiveType
+  nameWithType: SurfaceTool.GetPrimitiveType
+  fullName: Godot.SurfaceTool.GetPrimitiveType
+- uid: Godot.SurfaceTool.Clear*
+  commentId: Overload:Godot.SurfaceTool.Clear
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_Clear
+  name: Clear
+  nameWithType: SurfaceTool.Clear
+  fullName: Godot.SurfaceTool.Clear
+- uid: Godot.SurfaceTool.CreateFrom*
+  commentId: Overload:Godot.SurfaceTool.CreateFrom
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_CreateFrom_Godot_Mesh_System_Int32_
+  name: CreateFrom
+  nameWithType: SurfaceTool.CreateFrom
+  fullName: Godot.SurfaceTool.CreateFrom
+- uid: Godot.Mesh
+  commentId: T:Godot.Mesh
+  parent: Godot
+  isExternal: true
+  href: Godot.Mesh.html
+  name: Mesh
+  nameWithType: Mesh
+  fullName: Godot.Mesh
+- uid: Godot.SurfaceTool.CreateFromArrays*
+  commentId: Overload:Godot.SurfaceTool.CreateFromArrays
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_CreateFromArrays_Godot_Collections_Array_Godot_Mesh_PrimitiveType_
+  name: CreateFromArrays
+  nameWithType: SurfaceTool.CreateFromArrays
+  fullName: Godot.SurfaceTool.CreateFromArrays
+- uid: Godot.Collections.Array
+  commentId: T:Godot.Collections.Array
+  parent: Godot.Collections
+  isExternal: true
+  href: Godot.Collections.Array.html
+  name: Array
+  nameWithType: Array
+  fullName: Godot.Collections.Array
+- uid: Godot.SurfaceTool.CreateFromBlendShape*
+  commentId: Overload:Godot.SurfaceTool.CreateFromBlendShape
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_CreateFromBlendShape_Godot_Mesh_System_Int32_System_String_
+  name: CreateFromBlendShape
+  nameWithType: SurfaceTool.CreateFromBlendShape
+  fullName: Godot.SurfaceTool.CreateFromBlendShape
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.SurfaceTool.AppendFrom*
+  commentId: Overload:Godot.SurfaceTool.AppendFrom
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_AppendFrom_Godot_Mesh_System_Int32_Godot_Transform3D_
+  name: AppendFrom
+  nameWithType: SurfaceTool.AppendFrom
+  fullName: Godot.SurfaceTool.AppendFrom
+- uid: Godot.Transform3D
+  commentId: T:Godot.Transform3D
+  parent: Godot
+  isExternal: true
+  href: Godot.Transform3D.html
+  name: Transform3D
+  nameWithType: Transform3D
+  fullName: Godot.Transform3D
+- uid: Godot.SurfaceTool.Commit*
+  commentId: Overload:Godot.SurfaceTool.Commit
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_Commit_Godot_ArrayMesh_System_UInt64_
+  name: Commit
+  nameWithType: SurfaceTool.Commit
+  fullName: Godot.SurfaceTool.Commit
+- uid: Godot.ArrayMesh
+  commentId: T:Godot.ArrayMesh
+  parent: Godot
+  isExternal: true
+  href: Godot.ArrayMesh.html
+  name: ArrayMesh
+  nameWithType: ArrayMesh
+  fullName: Godot.ArrayMesh
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: Godot.SurfaceTool.CommitToArrays*
+  commentId: Overload:Godot.SurfaceTool.CommitToArrays
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_CommitToArrays
+  name: CommitToArrays
+  nameWithType: SurfaceTool.CommitToArrays
+  fullName: Godot.SurfaceTool.CommitToArrays
+- uid: Godot.RefCounted.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+  commentId: M:Godot.RefCounted.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+  parent: Godot.RefCounted
+  isExternal: true
+  href: Godot.RefCounted.html#Godot_RefCounted_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__
+  name: InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)
+  nameWithType: RefCounted.InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)
+  fullName: Godot.RefCounted.InvokeGodotClassMethod(in Godot.NativeInterop.godot_string_name, Godot.NativeInterop.NativeVariantPtrArgs, out Godot.NativeInterop.godot_variant)
+  nameWithType.vb: RefCounted.InvokeGodotClassMethod(godot_string_name, NativeVariantPtrArgs, godot_variant)
+  fullName.vb: Godot.RefCounted.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant)
+  name.vb: InvokeGodotClassMethod(godot_string_name, NativeVariantPtrArgs, godot_variant)
+  spec.csharp:
+  - uid: Godot.RefCounted.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+    name: InvokeGodotClassMethod
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__
+  - name: (
+  - name: in
+  - name: " "
+  - uid: Godot.NativeInterop.godot_string_name
+    name: godot_string_name
+    isExternal: true
+    href: Godot.NativeInterop.godot_string_name.html
+  - name: ','
+  - name: " "
+  - uid: Godot.NativeInterop.NativeVariantPtrArgs
+    name: NativeVariantPtrArgs
+    isExternal: true
+    href: Godot.NativeInterop.NativeVariantPtrArgs.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: Godot.NativeInterop.godot_variant
+    name: godot_variant
+    isExternal: true
+    href: Godot.NativeInterop.godot_variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.RefCounted.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+    name: InvokeGodotClassMethod
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__
+  - name: (
+  - uid: Godot.NativeInterop.godot_string_name
+    name: godot_string_name
+    isExternal: true
+    href: Godot.NativeInterop.godot_string_name.html
+  - name: ','
+  - name: " "
+  - uid: Godot.NativeInterop.NativeVariantPtrArgs
+    name: NativeVariantPtrArgs
+    isExternal: true
+    href: Godot.NativeInterop.NativeVariantPtrArgs.html
+  - name: ','
+  - name: " "
+  - uid: Godot.NativeInterop.godot_variant
+    name: godot_variant
+    isExternal: true
+    href: Godot.NativeInterop.godot_variant.html
+  - name: )
+- uid: Godot.SurfaceTool.InvokeGodotClassMethod*
+  commentId: Overload:Godot.SurfaceTool.InvokeGodotClassMethod
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__
+  name: InvokeGodotClassMethod
+  nameWithType: SurfaceTool.InvokeGodotClassMethod
+  fullName: Godot.SurfaceTool.InvokeGodotClassMethod
+- uid: Godot.NativeInterop.godot_string_name
+  commentId: T:Godot.NativeInterop.godot_string_name
+  parent: Godot.NativeInterop
+  isExternal: true
+  href: Godot.NativeInterop.godot_string_name.html
+  name: godot_string_name
+  nameWithType: godot_string_name
+  fullName: Godot.NativeInterop.godot_string_name
+- uid: Godot.NativeInterop.NativeVariantPtrArgs
+  commentId: T:Godot.NativeInterop.NativeVariantPtrArgs
+  parent: Godot.NativeInterop
+  isExternal: true
+  href: Godot.NativeInterop.NativeVariantPtrArgs.html
+  name: NativeVariantPtrArgs
+  nameWithType: NativeVariantPtrArgs
+  fullName: Godot.NativeInterop.NativeVariantPtrArgs
+- uid: Godot.NativeInterop.godot_variant
+  commentId: T:Godot.NativeInterop.godot_variant
+  parent: Godot.NativeInterop
+  isExternal: true
+  href: Godot.NativeInterop.godot_variant.html
+  name: godot_variant
+  nameWithType: godot_variant
+  fullName: Godot.NativeInterop.godot_variant
+- uid: Godot.NativeInterop
+  commentId: N:Godot.NativeInterop
+  isExternal: true
+  href: Godot.html
+  name: Godot.NativeInterop
+  nameWithType: Godot.NativeInterop
+  fullName: Godot.NativeInterop
+  spec.csharp:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.NativeInterop
+    name: NativeInterop
+    isExternal: true
+    href: Godot.NativeInterop.html
+  spec.vb:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.NativeInterop
+    name: NativeInterop
+    isExternal: true
+    href: Godot.NativeInterop.html
+- uid: Godot.RefCounted.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+  commentId: M:Godot.RefCounted.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+  parent: Godot.RefCounted
+  isExternal: true
+  href: Godot.RefCounted.html#Godot_RefCounted_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__
+  name: HasGodotClassMethod(in godot_string_name)
+  nameWithType: RefCounted.HasGodotClassMethod(in godot_string_name)
+  fullName: Godot.RefCounted.HasGodotClassMethod(in Godot.NativeInterop.godot_string_name)
+  nameWithType.vb: RefCounted.HasGodotClassMethod(godot_string_name)
+  fullName.vb: Godot.RefCounted.HasGodotClassMethod(Godot.NativeInterop.godot_string_name)
+  name.vb: HasGodotClassMethod(godot_string_name)
+  spec.csharp:
+  - uid: Godot.RefCounted.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+    name: HasGodotClassMethod
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__
+  - name: (
+  - name: in
+  - name: " "
+  - uid: Godot.NativeInterop.godot_string_name
+    name: godot_string_name
+    isExternal: true
+    href: Godot.NativeInterop.godot_string_name.html
+  - name: )
+  spec.vb:
+  - uid: Godot.RefCounted.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+    name: HasGodotClassMethod
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__
+  - name: (
+  - uid: Godot.NativeInterop.godot_string_name
+    name: godot_string_name
+    isExternal: true
+    href: Godot.NativeInterop.godot_string_name.html
+  - name: )
+- uid: Godot.SurfaceTool.HasGodotClassMethod*
+  commentId: Overload:Godot.SurfaceTool.HasGodotClassMethod
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__
+  name: HasGodotClassMethod
+  nameWithType: SurfaceTool.HasGodotClassMethod
+  fullName: Godot.SurfaceTool.HasGodotClassMethod
+- uid: Godot.RefCounted.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+  commentId: M:Godot.RefCounted.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+  parent: Godot.RefCounted
+  isExternal: true
+  href: Godot.RefCounted.html#Godot_RefCounted_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__
+  name: HasGodotClassSignal(in godot_string_name)
+  nameWithType: RefCounted.HasGodotClassSignal(in godot_string_name)
+  fullName: Godot.RefCounted.HasGodotClassSignal(in Godot.NativeInterop.godot_string_name)
+  nameWithType.vb: RefCounted.HasGodotClassSignal(godot_string_name)
+  fullName.vb: Godot.RefCounted.HasGodotClassSignal(Godot.NativeInterop.godot_string_name)
+  name.vb: HasGodotClassSignal(godot_string_name)
+  spec.csharp:
+  - uid: Godot.RefCounted.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+    name: HasGodotClassSignal
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__
+  - name: (
+  - name: in
+  - name: " "
+  - uid: Godot.NativeInterop.godot_string_name
+    name: godot_string_name
+    isExternal: true
+    href: Godot.NativeInterop.godot_string_name.html
+  - name: )
+  spec.vb:
+  - uid: Godot.RefCounted.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+    name: HasGodotClassSignal
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__
+  - name: (
+  - uid: Godot.NativeInterop.godot_string_name
+    name: godot_string_name
+    isExternal: true
+    href: Godot.NativeInterop.godot_string_name.html
+  - name: )
+- uid: Godot.SurfaceTool.HasGodotClassSignal*
+  commentId: Overload:Godot.SurfaceTool.HasGodotClassSignal
+  isExternal: true
+  href: Godot.SurfaceTool.html#Godot_SurfaceTool_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__
+  name: HasGodotClassSignal
+  nameWithType: SurfaceTool.HasGodotClassSignal
+  fullName: Godot.SurfaceTool.HasGodotClassSignal

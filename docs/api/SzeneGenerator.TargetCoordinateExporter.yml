@@ -1,0 +1,195 @@
+### YamlMime:ManagedReference
+items:
+- uid: SzeneGenerator.TargetCoordinateExporter
+  commentId: T:SzeneGenerator.TargetCoordinateExporter
+  id: TargetCoordinateExporter
+  parent: SzeneGenerator
+  children:
+  - SzeneGenerator.TargetCoordinateExporter.ExportTargetsToJson(System.Collections.Generic.IReadOnlyList{Godot.Node3D},System.String,System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: TargetCoordinateExporter
+  nameWithType: TargetCoordinateExporter
+  fullName: SzeneGenerator.TargetCoordinateExporter
+  type: Class
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/TargetCoordinateExporter.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  summary: Exports spawned target objects (including metadata like asset_id) to a JSON file.
+  example: []
+  syntax:
+    content: public static class TargetCoordinateExporter
+    content.vb: Public Module TargetCoordinateExporter
+  inheritance:
+  - System.Object
+- uid: SzeneGenerator.TargetCoordinateExporter.ExportTargetsToJson(System.Collections.Generic.IReadOnlyList{Godot.Node3D},System.String,System.String,System.Int32)
+  commentId: M:SzeneGenerator.TargetCoordinateExporter.ExportTargetsToJson(System.Collections.Generic.IReadOnlyList{Godot.Node3D},System.String,System.String,System.Int32)
+  id: ExportTargetsToJson(System.Collections.Generic.IReadOnlyList{Godot.Node3D},System.String,System.String,System.Int32)
+  parent: SzeneGenerator.TargetCoordinateExporter
+  langs:
+  - csharp
+  - vb
+  name: ExportTargetsToJson(IReadOnlyList<Node3D>, string, string, int)
+  nameWithType: TargetCoordinateExporter.ExportTargetsToJson(IReadOnlyList<Node3D>, string, string, int)
+  fullName: SzeneGenerator.TargetCoordinateExporter.ExportTargetsToJson(System.Collections.Generic.IReadOnlyList<Godot.Node3D>, string, string, int)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/TargetCoordinateExporter.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public static void ExportTargetsToJson(IReadOnlyList<Node3D> targets, string outputPath, string regionId, int seed)
+    parameters:
+    - id: targets
+      type: System.Collections.Generic.IReadOnlyList{Godot.Node3D}
+    - id: outputPath
+      type: System.String
+    - id: regionId
+      type: System.String
+    - id: seed
+      type: System.Int32
+    content.vb: Public Shared Sub ExportTargetsToJson(targets As IReadOnlyList(Of Node3D), outputPath As String, regionId As String, seed As Integer)
+  overload: SzeneGenerator.TargetCoordinateExporter.ExportTargetsToJson*
+  nameWithType.vb: TargetCoordinateExporter.ExportTargetsToJson(IReadOnlyList(Of Node3D), String, String, Integer)
+  fullName.vb: SzeneGenerator.TargetCoordinateExporter.ExportTargetsToJson(System.Collections.Generic.IReadOnlyList(Of Godot.Node3D), String, String, Integer)
+  name.vb: ExportTargetsToJson(IReadOnlyList(Of Node3D), String, String, Integer)
+references:
+- uid: SzeneGenerator
+  commentId: N:SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.html
+  name: SzeneGenerator
+  nameWithType: SzeneGenerator
+  fullName: SzeneGenerator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SzeneGenerator.TargetCoordinateExporter.ExportTargetsToJson*
+  commentId: Overload:SzeneGenerator.TargetCoordinateExporter.ExportTargetsToJson
+  isExternal: true
+  href: SzeneGenerator.TargetCoordinateExporter.html#SzeneGenerator_TargetCoordinateExporter_ExportTargetsToJson_System_Collections_Generic_IReadOnlyList_Godot_Node3D__System_String_System_String_System_Int32_
+  name: ExportTargetsToJson
+  nameWithType: TargetCoordinateExporter.ExportTargetsToJson
+  fullName: SzeneGenerator.TargetCoordinateExporter.ExportTargetsToJson
+- uid: System.Collections.Generic.IReadOnlyList{Godot.Node3D}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Godot.Node3D}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList<Node3D>
+  nameWithType: IReadOnlyList<Node3D>
+  fullName: System.Collections.Generic.IReadOnlyList<Godot.Node3D>
+  nameWithType.vb: IReadOnlyList(Of Node3D)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Godot.Node3D)
+  name.vb: IReadOnlyList(Of Node3D)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+  - name: <
+  - uid: Godot.Node3D
+    name: Node3D
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Node3D
+    name: Node3D
+    isExternal: true
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true

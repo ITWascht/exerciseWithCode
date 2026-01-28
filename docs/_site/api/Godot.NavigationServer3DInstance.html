@@ -1,0 +1,6134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class NavigationServer3DInstance | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NavigationServer3DInstance | mysite ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Godot.NavigationServer3DInstance">
+
+
+
+  <h1 id="Godot_NavigationServer3DInstance" data-uid="Godot.NavigationServer3DInstance" class="text-break">
+Class NavigationServer3DInstance  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Godot.html">Godot</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GodotSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GodotClassName(&quot;NavigationServer3D&quot;)]
+public class NavigationServer3DInstance : GodotObject, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="Godot.GodotObject.html">GodotObject</a></div>
+      <div><span class="xref">NavigationServer3DInstance</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPostinitialize">GodotObject.NotificationPostinitialize</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPredelete">GodotObject.NotificationPredelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationExtensionReloaded">GodotObject.NotificationExtensionReloaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_">GodotObject.InstanceFromId(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_">GodotObject.IsInstanceIdValid(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_">GodotObject.IsInstanceValid(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_">GodotObject.WeakRef(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose">GodotObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_">GodotObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToString">GodotObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_">GodotObject.ToSignal(GodotObject, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_">GodotObject._Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__GetPropertyList">GodotObject._GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__IterGet_Godot_Variant_">GodotObject._IterGet(Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__IterInit_Godot_Collections_Array_">GodotObject._IterInit(Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__IterNext_Godot_Collections_Array_">GodotObject._IterNext(Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_">GodotObject._Notification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_">GodotObject._PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_">GodotObject._PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_">GodotObject._Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__ValidateProperty_Godot_Collections_Dictionary_">GodotObject._ValidateProperty(Dictionary)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Free">GodotObject.Free()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetClass">GodotObject.GetClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_">GodotObject.IsClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_">GodotObject.Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_">GodotObject.Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_">GodotObject.SetIndexed(NodePath, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_">GodotObject.GetIndexed(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetPropertyList">GodotObject.GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMethodList">GodotObject.GetMethodList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_">GodotObject.PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_">GodotObject.PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_">GodotObject.Notification(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetInstanceId">GodotObject.GetInstanceId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_">GodotObject.SetScript(Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetScript">GodotObject.GetScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_">GodotObject.SetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_">GodotObject.RemoveMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_">GodotObject.GetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_">GodotObject.HasMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMetaList">GodotObject.GetMetaList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_">GodotObject.AddUserSignal(string, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_">GodotObject.HasUserSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RemoveUserSignal_Godot_StringName_">GodotObject.RemoveUserSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___">GodotObject.EmitSignal(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_System_ReadOnlySpan_Godot_Variant__">GodotObject.EmitSignal(StringName, ReadOnlySpan&lt;Variant&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___">GodotObject.Call(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_System_ReadOnlySpan_Godot_Variant__">GodotObject.Call(StringName, ReadOnlySpan&lt;Variant&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___">GodotObject.CallDeferred(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_System_ReadOnlySpan_Godot_Variant__">GodotObject.CallDeferred(StringName, ReadOnlySpan&lt;Variant&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_">GodotObject.SetDeferred(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_">GodotObject.Callv(StringName, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_">GodotObject.HasMethod(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMethodArgumentCount_Godot_StringName_">GodotObject.GetMethodArgumentCount(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_">GodotObject.HasSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalList">GodotObject.GetSignalList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_">GodotObject.GetSignalConnectionList(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections">GodotObject.GetIncomingConnections()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_">GodotObject.Connect(StringName, Callable, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_">GodotObject.Disconnect(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_">GodotObject.IsConnected(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasConnections_Godot_StringName_">GodotObject.HasConnections(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_">GodotObject.SetBlockSignals(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals">GodotObject.IsBlockingSignals()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged">GodotObject.NotifyPropertyListChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_">GodotObject.SetMessageTranslation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages">GodotObject.CanTranslateMessages()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_">GodotObject.Tr(StringName, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_">GodotObject.TrN(StringName, StringName, int, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetTranslationDomain">GodotObject.GetTranslationDomain()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetTranslationDomain_Godot_StringName_">GodotObject.SetTranslationDomain(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion">GodotObject.IsQueuedForDeletion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CancelFree">GodotObject.CancelFree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignalScriptChanged">GodotObject.EmitSignalScriptChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignalPropertyListChanged">GodotObject.EmitSignalPropertyListChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NativeInstance">GodotObject.NativeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ScriptChanged">GodotObject.ScriptChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyListChanged">GodotObject.PropertyListChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentCreate_" data-uid="Godot.NavigationServer3DInstance.AgentCreate*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentCreate" data-uid="Godot.NavigationServer3DInstance.AgentCreate">
+  AgentCreate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rid AgentCreate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetAvoidanceEnabled_" data-uid="Godot.NavigationServer3DInstance.AgentGetAvoidanceEnabled*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetAvoidanceEnabled_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetAvoidanceEnabled(Godot.Rid)">
+  AgentGetAvoidanceEnabled(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AgentGetAvoidanceEnabled(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetAvoidanceLayers_" data-uid="Godot.NavigationServer3DInstance.AgentGetAvoidanceLayers*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetAvoidanceLayers_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetAvoidanceLayers(Godot.Rid)">
+  AgentGetAvoidanceLayers(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint AgentGetAvoidanceLayers(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetAvoidanceMask_" data-uid="Godot.NavigationServer3DInstance.AgentGetAvoidanceMask*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetAvoidanceMask_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetAvoidanceMask(Godot.Rid)">
+  AgentGetAvoidanceMask(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint AgentGetAvoidanceMask(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetAvoidancePriority_" data-uid="Godot.NavigationServer3DInstance.AgentGetAvoidancePriority*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetAvoidancePriority_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetAvoidancePriority(Godot.Rid)">
+  AgentGetAvoidancePriority(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AgentGetAvoidancePriority(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetHeight_" data-uid="Godot.NavigationServer3DInstance.AgentGetHeight*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetHeight_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetHeight(Godot.Rid)">
+  AgentGetHeight(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AgentGetHeight(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetMap_" data-uid="Godot.NavigationServer3DInstance.AgentGetMap*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetMap_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetMap(Godot.Rid)">
+  AgentGetMap(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rid AgentGetMap(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetMaxNeighbors_" data-uid="Godot.NavigationServer3DInstance.AgentGetMaxNeighbors*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetMaxNeighbors_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetMaxNeighbors(Godot.Rid)">
+  AgentGetMaxNeighbors(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AgentGetMaxNeighbors(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetMaxSpeed_" data-uid="Godot.NavigationServer3DInstance.AgentGetMaxSpeed*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetMaxSpeed_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetMaxSpeed(Godot.Rid)">
+  AgentGetMaxSpeed(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AgentGetMaxSpeed(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetNeighborDistance_" data-uid="Godot.NavigationServer3DInstance.AgentGetNeighborDistance*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetNeighborDistance_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetNeighborDistance(Godot.Rid)">
+  AgentGetNeighborDistance(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AgentGetNeighborDistance(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetPaused_" data-uid="Godot.NavigationServer3DInstance.AgentGetPaused*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetPaused_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetPaused(Godot.Rid)">
+  AgentGetPaused(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AgentGetPaused(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetPosition_" data-uid="Godot.NavigationServer3DInstance.AgentGetPosition*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetPosition_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetPosition(Godot.Rid)">
+  AgentGetPosition(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 AgentGetPosition(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetRadius_" data-uid="Godot.NavigationServer3DInstance.AgentGetRadius*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetRadius_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetRadius(Godot.Rid)">
+  AgentGetRadius(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AgentGetRadius(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetTimeHorizonAgents_" data-uid="Godot.NavigationServer3DInstance.AgentGetTimeHorizonAgents*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetTimeHorizonAgents_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetTimeHorizonAgents(Godot.Rid)">
+  AgentGetTimeHorizonAgents(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AgentGetTimeHorizonAgents(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetTimeHorizonObstacles_" data-uid="Godot.NavigationServer3DInstance.AgentGetTimeHorizonObstacles*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetTimeHorizonObstacles_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetTimeHorizonObstacles(Godot.Rid)">
+  AgentGetTimeHorizonObstacles(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AgentGetTimeHorizonObstacles(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetUse3DAvoidance_" data-uid="Godot.NavigationServer3DInstance.AgentGetUse3DAvoidance*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetUse3DAvoidance_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetUse3DAvoidance(Godot.Rid)">
+  AgentGetUse3DAvoidance(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AgentGetUse3DAvoidance(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentGetVelocity_" data-uid="Godot.NavigationServer3DInstance.AgentGetVelocity*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentGetVelocity_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentGetVelocity(Godot.Rid)">
+  AgentGetVelocity(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 AgentGetVelocity(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentHasAvoidanceCallback_" data-uid="Godot.NavigationServer3DInstance.AgentHasAvoidanceCallback*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentHasAvoidanceCallback_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentHasAvoidanceCallback(Godot.Rid)">
+  AgentHasAvoidanceCallback(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AgentHasAvoidanceCallback(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentIsMapChanged_" data-uid="Godot.NavigationServer3DInstance.AgentIsMapChanged*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentIsMapChanged_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentIsMapChanged(Godot.Rid)">
+  AgentIsMapChanged(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AgentIsMapChanged(Rid agent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetAvoidanceCallback_" data-uid="Godot.NavigationServer3DInstance.AgentSetAvoidanceCallback*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetAvoidanceCallback_Godot_Rid_Godot_Callable_" data-uid="Godot.NavigationServer3DInstance.AgentSetAvoidanceCallback(Godot.Rid,Godot.Callable)">
+  AgentSetAvoidanceCallback(Rid, Callable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetAvoidanceCallback(Rid agent, Callable callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="Godot.Callable.html">Callable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetAvoidanceEnabled_" data-uid="Godot.NavigationServer3DInstance.AgentSetAvoidanceEnabled*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetAvoidanceEnabled_Godot_Rid_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.AgentSetAvoidanceEnabled(Godot.Rid,System.Boolean)">
+  AgentSetAvoidanceEnabled(Rid, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetAvoidanceEnabled(Rid agent, bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetAvoidanceLayers_" data-uid="Godot.NavigationServer3DInstance.AgentSetAvoidanceLayers*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetAvoidanceLayers_Godot_Rid_System_UInt32_" data-uid="Godot.NavigationServer3DInstance.AgentSetAvoidanceLayers(Godot.Rid,System.UInt32)">
+  AgentSetAvoidanceLayers(Rid, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetAvoidanceLayers(Rid agent, uint layers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>layers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetAvoidanceMask_" data-uid="Godot.NavigationServer3DInstance.AgentSetAvoidanceMask*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetAvoidanceMask_Godot_Rid_System_UInt32_" data-uid="Godot.NavigationServer3DInstance.AgentSetAvoidanceMask(Godot.Rid,System.UInt32)">
+  AgentSetAvoidanceMask(Rid, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetAvoidanceMask(Rid agent, uint mask)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>mask</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetAvoidancePriority_" data-uid="Godot.NavigationServer3DInstance.AgentSetAvoidancePriority*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetAvoidancePriority_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.AgentSetAvoidancePriority(Godot.Rid,System.Single)">
+  AgentSetAvoidancePriority(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetAvoidancePriority(Rid agent, float priority)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>priority</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetHeight_" data-uid="Godot.NavigationServer3DInstance.AgentSetHeight*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetHeight_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.AgentSetHeight(Godot.Rid,System.Single)">
+  AgentSetHeight(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetHeight(Rid agent, float height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetMap_" data-uid="Godot.NavigationServer3DInstance.AgentSetMap*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetMap_Godot_Rid_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.AgentSetMap(Godot.Rid,Godot.Rid)">
+  AgentSetMap(Rid, Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetMap(Rid agent, Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetMaxNeighbors_" data-uid="Godot.NavigationServer3DInstance.AgentSetMaxNeighbors*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetMaxNeighbors_Godot_Rid_System_Int32_" data-uid="Godot.NavigationServer3DInstance.AgentSetMaxNeighbors(Godot.Rid,System.Int32)">
+  AgentSetMaxNeighbors(Rid, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetMaxNeighbors(Rid agent, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetMaxSpeed_" data-uid="Godot.NavigationServer3DInstance.AgentSetMaxSpeed*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetMaxSpeed_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.AgentSetMaxSpeed(Godot.Rid,System.Single)">
+  AgentSetMaxSpeed(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetMaxSpeed(Rid agent, float maxSpeed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>maxSpeed</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetNeighborDistance_" data-uid="Godot.NavigationServer3DInstance.AgentSetNeighborDistance*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetNeighborDistance_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.AgentSetNeighborDistance(Godot.Rid,System.Single)">
+  AgentSetNeighborDistance(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetNeighborDistance(Rid agent, float distance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>distance</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetPaused_" data-uid="Godot.NavigationServer3DInstance.AgentSetPaused*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetPaused_Godot_Rid_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.AgentSetPaused(Godot.Rid,System.Boolean)">
+  AgentSetPaused(Rid, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetPaused(Rid agent, bool paused)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>paused</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetPosition_" data-uid="Godot.NavigationServer3DInstance.AgentSetPosition*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetPosition_Godot_Rid_Godot_Vector3_" data-uid="Godot.NavigationServer3DInstance.AgentSetPosition(Godot.Rid,Godot.Vector3)">
+  AgentSetPosition(Rid, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetPosition(Rid agent, Vector3 position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetRadius_" data-uid="Godot.NavigationServer3DInstance.AgentSetRadius*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetRadius_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.AgentSetRadius(Godot.Rid,System.Single)">
+  AgentSetRadius(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetRadius(Rid agent, float radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetTimeHorizonAgents_" data-uid="Godot.NavigationServer3DInstance.AgentSetTimeHorizonAgents*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetTimeHorizonAgents_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.AgentSetTimeHorizonAgents(Godot.Rid,System.Single)">
+  AgentSetTimeHorizonAgents(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetTimeHorizonAgents(Rid agent, float timeHorizon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>timeHorizon</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetTimeHorizonObstacles_" data-uid="Godot.NavigationServer3DInstance.AgentSetTimeHorizonObstacles*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetTimeHorizonObstacles_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.AgentSetTimeHorizonObstacles(Godot.Rid,System.Single)">
+  AgentSetTimeHorizonObstacles(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetTimeHorizonObstacles(Rid agent, float timeHorizon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>timeHorizon</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetUse3DAvoidance_" data-uid="Godot.NavigationServer3DInstance.AgentSetUse3DAvoidance*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetUse3DAvoidance_Godot_Rid_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.AgentSetUse3DAvoidance(Godot.Rid,System.Boolean)">
+  AgentSetUse3DAvoidance(Rid, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetUse3DAvoidance(Rid agent, bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetVelocity_" data-uid="Godot.NavigationServer3DInstance.AgentSetVelocity*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetVelocity_Godot_Rid_Godot_Vector3_" data-uid="Godot.NavigationServer3DInstance.AgentSetVelocity(Godot.Rid,Godot.Vector3)">
+  AgentSetVelocity(Rid, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetVelocity(Rid agent, Vector3 velocity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>velocity</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_AgentSetVelocityForced_" data-uid="Godot.NavigationServer3DInstance.AgentSetVelocityForced*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_AgentSetVelocityForced_Godot_Rid_Godot_Vector3_" data-uid="Godot.NavigationServer3DInstance.AgentSetVelocityForced(Godot.Rid,Godot.Vector3)">
+  AgentSetVelocityForced(Rid, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AgentSetVelocityForced(Rid agent, Vector3 velocity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agent</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>velocity</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_BakeFromSourceGeometryData_" data-uid="Godot.NavigationServer3DInstance.BakeFromSourceGeometryData*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_BakeFromSourceGeometryData_Godot_NavigationMesh_Godot_NavigationMeshSourceGeometryData3D_Godot_Callable_" data-uid="Godot.NavigationServer3DInstance.BakeFromSourceGeometryData(Godot.NavigationMesh,Godot.NavigationMeshSourceGeometryData3D,Godot.Callable)">
+  BakeFromSourceGeometryData(NavigationMesh, NavigationMeshSourceGeometryData3D, Callable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BakeFromSourceGeometryData(NavigationMesh navigationMesh, NavigationMeshSourceGeometryData3D sourceGeometryData, Callable callback = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>navigationMesh</code> <a class="xref" href="Godot.NavigationMesh.html">NavigationMesh</a></dt>
+    <dd></dd>
+    <dt><code>sourceGeometryData</code> <a class="xref" href="Godot.NavigationMeshSourceGeometryData3D.html">NavigationMeshSourceGeometryData3D</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="Godot.Callable.html">Callable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_BakeFromSourceGeometryDataAsync_" data-uid="Godot.NavigationServer3DInstance.BakeFromSourceGeometryDataAsync*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_BakeFromSourceGeometryDataAsync_Godot_NavigationMesh_Godot_NavigationMeshSourceGeometryData3D_Godot_Callable_" data-uid="Godot.NavigationServer3DInstance.BakeFromSourceGeometryDataAsync(Godot.NavigationMesh,Godot.NavigationMeshSourceGeometryData3D,Godot.Callable)">
+  BakeFromSourceGeometryDataAsync(NavigationMesh, NavigationMeshSourceGeometryData3D, Callable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BakeFromSourceGeometryDataAsync(NavigationMesh navigationMesh, NavigationMeshSourceGeometryData3D sourceGeometryData, Callable callback = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>navigationMesh</code> <a class="xref" href="Godot.NavigationMesh.html">NavigationMesh</a></dt>
+    <dd></dd>
+    <dt><code>sourceGeometryData</code> <a class="xref" href="Godot.NavigationMeshSourceGeometryData3D.html">NavigationMeshSourceGeometryData3D</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="Godot.Callable.html">Callable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_EmitSignalAvoidanceDebugChanged_" data-uid="Godot.NavigationServer3DInstance.EmitSignalAvoidanceDebugChanged*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_EmitSignalAvoidanceDebugChanged" data-uid="Godot.NavigationServer3DInstance.EmitSignalAvoidanceDebugChanged">
+  EmitSignalAvoidanceDebugChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EmitSignalAvoidanceDebugChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_EmitSignalMapChanged_" data-uid="Godot.NavigationServer3DInstance.EmitSignalMapChanged*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_EmitSignalMapChanged_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.EmitSignalMapChanged(Godot.Rid)">
+  EmitSignalMapChanged(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EmitSignalMapChanged(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_EmitSignalNavigationDebugChanged_" data-uid="Godot.NavigationServer3DInstance.EmitSignalNavigationDebugChanged*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_EmitSignalNavigationDebugChanged" data-uid="Godot.NavigationServer3DInstance.EmitSignalNavigationDebugChanged">
+  EmitSignalNavigationDebugChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EmitSignalNavigationDebugChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_FreeRid_" data-uid="Godot.NavigationServer3DInstance.FreeRid*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_FreeRid_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.FreeRid(Godot.Rid)">
+  FreeRid(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreeRid(Rid rid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rid</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_GetDebugEnabled_" data-uid="Godot.NavigationServer3DInstance.GetDebugEnabled*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_GetDebugEnabled" data-uid="Godot.NavigationServer3DInstance.GetDebugEnabled">
+  GetDebugEnabled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetDebugEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_GetMaps_" data-uid="Godot.NavigationServer3DInstance.GetMaps*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_GetMaps" data-uid="Godot.NavigationServer3DInstance.GetMaps">
+  GetMaps()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array&lt;Rid&gt; GetMaps()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Rid.html">Rid</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_GetProcessInfo_" data-uid="Godot.NavigationServer3DInstance.GetProcessInfo*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_GetProcessInfo_Godot_NavigationServer3D_ProcessInfo_" data-uid="Godot.NavigationServer3DInstance.GetProcessInfo(Godot.NavigationServer3D.ProcessInfo)">
+  GetProcessInfo(ProcessInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetProcessInfo(NavigationServer3D.ProcessInfo processInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>processInfo</code> <a class="xref" href="Godot.NavigationServer3D.html">NavigationServer3D</a>.<a class="xref" href="Godot.NavigationServer3D.ProcessInfo.html">ProcessInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_HasGodotClassMethod_" data-uid="Godot.NavigationServer3DInstance.HasGodotClassMethod*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__" data-uid="Godot.NavigationServer3DInstance.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+  HasGodotClassMethod(in godot_string_name)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassMethod(in godot_string_name method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_HasGodotClassSignal_" data-uid="Godot.NavigationServer3DInstance.HasGodotClassSignal*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__" data-uid="Godot.NavigationServer3DInstance.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)">
+  HasGodotClassSignal(in godot_string_name)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassSignal(in godot_string_name signal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signal</code> <a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_InvokeGodotClassMethod_" data-uid="Godot.NavigationServer3DInstance.InvokeGodotClassMethod*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__" data-uid="Godot.NavigationServer3DInstance.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+  InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool InvokeGodotClassMethod(in godot_string_name method, NativeVariantPtrArgs args, out godot_variant ret)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <a class="xref" href="Godot.NativeInterop.NativeVariantPtrArgs.html">NativeVariantPtrArgs</a></dt>
+    <dd></dd>
+    <dt><code>ret</code> <a class="xref" href="Godot.NativeInterop.godot_variant.html">godot_variant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_IsBakingNavigationMesh_" data-uid="Godot.NavigationServer3DInstance.IsBakingNavigationMesh*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_IsBakingNavigationMesh_Godot_NavigationMesh_" data-uid="Godot.NavigationServer3DInstance.IsBakingNavigationMesh(Godot.NavigationMesh)">
+  IsBakingNavigationMesh(NavigationMesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBakingNavigationMesh(NavigationMesh navigationMesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>navigationMesh</code> <a class="xref" href="Godot.NavigationMesh.html">NavigationMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkCreate_" data-uid="Godot.NavigationServer3DInstance.LinkCreate*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkCreate" data-uid="Godot.NavigationServer3DInstance.LinkCreate">
+  LinkCreate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rid LinkCreate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkGetEnabled_" data-uid="Godot.NavigationServer3DInstance.LinkGetEnabled*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkGetEnabled_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.LinkGetEnabled(Godot.Rid)">
+  LinkGetEnabled(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LinkGetEnabled(Rid link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkGetEndPosition_" data-uid="Godot.NavigationServer3DInstance.LinkGetEndPosition*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkGetEndPosition_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.LinkGetEndPosition(Godot.Rid)">
+  LinkGetEndPosition(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 LinkGetEndPosition(Rid link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkGetEnterCost_" data-uid="Godot.NavigationServer3DInstance.LinkGetEnterCost*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkGetEnterCost_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.LinkGetEnterCost(Godot.Rid)">
+  LinkGetEnterCost(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LinkGetEnterCost(Rid link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkGetIterationId_" data-uid="Godot.NavigationServer3DInstance.LinkGetIterationId*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkGetIterationId_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.LinkGetIterationId(Godot.Rid)">
+  LinkGetIterationId(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint LinkGetIterationId(Rid link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkGetMap_" data-uid="Godot.NavigationServer3DInstance.LinkGetMap*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkGetMap_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.LinkGetMap(Godot.Rid)">
+  LinkGetMap(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rid LinkGetMap(Rid link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkGetNavigationLayers_" data-uid="Godot.NavigationServer3DInstance.LinkGetNavigationLayers*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkGetNavigationLayers_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.LinkGetNavigationLayers(Godot.Rid)">
+  LinkGetNavigationLayers(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint LinkGetNavigationLayers(Rid link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkGetOwnerId_" data-uid="Godot.NavigationServer3DInstance.LinkGetOwnerId*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkGetOwnerId_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.LinkGetOwnerId(Godot.Rid)">
+  LinkGetOwnerId(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong LinkGetOwnerId(Rid link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkGetStartPosition_" data-uid="Godot.NavigationServer3DInstance.LinkGetStartPosition*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkGetStartPosition_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.LinkGetStartPosition(Godot.Rid)">
+  LinkGetStartPosition(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 LinkGetStartPosition(Rid link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkGetTravelCost_" data-uid="Godot.NavigationServer3DInstance.LinkGetTravelCost*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkGetTravelCost_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.LinkGetTravelCost(Godot.Rid)">
+  LinkGetTravelCost(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LinkGetTravelCost(Rid link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkIsBidirectional_" data-uid="Godot.NavigationServer3DInstance.LinkIsBidirectional*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkIsBidirectional_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.LinkIsBidirectional(Godot.Rid)">
+  LinkIsBidirectional(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LinkIsBidirectional(Rid link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkSetBidirectional_" data-uid="Godot.NavigationServer3DInstance.LinkSetBidirectional*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkSetBidirectional_Godot_Rid_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.LinkSetBidirectional(Godot.Rid,System.Boolean)">
+  LinkSetBidirectional(Rid, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LinkSetBidirectional(Rid link, bool bidirectional)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>bidirectional</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkSetEnabled_" data-uid="Godot.NavigationServer3DInstance.LinkSetEnabled*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkSetEnabled_Godot_Rid_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.LinkSetEnabled(Godot.Rid,System.Boolean)">
+  LinkSetEnabled(Rid, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LinkSetEnabled(Rid link, bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkSetEndPosition_" data-uid="Godot.NavigationServer3DInstance.LinkSetEndPosition*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkSetEndPosition_Godot_Rid_Godot_Vector3_" data-uid="Godot.NavigationServer3DInstance.LinkSetEndPosition(Godot.Rid,Godot.Vector3)">
+  LinkSetEndPosition(Rid, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LinkSetEndPosition(Rid link, Vector3 position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkSetEnterCost_" data-uid="Godot.NavigationServer3DInstance.LinkSetEnterCost*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkSetEnterCost_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.LinkSetEnterCost(Godot.Rid,System.Single)">
+  LinkSetEnterCost(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LinkSetEnterCost(Rid link, float enterCost)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>enterCost</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkSetMap_" data-uid="Godot.NavigationServer3DInstance.LinkSetMap*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkSetMap_Godot_Rid_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.LinkSetMap(Godot.Rid,Godot.Rid)">
+  LinkSetMap(Rid, Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LinkSetMap(Rid link, Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkSetNavigationLayers_" data-uid="Godot.NavigationServer3DInstance.LinkSetNavigationLayers*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkSetNavigationLayers_Godot_Rid_System_UInt32_" data-uid="Godot.NavigationServer3DInstance.LinkSetNavigationLayers(Godot.Rid,System.UInt32)">
+  LinkSetNavigationLayers(Rid, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LinkSetNavigationLayers(Rid link, uint navigationLayers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>navigationLayers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkSetOwnerId_" data-uid="Godot.NavigationServer3DInstance.LinkSetOwnerId*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkSetOwnerId_Godot_Rid_System_UInt64_" data-uid="Godot.NavigationServer3DInstance.LinkSetOwnerId(Godot.Rid,System.UInt64)">
+  LinkSetOwnerId(Rid, ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LinkSetOwnerId(Rid link, ulong ownerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>ownerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkSetStartPosition_" data-uid="Godot.NavigationServer3DInstance.LinkSetStartPosition*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkSetStartPosition_Godot_Rid_Godot_Vector3_" data-uid="Godot.NavigationServer3DInstance.LinkSetStartPosition(Godot.Rid,Godot.Vector3)">
+  LinkSetStartPosition(Rid, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LinkSetStartPosition(Rid link, Vector3 position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_LinkSetTravelCost_" data-uid="Godot.NavigationServer3DInstance.LinkSetTravelCost*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_LinkSetTravelCost_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.LinkSetTravelCost(Godot.Rid,System.Single)">
+  LinkSetTravelCost(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LinkSetTravelCost(Rid link, float travelCost)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>travelCost</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapCreate_" data-uid="Godot.NavigationServer3DInstance.MapCreate*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapCreate" data-uid="Godot.NavigationServer3DInstance.MapCreate">
+  MapCreate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rid MapCreate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapForceUpdate_" data-uid="Godot.NavigationServer3DInstance.MapForceUpdate*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapForceUpdate_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.MapForceUpdate(Godot.Rid)">
+  MapForceUpdate(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This method is no longer supported, as it is incompatible with asynchronous updates. It can only be used in a single-threaded context, at your own risk.&quot;)]
+public void MapForceUpdate(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetAgents_" data-uid="Godot.NavigationServer3DInstance.MapGetAgents*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetAgents_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.MapGetAgents(Godot.Rid)">
+  MapGetAgents(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array&lt;Rid&gt; MapGetAgents(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Rid.html">Rid</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetCellHeight_" data-uid="Godot.NavigationServer3DInstance.MapGetCellHeight*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetCellHeight_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.MapGetCellHeight(Godot.Rid)">
+  MapGetCellHeight(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MapGetCellHeight(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetCellSize_" data-uid="Godot.NavigationServer3DInstance.MapGetCellSize*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetCellSize_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.MapGetCellSize(Godot.Rid)">
+  MapGetCellSize(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MapGetCellSize(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetClosestPoint_" data-uid="Godot.NavigationServer3DInstance.MapGetClosestPoint*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetClosestPoint_Godot_Rid_Godot_Vector3_" data-uid="Godot.NavigationServer3DInstance.MapGetClosestPoint(Godot.Rid,Godot.Vector3)">
+  MapGetClosestPoint(Rid, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 MapGetClosestPoint(Rid map, Vector3 toPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>toPoint</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetClosestPointNormal_" data-uid="Godot.NavigationServer3DInstance.MapGetClosestPointNormal*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetClosestPointNormal_Godot_Rid_Godot_Vector3_" data-uid="Godot.NavigationServer3DInstance.MapGetClosestPointNormal(Godot.Rid,Godot.Vector3)">
+  MapGetClosestPointNormal(Rid, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 MapGetClosestPointNormal(Rid map, Vector3 toPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>toPoint</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetClosestPointOwner_" data-uid="Godot.NavigationServer3DInstance.MapGetClosestPointOwner*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetClosestPointOwner_Godot_Rid_Godot_Vector3_" data-uid="Godot.NavigationServer3DInstance.MapGetClosestPointOwner(Godot.Rid,Godot.Vector3)">
+  MapGetClosestPointOwner(Rid, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rid MapGetClosestPointOwner(Rid map, Vector3 toPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>toPoint</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetClosestPointToSegment_" data-uid="Godot.NavigationServer3DInstance.MapGetClosestPointToSegment*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetClosestPointToSegment_Godot_Rid_Godot_Vector3_Godot_Vector3_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.MapGetClosestPointToSegment(Godot.Rid,Godot.Vector3,Godot.Vector3,System.Boolean)">
+  MapGetClosestPointToSegment(Rid, Vector3, Vector3, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 MapGetClosestPointToSegment(Rid map, Vector3 start, Vector3 end, bool useCollision = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>start</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>end</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>useCollision</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetEdgeConnectionMargin_" data-uid="Godot.NavigationServer3DInstance.MapGetEdgeConnectionMargin*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetEdgeConnectionMargin_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.MapGetEdgeConnectionMargin(Godot.Rid)">
+  MapGetEdgeConnectionMargin(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MapGetEdgeConnectionMargin(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetIterationId_" data-uid="Godot.NavigationServer3DInstance.MapGetIterationId*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetIterationId_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.MapGetIterationId(Godot.Rid)">
+  MapGetIterationId(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint MapGetIterationId(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetLinkConnectionRadius_" data-uid="Godot.NavigationServer3DInstance.MapGetLinkConnectionRadius*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetLinkConnectionRadius_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.MapGetLinkConnectionRadius(Godot.Rid)">
+  MapGetLinkConnectionRadius(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MapGetLinkConnectionRadius(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetLinks_" data-uid="Godot.NavigationServer3DInstance.MapGetLinks*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetLinks_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.MapGetLinks(Godot.Rid)">
+  MapGetLinks(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array&lt;Rid&gt; MapGetLinks(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Rid.html">Rid</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetMergeRasterizerCellScale_" data-uid="Godot.NavigationServer3DInstance.MapGetMergeRasterizerCellScale*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetMergeRasterizerCellScale_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.MapGetMergeRasterizerCellScale(Godot.Rid)">
+  MapGetMergeRasterizerCellScale(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MapGetMergeRasterizerCellScale(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetObstacles_" data-uid="Godot.NavigationServer3DInstance.MapGetObstacles*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetObstacles_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.MapGetObstacles(Godot.Rid)">
+  MapGetObstacles(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array&lt;Rid&gt; MapGetObstacles(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Rid.html">Rid</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetPath_" data-uid="Godot.NavigationServer3DInstance.MapGetPath*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetPath_Godot_Rid_Godot_Vector3_Godot_Vector3_System_Boolean_System_UInt32_" data-uid="Godot.NavigationServer3DInstance.MapGetPath(Godot.Rid,Godot.Vector3,Godot.Vector3,System.Boolean,System.UInt32)">
+  MapGetPath(Rid, Vector3, Vector3, bool, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3[] MapGetPath(Rid map, Vector3 origin, Vector3 destination, bool optimize, uint navigationLayers = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>origin</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>destination</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>optimize</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>navigationLayers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetRandomPoint_" data-uid="Godot.NavigationServer3DInstance.MapGetRandomPoint*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetRandomPoint_Godot_Rid_System_UInt32_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.MapGetRandomPoint(Godot.Rid,System.UInt32,System.Boolean)">
+  MapGetRandomPoint(Rid, uint, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 MapGetRandomPoint(Rid map, uint navigationLayers, bool uniformly)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>navigationLayers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>uniformly</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetRegions_" data-uid="Godot.NavigationServer3DInstance.MapGetRegions*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetRegions_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.MapGetRegions(Godot.Rid)">
+  MapGetRegions(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array&lt;Rid&gt; MapGetRegions(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Rid.html">Rid</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetUp_" data-uid="Godot.NavigationServer3DInstance.MapGetUp*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetUp_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.MapGetUp(Godot.Rid)">
+  MapGetUp(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 MapGetUp(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetUseAsyncIterations_" data-uid="Godot.NavigationServer3DInstance.MapGetUseAsyncIterations*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetUseAsyncIterations_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.MapGetUseAsyncIterations(Godot.Rid)">
+  MapGetUseAsyncIterations(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MapGetUseAsyncIterations(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapGetUseEdgeConnections_" data-uid="Godot.NavigationServer3DInstance.MapGetUseEdgeConnections*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapGetUseEdgeConnections_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.MapGetUseEdgeConnections(Godot.Rid)">
+  MapGetUseEdgeConnections(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MapGetUseEdgeConnections(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapIsActive_" data-uid="Godot.NavigationServer3DInstance.MapIsActive*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapIsActive_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.MapIsActive(Godot.Rid)">
+  MapIsActive(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MapIsActive(Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapSetActive_" data-uid="Godot.NavigationServer3DInstance.MapSetActive*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapSetActive_Godot_Rid_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.MapSetActive(Godot.Rid,System.Boolean)">
+  MapSetActive(Rid, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MapSetActive(Rid map, bool active)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>active</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapSetCellHeight_" data-uid="Godot.NavigationServer3DInstance.MapSetCellHeight*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapSetCellHeight_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.MapSetCellHeight(Godot.Rid,System.Single)">
+  MapSetCellHeight(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MapSetCellHeight(Rid map, float cellHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>cellHeight</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapSetCellSize_" data-uid="Godot.NavigationServer3DInstance.MapSetCellSize*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapSetCellSize_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.MapSetCellSize(Godot.Rid,System.Single)">
+  MapSetCellSize(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MapSetCellSize(Rid map, float cellSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>cellSize</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapSetEdgeConnectionMargin_" data-uid="Godot.NavigationServer3DInstance.MapSetEdgeConnectionMargin*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapSetEdgeConnectionMargin_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.MapSetEdgeConnectionMargin(Godot.Rid,System.Single)">
+  MapSetEdgeConnectionMargin(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MapSetEdgeConnectionMargin(Rid map, float margin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>margin</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapSetLinkConnectionRadius_" data-uid="Godot.NavigationServer3DInstance.MapSetLinkConnectionRadius*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapSetLinkConnectionRadius_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.MapSetLinkConnectionRadius(Godot.Rid,System.Single)">
+  MapSetLinkConnectionRadius(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MapSetLinkConnectionRadius(Rid map, float radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapSetMergeRasterizerCellScale_" data-uid="Godot.NavigationServer3DInstance.MapSetMergeRasterizerCellScale*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapSetMergeRasterizerCellScale_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.MapSetMergeRasterizerCellScale(Godot.Rid,System.Single)">
+  MapSetMergeRasterizerCellScale(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MapSetMergeRasterizerCellScale(Rid map, float scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>scale</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapSetUp_" data-uid="Godot.NavigationServer3DInstance.MapSetUp*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapSetUp_Godot_Rid_Godot_Vector3_" data-uid="Godot.NavigationServer3DInstance.MapSetUp(Godot.Rid,Godot.Vector3)">
+  MapSetUp(Rid, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MapSetUp(Rid map, Vector3 up)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>up</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapSetUseAsyncIterations_" data-uid="Godot.NavigationServer3DInstance.MapSetUseAsyncIterations*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapSetUseAsyncIterations_Godot_Rid_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.MapSetUseAsyncIterations(Godot.Rid,System.Boolean)">
+  MapSetUseAsyncIterations(Rid, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MapSetUseAsyncIterations(Rid map, bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_MapSetUseEdgeConnections_" data-uid="Godot.NavigationServer3DInstance.MapSetUseEdgeConnections*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_MapSetUseEdgeConnections_Godot_Rid_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.MapSetUseEdgeConnections(Godot.Rid,System.Boolean)">
+  MapSetUseEdgeConnections(Rid, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MapSetUseEdgeConnections(Rid map, bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleCreate_" data-uid="Godot.NavigationServer3DInstance.ObstacleCreate*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleCreate" data-uid="Godot.NavigationServer3DInstance.ObstacleCreate">
+  ObstacleCreate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rid ObstacleCreate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleGetAvoidanceEnabled_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetAvoidanceEnabled*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleGetAvoidanceEnabled_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetAvoidanceEnabled(Godot.Rid)">
+  ObstacleGetAvoidanceEnabled(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ObstacleGetAvoidanceEnabled(Rid obstacle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleGetAvoidanceLayers_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetAvoidanceLayers*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleGetAvoidanceLayers_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetAvoidanceLayers(Godot.Rid)">
+  ObstacleGetAvoidanceLayers(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ObstacleGetAvoidanceLayers(Rid obstacle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleGetHeight_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetHeight*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleGetHeight_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetHeight(Godot.Rid)">
+  ObstacleGetHeight(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ObstacleGetHeight(Rid obstacle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleGetMap_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetMap*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleGetMap_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetMap(Godot.Rid)">
+  ObstacleGetMap(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rid ObstacleGetMap(Rid obstacle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleGetPaused_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetPaused*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleGetPaused_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetPaused(Godot.Rid)">
+  ObstacleGetPaused(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ObstacleGetPaused(Rid obstacle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleGetPosition_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetPosition*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleGetPosition_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetPosition(Godot.Rid)">
+  ObstacleGetPosition(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 ObstacleGetPosition(Rid obstacle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleGetRadius_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetRadius*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleGetRadius_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetRadius(Godot.Rid)">
+  ObstacleGetRadius(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ObstacleGetRadius(Rid obstacle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleGetUse3DAvoidance_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetUse3DAvoidance*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleGetUse3DAvoidance_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetUse3DAvoidance(Godot.Rid)">
+  ObstacleGetUse3DAvoidance(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ObstacleGetUse3DAvoidance(Rid obstacle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleGetVelocity_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetVelocity*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleGetVelocity_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetVelocity(Godot.Rid)">
+  ObstacleGetVelocity(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 ObstacleGetVelocity(Rid obstacle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleGetVertices_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetVertices*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleGetVertices_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.ObstacleGetVertices(Godot.Rid)">
+  ObstacleGetVertices(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3[] ObstacleGetVertices(Rid obstacle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleSetAvoidanceEnabled_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetAvoidanceEnabled*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleSetAvoidanceEnabled_Godot_Rid_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetAvoidanceEnabled(Godot.Rid,System.Boolean)">
+  ObstacleSetAvoidanceEnabled(Rid, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ObstacleSetAvoidanceEnabled(Rid obstacle, bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleSetAvoidanceLayers_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetAvoidanceLayers*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleSetAvoidanceLayers_Godot_Rid_System_UInt32_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetAvoidanceLayers(Godot.Rid,System.UInt32)">
+  ObstacleSetAvoidanceLayers(Rid, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ObstacleSetAvoidanceLayers(Rid obstacle, uint layers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>layers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleSetHeight_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetHeight*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleSetHeight_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetHeight(Godot.Rid,System.Single)">
+  ObstacleSetHeight(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ObstacleSetHeight(Rid obstacle, float height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleSetMap_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetMap*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleSetMap_Godot_Rid_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetMap(Godot.Rid,Godot.Rid)">
+  ObstacleSetMap(Rid, Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ObstacleSetMap(Rid obstacle, Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleSetPaused_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetPaused*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleSetPaused_Godot_Rid_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetPaused(Godot.Rid,System.Boolean)">
+  ObstacleSetPaused(Rid, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ObstacleSetPaused(Rid obstacle, bool paused)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>paused</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleSetPosition_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetPosition*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleSetPosition_Godot_Rid_Godot_Vector3_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetPosition(Godot.Rid,Godot.Vector3)">
+  ObstacleSetPosition(Rid, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ObstacleSetPosition(Rid obstacle, Vector3 position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleSetRadius_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetRadius*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleSetRadius_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetRadius(Godot.Rid,System.Single)">
+  ObstacleSetRadius(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ObstacleSetRadius(Rid obstacle, float radius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>radius</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleSetUse3DAvoidance_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetUse3DAvoidance*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleSetUse3DAvoidance_Godot_Rid_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetUse3DAvoidance(Godot.Rid,System.Boolean)">
+  ObstacleSetUse3DAvoidance(Rid, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ObstacleSetUse3DAvoidance(Rid obstacle, bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleSetVelocity_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetVelocity*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleSetVelocity_Godot_Rid_Godot_Vector3_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetVelocity(Godot.Rid,Godot.Vector3)">
+  ObstacleSetVelocity(Rid, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ObstacleSetVelocity(Rid obstacle, Vector3 velocity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>velocity</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleSetVertices_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetVertices*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleSetVertices_Godot_Rid_Godot_Vector3___" data-uid="Godot.NavigationServer3DInstance.ObstacleSetVertices(Godot.Rid,Godot.Vector3[])">
+  ObstacleSetVertices(Rid, Vector3[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ObstacleSetVertices(Rid obstacle, Vector3[] vertices)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>vertices</code> <a class="xref" href="Godot.Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ObstacleSetVertices_" data-uid="Godot.NavigationServer3DInstance.ObstacleSetVertices*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ObstacleSetVertices_Godot_Rid_System_ReadOnlySpan_Godot_Vector3__" data-uid="Godot.NavigationServer3DInstance.ObstacleSetVertices(Godot.Rid,System.ReadOnlySpan{Godot.Vector3})">
+  ObstacleSetVertices(Rid, ReadOnlySpan&lt;Vector3&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ObstacleSetVertices(Rid obstacle, ReadOnlySpan&lt;Vector3&gt; vertices)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obstacle</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>vertices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="Godot.Vector3.html">Vector3</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_ParseSourceGeometryData_" data-uid="Godot.NavigationServer3DInstance.ParseSourceGeometryData*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_ParseSourceGeometryData_Godot_NavigationMesh_Godot_NavigationMeshSourceGeometryData3D_Godot_Node_Godot_Callable_" data-uid="Godot.NavigationServer3DInstance.ParseSourceGeometryData(Godot.NavigationMesh,Godot.NavigationMeshSourceGeometryData3D,Godot.Node,Godot.Callable)">
+  ParseSourceGeometryData(NavigationMesh, NavigationMeshSourceGeometryData3D, Node, Callable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ParseSourceGeometryData(NavigationMesh navigationMesh, NavigationMeshSourceGeometryData3D sourceGeometryData, Node rootNode, Callable callback = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>navigationMesh</code> <a class="xref" href="Godot.NavigationMesh.html">NavigationMesh</a></dt>
+    <dd></dd>
+    <dt><code>sourceGeometryData</code> <a class="xref" href="Godot.NavigationMeshSourceGeometryData3D.html">NavigationMeshSourceGeometryData3D</a></dt>
+    <dd></dd>
+    <dt><code>rootNode</code> <a class="xref" href="Godot.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="Godot.Callable.html">Callable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_QueryPath_" data-uid="Godot.NavigationServer3DInstance.QueryPath*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_QueryPath_Godot_NavigationPathQueryParameters3D_Godot_NavigationPathQueryResult3D_Godot_Callable_" data-uid="Godot.NavigationServer3DInstance.QueryPath(Godot.NavigationPathQueryParameters3D,Godot.NavigationPathQueryResult3D,Godot.Callable)">
+  QueryPath(NavigationPathQueryParameters3D, NavigationPathQueryResult3D, Callable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void QueryPath(NavigationPathQueryParameters3D parameters, NavigationPathQueryResult3D result, Callable callback = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameters</code> <a class="xref" href="Godot.NavigationPathQueryParameters3D.html">NavigationPathQueryParameters3D</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="Godot.NavigationPathQueryResult3D.html">NavigationPathQueryResult3D</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="Godot.Callable.html">Callable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionBakeNavigationMesh_" data-uid="Godot.NavigationServer3DInstance.RegionBakeNavigationMesh*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionBakeNavigationMesh_Godot_NavigationMesh_Godot_Node_" data-uid="Godot.NavigationServer3DInstance.RegionBakeNavigationMesh(Godot.NavigationMesh,Godot.Node)">
+  RegionBakeNavigationMesh(NavigationMesh, Node)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This method is deprecated due to core threading changes. To upgrade existing code, first create a &#39;NavigationMeshSourceGeometryData3D&#39; resource. Use this resource with &#39;Godot.NavigationServer3DInstance.ParseSourceGeometryData(NavigationMesh, NavigationMeshSourceGeometryData3D, Node, Callable)&#39; to parse the &#39;SceneTree&#39; for nodes that should contribute to the navigation mesh baking. The &#39;SceneTree&#39; parsing needs to happen on the main thread. After the parsing is finished use the resource with &#39;Godot.NavigationServer3DInstance.BakeFromSourceGeometryData(NavigationMesh, NavigationMeshSourceGeometryData3D, Callable)&#39; to bake a navigation mesh.&quot;)]
+public void RegionBakeNavigationMesh(NavigationMesh navigationMesh, Node rootNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>navigationMesh</code> <a class="xref" href="Godot.NavigationMesh.html">NavigationMesh</a></dt>
+    <dd></dd>
+    <dt><code>rootNode</code> <a class="xref" href="Godot.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionCreate_" data-uid="Godot.NavigationServer3DInstance.RegionCreate*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionCreate" data-uid="Godot.NavigationServer3DInstance.RegionCreate">
+  RegionCreate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rid RegionCreate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetBounds_" data-uid="Godot.NavigationServer3DInstance.RegionGetBounds*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetBounds_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.RegionGetBounds(Godot.Rid)">
+  RegionGetBounds(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Aabb RegionGetBounds(Rid region)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Aabb.html">Aabb</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetClosestPoint_" data-uid="Godot.NavigationServer3DInstance.RegionGetClosestPoint*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetClosestPoint_Godot_Rid_Godot_Vector3_" data-uid="Godot.NavigationServer3DInstance.RegionGetClosestPoint(Godot.Rid,Godot.Vector3)">
+  RegionGetClosestPoint(Rid, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 RegionGetClosestPoint(Rid region, Vector3 toPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>toPoint</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetClosestPointNormal_" data-uid="Godot.NavigationServer3DInstance.RegionGetClosestPointNormal*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetClosestPointNormal_Godot_Rid_Godot_Vector3_" data-uid="Godot.NavigationServer3DInstance.RegionGetClosestPointNormal(Godot.Rid,Godot.Vector3)">
+  RegionGetClosestPointNormal(Rid, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 RegionGetClosestPointNormal(Rid region, Vector3 toPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>toPoint</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetClosestPointToSegment_" data-uid="Godot.NavigationServer3DInstance.RegionGetClosestPointToSegment*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetClosestPointToSegment_Godot_Rid_Godot_Vector3_Godot_Vector3_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.RegionGetClosestPointToSegment(Godot.Rid,Godot.Vector3,Godot.Vector3,System.Boolean)">
+  RegionGetClosestPointToSegment(Rid, Vector3, Vector3, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 RegionGetClosestPointToSegment(Rid region, Vector3 start, Vector3 end, bool useCollision = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>start</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>end</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>useCollision</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetConnectionPathwayEnd_" data-uid="Godot.NavigationServer3DInstance.RegionGetConnectionPathwayEnd*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetConnectionPathwayEnd_Godot_Rid_System_Int32_" data-uid="Godot.NavigationServer3DInstance.RegionGetConnectionPathwayEnd(Godot.Rid,System.Int32)">
+  RegionGetConnectionPathwayEnd(Rid, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 RegionGetConnectionPathwayEnd(Rid region, int connection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>connection</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetConnectionPathwayStart_" data-uid="Godot.NavigationServer3DInstance.RegionGetConnectionPathwayStart*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetConnectionPathwayStart_Godot_Rid_System_Int32_" data-uid="Godot.NavigationServer3DInstance.RegionGetConnectionPathwayStart(Godot.Rid,System.Int32)">
+  RegionGetConnectionPathwayStart(Rid, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 RegionGetConnectionPathwayStart(Rid region, int connection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>connection</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetConnectionsCount_" data-uid="Godot.NavigationServer3DInstance.RegionGetConnectionsCount*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetConnectionsCount_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.RegionGetConnectionsCount(Godot.Rid)">
+  RegionGetConnectionsCount(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RegionGetConnectionsCount(Rid region)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetEnabled_" data-uid="Godot.NavigationServer3DInstance.RegionGetEnabled*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetEnabled_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.RegionGetEnabled(Godot.Rid)">
+  RegionGetEnabled(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegionGetEnabled(Rid region)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetEnterCost_" data-uid="Godot.NavigationServer3DInstance.RegionGetEnterCost*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetEnterCost_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.RegionGetEnterCost(Godot.Rid)">
+  RegionGetEnterCost(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RegionGetEnterCost(Rid region)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetIterationId_" data-uid="Godot.NavigationServer3DInstance.RegionGetIterationId*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetIterationId_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.RegionGetIterationId(Godot.Rid)">
+  RegionGetIterationId(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint RegionGetIterationId(Rid region)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetMap_" data-uid="Godot.NavigationServer3DInstance.RegionGetMap*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetMap_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.RegionGetMap(Godot.Rid)">
+  RegionGetMap(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rid RegionGetMap(Rid region)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetNavigationLayers_" data-uid="Godot.NavigationServer3DInstance.RegionGetNavigationLayers*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetNavigationLayers_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.RegionGetNavigationLayers(Godot.Rid)">
+  RegionGetNavigationLayers(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint RegionGetNavigationLayers(Rid region)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetOwnerId_" data-uid="Godot.NavigationServer3DInstance.RegionGetOwnerId*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetOwnerId_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.RegionGetOwnerId(Godot.Rid)">
+  RegionGetOwnerId(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong RegionGetOwnerId(Rid region)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetRandomPoint_" data-uid="Godot.NavigationServer3DInstance.RegionGetRandomPoint*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetRandomPoint_Godot_Rid_System_UInt32_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.RegionGetRandomPoint(Godot.Rid,System.UInt32,System.Boolean)">
+  RegionGetRandomPoint(Rid, uint, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 RegionGetRandomPoint(Rid region, uint navigationLayers, bool uniformly)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>navigationLayers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>uniformly</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetTransform_" data-uid="Godot.NavigationServer3DInstance.RegionGetTransform*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetTransform_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.RegionGetTransform(Godot.Rid)">
+  RegionGetTransform(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform3D RegionGetTransform(Rid region)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetTravelCost_" data-uid="Godot.NavigationServer3DInstance.RegionGetTravelCost*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetTravelCost_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.RegionGetTravelCost(Godot.Rid)">
+  RegionGetTravelCost(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RegionGetTravelCost(Rid region)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetUseAsyncIterations_" data-uid="Godot.NavigationServer3DInstance.RegionGetUseAsyncIterations*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetUseAsyncIterations_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.RegionGetUseAsyncIterations(Godot.Rid)">
+  RegionGetUseAsyncIterations(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegionGetUseAsyncIterations(Rid region)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionGetUseEdgeConnections_" data-uid="Godot.NavigationServer3DInstance.RegionGetUseEdgeConnections*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionGetUseEdgeConnections_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.RegionGetUseEdgeConnections(Godot.Rid)">
+  RegionGetUseEdgeConnections(Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegionGetUseEdgeConnections(Rid region)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionOwnsPoint_" data-uid="Godot.NavigationServer3DInstance.RegionOwnsPoint*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionOwnsPoint_Godot_Rid_Godot_Vector3_" data-uid="Godot.NavigationServer3DInstance.RegionOwnsPoint(Godot.Rid,Godot.Vector3)">
+  RegionOwnsPoint(Rid, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegionOwnsPoint(Rid region, Vector3 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>point</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionSetEnabled_" data-uid="Godot.NavigationServer3DInstance.RegionSetEnabled*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionSetEnabled_Godot_Rid_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.RegionSetEnabled(Godot.Rid,System.Boolean)">
+  RegionSetEnabled(Rid, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegionSetEnabled(Rid region, bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionSetEnterCost_" data-uid="Godot.NavigationServer3DInstance.RegionSetEnterCost*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionSetEnterCost_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.RegionSetEnterCost(Godot.Rid,System.Single)">
+  RegionSetEnterCost(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegionSetEnterCost(Rid region, float enterCost)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>enterCost</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionSetMap_" data-uid="Godot.NavigationServer3DInstance.RegionSetMap*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionSetMap_Godot_Rid_Godot_Rid_" data-uid="Godot.NavigationServer3DInstance.RegionSetMap(Godot.Rid,Godot.Rid)">
+  RegionSetMap(Rid, Rid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegionSetMap(Rid region, Rid map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionSetNavigationLayers_" data-uid="Godot.NavigationServer3DInstance.RegionSetNavigationLayers*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionSetNavigationLayers_Godot_Rid_System_UInt32_" data-uid="Godot.NavigationServer3DInstance.RegionSetNavigationLayers(Godot.Rid,System.UInt32)">
+  RegionSetNavigationLayers(Rid, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegionSetNavigationLayers(Rid region, uint navigationLayers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>navigationLayers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionSetNavigationMesh_" data-uid="Godot.NavigationServer3DInstance.RegionSetNavigationMesh*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionSetNavigationMesh_Godot_Rid_Godot_NavigationMesh_" data-uid="Godot.NavigationServer3DInstance.RegionSetNavigationMesh(Godot.Rid,Godot.NavigationMesh)">
+  RegionSetNavigationMesh(Rid, NavigationMesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegionSetNavigationMesh(Rid region, NavigationMesh navigationMesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>navigationMesh</code> <a class="xref" href="Godot.NavigationMesh.html">NavigationMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionSetOwnerId_" data-uid="Godot.NavigationServer3DInstance.RegionSetOwnerId*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionSetOwnerId_Godot_Rid_System_UInt64_" data-uid="Godot.NavigationServer3DInstance.RegionSetOwnerId(Godot.Rid,System.UInt64)">
+  RegionSetOwnerId(Rid, ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegionSetOwnerId(Rid region, ulong ownerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>ownerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionSetTransform_" data-uid="Godot.NavigationServer3DInstance.RegionSetTransform*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionSetTransform_Godot_Rid_Godot_Transform3D_" data-uid="Godot.NavigationServer3DInstance.RegionSetTransform(Godot.Rid,Godot.Transform3D)">
+  RegionSetTransform(Rid, Transform3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegionSetTransform(Rid region, Transform3D transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>transform</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionSetTravelCost_" data-uid="Godot.NavigationServer3DInstance.RegionSetTravelCost*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionSetTravelCost_Godot_Rid_System_Single_" data-uid="Godot.NavigationServer3DInstance.RegionSetTravelCost(Godot.Rid,System.Single)">
+  RegionSetTravelCost(Rid, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegionSetTravelCost(Rid region, float travelCost)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>travelCost</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionSetUseAsyncIterations_" data-uid="Godot.NavigationServer3DInstance.RegionSetUseAsyncIterations*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionSetUseAsyncIterations_Godot_Rid_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.RegionSetUseAsyncIterations(Godot.Rid,System.Boolean)">
+  RegionSetUseAsyncIterations(Rid, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegionSetUseAsyncIterations(Rid region, bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_RegionSetUseEdgeConnections_" data-uid="Godot.NavigationServer3DInstance.RegionSetUseEdgeConnections*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_RegionSetUseEdgeConnections_Godot_Rid_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.RegionSetUseEdgeConnections(Godot.Rid,System.Boolean)">
+  RegionSetUseEdgeConnections(Rid, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegionSetUseEdgeConnections(Rid region, bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_SetActive_" data-uid="Godot.NavigationServer3DInstance.SetActive*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_SetActive_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.SetActive(System.Boolean)">
+  SetActive(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetActive(bool active)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>active</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_SetDebugEnabled_" data-uid="Godot.NavigationServer3DInstance.SetDebugEnabled*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_SetDebugEnabled_System_Boolean_" data-uid="Godot.NavigationServer3DInstance.SetDebugEnabled(System.Boolean)">
+  SetDebugEnabled(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDebugEnabled(bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_SimplifyPath_" data-uid="Godot.NavigationServer3DInstance.SimplifyPath*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_SimplifyPath_Godot_Vector3___System_Single_" data-uid="Godot.NavigationServer3DInstance.SimplifyPath(Godot.Vector3[],System.Single)">
+  SimplifyPath(Vector3[], float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3[] SimplifyPath(Vector3[] path, float epsilon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="Godot.Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+    <dt><code>epsilon</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_SimplifyPath_" data-uid="Godot.NavigationServer3DInstance.SimplifyPath*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_SimplifyPath_System_ReadOnlySpan_Godot_Vector3__System_Single_" data-uid="Godot.NavigationServer3DInstance.SimplifyPath(System.ReadOnlySpan{Godot.Vector3},System.Single)">
+  SimplifyPath(ReadOnlySpan&lt;Vector3&gt;, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3[] SimplifyPath(ReadOnlySpan&lt;Vector3&gt; path, float epsilon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="Godot.Vector3.html">Vector3</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>epsilon</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_SourceGeometryParserCreate_" data-uid="Godot.NavigationServer3DInstance.SourceGeometryParserCreate*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_SourceGeometryParserCreate" data-uid="Godot.NavigationServer3DInstance.SourceGeometryParserCreate">
+  SourceGeometryParserCreate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rid SourceGeometryParserCreate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_NavigationServer3DInstance_SourceGeometryParserSetCallback_" data-uid="Godot.NavigationServer3DInstance.SourceGeometryParserSetCallback*"></a>
+
+  <h3 id="Godot_NavigationServer3DInstance_SourceGeometryParserSetCallback_Godot_Rid_Godot_Callable_" data-uid="Godot.NavigationServer3DInstance.SourceGeometryParserSetCallback(Godot.Rid,Godot.Callable)">
+  SourceGeometryParserSetCallback(Rid, Callable)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SourceGeometryParserSetCallback(Rid parser, Callable callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parser</code> <a class="xref" href="Godot.Rid.html">Rid</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="Godot.Callable.html">Callable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Godot_NavigationServer3DInstance_AvoidanceDebugChanged" data-uid="Godot.NavigationServer3DInstance.AvoidanceDebugChanged">
+  AvoidanceDebugChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action AvoidanceDebugChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Godot_NavigationServer3DInstance_MapChanged" data-uid="Godot.NavigationServer3DInstance.MapChanged">
+  MapChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event NavigationServer3DInstance.MapChangedEventHandler MapChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.NavigationServer3DInstance.html">NavigationServer3DInstance</a>.<a class="xref" href="Godot.NavigationServer3DInstance.MapChangedEventHandler.html">MapChangedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Godot_NavigationServer3DInstance_NavigationDebugChanged" data-uid="Godot.NavigationServer3DInstance.NavigationDebugChanged">
+  NavigationDebugChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action NavigationDebugChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

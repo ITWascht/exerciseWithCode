@@ -1,0 +1,769 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.GodotSynchronizationContext
+  commentId: T:Godot.GodotSynchronizationContext
+  id: GodotSynchronizationContext
+  parent: Godot
+  children:
+  - Godot.GodotSynchronizationContext.#ctor
+  - Godot.GodotSynchronizationContext.Dispose
+  - Godot.GodotSynchronizationContext.ExecutePendingContinuations
+  - Godot.GodotSynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+  - Godot.GodotSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: GodotSynchronizationContext
+  nameWithType: GodotSynchronizationContext
+  fullName: Godot.GodotSynchronizationContext
+  type: Class
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: 'public sealed class GodotSynchronizationContext : SynchronizationContext, IDisposable'
+    content.vb: Public NotInheritable Class GodotSynchronizationContext Inherits SynchronizationContext Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.Threading.SynchronizationContext
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Threading.SynchronizationContext.IsWaitNotificationRequired
+  - System.Threading.SynchronizationContext.OperationStarted
+  - System.Threading.SynchronizationContext.OperationCompleted
+  - System.Threading.SynchronizationContext.Wait(System.IntPtr[],System.Boolean,System.Int32)
+  - System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+  - System.Threading.SynchronizationContext.CreateCopy
+  - System.Threading.SynchronizationContext.Current
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Godot.GodotSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+  commentId: M:Godot.GodotSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+  id: Send(System.Threading.SendOrPostCallback,System.Object)
+  parent: Godot.GodotSynchronizationContext
+  langs:
+  - csharp
+  - vb
+  name: Send(SendOrPostCallback, object)
+  nameWithType: GodotSynchronizationContext.Send(SendOrPostCallback, object)
+  fullName: Godot.GodotSynchronizationContext.Send(System.Threading.SendOrPostCallback, object)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override void Send(SendOrPostCallback d, object state)
+    parameters:
+    - id: d
+      type: System.Threading.SendOrPostCallback
+    - id: state
+      type: System.Object
+    content.vb: Public Overrides Sub Send(d As SendOrPostCallback, state As Object)
+  overridden: System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+  overload: Godot.GodotSynchronizationContext.Send*
+  nameWithType.vb: GodotSynchronizationContext.Send(SendOrPostCallback, Object)
+  fullName.vb: Godot.GodotSynchronizationContext.Send(System.Threading.SendOrPostCallback, Object)
+  name.vb: Send(SendOrPostCallback, Object)
+- uid: Godot.GodotSynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+  commentId: M:Godot.GodotSynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+  id: Post(System.Threading.SendOrPostCallback,System.Object)
+  parent: Godot.GodotSynchronizationContext
+  langs:
+  - csharp
+  - vb
+  name: Post(SendOrPostCallback, object)
+  nameWithType: GodotSynchronizationContext.Post(SendOrPostCallback, object)
+  fullName: Godot.GodotSynchronizationContext.Post(System.Threading.SendOrPostCallback, object)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override void Post(SendOrPostCallback d, object state)
+    parameters:
+    - id: d
+      type: System.Threading.SendOrPostCallback
+    - id: state
+      type: System.Object
+    content.vb: Public Overrides Sub Post(d As SendOrPostCallback, state As Object)
+  overridden: System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+  overload: Godot.GodotSynchronizationContext.Post*
+  nameWithType.vb: GodotSynchronizationContext.Post(SendOrPostCallback, Object)
+  fullName.vb: Godot.GodotSynchronizationContext.Post(System.Threading.SendOrPostCallback, Object)
+  name.vb: Post(SendOrPostCallback, Object)
+- uid: Godot.GodotSynchronizationContext.ExecutePendingContinuations
+  commentId: M:Godot.GodotSynchronizationContext.ExecutePendingContinuations
+  id: ExecutePendingContinuations
+  parent: Godot.GodotSynchronizationContext
+  langs:
+  - csharp
+  - vb
+  name: ExecutePendingContinuations()
+  nameWithType: GodotSynchronizationContext.ExecutePendingContinuations()
+  fullName: Godot.GodotSynchronizationContext.ExecutePendingContinuations()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void ExecutePendingContinuations()
+    content.vb: Public Sub ExecutePendingContinuations()
+  overload: Godot.GodotSynchronizationContext.ExecutePendingContinuations*
+- uid: Godot.GodotSynchronizationContext.Dispose
+  commentId: M:Godot.GodotSynchronizationContext.Dispose
+  id: Dispose
+  parent: Godot.GodotSynchronizationContext
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: GodotSynchronizationContext.Dispose()
+  fullName: Godot.GodotSynchronizationContext.Dispose()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Godot.GodotSynchronizationContext.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Godot.GodotSynchronizationContext.#ctor
+  commentId: M:Godot.GodotSynchronizationContext.#ctor
+  id: '#ctor'
+  parent: Godot.GodotSynchronizationContext
+  langs:
+  - csharp
+  - vb
+  name: GodotSynchronizationContext()
+  nameWithType: GodotSynchronizationContext.GodotSynchronizationContext()
+  fullName: Godot.GodotSynchronizationContext.GodotSynchronizationContext()
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public GodotSynchronizationContext()
+    content.vb: Public Sub New()
+  overload: Godot.GodotSynchronizationContext.#ctor*
+  nameWithType.vb: GodotSynchronizationContext.New()
+  fullName.vb: Godot.GodotSynchronizationContext.New()
+  name.vb: New()
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Threading.SynchronizationContext
+  commentId: T:System.Threading.SynchronizationContext
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext
+  name: SynchronizationContext
+  nameWithType: SynchronizationContext
+  fullName: System.Threading.SynchronizationContext
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Threading.SynchronizationContext.IsWaitNotificationRequired
+  commentId: M:System.Threading.SynchronizationContext.IsWaitNotificationRequired
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.iswaitnotificationrequired
+  name: IsWaitNotificationRequired()
+  nameWithType: SynchronizationContext.IsWaitNotificationRequired()
+  fullName: System.Threading.SynchronizationContext.IsWaitNotificationRequired()
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.IsWaitNotificationRequired
+    name: IsWaitNotificationRequired
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.iswaitnotificationrequired
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.IsWaitNotificationRequired
+    name: IsWaitNotificationRequired
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.iswaitnotificationrequired
+  - name: (
+  - name: )
+- uid: System.Threading.SynchronizationContext.OperationStarted
+  commentId: M:System.Threading.SynchronizationContext.OperationStarted
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.operationstarted
+  name: OperationStarted()
+  nameWithType: SynchronizationContext.OperationStarted()
+  fullName: System.Threading.SynchronizationContext.OperationStarted()
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.OperationStarted
+    name: OperationStarted
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.operationstarted
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.OperationStarted
+    name: OperationStarted
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.operationstarted
+  - name: (
+  - name: )
+- uid: System.Threading.SynchronizationContext.OperationCompleted
+  commentId: M:System.Threading.SynchronizationContext.OperationCompleted
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.operationcompleted
+  name: OperationCompleted()
+  nameWithType: SynchronizationContext.OperationCompleted()
+  fullName: System.Threading.SynchronizationContext.OperationCompleted()
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.OperationCompleted
+    name: OperationCompleted
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.operationcompleted
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.OperationCompleted
+    name: OperationCompleted
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.operationcompleted
+  - name: (
+  - name: )
+- uid: System.Threading.SynchronizationContext.Wait(System.IntPtr[],System.Boolean,System.Int32)
+  commentId: M:System.Threading.SynchronizationContext.Wait(System.IntPtr[],System.Boolean,System.Int32)
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.wait
+  name: Wait(nint[], bool, int)
+  nameWithType: SynchronizationContext.Wait(nint[], bool, int)
+  fullName: System.Threading.SynchronizationContext.Wait(nint[], bool, int)
+  nameWithType.vb: SynchronizationContext.Wait(IntPtr(), Boolean, Integer)
+  fullName.vb: System.Threading.SynchronizationContext.Wait(System.IntPtr(), Boolean, Integer)
+  name.vb: Wait(IntPtr(), Boolean, Integer)
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.Wait(System.IntPtr[],System.Boolean,System.Int32)
+    name: Wait
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.wait
+  - name: (
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.Wait(System.IntPtr[],System.Boolean,System.Int32)
+    name: Wait
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.wait
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+  commentId: M:System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.setsynchronizationcontext
+  name: SetSynchronizationContext(SynchronizationContext)
+  nameWithType: SynchronizationContext.SetSynchronizationContext(SynchronizationContext)
+  fullName: System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+    name: SetSynchronizationContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.setsynchronizationcontext
+  - name: (
+  - uid: System.Threading.SynchronizationContext
+    name: SynchronizationContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+    name: SetSynchronizationContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.setsynchronizationcontext
+  - name: (
+  - uid: System.Threading.SynchronizationContext
+    name: SynchronizationContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext
+  - name: )
+- uid: System.Threading.SynchronizationContext.CreateCopy
+  commentId: M:System.Threading.SynchronizationContext.CreateCopy
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.createcopy
+  name: CreateCopy()
+  nameWithType: SynchronizationContext.CreateCopy()
+  fullName: System.Threading.SynchronizationContext.CreateCopy()
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.CreateCopy
+    name: CreateCopy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.createcopy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.CreateCopy
+    name: CreateCopy
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.createcopy
+  - name: (
+  - name: )
+- uid: System.Threading.SynchronizationContext.Current
+  commentId: P:System.Threading.SynchronizationContext.Current
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.current
+  name: Current
+  nameWithType: SynchronizationContext.Current
+  fullName: System.Threading.SynchronizationContext.Current
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+  commentId: M:System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.send
+  name: Send(SendOrPostCallback, object)
+  nameWithType: SynchronizationContext.Send(SendOrPostCallback, object)
+  fullName: System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback, object)
+  nameWithType.vb: SynchronizationContext.Send(SendOrPostCallback, Object)
+  fullName.vb: System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback, Object)
+  name.vb: Send(SendOrPostCallback, Object)
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+    name: Send
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.send
+  - name: (
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.sendorpostcallback
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+    name: Send
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.send
+  - name: (
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.sendorpostcallback
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Godot.GodotSynchronizationContext.Send*
+  commentId: Overload:Godot.GodotSynchronizationContext.Send
+  isExternal: true
+  href: Godot.GodotSynchronizationContext.html#Godot_GodotSynchronizationContext_Send_System_Threading_SendOrPostCallback_System_Object_
+  name: Send
+  nameWithType: GodotSynchronizationContext.Send
+  fullName: Godot.GodotSynchronizationContext.Send
+- uid: System.Threading.SendOrPostCallback
+  commentId: T:System.Threading.SendOrPostCallback
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.sendorpostcallback
+  name: SendOrPostCallback
+  nameWithType: SendOrPostCallback
+  fullName: System.Threading.SendOrPostCallback
+- uid: System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+  commentId: M:System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+  parent: System.Threading.SynchronizationContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.post
+  name: Post(SendOrPostCallback, object)
+  nameWithType: SynchronizationContext.Post(SendOrPostCallback, object)
+  fullName: System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback, object)
+  nameWithType.vb: SynchronizationContext.Post(SendOrPostCallback, Object)
+  fullName.vb: System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback, Object)
+  name.vb: Post(SendOrPostCallback, Object)
+  spec.csharp:
+  - uid: System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+    name: Post
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.post
+  - name: (
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.sendorpostcallback
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+    name: Post
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext.post
+  - name: (
+  - uid: System.Threading.SendOrPostCallback
+    name: SendOrPostCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.sendorpostcallback
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Godot.GodotSynchronizationContext.Post*
+  commentId: Overload:Godot.GodotSynchronizationContext.Post
+  isExternal: true
+  href: Godot.GodotSynchronizationContext.html#Godot_GodotSynchronizationContext_Post_System_Threading_SendOrPostCallback_System_Object_
+  name: Post
+  nameWithType: GodotSynchronizationContext.Post
+  fullName: Godot.GodotSynchronizationContext.Post
+- uid: Godot.GodotSynchronizationContext.ExecutePendingContinuations*
+  commentId: Overload:Godot.GodotSynchronizationContext.ExecutePendingContinuations
+  isExternal: true
+  href: Godot.GodotSynchronizationContext.html#Godot_GodotSynchronizationContext_ExecutePendingContinuations
+  name: ExecutePendingContinuations
+  nameWithType: GodotSynchronizationContext.ExecutePendingContinuations
+  fullName: Godot.GodotSynchronizationContext.ExecutePendingContinuations
+- uid: Godot.GodotSynchronizationContext.Dispose*
+  commentId: Overload:Godot.GodotSynchronizationContext.Dispose
+  isExternal: true
+  href: Godot.GodotSynchronizationContext.html#Godot_GodotSynchronizationContext_Dispose
+  name: Dispose
+  nameWithType: GodotSynchronizationContext.Dispose
+  fullName: Godot.GodotSynchronizationContext.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Godot.GodotSynchronizationContext.#ctor*
+  commentId: Overload:Godot.GodotSynchronizationContext.#ctor
+  isExternal: true
+  href: Godot.GodotSynchronizationContext.html#Godot_GodotSynchronizationContext__ctor
+  name: GodotSynchronizationContext
+  nameWithType: GodotSynchronizationContext.GodotSynchronizationContext
+  fullName: Godot.GodotSynchronizationContext.GodotSynchronizationContext
+  nameWithType.vb: GodotSynchronizationContext.New
+  fullName.vb: Godot.GodotSynchronizationContext.New
+  name.vb: New

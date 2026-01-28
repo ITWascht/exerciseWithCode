@@ -1,0 +1,3243 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.OS
+  commentId: T:Godot.OS
+  id: OS
+  parent: Godot
+  children:
+  - Godot.OS.AddLogger(Godot.Logger)
+  - Godot.OS.Alert(System.String,System.String)
+  - Godot.OS.CloseMidiInputs
+  - Godot.OS.Crash(System.String)
+  - Godot.OS.CreateInstance(System.ReadOnlySpan{System.String})
+  - Godot.OS.CreateInstance(System.String[])
+  - Godot.OS.CreateProcess(System.String,System.ReadOnlySpan{System.String},System.Boolean)
+  - Godot.OS.CreateProcess(System.String,System.String[],System.Boolean)
+  - Godot.OS.DelayMsec(System.Int32)
+  - Godot.OS.DelayUsec(System.Int32)
+  - Godot.OS.DeltaSmoothing
+  - Godot.OS.Execute(System.String,System.ReadOnlySpan{System.String},Godot.Collections.Array,System.Boolean,System.Boolean)
+  - Godot.OS.Execute(System.String,System.String[],Godot.Collections.Array,System.Boolean,System.Boolean)
+  - Godot.OS.ExecuteWithPipe(System.String,System.ReadOnlySpan{System.String},System.Boolean)
+  - Godot.OS.ExecuteWithPipe(System.String,System.String[],System.Boolean)
+  - Godot.OS.FindKeycodeFromString(System.String)
+  - Godot.OS.GetCacheDir
+  - Godot.OS.GetCmdlineArgs
+  - Godot.OS.GetCmdlineUserArgs
+  - Godot.OS.GetConfigDir
+  - Godot.OS.GetConnectedMidiInputs
+  - Godot.OS.GetDataDir
+  - Godot.OS.GetDistributionName
+  - Godot.OS.GetEntropy(System.Int32)
+  - Godot.OS.GetEnvironment(System.String)
+  - Godot.OS.GetExecutablePath
+  - Godot.OS.GetGrantedPermissions
+  - Godot.OS.GetKeycodeString(Godot.Key)
+  - Godot.OS.GetLocale
+  - Godot.OS.GetLocaleLanguage
+  - Godot.OS.GetMainThreadId
+  - Godot.OS.GetMemoryInfo
+  - Godot.OS.GetModelName
+  - Godot.OS.GetName
+  - Godot.OS.GetProcessExitCode(System.Int32)
+  - Godot.OS.GetProcessId
+  - Godot.OS.GetProcessorCount
+  - Godot.OS.GetProcessorName
+  - Godot.OS.GetRestartOnExitArguments
+  - Godot.OS.GetStaticMemoryPeakUsage
+  - Godot.OS.GetStaticMemoryUsage
+  - Godot.OS.GetStdInType
+  - Godot.OS.GetStdOutType
+  - Godot.OS.GetStderrType
+  - Godot.OS.GetSystemCaCertificates
+  - Godot.OS.GetSystemDir(Godot.OS.SystemDir,System.Boolean)
+  - Godot.OS.GetSystemFontPath(System.String,System.Int32,System.Int32,System.Boolean)
+  - Godot.OS.GetSystemFontPathForText(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Boolean)
+  - Godot.OS.GetSystemFonts
+  - Godot.OS.GetTempDir
+  - Godot.OS.GetThreadCallerId
+  - Godot.OS.GetUniqueId
+  - Godot.OS.GetUserDataDir
+  - Godot.OS.GetVersion
+  - Godot.OS.GetVersionAlias
+  - Godot.OS.GetVideoAdapterDriverInfo
+  - Godot.OS.HasEnvironment(System.String)
+  - Godot.OS.HasFeature(System.String)
+  - Godot.OS.IsDebugBuild
+  - Godot.OS.IsKeycodeUnicode(System.Int64)
+  - Godot.OS.IsProcessRunning(System.Int32)
+  - Godot.OS.IsRestartOnExitSet
+  - Godot.OS.IsSandboxed
+  - Godot.OS.IsStdOutVerbose
+  - Godot.OS.IsUserfsPersistent
+  - Godot.OS.Kill(System.Int32)
+  - Godot.OS.LowProcessorUsageMode
+  - Godot.OS.LowProcessorUsageModeSleepUsec
+  - Godot.OS.MoveToTrash(System.String)
+  - Godot.OS.OpenMidiInputs
+  - Godot.OS.OpenWithProgram(System.String,System.ReadOnlySpan{System.String})
+  - Godot.OS.OpenWithProgram(System.String,System.String[])
+  - Godot.OS.ReadBufferFromStdIn(System.Int64)
+  - Godot.OS.ReadStringFromStdIn(System.Int64)
+  - Godot.OS.RemoveLogger(Godot.Logger)
+  - Godot.OS.RequestPermission(System.String)
+  - Godot.OS.RequestPermissions
+  - Godot.OS.RevokeGrantedPermissions
+  - Godot.OS.SetEnvironment(System.String,System.String)
+  - Godot.OS.SetRestartOnExit(System.Boolean,System.ReadOnlySpan{System.String})
+  - Godot.OS.SetRestartOnExit(System.Boolean,System.String[])
+  - Godot.OS.SetThreadName(System.String)
+  - Godot.OS.SetUseFileAccessSaveAndSwap(System.Boolean)
+  - Godot.OS.ShellOpen(System.String)
+  - Godot.OS.ShellShowInFileManager(System.String,System.Boolean)
+  - Godot.OS.Singleton
+  - Godot.OS.UnsetEnvironment(System.String)
+  langs:
+  - csharp
+  - vb
+  name: OS
+  nameWithType: OS
+  fullName: Godot.OS
+  type: Class
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static class OS
+    content.vb: Public Module OS
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Godot.OS.GetEntropy(System.Int32)
+  commentId: M:Godot.OS.GetEntropy(System.Int32)
+  id: GetEntropy(System.Int32)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetEntropy(int)
+  nameWithType: OS.GetEntropy(int)
+  fullName: Godot.OS.GetEntropy(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static byte[] GetEntropy(int size)
+    parameters:
+    - id: size
+      type: System.Int32
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function GetEntropy(size As Integer) As Byte()
+  overload: Godot.OS.GetEntropy*
+  nameWithType.vb: OS.GetEntropy(Integer)
+  fullName.vb: Godot.OS.GetEntropy(Integer)
+  name.vb: GetEntropy(Integer)
+- uid: Godot.OS.GetSystemCaCertificates
+  commentId: M:Godot.OS.GetSystemCaCertificates
+  id: GetSystemCaCertificates
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetSystemCaCertificates()
+  nameWithType: OS.GetSystemCaCertificates()
+  fullName: Godot.OS.GetSystemCaCertificates()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetSystemCaCertificates()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetSystemCaCertificates() As String
+  overload: Godot.OS.GetSystemCaCertificates*
+- uid: Godot.OS.GetConnectedMidiInputs
+  commentId: M:Godot.OS.GetConnectedMidiInputs
+  id: GetConnectedMidiInputs
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetConnectedMidiInputs()
+  nameWithType: OS.GetConnectedMidiInputs()
+  fullName: Godot.OS.GetConnectedMidiInputs()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] GetConnectedMidiInputs()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetConnectedMidiInputs() As String()
+  overload: Godot.OS.GetConnectedMidiInputs*
+- uid: Godot.OS.OpenMidiInputs
+  commentId: M:Godot.OS.OpenMidiInputs
+  id: OpenMidiInputs
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: OpenMidiInputs()
+  nameWithType: OS.OpenMidiInputs()
+  fullName: Godot.OS.OpenMidiInputs()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void OpenMidiInputs()
+    content.vb: Public Shared Sub OpenMidiInputs()
+  overload: Godot.OS.OpenMidiInputs*
+- uid: Godot.OS.CloseMidiInputs
+  commentId: M:Godot.OS.CloseMidiInputs
+  id: CloseMidiInputs
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: CloseMidiInputs()
+  nameWithType: OS.CloseMidiInputs()
+  fullName: Godot.OS.CloseMidiInputs()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void CloseMidiInputs()
+    content.vb: Public Shared Sub CloseMidiInputs()
+  overload: Godot.OS.CloseMidiInputs*
+- uid: Godot.OS.Alert(System.String,System.String)
+  commentId: M:Godot.OS.Alert(System.String,System.String)
+  id: Alert(System.String,System.String)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: Alert(string, string)
+  nameWithType: OS.Alert(string, string)
+  fullName: Godot.OS.Alert(string, string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void Alert(string text, string title = "Alert!")
+    parameters:
+    - id: text
+      type: System.String
+    - id: title
+      type: System.String
+    content.vb: Public Shared Sub Alert(text As String, title As String = "Alert!")
+  overload: Godot.OS.Alert*
+  nameWithType.vb: OS.Alert(String, String)
+  fullName.vb: Godot.OS.Alert(String, String)
+  name.vb: Alert(String, String)
+- uid: Godot.OS.Crash(System.String)
+  commentId: M:Godot.OS.Crash(System.String)
+  id: Crash(System.String)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: Crash(string)
+  nameWithType: OS.Crash(string)
+  fullName: Godot.OS.Crash(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void Crash(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Shared Sub Crash(message As String)
+  overload: Godot.OS.Crash*
+  nameWithType.vb: OS.Crash(String)
+  fullName.vb: Godot.OS.Crash(String)
+  name.vb: Crash(String)
+- uid: Godot.OS.GetProcessorCount
+  commentId: M:Godot.OS.GetProcessorCount
+  id: GetProcessorCount
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetProcessorCount()
+  nameWithType: OS.GetProcessorCount()
+  fullName: Godot.OS.GetProcessorCount()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int GetProcessorCount()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetProcessorCount() As Integer
+  overload: Godot.OS.GetProcessorCount*
+- uid: Godot.OS.GetProcessorName
+  commentId: M:Godot.OS.GetProcessorName
+  id: GetProcessorName
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetProcessorName()
+  nameWithType: OS.GetProcessorName()
+  fullName: Godot.OS.GetProcessorName()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetProcessorName()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetProcessorName() As String
+  overload: Godot.OS.GetProcessorName*
+- uid: Godot.OS.GetSystemFonts
+  commentId: M:Godot.OS.GetSystemFonts
+  id: GetSystemFonts
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetSystemFonts()
+  nameWithType: OS.GetSystemFonts()
+  fullName: Godot.OS.GetSystemFonts()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] GetSystemFonts()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetSystemFonts() As String()
+  overload: Godot.OS.GetSystemFonts*
+- uid: Godot.OS.GetSystemFontPath(System.String,System.Int32,System.Int32,System.Boolean)
+  commentId: M:Godot.OS.GetSystemFontPath(System.String,System.Int32,System.Int32,System.Boolean)
+  id: GetSystemFontPath(System.String,System.Int32,System.Int32,System.Boolean)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetSystemFontPath(string, int, int, bool)
+  nameWithType: OS.GetSystemFontPath(string, int, int, bool)
+  fullName: Godot.OS.GetSystemFontPath(string, int, int, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetSystemFontPath(string fontName, int weight = 400, int stretch = 100, bool italic = false)
+    parameters:
+    - id: fontName
+      type: System.String
+    - id: weight
+      type: System.Int32
+    - id: stretch
+      type: System.Int32
+    - id: italic
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetSystemFontPath(fontName As String, weight As Integer = 400, stretch As Integer = 100, italic As Boolean = False) As String
+  overload: Godot.OS.GetSystemFontPath*
+  nameWithType.vb: OS.GetSystemFontPath(String, Integer, Integer, Boolean)
+  fullName.vb: Godot.OS.GetSystemFontPath(String, Integer, Integer, Boolean)
+  name.vb: GetSystemFontPath(String, Integer, Integer, Boolean)
+- uid: Godot.OS.GetSystemFontPathForText(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Boolean)
+  commentId: M:Godot.OS.GetSystemFontPathForText(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Boolean)
+  id: GetSystemFontPathForText(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Boolean)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetSystemFontPathForText(string, string, string, string, int, int, bool)
+  nameWithType: OS.GetSystemFontPathForText(string, string, string, string, int, int, bool)
+  fullName: Godot.OS.GetSystemFontPathForText(string, string, string, string, int, int, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] GetSystemFontPathForText(string fontName, string text, string locale = "", string script = "", int weight = 400, int stretch = 100, bool italic = false)
+    parameters:
+    - id: fontName
+      type: System.String
+    - id: text
+      type: System.String
+    - id: locale
+      type: System.String
+    - id: script
+      type: System.String
+    - id: weight
+      type: System.Int32
+    - id: stretch
+      type: System.Int32
+    - id: italic
+      type: System.Boolean
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetSystemFontPathForText(fontName As String, text As String, locale As String = "", script As String = "", weight As Integer = 400, stretch As Integer = 100, italic As Boolean = False) As String()
+  overload: Godot.OS.GetSystemFontPathForText*
+  nameWithType.vb: OS.GetSystemFontPathForText(String, String, String, String, Integer, Integer, Boolean)
+  fullName.vb: Godot.OS.GetSystemFontPathForText(String, String, String, String, Integer, Integer, Boolean)
+  name.vb: GetSystemFontPathForText(String, String, String, String, Integer, Integer, Boolean)
+- uid: Godot.OS.GetExecutablePath
+  commentId: M:Godot.OS.GetExecutablePath
+  id: GetExecutablePath
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetExecutablePath()
+  nameWithType: OS.GetExecutablePath()
+  fullName: Godot.OS.GetExecutablePath()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetExecutablePath()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetExecutablePath() As String
+  overload: Godot.OS.GetExecutablePath*
+- uid: Godot.OS.ReadStringFromStdIn(System.Int64)
+  commentId: M:Godot.OS.ReadStringFromStdIn(System.Int64)
+  id: ReadStringFromStdIn(System.Int64)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: ReadStringFromStdIn(long)
+  nameWithType: OS.ReadStringFromStdIn(long)
+  fullName: Godot.OS.ReadStringFromStdIn(long)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string ReadStringFromStdIn(long bufferSize = 1024)
+    parameters:
+    - id: bufferSize
+      type: System.Int64
+    return:
+      type: System.String
+    content.vb: Public Shared Function ReadStringFromStdIn(bufferSize As Long = 1024) As String
+  overload: Godot.OS.ReadStringFromStdIn*
+  nameWithType.vb: OS.ReadStringFromStdIn(Long)
+  fullName.vb: Godot.OS.ReadStringFromStdIn(Long)
+  name.vb: ReadStringFromStdIn(Long)
+- uid: Godot.OS.ReadBufferFromStdIn(System.Int64)
+  commentId: M:Godot.OS.ReadBufferFromStdIn(System.Int64)
+  id: ReadBufferFromStdIn(System.Int64)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: ReadBufferFromStdIn(long)
+  nameWithType: OS.ReadBufferFromStdIn(long)
+  fullName: Godot.OS.ReadBufferFromStdIn(long)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static byte[] ReadBufferFromStdIn(long bufferSize = 1024)
+    parameters:
+    - id: bufferSize
+      type: System.Int64
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function ReadBufferFromStdIn(bufferSize As Long = 1024) As Byte()
+  overload: Godot.OS.ReadBufferFromStdIn*
+  nameWithType.vb: OS.ReadBufferFromStdIn(Long)
+  fullName.vb: Godot.OS.ReadBufferFromStdIn(Long)
+  name.vb: ReadBufferFromStdIn(Long)
+- uid: Godot.OS.GetStdInType
+  commentId: M:Godot.OS.GetStdInType
+  id: GetStdInType
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetStdInType()
+  nameWithType: OS.GetStdInType()
+  fullName: Godot.OS.GetStdInType()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static OS.StdHandleType GetStdInType()
+    return:
+      type: Godot.OS.StdHandleType
+    content.vb: Public Shared Function GetStdInType() As OS.StdHandleType
+  overload: Godot.OS.GetStdInType*
+- uid: Godot.OS.GetStdOutType
+  commentId: M:Godot.OS.GetStdOutType
+  id: GetStdOutType
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetStdOutType()
+  nameWithType: OS.GetStdOutType()
+  fullName: Godot.OS.GetStdOutType()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static OS.StdHandleType GetStdOutType()
+    return:
+      type: Godot.OS.StdHandleType
+    content.vb: Public Shared Function GetStdOutType() As OS.StdHandleType
+  overload: Godot.OS.GetStdOutType*
+- uid: Godot.OS.GetStderrType
+  commentId: M:Godot.OS.GetStderrType
+  id: GetStderrType
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetStderrType()
+  nameWithType: OS.GetStderrType()
+  fullName: Godot.OS.GetStderrType()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static OS.StdHandleType GetStderrType()
+    return:
+      type: Godot.OS.StdHandleType
+    content.vb: Public Shared Function GetStderrType() As OS.StdHandleType
+  overload: Godot.OS.GetStderrType*
+- uid: Godot.OS.Execute(System.String,System.String[],Godot.Collections.Array,System.Boolean,System.Boolean)
+  commentId: M:Godot.OS.Execute(System.String,System.String[],Godot.Collections.Array,System.Boolean,System.Boolean)
+  id: Execute(System.String,System.String[],Godot.Collections.Array,System.Boolean,System.Boolean)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: Execute(string, string[], Array, bool, bool)
+  nameWithType: OS.Execute(string, string[], Array, bool, bool)
+  fullName: Godot.OS.Execute(string, string[], Godot.Collections.Array, bool, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int Execute(string path, string[] arguments, Array output = null, bool readStderr = false, bool openConsole = false)
+    parameters:
+    - id: path
+      type: System.String
+    - id: arguments
+      type: System.String[]
+    - id: output
+      type: Godot.Collections.Array
+    - id: readStderr
+      type: System.Boolean
+    - id: openConsole
+      type: System.Boolean
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Execute(path As String, arguments As String(), output As Array = Nothing, readStderr As Boolean = False, openConsole As Boolean = False) As Integer
+  overload: Godot.OS.Execute*
+  nameWithType.vb: OS.Execute(String, String(), Array, Boolean, Boolean)
+  fullName.vb: Godot.OS.Execute(String, String(), Godot.Collections.Array, Boolean, Boolean)
+  name.vb: Execute(String, String(), Array, Boolean, Boolean)
+- uid: Godot.OS.Execute(System.String,System.ReadOnlySpan{System.String},Godot.Collections.Array,System.Boolean,System.Boolean)
+  commentId: M:Godot.OS.Execute(System.String,System.ReadOnlySpan{System.String},Godot.Collections.Array,System.Boolean,System.Boolean)
+  id: Execute(System.String,System.ReadOnlySpan{System.String},Godot.Collections.Array,System.Boolean,System.Boolean)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: Execute(string, ReadOnlySpan<string>, Array, bool, bool)
+  nameWithType: OS.Execute(string, ReadOnlySpan<string>, Array, bool, bool)
+  fullName: Godot.OS.Execute(string, System.ReadOnlySpan<string>, Godot.Collections.Array, bool, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int Execute(string path, ReadOnlySpan<string> arguments, Array output, bool readStderr, bool openConsole)
+    parameters:
+    - id: path
+      type: System.String
+    - id: arguments
+      type: System.ReadOnlySpan{System.String}
+    - id: output
+      type: Godot.Collections.Array
+    - id: readStderr
+      type: System.Boolean
+    - id: openConsole
+      type: System.Boolean
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Execute(path As String, arguments As ReadOnlySpan(Of String), output As Array, readStderr As Boolean, openConsole As Boolean) As Integer
+  overload: Godot.OS.Execute*
+  nameWithType.vb: OS.Execute(String, ReadOnlySpan(Of String), Array, Boolean, Boolean)
+  fullName.vb: Godot.OS.Execute(String, System.ReadOnlySpan(Of String), Godot.Collections.Array, Boolean, Boolean)
+  name.vb: Execute(String, ReadOnlySpan(Of String), Array, Boolean, Boolean)
+- uid: Godot.OS.ExecuteWithPipe(System.String,System.String[],System.Boolean)
+  commentId: M:Godot.OS.ExecuteWithPipe(System.String,System.String[],System.Boolean)
+  id: ExecuteWithPipe(System.String,System.String[],System.Boolean)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: ExecuteWithPipe(string, string[], bool)
+  nameWithType: OS.ExecuteWithPipe(string, string[], bool)
+  fullName: Godot.OS.ExecuteWithPipe(string, string[], bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Dictionary ExecuteWithPipe(string path, string[] arguments, bool blocking = true)
+    parameters:
+    - id: path
+      type: System.String
+    - id: arguments
+      type: System.String[]
+    - id: blocking
+      type: System.Boolean
+    return:
+      type: Godot.Collections.Dictionary
+    content.vb: Public Shared Function ExecuteWithPipe(path As String, arguments As String(), blocking As Boolean = True) As Dictionary
+  overload: Godot.OS.ExecuteWithPipe*
+  nameWithType.vb: OS.ExecuteWithPipe(String, String(), Boolean)
+  fullName.vb: Godot.OS.ExecuteWithPipe(String, String(), Boolean)
+  name.vb: ExecuteWithPipe(String, String(), Boolean)
+- uid: Godot.OS.ExecuteWithPipe(System.String,System.ReadOnlySpan{System.String},System.Boolean)
+  commentId: M:Godot.OS.ExecuteWithPipe(System.String,System.ReadOnlySpan{System.String},System.Boolean)
+  id: ExecuteWithPipe(System.String,System.ReadOnlySpan{System.String},System.Boolean)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: ExecuteWithPipe(string, ReadOnlySpan<string>, bool)
+  nameWithType: OS.ExecuteWithPipe(string, ReadOnlySpan<string>, bool)
+  fullName: Godot.OS.ExecuteWithPipe(string, System.ReadOnlySpan<string>, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Dictionary ExecuteWithPipe(string path, ReadOnlySpan<string> arguments, bool blocking)
+    parameters:
+    - id: path
+      type: System.String
+    - id: arguments
+      type: System.ReadOnlySpan{System.String}
+    - id: blocking
+      type: System.Boolean
+    return:
+      type: Godot.Collections.Dictionary
+    content.vb: Public Shared Function ExecuteWithPipe(path As String, arguments As ReadOnlySpan(Of String), blocking As Boolean) As Dictionary
+  overload: Godot.OS.ExecuteWithPipe*
+  nameWithType.vb: OS.ExecuteWithPipe(String, ReadOnlySpan(Of String), Boolean)
+  fullName.vb: Godot.OS.ExecuteWithPipe(String, System.ReadOnlySpan(Of String), Boolean)
+  name.vb: ExecuteWithPipe(String, ReadOnlySpan(Of String), Boolean)
+- uid: Godot.OS.CreateProcess(System.String,System.String[],System.Boolean)
+  commentId: M:Godot.OS.CreateProcess(System.String,System.String[],System.Boolean)
+  id: CreateProcess(System.String,System.String[],System.Boolean)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: CreateProcess(string, string[], bool)
+  nameWithType: OS.CreateProcess(string, string[], bool)
+  fullName: Godot.OS.CreateProcess(string, string[], bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int CreateProcess(string path, string[] arguments, bool openConsole = false)
+    parameters:
+    - id: path
+      type: System.String
+    - id: arguments
+      type: System.String[]
+    - id: openConsole
+      type: System.Boolean
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function CreateProcess(path As String, arguments As String(), openConsole As Boolean = False) As Integer
+  overload: Godot.OS.CreateProcess*
+  nameWithType.vb: OS.CreateProcess(String, String(), Boolean)
+  fullName.vb: Godot.OS.CreateProcess(String, String(), Boolean)
+  name.vb: CreateProcess(String, String(), Boolean)
+- uid: Godot.OS.CreateProcess(System.String,System.ReadOnlySpan{System.String},System.Boolean)
+  commentId: M:Godot.OS.CreateProcess(System.String,System.ReadOnlySpan{System.String},System.Boolean)
+  id: CreateProcess(System.String,System.ReadOnlySpan{System.String},System.Boolean)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: CreateProcess(string, ReadOnlySpan<string>, bool)
+  nameWithType: OS.CreateProcess(string, ReadOnlySpan<string>, bool)
+  fullName: Godot.OS.CreateProcess(string, System.ReadOnlySpan<string>, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int CreateProcess(string path, ReadOnlySpan<string> arguments, bool openConsole)
+    parameters:
+    - id: path
+      type: System.String
+    - id: arguments
+      type: System.ReadOnlySpan{System.String}
+    - id: openConsole
+      type: System.Boolean
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function CreateProcess(path As String, arguments As ReadOnlySpan(Of String), openConsole As Boolean) As Integer
+  overload: Godot.OS.CreateProcess*
+  nameWithType.vb: OS.CreateProcess(String, ReadOnlySpan(Of String), Boolean)
+  fullName.vb: Godot.OS.CreateProcess(String, System.ReadOnlySpan(Of String), Boolean)
+  name.vb: CreateProcess(String, ReadOnlySpan(Of String), Boolean)
+- uid: Godot.OS.CreateInstance(System.String[])
+  commentId: M:Godot.OS.CreateInstance(System.String[])
+  id: CreateInstance(System.String[])
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: CreateInstance(string[])
+  nameWithType: OS.CreateInstance(string[])
+  fullName: Godot.OS.CreateInstance(string[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int CreateInstance(string[] arguments)
+    parameters:
+    - id: arguments
+      type: System.String[]
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function CreateInstance(arguments As String()) As Integer
+  overload: Godot.OS.CreateInstance*
+  nameWithType.vb: OS.CreateInstance(String())
+  fullName.vb: Godot.OS.CreateInstance(String())
+  name.vb: CreateInstance(String())
+- uid: Godot.OS.CreateInstance(System.ReadOnlySpan{System.String})
+  commentId: M:Godot.OS.CreateInstance(System.ReadOnlySpan{System.String})
+  id: CreateInstance(System.ReadOnlySpan{System.String})
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: CreateInstance(ReadOnlySpan<string>)
+  nameWithType: OS.CreateInstance(ReadOnlySpan<string>)
+  fullName: Godot.OS.CreateInstance(System.ReadOnlySpan<string>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int CreateInstance(ReadOnlySpan<string> arguments)
+    parameters:
+    - id: arguments
+      type: System.ReadOnlySpan{System.String}
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function CreateInstance(arguments As ReadOnlySpan(Of String)) As Integer
+  overload: Godot.OS.CreateInstance*
+  nameWithType.vb: OS.CreateInstance(ReadOnlySpan(Of String))
+  fullName.vb: Godot.OS.CreateInstance(System.ReadOnlySpan(Of String))
+  name.vb: CreateInstance(ReadOnlySpan(Of String))
+- uid: Godot.OS.OpenWithProgram(System.String,System.String[])
+  commentId: M:Godot.OS.OpenWithProgram(System.String,System.String[])
+  id: OpenWithProgram(System.String,System.String[])
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: OpenWithProgram(string, string[])
+  nameWithType: OS.OpenWithProgram(string, string[])
+  fullName: Godot.OS.OpenWithProgram(string, string[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Error OpenWithProgram(string programPath, string[] paths)
+    parameters:
+    - id: programPath
+      type: System.String
+    - id: paths
+      type: System.String[]
+    return:
+      type: Godot.Error
+    content.vb: Public Shared Function OpenWithProgram(programPath As String, paths As String()) As [Error]
+  overload: Godot.OS.OpenWithProgram*
+  nameWithType.vb: OS.OpenWithProgram(String, String())
+  fullName.vb: Godot.OS.OpenWithProgram(String, String())
+  name.vb: OpenWithProgram(String, String())
+- uid: Godot.OS.OpenWithProgram(System.String,System.ReadOnlySpan{System.String})
+  commentId: M:Godot.OS.OpenWithProgram(System.String,System.ReadOnlySpan{System.String})
+  id: OpenWithProgram(System.String,System.ReadOnlySpan{System.String})
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: OpenWithProgram(string, ReadOnlySpan<string>)
+  nameWithType: OS.OpenWithProgram(string, ReadOnlySpan<string>)
+  fullName: Godot.OS.OpenWithProgram(string, System.ReadOnlySpan<string>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Error OpenWithProgram(string programPath, ReadOnlySpan<string> paths)
+    parameters:
+    - id: programPath
+      type: System.String
+    - id: paths
+      type: System.ReadOnlySpan{System.String}
+    return:
+      type: Godot.Error
+    content.vb: Public Shared Function OpenWithProgram(programPath As String, paths As ReadOnlySpan(Of String)) As [Error]
+  overload: Godot.OS.OpenWithProgram*
+  nameWithType.vb: OS.OpenWithProgram(String, ReadOnlySpan(Of String))
+  fullName.vb: Godot.OS.OpenWithProgram(String, System.ReadOnlySpan(Of String))
+  name.vb: OpenWithProgram(String, ReadOnlySpan(Of String))
+- uid: Godot.OS.Kill(System.Int32)
+  commentId: M:Godot.OS.Kill(System.Int32)
+  id: Kill(System.Int32)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: Kill(int)
+  nameWithType: OS.Kill(int)
+  fullName: Godot.OS.Kill(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Error Kill(int pid)
+    parameters:
+    - id: pid
+      type: System.Int32
+    return:
+      type: Godot.Error
+    content.vb: Public Shared Function Kill(pid As Integer) As [Error]
+  overload: Godot.OS.Kill*
+  nameWithType.vb: OS.Kill(Integer)
+  fullName.vb: Godot.OS.Kill(Integer)
+  name.vb: Kill(Integer)
+- uid: Godot.OS.ShellOpen(System.String)
+  commentId: M:Godot.OS.ShellOpen(System.String)
+  id: ShellOpen(System.String)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: ShellOpen(string)
+  nameWithType: OS.ShellOpen(string)
+  fullName: Godot.OS.ShellOpen(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Error ShellOpen(string uri)
+    parameters:
+    - id: uri
+      type: System.String
+    return:
+      type: Godot.Error
+    content.vb: Public Shared Function ShellOpen(uri As String) As [Error]
+  overload: Godot.OS.ShellOpen*
+  nameWithType.vb: OS.ShellOpen(String)
+  fullName.vb: Godot.OS.ShellOpen(String)
+  name.vb: ShellOpen(String)
+- uid: Godot.OS.ShellShowInFileManager(System.String,System.Boolean)
+  commentId: M:Godot.OS.ShellShowInFileManager(System.String,System.Boolean)
+  id: ShellShowInFileManager(System.String,System.Boolean)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: ShellShowInFileManager(string, bool)
+  nameWithType: OS.ShellShowInFileManager(string, bool)
+  fullName: Godot.OS.ShellShowInFileManager(string, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Error ShellShowInFileManager(string fileOrDirPath, bool openFolder = true)
+    parameters:
+    - id: fileOrDirPath
+      type: System.String
+    - id: openFolder
+      type: System.Boolean
+    return:
+      type: Godot.Error
+    content.vb: Public Shared Function ShellShowInFileManager(fileOrDirPath As String, openFolder As Boolean = True) As [Error]
+  overload: Godot.OS.ShellShowInFileManager*
+  nameWithType.vb: OS.ShellShowInFileManager(String, Boolean)
+  fullName.vb: Godot.OS.ShellShowInFileManager(String, Boolean)
+  name.vb: ShellShowInFileManager(String, Boolean)
+- uid: Godot.OS.IsProcessRunning(System.Int32)
+  commentId: M:Godot.OS.IsProcessRunning(System.Int32)
+  id: IsProcessRunning(System.Int32)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: IsProcessRunning(int)
+  nameWithType: OS.IsProcessRunning(int)
+  fullName: Godot.OS.IsProcessRunning(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsProcessRunning(int pid)
+    parameters:
+    - id: pid
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsProcessRunning(pid As Integer) As Boolean
+  overload: Godot.OS.IsProcessRunning*
+  nameWithType.vb: OS.IsProcessRunning(Integer)
+  fullName.vb: Godot.OS.IsProcessRunning(Integer)
+  name.vb: IsProcessRunning(Integer)
+- uid: Godot.OS.GetProcessExitCode(System.Int32)
+  commentId: M:Godot.OS.GetProcessExitCode(System.Int32)
+  id: GetProcessExitCode(System.Int32)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetProcessExitCode(int)
+  nameWithType: OS.GetProcessExitCode(int)
+  fullName: Godot.OS.GetProcessExitCode(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int GetProcessExitCode(int pid)
+    parameters:
+    - id: pid
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetProcessExitCode(pid As Integer) As Integer
+  overload: Godot.OS.GetProcessExitCode*
+  nameWithType.vb: OS.GetProcessExitCode(Integer)
+  fullName.vb: Godot.OS.GetProcessExitCode(Integer)
+  name.vb: GetProcessExitCode(Integer)
+- uid: Godot.OS.GetProcessId
+  commentId: M:Godot.OS.GetProcessId
+  id: GetProcessId
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetProcessId()
+  nameWithType: OS.GetProcessId()
+  fullName: Godot.OS.GetProcessId()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int GetProcessId()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetProcessId() As Integer
+  overload: Godot.OS.GetProcessId*
+- uid: Godot.OS.HasEnvironment(System.String)
+  commentId: M:Godot.OS.HasEnvironment(System.String)
+  id: HasEnvironment(System.String)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: HasEnvironment(string)
+  nameWithType: OS.HasEnvironment(string)
+  fullName: Godot.OS.HasEnvironment(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool HasEnvironment(string variable)
+    parameters:
+    - id: variable
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function HasEnvironment(variable As String) As Boolean
+  overload: Godot.OS.HasEnvironment*
+  nameWithType.vb: OS.HasEnvironment(String)
+  fullName.vb: Godot.OS.HasEnvironment(String)
+  name.vb: HasEnvironment(String)
+- uid: Godot.OS.GetEnvironment(System.String)
+  commentId: M:Godot.OS.GetEnvironment(System.String)
+  id: GetEnvironment(System.String)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetEnvironment(string)
+  nameWithType: OS.GetEnvironment(string)
+  fullName: Godot.OS.GetEnvironment(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetEnvironment(string variable)
+    parameters:
+    - id: variable
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetEnvironment(variable As String) As String
+  overload: Godot.OS.GetEnvironment*
+  nameWithType.vb: OS.GetEnvironment(String)
+  fullName.vb: Godot.OS.GetEnvironment(String)
+  name.vb: GetEnvironment(String)
+- uid: Godot.OS.SetEnvironment(System.String,System.String)
+  commentId: M:Godot.OS.SetEnvironment(System.String,System.String)
+  id: SetEnvironment(System.String,System.String)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: SetEnvironment(string, string)
+  nameWithType: OS.SetEnvironment(string, string)
+  fullName: Godot.OS.SetEnvironment(string, string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetEnvironment(string variable, string value)
+    parameters:
+    - id: variable
+      type: System.String
+    - id: value
+      type: System.String
+    content.vb: Public Shared Sub SetEnvironment(variable As String, value As String)
+  overload: Godot.OS.SetEnvironment*
+  nameWithType.vb: OS.SetEnvironment(String, String)
+  fullName.vb: Godot.OS.SetEnvironment(String, String)
+  name.vb: SetEnvironment(String, String)
+- uid: Godot.OS.UnsetEnvironment(System.String)
+  commentId: M:Godot.OS.UnsetEnvironment(System.String)
+  id: UnsetEnvironment(System.String)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: UnsetEnvironment(string)
+  nameWithType: OS.UnsetEnvironment(string)
+  fullName: Godot.OS.UnsetEnvironment(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void UnsetEnvironment(string variable)
+    parameters:
+    - id: variable
+      type: System.String
+    content.vb: Public Shared Sub UnsetEnvironment(variable As String)
+  overload: Godot.OS.UnsetEnvironment*
+  nameWithType.vb: OS.UnsetEnvironment(String)
+  fullName.vb: Godot.OS.UnsetEnvironment(String)
+  name.vb: UnsetEnvironment(String)
+- uid: Godot.OS.GetName
+  commentId: M:Godot.OS.GetName
+  id: GetName
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetName()
+  nameWithType: OS.GetName()
+  fullName: Godot.OS.GetName()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetName()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetName() As String
+  overload: Godot.OS.GetName*
+- uid: Godot.OS.GetDistributionName
+  commentId: M:Godot.OS.GetDistributionName
+  id: GetDistributionName
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetDistributionName()
+  nameWithType: OS.GetDistributionName()
+  fullName: Godot.OS.GetDistributionName()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetDistributionName()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetDistributionName() As String
+  overload: Godot.OS.GetDistributionName*
+- uid: Godot.OS.GetVersion
+  commentId: M:Godot.OS.GetVersion
+  id: GetVersion
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetVersion()
+  nameWithType: OS.GetVersion()
+  fullName: Godot.OS.GetVersion()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetVersion()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetVersion() As String
+  overload: Godot.OS.GetVersion*
+- uid: Godot.OS.GetVersionAlias
+  commentId: M:Godot.OS.GetVersionAlias
+  id: GetVersionAlias
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetVersionAlias()
+  nameWithType: OS.GetVersionAlias()
+  fullName: Godot.OS.GetVersionAlias()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetVersionAlias()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetVersionAlias() As String
+  overload: Godot.OS.GetVersionAlias*
+- uid: Godot.OS.GetCmdlineArgs
+  commentId: M:Godot.OS.GetCmdlineArgs
+  id: GetCmdlineArgs
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetCmdlineArgs()
+  nameWithType: OS.GetCmdlineArgs()
+  fullName: Godot.OS.GetCmdlineArgs()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] GetCmdlineArgs()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetCmdlineArgs() As String()
+  overload: Godot.OS.GetCmdlineArgs*
+- uid: Godot.OS.GetCmdlineUserArgs
+  commentId: M:Godot.OS.GetCmdlineUserArgs
+  id: GetCmdlineUserArgs
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetCmdlineUserArgs()
+  nameWithType: OS.GetCmdlineUserArgs()
+  fullName: Godot.OS.GetCmdlineUserArgs()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] GetCmdlineUserArgs()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetCmdlineUserArgs() As String()
+  overload: Godot.OS.GetCmdlineUserArgs*
+- uid: Godot.OS.GetVideoAdapterDriverInfo
+  commentId: M:Godot.OS.GetVideoAdapterDriverInfo
+  id: GetVideoAdapterDriverInfo
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetVideoAdapterDriverInfo()
+  nameWithType: OS.GetVideoAdapterDriverInfo()
+  fullName: Godot.OS.GetVideoAdapterDriverInfo()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] GetVideoAdapterDriverInfo()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetVideoAdapterDriverInfo() As String()
+  overload: Godot.OS.GetVideoAdapterDriverInfo*
+- uid: Godot.OS.SetRestartOnExit(System.Boolean,System.String[])
+  commentId: M:Godot.OS.SetRestartOnExit(System.Boolean,System.String[])
+  id: SetRestartOnExit(System.Boolean,System.String[])
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: SetRestartOnExit(bool, string[])
+  nameWithType: OS.SetRestartOnExit(bool, string[])
+  fullName: Godot.OS.SetRestartOnExit(bool, string[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetRestartOnExit(bool restart, string[] arguments = null)
+    parameters:
+    - id: restart
+      type: System.Boolean
+    - id: arguments
+      type: System.String[]
+    content.vb: Public Shared Sub SetRestartOnExit(restart As Boolean, arguments As String() = Nothing)
+  overload: Godot.OS.SetRestartOnExit*
+  nameWithType.vb: OS.SetRestartOnExit(Boolean, String())
+  fullName.vb: Godot.OS.SetRestartOnExit(Boolean, String())
+  name.vb: SetRestartOnExit(Boolean, String())
+- uid: Godot.OS.SetRestartOnExit(System.Boolean,System.ReadOnlySpan{System.String})
+  commentId: M:Godot.OS.SetRestartOnExit(System.Boolean,System.ReadOnlySpan{System.String})
+  id: SetRestartOnExit(System.Boolean,System.ReadOnlySpan{System.String})
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: SetRestartOnExit(bool, ReadOnlySpan<string>)
+  nameWithType: OS.SetRestartOnExit(bool, ReadOnlySpan<string>)
+  fullName: Godot.OS.SetRestartOnExit(bool, System.ReadOnlySpan<string>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetRestartOnExit(bool restart, ReadOnlySpan<string> arguments)
+    parameters:
+    - id: restart
+      type: System.Boolean
+    - id: arguments
+      type: System.ReadOnlySpan{System.String}
+    content.vb: Public Shared Sub SetRestartOnExit(restart As Boolean, arguments As ReadOnlySpan(Of String))
+  overload: Godot.OS.SetRestartOnExit*
+  nameWithType.vb: OS.SetRestartOnExit(Boolean, ReadOnlySpan(Of String))
+  fullName.vb: Godot.OS.SetRestartOnExit(Boolean, System.ReadOnlySpan(Of String))
+  name.vb: SetRestartOnExit(Boolean, ReadOnlySpan(Of String))
+- uid: Godot.OS.IsRestartOnExitSet
+  commentId: M:Godot.OS.IsRestartOnExitSet
+  id: IsRestartOnExitSet
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: IsRestartOnExitSet()
+  nameWithType: OS.IsRestartOnExitSet()
+  fullName: Godot.OS.IsRestartOnExitSet()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsRestartOnExitSet()
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsRestartOnExitSet() As Boolean
+  overload: Godot.OS.IsRestartOnExitSet*
+- uid: Godot.OS.GetRestartOnExitArguments
+  commentId: M:Godot.OS.GetRestartOnExitArguments
+  id: GetRestartOnExitArguments
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetRestartOnExitArguments()
+  nameWithType: OS.GetRestartOnExitArguments()
+  fullName: Godot.OS.GetRestartOnExitArguments()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] GetRestartOnExitArguments()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetRestartOnExitArguments() As String()
+  overload: Godot.OS.GetRestartOnExitArguments*
+- uid: Godot.OS.DelayUsec(System.Int32)
+  commentId: M:Godot.OS.DelayUsec(System.Int32)
+  id: DelayUsec(System.Int32)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: DelayUsec(int)
+  nameWithType: OS.DelayUsec(int)
+  fullName: Godot.OS.DelayUsec(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void DelayUsec(int usec)
+    parameters:
+    - id: usec
+      type: System.Int32
+    content.vb: Public Shared Sub DelayUsec(usec As Integer)
+  overload: Godot.OS.DelayUsec*
+  nameWithType.vb: OS.DelayUsec(Integer)
+  fullName.vb: Godot.OS.DelayUsec(Integer)
+  name.vb: DelayUsec(Integer)
+- uid: Godot.OS.DelayMsec(System.Int32)
+  commentId: M:Godot.OS.DelayMsec(System.Int32)
+  id: DelayMsec(System.Int32)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: DelayMsec(int)
+  nameWithType: OS.DelayMsec(int)
+  fullName: Godot.OS.DelayMsec(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void DelayMsec(int msec)
+    parameters:
+    - id: msec
+      type: System.Int32
+    content.vb: Public Shared Sub DelayMsec(msec As Integer)
+  overload: Godot.OS.DelayMsec*
+  nameWithType.vb: OS.DelayMsec(Integer)
+  fullName.vb: Godot.OS.DelayMsec(Integer)
+  name.vb: DelayMsec(Integer)
+- uid: Godot.OS.GetLocale
+  commentId: M:Godot.OS.GetLocale
+  id: GetLocale
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetLocale()
+  nameWithType: OS.GetLocale()
+  fullName: Godot.OS.GetLocale()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetLocale()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetLocale() As String
+  overload: Godot.OS.GetLocale*
+- uid: Godot.OS.GetLocaleLanguage
+  commentId: M:Godot.OS.GetLocaleLanguage
+  id: GetLocaleLanguage
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetLocaleLanguage()
+  nameWithType: OS.GetLocaleLanguage()
+  fullName: Godot.OS.GetLocaleLanguage()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetLocaleLanguage()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetLocaleLanguage() As String
+  overload: Godot.OS.GetLocaleLanguage*
+- uid: Godot.OS.GetModelName
+  commentId: M:Godot.OS.GetModelName
+  id: GetModelName
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetModelName()
+  nameWithType: OS.GetModelName()
+  fullName: Godot.OS.GetModelName()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetModelName()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetModelName() As String
+  overload: Godot.OS.GetModelName*
+- uid: Godot.OS.IsUserfsPersistent
+  commentId: M:Godot.OS.IsUserfsPersistent
+  id: IsUserfsPersistent
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: IsUserfsPersistent()
+  nameWithType: OS.IsUserfsPersistent()
+  fullName: Godot.OS.IsUserfsPersistent()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsUserfsPersistent()
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsUserfsPersistent() As Boolean
+  overload: Godot.OS.IsUserfsPersistent*
+- uid: Godot.OS.IsStdOutVerbose
+  commentId: M:Godot.OS.IsStdOutVerbose
+  id: IsStdOutVerbose
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: IsStdOutVerbose()
+  nameWithType: OS.IsStdOutVerbose()
+  fullName: Godot.OS.IsStdOutVerbose()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsStdOutVerbose()
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsStdOutVerbose() As Boolean
+  overload: Godot.OS.IsStdOutVerbose*
+- uid: Godot.OS.IsDebugBuild
+  commentId: M:Godot.OS.IsDebugBuild
+  id: IsDebugBuild
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: IsDebugBuild()
+  nameWithType: OS.IsDebugBuild()
+  fullName: Godot.OS.IsDebugBuild()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsDebugBuild()
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsDebugBuild() As Boolean
+  overload: Godot.OS.IsDebugBuild*
+- uid: Godot.OS.GetStaticMemoryUsage
+  commentId: M:Godot.OS.GetStaticMemoryUsage
+  id: GetStaticMemoryUsage
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetStaticMemoryUsage()
+  nameWithType: OS.GetStaticMemoryUsage()
+  fullName: Godot.OS.GetStaticMemoryUsage()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static ulong GetStaticMemoryUsage()
+    return:
+      type: System.UInt64
+    content.vb: Public Shared Function GetStaticMemoryUsage() As ULong
+  overload: Godot.OS.GetStaticMemoryUsage*
+- uid: Godot.OS.GetStaticMemoryPeakUsage
+  commentId: M:Godot.OS.GetStaticMemoryPeakUsage
+  id: GetStaticMemoryPeakUsage
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetStaticMemoryPeakUsage()
+  nameWithType: OS.GetStaticMemoryPeakUsage()
+  fullName: Godot.OS.GetStaticMemoryPeakUsage()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static ulong GetStaticMemoryPeakUsage()
+    return:
+      type: System.UInt64
+    content.vb: Public Shared Function GetStaticMemoryPeakUsage() As ULong
+  overload: Godot.OS.GetStaticMemoryPeakUsage*
+- uid: Godot.OS.GetMemoryInfo
+  commentId: M:Godot.OS.GetMemoryInfo
+  id: GetMemoryInfo
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetMemoryInfo()
+  nameWithType: OS.GetMemoryInfo()
+  fullName: Godot.OS.GetMemoryInfo()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Dictionary GetMemoryInfo()
+    return:
+      type: Godot.Collections.Dictionary
+    content.vb: Public Shared Function GetMemoryInfo() As Dictionary
+  overload: Godot.OS.GetMemoryInfo*
+- uid: Godot.OS.MoveToTrash(System.String)
+  commentId: M:Godot.OS.MoveToTrash(System.String)
+  id: MoveToTrash(System.String)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: MoveToTrash(string)
+  nameWithType: OS.MoveToTrash(string)
+  fullName: Godot.OS.MoveToTrash(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Error MoveToTrash(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: Godot.Error
+    content.vb: Public Shared Function MoveToTrash(path As String) As [Error]
+  overload: Godot.OS.MoveToTrash*
+  nameWithType.vb: OS.MoveToTrash(String)
+  fullName.vb: Godot.OS.MoveToTrash(String)
+  name.vb: MoveToTrash(String)
+- uid: Godot.OS.GetUserDataDir
+  commentId: M:Godot.OS.GetUserDataDir
+  id: GetUserDataDir
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetUserDataDir()
+  nameWithType: OS.GetUserDataDir()
+  fullName: Godot.OS.GetUserDataDir()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetUserDataDir()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetUserDataDir() As String
+  overload: Godot.OS.GetUserDataDir*
+- uid: Godot.OS.GetSystemDir(Godot.OS.SystemDir,System.Boolean)
+  commentId: M:Godot.OS.GetSystemDir(Godot.OS.SystemDir,System.Boolean)
+  id: GetSystemDir(Godot.OS.SystemDir,System.Boolean)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetSystemDir(SystemDir, bool)
+  nameWithType: OS.GetSystemDir(OS.SystemDir, bool)
+  fullName: Godot.OS.GetSystemDir(Godot.OS.SystemDir, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetSystemDir(OS.SystemDir dir, bool sharedStorage = true)
+    parameters:
+    - id: dir
+      type: Godot.OS.SystemDir
+    - id: sharedStorage
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetSystemDir(dir As OS.SystemDir, sharedStorage As Boolean = True) As String
+  overload: Godot.OS.GetSystemDir*
+  nameWithType.vb: OS.GetSystemDir(OS.SystemDir, Boolean)
+  fullName.vb: Godot.OS.GetSystemDir(Godot.OS.SystemDir, Boolean)
+  name.vb: GetSystemDir(SystemDir, Boolean)
+- uid: Godot.OS.GetConfigDir
+  commentId: M:Godot.OS.GetConfigDir
+  id: GetConfigDir
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetConfigDir()
+  nameWithType: OS.GetConfigDir()
+  fullName: Godot.OS.GetConfigDir()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetConfigDir()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetConfigDir() As String
+  overload: Godot.OS.GetConfigDir*
+- uid: Godot.OS.GetDataDir
+  commentId: M:Godot.OS.GetDataDir
+  id: GetDataDir
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetDataDir()
+  nameWithType: OS.GetDataDir()
+  fullName: Godot.OS.GetDataDir()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetDataDir()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetDataDir() As String
+  overload: Godot.OS.GetDataDir*
+- uid: Godot.OS.GetCacheDir
+  commentId: M:Godot.OS.GetCacheDir
+  id: GetCacheDir
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetCacheDir()
+  nameWithType: OS.GetCacheDir()
+  fullName: Godot.OS.GetCacheDir()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetCacheDir()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetCacheDir() As String
+  overload: Godot.OS.GetCacheDir*
+- uid: Godot.OS.GetTempDir
+  commentId: M:Godot.OS.GetTempDir
+  id: GetTempDir
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetTempDir()
+  nameWithType: OS.GetTempDir()
+  fullName: Godot.OS.GetTempDir()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetTempDir()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetTempDir() As String
+  overload: Godot.OS.GetTempDir*
+- uid: Godot.OS.GetUniqueId
+  commentId: M:Godot.OS.GetUniqueId
+  id: GetUniqueId
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetUniqueId()
+  nameWithType: OS.GetUniqueId()
+  fullName: Godot.OS.GetUniqueId()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetUniqueId()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetUniqueId() As String
+  overload: Godot.OS.GetUniqueId*
+- uid: Godot.OS.GetKeycodeString(Godot.Key)
+  commentId: M:Godot.OS.GetKeycodeString(Godot.Key)
+  id: GetKeycodeString(Godot.Key)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetKeycodeString(Key)
+  nameWithType: OS.GetKeycodeString(Key)
+  fullName: Godot.OS.GetKeycodeString(Godot.Key)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetKeycodeString(Key code)
+    parameters:
+    - id: code
+      type: Godot.Key
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetKeycodeString(code As Key) As String
+  overload: Godot.OS.GetKeycodeString*
+- uid: Godot.OS.IsKeycodeUnicode(System.Int64)
+  commentId: M:Godot.OS.IsKeycodeUnicode(System.Int64)
+  id: IsKeycodeUnicode(System.Int64)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: IsKeycodeUnicode(long)
+  nameWithType: OS.IsKeycodeUnicode(long)
+  fullName: Godot.OS.IsKeycodeUnicode(long)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsKeycodeUnicode(long code)
+    parameters:
+    - id: code
+      type: System.Int64
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsKeycodeUnicode(code As Long) As Boolean
+  overload: Godot.OS.IsKeycodeUnicode*
+  nameWithType.vb: OS.IsKeycodeUnicode(Long)
+  fullName.vb: Godot.OS.IsKeycodeUnicode(Long)
+  name.vb: IsKeycodeUnicode(Long)
+- uid: Godot.OS.FindKeycodeFromString(System.String)
+  commentId: M:Godot.OS.FindKeycodeFromString(System.String)
+  id: FindKeycodeFromString(System.String)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: FindKeycodeFromString(string)
+  nameWithType: OS.FindKeycodeFromString(string)
+  fullName: Godot.OS.FindKeycodeFromString(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Key FindKeycodeFromString(string @string)
+    parameters:
+    - id: string
+      type: System.String
+    return:
+      type: Godot.Key
+    content.vb: Public Shared Function FindKeycodeFromString([string] As String) As Key
+  overload: Godot.OS.FindKeycodeFromString*
+  nameWithType.vb: OS.FindKeycodeFromString(String)
+  fullName.vb: Godot.OS.FindKeycodeFromString(String)
+  name.vb: FindKeycodeFromString(String)
+- uid: Godot.OS.SetUseFileAccessSaveAndSwap(System.Boolean)
+  commentId: M:Godot.OS.SetUseFileAccessSaveAndSwap(System.Boolean)
+  id: SetUseFileAccessSaveAndSwap(System.Boolean)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: SetUseFileAccessSaveAndSwap(bool)
+  nameWithType: OS.SetUseFileAccessSaveAndSwap(bool)
+  fullName: Godot.OS.SetUseFileAccessSaveAndSwap(bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetUseFileAccessSaveAndSwap(bool enabled)
+    parameters:
+    - id: enabled
+      type: System.Boolean
+    content.vb: Public Shared Sub SetUseFileAccessSaveAndSwap(enabled As Boolean)
+  overload: Godot.OS.SetUseFileAccessSaveAndSwap*
+  nameWithType.vb: OS.SetUseFileAccessSaveAndSwap(Boolean)
+  fullName.vb: Godot.OS.SetUseFileAccessSaveAndSwap(Boolean)
+  name.vb: SetUseFileAccessSaveAndSwap(Boolean)
+- uid: Godot.OS.SetThreadName(System.String)
+  commentId: M:Godot.OS.SetThreadName(System.String)
+  id: SetThreadName(System.String)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: SetThreadName(string)
+  nameWithType: OS.SetThreadName(string)
+  fullName: Godot.OS.SetThreadName(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Error SetThreadName(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Godot.Error
+    content.vb: Public Shared Function SetThreadName(name As String) As [Error]
+  overload: Godot.OS.SetThreadName*
+  nameWithType.vb: OS.SetThreadName(String)
+  fullName.vb: Godot.OS.SetThreadName(String)
+  name.vb: SetThreadName(String)
+- uid: Godot.OS.GetThreadCallerId
+  commentId: M:Godot.OS.GetThreadCallerId
+  id: GetThreadCallerId
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetThreadCallerId()
+  nameWithType: OS.GetThreadCallerId()
+  fullName: Godot.OS.GetThreadCallerId()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static ulong GetThreadCallerId()
+    return:
+      type: System.UInt64
+    content.vb: Public Shared Function GetThreadCallerId() As ULong
+  overload: Godot.OS.GetThreadCallerId*
+- uid: Godot.OS.GetMainThreadId
+  commentId: M:Godot.OS.GetMainThreadId
+  id: GetMainThreadId
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetMainThreadId()
+  nameWithType: OS.GetMainThreadId()
+  fullName: Godot.OS.GetMainThreadId()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static ulong GetMainThreadId()
+    return:
+      type: System.UInt64
+    content.vb: Public Shared Function GetMainThreadId() As ULong
+  overload: Godot.OS.GetMainThreadId*
+- uid: Godot.OS.HasFeature(System.String)
+  commentId: M:Godot.OS.HasFeature(System.String)
+  id: HasFeature(System.String)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: HasFeature(string)
+  nameWithType: OS.HasFeature(string)
+  fullName: Godot.OS.HasFeature(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool HasFeature(string tagName)
+    parameters:
+    - id: tagName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function HasFeature(tagName As String) As Boolean
+  overload: Godot.OS.HasFeature*
+  nameWithType.vb: OS.HasFeature(String)
+  fullName.vb: Godot.OS.HasFeature(String)
+  name.vb: HasFeature(String)
+- uid: Godot.OS.IsSandboxed
+  commentId: M:Godot.OS.IsSandboxed
+  id: IsSandboxed
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: IsSandboxed()
+  nameWithType: OS.IsSandboxed()
+  fullName: Godot.OS.IsSandboxed()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsSandboxed()
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsSandboxed() As Boolean
+  overload: Godot.OS.IsSandboxed*
+- uid: Godot.OS.RequestPermission(System.String)
+  commentId: M:Godot.OS.RequestPermission(System.String)
+  id: RequestPermission(System.String)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: RequestPermission(string)
+  nameWithType: OS.RequestPermission(string)
+  fullName: Godot.OS.RequestPermission(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool RequestPermission(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function RequestPermission(name As String) As Boolean
+  overload: Godot.OS.RequestPermission*
+  nameWithType.vb: OS.RequestPermission(String)
+  fullName.vb: Godot.OS.RequestPermission(String)
+  name.vb: RequestPermission(String)
+- uid: Godot.OS.RequestPermissions
+  commentId: M:Godot.OS.RequestPermissions
+  id: RequestPermissions
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: RequestPermissions()
+  nameWithType: OS.RequestPermissions()
+  fullName: Godot.OS.RequestPermissions()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool RequestPermissions()
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function RequestPermissions() As Boolean
+  overload: Godot.OS.RequestPermissions*
+- uid: Godot.OS.GetGrantedPermissions
+  commentId: M:Godot.OS.GetGrantedPermissions
+  id: GetGrantedPermissions
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: GetGrantedPermissions()
+  nameWithType: OS.GetGrantedPermissions()
+  fullName: Godot.OS.GetGrantedPermissions()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] GetGrantedPermissions()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetGrantedPermissions() As String()
+  overload: Godot.OS.GetGrantedPermissions*
+- uid: Godot.OS.RevokeGrantedPermissions
+  commentId: M:Godot.OS.RevokeGrantedPermissions
+  id: RevokeGrantedPermissions
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: RevokeGrantedPermissions()
+  nameWithType: OS.RevokeGrantedPermissions()
+  fullName: Godot.OS.RevokeGrantedPermissions()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void RevokeGrantedPermissions()
+    content.vb: Public Shared Sub RevokeGrantedPermissions()
+  overload: Godot.OS.RevokeGrantedPermissions*
+- uid: Godot.OS.AddLogger(Godot.Logger)
+  commentId: M:Godot.OS.AddLogger(Godot.Logger)
+  id: AddLogger(Godot.Logger)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: AddLogger(Logger)
+  nameWithType: OS.AddLogger(Logger)
+  fullName: Godot.OS.AddLogger(Godot.Logger)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void AddLogger(Logger logger)
+    parameters:
+    - id: logger
+      type: Godot.Logger
+    content.vb: Public Shared Sub AddLogger(logger As Logger)
+  overload: Godot.OS.AddLogger*
+- uid: Godot.OS.RemoveLogger(Godot.Logger)
+  commentId: M:Godot.OS.RemoveLogger(Godot.Logger)
+  id: RemoveLogger(Godot.Logger)
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: RemoveLogger(Logger)
+  nameWithType: OS.RemoveLogger(Logger)
+  fullName: Godot.OS.RemoveLogger(Godot.Logger)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void RemoveLogger(Logger logger)
+    parameters:
+    - id: logger
+      type: Godot.Logger
+    content.vb: Public Shared Sub RemoveLogger(logger As Logger)
+  overload: Godot.OS.RemoveLogger*
+- uid: Godot.OS.LowProcessorUsageMode
+  commentId: P:Godot.OS.LowProcessorUsageMode
+  id: LowProcessorUsageMode
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: LowProcessorUsageMode
+  nameWithType: OS.LowProcessorUsageMode
+  fullName: Godot.OS.LowProcessorUsageMode
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool LowProcessorUsageMode { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property LowProcessorUsageMode As Boolean
+  overload: Godot.OS.LowProcessorUsageMode*
+- uid: Godot.OS.LowProcessorUsageModeSleepUsec
+  commentId: P:Godot.OS.LowProcessorUsageModeSleepUsec
+  id: LowProcessorUsageModeSleepUsec
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: LowProcessorUsageModeSleepUsec
+  nameWithType: OS.LowProcessorUsageModeSleepUsec
+  fullName: Godot.OS.LowProcessorUsageModeSleepUsec
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int LowProcessorUsageModeSleepUsec { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared Property LowProcessorUsageModeSleepUsec As Integer
+  overload: Godot.OS.LowProcessorUsageModeSleepUsec*
+- uid: Godot.OS.DeltaSmoothing
+  commentId: P:Godot.OS.DeltaSmoothing
+  id: DeltaSmoothing
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: DeltaSmoothing
+  nameWithType: OS.DeltaSmoothing
+  fullName: Godot.OS.DeltaSmoothing
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool DeltaSmoothing { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property DeltaSmoothing As Boolean
+  overload: Godot.OS.DeltaSmoothing*
+- uid: Godot.OS.Singleton
+  commentId: P:Godot.OS.Singleton
+  id: Singleton
+  parent: Godot.OS
+  langs:
+  - csharp
+  - vb
+  name: Singleton
+  nameWithType: OS.Singleton
+  fullName: Godot.OS.Singleton
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static OSInstance Singleton { get; }
+    parameters: []
+    return:
+      type: Godot.OSInstance
+    content.vb: Public Shared ReadOnly Property Singleton As OSInstance
+  overload: Godot.OS.Singleton*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.OS.GetEntropy*
+  commentId: Overload:Godot.OS.GetEntropy
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetEntropy_System_Int32_
+  name: GetEntropy
+  nameWithType: OS.GetEntropy
+  fullName: Godot.OS.GetEntropy
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: Godot.OS.GetSystemCaCertificates*
+  commentId: Overload:Godot.OS.GetSystemCaCertificates
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetSystemCaCertificates
+  name: GetSystemCaCertificates
+  nameWithType: OS.GetSystemCaCertificates
+  fullName: Godot.OS.GetSystemCaCertificates
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.OS.GetConnectedMidiInputs*
+  commentId: Overload:Godot.OS.GetConnectedMidiInputs
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetConnectedMidiInputs
+  name: GetConnectedMidiInputs
+  nameWithType: OS.GetConnectedMidiInputs
+  fullName: Godot.OS.GetConnectedMidiInputs
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Godot.OS.OpenMidiInputs*
+  commentId: Overload:Godot.OS.OpenMidiInputs
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_OpenMidiInputs
+  name: OpenMidiInputs
+  nameWithType: OS.OpenMidiInputs
+  fullName: Godot.OS.OpenMidiInputs
+- uid: Godot.OS.CloseMidiInputs*
+  commentId: Overload:Godot.OS.CloseMidiInputs
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_CloseMidiInputs
+  name: CloseMidiInputs
+  nameWithType: OS.CloseMidiInputs
+  fullName: Godot.OS.CloseMidiInputs
+- uid: Godot.OS.Alert*
+  commentId: Overload:Godot.OS.Alert
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_Alert_System_String_System_String_
+  name: Alert
+  nameWithType: OS.Alert
+  fullName: Godot.OS.Alert
+- uid: Godot.OS.Crash*
+  commentId: Overload:Godot.OS.Crash
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_Crash_System_String_
+  name: Crash
+  nameWithType: OS.Crash
+  fullName: Godot.OS.Crash
+- uid: Godot.OS.GetProcessorCount*
+  commentId: Overload:Godot.OS.GetProcessorCount
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetProcessorCount
+  name: GetProcessorCount
+  nameWithType: OS.GetProcessorCount
+  fullName: Godot.OS.GetProcessorCount
+- uid: Godot.OS.GetProcessorName*
+  commentId: Overload:Godot.OS.GetProcessorName
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetProcessorName
+  name: GetProcessorName
+  nameWithType: OS.GetProcessorName
+  fullName: Godot.OS.GetProcessorName
+- uid: Godot.OS.GetSystemFonts*
+  commentId: Overload:Godot.OS.GetSystemFonts
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetSystemFonts
+  name: GetSystemFonts
+  nameWithType: OS.GetSystemFonts
+  fullName: Godot.OS.GetSystemFonts
+- uid: Godot.OS.GetSystemFontPath*
+  commentId: Overload:Godot.OS.GetSystemFontPath
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetSystemFontPath_System_String_System_Int32_System_Int32_System_Boolean_
+  name: GetSystemFontPath
+  nameWithType: OS.GetSystemFontPath
+  fullName: Godot.OS.GetSystemFontPath
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.OS.GetSystemFontPathForText*
+  commentId: Overload:Godot.OS.GetSystemFontPathForText
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetSystemFontPathForText_System_String_System_String_System_String_System_String_System_Int32_System_Int32_System_Boolean_
+  name: GetSystemFontPathForText
+  nameWithType: OS.GetSystemFontPathForText
+  fullName: Godot.OS.GetSystemFontPathForText
+- uid: Godot.OS.GetExecutablePath*
+  commentId: Overload:Godot.OS.GetExecutablePath
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetExecutablePath
+  name: GetExecutablePath
+  nameWithType: OS.GetExecutablePath
+  fullName: Godot.OS.GetExecutablePath
+- uid: Godot.OS.ReadStringFromStdIn*
+  commentId: Overload:Godot.OS.ReadStringFromStdIn
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_ReadStringFromStdIn_System_Int64_
+  name: ReadStringFromStdIn
+  nameWithType: OS.ReadStringFromStdIn
+  fullName: Godot.OS.ReadStringFromStdIn
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Godot.OS.ReadBufferFromStdIn*
+  commentId: Overload:Godot.OS.ReadBufferFromStdIn
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_ReadBufferFromStdIn_System_Int64_
+  name: ReadBufferFromStdIn
+  nameWithType: OS.ReadBufferFromStdIn
+  fullName: Godot.OS.ReadBufferFromStdIn
+- uid: Godot.OS.GetStdInType*
+  commentId: Overload:Godot.OS.GetStdInType
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetStdInType
+  name: GetStdInType
+  nameWithType: OS.GetStdInType
+  fullName: Godot.OS.GetStdInType
+- uid: Godot.OS.StdHandleType
+  commentId: T:Godot.OS.StdHandleType
+  parent: Godot
+  isExternal: true
+  href: Godot.OS.html
+  name: OS.StdHandleType
+  nameWithType: OS.StdHandleType
+  fullName: Godot.OS.StdHandleType
+  spec.csharp:
+  - uid: Godot.OS
+    name: OS
+    isExternal: true
+    href: Godot.OS.html
+  - name: .
+  - uid: Godot.OS.StdHandleType
+    name: StdHandleType
+    isExternal: true
+    href: Godot.OS.StdHandleType.html
+  spec.vb:
+  - uid: Godot.OS
+    name: OS
+    isExternal: true
+    href: Godot.OS.html
+  - name: .
+  - uid: Godot.OS.StdHandleType
+    name: StdHandleType
+    isExternal: true
+    href: Godot.OS.StdHandleType.html
+- uid: Godot.OS.GetStdOutType*
+  commentId: Overload:Godot.OS.GetStdOutType
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetStdOutType
+  name: GetStdOutType
+  nameWithType: OS.GetStdOutType
+  fullName: Godot.OS.GetStdOutType
+- uid: Godot.OS.GetStderrType*
+  commentId: Overload:Godot.OS.GetStderrType
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetStderrType
+  name: GetStderrType
+  nameWithType: OS.GetStderrType
+  fullName: Godot.OS.GetStderrType
+- uid: Godot.OS.Execute*
+  commentId: Overload:Godot.OS.Execute
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_Execute_System_String_System_String___Godot_Collections_Array_System_Boolean_System_Boolean_
+  name: Execute
+  nameWithType: OS.Execute
+  fullName: Godot.OS.Execute
+- uid: Godot.Collections.Array
+  commentId: T:Godot.Collections.Array
+  parent: Godot.Collections
+  isExternal: true
+  href: Godot.Collections.Array.html
+  name: Array
+  nameWithType: Array
+  fullName: Godot.Collections.Array
+- uid: Godot.Collections
+  commentId: N:Godot.Collections
+  isExternal: true
+  href: Godot.html
+  name: Godot.Collections
+  nameWithType: Godot.Collections
+  fullName: Godot.Collections
+  spec.csharp:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+  spec.vb:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+- uid: System.ReadOnlySpan{System.String}
+  commentId: T:System.ReadOnlySpan{System.String}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<string>
+  nameWithType: ReadOnlySpan<string>
+  fullName: System.ReadOnlySpan<string>
+  nameWithType.vb: ReadOnlySpan(Of String)
+  fullName.vb: System.ReadOnlySpan(Of String)
+  name.vb: ReadOnlySpan(Of String)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.OS.ExecuteWithPipe*
+  commentId: Overload:Godot.OS.ExecuteWithPipe
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_ExecuteWithPipe_System_String_System_String___System_Boolean_
+  name: ExecuteWithPipe
+  nameWithType: OS.ExecuteWithPipe
+  fullName: Godot.OS.ExecuteWithPipe
+- uid: Godot.Collections.Dictionary
+  commentId: T:Godot.Collections.Dictionary
+  parent: Godot.Collections
+  isExternal: true
+  href: Godot.Collections.Dictionary.html
+  name: Dictionary
+  nameWithType: Dictionary
+  fullName: Godot.Collections.Dictionary
+- uid: Godot.OS.CreateProcess*
+  commentId: Overload:Godot.OS.CreateProcess
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_CreateProcess_System_String_System_String___System_Boolean_
+  name: CreateProcess
+  nameWithType: OS.CreateProcess
+  fullName: Godot.OS.CreateProcess
+- uid: Godot.OS.CreateInstance*
+  commentId: Overload:Godot.OS.CreateInstance
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_CreateInstance_System_String___
+  name: CreateInstance
+  nameWithType: OS.CreateInstance
+  fullName: Godot.OS.CreateInstance
+- uid: Godot.OS.OpenWithProgram*
+  commentId: Overload:Godot.OS.OpenWithProgram
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_OpenWithProgram_System_String_System_String___
+  name: OpenWithProgram
+  nameWithType: OS.OpenWithProgram
+  fullName: Godot.OS.OpenWithProgram
+- uid: Godot.Error
+  commentId: T:Godot.Error
+  parent: Godot
+  isExternal: true
+  href: Godot.Error.html
+  name: Error
+  nameWithType: Error
+  fullName: Godot.Error
+- uid: Godot.OS.Kill*
+  commentId: Overload:Godot.OS.Kill
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_Kill_System_Int32_
+  name: Kill
+  nameWithType: OS.Kill
+  fullName: Godot.OS.Kill
+- uid: Godot.OS.ShellOpen*
+  commentId: Overload:Godot.OS.ShellOpen
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_ShellOpen_System_String_
+  name: ShellOpen
+  nameWithType: OS.ShellOpen
+  fullName: Godot.OS.ShellOpen
+- uid: Godot.OS.ShellShowInFileManager*
+  commentId: Overload:Godot.OS.ShellShowInFileManager
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_ShellShowInFileManager_System_String_System_Boolean_
+  name: ShellShowInFileManager
+  nameWithType: OS.ShellShowInFileManager
+  fullName: Godot.OS.ShellShowInFileManager
+- uid: Godot.OS.IsProcessRunning*
+  commentId: Overload:Godot.OS.IsProcessRunning
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_IsProcessRunning_System_Int32_
+  name: IsProcessRunning
+  nameWithType: OS.IsProcessRunning
+  fullName: Godot.OS.IsProcessRunning
+- uid: Godot.OS.GetProcessExitCode*
+  commentId: Overload:Godot.OS.GetProcessExitCode
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetProcessExitCode_System_Int32_
+  name: GetProcessExitCode
+  nameWithType: OS.GetProcessExitCode
+  fullName: Godot.OS.GetProcessExitCode
+- uid: Godot.OS.GetProcessId*
+  commentId: Overload:Godot.OS.GetProcessId
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetProcessId
+  name: GetProcessId
+  nameWithType: OS.GetProcessId
+  fullName: Godot.OS.GetProcessId
+- uid: Godot.OS.HasEnvironment*
+  commentId: Overload:Godot.OS.HasEnvironment
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_HasEnvironment_System_String_
+  name: HasEnvironment
+  nameWithType: OS.HasEnvironment
+  fullName: Godot.OS.HasEnvironment
+- uid: Godot.OS.GetEnvironment*
+  commentId: Overload:Godot.OS.GetEnvironment
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetEnvironment_System_String_
+  name: GetEnvironment
+  nameWithType: OS.GetEnvironment
+  fullName: Godot.OS.GetEnvironment
+- uid: Godot.OS.SetEnvironment*
+  commentId: Overload:Godot.OS.SetEnvironment
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_SetEnvironment_System_String_System_String_
+  name: SetEnvironment
+  nameWithType: OS.SetEnvironment
+  fullName: Godot.OS.SetEnvironment
+- uid: Godot.OS.UnsetEnvironment*
+  commentId: Overload:Godot.OS.UnsetEnvironment
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_UnsetEnvironment_System_String_
+  name: UnsetEnvironment
+  nameWithType: OS.UnsetEnvironment
+  fullName: Godot.OS.UnsetEnvironment
+- uid: Godot.OS.GetName*
+  commentId: Overload:Godot.OS.GetName
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetName
+  name: GetName
+  nameWithType: OS.GetName
+  fullName: Godot.OS.GetName
+- uid: Godot.OS.GetDistributionName*
+  commentId: Overload:Godot.OS.GetDistributionName
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetDistributionName
+  name: GetDistributionName
+  nameWithType: OS.GetDistributionName
+  fullName: Godot.OS.GetDistributionName
+- uid: Godot.OS.GetVersion*
+  commentId: Overload:Godot.OS.GetVersion
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetVersion
+  name: GetVersion
+  nameWithType: OS.GetVersion
+  fullName: Godot.OS.GetVersion
+- uid: Godot.OS.GetVersionAlias*
+  commentId: Overload:Godot.OS.GetVersionAlias
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetVersionAlias
+  name: GetVersionAlias
+  nameWithType: OS.GetVersionAlias
+  fullName: Godot.OS.GetVersionAlias
+- uid: Godot.OS.GetCmdlineArgs*
+  commentId: Overload:Godot.OS.GetCmdlineArgs
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetCmdlineArgs
+  name: GetCmdlineArgs
+  nameWithType: OS.GetCmdlineArgs
+  fullName: Godot.OS.GetCmdlineArgs
+- uid: Godot.OS.GetCmdlineUserArgs*
+  commentId: Overload:Godot.OS.GetCmdlineUserArgs
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetCmdlineUserArgs
+  name: GetCmdlineUserArgs
+  nameWithType: OS.GetCmdlineUserArgs
+  fullName: Godot.OS.GetCmdlineUserArgs
+- uid: Godot.OS.GetVideoAdapterDriverInfo*
+  commentId: Overload:Godot.OS.GetVideoAdapterDriverInfo
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetVideoAdapterDriverInfo
+  name: GetVideoAdapterDriverInfo
+  nameWithType: OS.GetVideoAdapterDriverInfo
+  fullName: Godot.OS.GetVideoAdapterDriverInfo
+- uid: Godot.OS.SetRestartOnExit*
+  commentId: Overload:Godot.OS.SetRestartOnExit
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_SetRestartOnExit_System_Boolean_System_String___
+  name: SetRestartOnExit
+  nameWithType: OS.SetRestartOnExit
+  fullName: Godot.OS.SetRestartOnExit
+- uid: Godot.OS.IsRestartOnExitSet*
+  commentId: Overload:Godot.OS.IsRestartOnExitSet
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_IsRestartOnExitSet
+  name: IsRestartOnExitSet
+  nameWithType: OS.IsRestartOnExitSet
+  fullName: Godot.OS.IsRestartOnExitSet
+- uid: Godot.OS.GetRestartOnExitArguments*
+  commentId: Overload:Godot.OS.GetRestartOnExitArguments
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetRestartOnExitArguments
+  name: GetRestartOnExitArguments
+  nameWithType: OS.GetRestartOnExitArguments
+  fullName: Godot.OS.GetRestartOnExitArguments
+- uid: Godot.OS.DelayUsec*
+  commentId: Overload:Godot.OS.DelayUsec
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_DelayUsec_System_Int32_
+  name: DelayUsec
+  nameWithType: OS.DelayUsec
+  fullName: Godot.OS.DelayUsec
+- uid: Godot.OS.DelayMsec*
+  commentId: Overload:Godot.OS.DelayMsec
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_DelayMsec_System_Int32_
+  name: DelayMsec
+  nameWithType: OS.DelayMsec
+  fullName: Godot.OS.DelayMsec
+- uid: Godot.OS.GetLocale*
+  commentId: Overload:Godot.OS.GetLocale
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetLocale
+  name: GetLocale
+  nameWithType: OS.GetLocale
+  fullName: Godot.OS.GetLocale
+- uid: Godot.OS.GetLocaleLanguage*
+  commentId: Overload:Godot.OS.GetLocaleLanguage
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetLocaleLanguage
+  name: GetLocaleLanguage
+  nameWithType: OS.GetLocaleLanguage
+  fullName: Godot.OS.GetLocaleLanguage
+- uid: Godot.OS.GetModelName*
+  commentId: Overload:Godot.OS.GetModelName
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetModelName
+  name: GetModelName
+  nameWithType: OS.GetModelName
+  fullName: Godot.OS.GetModelName
+- uid: Godot.OS.IsUserfsPersistent*
+  commentId: Overload:Godot.OS.IsUserfsPersistent
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_IsUserfsPersistent
+  name: IsUserfsPersistent
+  nameWithType: OS.IsUserfsPersistent
+  fullName: Godot.OS.IsUserfsPersistent
+- uid: Godot.OS.IsStdOutVerbose*
+  commentId: Overload:Godot.OS.IsStdOutVerbose
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_IsStdOutVerbose
+  name: IsStdOutVerbose
+  nameWithType: OS.IsStdOutVerbose
+  fullName: Godot.OS.IsStdOutVerbose
+- uid: Godot.OS.IsDebugBuild*
+  commentId: Overload:Godot.OS.IsDebugBuild
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_IsDebugBuild
+  name: IsDebugBuild
+  nameWithType: OS.IsDebugBuild
+  fullName: Godot.OS.IsDebugBuild
+- uid: Godot.OS.GetStaticMemoryUsage*
+  commentId: Overload:Godot.OS.GetStaticMemoryUsage
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetStaticMemoryUsage
+  name: GetStaticMemoryUsage
+  nameWithType: OS.GetStaticMemoryUsage
+  fullName: Godot.OS.GetStaticMemoryUsage
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: Godot.OS.GetStaticMemoryPeakUsage*
+  commentId: Overload:Godot.OS.GetStaticMemoryPeakUsage
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetStaticMemoryPeakUsage
+  name: GetStaticMemoryPeakUsage
+  nameWithType: OS.GetStaticMemoryPeakUsage
+  fullName: Godot.OS.GetStaticMemoryPeakUsage
+- uid: Godot.OS.GetMemoryInfo*
+  commentId: Overload:Godot.OS.GetMemoryInfo
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetMemoryInfo
+  name: GetMemoryInfo
+  nameWithType: OS.GetMemoryInfo
+  fullName: Godot.OS.GetMemoryInfo
+- uid: Godot.OS.MoveToTrash*
+  commentId: Overload:Godot.OS.MoveToTrash
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_MoveToTrash_System_String_
+  name: MoveToTrash
+  nameWithType: OS.MoveToTrash
+  fullName: Godot.OS.MoveToTrash
+- uid: Godot.OS.GetUserDataDir*
+  commentId: Overload:Godot.OS.GetUserDataDir
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetUserDataDir
+  name: GetUserDataDir
+  nameWithType: OS.GetUserDataDir
+  fullName: Godot.OS.GetUserDataDir
+- uid: Godot.OS.GetSystemDir*
+  commentId: Overload:Godot.OS.GetSystemDir
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetSystemDir_Godot_OS_SystemDir_System_Boolean_
+  name: GetSystemDir
+  nameWithType: OS.GetSystemDir
+  fullName: Godot.OS.GetSystemDir
+- uid: Godot.OS.SystemDir
+  commentId: T:Godot.OS.SystemDir
+  parent: Godot
+  isExternal: true
+  href: Godot.OS.html
+  name: OS.SystemDir
+  nameWithType: OS.SystemDir
+  fullName: Godot.OS.SystemDir
+  spec.csharp:
+  - uid: Godot.OS
+    name: OS
+    isExternal: true
+    href: Godot.OS.html
+  - name: .
+  - uid: Godot.OS.SystemDir
+    name: SystemDir
+    isExternal: true
+    href: Godot.OS.SystemDir.html
+  spec.vb:
+  - uid: Godot.OS
+    name: OS
+    isExternal: true
+    href: Godot.OS.html
+  - name: .
+  - uid: Godot.OS.SystemDir
+    name: SystemDir
+    isExternal: true
+    href: Godot.OS.SystemDir.html
+- uid: Godot.OS.GetConfigDir*
+  commentId: Overload:Godot.OS.GetConfigDir
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetConfigDir
+  name: GetConfigDir
+  nameWithType: OS.GetConfigDir
+  fullName: Godot.OS.GetConfigDir
+- uid: Godot.OS.GetDataDir*
+  commentId: Overload:Godot.OS.GetDataDir
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetDataDir
+  name: GetDataDir
+  nameWithType: OS.GetDataDir
+  fullName: Godot.OS.GetDataDir
+- uid: Godot.OS.GetCacheDir*
+  commentId: Overload:Godot.OS.GetCacheDir
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetCacheDir
+  name: GetCacheDir
+  nameWithType: OS.GetCacheDir
+  fullName: Godot.OS.GetCacheDir
+- uid: Godot.OS.GetTempDir*
+  commentId: Overload:Godot.OS.GetTempDir
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetTempDir
+  name: GetTempDir
+  nameWithType: OS.GetTempDir
+  fullName: Godot.OS.GetTempDir
+- uid: Godot.OS.GetUniqueId*
+  commentId: Overload:Godot.OS.GetUniqueId
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetUniqueId
+  name: GetUniqueId
+  nameWithType: OS.GetUniqueId
+  fullName: Godot.OS.GetUniqueId
+- uid: Godot.OS.GetKeycodeString*
+  commentId: Overload:Godot.OS.GetKeycodeString
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetKeycodeString_Godot_Key_
+  name: GetKeycodeString
+  nameWithType: OS.GetKeycodeString
+  fullName: Godot.OS.GetKeycodeString
+- uid: Godot.Key
+  commentId: T:Godot.Key
+  parent: Godot
+  isExternal: true
+  href: Godot.Key.html
+  name: Key
+  nameWithType: Key
+  fullName: Godot.Key
+- uid: Godot.OS.IsKeycodeUnicode*
+  commentId: Overload:Godot.OS.IsKeycodeUnicode
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_IsKeycodeUnicode_System_Int64_
+  name: IsKeycodeUnicode
+  nameWithType: OS.IsKeycodeUnicode
+  fullName: Godot.OS.IsKeycodeUnicode
+- uid: Godot.OS.FindKeycodeFromString*
+  commentId: Overload:Godot.OS.FindKeycodeFromString
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_FindKeycodeFromString_System_String_
+  name: FindKeycodeFromString
+  nameWithType: OS.FindKeycodeFromString
+  fullName: Godot.OS.FindKeycodeFromString
+- uid: Godot.OS.SetUseFileAccessSaveAndSwap*
+  commentId: Overload:Godot.OS.SetUseFileAccessSaveAndSwap
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_SetUseFileAccessSaveAndSwap_System_Boolean_
+  name: SetUseFileAccessSaveAndSwap
+  nameWithType: OS.SetUseFileAccessSaveAndSwap
+  fullName: Godot.OS.SetUseFileAccessSaveAndSwap
+- uid: Godot.OS.SetThreadName*
+  commentId: Overload:Godot.OS.SetThreadName
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_SetThreadName_System_String_
+  name: SetThreadName
+  nameWithType: OS.SetThreadName
+  fullName: Godot.OS.SetThreadName
+- uid: Godot.OS.GetThreadCallerId*
+  commentId: Overload:Godot.OS.GetThreadCallerId
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetThreadCallerId
+  name: GetThreadCallerId
+  nameWithType: OS.GetThreadCallerId
+  fullName: Godot.OS.GetThreadCallerId
+- uid: Godot.OS.GetMainThreadId*
+  commentId: Overload:Godot.OS.GetMainThreadId
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetMainThreadId
+  name: GetMainThreadId
+  nameWithType: OS.GetMainThreadId
+  fullName: Godot.OS.GetMainThreadId
+- uid: Godot.OS.HasFeature*
+  commentId: Overload:Godot.OS.HasFeature
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_HasFeature_System_String_
+  name: HasFeature
+  nameWithType: OS.HasFeature
+  fullName: Godot.OS.HasFeature
+- uid: Godot.OS.IsSandboxed*
+  commentId: Overload:Godot.OS.IsSandboxed
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_IsSandboxed
+  name: IsSandboxed
+  nameWithType: OS.IsSandboxed
+  fullName: Godot.OS.IsSandboxed
+- uid: Godot.OS.RequestPermission*
+  commentId: Overload:Godot.OS.RequestPermission
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_RequestPermission_System_String_
+  name: RequestPermission
+  nameWithType: OS.RequestPermission
+  fullName: Godot.OS.RequestPermission
+- uid: Godot.OS.RequestPermissions*
+  commentId: Overload:Godot.OS.RequestPermissions
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_RequestPermissions
+  name: RequestPermissions
+  nameWithType: OS.RequestPermissions
+  fullName: Godot.OS.RequestPermissions
+- uid: Godot.OS.GetGrantedPermissions*
+  commentId: Overload:Godot.OS.GetGrantedPermissions
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_GetGrantedPermissions
+  name: GetGrantedPermissions
+  nameWithType: OS.GetGrantedPermissions
+  fullName: Godot.OS.GetGrantedPermissions
+- uid: Godot.OS.RevokeGrantedPermissions*
+  commentId: Overload:Godot.OS.RevokeGrantedPermissions
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_RevokeGrantedPermissions
+  name: RevokeGrantedPermissions
+  nameWithType: OS.RevokeGrantedPermissions
+  fullName: Godot.OS.RevokeGrantedPermissions
+- uid: Godot.OS.AddLogger*
+  commentId: Overload:Godot.OS.AddLogger
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_AddLogger_Godot_Logger_
+  name: AddLogger
+  nameWithType: OS.AddLogger
+  fullName: Godot.OS.AddLogger
+- uid: Godot.Logger
+  commentId: T:Godot.Logger
+  parent: Godot
+  isExternal: true
+  href: Godot.Logger.html
+  name: Logger
+  nameWithType: Logger
+  fullName: Godot.Logger
+- uid: Godot.OS.RemoveLogger*
+  commentId: Overload:Godot.OS.RemoveLogger
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_RemoveLogger_Godot_Logger_
+  name: RemoveLogger
+  nameWithType: OS.RemoveLogger
+  fullName: Godot.OS.RemoveLogger
+- uid: Godot.OS.LowProcessorUsageMode*
+  commentId: Overload:Godot.OS.LowProcessorUsageMode
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_LowProcessorUsageMode
+  name: LowProcessorUsageMode
+  nameWithType: OS.LowProcessorUsageMode
+  fullName: Godot.OS.LowProcessorUsageMode
+- uid: Godot.OS.LowProcessorUsageModeSleepUsec*
+  commentId: Overload:Godot.OS.LowProcessorUsageModeSleepUsec
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_LowProcessorUsageModeSleepUsec
+  name: LowProcessorUsageModeSleepUsec
+  nameWithType: OS.LowProcessorUsageModeSleepUsec
+  fullName: Godot.OS.LowProcessorUsageModeSleepUsec
+- uid: Godot.OS.DeltaSmoothing*
+  commentId: Overload:Godot.OS.DeltaSmoothing
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_DeltaSmoothing
+  name: DeltaSmoothing
+  nameWithType: OS.DeltaSmoothing
+  fullName: Godot.OS.DeltaSmoothing
+- uid: Godot.OS.Singleton*
+  commentId: Overload:Godot.OS.Singleton
+  isExternal: true
+  href: Godot.OS.html#Godot_OS_Singleton
+  name: Singleton
+  nameWithType: OS.Singleton
+  fullName: Godot.OS.Singleton
+- uid: Godot.OSInstance
+  commentId: T:Godot.OSInstance
+  parent: Godot
+  isExternal: true
+  href: Godot.OSInstance.html
+  name: OSInstance
+  nameWithType: OSInstance
+  fullName: Godot.OSInstance

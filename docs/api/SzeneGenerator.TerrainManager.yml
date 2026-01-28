@@ -1,0 +1,484 @@
+### YamlMime:ManagedReference
+items:
+- uid: SzeneGenerator.TerrainManager
+  commentId: T:SzeneGenerator.TerrainManager
+  id: TerrainManager
+  parent: SzeneGenerator
+  children:
+  - SzeneGenerator.TerrainManager.#ctor
+  - SzeneGenerator.TerrainManager.Configure(SzeneGenerator.TerrainSettings)
+  - SzeneGenerator.TerrainManager.EmitSignalTargetsReady
+  - SzeneGenerator.TerrainManager.Initialize(Godot.Node)
+  - SzeneGenerator.TerrainManager.SampleTerrainHeightMeters(Godot.Vector3)
+  - SzeneGenerator.TerrainManager.SpawnTargets
+  - SzeneGenerator.TerrainManager.TargetsReady
+  - SzeneGenerator.TerrainManager.WorldSeed
+  langs:
+  - csharp
+  - vb
+  name: TerrainManager
+  nameWithType: TerrainManager
+  fullName: SzeneGenerator.TerrainManager
+  type: Class
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.TerrainManager_ScriptMethods.generated.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  summary: >-
+    Generates terrain geometry, applies heightmaps and biome texturing,
+
+    and spawns environment objects based on region configuration.
+
+    Provides terrain height sampling and target spawn data for camera placement.
+  example: []
+  syntax:
+    content: >-
+      [ScriptPath("res://Scripts/Terrain/TerrainManager.cs")]
+
+      public class TerrainManager : Node
+    content.vb: >-
+      <ScriptPath("res://Scripts/Terrain/TerrainManager.cs")>
+
+      Public Class TerrainManager Inherits Node
+  inheritance:
+  - System.Object
+  - Godot.GodotObject
+  - Godot.Node
+  attributes:
+  - type: Godot.ScriptPathAttribute
+    ctor: Godot.ScriptPathAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: res://Scripts/Terrain/TerrainManager.cs
+- uid: SzeneGenerator.TerrainManager.Initialize(Godot.Node)
+  commentId: M:SzeneGenerator.TerrainManager.Initialize(Godot.Node)
+  id: Initialize(Godot.Node)
+  parent: SzeneGenerator.TerrainManager
+  langs:
+  - csharp
+  - vb
+  name: Initialize(Node)
+  nameWithType: TerrainManager.Initialize(Node)
+  fullName: SzeneGenerator.TerrainManager.Initialize(Godot.Node)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/TerrainManager.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  summary: >-
+    Builds terrain data, applies assets and biome rules, and prepares spawn targets.
+
+    Emits the TargetsReady signal when object spawning is completed.
+  example: []
+  syntax:
+    content: public void Initialize(Node parent)
+    parameters:
+    - id: parent
+      type: Godot.Node
+    content.vb: Public Sub Initialize(parent As Node)
+  overload: SzeneGenerator.TerrainManager.Initialize*
+- uid: SzeneGenerator.TerrainManager.Configure(SzeneGenerator.TerrainSettings)
+  commentId: M:SzeneGenerator.TerrainManager.Configure(SzeneGenerator.TerrainSettings)
+  id: Configure(SzeneGenerator.TerrainSettings)
+  parent: SzeneGenerator.TerrainManager
+  langs:
+  - csharp
+  - vb
+  name: Configure(TerrainSettings)
+  nameWithType: TerrainManager.Configure(TerrainSettings)
+  fullName: SzeneGenerator.TerrainManager.Configure(SzeneGenerator.TerrainSettings)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/TerrainManager.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public void Configure(TerrainSettings cfg)
+    parameters:
+    - id: cfg
+      type: SzeneGenerator.TerrainSettings
+    content.vb: Public Sub Configure(cfg As TerrainSettings)
+  overload: SzeneGenerator.TerrainManager.Configure*
+- uid: SzeneGenerator.TerrainManager.SampleTerrainHeightMeters(Godot.Vector3)
+  commentId: M:SzeneGenerator.TerrainManager.SampleTerrainHeightMeters(Godot.Vector3)
+  id: SampleTerrainHeightMeters(Godot.Vector3)
+  parent: SzeneGenerator.TerrainManager
+  langs:
+  - csharp
+  - vb
+  name: SampleTerrainHeightMeters(Vector3)
+  nameWithType: TerrainManager.SampleTerrainHeightMeters(Vector3)
+  fullName: SzeneGenerator.TerrainManager.SampleTerrainHeightMeters(Godot.Vector3)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/TerrainManager.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public float SampleTerrainHeightMeters(Vector3 worldPos)
+    parameters:
+    - id: worldPos
+      type: Godot.Vector3
+    return:
+      type: System.Single
+    content.vb: Public Function SampleTerrainHeightMeters(worldPos As Vector3) As Single
+  overload: SzeneGenerator.TerrainManager.SampleTerrainHeightMeters*
+- uid: SzeneGenerator.TerrainManager.EmitSignalTargetsReady
+  commentId: M:SzeneGenerator.TerrainManager.EmitSignalTargetsReady
+  id: EmitSignalTargetsReady
+  parent: SzeneGenerator.TerrainManager
+  langs:
+  - csharp
+  - vb
+  name: EmitSignalTargetsReady()
+  nameWithType: TerrainManager.EmitSignalTargetsReady()
+  fullName: SzeneGenerator.TerrainManager.EmitSignalTargetsReady()
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptSignalsGenerator/SzeneGenerator.TerrainManager_ScriptSignals.generated.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: protected void EmitSignalTargetsReady()
+    content.vb: Protected Sub EmitSignalTargetsReady()
+  overload: SzeneGenerator.TerrainManager.EmitSignalTargetsReady*
+- uid: SzeneGenerator.TerrainManager.#ctor
+  commentId: M:SzeneGenerator.TerrainManager.#ctor
+  id: '#ctor'
+  parent: SzeneGenerator.TerrainManager
+  langs:
+  - csharp
+  - vb
+  name: TerrainManager()
+  nameWithType: TerrainManager.TerrainManager()
+  fullName: SzeneGenerator.TerrainManager.TerrainManager()
+  type: Constructor
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/TerrainManager.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public TerrainManager()
+    content.vb: Public Sub New()
+  overload: SzeneGenerator.TerrainManager.#ctor*
+  nameWithType.vb: TerrainManager.New()
+  fullName.vb: SzeneGenerator.TerrainManager.New()
+  name.vb: New()
+- uid: SzeneGenerator.TerrainManager.SpawnTargets
+  commentId: P:SzeneGenerator.TerrainManager.SpawnTargets
+  id: SpawnTargets
+  parent: SzeneGenerator.TerrainManager
+  langs:
+  - csharp
+  - vb
+  name: SpawnTargets
+  nameWithType: TerrainManager.SpawnTargets
+  fullName: SzeneGenerator.TerrainManager.SpawnTargets
+  type: Property
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/TerrainManager.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public List<Node3D> SpawnTargets { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Godot.Node3D}
+    content.vb: Public ReadOnly Property SpawnTargets As List(Of Node3D)
+  overload: SzeneGenerator.TerrainManager.SpawnTargets*
+- uid: SzeneGenerator.TerrainManager.WorldSeed
+  commentId: P:SzeneGenerator.TerrainManager.WorldSeed
+  id: WorldSeed
+  parent: SzeneGenerator.TerrainManager
+  langs:
+  - csharp
+  - vb
+  name: WorldSeed
+  nameWithType: TerrainManager.WorldSeed
+  fullName: SzeneGenerator.TerrainManager.WorldSeed
+  type: Property
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/TerrainManager.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public int WorldSeed { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property WorldSeed As Integer
+  overload: SzeneGenerator.TerrainManager.WorldSeed*
+- uid: SzeneGenerator.TerrainManager.TargetsReady
+  commentId: E:SzeneGenerator.TerrainManager.TargetsReady
+  id: TargetsReady
+  parent: SzeneGenerator.TerrainManager
+  langs:
+  - csharp
+  - vb
+  name: TargetsReady
+  nameWithType: TerrainManager.TargetsReady
+  fullName: SzeneGenerator.TerrainManager.TargetsReady
+  type: Event
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptSignalsGenerator/SzeneGenerator.TerrainManager_ScriptSignals.generated.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  example: []
+  syntax:
+    content: public event TerrainManager.TargetsReadyEventHandler TargetsReady
+    return:
+      type: SzeneGenerator.TerrainManager.TargetsReadyEventHandler
+    content.vb: Public Event TargetsReady As TerrainManager.TargetsReadyEventHandler
+references:
+- uid: SzeneGenerator
+  commentId: N:SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.html
+  name: SzeneGenerator
+  nameWithType: SzeneGenerator
+  fullName: SzeneGenerator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Godot.GodotObject
+  commentId: T:Godot.GodotObject
+  parent: Godot
+  isExternal: true
+  name: GodotObject
+  nameWithType: GodotObject
+  fullName: Godot.GodotObject
+- uid: Godot.Node
+  commentId: T:Godot.Node
+  parent: Godot
+  isExternal: true
+  name: Node
+  nameWithType: Node
+  fullName: Godot.Node
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: SzeneGenerator.TerrainManager.Initialize*
+  commentId: Overload:SzeneGenerator.TerrainManager.Initialize
+  isExternal: true
+  href: SzeneGenerator.TerrainManager.html#SzeneGenerator_TerrainManager_Initialize_Godot_Node_
+  name: Initialize
+  nameWithType: TerrainManager.Initialize
+  fullName: SzeneGenerator.TerrainManager.Initialize
+- uid: SzeneGenerator.TerrainManager.Configure*
+  commentId: Overload:SzeneGenerator.TerrainManager.Configure
+  isExternal: true
+  href: SzeneGenerator.TerrainManager.html#SzeneGenerator_TerrainManager_Configure_SzeneGenerator_TerrainSettings_
+  name: Configure
+  nameWithType: TerrainManager.Configure
+  fullName: SzeneGenerator.TerrainManager.Configure
+- uid: SzeneGenerator.TerrainSettings
+  commentId: T:SzeneGenerator.TerrainSettings
+  parent: SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.TerrainSettings.html
+  name: TerrainSettings
+  nameWithType: TerrainSettings
+  fullName: SzeneGenerator.TerrainSettings
+- uid: SzeneGenerator.TerrainManager.SampleTerrainHeightMeters*
+  commentId: Overload:SzeneGenerator.TerrainManager.SampleTerrainHeightMeters
+  isExternal: true
+  href: SzeneGenerator.TerrainManager.html#SzeneGenerator_TerrainManager_SampleTerrainHeightMeters_Godot_Vector3_
+  name: SampleTerrainHeightMeters
+  nameWithType: TerrainManager.SampleTerrainHeightMeters
+  fullName: SzeneGenerator.TerrainManager.SampleTerrainHeightMeters
+- uid: Godot.Vector3
+  commentId: T:Godot.Vector3
+  parent: Godot
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Godot.Vector3
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SzeneGenerator.TerrainManager.EmitSignalTargetsReady*
+  commentId: Overload:SzeneGenerator.TerrainManager.EmitSignalTargetsReady
+  isExternal: true
+  href: SzeneGenerator.TerrainManager.html#SzeneGenerator_TerrainManager_EmitSignalTargetsReady
+  name: EmitSignalTargetsReady
+  nameWithType: TerrainManager.EmitSignalTargetsReady
+  fullName: SzeneGenerator.TerrainManager.EmitSignalTargetsReady
+- uid: SzeneGenerator.TerrainManager.#ctor*
+  commentId: Overload:SzeneGenerator.TerrainManager.#ctor
+  isExternal: true
+  href: SzeneGenerator.TerrainManager.html#SzeneGenerator_TerrainManager__ctor
+  name: TerrainManager
+  nameWithType: TerrainManager.TerrainManager
+  fullName: SzeneGenerator.TerrainManager.TerrainManager
+  nameWithType.vb: TerrainManager.New
+  fullName.vb: SzeneGenerator.TerrainManager.New
+  name.vb: New
+- uid: SzeneGenerator.TerrainManager.SpawnTargets*
+  commentId: Overload:SzeneGenerator.TerrainManager.SpawnTargets
+  isExternal: true
+  href: SzeneGenerator.TerrainManager.html#SzeneGenerator_TerrainManager_SpawnTargets
+  name: SpawnTargets
+  nameWithType: TerrainManager.SpawnTargets
+  fullName: SzeneGenerator.TerrainManager.SpawnTargets
+- uid: System.Collections.Generic.List{Godot.Node3D}
+  commentId: T:System.Collections.Generic.List{Godot.Node3D}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Node3D>
+  nameWithType: List<Node3D>
+  fullName: System.Collections.Generic.List<Godot.Node3D>
+  nameWithType.vb: List(Of Node3D)
+  fullName.vb: System.Collections.Generic.List(Of Godot.Node3D)
+  name.vb: List(Of Node3D)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Godot.Node3D
+    name: Node3D
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Node3D
+    name: Node3D
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: SzeneGenerator.TerrainManager.WorldSeed*
+  commentId: Overload:SzeneGenerator.TerrainManager.WorldSeed
+  isExternal: true
+  href: SzeneGenerator.TerrainManager.html#SzeneGenerator_TerrainManager_WorldSeed
+  name: WorldSeed
+  nameWithType: TerrainManager.WorldSeed
+  fullName: SzeneGenerator.TerrainManager.WorldSeed
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SzeneGenerator.TerrainManager.TargetsReadyEventHandler
+  commentId: T:SzeneGenerator.TerrainManager.TargetsReadyEventHandler
+  parent: SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.TerrainManager.html
+  name: TerrainManager.TargetsReadyEventHandler
+  nameWithType: TerrainManager.TargetsReadyEventHandler
+  fullName: SzeneGenerator.TerrainManager.TargetsReadyEventHandler
+  spec.csharp:
+  - uid: SzeneGenerator.TerrainManager
+    name: TerrainManager
+    isExternal: true
+    href: SzeneGenerator.TerrainManager.html
+  - name: .
+  - uid: SzeneGenerator.TerrainManager.TargetsReadyEventHandler
+    name: TargetsReadyEventHandler
+    isExternal: true
+    href: SzeneGenerator.TerrainManager.TargetsReadyEventHandler.html
+  spec.vb:
+  - uid: SzeneGenerator.TerrainManager
+    name: TerrainManager
+    isExternal: true
+    href: SzeneGenerator.TerrainManager.html
+  - name: .
+  - uid: SzeneGenerator.TerrainManager.TargetsReadyEventHandler
+    name: TargetsReadyEventHandler
+    isExternal: true
+    href: SzeneGenerator.TerrainManager.TargetsReadyEventHandler.html

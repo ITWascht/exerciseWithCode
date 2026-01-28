@@ -1,0 +1,1199 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.Geometry3D
+  commentId: T:Godot.Geometry3D
+  id: Geometry3D
+  parent: Godot
+  children:
+  - Godot.Geometry3D.BuildBoxPlanes(Godot.Vector3)
+  - Godot.Geometry3D.BuildCapsulePlanes(System.Single,System.Single,System.Int32,System.Int32,Godot.Vector3.Axis)
+  - Godot.Geometry3D.BuildCylinderPlanes(System.Single,System.Single,System.Int32,Godot.Vector3.Axis)
+  - Godot.Geometry3D.ClipPolygon(Godot.Vector3[],Godot.Plane)
+  - Godot.Geometry3D.ClipPolygon(System.ReadOnlySpan{Godot.Vector3},Godot.Plane)
+  - Godot.Geometry3D.ComputeConvexMeshPoints(Godot.Collections.Array{Godot.Plane})
+  - Godot.Geometry3D.GetClosestPointToSegment(Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  - Godot.Geometry3D.GetClosestPointToSegmentUncapped(Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  - Godot.Geometry3D.GetClosestPointsBetweenSegments(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  - Godot.Geometry3D.GetTriangleBarycentricCoords(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  - Godot.Geometry3D.RayIntersectsTriangle(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  - Godot.Geometry3D.SegmentIntersectsConvex(Godot.Vector3,Godot.Vector3,Godot.Collections.Array{Godot.Plane})
+  - Godot.Geometry3D.SegmentIntersectsCylinder(Godot.Vector3,Godot.Vector3,System.Single,System.Single)
+  - Godot.Geometry3D.SegmentIntersectsSphere(Godot.Vector3,Godot.Vector3,Godot.Vector3,System.Single)
+  - Godot.Geometry3D.SegmentIntersectsTriangle(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  - Godot.Geometry3D.Singleton
+  - Godot.Geometry3D.TetrahedralizeDelaunay(Godot.Vector3[])
+  - Godot.Geometry3D.TetrahedralizeDelaunay(System.ReadOnlySpan{Godot.Vector3})
+  langs:
+  - csharp
+  - vb
+  name: Geometry3D
+  nameWithType: Geometry3D
+  fullName: Godot.Geometry3D
+  type: Class
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static class Geometry3D
+    content.vb: Public Module Geometry3D
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Godot.Geometry3D.ComputeConvexMeshPoints(Godot.Collections.Array{Godot.Plane})
+  commentId: M:Godot.Geometry3D.ComputeConvexMeshPoints(Godot.Collections.Array{Godot.Plane})
+  id: ComputeConvexMeshPoints(Godot.Collections.Array{Godot.Plane})
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: ComputeConvexMeshPoints(Array<Plane>)
+  nameWithType: Geometry3D.ComputeConvexMeshPoints(Array<Plane>)
+  fullName: Godot.Geometry3D.ComputeConvexMeshPoints(Godot.Collections.Array<Godot.Plane>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3[] ComputeConvexMeshPoints(Array<Plane> planes)
+    parameters:
+    - id: planes
+      type: Godot.Collections.Array{Godot.Plane}
+    return:
+      type: Godot.Vector3[]
+    content.vb: Public Shared Function ComputeConvexMeshPoints(planes As Array(Of Plane)) As Vector3()
+  overload: Godot.Geometry3D.ComputeConvexMeshPoints*
+  nameWithType.vb: Geometry3D.ComputeConvexMeshPoints(Array(Of Plane))
+  fullName.vb: Godot.Geometry3D.ComputeConvexMeshPoints(Godot.Collections.Array(Of Godot.Plane))
+  name.vb: ComputeConvexMeshPoints(Array(Of Plane))
+- uid: Godot.Geometry3D.BuildBoxPlanes(Godot.Vector3)
+  commentId: M:Godot.Geometry3D.BuildBoxPlanes(Godot.Vector3)
+  id: BuildBoxPlanes(Godot.Vector3)
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: BuildBoxPlanes(Vector3)
+  nameWithType: Geometry3D.BuildBoxPlanes(Vector3)
+  fullName: Godot.Geometry3D.BuildBoxPlanes(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Plane> BuildBoxPlanes(Vector3 extents)
+    parameters:
+    - id: extents
+      type: Godot.Vector3
+    return:
+      type: Godot.Collections.Array{Godot.Plane}
+    content.vb: Public Shared Function BuildBoxPlanes(extents As Vector3) As Array(Of Plane)
+  overload: Godot.Geometry3D.BuildBoxPlanes*
+- uid: Godot.Geometry3D.BuildCylinderPlanes(System.Single,System.Single,System.Int32,Godot.Vector3.Axis)
+  commentId: M:Godot.Geometry3D.BuildCylinderPlanes(System.Single,System.Single,System.Int32,Godot.Vector3.Axis)
+  id: BuildCylinderPlanes(System.Single,System.Single,System.Int32,Godot.Vector3.Axis)
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: BuildCylinderPlanes(float, float, int, Axis)
+  nameWithType: Geometry3D.BuildCylinderPlanes(float, float, int, Vector3.Axis)
+  fullName: Godot.Geometry3D.BuildCylinderPlanes(float, float, int, Godot.Vector3.Axis)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Plane> BuildCylinderPlanes(float radius, float height, int sides, Vector3.Axis axis = Axis.Z)
+    parameters:
+    - id: radius
+      type: System.Single
+    - id: height
+      type: System.Single
+    - id: sides
+      type: System.Int32
+    - id: axis
+      type: Godot.Vector3.Axis
+    return:
+      type: Godot.Collections.Array{Godot.Plane}
+    content.vb: Public Shared Function BuildCylinderPlanes(radius As Single, height As Single, sides As Integer, axis As Vector3.Axis = Axis.Z) As Array(Of Plane)
+  overload: Godot.Geometry3D.BuildCylinderPlanes*
+  nameWithType.vb: Geometry3D.BuildCylinderPlanes(Single, Single, Integer, Vector3.Axis)
+  fullName.vb: Godot.Geometry3D.BuildCylinderPlanes(Single, Single, Integer, Godot.Vector3.Axis)
+  name.vb: BuildCylinderPlanes(Single, Single, Integer, Axis)
+- uid: Godot.Geometry3D.BuildCapsulePlanes(System.Single,System.Single,System.Int32,System.Int32,Godot.Vector3.Axis)
+  commentId: M:Godot.Geometry3D.BuildCapsulePlanes(System.Single,System.Single,System.Int32,System.Int32,Godot.Vector3.Axis)
+  id: BuildCapsulePlanes(System.Single,System.Single,System.Int32,System.Int32,Godot.Vector3.Axis)
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: BuildCapsulePlanes(float, float, int, int, Axis)
+  nameWithType: Geometry3D.BuildCapsulePlanes(float, float, int, int, Vector3.Axis)
+  fullName: Godot.Geometry3D.BuildCapsulePlanes(float, float, int, int, Godot.Vector3.Axis)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Plane> BuildCapsulePlanes(float radius, float height, int sides, int lats, Vector3.Axis axis = Axis.Z)
+    parameters:
+    - id: radius
+      type: System.Single
+    - id: height
+      type: System.Single
+    - id: sides
+      type: System.Int32
+    - id: lats
+      type: System.Int32
+    - id: axis
+      type: Godot.Vector3.Axis
+    return:
+      type: Godot.Collections.Array{Godot.Plane}
+    content.vb: Public Shared Function BuildCapsulePlanes(radius As Single, height As Single, sides As Integer, lats As Integer, axis As Vector3.Axis = Axis.Z) As Array(Of Plane)
+  overload: Godot.Geometry3D.BuildCapsulePlanes*
+  nameWithType.vb: Geometry3D.BuildCapsulePlanes(Single, Single, Integer, Integer, Vector3.Axis)
+  fullName.vb: Godot.Geometry3D.BuildCapsulePlanes(Single, Single, Integer, Integer, Godot.Vector3.Axis)
+  name.vb: BuildCapsulePlanes(Single, Single, Integer, Integer, Axis)
+- uid: Godot.Geometry3D.GetClosestPointsBetweenSegments(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  commentId: M:Godot.Geometry3D.GetClosestPointsBetweenSegments(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  id: GetClosestPointsBetweenSegments(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: GetClosestPointsBetweenSegments(Vector3, Vector3, Vector3, Vector3)
+  nameWithType: Geometry3D.GetClosestPointsBetweenSegments(Vector3, Vector3, Vector3, Vector3)
+  fullName: Godot.Geometry3D.GetClosestPointsBetweenSegments(Godot.Vector3, Godot.Vector3, Godot.Vector3, Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3[] GetClosestPointsBetweenSegments(Vector3 p1, Vector3 p2, Vector3 q1, Vector3 q2)
+    parameters:
+    - id: p1
+      type: Godot.Vector3
+    - id: p2
+      type: Godot.Vector3
+    - id: q1
+      type: Godot.Vector3
+    - id: q2
+      type: Godot.Vector3
+    return:
+      type: Godot.Vector3[]
+    content.vb: Public Shared Function GetClosestPointsBetweenSegments(p1 As Vector3, p2 As Vector3, q1 As Vector3, q2 As Vector3) As Vector3()
+  overload: Godot.Geometry3D.GetClosestPointsBetweenSegments*
+- uid: Godot.Geometry3D.GetClosestPointToSegment(Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  commentId: M:Godot.Geometry3D.GetClosestPointToSegment(Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  id: GetClosestPointToSegment(Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: GetClosestPointToSegment(Vector3, Vector3, Vector3)
+  nameWithType: Geometry3D.GetClosestPointToSegment(Vector3, Vector3, Vector3)
+  fullName: Godot.Geometry3D.GetClosestPointToSegment(Godot.Vector3, Godot.Vector3, Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3 GetClosestPointToSegment(Vector3 point, Vector3 s1, Vector3 s2)
+    parameters:
+    - id: point
+      type: Godot.Vector3
+    - id: s1
+      type: Godot.Vector3
+    - id: s2
+      type: Godot.Vector3
+    return:
+      type: Godot.Vector3
+    content.vb: Public Shared Function GetClosestPointToSegment(point As Vector3, s1 As Vector3, s2 As Vector3) As Vector3
+  overload: Godot.Geometry3D.GetClosestPointToSegment*
+- uid: Godot.Geometry3D.GetClosestPointToSegmentUncapped(Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  commentId: M:Godot.Geometry3D.GetClosestPointToSegmentUncapped(Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  id: GetClosestPointToSegmentUncapped(Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: GetClosestPointToSegmentUncapped(Vector3, Vector3, Vector3)
+  nameWithType: Geometry3D.GetClosestPointToSegmentUncapped(Vector3, Vector3, Vector3)
+  fullName: Godot.Geometry3D.GetClosestPointToSegmentUncapped(Godot.Vector3, Godot.Vector3, Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3 GetClosestPointToSegmentUncapped(Vector3 point, Vector3 s1, Vector3 s2)
+    parameters:
+    - id: point
+      type: Godot.Vector3
+    - id: s1
+      type: Godot.Vector3
+    - id: s2
+      type: Godot.Vector3
+    return:
+      type: Godot.Vector3
+    content.vb: Public Shared Function GetClosestPointToSegmentUncapped(point As Vector3, s1 As Vector3, s2 As Vector3) As Vector3
+  overload: Godot.Geometry3D.GetClosestPointToSegmentUncapped*
+- uid: Godot.Geometry3D.GetTriangleBarycentricCoords(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  commentId: M:Godot.Geometry3D.GetTriangleBarycentricCoords(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  id: GetTriangleBarycentricCoords(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: GetTriangleBarycentricCoords(Vector3, Vector3, Vector3, Vector3)
+  nameWithType: Geometry3D.GetTriangleBarycentricCoords(Vector3, Vector3, Vector3, Vector3)
+  fullName: Godot.Geometry3D.GetTriangleBarycentricCoords(Godot.Vector3, Godot.Vector3, Godot.Vector3, Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3 GetTriangleBarycentricCoords(Vector3 point, Vector3 a, Vector3 b, Vector3 c)
+    parameters:
+    - id: point
+      type: Godot.Vector3
+    - id: a
+      type: Godot.Vector3
+    - id: b
+      type: Godot.Vector3
+    - id: c
+      type: Godot.Vector3
+    return:
+      type: Godot.Vector3
+    content.vb: Public Shared Function GetTriangleBarycentricCoords(point As Vector3, a As Vector3, b As Vector3, c As Vector3) As Vector3
+  overload: Godot.Geometry3D.GetTriangleBarycentricCoords*
+- uid: Godot.Geometry3D.RayIntersectsTriangle(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  commentId: M:Godot.Geometry3D.RayIntersectsTriangle(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  id: RayIntersectsTriangle(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: RayIntersectsTriangle(Vector3, Vector3, Vector3, Vector3, Vector3)
+  nameWithType: Geometry3D.RayIntersectsTriangle(Vector3, Vector3, Vector3, Vector3, Vector3)
+  fullName: Godot.Geometry3D.RayIntersectsTriangle(Godot.Vector3, Godot.Vector3, Godot.Vector3, Godot.Vector3, Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Variant RayIntersectsTriangle(Vector3 from, Vector3 dir, Vector3 a, Vector3 b, Vector3 c)
+    parameters:
+    - id: from
+      type: Godot.Vector3
+    - id: dir
+      type: Godot.Vector3
+    - id: a
+      type: Godot.Vector3
+    - id: b
+      type: Godot.Vector3
+    - id: c
+      type: Godot.Vector3
+    return:
+      type: Godot.Variant
+    content.vb: Public Shared Function RayIntersectsTriangle(from As Vector3, dir As Vector3, a As Vector3, b As Vector3, c As Vector3) As [Variant]
+  overload: Godot.Geometry3D.RayIntersectsTriangle*
+- uid: Godot.Geometry3D.SegmentIntersectsTriangle(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  commentId: M:Godot.Geometry3D.SegmentIntersectsTriangle(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  id: SegmentIntersectsTriangle(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: SegmentIntersectsTriangle(Vector3, Vector3, Vector3, Vector3, Vector3)
+  nameWithType: Geometry3D.SegmentIntersectsTriangle(Vector3, Vector3, Vector3, Vector3, Vector3)
+  fullName: Godot.Geometry3D.SegmentIntersectsTriangle(Godot.Vector3, Godot.Vector3, Godot.Vector3, Godot.Vector3, Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Variant SegmentIntersectsTriangle(Vector3 from, Vector3 to, Vector3 a, Vector3 b, Vector3 c)
+    parameters:
+    - id: from
+      type: Godot.Vector3
+    - id: to
+      type: Godot.Vector3
+    - id: a
+      type: Godot.Vector3
+    - id: b
+      type: Godot.Vector3
+    - id: c
+      type: Godot.Vector3
+    return:
+      type: Godot.Variant
+    content.vb: Public Shared Function SegmentIntersectsTriangle(from As Vector3, [to] As Vector3, a As Vector3, b As Vector3, c As Vector3) As [Variant]
+  overload: Godot.Geometry3D.SegmentIntersectsTriangle*
+- uid: Godot.Geometry3D.SegmentIntersectsSphere(Godot.Vector3,Godot.Vector3,Godot.Vector3,System.Single)
+  commentId: M:Godot.Geometry3D.SegmentIntersectsSphere(Godot.Vector3,Godot.Vector3,Godot.Vector3,System.Single)
+  id: SegmentIntersectsSphere(Godot.Vector3,Godot.Vector3,Godot.Vector3,System.Single)
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: SegmentIntersectsSphere(Vector3, Vector3, Vector3, float)
+  nameWithType: Geometry3D.SegmentIntersectsSphere(Vector3, Vector3, Vector3, float)
+  fullName: Godot.Geometry3D.SegmentIntersectsSphere(Godot.Vector3, Godot.Vector3, Godot.Vector3, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3[] SegmentIntersectsSphere(Vector3 from, Vector3 to, Vector3 spherePosition, float sphereRadius)
+    parameters:
+    - id: from
+      type: Godot.Vector3
+    - id: to
+      type: Godot.Vector3
+    - id: spherePosition
+      type: Godot.Vector3
+    - id: sphereRadius
+      type: System.Single
+    return:
+      type: Godot.Vector3[]
+    content.vb: Public Shared Function SegmentIntersectsSphere(from As Vector3, [to] As Vector3, spherePosition As Vector3, sphereRadius As Single) As Vector3()
+  overload: Godot.Geometry3D.SegmentIntersectsSphere*
+  nameWithType.vb: Geometry3D.SegmentIntersectsSphere(Vector3, Vector3, Vector3, Single)
+  fullName.vb: Godot.Geometry3D.SegmentIntersectsSphere(Godot.Vector3, Godot.Vector3, Godot.Vector3, Single)
+  name.vb: SegmentIntersectsSphere(Vector3, Vector3, Vector3, Single)
+- uid: Godot.Geometry3D.SegmentIntersectsCylinder(Godot.Vector3,Godot.Vector3,System.Single,System.Single)
+  commentId: M:Godot.Geometry3D.SegmentIntersectsCylinder(Godot.Vector3,Godot.Vector3,System.Single,System.Single)
+  id: SegmentIntersectsCylinder(Godot.Vector3,Godot.Vector3,System.Single,System.Single)
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: SegmentIntersectsCylinder(Vector3, Vector3, float, float)
+  nameWithType: Geometry3D.SegmentIntersectsCylinder(Vector3, Vector3, float, float)
+  fullName: Godot.Geometry3D.SegmentIntersectsCylinder(Godot.Vector3, Godot.Vector3, float, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3[] SegmentIntersectsCylinder(Vector3 from, Vector3 to, float height, float radius)
+    parameters:
+    - id: from
+      type: Godot.Vector3
+    - id: to
+      type: Godot.Vector3
+    - id: height
+      type: System.Single
+    - id: radius
+      type: System.Single
+    return:
+      type: Godot.Vector3[]
+    content.vb: Public Shared Function SegmentIntersectsCylinder(from As Vector3, [to] As Vector3, height As Single, radius As Single) As Vector3()
+  overload: Godot.Geometry3D.SegmentIntersectsCylinder*
+  nameWithType.vb: Geometry3D.SegmentIntersectsCylinder(Vector3, Vector3, Single, Single)
+  fullName.vb: Godot.Geometry3D.SegmentIntersectsCylinder(Godot.Vector3, Godot.Vector3, Single, Single)
+  name.vb: SegmentIntersectsCylinder(Vector3, Vector3, Single, Single)
+- uid: Godot.Geometry3D.SegmentIntersectsConvex(Godot.Vector3,Godot.Vector3,Godot.Collections.Array{Godot.Plane})
+  commentId: M:Godot.Geometry3D.SegmentIntersectsConvex(Godot.Vector3,Godot.Vector3,Godot.Collections.Array{Godot.Plane})
+  id: SegmentIntersectsConvex(Godot.Vector3,Godot.Vector3,Godot.Collections.Array{Godot.Plane})
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: SegmentIntersectsConvex(Vector3, Vector3, Array<Plane>)
+  nameWithType: Geometry3D.SegmentIntersectsConvex(Vector3, Vector3, Array<Plane>)
+  fullName: Godot.Geometry3D.SegmentIntersectsConvex(Godot.Vector3, Godot.Vector3, Godot.Collections.Array<Godot.Plane>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3[] SegmentIntersectsConvex(Vector3 from, Vector3 to, Array<Plane> planes)
+    parameters:
+    - id: from
+      type: Godot.Vector3
+    - id: to
+      type: Godot.Vector3
+    - id: planes
+      type: Godot.Collections.Array{Godot.Plane}
+    return:
+      type: Godot.Vector3[]
+    content.vb: Public Shared Function SegmentIntersectsConvex(from As Vector3, [to] As Vector3, planes As Array(Of Plane)) As Vector3()
+  overload: Godot.Geometry3D.SegmentIntersectsConvex*
+  nameWithType.vb: Geometry3D.SegmentIntersectsConvex(Vector3, Vector3, Array(Of Plane))
+  fullName.vb: Godot.Geometry3D.SegmentIntersectsConvex(Godot.Vector3, Godot.Vector3, Godot.Collections.Array(Of Godot.Plane))
+  name.vb: SegmentIntersectsConvex(Vector3, Vector3, Array(Of Plane))
+- uid: Godot.Geometry3D.ClipPolygon(Godot.Vector3[],Godot.Plane)
+  commentId: M:Godot.Geometry3D.ClipPolygon(Godot.Vector3[],Godot.Plane)
+  id: ClipPolygon(Godot.Vector3[],Godot.Plane)
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: ClipPolygon(Vector3[], Plane)
+  nameWithType: Geometry3D.ClipPolygon(Vector3[], Plane)
+  fullName: Godot.Geometry3D.ClipPolygon(Godot.Vector3[], Godot.Plane)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3[] ClipPolygon(Vector3[] points, Plane plane)
+    parameters:
+    - id: points
+      type: Godot.Vector3[]
+    - id: plane
+      type: Godot.Plane
+    return:
+      type: Godot.Vector3[]
+    content.vb: Public Shared Function ClipPolygon(points As Vector3(), plane As Plane) As Vector3()
+  overload: Godot.Geometry3D.ClipPolygon*
+  nameWithType.vb: Geometry3D.ClipPolygon(Vector3(), Plane)
+  fullName.vb: Godot.Geometry3D.ClipPolygon(Godot.Vector3(), Godot.Plane)
+  name.vb: ClipPolygon(Vector3(), Plane)
+- uid: Godot.Geometry3D.ClipPolygon(System.ReadOnlySpan{Godot.Vector3},Godot.Plane)
+  commentId: M:Godot.Geometry3D.ClipPolygon(System.ReadOnlySpan{Godot.Vector3},Godot.Plane)
+  id: ClipPolygon(System.ReadOnlySpan{Godot.Vector3},Godot.Plane)
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: ClipPolygon(ReadOnlySpan<Vector3>, Plane)
+  nameWithType: Geometry3D.ClipPolygon(ReadOnlySpan<Vector3>, Plane)
+  fullName: Godot.Geometry3D.ClipPolygon(System.ReadOnlySpan<Godot.Vector3>, Godot.Plane)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3[] ClipPolygon(ReadOnlySpan<Vector3> points, Plane plane)
+    parameters:
+    - id: points
+      type: System.ReadOnlySpan{Godot.Vector3}
+    - id: plane
+      type: Godot.Plane
+    return:
+      type: Godot.Vector3[]
+    content.vb: Public Shared Function ClipPolygon(points As ReadOnlySpan(Of Vector3), plane As Plane) As Vector3()
+  overload: Godot.Geometry3D.ClipPolygon*
+  nameWithType.vb: Geometry3D.ClipPolygon(ReadOnlySpan(Of Vector3), Plane)
+  fullName.vb: Godot.Geometry3D.ClipPolygon(System.ReadOnlySpan(Of Godot.Vector3), Godot.Plane)
+  name.vb: ClipPolygon(ReadOnlySpan(Of Vector3), Plane)
+- uid: Godot.Geometry3D.TetrahedralizeDelaunay(Godot.Vector3[])
+  commentId: M:Godot.Geometry3D.TetrahedralizeDelaunay(Godot.Vector3[])
+  id: TetrahedralizeDelaunay(Godot.Vector3[])
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: TetrahedralizeDelaunay(Vector3[])
+  nameWithType: Geometry3D.TetrahedralizeDelaunay(Vector3[])
+  fullName: Godot.Geometry3D.TetrahedralizeDelaunay(Godot.Vector3[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int[] TetrahedralizeDelaunay(Vector3[] points)
+    parameters:
+    - id: points
+      type: Godot.Vector3[]
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared Function TetrahedralizeDelaunay(points As Vector3()) As Integer()
+  overload: Godot.Geometry3D.TetrahedralizeDelaunay*
+  nameWithType.vb: Geometry3D.TetrahedralizeDelaunay(Vector3())
+  fullName.vb: Godot.Geometry3D.TetrahedralizeDelaunay(Godot.Vector3())
+  name.vb: TetrahedralizeDelaunay(Vector3())
+- uid: Godot.Geometry3D.TetrahedralizeDelaunay(System.ReadOnlySpan{Godot.Vector3})
+  commentId: M:Godot.Geometry3D.TetrahedralizeDelaunay(System.ReadOnlySpan{Godot.Vector3})
+  id: TetrahedralizeDelaunay(System.ReadOnlySpan{Godot.Vector3})
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: TetrahedralizeDelaunay(ReadOnlySpan<Vector3>)
+  nameWithType: Geometry3D.TetrahedralizeDelaunay(ReadOnlySpan<Vector3>)
+  fullName: Godot.Geometry3D.TetrahedralizeDelaunay(System.ReadOnlySpan<Godot.Vector3>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int[] TetrahedralizeDelaunay(ReadOnlySpan<Vector3> points)
+    parameters:
+    - id: points
+      type: System.ReadOnlySpan{Godot.Vector3}
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared Function TetrahedralizeDelaunay(points As ReadOnlySpan(Of Vector3)) As Integer()
+  overload: Godot.Geometry3D.TetrahedralizeDelaunay*
+  nameWithType.vb: Geometry3D.TetrahedralizeDelaunay(ReadOnlySpan(Of Vector3))
+  fullName.vb: Godot.Geometry3D.TetrahedralizeDelaunay(System.ReadOnlySpan(Of Godot.Vector3))
+  name.vb: TetrahedralizeDelaunay(ReadOnlySpan(Of Vector3))
+- uid: Godot.Geometry3D.Singleton
+  commentId: P:Godot.Geometry3D.Singleton
+  id: Singleton
+  parent: Godot.Geometry3D
+  langs:
+  - csharp
+  - vb
+  name: Singleton
+  nameWithType: Geometry3D.Singleton
+  fullName: Godot.Geometry3D.Singleton
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Geometry3DInstance Singleton { get; }
+    parameters: []
+    return:
+      type: Godot.Geometry3DInstance
+    content.vb: Public Shared ReadOnly Property Singleton As Geometry3DInstance
+  overload: Godot.Geometry3D.Singleton*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.Geometry3D.ComputeConvexMeshPoints*
+  commentId: Overload:Godot.Geometry3D.ComputeConvexMeshPoints
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_ComputeConvexMeshPoints_Godot_Collections_Array_Godot_Plane__
+  name: ComputeConvexMeshPoints
+  nameWithType: Geometry3D.ComputeConvexMeshPoints
+  fullName: Godot.Geometry3D.ComputeConvexMeshPoints
+- uid: Godot.Collections.Array{Godot.Plane}
+  commentId: T:Godot.Collections.Array{Godot.Plane}
+  parent: Godot.Collections
+  definition: Godot.Collections.Array`1
+  href: Godot.Collections.Array-1.html
+  name: Array<Plane>
+  nameWithType: Array<Plane>
+  fullName: Godot.Collections.Array<Godot.Plane>
+  nameWithType.vb: Array(Of Plane)
+  fullName.vb: Godot.Collections.Array(Of Godot.Plane)
+  name.vb: Array(Of Plane)
+  spec.csharp:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: <
+  - uid: Godot.Plane
+    name: Plane
+    isExternal: true
+    href: Godot.Plane.html
+  - name: '>'
+  spec.vb:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Plane
+    name: Plane
+    isExternal: true
+    href: Godot.Plane.html
+  - name: )
+- uid: Godot.Vector3[]
+  isExternal: true
+  href: Godot.Vector3.html
+  name: Vector3[]
+  nameWithType: Vector3[]
+  fullName: Godot.Vector3[]
+  nameWithType.vb: Vector3()
+  fullName.vb: Godot.Vector3()
+  name.vb: Vector3()
+  spec.csharp:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: (
+  - name: )
+- uid: Godot.Collections.Array`1
+  commentId: T:Godot.Collections.Array`1
+  parent: Godot.Collections
+  isExternal: true
+  href: Godot.Collections.Array-1.html
+  name: Array<T>
+  nameWithType: Array<T>
+  fullName: Godot.Collections.Array<T>
+  nameWithType.vb: Array(Of T)
+  fullName.vb: Godot.Collections.Array(Of T)
+  name.vb: Array(Of T)
+  spec.csharp:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.Collections
+  commentId: N:Godot.Collections
+  isExternal: true
+  href: Godot.html
+  name: Godot.Collections
+  nameWithType: Godot.Collections
+  fullName: Godot.Collections
+  spec.csharp:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+  spec.vb:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+- uid: Godot.Geometry3D.BuildBoxPlanes*
+  commentId: Overload:Godot.Geometry3D.BuildBoxPlanes
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_BuildBoxPlanes_Godot_Vector3_
+  name: BuildBoxPlanes
+  nameWithType: Geometry3D.BuildBoxPlanes
+  fullName: Godot.Geometry3D.BuildBoxPlanes
+- uid: Godot.Vector3
+  commentId: T:Godot.Vector3
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector3.html
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Godot.Vector3
+- uid: Godot.Geometry3D.BuildCylinderPlanes*
+  commentId: Overload:Godot.Geometry3D.BuildCylinderPlanes
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_BuildCylinderPlanes_System_Single_System_Single_System_Int32_Godot_Vector3_Axis_
+  name: BuildCylinderPlanes
+  nameWithType: Geometry3D.BuildCylinderPlanes
+  fullName: Godot.Geometry3D.BuildCylinderPlanes
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Godot.Vector3.Axis
+  commentId: T:Godot.Vector3.Axis
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector3.html
+  name: Vector3.Axis
+  nameWithType: Vector3.Axis
+  fullName: Godot.Vector3.Axis
+  spec.csharp:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: .
+  - uid: Godot.Vector3.Axis
+    name: Axis
+    isExternal: true
+    href: Godot.Vector3.Axis.html
+  spec.vb:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: .
+  - uid: Godot.Vector3.Axis
+    name: Axis
+    isExternal: true
+    href: Godot.Vector3.Axis.html
+- uid: Godot.Geometry3D.BuildCapsulePlanes*
+  commentId: Overload:Godot.Geometry3D.BuildCapsulePlanes
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_BuildCapsulePlanes_System_Single_System_Single_System_Int32_System_Int32_Godot_Vector3_Axis_
+  name: BuildCapsulePlanes
+  nameWithType: Geometry3D.BuildCapsulePlanes
+  fullName: Godot.Geometry3D.BuildCapsulePlanes
+- uid: Godot.Geometry3D.GetClosestPointsBetweenSegments*
+  commentId: Overload:Godot.Geometry3D.GetClosestPointsBetweenSegments
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_GetClosestPointsBetweenSegments_Godot_Vector3_Godot_Vector3_Godot_Vector3_Godot_Vector3_
+  name: GetClosestPointsBetweenSegments
+  nameWithType: Geometry3D.GetClosestPointsBetweenSegments
+  fullName: Godot.Geometry3D.GetClosestPointsBetweenSegments
+- uid: Godot.Geometry3D.GetClosestPointToSegment*
+  commentId: Overload:Godot.Geometry3D.GetClosestPointToSegment
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_GetClosestPointToSegment_Godot_Vector3_Godot_Vector3_Godot_Vector3_
+  name: GetClosestPointToSegment
+  nameWithType: Geometry3D.GetClosestPointToSegment
+  fullName: Godot.Geometry3D.GetClosestPointToSegment
+- uid: Godot.Geometry3D.GetClosestPointToSegmentUncapped*
+  commentId: Overload:Godot.Geometry3D.GetClosestPointToSegmentUncapped
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_GetClosestPointToSegmentUncapped_Godot_Vector3_Godot_Vector3_Godot_Vector3_
+  name: GetClosestPointToSegmentUncapped
+  nameWithType: Geometry3D.GetClosestPointToSegmentUncapped
+  fullName: Godot.Geometry3D.GetClosestPointToSegmentUncapped
+- uid: Godot.Geometry3D.GetTriangleBarycentricCoords*
+  commentId: Overload:Godot.Geometry3D.GetTriangleBarycentricCoords
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_GetTriangleBarycentricCoords_Godot_Vector3_Godot_Vector3_Godot_Vector3_Godot_Vector3_
+  name: GetTriangleBarycentricCoords
+  nameWithType: Geometry3D.GetTriangleBarycentricCoords
+  fullName: Godot.Geometry3D.GetTriangleBarycentricCoords
+- uid: Godot.Geometry3D.RayIntersectsTriangle*
+  commentId: Overload:Godot.Geometry3D.RayIntersectsTriangle
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_RayIntersectsTriangle_Godot_Vector3_Godot_Vector3_Godot_Vector3_Godot_Vector3_Godot_Vector3_
+  name: RayIntersectsTriangle
+  nameWithType: Geometry3D.RayIntersectsTriangle
+  fullName: Godot.Geometry3D.RayIntersectsTriangle
+- uid: Godot.Variant
+  commentId: T:Godot.Variant
+  parent: Godot
+  isExternal: true
+  href: Godot.Variant.html
+  name: Variant
+  nameWithType: Variant
+  fullName: Godot.Variant
+- uid: Godot.Geometry3D.SegmentIntersectsTriangle*
+  commentId: Overload:Godot.Geometry3D.SegmentIntersectsTriangle
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_SegmentIntersectsTriangle_Godot_Vector3_Godot_Vector3_Godot_Vector3_Godot_Vector3_Godot_Vector3_
+  name: SegmentIntersectsTriangle
+  nameWithType: Geometry3D.SegmentIntersectsTriangle
+  fullName: Godot.Geometry3D.SegmentIntersectsTriangle
+- uid: Godot.Geometry3D.SegmentIntersectsSphere*
+  commentId: Overload:Godot.Geometry3D.SegmentIntersectsSphere
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_SegmentIntersectsSphere_Godot_Vector3_Godot_Vector3_Godot_Vector3_System_Single_
+  name: SegmentIntersectsSphere
+  nameWithType: Geometry3D.SegmentIntersectsSphere
+  fullName: Godot.Geometry3D.SegmentIntersectsSphere
+- uid: Godot.Geometry3D.SegmentIntersectsCylinder*
+  commentId: Overload:Godot.Geometry3D.SegmentIntersectsCylinder
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_SegmentIntersectsCylinder_Godot_Vector3_Godot_Vector3_System_Single_System_Single_
+  name: SegmentIntersectsCylinder
+  nameWithType: Geometry3D.SegmentIntersectsCylinder
+  fullName: Godot.Geometry3D.SegmentIntersectsCylinder
+- uid: Godot.Geometry3D.SegmentIntersectsConvex*
+  commentId: Overload:Godot.Geometry3D.SegmentIntersectsConvex
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_SegmentIntersectsConvex_Godot_Vector3_Godot_Vector3_Godot_Collections_Array_Godot_Plane__
+  name: SegmentIntersectsConvex
+  nameWithType: Geometry3D.SegmentIntersectsConvex
+  fullName: Godot.Geometry3D.SegmentIntersectsConvex
+- uid: Godot.Geometry3D.ClipPolygon*
+  commentId: Overload:Godot.Geometry3D.ClipPolygon
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_ClipPolygon_Godot_Vector3___Godot_Plane_
+  name: ClipPolygon
+  nameWithType: Geometry3D.ClipPolygon
+  fullName: Godot.Geometry3D.ClipPolygon
+- uid: Godot.Plane
+  commentId: T:Godot.Plane
+  parent: Godot
+  isExternal: true
+  href: Godot.Plane.html
+  name: Plane
+  nameWithType: Plane
+  fullName: Godot.Plane
+- uid: System.ReadOnlySpan{Godot.Vector3}
+  commentId: T:System.ReadOnlySpan{Godot.Vector3}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<Vector3>
+  nameWithType: ReadOnlySpan<Vector3>
+  fullName: System.ReadOnlySpan<Godot.Vector3>
+  nameWithType.vb: ReadOnlySpan(Of Vector3)
+  fullName.vb: System.ReadOnlySpan(Of Godot.Vector3)
+  name.vb: ReadOnlySpan(Of Vector3)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.Geometry3D.TetrahedralizeDelaunay*
+  commentId: Overload:Godot.Geometry3D.TetrahedralizeDelaunay
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_TetrahedralizeDelaunay_Godot_Vector3___
+  name: TetrahedralizeDelaunay
+  nameWithType: Geometry3D.TetrahedralizeDelaunay
+  fullName: Godot.Geometry3D.TetrahedralizeDelaunay
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: Godot.Geometry3D.Singleton*
+  commentId: Overload:Godot.Geometry3D.Singleton
+  isExternal: true
+  href: Godot.Geometry3D.html#Godot_Geometry3D_Singleton
+  name: Singleton
+  nameWithType: Geometry3D.Singleton
+  fullName: Godot.Geometry3D.Singleton
+- uid: Godot.Geometry3DInstance
+  commentId: T:Godot.Geometry3DInstance
+  parent: Godot
+  isExternal: true
+  href: Godot.Geometry3DInstance.html
+  name: Geometry3DInstance
+  nameWithType: Geometry3DInstance
+  fullName: Godot.Geometry3DInstance

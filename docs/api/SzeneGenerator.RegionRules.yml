@@ -1,0 +1,245 @@
+### YamlMime:ManagedReference
+items:
+- uid: SzeneGenerator.RegionRules
+  commentId: T:SzeneGenerator.RegionRules
+  id: RegionRules
+  parent: SzeneGenerator
+  children:
+  - SzeneGenerator.RegionRules.#ctor
+  - SzeneGenerator.RegionRules.LocalSky
+  - SzeneGenerator.RegionRules.RegionId
+  - SzeneGenerator.RegionRules.Spawning
+  - SzeneGenerator.RegionRules.Terrain
+  langs:
+  - csharp
+  - vb
+  name: RegionRules
+  nameWithType: RegionRules
+  fullName: SzeneGenerator.RegionRules
+  type: Class
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Regions/Rules/RegionRulesDTOs.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  summary: >-
+    Region-specific rules loaded from JSON controlling terrain layers,
+
+    spawning behavior, and local sky settings.
+  example: []
+  syntax:
+    content: public class RegionRules
+    content.vb: Public Class RegionRules
+  inheritance:
+  - System.Object
+- uid: SzeneGenerator.RegionRules.#ctor
+  commentId: M:SzeneGenerator.RegionRules.#ctor
+  id: '#ctor'
+  parent: SzeneGenerator.RegionRules
+  langs:
+  - csharp
+  - vb
+  name: RegionRules()
+  nameWithType: RegionRules.RegionRules()
+  fullName: SzeneGenerator.RegionRules.RegionRules()
+  type: Constructor
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Regions/Rules/RegionRulesDTOs.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public RegionRules()
+    content.vb: Public Sub New()
+  overload: SzeneGenerator.RegionRules.#ctor*
+  nameWithType.vb: RegionRules.New()
+  fullName.vb: SzeneGenerator.RegionRules.New()
+  name.vb: New()
+- uid: SzeneGenerator.RegionRules.RegionId
+  commentId: P:SzeneGenerator.RegionRules.RegionId
+  id: RegionId
+  parent: SzeneGenerator.RegionRules
+  langs:
+  - csharp
+  - vb
+  name: RegionId
+  nameWithType: RegionRules.RegionId
+  fullName: SzeneGenerator.RegionRules.RegionId
+  type: Property
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Regions/Rules/RegionRulesDTOs.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public string RegionId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RegionId As String
+  overload: SzeneGenerator.RegionRules.RegionId*
+- uid: SzeneGenerator.RegionRules.Terrain
+  commentId: P:SzeneGenerator.RegionRules.Terrain
+  id: Terrain
+  parent: SzeneGenerator.RegionRules
+  langs:
+  - csharp
+  - vb
+  name: Terrain
+  nameWithType: RegionRules.Terrain
+  fullName: SzeneGenerator.RegionRules.Terrain
+  type: Property
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Regions/Rules/RegionRulesDTOs.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public TerrainRules Terrain { get; set; }
+    parameters: []
+    return:
+      type: SzeneGenerator.TerrainRules
+    content.vb: Public Property Terrain As TerrainRules
+  overload: SzeneGenerator.RegionRules.Terrain*
+- uid: SzeneGenerator.RegionRules.Spawning
+  commentId: P:SzeneGenerator.RegionRules.Spawning
+  id: Spawning
+  parent: SzeneGenerator.RegionRules
+  langs:
+  - csharp
+  - vb
+  name: Spawning
+  nameWithType: RegionRules.Spawning
+  fullName: SzeneGenerator.RegionRules.Spawning
+  type: Property
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Regions/Rules/RegionRulesDTOs.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public SpawningRules Spawning { get; set; }
+    parameters: []
+    return:
+      type: SzeneGenerator.SpawningRules
+    content.vb: Public Property Spawning As SpawningRules
+  overload: SzeneGenerator.RegionRules.Spawning*
+- uid: SzeneGenerator.RegionRules.LocalSky
+  commentId: P:SzeneGenerator.RegionRules.LocalSky
+  id: LocalSky
+  parent: SzeneGenerator.RegionRules
+  langs:
+  - csharp
+  - vb
+  name: LocalSky
+  nameWithType: RegionRules.LocalSky
+  fullName: SzeneGenerator.RegionRules.LocalSky
+  type: Property
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Regions/Rules/RegionRulesDTOs.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public LocalSkySettings LocalSky { get; set; }
+    parameters: []
+    return:
+      type: SzeneGenerator.LocalSkySettings
+    content.vb: Public Property LocalSky As LocalSkySettings
+  overload: SzeneGenerator.RegionRules.LocalSky*
+references:
+- uid: SzeneGenerator
+  commentId: N:SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.html
+  name: SzeneGenerator
+  nameWithType: SzeneGenerator
+  fullName: SzeneGenerator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SzeneGenerator.RegionRules.#ctor*
+  commentId: Overload:SzeneGenerator.RegionRules.#ctor
+  isExternal: true
+  href: SzeneGenerator.RegionRules.html#SzeneGenerator_RegionRules__ctor
+  name: RegionRules
+  nameWithType: RegionRules.RegionRules
+  fullName: SzeneGenerator.RegionRules.RegionRules
+  nameWithType.vb: RegionRules.New
+  fullName.vb: SzeneGenerator.RegionRules.New
+  name.vb: New
+- uid: SzeneGenerator.RegionRules.RegionId*
+  commentId: Overload:SzeneGenerator.RegionRules.RegionId
+  isExternal: true
+  href: SzeneGenerator.RegionRules.html#SzeneGenerator_RegionRules_RegionId
+  name: RegionId
+  nameWithType: RegionRules.RegionId
+  fullName: SzeneGenerator.RegionRules.RegionId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SzeneGenerator.RegionRules.Terrain*
+  commentId: Overload:SzeneGenerator.RegionRules.Terrain
+  isExternal: true
+  href: SzeneGenerator.RegionRules.html#SzeneGenerator_RegionRules_Terrain
+  name: Terrain
+  nameWithType: RegionRules.Terrain
+  fullName: SzeneGenerator.RegionRules.Terrain
+- uid: SzeneGenerator.TerrainRules
+  commentId: T:SzeneGenerator.TerrainRules
+  parent: SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.TerrainRules.html
+  name: TerrainRules
+  nameWithType: TerrainRules
+  fullName: SzeneGenerator.TerrainRules
+- uid: SzeneGenerator.RegionRules.Spawning*
+  commentId: Overload:SzeneGenerator.RegionRules.Spawning
+  isExternal: true
+  href: SzeneGenerator.RegionRules.html#SzeneGenerator_RegionRules_Spawning
+  name: Spawning
+  nameWithType: RegionRules.Spawning
+  fullName: SzeneGenerator.RegionRules.Spawning
+- uid: SzeneGenerator.SpawningRules
+  commentId: T:SzeneGenerator.SpawningRules
+  parent: SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.SpawningRules.html
+  name: SpawningRules
+  nameWithType: SpawningRules
+  fullName: SzeneGenerator.SpawningRules
+- uid: SzeneGenerator.RegionRules.LocalSky*
+  commentId: Overload:SzeneGenerator.RegionRules.LocalSky
+  isExternal: true
+  href: SzeneGenerator.RegionRules.html#SzeneGenerator_RegionRules_LocalSky
+  name: LocalSky
+  nameWithType: RegionRules.LocalSky
+  fullName: SzeneGenerator.RegionRules.LocalSky
+- uid: SzeneGenerator.LocalSkySettings
+  commentId: T:SzeneGenerator.LocalSkySettings
+  parent: SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.LocalSkySettings.html
+  name: LocalSkySettings
+  nameWithType: LocalSkySettings
+  fullName: SzeneGenerator.LocalSkySettings

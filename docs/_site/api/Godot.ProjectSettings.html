@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ProjectSettings | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ProjectSettings | mysite ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Godot.ProjectSettings">
+
+
+
+  <h1 id="Godot_ProjectSettings" data-uid="Godot.ProjectSettings" class="text-break">
+Class ProjectSettings  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Godot.html">Godot</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GodotSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ProjectSettings</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">ProjectSettings</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Godot_ProjectSettings_Singleton_" data-uid="Godot.ProjectSettings.Singleton*"></a>
+
+  <h3 id="Godot_ProjectSettings_Singleton" data-uid="Godot.ProjectSettings.Singleton">
+  Singleton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ProjectSettingsInstance Singleton { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.ProjectSettingsInstance.html">ProjectSettingsInstance</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Godot_ProjectSettings_AddPropertyInfo_" data-uid="Godot.ProjectSettings.AddPropertyInfo*"></a>
+
+  <h3 id="Godot_ProjectSettings_AddPropertyInfo_Godot_Collections_Dictionary_" data-uid="Godot.ProjectSettings.AddPropertyInfo(Godot.Collections.Dictionary)">
+  AddPropertyInfo(Dictionary)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPropertyInfo(Dictionary hint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hint</code> <a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_Clear_" data-uid="Godot.ProjectSettings.Clear*"></a>
+
+  <h3 id="Godot_ProjectSettings_Clear_System_String_" data-uid="Godot.ProjectSettings.Clear(System.String)">
+  Clear(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Clear(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_GetGlobalClassList_" data-uid="Godot.ProjectSettings.GetGlobalClassList*"></a>
+
+  <h3 id="Godot_ProjectSettings_GetGlobalClassList" data-uid="Godot.ProjectSettings.GetGlobalClassList">
+  GetGlobalClassList()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Array&lt;Dictionary&gt; GetGlobalClassList()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_GetOrder_" data-uid="Godot.ProjectSettings.GetOrder*"></a>
+
+  <h3 id="Godot_ProjectSettings_GetOrder_System_String_" data-uid="Godot.ProjectSettings.GetOrder(System.String)">
+  GetOrder(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetOrder(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_GetSetting_" data-uid="Godot.ProjectSettings.GetSetting*"></a>
+
+  <h3 id="Godot_ProjectSettings_GetSetting_System_String_Godot_Variant_" data-uid="Godot.ProjectSettings.GetSetting(System.String,Godot.Variant)">
+  GetSetting(string, Variant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant GetSetting(string name, Variant defaultValue = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_GetSettingWithOverride_" data-uid="Godot.ProjectSettings.GetSettingWithOverride*"></a>
+
+  <h3 id="Godot_ProjectSettings_GetSettingWithOverride_Godot_StringName_" data-uid="Godot.ProjectSettings.GetSettingWithOverride(Godot.StringName)">
+  GetSettingWithOverride(StringName)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant GetSettingWithOverride(StringName name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="Godot.StringName.html">StringName</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_GetSettingWithOverrideAndCustomFeatures_" data-uid="Godot.ProjectSettings.GetSettingWithOverrideAndCustomFeatures*"></a>
+
+  <h3 id="Godot_ProjectSettings_GetSettingWithOverrideAndCustomFeatures_Godot_StringName_System_ReadOnlySpan_System_String__" data-uid="Godot.ProjectSettings.GetSettingWithOverrideAndCustomFeatures(Godot.StringName,System.ReadOnlySpan{System.String})">
+  GetSettingWithOverrideAndCustomFeatures(StringName, ReadOnlySpan&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant GetSettingWithOverrideAndCustomFeatures(StringName name, ReadOnlySpan&lt;string&gt; features)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="Godot.StringName.html">StringName</a></dt>
+    <dd></dd>
+    <dt><code>features</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_GetSettingWithOverrideAndCustomFeatures_" data-uid="Godot.ProjectSettings.GetSettingWithOverrideAndCustomFeatures*"></a>
+
+  <h3 id="Godot_ProjectSettings_GetSettingWithOverrideAndCustomFeatures_Godot_StringName_System_String___" data-uid="Godot.ProjectSettings.GetSettingWithOverrideAndCustomFeatures(Godot.StringName,System.String[])">
+  GetSettingWithOverrideAndCustomFeatures(StringName, string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant GetSettingWithOverrideAndCustomFeatures(StringName name, string[] features)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="Godot.StringName.html">StringName</a></dt>
+    <dd></dd>
+    <dt><code>features</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_GlobalizePath_" data-uid="Godot.ProjectSettings.GlobalizePath*"></a>
+
+  <h3 id="Godot_ProjectSettings_GlobalizePath_System_String_" data-uid="Godot.ProjectSettings.GlobalizePath(System.String)">
+  GlobalizePath(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GlobalizePath(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_HasSetting_" data-uid="Godot.ProjectSettings.HasSetting*"></a>
+
+  <h3 id="Godot_ProjectSettings_HasSetting_System_String_" data-uid="Godot.ProjectSettings.HasSetting(System.String)">
+  HasSetting(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasSetting(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_LoadResourcePack_" data-uid="Godot.ProjectSettings.LoadResourcePack*"></a>
+
+  <h3 id="Godot_ProjectSettings_LoadResourcePack_System_String_System_Boolean_System_Int32_" data-uid="Godot.ProjectSettings.LoadResourcePack(System.String,System.Boolean,System.Int32)">
+  LoadResourcePack(string, bool, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LoadResourcePack(string pack, bool replaceFiles = true, int offset = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pack</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>replaceFiles</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>offset</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_LocalizePath_" data-uid="Godot.ProjectSettings.LocalizePath*"></a>
+
+  <h3 id="Godot_ProjectSettings_LocalizePath_System_String_" data-uid="Godot.ProjectSettings.LocalizePath(System.String)">
+  LocalizePath(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string LocalizePath(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_Save_" data-uid="Godot.ProjectSettings.Save*"></a>
+
+  <h3 id="Godot_ProjectSettings_Save" data-uid="Godot.ProjectSettings.Save">
+  Save()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Error Save()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Error.html">Error</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_SaveCustom_" data-uid="Godot.ProjectSettings.SaveCustom*"></a>
+
+  <h3 id="Godot_ProjectSettings_SaveCustom_System_String_" data-uid="Godot.ProjectSettings.SaveCustom(System.String)">
+  SaveCustom(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Error SaveCustom(string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Error.html">Error</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_SetAsBasic_" data-uid="Godot.ProjectSettings.SetAsBasic*"></a>
+
+  <h3 id="Godot_ProjectSettings_SetAsBasic_System_String_System_Boolean_" data-uid="Godot.ProjectSettings.SetAsBasic(System.String,System.Boolean)">
+  SetAsBasic(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetAsBasic(string name, bool basic)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>basic</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_SetAsInternal_" data-uid="Godot.ProjectSettings.SetAsInternal*"></a>
+
+  <h3 id="Godot_ProjectSettings_SetAsInternal_System_String_System_Boolean_" data-uid="Godot.ProjectSettings.SetAsInternal(System.String,System.Boolean)">
+  SetAsInternal(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetAsInternal(string name, bool @internal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>internal</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_SetInitialValue_" data-uid="Godot.ProjectSettings.SetInitialValue*"></a>
+
+  <h3 id="Godot_ProjectSettings_SetInitialValue_System_String_Godot_Variant_" data-uid="Godot.ProjectSettings.SetInitialValue(System.String,Godot.Variant)">
+  SetInitialValue(string, Variant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetInitialValue(string name, Variant value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_SetOrder_" data-uid="Godot.ProjectSettings.SetOrder*"></a>
+
+  <h3 id="Godot_ProjectSettings_SetOrder_System_String_System_Int32_" data-uid="Godot.ProjectSettings.SetOrder(System.String,System.Int32)">
+  SetOrder(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetOrder(string name, int position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>position</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_SetRestartIfChanged_" data-uid="Godot.ProjectSettings.SetRestartIfChanged*"></a>
+
+  <h3 id="Godot_ProjectSettings_SetRestartIfChanged_System_String_System_Boolean_" data-uid="Godot.ProjectSettings.SetRestartIfChanged(System.String,System.Boolean)">
+  SetRestartIfChanged(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRestartIfChanged(string name, bool restart)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>restart</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ProjectSettings_SetSetting_" data-uid="Godot.ProjectSettings.SetSetting*"></a>
+
+  <h3 id="Godot_ProjectSettings_SetSetting_System_String_Godot_Variant_" data-uid="Godot.ProjectSettings.SetSetting(System.String,Godot.Variant)">
+  SetSetting(string, Variant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetSetting(string name, Variant value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Godot_ProjectSettings_SettingsChanged" data-uid="Godot.ProjectSettings.SettingsChanged">
+  SettingsChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event Action SettingsChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

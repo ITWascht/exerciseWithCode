@@ -1,0 +1,861 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.GodotTaskScheduler
+  commentId: T:Godot.GodotTaskScheduler
+  id: GodotTaskScheduler
+  parent: Godot
+  children:
+  - Godot.GodotTaskScheduler.#ctor
+  - Godot.GodotTaskScheduler.Activate
+  - Godot.GodotTaskScheduler.Dispose
+  - Godot.GodotTaskScheduler.GetScheduledTasks
+  - Godot.GodotTaskScheduler.QueueTask(System.Threading.Tasks.Task)
+  - Godot.GodotTaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+  - Godot.GodotTaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: GodotTaskScheduler
+  nameWithType: GodotTaskScheduler
+  fullName: Godot.GodotTaskScheduler
+  type: Class
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: 'public sealed class GodotTaskScheduler : TaskScheduler, IDisposable'
+    content.vb: Public NotInheritable Class GodotTaskScheduler Inherits TaskScheduler Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.Threading.Tasks.TaskScheduler
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext
+  - System.Threading.Tasks.TaskScheduler.MaximumConcurrencyLevel
+  - System.Threading.Tasks.TaskScheduler.Default
+  - System.Threading.Tasks.TaskScheduler.Current
+  - System.Threading.Tasks.TaskScheduler.Id
+  - System.Threading.Tasks.TaskScheduler.UnobservedTaskException
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Godot.GodotTaskScheduler.#ctor
+  commentId: M:Godot.GodotTaskScheduler.#ctor
+  id: '#ctor'
+  parent: Godot.GodotTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: GodotTaskScheduler()
+  nameWithType: GodotTaskScheduler.GodotTaskScheduler()
+  fullName: Godot.GodotTaskScheduler.GodotTaskScheduler()
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public GodotTaskScheduler()
+    content.vb: Public Sub New()
+  overload: Godot.GodotTaskScheduler.#ctor*
+  nameWithType.vb: GodotTaskScheduler.New()
+  fullName.vb: Godot.GodotTaskScheduler.New()
+  name.vb: New()
+- uid: Godot.GodotTaskScheduler.QueueTask(System.Threading.Tasks.Task)
+  commentId: M:Godot.GodotTaskScheduler.QueueTask(System.Threading.Tasks.Task)
+  id: QueueTask(System.Threading.Tasks.Task)
+  parent: Godot.GodotTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: QueueTask(Task)
+  nameWithType: GodotTaskScheduler.QueueTask(Task)
+  fullName: Godot.GodotTaskScheduler.QueueTask(System.Threading.Tasks.Task)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: protected override sealed void QueueTask(Task task)
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task
+    content.vb: Protected NotOverridable Overrides Sub QueueTask(task As Task)
+  overridden: System.Threading.Tasks.TaskScheduler.QueueTask(System.Threading.Tasks.Task)
+  overload: Godot.GodotTaskScheduler.QueueTask*
+- uid: Godot.GodotTaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)
+  commentId: M:Godot.GodotTaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)
+  id: TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)
+  parent: Godot.GodotTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: TryExecuteTaskInline(Task, bool)
+  nameWithType: GodotTaskScheduler.TryExecuteTaskInline(Task, bool)
+  fullName: Godot.GodotTaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: protected override sealed bool TryExecuteTaskInline(Task task, bool taskWasPreviouslyQueued)
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task
+    - id: taskWasPreviouslyQueued
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Protected NotOverridable Overrides Function TryExecuteTaskInline(task As Task, taskWasPreviouslyQueued As Boolean) As Boolean
+  overridden: System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)
+  overload: Godot.GodotTaskScheduler.TryExecuteTaskInline*
+  nameWithType.vb: GodotTaskScheduler.TryExecuteTaskInline(Task, Boolean)
+  fullName.vb: Godot.GodotTaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task, Boolean)
+  name.vb: TryExecuteTaskInline(Task, Boolean)
+- uid: Godot.GodotTaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+  commentId: M:Godot.GodotTaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+  id: TryDequeue(System.Threading.Tasks.Task)
+  parent: Godot.GodotTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: TryDequeue(Task)
+  nameWithType: GodotTaskScheduler.TryDequeue(Task)
+  fullName: Godot.GodotTaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: protected override sealed bool TryDequeue(Task task)
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task
+    return:
+      type: System.Boolean
+    content.vb: Protected NotOverridable Overrides Function TryDequeue(task As Task) As Boolean
+  overridden: System.Threading.Tasks.TaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+  overload: Godot.GodotTaskScheduler.TryDequeue*
+- uid: Godot.GodotTaskScheduler.GetScheduledTasks
+  commentId: M:Godot.GodotTaskScheduler.GetScheduledTasks
+  id: GetScheduledTasks
+  parent: Godot.GodotTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: GetScheduledTasks()
+  nameWithType: GodotTaskScheduler.GetScheduledTasks()
+  fullName: Godot.GodotTaskScheduler.GetScheduledTasks()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: protected override sealed IEnumerable<Task> GetScheduledTasks()
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Threading.Tasks.Task}
+    content.vb: Protected NotOverridable Overrides Function GetScheduledTasks() As IEnumerable(Of Task)
+  overridden: System.Threading.Tasks.TaskScheduler.GetScheduledTasks
+  overload: Godot.GodotTaskScheduler.GetScheduledTasks*
+- uid: Godot.GodotTaskScheduler.Activate
+  commentId: M:Godot.GodotTaskScheduler.Activate
+  id: Activate
+  parent: Godot.GodotTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: Activate()
+  nameWithType: GodotTaskScheduler.Activate()
+  fullName: Godot.GodotTaskScheduler.Activate()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void Activate()
+    content.vb: Public Sub Activate()
+  overload: Godot.GodotTaskScheduler.Activate*
+- uid: Godot.GodotTaskScheduler.Dispose
+  commentId: M:Godot.GodotTaskScheduler.Dispose
+  id: Dispose
+  parent: Godot.GodotTaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: GodotTaskScheduler.Dispose()
+  fullName: Godot.GodotTaskScheduler.Dispose()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Godot.GodotTaskScheduler.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Threading.Tasks.TaskScheduler
+  commentId: T:System.Threading.Tasks.TaskScheduler
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler
+  name: TaskScheduler
+  nameWithType: TaskScheduler
+  fullName: System.Threading.Tasks.TaskScheduler
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext
+  commentId: M:System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.fromcurrentsynchronizationcontext
+  name: FromCurrentSynchronizationContext()
+  nameWithType: TaskScheduler.FromCurrentSynchronizationContext()
+  fullName: System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext()
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext
+    name: FromCurrentSynchronizationContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.fromcurrentsynchronizationcontext
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext
+    name: FromCurrentSynchronizationContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.fromcurrentsynchronizationcontext
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.TaskScheduler.MaximumConcurrencyLevel
+  commentId: P:System.Threading.Tasks.TaskScheduler.MaximumConcurrencyLevel
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.maximumconcurrencylevel
+  name: MaximumConcurrencyLevel
+  nameWithType: TaskScheduler.MaximumConcurrencyLevel
+  fullName: System.Threading.Tasks.TaskScheduler.MaximumConcurrencyLevel
+- uid: System.Threading.Tasks.TaskScheduler.Default
+  commentId: P:System.Threading.Tasks.TaskScheduler.Default
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.default
+  name: Default
+  nameWithType: TaskScheduler.Default
+  fullName: System.Threading.Tasks.TaskScheduler.Default
+- uid: System.Threading.Tasks.TaskScheduler.Current
+  commentId: P:System.Threading.Tasks.TaskScheduler.Current
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.current
+  name: Current
+  nameWithType: TaskScheduler.Current
+  fullName: System.Threading.Tasks.TaskScheduler.Current
+- uid: System.Threading.Tasks.TaskScheduler.Id
+  commentId: P:System.Threading.Tasks.TaskScheduler.Id
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.id
+  name: Id
+  nameWithType: TaskScheduler.Id
+  fullName: System.Threading.Tasks.TaskScheduler.Id
+- uid: System.Threading.Tasks.TaskScheduler.UnobservedTaskException
+  commentId: E:System.Threading.Tasks.TaskScheduler.UnobservedTaskException
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.unobservedtaskexception
+  name: UnobservedTaskException
+  nameWithType: TaskScheduler.UnobservedTaskException
+  fullName: System.Threading.Tasks.TaskScheduler.UnobservedTaskException
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Godot.GodotTaskScheduler.#ctor*
+  commentId: Overload:Godot.GodotTaskScheduler.#ctor
+  isExternal: true
+  href: Godot.GodotTaskScheduler.html#Godot_GodotTaskScheduler__ctor
+  name: GodotTaskScheduler
+  nameWithType: GodotTaskScheduler.GodotTaskScheduler
+  fullName: Godot.GodotTaskScheduler.GodotTaskScheduler
+  nameWithType.vb: GodotTaskScheduler.New
+  fullName.vb: Godot.GodotTaskScheduler.New
+  name.vb: New
+- uid: System.Threading.Tasks.TaskScheduler.QueueTask(System.Threading.Tasks.Task)
+  commentId: M:System.Threading.Tasks.TaskScheduler.QueueTask(System.Threading.Tasks.Task)
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.queuetask
+  name: QueueTask(Task)
+  nameWithType: TaskScheduler.QueueTask(Task)
+  fullName: System.Threading.Tasks.TaskScheduler.QueueTask(System.Threading.Tasks.Task)
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskScheduler.QueueTask(System.Threading.Tasks.Task)
+    name: QueueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.queuetask
+  - name: (
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskScheduler.QueueTask(System.Threading.Tasks.Task)
+    name: QueueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.queuetask
+  - name: (
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: Godot.GodotTaskScheduler.QueueTask*
+  commentId: Overload:Godot.GodotTaskScheduler.QueueTask
+  isExternal: true
+  href: Godot.GodotTaskScheduler.html#Godot_GodotTaskScheduler_QueueTask_System_Threading_Tasks_Task_
+  name: QueueTask
+  nameWithType: GodotTaskScheduler.QueueTask
+  fullName: Godot.GodotTaskScheduler.QueueTask
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)
+  commentId: M:System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.tryexecutetaskinline
+  name: TryExecuteTaskInline(Task, bool)
+  nameWithType: TaskScheduler.TryExecuteTaskInline(Task, bool)
+  fullName: System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task, bool)
+  nameWithType.vb: TaskScheduler.TryExecuteTaskInline(Task, Boolean)
+  fullName.vb: System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task, Boolean)
+  name.vb: TryExecuteTaskInline(Task, Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)
+    name: TryExecuteTaskInline
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.tryexecutetaskinline
+  - name: (
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)
+    name: TryExecuteTaskInline
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.tryexecutetaskinline
+  - name: (
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Godot.GodotTaskScheduler.TryExecuteTaskInline*
+  commentId: Overload:Godot.GodotTaskScheduler.TryExecuteTaskInline
+  isExternal: true
+  href: Godot.GodotTaskScheduler.html#Godot_GodotTaskScheduler_TryExecuteTaskInline_System_Threading_Tasks_Task_System_Boolean_
+  name: TryExecuteTaskInline
+  nameWithType: GodotTaskScheduler.TryExecuteTaskInline
+  fullName: Godot.GodotTaskScheduler.TryExecuteTaskInline
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Threading.Tasks.TaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+  commentId: M:System.Threading.Tasks.TaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.trydequeue
+  name: TryDequeue(Task)
+  nameWithType: TaskScheduler.TryDequeue(Task)
+  fullName: System.Threading.Tasks.TaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+    name: TryDequeue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.trydequeue
+  - name: (
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskScheduler.TryDequeue(System.Threading.Tasks.Task)
+    name: TryDequeue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.trydequeue
+  - name: (
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: Godot.GodotTaskScheduler.TryDequeue*
+  commentId: Overload:Godot.GodotTaskScheduler.TryDequeue
+  isExternal: true
+  href: Godot.GodotTaskScheduler.html#Godot_GodotTaskScheduler_TryDequeue_System_Threading_Tasks_Task_
+  name: TryDequeue
+  nameWithType: GodotTaskScheduler.TryDequeue
+  fullName: Godot.GodotTaskScheduler.TryDequeue
+- uid: System.Threading.Tasks.TaskScheduler.GetScheduledTasks
+  commentId: M:System.Threading.Tasks.TaskScheduler.GetScheduledTasks
+  parent: System.Threading.Tasks.TaskScheduler
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.getscheduledtasks
+  name: GetScheduledTasks()
+  nameWithType: TaskScheduler.GetScheduledTasks()
+  fullName: System.Threading.Tasks.TaskScheduler.GetScheduledTasks()
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskScheduler.GetScheduledTasks
+    name: GetScheduledTasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.getscheduledtasks
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskScheduler.GetScheduledTasks
+    name: GetScheduledTasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler.getscheduledtasks
+  - name: (
+  - name: )
+- uid: Godot.GodotTaskScheduler.GetScheduledTasks*
+  commentId: Overload:Godot.GodotTaskScheduler.GetScheduledTasks
+  isExternal: true
+  href: Godot.GodotTaskScheduler.html#Godot_GodotTaskScheduler_GetScheduledTasks
+  name: GetScheduledTasks
+  nameWithType: GodotTaskScheduler.GetScheduledTasks
+  fullName: Godot.GodotTaskScheduler.GetScheduledTasks
+- uid: System.Collections.Generic.IEnumerable{System.Threading.Tasks.Task}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Threading.Tasks.Task}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Task>
+  nameWithType: IEnumerable<Task>
+  fullName: System.Collections.Generic.IEnumerable<System.Threading.Tasks.Task>
+  nameWithType.vb: IEnumerable(Of Task)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Threading.Tasks.Task)
+  name.vb: IEnumerable(Of Task)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Godot.GodotTaskScheduler.Activate*
+  commentId: Overload:Godot.GodotTaskScheduler.Activate
+  isExternal: true
+  href: Godot.GodotTaskScheduler.html#Godot_GodotTaskScheduler_Activate
+  name: Activate
+  nameWithType: GodotTaskScheduler.Activate
+  fullName: Godot.GodotTaskScheduler.Activate
+- uid: Godot.GodotTaskScheduler.Dispose*
+  commentId: Overload:Godot.GodotTaskScheduler.Dispose
+  isExternal: true
+  href: Godot.GodotTaskScheduler.html#Godot_GodotTaskScheduler_Dispose
+  name: Dispose
+  nameWithType: GodotTaskScheduler.Dispose
+  fullName: Godot.GodotTaskScheduler.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

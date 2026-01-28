@@ -1,0 +1,254 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.Tree.MultiSelectedEventHandler
+  commentId: T:Godot.Tree.MultiSelectedEventHandler
+  id: Tree.MultiSelectedEventHandler
+  parent: Godot
+  children:
+  - Godot.Tree.MultiSelectedEventHandler.#ctor(System.Object,System.IntPtr)
+  - Godot.Tree.MultiSelectedEventHandler.BeginInvoke(Godot.TreeItem,System.Int64,System.Boolean,System.AsyncCallback,System.Object)
+  - Godot.Tree.MultiSelectedEventHandler.EndInvoke(System.IAsyncResult)
+  - Godot.Tree.MultiSelectedEventHandler.Invoke(Godot.TreeItem,System.Int64,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: Tree.MultiSelectedEventHandler
+  nameWithType: Tree.MultiSelectedEventHandler
+  fullName: Godot.Tree.MultiSelectedEventHandler
+  type: Delegate
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public delegate void Tree.MultiSelectedEventHandler(TreeItem item, long column, bool selected)
+    parameters:
+    - id: item
+      type: Godot.TreeItem
+    - id: column
+      type: System.Int64
+    - id: selected
+      type: System.Boolean
+    content.vb: Public Delegate Sub Tree.MultiSelectedEventHandler(item As TreeItem, column As Long, selected As Boolean)
+- uid: Godot.Tree.MultiSelectedEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Godot.Tree.MultiSelectedEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Godot.Tree.MultiSelectedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: MultiSelectedEventHandler(object, nint)
+  nameWithType: Tree.MultiSelectedEventHandler.MultiSelectedEventHandler(object, nint)
+  fullName: Godot.Tree.MultiSelectedEventHandler.MultiSelectedEventHandler(object, nint)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public MultiSelectedEventHandler(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Godot.Tree.MultiSelectedEventHandler.#ctor*
+  nameWithType.vb: Tree.MultiSelectedEventHandler.New(Object, IntPtr)
+  fullName.vb: Godot.Tree.MultiSelectedEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Godot.Tree.MultiSelectedEventHandler.Invoke(Godot.TreeItem,System.Int64,System.Boolean)
+  commentId: M:Godot.Tree.MultiSelectedEventHandler.Invoke(Godot.TreeItem,System.Int64,System.Boolean)
+  id: Invoke(Godot.TreeItem,System.Int64,System.Boolean)
+  parent: Godot.Tree.MultiSelectedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(TreeItem, long, bool)
+  nameWithType: Tree.MultiSelectedEventHandler.Invoke(TreeItem, long, bool)
+  fullName: Godot.Tree.MultiSelectedEventHandler.Invoke(Godot.TreeItem, long, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void Invoke(TreeItem item, long column, bool selected)
+    parameters:
+    - id: item
+      type: Godot.TreeItem
+    - id: column
+      type: System.Int64
+    - id: selected
+      type: System.Boolean
+    content.vb: Public Overridable Sub Invoke(item As TreeItem, column As Long, selected As Boolean)
+  overload: Godot.Tree.MultiSelectedEventHandler.Invoke*
+  nameWithType.vb: Tree.MultiSelectedEventHandler.Invoke(TreeItem, Long, Boolean)
+  fullName.vb: Godot.Tree.MultiSelectedEventHandler.Invoke(Godot.TreeItem, Long, Boolean)
+  name.vb: Invoke(TreeItem, Long, Boolean)
+- uid: Godot.Tree.MultiSelectedEventHandler.BeginInvoke(Godot.TreeItem,System.Int64,System.Boolean,System.AsyncCallback,System.Object)
+  commentId: M:Godot.Tree.MultiSelectedEventHandler.BeginInvoke(Godot.TreeItem,System.Int64,System.Boolean,System.AsyncCallback,System.Object)
+  id: BeginInvoke(Godot.TreeItem,System.Int64,System.Boolean,System.AsyncCallback,System.Object)
+  parent: Godot.Tree.MultiSelectedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(TreeItem, long, bool, AsyncCallback, object)
+  nameWithType: Tree.MultiSelectedEventHandler.BeginInvoke(TreeItem, long, bool, AsyncCallback, object)
+  fullName: Godot.Tree.MultiSelectedEventHandler.BeginInvoke(Godot.TreeItem, long, bool, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(TreeItem item, long column, bool selected, AsyncCallback callback, object @object)
+    parameters:
+    - id: item
+      type: Godot.TreeItem
+    - id: column
+      type: System.Int64
+    - id: selected
+      type: System.Boolean
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(item As TreeItem, column As Long, selected As Boolean, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Godot.Tree.MultiSelectedEventHandler.BeginInvoke*
+  nameWithType.vb: Tree.MultiSelectedEventHandler.BeginInvoke(TreeItem, Long, Boolean, AsyncCallback, Object)
+  fullName.vb: Godot.Tree.MultiSelectedEventHandler.BeginInvoke(Godot.TreeItem, Long, Boolean, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(TreeItem, Long, Boolean, AsyncCallback, Object)
+- uid: Godot.Tree.MultiSelectedEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Godot.Tree.MultiSelectedEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Godot.Tree.MultiSelectedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: Tree.MultiSelectedEventHandler.EndInvoke(IAsyncResult)
+  fullName: Godot.Tree.MultiSelectedEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: Godot.Tree.MultiSelectedEventHandler.EndInvoke*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: Godot.TreeItem
+  commentId: T:Godot.TreeItem
+  parent: Godot
+  isExternal: true
+  href: Godot.TreeItem.html
+  name: TreeItem
+  nameWithType: TreeItem
+  fullName: Godot.TreeItem
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.Tree.MultiSelectedEventHandler.#ctor*
+  commentId: Overload:Godot.Tree.MultiSelectedEventHandler.#ctor
+  isExternal: true
+  href: Godot.Tree.MultiSelectedEventHandler.html#Godot_Tree_MultiSelectedEventHandler__ctor_System_Object_System_IntPtr_
+  name: MultiSelectedEventHandler
+  nameWithType: Tree.MultiSelectedEventHandler.MultiSelectedEventHandler
+  fullName: Godot.Tree.MultiSelectedEventHandler.MultiSelectedEventHandler
+  nameWithType.vb: Tree.MultiSelectedEventHandler.New
+  fullName.vb: Godot.Tree.MultiSelectedEventHandler.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Godot.Tree.MultiSelectedEventHandler.Invoke*
+  commentId: Overload:Godot.Tree.MultiSelectedEventHandler.Invoke
+  isExternal: true
+  href: Godot.Tree.MultiSelectedEventHandler.html#Godot_Tree_MultiSelectedEventHandler_Invoke_Godot_TreeItem_System_Int64_System_Boolean_
+  name: Invoke
+  nameWithType: Tree.MultiSelectedEventHandler.Invoke
+  fullName: Godot.Tree.MultiSelectedEventHandler.Invoke
+- uid: Godot.Tree.MultiSelectedEventHandler.BeginInvoke*
+  commentId: Overload:Godot.Tree.MultiSelectedEventHandler.BeginInvoke
+  isExternal: true
+  href: Godot.Tree.MultiSelectedEventHandler.html#Godot_Tree_MultiSelectedEventHandler_BeginInvoke_Godot_TreeItem_System_Int64_System_Boolean_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: Tree.MultiSelectedEventHandler.BeginInvoke
+  fullName: Godot.Tree.MultiSelectedEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Godot.Tree.MultiSelectedEventHandler.EndInvoke*
+  commentId: Overload:Godot.Tree.MultiSelectedEventHandler.EndInvoke
+  isExternal: true
+  href: Godot.Tree.MultiSelectedEventHandler.html#Godot_Tree_MultiSelectedEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: Tree.MultiSelectedEventHandler.EndInvoke
+  fullName: Godot.Tree.MultiSelectedEventHandler.EndInvoke

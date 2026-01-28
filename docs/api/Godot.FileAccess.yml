@@ -1,0 +1,5619 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.FileAccess
+  commentId: T:Godot.FileAccess
+  id: FileAccess
+  parent: Godot
+  children:
+  - Godot.FileAccess.BigEndian
+  - Godot.FileAccess.Close
+  - Godot.FileAccess.CreateTemp(System.Int32,System.String,System.String,System.Boolean)
+  - Godot.FileAccess.EofReached
+  - Godot.FileAccess.FileExists(System.String)
+  - Godot.FileAccess.Flush
+  - Godot.FileAccess.Get16
+  - Godot.FileAccess.Get32
+  - Godot.FileAccess.Get64
+  - Godot.FileAccess.Get8
+  - Godot.FileAccess.GetAccessTime(System.String)
+  - Godot.FileAccess.GetAsText(System.Boolean)
+  - Godot.FileAccess.GetBuffer(System.Int64)
+  - Godot.FileAccess.GetCsvLine(System.String)
+  - Godot.FileAccess.GetDouble
+  - Godot.FileAccess.GetError
+  - Godot.FileAccess.GetFileAsBytes(System.String)
+  - Godot.FileAccess.GetFileAsString(System.String)
+  - Godot.FileAccess.GetFloat
+  - Godot.FileAccess.GetHalf
+  - Godot.FileAccess.GetHiddenAttribute(System.String)
+  - Godot.FileAccess.GetLength
+  - Godot.FileAccess.GetLine
+  - Godot.FileAccess.GetMd5(System.String)
+  - Godot.FileAccess.GetModifiedTime(System.String)
+  - Godot.FileAccess.GetOpenError
+  - Godot.FileAccess.GetPascalString
+  - Godot.FileAccess.GetPath
+  - Godot.FileAccess.GetPathAbsolute
+  - Godot.FileAccess.GetPosition
+  - Godot.FileAccess.GetReadOnlyAttribute(System.String)
+  - Godot.FileAccess.GetReal
+  - Godot.FileAccess.GetSha256(System.String)
+  - Godot.FileAccess.GetSize(System.String)
+  - Godot.FileAccess.GetUnixPermissions(System.String)
+  - Godot.FileAccess.GetVar(System.Boolean)
+  - Godot.FileAccess.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+  - Godot.FileAccess.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+  - Godot.FileAccess.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+  - Godot.FileAccess.IsOpen
+  - Godot.FileAccess.Open(System.String,Godot.FileAccess.ModeFlags)
+  - Godot.FileAccess.OpenCompressed(System.String,Godot.FileAccess.ModeFlags,Godot.FileAccess.CompressionMode)
+  - Godot.FileAccess.OpenEncrypted(System.String,Godot.FileAccess.ModeFlags,System.Byte[],System.Byte[])
+  - Godot.FileAccess.OpenEncrypted(System.String,Godot.FileAccess.ModeFlags,System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})
+  - Godot.FileAccess.OpenEncryptedWithPass(System.String,Godot.FileAccess.ModeFlags,System.String)
+  - Godot.FileAccess.Resize(System.Int64)
+  - Godot.FileAccess.Seek(System.UInt64)
+  - Godot.FileAccess.SeekEnd(System.Int64)
+  - Godot.FileAccess.SetHiddenAttribute(System.String,System.Boolean)
+  - Godot.FileAccess.SetReadOnlyAttribute(System.String,System.Boolean)
+  - Godot.FileAccess.SetUnixPermissions(System.String,Godot.FileAccess.UnixPermissionFlags)
+  - Godot.FileAccess.Store16(System.UInt16)
+  - Godot.FileAccess.Store32(System.UInt32)
+  - Godot.FileAccess.Store64(System.UInt64)
+  - Godot.FileAccess.Store8(System.Byte)
+  - Godot.FileAccess.StoreBuffer(System.Byte[])
+  - Godot.FileAccess.StoreBuffer(System.ReadOnlySpan{System.Byte})
+  - Godot.FileAccess.StoreCsvLine(System.ReadOnlySpan{System.String},System.String)
+  - Godot.FileAccess.StoreCsvLine(System.String[],System.String)
+  - Godot.FileAccess.StoreDouble(System.Double)
+  - Godot.FileAccess.StoreFloat(System.Single)
+  - Godot.FileAccess.StoreHalf(System.Single)
+  - Godot.FileAccess.StoreLine(System.String)
+  - Godot.FileAccess.StorePascalString(System.String)
+  - Godot.FileAccess.StoreReal(System.Single)
+  - Godot.FileAccess.StoreString(System.String)
+  - Godot.FileAccess.StoreVar(Godot.Variant,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: FileAccess
+  nameWithType: FileAccess
+  fullName: Godot.FileAccess
+  type: Class
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: 'public class FileAccess : RefCounted, IDisposable'
+    content.vb: Public Class FileAccess Inherits RefCounted Implements IDisposable
+  inheritance:
+  - System.Object
+  - Godot.GodotObject
+  - Godot.RefCounted
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - Godot.RefCounted.InitRef
+  - Godot.RefCounted.Reference
+  - Godot.RefCounted.Unreference
+  - Godot.RefCounted.GetReferenceCount
+  - Godot.GodotObject.NotificationPostinitialize
+  - Godot.GodotObject.NotificationPredelete
+  - Godot.GodotObject.NotificationExtensionReloaded
+  - Godot.GodotObject.InstanceFromId(System.UInt64)
+  - Godot.GodotObject.IsInstanceIdValid(System.UInt64)
+  - Godot.GodotObject.IsInstanceValid(Godot.GodotObject)
+  - Godot.GodotObject.WeakRef(Godot.GodotObject)
+  - Godot.GodotObject.Dispose
+  - Godot.GodotObject.Dispose(System.Boolean)
+  - Godot.GodotObject.ToString
+  - Godot.GodotObject.ToSignal(Godot.GodotObject,Godot.StringName)
+  - Godot.GodotObject._Get(Godot.StringName)
+  - Godot.GodotObject._GetPropertyList
+  - Godot.GodotObject._IterGet(Godot.Variant)
+  - Godot.GodotObject._IterInit(Godot.Collections.Array)
+  - Godot.GodotObject._IterNext(Godot.Collections.Array)
+  - Godot.GodotObject._Notification(System.Int32)
+  - Godot.GodotObject._PropertyCanRevert(Godot.StringName)
+  - Godot.GodotObject._PropertyGetRevert(Godot.StringName)
+  - Godot.GodotObject._Set(Godot.StringName,Godot.Variant)
+  - Godot.GodotObject._ValidateProperty(Godot.Collections.Dictionary)
+  - Godot.GodotObject.Free
+  - Godot.GodotObject.GetClass
+  - Godot.GodotObject.IsClass(System.String)
+  - Godot.GodotObject.Set(Godot.StringName,Godot.Variant)
+  - Godot.GodotObject.Get(Godot.StringName)
+  - Godot.GodotObject.SetIndexed(Godot.NodePath,Godot.Variant)
+  - Godot.GodotObject.GetIndexed(Godot.NodePath)
+  - Godot.GodotObject.GetPropertyList
+  - Godot.GodotObject.GetMethodList
+  - Godot.GodotObject.PropertyCanRevert(Godot.StringName)
+  - Godot.GodotObject.PropertyGetRevert(Godot.StringName)
+  - Godot.GodotObject.Notification(System.Int32,System.Boolean)
+  - Godot.GodotObject.GetInstanceId
+  - Godot.GodotObject.SetScript(Godot.Variant)
+  - Godot.GodotObject.GetScript
+  - Godot.GodotObject.SetMeta(Godot.StringName,Godot.Variant)
+  - Godot.GodotObject.RemoveMeta(Godot.StringName)
+  - Godot.GodotObject.GetMeta(Godot.StringName,Godot.Variant)
+  - Godot.GodotObject.HasMeta(Godot.StringName)
+  - Godot.GodotObject.GetMetaList
+  - Godot.GodotObject.AddUserSignal(System.String,Godot.Collections.Array)
+  - Godot.GodotObject.HasUserSignal(Godot.StringName)
+  - Godot.GodotObject.RemoveUserSignal(Godot.StringName)
+  - Godot.GodotObject.EmitSignal(Godot.StringName,Godot.Variant[])
+  - Godot.GodotObject.EmitSignal(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  - Godot.GodotObject.Call(Godot.StringName,Godot.Variant[])
+  - Godot.GodotObject.Call(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  - Godot.GodotObject.CallDeferred(Godot.StringName,Godot.Variant[])
+  - Godot.GodotObject.CallDeferred(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  - Godot.GodotObject.SetDeferred(Godot.StringName,Godot.Variant)
+  - Godot.GodotObject.Callv(Godot.StringName,Godot.Collections.Array)
+  - Godot.GodotObject.HasMethod(Godot.StringName)
+  - Godot.GodotObject.GetMethodArgumentCount(Godot.StringName)
+  - Godot.GodotObject.HasSignal(Godot.StringName)
+  - Godot.GodotObject.GetSignalList
+  - Godot.GodotObject.GetSignalConnectionList(Godot.StringName)
+  - Godot.GodotObject.GetIncomingConnections
+  - Godot.GodotObject.Connect(Godot.StringName,Godot.Callable,System.UInt32)
+  - Godot.GodotObject.Disconnect(Godot.StringName,Godot.Callable)
+  - Godot.GodotObject.IsConnected(Godot.StringName,Godot.Callable)
+  - Godot.GodotObject.HasConnections(Godot.StringName)
+  - Godot.GodotObject.SetBlockSignals(System.Boolean)
+  - Godot.GodotObject.IsBlockingSignals
+  - Godot.GodotObject.NotifyPropertyListChanged
+  - Godot.GodotObject.SetMessageTranslation(System.Boolean)
+  - Godot.GodotObject.CanTranslateMessages
+  - Godot.GodotObject.Tr(Godot.StringName,Godot.StringName)
+  - Godot.GodotObject.TrN(Godot.StringName,Godot.StringName,System.Int32,Godot.StringName)
+  - Godot.GodotObject.GetTranslationDomain
+  - Godot.GodotObject.SetTranslationDomain(Godot.StringName)
+  - Godot.GodotObject.IsQueuedForDeletion
+  - Godot.GodotObject.CancelFree
+  - Godot.GodotObject.EmitSignalScriptChanged
+  - Godot.GodotObject.EmitSignalPropertyListChanged
+  - Godot.GodotObject.NativeInstance
+  - Godot.GodotObject.ScriptChanged
+  - Godot.GodotObject.PropertyListChanged
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Godot.FileAccess.Open(System.String,Godot.FileAccess.ModeFlags)
+  commentId: M:Godot.FileAccess.Open(System.String,Godot.FileAccess.ModeFlags)
+  id: Open(System.String,Godot.FileAccess.ModeFlags)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: Open(string, ModeFlags)
+  nameWithType: FileAccess.Open(string, FileAccess.ModeFlags)
+  fullName: Godot.FileAccess.Open(string, Godot.FileAccess.ModeFlags)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static FileAccess Open(string path, FileAccess.ModeFlags flags)
+    parameters:
+    - id: path
+      type: System.String
+    - id: flags
+      type: Godot.FileAccess.ModeFlags
+    return:
+      type: Godot.FileAccess
+    content.vb: Public Shared Function Open(path As String, flags As FileAccess.ModeFlags) As FileAccess
+  overload: Godot.FileAccess.Open*
+  nameWithType.vb: FileAccess.Open(String, FileAccess.ModeFlags)
+  fullName.vb: Godot.FileAccess.Open(String, Godot.FileAccess.ModeFlags)
+  name.vb: Open(String, ModeFlags)
+- uid: Godot.FileAccess.OpenEncrypted(System.String,Godot.FileAccess.ModeFlags,System.Byte[],System.Byte[])
+  commentId: M:Godot.FileAccess.OpenEncrypted(System.String,Godot.FileAccess.ModeFlags,System.Byte[],System.Byte[])
+  id: OpenEncrypted(System.String,Godot.FileAccess.ModeFlags,System.Byte[],System.Byte[])
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: OpenEncrypted(string, ModeFlags, byte[], byte[])
+  nameWithType: FileAccess.OpenEncrypted(string, FileAccess.ModeFlags, byte[], byte[])
+  fullName: Godot.FileAccess.OpenEncrypted(string, Godot.FileAccess.ModeFlags, byte[], byte[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static FileAccess OpenEncrypted(string path, FileAccess.ModeFlags modeFlags, byte[] key, byte[] iV = null)
+    parameters:
+    - id: path
+      type: System.String
+    - id: modeFlags
+      type: Godot.FileAccess.ModeFlags
+    - id: key
+      type: System.Byte[]
+    - id: iV
+      type: System.Byte[]
+    return:
+      type: Godot.FileAccess
+    content.vb: Public Shared Function OpenEncrypted(path As String, modeFlags As FileAccess.ModeFlags, key As Byte(), iV As Byte() = Nothing) As FileAccess
+  overload: Godot.FileAccess.OpenEncrypted*
+  nameWithType.vb: FileAccess.OpenEncrypted(String, FileAccess.ModeFlags, Byte(), Byte())
+  fullName.vb: Godot.FileAccess.OpenEncrypted(String, Godot.FileAccess.ModeFlags, Byte(), Byte())
+  name.vb: OpenEncrypted(String, ModeFlags, Byte(), Byte())
+- uid: Godot.FileAccess.OpenEncrypted(System.String,Godot.FileAccess.ModeFlags,System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})
+  commentId: M:Godot.FileAccess.OpenEncrypted(System.String,Godot.FileAccess.ModeFlags,System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})
+  id: OpenEncrypted(System.String,Godot.FileAccess.ModeFlags,System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: OpenEncrypted(string, ModeFlags, ReadOnlySpan<byte>, ReadOnlySpan<byte>)
+  nameWithType: FileAccess.OpenEncrypted(string, FileAccess.ModeFlags, ReadOnlySpan<byte>, ReadOnlySpan<byte>)
+  fullName: Godot.FileAccess.OpenEncrypted(string, Godot.FileAccess.ModeFlags, System.ReadOnlySpan<byte>, System.ReadOnlySpan<byte>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static FileAccess OpenEncrypted(string path, FileAccess.ModeFlags modeFlags, ReadOnlySpan<byte> key, ReadOnlySpan<byte> iV)
+    parameters:
+    - id: path
+      type: System.String
+    - id: modeFlags
+      type: Godot.FileAccess.ModeFlags
+    - id: key
+      type: System.ReadOnlySpan{System.Byte}
+    - id: iV
+      type: System.ReadOnlySpan{System.Byte}
+    return:
+      type: Godot.FileAccess
+    content.vb: Public Shared Function OpenEncrypted(path As String, modeFlags As FileAccess.ModeFlags, key As ReadOnlySpan(Of Byte), iV As ReadOnlySpan(Of Byte)) As FileAccess
+  overload: Godot.FileAccess.OpenEncrypted*
+  nameWithType.vb: FileAccess.OpenEncrypted(String, FileAccess.ModeFlags, ReadOnlySpan(Of Byte), ReadOnlySpan(Of Byte))
+  fullName.vb: Godot.FileAccess.OpenEncrypted(String, Godot.FileAccess.ModeFlags, System.ReadOnlySpan(Of Byte), System.ReadOnlySpan(Of Byte))
+  name.vb: OpenEncrypted(String, ModeFlags, ReadOnlySpan(Of Byte), ReadOnlySpan(Of Byte))
+- uid: Godot.FileAccess.OpenEncryptedWithPass(System.String,Godot.FileAccess.ModeFlags,System.String)
+  commentId: M:Godot.FileAccess.OpenEncryptedWithPass(System.String,Godot.FileAccess.ModeFlags,System.String)
+  id: OpenEncryptedWithPass(System.String,Godot.FileAccess.ModeFlags,System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: OpenEncryptedWithPass(string, ModeFlags, string)
+  nameWithType: FileAccess.OpenEncryptedWithPass(string, FileAccess.ModeFlags, string)
+  fullName: Godot.FileAccess.OpenEncryptedWithPass(string, Godot.FileAccess.ModeFlags, string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static FileAccess OpenEncryptedWithPass(string path, FileAccess.ModeFlags modeFlags, string pass)
+    parameters:
+    - id: path
+      type: System.String
+    - id: modeFlags
+      type: Godot.FileAccess.ModeFlags
+    - id: pass
+      type: System.String
+    return:
+      type: Godot.FileAccess
+    content.vb: Public Shared Function OpenEncryptedWithPass(path As String, modeFlags As FileAccess.ModeFlags, pass As String) As FileAccess
+  overload: Godot.FileAccess.OpenEncryptedWithPass*
+  nameWithType.vb: FileAccess.OpenEncryptedWithPass(String, FileAccess.ModeFlags, String)
+  fullName.vb: Godot.FileAccess.OpenEncryptedWithPass(String, Godot.FileAccess.ModeFlags, String)
+  name.vb: OpenEncryptedWithPass(String, ModeFlags, String)
+- uid: Godot.FileAccess.OpenCompressed(System.String,Godot.FileAccess.ModeFlags,Godot.FileAccess.CompressionMode)
+  commentId: M:Godot.FileAccess.OpenCompressed(System.String,Godot.FileAccess.ModeFlags,Godot.FileAccess.CompressionMode)
+  id: OpenCompressed(System.String,Godot.FileAccess.ModeFlags,Godot.FileAccess.CompressionMode)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: OpenCompressed(string, ModeFlags, CompressionMode)
+  nameWithType: FileAccess.OpenCompressed(string, FileAccess.ModeFlags, FileAccess.CompressionMode)
+  fullName: Godot.FileAccess.OpenCompressed(string, Godot.FileAccess.ModeFlags, Godot.FileAccess.CompressionMode)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static FileAccess OpenCompressed(string path, FileAccess.ModeFlags modeFlags, FileAccess.CompressionMode compressionMode = CompressionMode.Fastlz)
+    parameters:
+    - id: path
+      type: System.String
+    - id: modeFlags
+      type: Godot.FileAccess.ModeFlags
+    - id: compressionMode
+      type: Godot.FileAccess.CompressionMode
+    return:
+      type: Godot.FileAccess
+    content.vb: Public Shared Function OpenCompressed(path As String, modeFlags As FileAccess.ModeFlags, compressionMode As FileAccess.CompressionMode = CompressionMode.Fastlz) As FileAccess
+  overload: Godot.FileAccess.OpenCompressed*
+  nameWithType.vb: FileAccess.OpenCompressed(String, FileAccess.ModeFlags, FileAccess.CompressionMode)
+  fullName.vb: Godot.FileAccess.OpenCompressed(String, Godot.FileAccess.ModeFlags, Godot.FileAccess.CompressionMode)
+  name.vb: OpenCompressed(String, ModeFlags, CompressionMode)
+- uid: Godot.FileAccess.GetOpenError
+  commentId: M:Godot.FileAccess.GetOpenError
+  id: GetOpenError
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetOpenError()
+  nameWithType: FileAccess.GetOpenError()
+  fullName: Godot.FileAccess.GetOpenError()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Error GetOpenError()
+    return:
+      type: Godot.Error
+    content.vb: Public Shared Function GetOpenError() As [Error]
+  overload: Godot.FileAccess.GetOpenError*
+- uid: Godot.FileAccess.CreateTemp(System.Int32,System.String,System.String,System.Boolean)
+  commentId: M:Godot.FileAccess.CreateTemp(System.Int32,System.String,System.String,System.Boolean)
+  id: CreateTemp(System.Int32,System.String,System.String,System.Boolean)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: CreateTemp(int, string, string, bool)
+  nameWithType: FileAccess.CreateTemp(int, string, string, bool)
+  fullName: Godot.FileAccess.CreateTemp(int, string, string, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static FileAccess CreateTemp(int modeFlags, string prefix = "", string extension = "", bool keep = false)
+    parameters:
+    - id: modeFlags
+      type: System.Int32
+    - id: prefix
+      type: System.String
+    - id: extension
+      type: System.String
+    - id: keep
+      type: System.Boolean
+    return:
+      type: Godot.FileAccess
+    content.vb: Public Shared Function CreateTemp(modeFlags As Integer, prefix As String = "", extension As String = "", keep As Boolean = False) As FileAccess
+  overload: Godot.FileAccess.CreateTemp*
+  nameWithType.vb: FileAccess.CreateTemp(Integer, String, String, Boolean)
+  fullName.vb: Godot.FileAccess.CreateTemp(Integer, String, String, Boolean)
+  name.vb: CreateTemp(Integer, String, String, Boolean)
+- uid: Godot.FileAccess.GetFileAsBytes(System.String)
+  commentId: M:Godot.FileAccess.GetFileAsBytes(System.String)
+  id: GetFileAsBytes(System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetFileAsBytes(string)
+  nameWithType: FileAccess.GetFileAsBytes(string)
+  fullName: Godot.FileAccess.GetFileAsBytes(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static byte[] GetFileAsBytes(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function GetFileAsBytes(path As String) As Byte()
+  overload: Godot.FileAccess.GetFileAsBytes*
+  nameWithType.vb: FileAccess.GetFileAsBytes(String)
+  fullName.vb: Godot.FileAccess.GetFileAsBytes(String)
+  name.vb: GetFileAsBytes(String)
+- uid: Godot.FileAccess.GetFileAsString(System.String)
+  commentId: M:Godot.FileAccess.GetFileAsString(System.String)
+  id: GetFileAsString(System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetFileAsString(string)
+  nameWithType: FileAccess.GetFileAsString(string)
+  fullName: Godot.FileAccess.GetFileAsString(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetFileAsString(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetFileAsString(path As String) As String
+  overload: Godot.FileAccess.GetFileAsString*
+  nameWithType.vb: FileAccess.GetFileAsString(String)
+  fullName.vb: Godot.FileAccess.GetFileAsString(String)
+  name.vb: GetFileAsString(String)
+- uid: Godot.FileAccess.Resize(System.Int64)
+  commentId: M:Godot.FileAccess.Resize(System.Int64)
+  id: Resize(System.Int64)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: Resize(long)
+  nameWithType: FileAccess.Resize(long)
+  fullName: Godot.FileAccess.Resize(long)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Error Resize(long length)
+    parameters:
+    - id: length
+      type: System.Int64
+    return:
+      type: Godot.Error
+    content.vb: Public Function Resize(length As Long) As [Error]
+  overload: Godot.FileAccess.Resize*
+  nameWithType.vb: FileAccess.Resize(Long)
+  fullName.vb: Godot.FileAccess.Resize(Long)
+  name.vb: Resize(Long)
+- uid: Godot.FileAccess.Flush
+  commentId: M:Godot.FileAccess.Flush
+  id: Flush
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: FileAccess.Flush()
+  fullName: Godot.FileAccess.Flush()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void Flush()
+    content.vb: Public Sub Flush()
+  overload: Godot.FileAccess.Flush*
+- uid: Godot.FileAccess.GetPath
+  commentId: M:Godot.FileAccess.GetPath
+  id: GetPath
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetPath()
+  nameWithType: FileAccess.GetPath()
+  fullName: Godot.FileAccess.GetPath()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public string GetPath()
+    return:
+      type: System.String
+    content.vb: Public Function GetPath() As String
+  overload: Godot.FileAccess.GetPath*
+- uid: Godot.FileAccess.GetPathAbsolute
+  commentId: M:Godot.FileAccess.GetPathAbsolute
+  id: GetPathAbsolute
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetPathAbsolute()
+  nameWithType: FileAccess.GetPathAbsolute()
+  fullName: Godot.FileAccess.GetPathAbsolute()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public string GetPathAbsolute()
+    return:
+      type: System.String
+    content.vb: Public Function GetPathAbsolute() As String
+  overload: Godot.FileAccess.GetPathAbsolute*
+- uid: Godot.FileAccess.IsOpen
+  commentId: M:Godot.FileAccess.IsOpen
+  id: IsOpen
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: IsOpen()
+  nameWithType: FileAccess.IsOpen()
+  fullName: Godot.FileAccess.IsOpen()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool IsOpen()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsOpen() As Boolean
+  overload: Godot.FileAccess.IsOpen*
+- uid: Godot.FileAccess.Seek(System.UInt64)
+  commentId: M:Godot.FileAccess.Seek(System.UInt64)
+  id: Seek(System.UInt64)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: Seek(ulong)
+  nameWithType: FileAccess.Seek(ulong)
+  fullName: Godot.FileAccess.Seek(ulong)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void Seek(ulong position)
+    parameters:
+    - id: position
+      type: System.UInt64
+    content.vb: Public Sub Seek(position As ULong)
+  overload: Godot.FileAccess.Seek*
+  nameWithType.vb: FileAccess.Seek(ULong)
+  fullName.vb: Godot.FileAccess.Seek(ULong)
+  name.vb: Seek(ULong)
+- uid: Godot.FileAccess.SeekEnd(System.Int64)
+  commentId: M:Godot.FileAccess.SeekEnd(System.Int64)
+  id: SeekEnd(System.Int64)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: SeekEnd(long)
+  nameWithType: FileAccess.SeekEnd(long)
+  fullName: Godot.FileAccess.SeekEnd(long)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void SeekEnd(long position = 0)
+    parameters:
+    - id: position
+      type: System.Int64
+    content.vb: Public Sub SeekEnd(position As Long = 0)
+  overload: Godot.FileAccess.SeekEnd*
+  nameWithType.vb: FileAccess.SeekEnd(Long)
+  fullName.vb: Godot.FileAccess.SeekEnd(Long)
+  name.vb: SeekEnd(Long)
+- uid: Godot.FileAccess.GetPosition
+  commentId: M:Godot.FileAccess.GetPosition
+  id: GetPosition
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetPosition()
+  nameWithType: FileAccess.GetPosition()
+  fullName: Godot.FileAccess.GetPosition()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public ulong GetPosition()
+    return:
+      type: System.UInt64
+    content.vb: Public Function GetPosition() As ULong
+  overload: Godot.FileAccess.GetPosition*
+- uid: Godot.FileAccess.GetLength
+  commentId: M:Godot.FileAccess.GetLength
+  id: GetLength
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetLength()
+  nameWithType: FileAccess.GetLength()
+  fullName: Godot.FileAccess.GetLength()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public ulong GetLength()
+    return:
+      type: System.UInt64
+    content.vb: Public Function GetLength() As ULong
+  overload: Godot.FileAccess.GetLength*
+- uid: Godot.FileAccess.EofReached
+  commentId: M:Godot.FileAccess.EofReached
+  id: EofReached
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: EofReached()
+  nameWithType: FileAccess.EofReached()
+  fullName: Godot.FileAccess.EofReached()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool EofReached()
+    return:
+      type: System.Boolean
+    content.vb: Public Function EofReached() As Boolean
+  overload: Godot.FileAccess.EofReached*
+- uid: Godot.FileAccess.Get8
+  commentId: M:Godot.FileAccess.Get8
+  id: Get8
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: Get8()
+  nameWithType: FileAccess.Get8()
+  fullName: Godot.FileAccess.Get8()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public byte Get8()
+    return:
+      type: System.Byte
+    content.vb: Public Function Get8() As Byte
+  overload: Godot.FileAccess.Get8*
+- uid: Godot.FileAccess.Get16
+  commentId: M:Godot.FileAccess.Get16
+  id: Get16
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: Get16()
+  nameWithType: FileAccess.Get16()
+  fullName: Godot.FileAccess.Get16()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public ushort Get16()
+    return:
+      type: System.UInt16
+    content.vb: Public Function Get16() As UShort
+  overload: Godot.FileAccess.Get16*
+- uid: Godot.FileAccess.Get32
+  commentId: M:Godot.FileAccess.Get32
+  id: Get32
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: Get32()
+  nameWithType: FileAccess.Get32()
+  fullName: Godot.FileAccess.Get32()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public uint Get32()
+    return:
+      type: System.UInt32
+    content.vb: Public Function Get32() As UInteger
+  overload: Godot.FileAccess.Get32*
+- uid: Godot.FileAccess.Get64
+  commentId: M:Godot.FileAccess.Get64
+  id: Get64
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: Get64()
+  nameWithType: FileAccess.Get64()
+  fullName: Godot.FileAccess.Get64()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public ulong Get64()
+    return:
+      type: System.UInt64
+    content.vb: Public Function Get64() As ULong
+  overload: Godot.FileAccess.Get64*
+- uid: Godot.FileAccess.GetHalf
+  commentId: M:Godot.FileAccess.GetHalf
+  id: GetHalf
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetHalf()
+  nameWithType: FileAccess.GetHalf()
+  fullName: Godot.FileAccess.GetHalf()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public float GetHalf()
+    return:
+      type: System.Single
+    content.vb: Public Function GetHalf() As Single
+  overload: Godot.FileAccess.GetHalf*
+- uid: Godot.FileAccess.GetFloat
+  commentId: M:Godot.FileAccess.GetFloat
+  id: GetFloat
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetFloat()
+  nameWithType: FileAccess.GetFloat()
+  fullName: Godot.FileAccess.GetFloat()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public float GetFloat()
+    return:
+      type: System.Single
+    content.vb: Public Function GetFloat() As Single
+  overload: Godot.FileAccess.GetFloat*
+- uid: Godot.FileAccess.GetDouble
+  commentId: M:Godot.FileAccess.GetDouble
+  id: GetDouble
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetDouble()
+  nameWithType: FileAccess.GetDouble()
+  fullName: Godot.FileAccess.GetDouble()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public double GetDouble()
+    return:
+      type: System.Double
+    content.vb: Public Function GetDouble() As Double
+  overload: Godot.FileAccess.GetDouble*
+- uid: Godot.FileAccess.GetReal
+  commentId: M:Godot.FileAccess.GetReal
+  id: GetReal
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetReal()
+  nameWithType: FileAccess.GetReal()
+  fullName: Godot.FileAccess.GetReal()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public float GetReal()
+    return:
+      type: System.Single
+    content.vb: Public Function GetReal() As Single
+  overload: Godot.FileAccess.GetReal*
+- uid: Godot.FileAccess.GetBuffer(System.Int64)
+  commentId: M:Godot.FileAccess.GetBuffer(System.Int64)
+  id: GetBuffer(System.Int64)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetBuffer(long)
+  nameWithType: FileAccess.GetBuffer(long)
+  fullName: Godot.FileAccess.GetBuffer(long)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public byte[] GetBuffer(long length)
+    parameters:
+    - id: length
+      type: System.Int64
+    return:
+      type: System.Byte[]
+    content.vb: Public Function GetBuffer(length As Long) As Byte()
+  overload: Godot.FileAccess.GetBuffer*
+  nameWithType.vb: FileAccess.GetBuffer(Long)
+  fullName.vb: Godot.FileAccess.GetBuffer(Long)
+  name.vb: GetBuffer(Long)
+- uid: Godot.FileAccess.GetLine
+  commentId: M:Godot.FileAccess.GetLine
+  id: GetLine
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetLine()
+  nameWithType: FileAccess.GetLine()
+  fullName: Godot.FileAccess.GetLine()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public string GetLine()
+    return:
+      type: System.String
+    content.vb: Public Function GetLine() As String
+  overload: Godot.FileAccess.GetLine*
+- uid: Godot.FileAccess.GetCsvLine(System.String)
+  commentId: M:Godot.FileAccess.GetCsvLine(System.String)
+  id: GetCsvLine(System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetCsvLine(string)
+  nameWithType: FileAccess.GetCsvLine(string)
+  fullName: Godot.FileAccess.GetCsvLine(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public string[] GetCsvLine(string delim = ",")
+    parameters:
+    - id: delim
+      type: System.String
+    return:
+      type: System.String[]
+    content.vb: Public Function GetCsvLine(delim As String = ",") As String()
+  overload: Godot.FileAccess.GetCsvLine*
+  nameWithType.vb: FileAccess.GetCsvLine(String)
+  fullName.vb: Godot.FileAccess.GetCsvLine(String)
+  name.vb: GetCsvLine(String)
+- uid: Godot.FileAccess.GetAsText(System.Boolean)
+  commentId: M:Godot.FileAccess.GetAsText(System.Boolean)
+  id: GetAsText(System.Boolean)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetAsText(bool)
+  nameWithType: FileAccess.GetAsText(bool)
+  fullName: Godot.FileAccess.GetAsText(bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public string GetAsText(bool skipCr = false)
+    parameters:
+    - id: skipCr
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: Public Function GetAsText(skipCr As Boolean = False) As String
+  overload: Godot.FileAccess.GetAsText*
+  nameWithType.vb: FileAccess.GetAsText(Boolean)
+  fullName.vb: Godot.FileAccess.GetAsText(Boolean)
+  name.vb: GetAsText(Boolean)
+- uid: Godot.FileAccess.GetMd5(System.String)
+  commentId: M:Godot.FileAccess.GetMd5(System.String)
+  id: GetMd5(System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetMd5(string)
+  nameWithType: FileAccess.GetMd5(string)
+  fullName: Godot.FileAccess.GetMd5(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetMd5(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetMd5(path As String) As String
+  overload: Godot.FileAccess.GetMd5*
+  nameWithType.vb: FileAccess.GetMd5(String)
+  fullName.vb: Godot.FileAccess.GetMd5(String)
+  name.vb: GetMd5(String)
+- uid: Godot.FileAccess.GetSha256(System.String)
+  commentId: M:Godot.FileAccess.GetSha256(System.String)
+  id: GetSha256(System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetSha256(string)
+  nameWithType: FileAccess.GetSha256(string)
+  fullName: Godot.FileAccess.GetSha256(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetSha256(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetSha256(path As String) As String
+  overload: Godot.FileAccess.GetSha256*
+  nameWithType.vb: FileAccess.GetSha256(String)
+  fullName.vb: Godot.FileAccess.GetSha256(String)
+  name.vb: GetSha256(String)
+- uid: Godot.FileAccess.GetError
+  commentId: M:Godot.FileAccess.GetError
+  id: GetError
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetError()
+  nameWithType: FileAccess.GetError()
+  fullName: Godot.FileAccess.GetError()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Error GetError()
+    return:
+      type: Godot.Error
+    content.vb: Public Function GetError() As [Error]
+  overload: Godot.FileAccess.GetError*
+- uid: Godot.FileAccess.GetVar(System.Boolean)
+  commentId: M:Godot.FileAccess.GetVar(System.Boolean)
+  id: GetVar(System.Boolean)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetVar(bool)
+  nameWithType: FileAccess.GetVar(bool)
+  fullName: Godot.FileAccess.GetVar(bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Variant GetVar(bool allowObjects = false)
+    parameters:
+    - id: allowObjects
+      type: System.Boolean
+    return:
+      type: Godot.Variant
+    content.vb: Public Function GetVar(allowObjects As Boolean = False) As [Variant]
+  overload: Godot.FileAccess.GetVar*
+  nameWithType.vb: FileAccess.GetVar(Boolean)
+  fullName.vb: Godot.FileAccess.GetVar(Boolean)
+  name.vb: GetVar(Boolean)
+- uid: Godot.FileAccess.Store8(System.Byte)
+  commentId: M:Godot.FileAccess.Store8(System.Byte)
+  id: Store8(System.Byte)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: Store8(byte)
+  nameWithType: FileAccess.Store8(byte)
+  fullName: Godot.FileAccess.Store8(byte)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool Store8(byte value)
+    parameters:
+    - id: value
+      type: System.Byte
+    return:
+      type: System.Boolean
+    content.vb: Public Function Store8(value As Byte) As Boolean
+  overload: Godot.FileAccess.Store8*
+  nameWithType.vb: FileAccess.Store8(Byte)
+  fullName.vb: Godot.FileAccess.Store8(Byte)
+  name.vb: Store8(Byte)
+- uid: Godot.FileAccess.Store16(System.UInt16)
+  commentId: M:Godot.FileAccess.Store16(System.UInt16)
+  id: Store16(System.UInt16)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: Store16(ushort)
+  nameWithType: FileAccess.Store16(ushort)
+  fullName: Godot.FileAccess.Store16(ushort)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool Store16(ushort value)
+    parameters:
+    - id: value
+      type: System.UInt16
+    return:
+      type: System.Boolean
+    content.vb: Public Function Store16(value As UShort) As Boolean
+  overload: Godot.FileAccess.Store16*
+  nameWithType.vb: FileAccess.Store16(UShort)
+  fullName.vb: Godot.FileAccess.Store16(UShort)
+  name.vb: Store16(UShort)
+- uid: Godot.FileAccess.Store32(System.UInt32)
+  commentId: M:Godot.FileAccess.Store32(System.UInt32)
+  id: Store32(System.UInt32)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: Store32(uint)
+  nameWithType: FileAccess.Store32(uint)
+  fullName: Godot.FileAccess.Store32(uint)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool Store32(uint value)
+    parameters:
+    - id: value
+      type: System.UInt32
+    return:
+      type: System.Boolean
+    content.vb: Public Function Store32(value As UInteger) As Boolean
+  overload: Godot.FileAccess.Store32*
+  nameWithType.vb: FileAccess.Store32(UInteger)
+  fullName.vb: Godot.FileAccess.Store32(UInteger)
+  name.vb: Store32(UInteger)
+- uid: Godot.FileAccess.Store64(System.UInt64)
+  commentId: M:Godot.FileAccess.Store64(System.UInt64)
+  id: Store64(System.UInt64)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: Store64(ulong)
+  nameWithType: FileAccess.Store64(ulong)
+  fullName: Godot.FileAccess.Store64(ulong)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool Store64(ulong value)
+    parameters:
+    - id: value
+      type: System.UInt64
+    return:
+      type: System.Boolean
+    content.vb: Public Function Store64(value As ULong) As Boolean
+  overload: Godot.FileAccess.Store64*
+  nameWithType.vb: FileAccess.Store64(ULong)
+  fullName.vb: Godot.FileAccess.Store64(ULong)
+  name.vb: Store64(ULong)
+- uid: Godot.FileAccess.StoreHalf(System.Single)
+  commentId: M:Godot.FileAccess.StoreHalf(System.Single)
+  id: StoreHalf(System.Single)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: StoreHalf(float)
+  nameWithType: FileAccess.StoreHalf(float)
+  fullName: Godot.FileAccess.StoreHalf(float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool StoreHalf(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Function StoreHalf(value As Single) As Boolean
+  overload: Godot.FileAccess.StoreHalf*
+  nameWithType.vb: FileAccess.StoreHalf(Single)
+  fullName.vb: Godot.FileAccess.StoreHalf(Single)
+  name.vb: StoreHalf(Single)
+- uid: Godot.FileAccess.StoreFloat(System.Single)
+  commentId: M:Godot.FileAccess.StoreFloat(System.Single)
+  id: StoreFloat(System.Single)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: StoreFloat(float)
+  nameWithType: FileAccess.StoreFloat(float)
+  fullName: Godot.FileAccess.StoreFloat(float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool StoreFloat(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Function StoreFloat(value As Single) As Boolean
+  overload: Godot.FileAccess.StoreFloat*
+  nameWithType.vb: FileAccess.StoreFloat(Single)
+  fullName.vb: Godot.FileAccess.StoreFloat(Single)
+  name.vb: StoreFloat(Single)
+- uid: Godot.FileAccess.StoreDouble(System.Double)
+  commentId: M:Godot.FileAccess.StoreDouble(System.Double)
+  id: StoreDouble(System.Double)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: StoreDouble(double)
+  nameWithType: FileAccess.StoreDouble(double)
+  fullName: Godot.FileAccess.StoreDouble(double)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool StoreDouble(double value)
+    parameters:
+    - id: value
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Function StoreDouble(value As Double) As Boolean
+  overload: Godot.FileAccess.StoreDouble*
+  nameWithType.vb: FileAccess.StoreDouble(Double)
+  fullName.vb: Godot.FileAccess.StoreDouble(Double)
+  name.vb: StoreDouble(Double)
+- uid: Godot.FileAccess.StoreReal(System.Single)
+  commentId: M:Godot.FileAccess.StoreReal(System.Single)
+  id: StoreReal(System.Single)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: StoreReal(float)
+  nameWithType: FileAccess.StoreReal(float)
+  fullName: Godot.FileAccess.StoreReal(float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool StoreReal(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Function StoreReal(value As Single) As Boolean
+  overload: Godot.FileAccess.StoreReal*
+  nameWithType.vb: FileAccess.StoreReal(Single)
+  fullName.vb: Godot.FileAccess.StoreReal(Single)
+  name.vb: StoreReal(Single)
+- uid: Godot.FileAccess.StoreBuffer(System.Byte[])
+  commentId: M:Godot.FileAccess.StoreBuffer(System.Byte[])
+  id: StoreBuffer(System.Byte[])
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: StoreBuffer(byte[])
+  nameWithType: FileAccess.StoreBuffer(byte[])
+  fullName: Godot.FileAccess.StoreBuffer(byte[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool StoreBuffer(byte[] buffer)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+    return:
+      type: System.Boolean
+    content.vb: Public Function StoreBuffer(buffer As Byte()) As Boolean
+  overload: Godot.FileAccess.StoreBuffer*
+  nameWithType.vb: FileAccess.StoreBuffer(Byte())
+  fullName.vb: Godot.FileAccess.StoreBuffer(Byte())
+  name.vb: StoreBuffer(Byte())
+- uid: Godot.FileAccess.StoreBuffer(System.ReadOnlySpan{System.Byte})
+  commentId: M:Godot.FileAccess.StoreBuffer(System.ReadOnlySpan{System.Byte})
+  id: StoreBuffer(System.ReadOnlySpan{System.Byte})
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: StoreBuffer(ReadOnlySpan<byte>)
+  nameWithType: FileAccess.StoreBuffer(ReadOnlySpan<byte>)
+  fullName: Godot.FileAccess.StoreBuffer(System.ReadOnlySpan<byte>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool StoreBuffer(ReadOnlySpan<byte> buffer)
+    parameters:
+    - id: buffer
+      type: System.ReadOnlySpan{System.Byte}
+    return:
+      type: System.Boolean
+    content.vb: Public Function StoreBuffer(buffer As ReadOnlySpan(Of Byte)) As Boolean
+  overload: Godot.FileAccess.StoreBuffer*
+  nameWithType.vb: FileAccess.StoreBuffer(ReadOnlySpan(Of Byte))
+  fullName.vb: Godot.FileAccess.StoreBuffer(System.ReadOnlySpan(Of Byte))
+  name.vb: StoreBuffer(ReadOnlySpan(Of Byte))
+- uid: Godot.FileAccess.StoreLine(System.String)
+  commentId: M:Godot.FileAccess.StoreLine(System.String)
+  id: StoreLine(System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: StoreLine(string)
+  nameWithType: FileAccess.StoreLine(string)
+  fullName: Godot.FileAccess.StoreLine(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool StoreLine(string line)
+    parameters:
+    - id: line
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function StoreLine(line As String) As Boolean
+  overload: Godot.FileAccess.StoreLine*
+  nameWithType.vb: FileAccess.StoreLine(String)
+  fullName.vb: Godot.FileAccess.StoreLine(String)
+  name.vb: StoreLine(String)
+- uid: Godot.FileAccess.StoreCsvLine(System.String[],System.String)
+  commentId: M:Godot.FileAccess.StoreCsvLine(System.String[],System.String)
+  id: StoreCsvLine(System.String[],System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: StoreCsvLine(string[], string)
+  nameWithType: FileAccess.StoreCsvLine(string[], string)
+  fullName: Godot.FileAccess.StoreCsvLine(string[], string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool StoreCsvLine(string[] values, string delim = ",")
+    parameters:
+    - id: values
+      type: System.String[]
+    - id: delim
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function StoreCsvLine(values As String(), delim As String = ",") As Boolean
+  overload: Godot.FileAccess.StoreCsvLine*
+  nameWithType.vb: FileAccess.StoreCsvLine(String(), String)
+  fullName.vb: Godot.FileAccess.StoreCsvLine(String(), String)
+  name.vb: StoreCsvLine(String(), String)
+- uid: Godot.FileAccess.StoreCsvLine(System.ReadOnlySpan{System.String},System.String)
+  commentId: M:Godot.FileAccess.StoreCsvLine(System.ReadOnlySpan{System.String},System.String)
+  id: StoreCsvLine(System.ReadOnlySpan{System.String},System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: StoreCsvLine(ReadOnlySpan<string>, string)
+  nameWithType: FileAccess.StoreCsvLine(ReadOnlySpan<string>, string)
+  fullName: Godot.FileAccess.StoreCsvLine(System.ReadOnlySpan<string>, string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool StoreCsvLine(ReadOnlySpan<string> values, string delim)
+    parameters:
+    - id: values
+      type: System.ReadOnlySpan{System.String}
+    - id: delim
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function StoreCsvLine(values As ReadOnlySpan(Of String), delim As String) As Boolean
+  overload: Godot.FileAccess.StoreCsvLine*
+  nameWithType.vb: FileAccess.StoreCsvLine(ReadOnlySpan(Of String), String)
+  fullName.vb: Godot.FileAccess.StoreCsvLine(System.ReadOnlySpan(Of String), String)
+  name.vb: StoreCsvLine(ReadOnlySpan(Of String), String)
+- uid: Godot.FileAccess.StoreString(System.String)
+  commentId: M:Godot.FileAccess.StoreString(System.String)
+  id: StoreString(System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: StoreString(string)
+  nameWithType: FileAccess.StoreString(string)
+  fullName: Godot.FileAccess.StoreString(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool StoreString(string @string)
+    parameters:
+    - id: string
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function StoreString([string] As String) As Boolean
+  overload: Godot.FileAccess.StoreString*
+  nameWithType.vb: FileAccess.StoreString(String)
+  fullName.vb: Godot.FileAccess.StoreString(String)
+  name.vb: StoreString(String)
+- uid: Godot.FileAccess.StoreVar(Godot.Variant,System.Boolean)
+  commentId: M:Godot.FileAccess.StoreVar(Godot.Variant,System.Boolean)
+  id: StoreVar(Godot.Variant,System.Boolean)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: StoreVar(Variant, bool)
+  nameWithType: FileAccess.StoreVar(Variant, bool)
+  fullName: Godot.FileAccess.StoreVar(Godot.Variant, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool StoreVar(Variant value, bool fullObjects = false)
+    parameters:
+    - id: value
+      type: Godot.Variant
+    - id: fullObjects
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Function StoreVar(value As [Variant], fullObjects As Boolean = False) As Boolean
+  overload: Godot.FileAccess.StoreVar*
+  nameWithType.vb: FileAccess.StoreVar(Variant, Boolean)
+  fullName.vb: Godot.FileAccess.StoreVar(Godot.Variant, Boolean)
+  name.vb: StoreVar(Variant, Boolean)
+- uid: Godot.FileAccess.StorePascalString(System.String)
+  commentId: M:Godot.FileAccess.StorePascalString(System.String)
+  id: StorePascalString(System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: StorePascalString(string)
+  nameWithType: FileAccess.StorePascalString(string)
+  fullName: Godot.FileAccess.StorePascalString(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool StorePascalString(string @string)
+    parameters:
+    - id: string
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function StorePascalString([string] As String) As Boolean
+  overload: Godot.FileAccess.StorePascalString*
+  nameWithType.vb: FileAccess.StorePascalString(String)
+  fullName.vb: Godot.FileAccess.StorePascalString(String)
+  name.vb: StorePascalString(String)
+- uid: Godot.FileAccess.GetPascalString
+  commentId: M:Godot.FileAccess.GetPascalString
+  id: GetPascalString
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetPascalString()
+  nameWithType: FileAccess.GetPascalString()
+  fullName: Godot.FileAccess.GetPascalString()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public string GetPascalString()
+    return:
+      type: System.String
+    content.vb: Public Function GetPascalString() As String
+  overload: Godot.FileAccess.GetPascalString*
+- uid: Godot.FileAccess.Close
+  commentId: M:Godot.FileAccess.Close
+  id: Close
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: FileAccess.Close()
+  fullName: Godot.FileAccess.Close()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: Godot.FileAccess.Close*
+- uid: Godot.FileAccess.FileExists(System.String)
+  commentId: M:Godot.FileAccess.FileExists(System.String)
+  id: FileExists(System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: FileExists(string)
+  nameWithType: FileAccess.FileExists(string)
+  fullName: Godot.FileAccess.FileExists(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool FileExists(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FileExists(path As String) As Boolean
+  overload: Godot.FileAccess.FileExists*
+  nameWithType.vb: FileAccess.FileExists(String)
+  fullName.vb: Godot.FileAccess.FileExists(String)
+  name.vb: FileExists(String)
+- uid: Godot.FileAccess.GetModifiedTime(System.String)
+  commentId: M:Godot.FileAccess.GetModifiedTime(System.String)
+  id: GetModifiedTime(System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetModifiedTime(string)
+  nameWithType: FileAccess.GetModifiedTime(string)
+  fullName: Godot.FileAccess.GetModifiedTime(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static ulong GetModifiedTime(string file)
+    parameters:
+    - id: file
+      type: System.String
+    return:
+      type: System.UInt64
+    content.vb: Public Shared Function GetModifiedTime(file As String) As ULong
+  overload: Godot.FileAccess.GetModifiedTime*
+  nameWithType.vb: FileAccess.GetModifiedTime(String)
+  fullName.vb: Godot.FileAccess.GetModifiedTime(String)
+  name.vb: GetModifiedTime(String)
+- uid: Godot.FileAccess.GetAccessTime(System.String)
+  commentId: M:Godot.FileAccess.GetAccessTime(System.String)
+  id: GetAccessTime(System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetAccessTime(string)
+  nameWithType: FileAccess.GetAccessTime(string)
+  fullName: Godot.FileAccess.GetAccessTime(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static ulong GetAccessTime(string file)
+    parameters:
+    - id: file
+      type: System.String
+    return:
+      type: System.UInt64
+    content.vb: Public Shared Function GetAccessTime(file As String) As ULong
+  overload: Godot.FileAccess.GetAccessTime*
+  nameWithType.vb: FileAccess.GetAccessTime(String)
+  fullName.vb: Godot.FileAccess.GetAccessTime(String)
+  name.vb: GetAccessTime(String)
+- uid: Godot.FileAccess.GetSize(System.String)
+  commentId: M:Godot.FileAccess.GetSize(System.String)
+  id: GetSize(System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetSize(string)
+  nameWithType: FileAccess.GetSize(string)
+  fullName: Godot.FileAccess.GetSize(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static long GetSize(string file)
+    parameters:
+    - id: file
+      type: System.String
+    return:
+      type: System.Int64
+    content.vb: Public Shared Function GetSize(file As String) As Long
+  overload: Godot.FileAccess.GetSize*
+  nameWithType.vb: FileAccess.GetSize(String)
+  fullName.vb: Godot.FileAccess.GetSize(String)
+  name.vb: GetSize(String)
+- uid: Godot.FileAccess.GetUnixPermissions(System.String)
+  commentId: M:Godot.FileAccess.GetUnixPermissions(System.String)
+  id: GetUnixPermissions(System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetUnixPermissions(string)
+  nameWithType: FileAccess.GetUnixPermissions(string)
+  fullName: Godot.FileAccess.GetUnixPermissions(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static FileAccess.UnixPermissionFlags GetUnixPermissions(string file)
+    parameters:
+    - id: file
+      type: System.String
+    return:
+      type: Godot.FileAccess.UnixPermissionFlags
+    content.vb: Public Shared Function GetUnixPermissions(file As String) As FileAccess.UnixPermissionFlags
+  overload: Godot.FileAccess.GetUnixPermissions*
+  nameWithType.vb: FileAccess.GetUnixPermissions(String)
+  fullName.vb: Godot.FileAccess.GetUnixPermissions(String)
+  name.vb: GetUnixPermissions(String)
+- uid: Godot.FileAccess.SetUnixPermissions(System.String,Godot.FileAccess.UnixPermissionFlags)
+  commentId: M:Godot.FileAccess.SetUnixPermissions(System.String,Godot.FileAccess.UnixPermissionFlags)
+  id: SetUnixPermissions(System.String,Godot.FileAccess.UnixPermissionFlags)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: SetUnixPermissions(string, UnixPermissionFlags)
+  nameWithType: FileAccess.SetUnixPermissions(string, FileAccess.UnixPermissionFlags)
+  fullName: Godot.FileAccess.SetUnixPermissions(string, Godot.FileAccess.UnixPermissionFlags)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Error SetUnixPermissions(string file, FileAccess.UnixPermissionFlags permissions)
+    parameters:
+    - id: file
+      type: System.String
+    - id: permissions
+      type: Godot.FileAccess.UnixPermissionFlags
+    return:
+      type: Godot.Error
+    content.vb: Public Shared Function SetUnixPermissions(file As String, permissions As FileAccess.UnixPermissionFlags) As [Error]
+  overload: Godot.FileAccess.SetUnixPermissions*
+  nameWithType.vb: FileAccess.SetUnixPermissions(String, FileAccess.UnixPermissionFlags)
+  fullName.vb: Godot.FileAccess.SetUnixPermissions(String, Godot.FileAccess.UnixPermissionFlags)
+  name.vb: SetUnixPermissions(String, UnixPermissionFlags)
+- uid: Godot.FileAccess.GetHiddenAttribute(System.String)
+  commentId: M:Godot.FileAccess.GetHiddenAttribute(System.String)
+  id: GetHiddenAttribute(System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetHiddenAttribute(string)
+  nameWithType: FileAccess.GetHiddenAttribute(string)
+  fullName: Godot.FileAccess.GetHiddenAttribute(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool GetHiddenAttribute(string file)
+    parameters:
+    - id: file
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function GetHiddenAttribute(file As String) As Boolean
+  overload: Godot.FileAccess.GetHiddenAttribute*
+  nameWithType.vb: FileAccess.GetHiddenAttribute(String)
+  fullName.vb: Godot.FileAccess.GetHiddenAttribute(String)
+  name.vb: GetHiddenAttribute(String)
+- uid: Godot.FileAccess.SetHiddenAttribute(System.String,System.Boolean)
+  commentId: M:Godot.FileAccess.SetHiddenAttribute(System.String,System.Boolean)
+  id: SetHiddenAttribute(System.String,System.Boolean)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: SetHiddenAttribute(string, bool)
+  nameWithType: FileAccess.SetHiddenAttribute(string, bool)
+  fullName: Godot.FileAccess.SetHiddenAttribute(string, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Error SetHiddenAttribute(string file, bool hidden)
+    parameters:
+    - id: file
+      type: System.String
+    - id: hidden
+      type: System.Boolean
+    return:
+      type: Godot.Error
+    content.vb: Public Shared Function SetHiddenAttribute(file As String, hidden As Boolean) As [Error]
+  overload: Godot.FileAccess.SetHiddenAttribute*
+  nameWithType.vb: FileAccess.SetHiddenAttribute(String, Boolean)
+  fullName.vb: Godot.FileAccess.SetHiddenAttribute(String, Boolean)
+  name.vb: SetHiddenAttribute(String, Boolean)
+- uid: Godot.FileAccess.SetReadOnlyAttribute(System.String,System.Boolean)
+  commentId: M:Godot.FileAccess.SetReadOnlyAttribute(System.String,System.Boolean)
+  id: SetReadOnlyAttribute(System.String,System.Boolean)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: SetReadOnlyAttribute(string, bool)
+  nameWithType: FileAccess.SetReadOnlyAttribute(string, bool)
+  fullName: Godot.FileAccess.SetReadOnlyAttribute(string, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Error SetReadOnlyAttribute(string file, bool ro)
+    parameters:
+    - id: file
+      type: System.String
+    - id: ro
+      type: System.Boolean
+    return:
+      type: Godot.Error
+    content.vb: Public Shared Function SetReadOnlyAttribute(file As String, ro As Boolean) As [Error]
+  overload: Godot.FileAccess.SetReadOnlyAttribute*
+  nameWithType.vb: FileAccess.SetReadOnlyAttribute(String, Boolean)
+  fullName.vb: Godot.FileAccess.SetReadOnlyAttribute(String, Boolean)
+  name.vb: SetReadOnlyAttribute(String, Boolean)
+- uid: Godot.FileAccess.GetReadOnlyAttribute(System.String)
+  commentId: M:Godot.FileAccess.GetReadOnlyAttribute(System.String)
+  id: GetReadOnlyAttribute(System.String)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: GetReadOnlyAttribute(string)
+  nameWithType: FileAccess.GetReadOnlyAttribute(string)
+  fullName: Godot.FileAccess.GetReadOnlyAttribute(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool GetReadOnlyAttribute(string file)
+    parameters:
+    - id: file
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function GetReadOnlyAttribute(file As String) As Boolean
+  overload: Godot.FileAccess.GetReadOnlyAttribute*
+  nameWithType.vb: FileAccess.GetReadOnlyAttribute(String)
+  fullName.vb: Godot.FileAccess.GetReadOnlyAttribute(String)
+  name.vb: GetReadOnlyAttribute(String)
+- uid: Godot.FileAccess.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+  commentId: M:Godot.FileAccess.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+  id: InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)
+  nameWithType: FileAccess.InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)
+  fullName: Godot.FileAccess.InvokeGodotClassMethod(in Godot.NativeInterop.godot_string_name, Godot.NativeInterop.NativeVariantPtrArgs, out Godot.NativeInterop.godot_variant)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: protected override bool InvokeGodotClassMethod(in godot_string_name method, NativeVariantPtrArgs args, out godot_variant ret)
+    parameters:
+    - id: method
+      type: Godot.NativeInterop.godot_string_name
+    - id: args
+      type: Godot.NativeInterop.NativeVariantPtrArgs
+    - id: ret
+      type: Godot.NativeInterop.godot_variant
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function InvokeGodotClassMethod(method As godot_string_name, args As NativeVariantPtrArgs, ret As godot_variant) As Boolean
+  overridden: Godot.RefCounted.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+  overload: Godot.FileAccess.InvokeGodotClassMethod*
+  nameWithType.vb: FileAccess.InvokeGodotClassMethod(godot_string_name, NativeVariantPtrArgs, godot_variant)
+  fullName.vb: Godot.FileAccess.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant)
+  name.vb: InvokeGodotClassMethod(godot_string_name, NativeVariantPtrArgs, godot_variant)
+- uid: Godot.FileAccess.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+  commentId: M:Godot.FileAccess.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+  id: HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: HasGodotClassMethod(in godot_string_name)
+  nameWithType: FileAccess.HasGodotClassMethod(in godot_string_name)
+  fullName: Godot.FileAccess.HasGodotClassMethod(in Godot.NativeInterop.godot_string_name)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: protected override bool HasGodotClassMethod(in godot_string_name method)
+    parameters:
+    - id: method
+      type: Godot.NativeInterop.godot_string_name
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function HasGodotClassMethod(method As godot_string_name) As Boolean
+  overridden: Godot.RefCounted.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+  overload: Godot.FileAccess.HasGodotClassMethod*
+  nameWithType.vb: FileAccess.HasGodotClassMethod(godot_string_name)
+  fullName.vb: Godot.FileAccess.HasGodotClassMethod(Godot.NativeInterop.godot_string_name)
+  name.vb: HasGodotClassMethod(godot_string_name)
+- uid: Godot.FileAccess.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+  commentId: M:Godot.FileAccess.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+  id: HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: HasGodotClassSignal(in godot_string_name)
+  nameWithType: FileAccess.HasGodotClassSignal(in godot_string_name)
+  fullName: Godot.FileAccess.HasGodotClassSignal(in Godot.NativeInterop.godot_string_name)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: protected override bool HasGodotClassSignal(in godot_string_name signal)
+    parameters:
+    - id: signal
+      type: Godot.NativeInterop.godot_string_name
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function HasGodotClassSignal(signal As godot_string_name) As Boolean
+  overridden: Godot.RefCounted.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+  overload: Godot.FileAccess.HasGodotClassSignal*
+  nameWithType.vb: FileAccess.HasGodotClassSignal(godot_string_name)
+  fullName.vb: Godot.FileAccess.HasGodotClassSignal(Godot.NativeInterop.godot_string_name)
+  name.vb: HasGodotClassSignal(godot_string_name)
+- uid: Godot.FileAccess.BigEndian
+  commentId: P:Godot.FileAccess.BigEndian
+  id: BigEndian
+  parent: Godot.FileAccess
+  langs:
+  - csharp
+  - vb
+  name: BigEndian
+  nameWithType: FileAccess.BigEndian
+  fullName: Godot.FileAccess.BigEndian
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool BigEndian { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property BigEndian As Boolean
+  overload: Godot.FileAccess.BigEndian*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Godot.GodotObject
+  commentId: T:Godot.GodotObject
+  parent: Godot
+  isExternal: true
+  href: Godot.GodotObject.html
+  name: GodotObject
+  nameWithType: GodotObject
+  fullName: Godot.GodotObject
+- uid: Godot.RefCounted
+  commentId: T:Godot.RefCounted
+  parent: Godot
+  isExternal: true
+  href: Godot.RefCounted.html
+  name: RefCounted
+  nameWithType: RefCounted
+  fullName: Godot.RefCounted
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Godot.RefCounted.InitRef
+  commentId: M:Godot.RefCounted.InitRef
+  parent: Godot.RefCounted
+  isExternal: true
+  href: Godot.RefCounted.html#Godot_RefCounted_InitRef
+  name: InitRef()
+  nameWithType: RefCounted.InitRef()
+  fullName: Godot.RefCounted.InitRef()
+  spec.csharp:
+  - uid: Godot.RefCounted.InitRef
+    name: InitRef
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_InitRef
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.RefCounted.InitRef
+    name: InitRef
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_InitRef
+  - name: (
+  - name: )
+- uid: Godot.RefCounted.Reference
+  commentId: M:Godot.RefCounted.Reference
+  parent: Godot.RefCounted
+  isExternal: true
+  href: Godot.RefCounted.html#Godot_RefCounted_Reference
+  name: Reference()
+  nameWithType: RefCounted.Reference()
+  fullName: Godot.RefCounted.Reference()
+  spec.csharp:
+  - uid: Godot.RefCounted.Reference
+    name: Reference
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_Reference
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.RefCounted.Reference
+    name: Reference
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_Reference
+  - name: (
+  - name: )
+- uid: Godot.RefCounted.Unreference
+  commentId: M:Godot.RefCounted.Unreference
+  parent: Godot.RefCounted
+  isExternal: true
+  href: Godot.RefCounted.html#Godot_RefCounted_Unreference
+  name: Unreference()
+  nameWithType: RefCounted.Unreference()
+  fullName: Godot.RefCounted.Unreference()
+  spec.csharp:
+  - uid: Godot.RefCounted.Unreference
+    name: Unreference
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_Unreference
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.RefCounted.Unreference
+    name: Unreference
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_Unreference
+  - name: (
+  - name: )
+- uid: Godot.RefCounted.GetReferenceCount
+  commentId: M:Godot.RefCounted.GetReferenceCount
+  parent: Godot.RefCounted
+  isExternal: true
+  href: Godot.RefCounted.html#Godot_RefCounted_GetReferenceCount
+  name: GetReferenceCount()
+  nameWithType: RefCounted.GetReferenceCount()
+  fullName: Godot.RefCounted.GetReferenceCount()
+  spec.csharp:
+  - uid: Godot.RefCounted.GetReferenceCount
+    name: GetReferenceCount
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_GetReferenceCount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.RefCounted.GetReferenceCount
+    name: GetReferenceCount
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_GetReferenceCount
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.NotificationPostinitialize
+  commentId: F:Godot.GodotObject.NotificationPostinitialize
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_NotificationPostinitialize
+  name: NotificationPostinitialize
+  nameWithType: GodotObject.NotificationPostinitialize
+  fullName: Godot.GodotObject.NotificationPostinitialize
+- uid: Godot.GodotObject.NotificationPredelete
+  commentId: F:Godot.GodotObject.NotificationPredelete
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_NotificationPredelete
+  name: NotificationPredelete
+  nameWithType: GodotObject.NotificationPredelete
+  fullName: Godot.GodotObject.NotificationPredelete
+- uid: Godot.GodotObject.NotificationExtensionReloaded
+  commentId: F:Godot.GodotObject.NotificationExtensionReloaded
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_NotificationExtensionReloaded
+  name: NotificationExtensionReloaded
+  nameWithType: GodotObject.NotificationExtensionReloaded
+  fullName: Godot.GodotObject.NotificationExtensionReloaded
+- uid: Godot.GodotObject.InstanceFromId(System.UInt64)
+  commentId: M:Godot.GodotObject.InstanceFromId(System.UInt64)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_
+  name: InstanceFromId(ulong)
+  nameWithType: GodotObject.InstanceFromId(ulong)
+  fullName: Godot.GodotObject.InstanceFromId(ulong)
+  nameWithType.vb: GodotObject.InstanceFromId(ULong)
+  fullName.vb: Godot.GodotObject.InstanceFromId(ULong)
+  name.vb: InstanceFromId(ULong)
+  spec.csharp:
+  - uid: Godot.GodotObject.InstanceFromId(System.UInt64)
+    name: InstanceFromId
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.InstanceFromId(System.UInt64)
+    name: InstanceFromId
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: Godot.GodotObject.IsInstanceIdValid(System.UInt64)
+  commentId: M:Godot.GodotObject.IsInstanceIdValid(System.UInt64)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_
+  name: IsInstanceIdValid(ulong)
+  nameWithType: GodotObject.IsInstanceIdValid(ulong)
+  fullName: Godot.GodotObject.IsInstanceIdValid(ulong)
+  nameWithType.vb: GodotObject.IsInstanceIdValid(ULong)
+  fullName.vb: Godot.GodotObject.IsInstanceIdValid(ULong)
+  name.vb: IsInstanceIdValid(ULong)
+  spec.csharp:
+  - uid: Godot.GodotObject.IsInstanceIdValid(System.UInt64)
+    name: IsInstanceIdValid
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.IsInstanceIdValid(System.UInt64)
+    name: IsInstanceIdValid
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: Godot.GodotObject.IsInstanceValid(Godot.GodotObject)
+  commentId: M:Godot.GodotObject.IsInstanceValid(Godot.GodotObject)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_
+  name: IsInstanceValid(GodotObject)
+  nameWithType: GodotObject.IsInstanceValid(GodotObject)
+  fullName: Godot.GodotObject.IsInstanceValid(Godot.GodotObject)
+  spec.csharp:
+  - uid: Godot.GodotObject.IsInstanceValid(Godot.GodotObject)
+    name: IsInstanceValid
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_
+  - name: (
+  - uid: Godot.GodotObject
+    name: GodotObject
+    isExternal: true
+    href: Godot.GodotObject.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.IsInstanceValid(Godot.GodotObject)
+    name: IsInstanceValid
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_
+  - name: (
+  - uid: Godot.GodotObject
+    name: GodotObject
+    isExternal: true
+    href: Godot.GodotObject.html
+  - name: )
+- uid: Godot.GodotObject.WeakRef(Godot.GodotObject)
+  commentId: M:Godot.GodotObject.WeakRef(Godot.GodotObject)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_
+  name: WeakRef(GodotObject)
+  nameWithType: GodotObject.WeakRef(GodotObject)
+  fullName: Godot.GodotObject.WeakRef(Godot.GodotObject)
+  spec.csharp:
+  - uid: Godot.GodotObject.WeakRef(Godot.GodotObject)
+    name: WeakRef
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_
+  - name: (
+  - uid: Godot.GodotObject
+    name: GodotObject
+    isExternal: true
+    href: Godot.GodotObject.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.WeakRef(Godot.GodotObject)
+    name: WeakRef
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_
+  - name: (
+  - uid: Godot.GodotObject
+    name: GodotObject
+    isExternal: true
+    href: Godot.GodotObject.html
+  - name: )
+- uid: Godot.GodotObject.Dispose
+  commentId: M:Godot.GodotObject.Dispose
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Dispose
+  name: Dispose()
+  nameWithType: GodotObject.Dispose()
+  fullName: Godot.GodotObject.Dispose()
+  spec.csharp:
+  - uid: Godot.GodotObject.Dispose
+    name: Dispose
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Dispose
+    name: Dispose
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Dispose
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.Dispose(System.Boolean)
+  commentId: M:Godot.GodotObject.Dispose(System.Boolean)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_
+  name: Dispose(bool)
+  nameWithType: GodotObject.Dispose(bool)
+  fullName: Godot.GodotObject.Dispose(bool)
+  nameWithType.vb: GodotObject.Dispose(Boolean)
+  fullName.vb: Godot.GodotObject.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: Godot.GodotObject.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Godot.GodotObject.ToString
+  commentId: M:Godot.GodotObject.ToString
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_ToString
+  name: ToString()
+  nameWithType: GodotObject.ToString()
+  fullName: Godot.GodotObject.ToString()
+  spec.csharp:
+  - uid: Godot.GodotObject.ToString
+    name: ToString
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.ToString
+    name: ToString
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_ToString
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.ToSignal(Godot.GodotObject,Godot.StringName)
+  commentId: M:Godot.GodotObject.ToSignal(Godot.GodotObject,Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_
+  name: ToSignal(GodotObject, StringName)
+  nameWithType: GodotObject.ToSignal(GodotObject, StringName)
+  fullName: Godot.GodotObject.ToSignal(Godot.GodotObject, Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.ToSignal(Godot.GodotObject,Godot.StringName)
+    name: ToSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_
+  - name: (
+  - uid: Godot.GodotObject
+    name: GodotObject
+    isExternal: true
+    href: Godot.GodotObject.html
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.ToSignal(Godot.GodotObject,Godot.StringName)
+    name: ToSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_
+  - name: (
+  - uid: Godot.GodotObject
+    name: GodotObject
+    isExternal: true
+    href: Godot.GodotObject.html
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject._Get(Godot.StringName)
+  commentId: M:Godot.GodotObject._Get(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_
+  name: _Get(StringName)
+  nameWithType: GodotObject._Get(StringName)
+  fullName: Godot.GodotObject._Get(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject._Get(Godot.StringName)
+    name: _Get
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._Get(Godot.StringName)
+    name: _Get
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject._GetPropertyList
+  commentId: M:Godot.GodotObject._GetPropertyList
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__GetPropertyList
+  name: _GetPropertyList()
+  nameWithType: GodotObject._GetPropertyList()
+  fullName: Godot.GodotObject._GetPropertyList()
+  spec.csharp:
+  - uid: Godot.GodotObject._GetPropertyList
+    name: _GetPropertyList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__GetPropertyList
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._GetPropertyList
+    name: _GetPropertyList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__GetPropertyList
+  - name: (
+  - name: )
+- uid: Godot.GodotObject._IterGet(Godot.Variant)
+  commentId: M:Godot.GodotObject._IterGet(Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__IterGet_Godot_Variant_
+  name: _IterGet(Variant)
+  nameWithType: GodotObject._IterGet(Variant)
+  fullName: Godot.GodotObject._IterGet(Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject._IterGet(Godot.Variant)
+    name: _IterGet
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__IterGet_Godot_Variant_
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._IterGet(Godot.Variant)
+    name: _IterGet
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__IterGet_Godot_Variant_
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject._IterInit(Godot.Collections.Array)
+  commentId: M:Godot.GodotObject._IterInit(Godot.Collections.Array)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__IterInit_Godot_Collections_Array_
+  name: _IterInit(Array)
+  nameWithType: GodotObject._IterInit(Array)
+  fullName: Godot.GodotObject._IterInit(Godot.Collections.Array)
+  spec.csharp:
+  - uid: Godot.GodotObject._IterInit(Godot.Collections.Array)
+    name: _IterInit
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__IterInit_Godot_Collections_Array_
+  - name: (
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._IterInit(Godot.Collections.Array)
+    name: _IterInit
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__IterInit_Godot_Collections_Array_
+  - name: (
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+- uid: Godot.GodotObject._IterNext(Godot.Collections.Array)
+  commentId: M:Godot.GodotObject._IterNext(Godot.Collections.Array)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__IterNext_Godot_Collections_Array_
+  name: _IterNext(Array)
+  nameWithType: GodotObject._IterNext(Array)
+  fullName: Godot.GodotObject._IterNext(Godot.Collections.Array)
+  spec.csharp:
+  - uid: Godot.GodotObject._IterNext(Godot.Collections.Array)
+    name: _IterNext
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__IterNext_Godot_Collections_Array_
+  - name: (
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._IterNext(Godot.Collections.Array)
+    name: _IterNext
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__IterNext_Godot_Collections_Array_
+  - name: (
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+- uid: Godot.GodotObject._Notification(System.Int32)
+  commentId: M:Godot.GodotObject._Notification(System.Int32)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_
+  name: _Notification(int)
+  nameWithType: GodotObject._Notification(int)
+  fullName: Godot.GodotObject._Notification(int)
+  nameWithType.vb: GodotObject._Notification(Integer)
+  fullName.vb: Godot.GodotObject._Notification(Integer)
+  name.vb: _Notification(Integer)
+  spec.csharp:
+  - uid: Godot.GodotObject._Notification(System.Int32)
+    name: _Notification
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._Notification(System.Int32)
+    name: _Notification
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Godot.GodotObject._PropertyCanRevert(Godot.StringName)
+  commentId: M:Godot.GodotObject._PropertyCanRevert(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_
+  name: _PropertyCanRevert(StringName)
+  nameWithType: GodotObject._PropertyCanRevert(StringName)
+  fullName: Godot.GodotObject._PropertyCanRevert(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject._PropertyCanRevert(Godot.StringName)
+    name: _PropertyCanRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._PropertyCanRevert(Godot.StringName)
+    name: _PropertyCanRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject._PropertyGetRevert(Godot.StringName)
+  commentId: M:Godot.GodotObject._PropertyGetRevert(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_
+  name: _PropertyGetRevert(StringName)
+  nameWithType: GodotObject._PropertyGetRevert(StringName)
+  fullName: Godot.GodotObject._PropertyGetRevert(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject._PropertyGetRevert(Godot.StringName)
+    name: _PropertyGetRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._PropertyGetRevert(Godot.StringName)
+    name: _PropertyGetRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject._Set(Godot.StringName,Godot.Variant)
+  commentId: M:Godot.GodotObject._Set(Godot.StringName,Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_
+  name: _Set(StringName, Variant)
+  nameWithType: GodotObject._Set(StringName, Variant)
+  fullName: Godot.GodotObject._Set(Godot.StringName, Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject._Set(Godot.StringName,Godot.Variant)
+    name: _Set
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._Set(Godot.StringName,Godot.Variant)
+    name: _Set
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject._ValidateProperty(Godot.Collections.Dictionary)
+  commentId: M:Godot.GodotObject._ValidateProperty(Godot.Collections.Dictionary)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject__ValidateProperty_Godot_Collections_Dictionary_
+  name: _ValidateProperty(Dictionary)
+  nameWithType: GodotObject._ValidateProperty(Dictionary)
+  fullName: Godot.GodotObject._ValidateProperty(Godot.Collections.Dictionary)
+  spec.csharp:
+  - uid: Godot.GodotObject._ValidateProperty(Godot.Collections.Dictionary)
+    name: _ValidateProperty
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__ValidateProperty_Godot_Collections_Dictionary_
+  - name: (
+  - uid: Godot.Collections.Dictionary
+    name: Dictionary
+    isExternal: true
+    href: Godot.Collections.Dictionary.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject._ValidateProperty(Godot.Collections.Dictionary)
+    name: _ValidateProperty
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject__ValidateProperty_Godot_Collections_Dictionary_
+  - name: (
+  - uid: Godot.Collections.Dictionary
+    name: Dictionary
+    isExternal: true
+    href: Godot.Collections.Dictionary.html
+  - name: )
+- uid: Godot.GodotObject.Free
+  commentId: M:Godot.GodotObject.Free
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Free
+  name: Free()
+  nameWithType: GodotObject.Free()
+  fullName: Godot.GodotObject.Free()
+  spec.csharp:
+  - uid: Godot.GodotObject.Free
+    name: Free
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Free
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Free
+    name: Free
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Free
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.GetClass
+  commentId: M:Godot.GodotObject.GetClass
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetClass
+  name: GetClass()
+  nameWithType: GodotObject.GetClass()
+  fullName: Godot.GodotObject.GetClass()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetClass
+    name: GetClass
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetClass
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetClass
+    name: GetClass
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetClass
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.IsClass(System.String)
+  commentId: M:Godot.GodotObject.IsClass(System.String)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_
+  name: IsClass(string)
+  nameWithType: GodotObject.IsClass(string)
+  fullName: Godot.GodotObject.IsClass(string)
+  nameWithType.vb: GodotObject.IsClass(String)
+  fullName.vb: Godot.GodotObject.IsClass(String)
+  name.vb: IsClass(String)
+  spec.csharp:
+  - uid: Godot.GodotObject.IsClass(System.String)
+    name: IsClass
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.IsClass(System.String)
+    name: IsClass
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Godot.GodotObject.Set(Godot.StringName,Godot.Variant)
+  commentId: M:Godot.GodotObject.Set(Godot.StringName,Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_
+  name: Set(StringName, Variant)
+  nameWithType: GodotObject.Set(StringName, Variant)
+  fullName: Godot.GodotObject.Set(Godot.StringName, Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject.Set(Godot.StringName,Godot.Variant)
+    name: Set
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Set(Godot.StringName,Godot.Variant)
+    name: Set
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject.Get(Godot.StringName)
+  commentId: M:Godot.GodotObject.Get(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_
+  name: Get(StringName)
+  nameWithType: GodotObject.Get(StringName)
+  fullName: Godot.GodotObject.Get(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.Get(Godot.StringName)
+    name: Get
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Get(Godot.StringName)
+    name: Get
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.SetIndexed(Godot.NodePath,Godot.Variant)
+  commentId: M:Godot.GodotObject.SetIndexed(Godot.NodePath,Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_
+  name: SetIndexed(NodePath, Variant)
+  nameWithType: GodotObject.SetIndexed(NodePath, Variant)
+  fullName: Godot.GodotObject.SetIndexed(Godot.NodePath, Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject.SetIndexed(Godot.NodePath,Godot.Variant)
+    name: SetIndexed
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_
+  - name: (
+  - uid: Godot.NodePath
+    name: NodePath
+    isExternal: true
+    href: Godot.NodePath.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.SetIndexed(Godot.NodePath,Godot.Variant)
+    name: SetIndexed
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_
+  - name: (
+  - uid: Godot.NodePath
+    name: NodePath
+    isExternal: true
+    href: Godot.NodePath.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject.GetIndexed(Godot.NodePath)
+  commentId: M:Godot.GodotObject.GetIndexed(Godot.NodePath)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_
+  name: GetIndexed(NodePath)
+  nameWithType: GodotObject.GetIndexed(NodePath)
+  fullName: Godot.GodotObject.GetIndexed(Godot.NodePath)
+  spec.csharp:
+  - uid: Godot.GodotObject.GetIndexed(Godot.NodePath)
+    name: GetIndexed
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_
+  - name: (
+  - uid: Godot.NodePath
+    name: NodePath
+    isExternal: true
+    href: Godot.NodePath.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetIndexed(Godot.NodePath)
+    name: GetIndexed
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_
+  - name: (
+  - uid: Godot.NodePath
+    name: NodePath
+    isExternal: true
+    href: Godot.NodePath.html
+  - name: )
+- uid: Godot.GodotObject.GetPropertyList
+  commentId: M:Godot.GodotObject.GetPropertyList
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetPropertyList
+  name: GetPropertyList()
+  nameWithType: GodotObject.GetPropertyList()
+  fullName: Godot.GodotObject.GetPropertyList()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetPropertyList
+    name: GetPropertyList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetPropertyList
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetPropertyList
+    name: GetPropertyList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetPropertyList
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.GetMethodList
+  commentId: M:Godot.GodotObject.GetMethodList
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetMethodList
+  name: GetMethodList()
+  nameWithType: GodotObject.GetMethodList()
+  fullName: Godot.GodotObject.GetMethodList()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetMethodList
+    name: GetMethodList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMethodList
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetMethodList
+    name: GetMethodList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMethodList
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.PropertyCanRevert(Godot.StringName)
+  commentId: M:Godot.GodotObject.PropertyCanRevert(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_
+  name: PropertyCanRevert(StringName)
+  nameWithType: GodotObject.PropertyCanRevert(StringName)
+  fullName: Godot.GodotObject.PropertyCanRevert(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.PropertyCanRevert(Godot.StringName)
+    name: PropertyCanRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.PropertyCanRevert(Godot.StringName)
+    name: PropertyCanRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.PropertyGetRevert(Godot.StringName)
+  commentId: M:Godot.GodotObject.PropertyGetRevert(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_
+  name: PropertyGetRevert(StringName)
+  nameWithType: GodotObject.PropertyGetRevert(StringName)
+  fullName: Godot.GodotObject.PropertyGetRevert(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.PropertyGetRevert(Godot.StringName)
+    name: PropertyGetRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.PropertyGetRevert(Godot.StringName)
+    name: PropertyGetRevert
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.Notification(System.Int32,System.Boolean)
+  commentId: M:Godot.GodotObject.Notification(System.Int32,System.Boolean)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_
+  name: Notification(int, bool)
+  nameWithType: GodotObject.Notification(int, bool)
+  fullName: Godot.GodotObject.Notification(int, bool)
+  nameWithType.vb: GodotObject.Notification(Integer, Boolean)
+  fullName.vb: Godot.GodotObject.Notification(Integer, Boolean)
+  name.vb: Notification(Integer, Boolean)
+  spec.csharp:
+  - uid: Godot.GodotObject.Notification(System.Int32,System.Boolean)
+    name: Notification
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Notification(System.Int32,System.Boolean)
+    name: Notification
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Godot.GodotObject.GetInstanceId
+  commentId: M:Godot.GodotObject.GetInstanceId
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetInstanceId
+  name: GetInstanceId()
+  nameWithType: GodotObject.GetInstanceId()
+  fullName: Godot.GodotObject.GetInstanceId()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetInstanceId
+    name: GetInstanceId
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetInstanceId
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetInstanceId
+    name: GetInstanceId
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetInstanceId
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.SetScript(Godot.Variant)
+  commentId: M:Godot.GodotObject.SetScript(Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_
+  name: SetScript(Variant)
+  nameWithType: GodotObject.SetScript(Variant)
+  fullName: Godot.GodotObject.SetScript(Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject.SetScript(Godot.Variant)
+    name: SetScript
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.SetScript(Godot.Variant)
+    name: SetScript
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject.GetScript
+  commentId: M:Godot.GodotObject.GetScript
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetScript
+  name: GetScript()
+  nameWithType: GodotObject.GetScript()
+  fullName: Godot.GodotObject.GetScript()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetScript
+    name: GetScript
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetScript
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetScript
+    name: GetScript
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetScript
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.SetMeta(Godot.StringName,Godot.Variant)
+  commentId: M:Godot.GodotObject.SetMeta(Godot.StringName,Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_
+  name: SetMeta(StringName, Variant)
+  nameWithType: GodotObject.SetMeta(StringName, Variant)
+  fullName: Godot.GodotObject.SetMeta(Godot.StringName, Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject.SetMeta(Godot.StringName,Godot.Variant)
+    name: SetMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.SetMeta(Godot.StringName,Godot.Variant)
+    name: SetMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject.RemoveMeta(Godot.StringName)
+  commentId: M:Godot.GodotObject.RemoveMeta(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_
+  name: RemoveMeta(StringName)
+  nameWithType: GodotObject.RemoveMeta(StringName)
+  fullName: Godot.GodotObject.RemoveMeta(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.RemoveMeta(Godot.StringName)
+    name: RemoveMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.RemoveMeta(Godot.StringName)
+    name: RemoveMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.GetMeta(Godot.StringName,Godot.Variant)
+  commentId: M:Godot.GodotObject.GetMeta(Godot.StringName,Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_
+  name: GetMeta(StringName, Variant)
+  nameWithType: GodotObject.GetMeta(StringName, Variant)
+  fullName: Godot.GodotObject.GetMeta(Godot.StringName, Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject.GetMeta(Godot.StringName,Godot.Variant)
+    name: GetMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetMeta(Godot.StringName,Godot.Variant)
+    name: GetMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject.HasMeta(Godot.StringName)
+  commentId: M:Godot.GodotObject.HasMeta(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_
+  name: HasMeta(StringName)
+  nameWithType: GodotObject.HasMeta(StringName)
+  fullName: Godot.GodotObject.HasMeta(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.HasMeta(Godot.StringName)
+    name: HasMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.HasMeta(Godot.StringName)
+    name: HasMeta
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.GetMetaList
+  commentId: M:Godot.GodotObject.GetMetaList
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetMetaList
+  name: GetMetaList()
+  nameWithType: GodotObject.GetMetaList()
+  fullName: Godot.GodotObject.GetMetaList()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetMetaList
+    name: GetMetaList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMetaList
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetMetaList
+    name: GetMetaList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMetaList
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.AddUserSignal(System.String,Godot.Collections.Array)
+  commentId: M:Godot.GodotObject.AddUserSignal(System.String,Godot.Collections.Array)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_
+  name: AddUserSignal(string, Array)
+  nameWithType: GodotObject.AddUserSignal(string, Array)
+  fullName: Godot.GodotObject.AddUserSignal(string, Godot.Collections.Array)
+  nameWithType.vb: GodotObject.AddUserSignal(String, Array)
+  fullName.vb: Godot.GodotObject.AddUserSignal(String, Godot.Collections.Array)
+  name.vb: AddUserSignal(String, Array)
+  spec.csharp:
+  - uid: Godot.GodotObject.AddUserSignal(System.String,Godot.Collections.Array)
+    name: AddUserSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.AddUserSignal(System.String,Godot.Collections.Array)
+    name: AddUserSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+- uid: Godot.GodotObject.HasUserSignal(Godot.StringName)
+  commentId: M:Godot.GodotObject.HasUserSignal(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_
+  name: HasUserSignal(StringName)
+  nameWithType: GodotObject.HasUserSignal(StringName)
+  fullName: Godot.GodotObject.HasUserSignal(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.HasUserSignal(Godot.StringName)
+    name: HasUserSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.HasUserSignal(Godot.StringName)
+    name: HasUserSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.RemoveUserSignal(Godot.StringName)
+  commentId: M:Godot.GodotObject.RemoveUserSignal(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_RemoveUserSignal_Godot_StringName_
+  name: RemoveUserSignal(StringName)
+  nameWithType: GodotObject.RemoveUserSignal(StringName)
+  fullName: Godot.GodotObject.RemoveUserSignal(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.RemoveUserSignal(Godot.StringName)
+    name: RemoveUserSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_RemoveUserSignal_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.RemoveUserSignal(Godot.StringName)
+    name: RemoveUserSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_RemoveUserSignal_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.EmitSignal(Godot.StringName,Godot.Variant[])
+  commentId: M:Godot.GodotObject.EmitSignal(Godot.StringName,Godot.Variant[])
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___
+  name: EmitSignal(StringName, params Variant[])
+  nameWithType: GodotObject.EmitSignal(StringName, params Variant[])
+  fullName: Godot.GodotObject.EmitSignal(Godot.StringName, params Godot.Variant[])
+  nameWithType.vb: GodotObject.EmitSignal(StringName, ParamArray Variant())
+  fullName.vb: Godot.GodotObject.EmitSignal(Godot.StringName, ParamArray Godot.Variant())
+  name.vb: EmitSignal(StringName, ParamArray Variant())
+  spec.csharp:
+  - uid: Godot.GodotObject.EmitSignal(Godot.StringName,Godot.Variant[])
+    name: EmitSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.EmitSignal(Godot.StringName,Godot.Variant[])
+    name: EmitSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: (
+  - name: )
+  - name: )
+- uid: Godot.GodotObject.EmitSignal(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  commentId: M:Godot.GodotObject.EmitSignal(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  name: EmitSignal(StringName, ReadOnlySpan<Variant>)
+  nameWithType: GodotObject.EmitSignal(StringName, ReadOnlySpan<Variant>)
+  fullName: Godot.GodotObject.EmitSignal(Godot.StringName, System.ReadOnlySpan<Godot.Variant>)
+  nameWithType.vb: GodotObject.EmitSignal(StringName, ReadOnlySpan(Of Variant))
+  fullName.vb: Godot.GodotObject.EmitSignal(Godot.StringName, System.ReadOnlySpan(Of Godot.Variant))
+  name.vb: EmitSignal(StringName, ReadOnlySpan(Of Variant))
+  spec.csharp:
+  - uid: Godot.GodotObject.EmitSignal(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+    name: EmitSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.EmitSignal(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+    name: EmitSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  - name: )
+- uid: Godot.GodotObject.Call(Godot.StringName,Godot.Variant[])
+  commentId: M:Godot.GodotObject.Call(Godot.StringName,Godot.Variant[])
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___
+  name: Call(StringName, params Variant[])
+  nameWithType: GodotObject.Call(StringName, params Variant[])
+  fullName: Godot.GodotObject.Call(Godot.StringName, params Godot.Variant[])
+  nameWithType.vb: GodotObject.Call(StringName, ParamArray Variant())
+  fullName.vb: Godot.GodotObject.Call(Godot.StringName, ParamArray Godot.Variant())
+  name.vb: Call(StringName, ParamArray Variant())
+  spec.csharp:
+  - uid: Godot.GodotObject.Call(Godot.StringName,Godot.Variant[])
+    name: Call
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Call(Godot.StringName,Godot.Variant[])
+    name: Call
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: (
+  - name: )
+  - name: )
+- uid: Godot.GodotObject.Call(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  commentId: M:Godot.GodotObject.Call(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  name: Call(StringName, ReadOnlySpan<Variant>)
+  nameWithType: GodotObject.Call(StringName, ReadOnlySpan<Variant>)
+  fullName: Godot.GodotObject.Call(Godot.StringName, System.ReadOnlySpan<Godot.Variant>)
+  nameWithType.vb: GodotObject.Call(StringName, ReadOnlySpan(Of Variant))
+  fullName.vb: Godot.GodotObject.Call(Godot.StringName, System.ReadOnlySpan(Of Godot.Variant))
+  name.vb: Call(StringName, ReadOnlySpan(Of Variant))
+  spec.csharp:
+  - uid: Godot.GodotObject.Call(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+    name: Call
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Call(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+    name: Call
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  - name: )
+- uid: Godot.GodotObject.CallDeferred(Godot.StringName,Godot.Variant[])
+  commentId: M:Godot.GodotObject.CallDeferred(Godot.StringName,Godot.Variant[])
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___
+  name: CallDeferred(StringName, params Variant[])
+  nameWithType: GodotObject.CallDeferred(StringName, params Variant[])
+  fullName: Godot.GodotObject.CallDeferred(Godot.StringName, params Godot.Variant[])
+  nameWithType.vb: GodotObject.CallDeferred(StringName, ParamArray Variant())
+  fullName.vb: Godot.GodotObject.CallDeferred(Godot.StringName, ParamArray Godot.Variant())
+  name.vb: CallDeferred(StringName, ParamArray Variant())
+  spec.csharp:
+  - uid: Godot.GodotObject.CallDeferred(Godot.StringName,Godot.Variant[])
+    name: CallDeferred
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.CallDeferred(Godot.StringName,Godot.Variant[])
+    name: CallDeferred
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: (
+  - name: )
+  - name: )
+- uid: Godot.GodotObject.CallDeferred(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  commentId: M:Godot.GodotObject.CallDeferred(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  name: CallDeferred(StringName, ReadOnlySpan<Variant>)
+  nameWithType: GodotObject.CallDeferred(StringName, ReadOnlySpan<Variant>)
+  fullName: Godot.GodotObject.CallDeferred(Godot.StringName, System.ReadOnlySpan<Godot.Variant>)
+  nameWithType.vb: GodotObject.CallDeferred(StringName, ReadOnlySpan(Of Variant))
+  fullName.vb: Godot.GodotObject.CallDeferred(Godot.StringName, System.ReadOnlySpan(Of Godot.Variant))
+  name.vb: CallDeferred(StringName, ReadOnlySpan(Of Variant))
+  spec.csharp:
+  - uid: Godot.GodotObject.CallDeferred(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+    name: CallDeferred
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.CallDeferred(Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+    name: CallDeferred
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_System_ReadOnlySpan_Godot_Variant__
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  - name: )
+- uid: Godot.GodotObject.SetDeferred(Godot.StringName,Godot.Variant)
+  commentId: M:Godot.GodotObject.SetDeferred(Godot.StringName,Godot.Variant)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_
+  name: SetDeferred(StringName, Variant)
+  nameWithType: GodotObject.SetDeferred(StringName, Variant)
+  fullName: Godot.GodotObject.SetDeferred(Godot.StringName, Godot.Variant)
+  spec.csharp:
+  - uid: Godot.GodotObject.SetDeferred(Godot.StringName,Godot.Variant)
+    name: SetDeferred
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.SetDeferred(Godot.StringName,Godot.Variant)
+    name: SetDeferred
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.GodotObject.Callv(Godot.StringName,Godot.Collections.Array)
+  commentId: M:Godot.GodotObject.Callv(Godot.StringName,Godot.Collections.Array)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_
+  name: Callv(StringName, Array)
+  nameWithType: GodotObject.Callv(StringName, Array)
+  fullName: Godot.GodotObject.Callv(Godot.StringName, Godot.Collections.Array)
+  spec.csharp:
+  - uid: Godot.GodotObject.Callv(Godot.StringName,Godot.Collections.Array)
+    name: Callv
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Callv(Godot.StringName,Godot.Collections.Array)
+    name: Callv
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Collections.Array
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array.html
+  - name: )
+- uid: Godot.GodotObject.HasMethod(Godot.StringName)
+  commentId: M:Godot.GodotObject.HasMethod(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_
+  name: HasMethod(StringName)
+  nameWithType: GodotObject.HasMethod(StringName)
+  fullName: Godot.GodotObject.HasMethod(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.HasMethod(Godot.StringName)
+    name: HasMethod
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.HasMethod(Godot.StringName)
+    name: HasMethod
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.GetMethodArgumentCount(Godot.StringName)
+  commentId: M:Godot.GodotObject.GetMethodArgumentCount(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetMethodArgumentCount_Godot_StringName_
+  name: GetMethodArgumentCount(StringName)
+  nameWithType: GodotObject.GetMethodArgumentCount(StringName)
+  fullName: Godot.GodotObject.GetMethodArgumentCount(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.GetMethodArgumentCount(Godot.StringName)
+    name: GetMethodArgumentCount
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMethodArgumentCount_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetMethodArgumentCount(Godot.StringName)
+    name: GetMethodArgumentCount
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetMethodArgumentCount_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.HasSignal(Godot.StringName)
+  commentId: M:Godot.GodotObject.HasSignal(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_
+  name: HasSignal(StringName)
+  nameWithType: GodotObject.HasSignal(StringName)
+  fullName: Godot.GodotObject.HasSignal(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.HasSignal(Godot.StringName)
+    name: HasSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.HasSignal(Godot.StringName)
+    name: HasSignal
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.GetSignalList
+  commentId: M:Godot.GodotObject.GetSignalList
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetSignalList
+  name: GetSignalList()
+  nameWithType: GodotObject.GetSignalList()
+  fullName: Godot.GodotObject.GetSignalList()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetSignalList
+    name: GetSignalList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetSignalList
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetSignalList
+    name: GetSignalList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetSignalList
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.GetSignalConnectionList(Godot.StringName)
+  commentId: M:Godot.GodotObject.GetSignalConnectionList(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_
+  name: GetSignalConnectionList(StringName)
+  nameWithType: GodotObject.GetSignalConnectionList(StringName)
+  fullName: Godot.GodotObject.GetSignalConnectionList(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.GetSignalConnectionList(Godot.StringName)
+    name: GetSignalConnectionList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetSignalConnectionList(Godot.StringName)
+    name: GetSignalConnectionList
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.GetIncomingConnections
+  commentId: M:Godot.GodotObject.GetIncomingConnections
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections
+  name: GetIncomingConnections()
+  nameWithType: GodotObject.GetIncomingConnections()
+  fullName: Godot.GodotObject.GetIncomingConnections()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetIncomingConnections
+    name: GetIncomingConnections
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetIncomingConnections
+    name: GetIncomingConnections
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.Connect(Godot.StringName,Godot.Callable,System.UInt32)
+  commentId: M:Godot.GodotObject.Connect(Godot.StringName,Godot.Callable,System.UInt32)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_
+  name: Connect(StringName, Callable, uint)
+  nameWithType: GodotObject.Connect(StringName, Callable, uint)
+  fullName: Godot.GodotObject.Connect(Godot.StringName, Godot.Callable, uint)
+  nameWithType.vb: GodotObject.Connect(StringName, Callable, UInteger)
+  fullName.vb: Godot.GodotObject.Connect(Godot.StringName, Godot.Callable, UInteger)
+  name.vb: Connect(StringName, Callable, UInteger)
+  spec.csharp:
+  - uid: Godot.GodotObject.Connect(Godot.StringName,Godot.Callable,System.UInt32)
+    name: Connect
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Callable
+    name: Callable
+    isExternal: true
+    href: Godot.Callable.html
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Connect(Godot.StringName,Godot.Callable,System.UInt32)
+    name: Connect
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Callable
+    name: Callable
+    isExternal: true
+    href: Godot.Callable.html
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+- uid: Godot.GodotObject.Disconnect(Godot.StringName,Godot.Callable)
+  commentId: M:Godot.GodotObject.Disconnect(Godot.StringName,Godot.Callable)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_
+  name: Disconnect(StringName, Callable)
+  nameWithType: GodotObject.Disconnect(StringName, Callable)
+  fullName: Godot.GodotObject.Disconnect(Godot.StringName, Godot.Callable)
+  spec.csharp:
+  - uid: Godot.GodotObject.Disconnect(Godot.StringName,Godot.Callable)
+    name: Disconnect
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Callable
+    name: Callable
+    isExternal: true
+    href: Godot.Callable.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Disconnect(Godot.StringName,Godot.Callable)
+    name: Disconnect
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Callable
+    name: Callable
+    isExternal: true
+    href: Godot.Callable.html
+  - name: )
+- uid: Godot.GodotObject.IsConnected(Godot.StringName,Godot.Callable)
+  commentId: M:Godot.GodotObject.IsConnected(Godot.StringName,Godot.Callable)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_
+  name: IsConnected(StringName, Callable)
+  nameWithType: GodotObject.IsConnected(StringName, Callable)
+  fullName: Godot.GodotObject.IsConnected(Godot.StringName, Godot.Callable)
+  spec.csharp:
+  - uid: Godot.GodotObject.IsConnected(Godot.StringName,Godot.Callable)
+    name: IsConnected
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Callable
+    name: Callable
+    isExternal: true
+    href: Godot.Callable.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.IsConnected(Godot.StringName,Godot.Callable)
+    name: IsConnected
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Callable
+    name: Callable
+    isExternal: true
+    href: Godot.Callable.html
+  - name: )
+- uid: Godot.GodotObject.HasConnections(Godot.StringName)
+  commentId: M:Godot.GodotObject.HasConnections(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_HasConnections_Godot_StringName_
+  name: HasConnections(StringName)
+  nameWithType: GodotObject.HasConnections(StringName)
+  fullName: Godot.GodotObject.HasConnections(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.HasConnections(Godot.StringName)
+    name: HasConnections
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasConnections_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.HasConnections(Godot.StringName)
+    name: HasConnections
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_HasConnections_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.SetBlockSignals(System.Boolean)
+  commentId: M:Godot.GodotObject.SetBlockSignals(System.Boolean)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_
+  name: SetBlockSignals(bool)
+  nameWithType: GodotObject.SetBlockSignals(bool)
+  fullName: Godot.GodotObject.SetBlockSignals(bool)
+  nameWithType.vb: GodotObject.SetBlockSignals(Boolean)
+  fullName.vb: Godot.GodotObject.SetBlockSignals(Boolean)
+  name.vb: SetBlockSignals(Boolean)
+  spec.csharp:
+  - uid: Godot.GodotObject.SetBlockSignals(System.Boolean)
+    name: SetBlockSignals
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.SetBlockSignals(System.Boolean)
+    name: SetBlockSignals
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Godot.GodotObject.IsBlockingSignals
+  commentId: M:Godot.GodotObject.IsBlockingSignals
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals
+  name: IsBlockingSignals()
+  nameWithType: GodotObject.IsBlockingSignals()
+  fullName: Godot.GodotObject.IsBlockingSignals()
+  spec.csharp:
+  - uid: Godot.GodotObject.IsBlockingSignals
+    name: IsBlockingSignals
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.IsBlockingSignals
+    name: IsBlockingSignals
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.NotifyPropertyListChanged
+  commentId: M:Godot.GodotObject.NotifyPropertyListChanged
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged
+  name: NotifyPropertyListChanged()
+  nameWithType: GodotObject.NotifyPropertyListChanged()
+  fullName: Godot.GodotObject.NotifyPropertyListChanged()
+  spec.csharp:
+  - uid: Godot.GodotObject.NotifyPropertyListChanged
+    name: NotifyPropertyListChanged
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.NotifyPropertyListChanged
+    name: NotifyPropertyListChanged
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.SetMessageTranslation(System.Boolean)
+  commentId: M:Godot.GodotObject.SetMessageTranslation(System.Boolean)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_
+  name: SetMessageTranslation(bool)
+  nameWithType: GodotObject.SetMessageTranslation(bool)
+  fullName: Godot.GodotObject.SetMessageTranslation(bool)
+  nameWithType.vb: GodotObject.SetMessageTranslation(Boolean)
+  fullName.vb: Godot.GodotObject.SetMessageTranslation(Boolean)
+  name.vb: SetMessageTranslation(Boolean)
+  spec.csharp:
+  - uid: Godot.GodotObject.SetMessageTranslation(System.Boolean)
+    name: SetMessageTranslation
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.SetMessageTranslation(System.Boolean)
+    name: SetMessageTranslation
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Godot.GodotObject.CanTranslateMessages
+  commentId: M:Godot.GodotObject.CanTranslateMessages
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages
+  name: CanTranslateMessages()
+  nameWithType: GodotObject.CanTranslateMessages()
+  fullName: Godot.GodotObject.CanTranslateMessages()
+  spec.csharp:
+  - uid: Godot.GodotObject.CanTranslateMessages
+    name: CanTranslateMessages
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.CanTranslateMessages
+    name: CanTranslateMessages
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.Tr(Godot.StringName,Godot.StringName)
+  commentId: M:Godot.GodotObject.Tr(Godot.StringName,Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_
+  name: Tr(StringName, StringName)
+  nameWithType: GodotObject.Tr(StringName, StringName)
+  fullName: Godot.GodotObject.Tr(Godot.StringName, Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.Tr(Godot.StringName,Godot.StringName)
+    name: Tr
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.Tr(Godot.StringName,Godot.StringName)
+    name: Tr
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.TrN(Godot.StringName,Godot.StringName,System.Int32,Godot.StringName)
+  commentId: M:Godot.GodotObject.TrN(Godot.StringName,Godot.StringName,System.Int32,Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_
+  name: TrN(StringName, StringName, int, StringName)
+  nameWithType: GodotObject.TrN(StringName, StringName, int, StringName)
+  fullName: Godot.GodotObject.TrN(Godot.StringName, Godot.StringName, int, Godot.StringName)
+  nameWithType.vb: GodotObject.TrN(StringName, StringName, Integer, StringName)
+  fullName.vb: Godot.GodotObject.TrN(Godot.StringName, Godot.StringName, Integer, Godot.StringName)
+  name.vb: TrN(StringName, StringName, Integer, StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.TrN(Godot.StringName,Godot.StringName,System.Int32,Godot.StringName)
+    name: TrN
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.TrN(Godot.StringName,Godot.StringName,System.Int32,Godot.StringName)
+    name: TrN
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.GetTranslationDomain
+  commentId: M:Godot.GodotObject.GetTranslationDomain
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_GetTranslationDomain
+  name: GetTranslationDomain()
+  nameWithType: GodotObject.GetTranslationDomain()
+  fullName: Godot.GodotObject.GetTranslationDomain()
+  spec.csharp:
+  - uid: Godot.GodotObject.GetTranslationDomain
+    name: GetTranslationDomain
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetTranslationDomain
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.GetTranslationDomain
+    name: GetTranslationDomain
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_GetTranslationDomain
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.SetTranslationDomain(Godot.StringName)
+  commentId: M:Godot.GodotObject.SetTranslationDomain(Godot.StringName)
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_SetTranslationDomain_Godot_StringName_
+  name: SetTranslationDomain(StringName)
+  nameWithType: GodotObject.SetTranslationDomain(StringName)
+  fullName: Godot.GodotObject.SetTranslationDomain(Godot.StringName)
+  spec.csharp:
+  - uid: Godot.GodotObject.SetTranslationDomain(Godot.StringName)
+    name: SetTranslationDomain
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetTranslationDomain_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.SetTranslationDomain(Godot.StringName)
+    name: SetTranslationDomain
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_SetTranslationDomain_Godot_StringName_
+  - name: (
+  - uid: Godot.StringName
+    name: StringName
+    isExternal: true
+    href: Godot.StringName.html
+  - name: )
+- uid: Godot.GodotObject.IsQueuedForDeletion
+  commentId: M:Godot.GodotObject.IsQueuedForDeletion
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion
+  name: IsQueuedForDeletion()
+  nameWithType: GodotObject.IsQueuedForDeletion()
+  fullName: Godot.GodotObject.IsQueuedForDeletion()
+  spec.csharp:
+  - uid: Godot.GodotObject.IsQueuedForDeletion
+    name: IsQueuedForDeletion
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.IsQueuedForDeletion
+    name: IsQueuedForDeletion
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.CancelFree
+  commentId: M:Godot.GodotObject.CancelFree
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_CancelFree
+  name: CancelFree()
+  nameWithType: GodotObject.CancelFree()
+  fullName: Godot.GodotObject.CancelFree()
+  spec.csharp:
+  - uid: Godot.GodotObject.CancelFree
+    name: CancelFree
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CancelFree
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.CancelFree
+    name: CancelFree
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_CancelFree
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.EmitSignalScriptChanged
+  commentId: M:Godot.GodotObject.EmitSignalScriptChanged
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_EmitSignalScriptChanged
+  name: EmitSignalScriptChanged()
+  nameWithType: GodotObject.EmitSignalScriptChanged()
+  fullName: Godot.GodotObject.EmitSignalScriptChanged()
+  spec.csharp:
+  - uid: Godot.GodotObject.EmitSignalScriptChanged
+    name: EmitSignalScriptChanged
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignalScriptChanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.EmitSignalScriptChanged
+    name: EmitSignalScriptChanged
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignalScriptChanged
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.EmitSignalPropertyListChanged
+  commentId: M:Godot.GodotObject.EmitSignalPropertyListChanged
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_EmitSignalPropertyListChanged
+  name: EmitSignalPropertyListChanged()
+  nameWithType: GodotObject.EmitSignalPropertyListChanged()
+  fullName: Godot.GodotObject.EmitSignalPropertyListChanged()
+  spec.csharp:
+  - uid: Godot.GodotObject.EmitSignalPropertyListChanged
+    name: EmitSignalPropertyListChanged
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignalPropertyListChanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.GodotObject.EmitSignalPropertyListChanged
+    name: EmitSignalPropertyListChanged
+    isExternal: true
+    href: Godot.GodotObject.html#Godot_GodotObject_EmitSignalPropertyListChanged
+  - name: (
+  - name: )
+- uid: Godot.GodotObject.NativeInstance
+  commentId: P:Godot.GodotObject.NativeInstance
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_NativeInstance
+  name: NativeInstance
+  nameWithType: GodotObject.NativeInstance
+  fullName: Godot.GodotObject.NativeInstance
+- uid: Godot.GodotObject.ScriptChanged
+  commentId: E:Godot.GodotObject.ScriptChanged
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_ScriptChanged
+  name: ScriptChanged
+  nameWithType: GodotObject.ScriptChanged
+  fullName: Godot.GodotObject.ScriptChanged
+- uid: Godot.GodotObject.PropertyListChanged
+  commentId: E:Godot.GodotObject.PropertyListChanged
+  parent: Godot.GodotObject
+  isExternal: true
+  href: Godot.GodotObject.html#Godot_GodotObject_PropertyListChanged
+  name: PropertyListChanged
+  nameWithType: GodotObject.PropertyListChanged
+  fullName: Godot.GodotObject.PropertyListChanged
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.FileAccess.Open*
+  commentId: Overload:Godot.FileAccess.Open
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_Open_System_String_Godot_FileAccess_ModeFlags_
+  name: Open
+  nameWithType: FileAccess.Open
+  fullName: Godot.FileAccess.Open
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.FileAccess.ModeFlags
+  commentId: T:Godot.FileAccess.ModeFlags
+  parent: Godot
+  isExternal: true
+  href: Godot.FileAccess.html
+  name: FileAccess.ModeFlags
+  nameWithType: FileAccess.ModeFlags
+  fullName: Godot.FileAccess.ModeFlags
+  spec.csharp:
+  - uid: Godot.FileAccess
+    name: FileAccess
+    isExternal: true
+    href: Godot.FileAccess.html
+  - name: .
+  - uid: Godot.FileAccess.ModeFlags
+    name: ModeFlags
+    isExternal: true
+    href: Godot.FileAccess.ModeFlags.html
+  spec.vb:
+  - uid: Godot.FileAccess
+    name: FileAccess
+    isExternal: true
+    href: Godot.FileAccess.html
+  - name: .
+  - uid: Godot.FileAccess.ModeFlags
+    name: ModeFlags
+    isExternal: true
+    href: Godot.FileAccess.ModeFlags.html
+- uid: Godot.FileAccess
+  commentId: T:Godot.FileAccess
+  parent: Godot
+  isExternal: true
+  href: Godot.FileAccess.html
+  name: FileAccess
+  nameWithType: FileAccess
+  fullName: Godot.FileAccess
+- uid: Godot.FileAccess.OpenEncrypted*
+  commentId: Overload:Godot.FileAccess.OpenEncrypted
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_OpenEncrypted_System_String_Godot_FileAccess_ModeFlags_System_Byte___System_Byte___
+  name: OpenEncrypted
+  nameWithType: FileAccess.OpenEncrypted
+  fullName: Godot.FileAccess.OpenEncrypted
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.FileAccess.OpenEncryptedWithPass*
+  commentId: Overload:Godot.FileAccess.OpenEncryptedWithPass
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_OpenEncryptedWithPass_System_String_Godot_FileAccess_ModeFlags_System_String_
+  name: OpenEncryptedWithPass
+  nameWithType: FileAccess.OpenEncryptedWithPass
+  fullName: Godot.FileAccess.OpenEncryptedWithPass
+- uid: Godot.FileAccess.OpenCompressed*
+  commentId: Overload:Godot.FileAccess.OpenCompressed
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_OpenCompressed_System_String_Godot_FileAccess_ModeFlags_Godot_FileAccess_CompressionMode_
+  name: OpenCompressed
+  nameWithType: FileAccess.OpenCompressed
+  fullName: Godot.FileAccess.OpenCompressed
+- uid: Godot.FileAccess.CompressionMode
+  commentId: T:Godot.FileAccess.CompressionMode
+  parent: Godot
+  isExternal: true
+  href: Godot.FileAccess.html
+  name: FileAccess.CompressionMode
+  nameWithType: FileAccess.CompressionMode
+  fullName: Godot.FileAccess.CompressionMode
+  spec.csharp:
+  - uid: Godot.FileAccess
+    name: FileAccess
+    isExternal: true
+    href: Godot.FileAccess.html
+  - name: .
+  - uid: Godot.FileAccess.CompressionMode
+    name: CompressionMode
+    isExternal: true
+    href: Godot.FileAccess.CompressionMode.html
+  spec.vb:
+  - uid: Godot.FileAccess
+    name: FileAccess
+    isExternal: true
+    href: Godot.FileAccess.html
+  - name: .
+  - uid: Godot.FileAccess.CompressionMode
+    name: CompressionMode
+    isExternal: true
+    href: Godot.FileAccess.CompressionMode.html
+- uid: Godot.FileAccess.GetOpenError*
+  commentId: Overload:Godot.FileAccess.GetOpenError
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetOpenError
+  name: GetOpenError
+  nameWithType: FileAccess.GetOpenError
+  fullName: Godot.FileAccess.GetOpenError
+- uid: Godot.Error
+  commentId: T:Godot.Error
+  parent: Godot
+  isExternal: true
+  href: Godot.Error.html
+  name: Error
+  nameWithType: Error
+  fullName: Godot.Error
+- uid: Godot.FileAccess.CreateTemp*
+  commentId: Overload:Godot.FileAccess.CreateTemp
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_CreateTemp_System_Int32_System_String_System_String_System_Boolean_
+  name: CreateTemp
+  nameWithType: FileAccess.CreateTemp
+  fullName: Godot.FileAccess.CreateTemp
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.FileAccess.GetFileAsBytes*
+  commentId: Overload:Godot.FileAccess.GetFileAsBytes
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetFileAsBytes_System_String_
+  name: GetFileAsBytes
+  nameWithType: FileAccess.GetFileAsBytes
+  fullName: Godot.FileAccess.GetFileAsBytes
+- uid: Godot.FileAccess.GetFileAsString*
+  commentId: Overload:Godot.FileAccess.GetFileAsString
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetFileAsString_System_String_
+  name: GetFileAsString
+  nameWithType: FileAccess.GetFileAsString
+  fullName: Godot.FileAccess.GetFileAsString
+- uid: Godot.FileAccess.Resize*
+  commentId: Overload:Godot.FileAccess.Resize
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_Resize_System_Int64_
+  name: Resize
+  nameWithType: FileAccess.Resize
+  fullName: Godot.FileAccess.Resize
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Godot.FileAccess.Flush*
+  commentId: Overload:Godot.FileAccess.Flush
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_Flush
+  name: Flush
+  nameWithType: FileAccess.Flush
+  fullName: Godot.FileAccess.Flush
+- uid: Godot.FileAccess.GetPath*
+  commentId: Overload:Godot.FileAccess.GetPath
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetPath
+  name: GetPath
+  nameWithType: FileAccess.GetPath
+  fullName: Godot.FileAccess.GetPath
+- uid: Godot.FileAccess.GetPathAbsolute*
+  commentId: Overload:Godot.FileAccess.GetPathAbsolute
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetPathAbsolute
+  name: GetPathAbsolute
+  nameWithType: FileAccess.GetPathAbsolute
+  fullName: Godot.FileAccess.GetPathAbsolute
+- uid: Godot.FileAccess.IsOpen*
+  commentId: Overload:Godot.FileAccess.IsOpen
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_IsOpen
+  name: IsOpen
+  nameWithType: FileAccess.IsOpen
+  fullName: Godot.FileAccess.IsOpen
+- uid: Godot.FileAccess.Seek*
+  commentId: Overload:Godot.FileAccess.Seek
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_Seek_System_UInt64_
+  name: Seek
+  nameWithType: FileAccess.Seek
+  fullName: Godot.FileAccess.Seek
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: Godot.FileAccess.SeekEnd*
+  commentId: Overload:Godot.FileAccess.SeekEnd
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_SeekEnd_System_Int64_
+  name: SeekEnd
+  nameWithType: FileAccess.SeekEnd
+  fullName: Godot.FileAccess.SeekEnd
+- uid: Godot.FileAccess.GetPosition*
+  commentId: Overload:Godot.FileAccess.GetPosition
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetPosition
+  name: GetPosition
+  nameWithType: FileAccess.GetPosition
+  fullName: Godot.FileAccess.GetPosition
+- uid: Godot.FileAccess.GetLength*
+  commentId: Overload:Godot.FileAccess.GetLength
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetLength
+  name: GetLength
+  nameWithType: FileAccess.GetLength
+  fullName: Godot.FileAccess.GetLength
+- uid: Godot.FileAccess.EofReached*
+  commentId: Overload:Godot.FileAccess.EofReached
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_EofReached
+  name: EofReached
+  nameWithType: FileAccess.EofReached
+  fullName: Godot.FileAccess.EofReached
+- uid: Godot.FileAccess.Get8*
+  commentId: Overload:Godot.FileAccess.Get8
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_Get8
+  name: Get8
+  nameWithType: FileAccess.Get8
+  fullName: Godot.FileAccess.Get8
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: Godot.FileAccess.Get16*
+  commentId: Overload:Godot.FileAccess.Get16
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_Get16
+  name: Get16
+  nameWithType: FileAccess.Get16
+  fullName: Godot.FileAccess.Get16
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: Godot.FileAccess.Get32*
+  commentId: Overload:Godot.FileAccess.Get32
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_Get32
+  name: Get32
+  nameWithType: FileAccess.Get32
+  fullName: Godot.FileAccess.Get32
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Godot.FileAccess.Get64*
+  commentId: Overload:Godot.FileAccess.Get64
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_Get64
+  name: Get64
+  nameWithType: FileAccess.Get64
+  fullName: Godot.FileAccess.Get64
+- uid: Godot.FileAccess.GetHalf*
+  commentId: Overload:Godot.FileAccess.GetHalf
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetHalf
+  name: GetHalf
+  nameWithType: FileAccess.GetHalf
+  fullName: Godot.FileAccess.GetHalf
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Godot.FileAccess.GetFloat*
+  commentId: Overload:Godot.FileAccess.GetFloat
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetFloat
+  name: GetFloat
+  nameWithType: FileAccess.GetFloat
+  fullName: Godot.FileAccess.GetFloat
+- uid: Godot.FileAccess.GetDouble*
+  commentId: Overload:Godot.FileAccess.GetDouble
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetDouble
+  name: GetDouble
+  nameWithType: FileAccess.GetDouble
+  fullName: Godot.FileAccess.GetDouble
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Godot.FileAccess.GetReal*
+  commentId: Overload:Godot.FileAccess.GetReal
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetReal
+  name: GetReal
+  nameWithType: FileAccess.GetReal
+  fullName: Godot.FileAccess.GetReal
+- uid: Godot.FileAccess.GetBuffer*
+  commentId: Overload:Godot.FileAccess.GetBuffer
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetBuffer_System_Int64_
+  name: GetBuffer
+  nameWithType: FileAccess.GetBuffer
+  fullName: Godot.FileAccess.GetBuffer
+- uid: Godot.FileAccess.GetLine*
+  commentId: Overload:Godot.FileAccess.GetLine
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetLine
+  name: GetLine
+  nameWithType: FileAccess.GetLine
+  fullName: Godot.FileAccess.GetLine
+- uid: Godot.FileAccess.GetCsvLine*
+  commentId: Overload:Godot.FileAccess.GetCsvLine
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetCsvLine_System_String_
+  name: GetCsvLine
+  nameWithType: FileAccess.GetCsvLine
+  fullName: Godot.FileAccess.GetCsvLine
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Godot.FileAccess.GetAsText*
+  commentId: Overload:Godot.FileAccess.GetAsText
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetAsText_System_Boolean_
+  name: GetAsText
+  nameWithType: FileAccess.GetAsText
+  fullName: Godot.FileAccess.GetAsText
+- uid: Godot.FileAccess.GetMd5*
+  commentId: Overload:Godot.FileAccess.GetMd5
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetMd5_System_String_
+  name: GetMd5
+  nameWithType: FileAccess.GetMd5
+  fullName: Godot.FileAccess.GetMd5
+- uid: Godot.FileAccess.GetSha256*
+  commentId: Overload:Godot.FileAccess.GetSha256
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetSha256_System_String_
+  name: GetSha256
+  nameWithType: FileAccess.GetSha256
+  fullName: Godot.FileAccess.GetSha256
+- uid: Godot.FileAccess.GetError*
+  commentId: Overload:Godot.FileAccess.GetError
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetError
+  name: GetError
+  nameWithType: FileAccess.GetError
+  fullName: Godot.FileAccess.GetError
+- uid: Godot.FileAccess.GetVar*
+  commentId: Overload:Godot.FileAccess.GetVar
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetVar_System_Boolean_
+  name: GetVar
+  nameWithType: FileAccess.GetVar
+  fullName: Godot.FileAccess.GetVar
+- uid: Godot.Variant
+  commentId: T:Godot.Variant
+  parent: Godot
+  isExternal: true
+  href: Godot.Variant.html
+  name: Variant
+  nameWithType: Variant
+  fullName: Godot.Variant
+- uid: Godot.FileAccess.Store8*
+  commentId: Overload:Godot.FileAccess.Store8
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_Store8_System_Byte_
+  name: Store8
+  nameWithType: FileAccess.Store8
+  fullName: Godot.FileAccess.Store8
+- uid: Godot.FileAccess.Store16*
+  commentId: Overload:Godot.FileAccess.Store16
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_Store16_System_UInt16_
+  name: Store16
+  nameWithType: FileAccess.Store16
+  fullName: Godot.FileAccess.Store16
+- uid: Godot.FileAccess.Store32*
+  commentId: Overload:Godot.FileAccess.Store32
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_Store32_System_UInt32_
+  name: Store32
+  nameWithType: FileAccess.Store32
+  fullName: Godot.FileAccess.Store32
+- uid: Godot.FileAccess.Store64*
+  commentId: Overload:Godot.FileAccess.Store64
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_Store64_System_UInt64_
+  name: Store64
+  nameWithType: FileAccess.Store64
+  fullName: Godot.FileAccess.Store64
+- uid: Godot.FileAccess.StoreHalf*
+  commentId: Overload:Godot.FileAccess.StoreHalf
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_StoreHalf_System_Single_
+  name: StoreHalf
+  nameWithType: FileAccess.StoreHalf
+  fullName: Godot.FileAccess.StoreHalf
+- uid: Godot.FileAccess.StoreFloat*
+  commentId: Overload:Godot.FileAccess.StoreFloat
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_StoreFloat_System_Single_
+  name: StoreFloat
+  nameWithType: FileAccess.StoreFloat
+  fullName: Godot.FileAccess.StoreFloat
+- uid: Godot.FileAccess.StoreDouble*
+  commentId: Overload:Godot.FileAccess.StoreDouble
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_StoreDouble_System_Double_
+  name: StoreDouble
+  nameWithType: FileAccess.StoreDouble
+  fullName: Godot.FileAccess.StoreDouble
+- uid: Godot.FileAccess.StoreReal*
+  commentId: Overload:Godot.FileAccess.StoreReal
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_StoreReal_System_Single_
+  name: StoreReal
+  nameWithType: FileAccess.StoreReal
+  fullName: Godot.FileAccess.StoreReal
+- uid: Godot.FileAccess.StoreBuffer*
+  commentId: Overload:Godot.FileAccess.StoreBuffer
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_StoreBuffer_System_Byte___
+  name: StoreBuffer
+  nameWithType: FileAccess.StoreBuffer
+  fullName: Godot.FileAccess.StoreBuffer
+- uid: Godot.FileAccess.StoreLine*
+  commentId: Overload:Godot.FileAccess.StoreLine
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_StoreLine_System_String_
+  name: StoreLine
+  nameWithType: FileAccess.StoreLine
+  fullName: Godot.FileAccess.StoreLine
+- uid: Godot.FileAccess.StoreCsvLine*
+  commentId: Overload:Godot.FileAccess.StoreCsvLine
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_StoreCsvLine_System_String___System_String_
+  name: StoreCsvLine
+  nameWithType: FileAccess.StoreCsvLine
+  fullName: Godot.FileAccess.StoreCsvLine
+- uid: System.ReadOnlySpan{System.String}
+  commentId: T:System.ReadOnlySpan{System.String}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<string>
+  nameWithType: ReadOnlySpan<string>
+  fullName: System.ReadOnlySpan<string>
+  nameWithType.vb: ReadOnlySpan(Of String)
+  fullName.vb: System.ReadOnlySpan(Of String)
+  name.vb: ReadOnlySpan(Of String)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Godot.FileAccess.StoreString*
+  commentId: Overload:Godot.FileAccess.StoreString
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_StoreString_System_String_
+  name: StoreString
+  nameWithType: FileAccess.StoreString
+  fullName: Godot.FileAccess.StoreString
+- uid: Godot.FileAccess.StoreVar*
+  commentId: Overload:Godot.FileAccess.StoreVar
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_StoreVar_Godot_Variant_System_Boolean_
+  name: StoreVar
+  nameWithType: FileAccess.StoreVar
+  fullName: Godot.FileAccess.StoreVar
+- uid: Godot.FileAccess.StorePascalString*
+  commentId: Overload:Godot.FileAccess.StorePascalString
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_StorePascalString_System_String_
+  name: StorePascalString
+  nameWithType: FileAccess.StorePascalString
+  fullName: Godot.FileAccess.StorePascalString
+- uid: Godot.FileAccess.GetPascalString*
+  commentId: Overload:Godot.FileAccess.GetPascalString
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetPascalString
+  name: GetPascalString
+  nameWithType: FileAccess.GetPascalString
+  fullName: Godot.FileAccess.GetPascalString
+- uid: Godot.FileAccess.Close*
+  commentId: Overload:Godot.FileAccess.Close
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_Close
+  name: Close
+  nameWithType: FileAccess.Close
+  fullName: Godot.FileAccess.Close
+- uid: Godot.FileAccess.FileExists*
+  commentId: Overload:Godot.FileAccess.FileExists
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_FileExists_System_String_
+  name: FileExists
+  nameWithType: FileAccess.FileExists
+  fullName: Godot.FileAccess.FileExists
+- uid: Godot.FileAccess.GetModifiedTime*
+  commentId: Overload:Godot.FileAccess.GetModifiedTime
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetModifiedTime_System_String_
+  name: GetModifiedTime
+  nameWithType: FileAccess.GetModifiedTime
+  fullName: Godot.FileAccess.GetModifiedTime
+- uid: Godot.FileAccess.GetAccessTime*
+  commentId: Overload:Godot.FileAccess.GetAccessTime
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetAccessTime_System_String_
+  name: GetAccessTime
+  nameWithType: FileAccess.GetAccessTime
+  fullName: Godot.FileAccess.GetAccessTime
+- uid: Godot.FileAccess.GetSize*
+  commentId: Overload:Godot.FileAccess.GetSize
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetSize_System_String_
+  name: GetSize
+  nameWithType: FileAccess.GetSize
+  fullName: Godot.FileAccess.GetSize
+- uid: Godot.FileAccess.GetUnixPermissions*
+  commentId: Overload:Godot.FileAccess.GetUnixPermissions
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetUnixPermissions_System_String_
+  name: GetUnixPermissions
+  nameWithType: FileAccess.GetUnixPermissions
+  fullName: Godot.FileAccess.GetUnixPermissions
+- uid: Godot.FileAccess.UnixPermissionFlags
+  commentId: T:Godot.FileAccess.UnixPermissionFlags
+  parent: Godot
+  isExternal: true
+  href: Godot.FileAccess.html
+  name: FileAccess.UnixPermissionFlags
+  nameWithType: FileAccess.UnixPermissionFlags
+  fullName: Godot.FileAccess.UnixPermissionFlags
+  spec.csharp:
+  - uid: Godot.FileAccess
+    name: FileAccess
+    isExternal: true
+    href: Godot.FileAccess.html
+  - name: .
+  - uid: Godot.FileAccess.UnixPermissionFlags
+    name: UnixPermissionFlags
+    isExternal: true
+    href: Godot.FileAccess.UnixPermissionFlags.html
+  spec.vb:
+  - uid: Godot.FileAccess
+    name: FileAccess
+    isExternal: true
+    href: Godot.FileAccess.html
+  - name: .
+  - uid: Godot.FileAccess.UnixPermissionFlags
+    name: UnixPermissionFlags
+    isExternal: true
+    href: Godot.FileAccess.UnixPermissionFlags.html
+- uid: Godot.FileAccess.SetUnixPermissions*
+  commentId: Overload:Godot.FileAccess.SetUnixPermissions
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_SetUnixPermissions_System_String_Godot_FileAccess_UnixPermissionFlags_
+  name: SetUnixPermissions
+  nameWithType: FileAccess.SetUnixPermissions
+  fullName: Godot.FileAccess.SetUnixPermissions
+- uid: Godot.FileAccess.GetHiddenAttribute*
+  commentId: Overload:Godot.FileAccess.GetHiddenAttribute
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetHiddenAttribute_System_String_
+  name: GetHiddenAttribute
+  nameWithType: FileAccess.GetHiddenAttribute
+  fullName: Godot.FileAccess.GetHiddenAttribute
+- uid: Godot.FileAccess.SetHiddenAttribute*
+  commentId: Overload:Godot.FileAccess.SetHiddenAttribute
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_SetHiddenAttribute_System_String_System_Boolean_
+  name: SetHiddenAttribute
+  nameWithType: FileAccess.SetHiddenAttribute
+  fullName: Godot.FileAccess.SetHiddenAttribute
+- uid: Godot.FileAccess.SetReadOnlyAttribute*
+  commentId: Overload:Godot.FileAccess.SetReadOnlyAttribute
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_SetReadOnlyAttribute_System_String_System_Boolean_
+  name: SetReadOnlyAttribute
+  nameWithType: FileAccess.SetReadOnlyAttribute
+  fullName: Godot.FileAccess.SetReadOnlyAttribute
+- uid: Godot.FileAccess.GetReadOnlyAttribute*
+  commentId: Overload:Godot.FileAccess.GetReadOnlyAttribute
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_GetReadOnlyAttribute_System_String_
+  name: GetReadOnlyAttribute
+  nameWithType: FileAccess.GetReadOnlyAttribute
+  fullName: Godot.FileAccess.GetReadOnlyAttribute
+- uid: Godot.RefCounted.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+  commentId: M:Godot.RefCounted.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+  parent: Godot.RefCounted
+  isExternal: true
+  href: Godot.RefCounted.html#Godot_RefCounted_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__
+  name: InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)
+  nameWithType: RefCounted.InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)
+  fullName: Godot.RefCounted.InvokeGodotClassMethod(in Godot.NativeInterop.godot_string_name, Godot.NativeInterop.NativeVariantPtrArgs, out Godot.NativeInterop.godot_variant)
+  nameWithType.vb: RefCounted.InvokeGodotClassMethod(godot_string_name, NativeVariantPtrArgs, godot_variant)
+  fullName.vb: Godot.RefCounted.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name, Godot.NativeInterop.NativeVariantPtrArgs, Godot.NativeInterop.godot_variant)
+  name.vb: InvokeGodotClassMethod(godot_string_name, NativeVariantPtrArgs, godot_variant)
+  spec.csharp:
+  - uid: Godot.RefCounted.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+    name: InvokeGodotClassMethod
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__
+  - name: (
+  - name: in
+  - name: " "
+  - uid: Godot.NativeInterop.godot_string_name
+    name: godot_string_name
+    isExternal: true
+    href: Godot.NativeInterop.godot_string_name.html
+  - name: ','
+  - name: " "
+  - uid: Godot.NativeInterop.NativeVariantPtrArgs
+    name: NativeVariantPtrArgs
+    isExternal: true
+    href: Godot.NativeInterop.NativeVariantPtrArgs.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: Godot.NativeInterop.godot_variant
+    name: godot_variant
+    isExternal: true
+    href: Godot.NativeInterop.godot_variant.html
+  - name: )
+  spec.vb:
+  - uid: Godot.RefCounted.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)
+    name: InvokeGodotClassMethod
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__
+  - name: (
+  - uid: Godot.NativeInterop.godot_string_name
+    name: godot_string_name
+    isExternal: true
+    href: Godot.NativeInterop.godot_string_name.html
+  - name: ','
+  - name: " "
+  - uid: Godot.NativeInterop.NativeVariantPtrArgs
+    name: NativeVariantPtrArgs
+    isExternal: true
+    href: Godot.NativeInterop.NativeVariantPtrArgs.html
+  - name: ','
+  - name: " "
+  - uid: Godot.NativeInterop.godot_variant
+    name: godot_variant
+    isExternal: true
+    href: Godot.NativeInterop.godot_variant.html
+  - name: )
+- uid: Godot.FileAccess.InvokeGodotClassMethod*
+  commentId: Overload:Godot.FileAccess.InvokeGodotClassMethod
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__
+  name: InvokeGodotClassMethod
+  nameWithType: FileAccess.InvokeGodotClassMethod
+  fullName: Godot.FileAccess.InvokeGodotClassMethod
+- uid: Godot.NativeInterop.godot_string_name
+  commentId: T:Godot.NativeInterop.godot_string_name
+  parent: Godot.NativeInterop
+  isExternal: true
+  href: Godot.NativeInterop.godot_string_name.html
+  name: godot_string_name
+  nameWithType: godot_string_name
+  fullName: Godot.NativeInterop.godot_string_name
+- uid: Godot.NativeInterop.NativeVariantPtrArgs
+  commentId: T:Godot.NativeInterop.NativeVariantPtrArgs
+  parent: Godot.NativeInterop
+  isExternal: true
+  href: Godot.NativeInterop.NativeVariantPtrArgs.html
+  name: NativeVariantPtrArgs
+  nameWithType: NativeVariantPtrArgs
+  fullName: Godot.NativeInterop.NativeVariantPtrArgs
+- uid: Godot.NativeInterop.godot_variant
+  commentId: T:Godot.NativeInterop.godot_variant
+  parent: Godot.NativeInterop
+  isExternal: true
+  href: Godot.NativeInterop.godot_variant.html
+  name: godot_variant
+  nameWithType: godot_variant
+  fullName: Godot.NativeInterop.godot_variant
+- uid: Godot.NativeInterop
+  commentId: N:Godot.NativeInterop
+  isExternal: true
+  href: Godot.html
+  name: Godot.NativeInterop
+  nameWithType: Godot.NativeInterop
+  fullName: Godot.NativeInterop
+  spec.csharp:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.NativeInterop
+    name: NativeInterop
+    isExternal: true
+    href: Godot.NativeInterop.html
+  spec.vb:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.NativeInterop
+    name: NativeInterop
+    isExternal: true
+    href: Godot.NativeInterop.html
+- uid: Godot.RefCounted.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+  commentId: M:Godot.RefCounted.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+  parent: Godot.RefCounted
+  isExternal: true
+  href: Godot.RefCounted.html#Godot_RefCounted_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__
+  name: HasGodotClassMethod(in godot_string_name)
+  nameWithType: RefCounted.HasGodotClassMethod(in godot_string_name)
+  fullName: Godot.RefCounted.HasGodotClassMethod(in Godot.NativeInterop.godot_string_name)
+  nameWithType.vb: RefCounted.HasGodotClassMethod(godot_string_name)
+  fullName.vb: Godot.RefCounted.HasGodotClassMethod(Godot.NativeInterop.godot_string_name)
+  name.vb: HasGodotClassMethod(godot_string_name)
+  spec.csharp:
+  - uid: Godot.RefCounted.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+    name: HasGodotClassMethod
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__
+  - name: (
+  - name: in
+  - name: " "
+  - uid: Godot.NativeInterop.godot_string_name
+    name: godot_string_name
+    isExternal: true
+    href: Godot.NativeInterop.godot_string_name.html
+  - name: )
+  spec.vb:
+  - uid: Godot.RefCounted.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)
+    name: HasGodotClassMethod
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__
+  - name: (
+  - uid: Godot.NativeInterop.godot_string_name
+    name: godot_string_name
+    isExternal: true
+    href: Godot.NativeInterop.godot_string_name.html
+  - name: )
+- uid: Godot.FileAccess.HasGodotClassMethod*
+  commentId: Overload:Godot.FileAccess.HasGodotClassMethod
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__
+  name: HasGodotClassMethod
+  nameWithType: FileAccess.HasGodotClassMethod
+  fullName: Godot.FileAccess.HasGodotClassMethod
+- uid: Godot.RefCounted.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+  commentId: M:Godot.RefCounted.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+  parent: Godot.RefCounted
+  isExternal: true
+  href: Godot.RefCounted.html#Godot_RefCounted_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__
+  name: HasGodotClassSignal(in godot_string_name)
+  nameWithType: RefCounted.HasGodotClassSignal(in godot_string_name)
+  fullName: Godot.RefCounted.HasGodotClassSignal(in Godot.NativeInterop.godot_string_name)
+  nameWithType.vb: RefCounted.HasGodotClassSignal(godot_string_name)
+  fullName.vb: Godot.RefCounted.HasGodotClassSignal(Godot.NativeInterop.godot_string_name)
+  name.vb: HasGodotClassSignal(godot_string_name)
+  spec.csharp:
+  - uid: Godot.RefCounted.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+    name: HasGodotClassSignal
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__
+  - name: (
+  - name: in
+  - name: " "
+  - uid: Godot.NativeInterop.godot_string_name
+    name: godot_string_name
+    isExternal: true
+    href: Godot.NativeInterop.godot_string_name.html
+  - name: )
+  spec.vb:
+  - uid: Godot.RefCounted.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)
+    name: HasGodotClassSignal
+    isExternal: true
+    href: Godot.RefCounted.html#Godot_RefCounted_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__
+  - name: (
+  - uid: Godot.NativeInterop.godot_string_name
+    name: godot_string_name
+    isExternal: true
+    href: Godot.NativeInterop.godot_string_name.html
+  - name: )
+- uid: Godot.FileAccess.HasGodotClassSignal*
+  commentId: Overload:Godot.FileAccess.HasGodotClassSignal
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__
+  name: HasGodotClassSignal
+  nameWithType: FileAccess.HasGodotClassSignal
+  fullName: Godot.FileAccess.HasGodotClassSignal
+- uid: Godot.FileAccess.BigEndian*
+  commentId: Overload:Godot.FileAccess.BigEndian
+  isExternal: true
+  href: Godot.FileAccess.html#Godot_FileAccess_BigEndian
+  name: BigEndian
+  nameWithType: FileAccess.BigEndian
+  fullName: Godot.FileAccess.BigEndian

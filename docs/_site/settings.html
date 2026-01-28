@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Key Configuration Settings | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Key Configuration Settings | mysite ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ITWascht/exerciseWithCode/blob/master/docs/settings.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="key-configuration-settings">Key Configuration Settings</h1>
+
+<p>This page explains the most important configuration options that control scene generation behavior.</p>
+<hr>
+<h2 id="region-rules-json">Region Rules JSON</h2>
+<p><code>res://assets/regions/{regionId}/{regionId}.rules.json</code></p>
+<p>This file defines how a region behaves during generation.</p>
+<h3 id="terrain-parameters">Terrain Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NoiseScale</strong></td>
+<td>Controls terrain frequency. Higher values create more variation.</td>
+</tr>
+<tr>
+<td><strong>HeightFactor</strong></td>
+<td>Multiplier that scales terrain elevation.</td>
+</tr>
+<tr>
+<td><strong>OffSet</strong></td>
+<td>Vertical offset applied to terrain height.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="texture-layering">Texture Layering</h3>
+<table>
+<thead>
+<tr>
+<th>Rule Type</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HeightBands</strong></td>
+<td>Assigns terrain textures based on height ranges.</td>
+</tr>
+<tr>
+<td><strong>SlopeOverrides</strong></td>
+<td>Replaces base textures depending on terrain steepness.</td>
+</tr>
+<tr>
+<td><strong>BiomeOverrides</strong></td>
+<td>Overrides terrain textures based on biome ID.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="object-spawning-spawnentry">Object Spawning (SpawnEntry)</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AssetId</strong></td>
+<td>References a prefab from the RegionAssetSet.</td>
+</tr>
+<tr>
+<td><strong>DensityPerKm2</strong></td>
+<td>Spawn density per square kilometer.</td>
+</tr>
+<tr>
+<td><strong>MinCount</strong></td>
+<td>Minimum number of objects that must spawn.</td>
+</tr>
+<tr>
+<td><strong>MaxSlopeDeg</strong></td>
+<td>Prevents spawning on steep surfaces.</td>
+</tr>
+<tr>
+<td><strong>MinHeightMeters / MaxHeightMeters</strong></td>
+<td>Height range filter for spawning.</td>
+</tr>
+<tr>
+<td><strong>AllowedBiomes</strong></td>
+<td>Restricts spawning to specific biome IDs.</td>
+</tr>
+<tr>
+<td><strong>IsTarget</strong></td>
+<td>Marks objects that must be visible to the camera and exported.</td>
+</tr>
+<tr>
+<td><strong>MinDistanceMeters</strong></td>
+<td>Minimum distance between objects.</td>
+</tr>
+<tr>
+<td><strong>AlignToSlope</strong></td>
+<td>Rotates object to match terrain slope.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="target-system">Target System</h2>
+<p>Objects with: IsTarget = true</p>
+<p>will:</p>
+<ul>
+<li>Be prioritized during spawning</li>
+<li>Be placed within the camera’s view</li>
+<li>Have their coordinates exported to JSON</li>
+</ul>
+<hr>
+<h2 id="weather-settings-localskysettings">Weather Settings (LocalSkySettings)</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Settings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cloud Preset</strong></td>
+<td><code>clear</code>, <code>cloudy</code>, <code>stormy</code></td>
+</tr>
+<tr>
+<td><strong>Rain Modes</strong></td>
+<td><code>light</code>, <code>heavy</code>, <code>storm</code></td>
+</tr>
+<tr>
+<td><strong>Snow Modes</strong></td>
+<td><code>light</code>, <code>heavy</code>, <code>blizzard</code></td>
+</tr>
+<tr>
+<td><strong>Fog Settings</strong></td>
+<td>Visibility, density, start/end distance</td>
+</tr>
+<tr>
+<td><strong>Atmosphere</strong></td>
+<td>Darkness, thickness, exposure</td>
+</tr>
+</tbody>
+</table>
+<p>These settings control the visual mood of the generated scene.</p>
+<hr>
+<h2 id="camera-settings">Camera Settings</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TargetPresets</strong></td>
+<td>Defines camera distance, height, and framing relative to targets.</td>
+</tr>
+<tr>
+<td><strong>EdgeMarginMeters</strong></td>
+<td>Prevents camera from spawning near terrain borders.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="output-behavior">Output Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Screenshot Export</strong></td>
+<td>Captures the generated scene image.</td>
+</tr>
+<tr>
+<td><strong>TargetCoordinateExporter</strong></td>
+<td>Exports world coordinates of all target objects to JSON.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>These settings allow region-specific behavior while keeping the generation system modular and reusable.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ITWascht/exerciseWithCode/blob/master/docs/settings.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

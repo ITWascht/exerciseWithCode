@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RegionAssetSet | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RegionAssetSet | mysite ">
+      
+      <meta name="description" content="Region-specific asset container used to build a scene. Holds Terrain3D texture slots and prefab mappings referenced by region JSON rules.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SzeneGenerator.RegionAssetSet">
+
+
+
+  <h1 id="SzeneGenerator_RegionAssetSet" data-uid="SzeneGenerator.RegionAssetSet" class="text-break">
+Class RegionAssetSet  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.RegionAssetSet_ScriptMethods.generated.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SzeneGenerator.html">SzeneGenerator</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>exerciseWithCode.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Region-specific asset container used to build a scene.
+Holds Terrain3D texture slots and prefab mappings referenced by region JSON rules.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GlobalClass]
+[ScriptPath(&quot;res://Scripts/Regions/Assets/RegionAssetSet.cs&quot;)]
+public class RegionAssetSet : Resource</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="Godot.GodotObject.html">GodotObject</a></div>
+      <div><a class="xref" href="Godot.RefCounted.html">RefCounted</a></div>
+      <div><a class="xref" href="Godot.Resource.html">Resource</a></div>
+      <div><span class="xref">RegionAssetSet</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SzeneGenerator_RegionAssetSet__ctor_" data-uid="SzeneGenerator.RegionAssetSet.#ctor*"></a>
+
+  <h3 id="SzeneGenerator_RegionAssetSet__ctor" data-uid="SzeneGenerator.RegionAssetSet.#ctor">
+  RegionAssetSet()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Regions/Assets/RegionAssetSet.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RegionAssetSet()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SzeneGenerator_RegionAssetSet_FloraPrefabs_" data-uid="SzeneGenerator.RegionAssetSet.FloraPrefabs*"></a>
+
+  <h3 id="SzeneGenerator_RegionAssetSet_FloraPrefabs" data-uid="SzeneGenerator.RegionAssetSet.FloraPrefabs">
+  FloraPrefabs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Regions/Assets/RegionAssetSet.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Export(PropertyHint.None, &quot;&quot;)]
+public Array&lt;PrefabEntry&gt; FloraPrefabs { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="SzeneGenerator.PrefabEntry.html">PrefabEntry</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SzeneGenerator_RegionAssetSet_RegionId_" data-uid="SzeneGenerator.RegionAssetSet.RegionId*"></a>
+
+  <h3 id="SzeneGenerator_RegionAssetSet_RegionId" data-uid="SzeneGenerator.RegionAssetSet.RegionId">
+  RegionId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Regions/Assets/RegionAssetSet.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Export(PropertyHint.None, &quot;&quot;)]
+public string RegionId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SzeneGenerator_RegionAssetSet_TerrainSlots_" data-uid="SzeneGenerator.RegionAssetSet.TerrainSlots*"></a>
+
+  <h3 id="SzeneGenerator_RegionAssetSet_TerrainSlots" data-uid="SzeneGenerator.RegionAssetSet.TerrainSlots">
+  TerrainSlots
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Regions/Assets/RegionAssetSet.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Export(PropertyHint.None, &quot;&quot;)]
+public Array&lt;TerrainSlotEntry&gt; TerrainSlots { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="SzeneGenerator.TerrainSlotEntry.html">TerrainSlotEntry</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.RegionAssetSet_ScriptMethods.generated.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

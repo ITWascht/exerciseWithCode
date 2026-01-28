@@ -1,0 +1,252 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.SceneMultiplayer.PeerPacketEventHandler
+  commentId: T:Godot.SceneMultiplayer.PeerPacketEventHandler
+  id: SceneMultiplayer.PeerPacketEventHandler
+  parent: Godot
+  children:
+  - Godot.SceneMultiplayer.PeerPacketEventHandler.#ctor(System.Object,System.IntPtr)
+  - Godot.SceneMultiplayer.PeerPacketEventHandler.BeginInvoke(System.Int64,System.Byte[],System.AsyncCallback,System.Object)
+  - Godot.SceneMultiplayer.PeerPacketEventHandler.EndInvoke(System.IAsyncResult)
+  - Godot.SceneMultiplayer.PeerPacketEventHandler.Invoke(System.Int64,System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: SceneMultiplayer.PeerPacketEventHandler
+  nameWithType: SceneMultiplayer.PeerPacketEventHandler
+  fullName: Godot.SceneMultiplayer.PeerPacketEventHandler
+  type: Delegate
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public delegate void SceneMultiplayer.PeerPacketEventHandler(long id, byte[] packet)
+    parameters:
+    - id: id
+      type: System.Int64
+    - id: packet
+      type: System.Byte[]
+    content.vb: Public Delegate Sub SceneMultiplayer.PeerPacketEventHandler(id As Long, packet As Byte())
+- uid: Godot.SceneMultiplayer.PeerPacketEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Godot.SceneMultiplayer.PeerPacketEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Godot.SceneMultiplayer.PeerPacketEventHandler
+  langs:
+  - csharp
+  - vb
+  name: PeerPacketEventHandler(object, nint)
+  nameWithType: SceneMultiplayer.PeerPacketEventHandler.PeerPacketEventHandler(object, nint)
+  fullName: Godot.SceneMultiplayer.PeerPacketEventHandler.PeerPacketEventHandler(object, nint)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public PeerPacketEventHandler(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Godot.SceneMultiplayer.PeerPacketEventHandler.#ctor*
+  nameWithType.vb: SceneMultiplayer.PeerPacketEventHandler.New(Object, IntPtr)
+  fullName.vb: Godot.SceneMultiplayer.PeerPacketEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Godot.SceneMultiplayer.PeerPacketEventHandler.Invoke(System.Int64,System.Byte[])
+  commentId: M:Godot.SceneMultiplayer.PeerPacketEventHandler.Invoke(System.Int64,System.Byte[])
+  id: Invoke(System.Int64,System.Byte[])
+  parent: Godot.SceneMultiplayer.PeerPacketEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(long, byte[])
+  nameWithType: SceneMultiplayer.PeerPacketEventHandler.Invoke(long, byte[])
+  fullName: Godot.SceneMultiplayer.PeerPacketEventHandler.Invoke(long, byte[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void Invoke(long id, byte[] packet)
+    parameters:
+    - id: id
+      type: System.Int64
+    - id: packet
+      type: System.Byte[]
+    content.vb: Public Overridable Sub Invoke(id As Long, packet As Byte())
+  overload: Godot.SceneMultiplayer.PeerPacketEventHandler.Invoke*
+  nameWithType.vb: SceneMultiplayer.PeerPacketEventHandler.Invoke(Long, Byte())
+  fullName.vb: Godot.SceneMultiplayer.PeerPacketEventHandler.Invoke(Long, Byte())
+  name.vb: Invoke(Long, Byte())
+- uid: Godot.SceneMultiplayer.PeerPacketEventHandler.BeginInvoke(System.Int64,System.Byte[],System.AsyncCallback,System.Object)
+  commentId: M:Godot.SceneMultiplayer.PeerPacketEventHandler.BeginInvoke(System.Int64,System.Byte[],System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.Int64,System.Byte[],System.AsyncCallback,System.Object)
+  parent: Godot.SceneMultiplayer.PeerPacketEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(long, byte[], AsyncCallback, object)
+  nameWithType: SceneMultiplayer.PeerPacketEventHandler.BeginInvoke(long, byte[], AsyncCallback, object)
+  fullName: Godot.SceneMultiplayer.PeerPacketEventHandler.BeginInvoke(long, byte[], System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(long id, byte[] packet, AsyncCallback callback, object @object)
+    parameters:
+    - id: id
+      type: System.Int64
+    - id: packet
+      type: System.Byte[]
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(id As Long, packet As Byte(), callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Godot.SceneMultiplayer.PeerPacketEventHandler.BeginInvoke*
+  nameWithType.vb: SceneMultiplayer.PeerPacketEventHandler.BeginInvoke(Long, Byte(), AsyncCallback, Object)
+  fullName.vb: Godot.SceneMultiplayer.PeerPacketEventHandler.BeginInvoke(Long, Byte(), System.AsyncCallback, Object)
+  name.vb: BeginInvoke(Long, Byte(), AsyncCallback, Object)
+- uid: Godot.SceneMultiplayer.PeerPacketEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Godot.SceneMultiplayer.PeerPacketEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Godot.SceneMultiplayer.PeerPacketEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: SceneMultiplayer.PeerPacketEventHandler.EndInvoke(IAsyncResult)
+  fullName: Godot.SceneMultiplayer.PeerPacketEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: Godot.SceneMultiplayer.PeerPacketEventHandler.EndInvoke*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.SceneMultiplayer.PeerPacketEventHandler.#ctor*
+  commentId: Overload:Godot.SceneMultiplayer.PeerPacketEventHandler.#ctor
+  isExternal: true
+  href: Godot.SceneMultiplayer.PeerPacketEventHandler.html#Godot_SceneMultiplayer_PeerPacketEventHandler__ctor_System_Object_System_IntPtr_
+  name: PeerPacketEventHandler
+  nameWithType: SceneMultiplayer.PeerPacketEventHandler.PeerPacketEventHandler
+  fullName: Godot.SceneMultiplayer.PeerPacketEventHandler.PeerPacketEventHandler
+  nameWithType.vb: SceneMultiplayer.PeerPacketEventHandler.New
+  fullName.vb: Godot.SceneMultiplayer.PeerPacketEventHandler.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Godot.SceneMultiplayer.PeerPacketEventHandler.Invoke*
+  commentId: Overload:Godot.SceneMultiplayer.PeerPacketEventHandler.Invoke
+  isExternal: true
+  href: Godot.SceneMultiplayer.PeerPacketEventHandler.html#Godot_SceneMultiplayer_PeerPacketEventHandler_Invoke_System_Int64_System_Byte___
+  name: Invoke
+  nameWithType: SceneMultiplayer.PeerPacketEventHandler.Invoke
+  fullName: Godot.SceneMultiplayer.PeerPacketEventHandler.Invoke
+- uid: Godot.SceneMultiplayer.PeerPacketEventHandler.BeginInvoke*
+  commentId: Overload:Godot.SceneMultiplayer.PeerPacketEventHandler.BeginInvoke
+  isExternal: true
+  href: Godot.SceneMultiplayer.PeerPacketEventHandler.html#Godot_SceneMultiplayer_PeerPacketEventHandler_BeginInvoke_System_Int64_System_Byte___System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: SceneMultiplayer.PeerPacketEventHandler.BeginInvoke
+  fullName: Godot.SceneMultiplayer.PeerPacketEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Godot.SceneMultiplayer.PeerPacketEventHandler.EndInvoke*
+  commentId: Overload:Godot.SceneMultiplayer.PeerPacketEventHandler.EndInvoke
+  isExternal: true
+  href: Godot.SceneMultiplayer.PeerPacketEventHandler.html#Godot_SceneMultiplayer_PeerPacketEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: SceneMultiplayer.PeerPacketEventHandler.EndInvoke
+  fullName: Godot.SceneMultiplayer.PeerPacketEventHandler.EndInvoke

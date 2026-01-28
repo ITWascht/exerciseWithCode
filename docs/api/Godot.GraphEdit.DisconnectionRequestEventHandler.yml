@@ -1,0 +1,249 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.GraphEdit.DisconnectionRequestEventHandler
+  commentId: T:Godot.GraphEdit.DisconnectionRequestEventHandler
+  id: GraphEdit.DisconnectionRequestEventHandler
+  parent: Godot
+  children:
+  - Godot.GraphEdit.DisconnectionRequestEventHandler.#ctor(System.Object,System.IntPtr)
+  - Godot.GraphEdit.DisconnectionRequestEventHandler.BeginInvoke(Godot.StringName,System.Int64,Godot.StringName,System.Int64,System.AsyncCallback,System.Object)
+  - Godot.GraphEdit.DisconnectionRequestEventHandler.EndInvoke(System.IAsyncResult)
+  - Godot.GraphEdit.DisconnectionRequestEventHandler.Invoke(Godot.StringName,System.Int64,Godot.StringName,System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: GraphEdit.DisconnectionRequestEventHandler
+  nameWithType: GraphEdit.DisconnectionRequestEventHandler
+  fullName: Godot.GraphEdit.DisconnectionRequestEventHandler
+  type: Delegate
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public delegate void GraphEdit.DisconnectionRequestEventHandler(StringName fromNode, long fromPort, StringName toNode, long toPort)
+    parameters:
+    - id: fromNode
+      type: Godot.StringName
+    - id: fromPort
+      type: System.Int64
+    - id: toNode
+      type: Godot.StringName
+    - id: toPort
+      type: System.Int64
+    content.vb: Public Delegate Sub GraphEdit.DisconnectionRequestEventHandler(fromNode As StringName, fromPort As Long, toNode As StringName, toPort As Long)
+- uid: Godot.GraphEdit.DisconnectionRequestEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Godot.GraphEdit.DisconnectionRequestEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Godot.GraphEdit.DisconnectionRequestEventHandler
+  langs:
+  - csharp
+  - vb
+  name: DisconnectionRequestEventHandler(object, nint)
+  nameWithType: GraphEdit.DisconnectionRequestEventHandler.DisconnectionRequestEventHandler(object, nint)
+  fullName: Godot.GraphEdit.DisconnectionRequestEventHandler.DisconnectionRequestEventHandler(object, nint)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public DisconnectionRequestEventHandler(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Godot.GraphEdit.DisconnectionRequestEventHandler.#ctor*
+  nameWithType.vb: GraphEdit.DisconnectionRequestEventHandler.New(Object, IntPtr)
+  fullName.vb: Godot.GraphEdit.DisconnectionRequestEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Godot.GraphEdit.DisconnectionRequestEventHandler.Invoke(Godot.StringName,System.Int64,Godot.StringName,System.Int64)
+  commentId: M:Godot.GraphEdit.DisconnectionRequestEventHandler.Invoke(Godot.StringName,System.Int64,Godot.StringName,System.Int64)
+  id: Invoke(Godot.StringName,System.Int64,Godot.StringName,System.Int64)
+  parent: Godot.GraphEdit.DisconnectionRequestEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(StringName, long, StringName, long)
+  nameWithType: GraphEdit.DisconnectionRequestEventHandler.Invoke(StringName, long, StringName, long)
+  fullName: Godot.GraphEdit.DisconnectionRequestEventHandler.Invoke(Godot.StringName, long, Godot.StringName, long)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void Invoke(StringName fromNode, long fromPort, StringName toNode, long toPort)
+    parameters:
+    - id: fromNode
+      type: Godot.StringName
+    - id: fromPort
+      type: System.Int64
+    - id: toNode
+      type: Godot.StringName
+    - id: toPort
+      type: System.Int64
+    content.vb: Public Overridable Sub Invoke(fromNode As StringName, fromPort As Long, toNode As StringName, toPort As Long)
+  overload: Godot.GraphEdit.DisconnectionRequestEventHandler.Invoke*
+  nameWithType.vb: GraphEdit.DisconnectionRequestEventHandler.Invoke(StringName, Long, StringName, Long)
+  fullName.vb: Godot.GraphEdit.DisconnectionRequestEventHandler.Invoke(Godot.StringName, Long, Godot.StringName, Long)
+  name.vb: Invoke(StringName, Long, StringName, Long)
+- uid: Godot.GraphEdit.DisconnectionRequestEventHandler.BeginInvoke(Godot.StringName,System.Int64,Godot.StringName,System.Int64,System.AsyncCallback,System.Object)
+  commentId: M:Godot.GraphEdit.DisconnectionRequestEventHandler.BeginInvoke(Godot.StringName,System.Int64,Godot.StringName,System.Int64,System.AsyncCallback,System.Object)
+  id: BeginInvoke(Godot.StringName,System.Int64,Godot.StringName,System.Int64,System.AsyncCallback,System.Object)
+  parent: Godot.GraphEdit.DisconnectionRequestEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(StringName, long, StringName, long, AsyncCallback, object)
+  nameWithType: GraphEdit.DisconnectionRequestEventHandler.BeginInvoke(StringName, long, StringName, long, AsyncCallback, object)
+  fullName: Godot.GraphEdit.DisconnectionRequestEventHandler.BeginInvoke(Godot.StringName, long, Godot.StringName, long, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(StringName fromNode, long fromPort, StringName toNode, long toPort, AsyncCallback callback, object @object)
+    parameters:
+    - id: fromNode
+      type: Godot.StringName
+    - id: fromPort
+      type: System.Int64
+    - id: toNode
+      type: Godot.StringName
+    - id: toPort
+      type: System.Int64
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(fromNode As StringName, fromPort As Long, toNode As StringName, toPort As Long, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Godot.GraphEdit.DisconnectionRequestEventHandler.BeginInvoke*
+  nameWithType.vb: GraphEdit.DisconnectionRequestEventHandler.BeginInvoke(StringName, Long, StringName, Long, AsyncCallback, Object)
+  fullName.vb: Godot.GraphEdit.DisconnectionRequestEventHandler.BeginInvoke(Godot.StringName, Long, Godot.StringName, Long, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(StringName, Long, StringName, Long, AsyncCallback, Object)
+- uid: Godot.GraphEdit.DisconnectionRequestEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Godot.GraphEdit.DisconnectionRequestEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Godot.GraphEdit.DisconnectionRequestEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: GraphEdit.DisconnectionRequestEventHandler.EndInvoke(IAsyncResult)
+  fullName: Godot.GraphEdit.DisconnectionRequestEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: Godot.GraphEdit.DisconnectionRequestEventHandler.EndInvoke*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: Godot.StringName
+  commentId: T:Godot.StringName
+  parent: Godot
+  isExternal: true
+  href: Godot.StringName.html
+  name: StringName
+  nameWithType: StringName
+  fullName: Godot.StringName
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.GraphEdit.DisconnectionRequestEventHandler.#ctor*
+  commentId: Overload:Godot.GraphEdit.DisconnectionRequestEventHandler.#ctor
+  isExternal: true
+  href: Godot.GraphEdit.DisconnectionRequestEventHandler.html#Godot_GraphEdit_DisconnectionRequestEventHandler__ctor_System_Object_System_IntPtr_
+  name: DisconnectionRequestEventHandler
+  nameWithType: GraphEdit.DisconnectionRequestEventHandler.DisconnectionRequestEventHandler
+  fullName: Godot.GraphEdit.DisconnectionRequestEventHandler.DisconnectionRequestEventHandler
+  nameWithType.vb: GraphEdit.DisconnectionRequestEventHandler.New
+  fullName.vb: Godot.GraphEdit.DisconnectionRequestEventHandler.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Godot.GraphEdit.DisconnectionRequestEventHandler.Invoke*
+  commentId: Overload:Godot.GraphEdit.DisconnectionRequestEventHandler.Invoke
+  isExternal: true
+  href: Godot.GraphEdit.DisconnectionRequestEventHandler.html#Godot_GraphEdit_DisconnectionRequestEventHandler_Invoke_Godot_StringName_System_Int64_Godot_StringName_System_Int64_
+  name: Invoke
+  nameWithType: GraphEdit.DisconnectionRequestEventHandler.Invoke
+  fullName: Godot.GraphEdit.DisconnectionRequestEventHandler.Invoke
+- uid: Godot.GraphEdit.DisconnectionRequestEventHandler.BeginInvoke*
+  commentId: Overload:Godot.GraphEdit.DisconnectionRequestEventHandler.BeginInvoke
+  isExternal: true
+  href: Godot.GraphEdit.DisconnectionRequestEventHandler.html#Godot_GraphEdit_DisconnectionRequestEventHandler_BeginInvoke_Godot_StringName_System_Int64_Godot_StringName_System_Int64_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: GraphEdit.DisconnectionRequestEventHandler.BeginInvoke
+  fullName: Godot.GraphEdit.DisconnectionRequestEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Godot.GraphEdit.DisconnectionRequestEventHandler.EndInvoke*
+  commentId: Overload:Godot.GraphEdit.DisconnectionRequestEventHandler.EndInvoke
+  isExternal: true
+  href: Godot.GraphEdit.DisconnectionRequestEventHandler.html#Godot_GraphEdit_DisconnectionRequestEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: GraphEdit.DisconnectionRequestEventHandler.EndInvoke
+  fullName: Godot.GraphEdit.DisconnectionRequestEventHandler.EndInvoke

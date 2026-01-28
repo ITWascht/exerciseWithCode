@@ -1,0 +1,3331 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.Callable
+  commentId: T:Godot.Callable
+  id: Callable
+  parent: Godot
+  children:
+  - Godot.Callable.#ctor(Godot.GodotObject,Godot.StringName)
+  - Godot.Callable.Call(Godot.Variant[])
+  - Godot.Callable.CallDeferred(Godot.Variant[])
+  - Godot.Callable.CreateWithUnsafeTrampoline(System.Delegate,)
+  - Godot.Callable.Delegate
+  - Godot.Callable.From(System.Action)
+  - Godot.Callable.From``1(System.Action{``0})
+  - Godot.Callable.From``1(System.Func{``0})
+  - Godot.Callable.From``10(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9})
+  - Godot.Callable.From``2(System.Action{``0,``1})
+  - Godot.Callable.From``2(System.Func{``0,``1})
+  - Godot.Callable.From``3(System.Action{``0,``1,``2})
+  - Godot.Callable.From``3(System.Func{``0,``1,``2})
+  - Godot.Callable.From``4(System.Action{``0,``1,``2,``3})
+  - Godot.Callable.From``4(System.Func{``0,``1,``2,``3})
+  - Godot.Callable.From``5(System.Action{``0,``1,``2,``3,``4})
+  - Godot.Callable.From``5(System.Func{``0,``1,``2,``3,``4})
+  - Godot.Callable.From``6(System.Action{``0,``1,``2,``3,``4,``5})
+  - Godot.Callable.From``6(System.Func{``0,``1,``2,``3,``4,``5})
+  - Godot.Callable.From``7(System.Action{``0,``1,``2,``3,``4,``5,``6})
+  - Godot.Callable.From``7(System.Func{``0,``1,``2,``3,``4,``5,``6})
+  - Godot.Callable.From``8(System.Action{``0,``1,``2,``3,``4,``5,``6,``7})
+  - Godot.Callable.From``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7})
+  - Godot.Callable.From``9(System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8})
+  - Godot.Callable.From``9(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8})
+  - Godot.Callable.Method
+  - Godot.Callable.Target
+  - Godot.Callable.Trampoline
+  langs:
+  - csharp
+  - vb
+  name: Callable
+  nameWithType: Callable
+  fullName: Godot.Callable
+  type: Struct
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly struct Callable
+    content.vb: Public Structure Callable
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Godot.Callable.From(System.Action)
+  commentId: M:Godot.Callable.From(System.Action)
+  id: From(System.Action)
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From(Action)
+  nameWithType: Callable.From(Action)
+  fullName: Godot.Callable.From(System.Action)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From(Action action)
+    parameters:
+    - id: action
+      type: System.Action
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(action As Action) As Callable
+  overload: Godot.Callable.From*
+- uid: Godot.Callable.From``1(System.Action{``0})
+  commentId: M:Godot.Callable.From``1(System.Action{``0})
+  id: From``1(System.Action{``0})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0>(Action<T0>)
+  nameWithType: Callable.From<T0>(Action<T0>)
+  fullName: Godot.Callable.From<T0>(System.Action<T0>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0>(Action<T0> action)
+    parameters:
+    - id: action
+      type: System.Action{{T0}}
+    typeParameters:
+    - id: T0
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0)(action As Action(Of T0)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0)(Action(Of T0))
+  fullName.vb: Godot.Callable.From(Of T0)(System.Action(Of T0))
+  name.vb: From(Of T0)(Action(Of T0))
+- uid: Godot.Callable.From``2(System.Action{``0,``1})
+  commentId: M:Godot.Callable.From``2(System.Action{``0,``1})
+  id: From``2(System.Action{``0,``1})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1>(Action<T0, T1>)
+  nameWithType: Callable.From<T0, T1>(Action<T0, T1>)
+  fullName: Godot.Callable.From<T0, T1>(System.Action<T0, T1>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1>(Action<T0, T1> action)
+    parameters:
+    - id: action
+      type: System.Action{{T0},{T1}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1)(action As Action(Of T0, T1)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1)(Action(Of T0, T1))
+  fullName.vb: Godot.Callable.From(Of T0, T1)(System.Action(Of T0, T1))
+  name.vb: From(Of T0, T1)(Action(Of T0, T1))
+- uid: Godot.Callable.From``3(System.Action{``0,``1,``2})
+  commentId: M:Godot.Callable.From``3(System.Action{``0,``1,``2})
+  id: From``3(System.Action{``0,``1,``2})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1, T2>(Action<T0, T1, T2>)
+  nameWithType: Callable.From<T0, T1, T2>(Action<T0, T1, T2>)
+  fullName: Godot.Callable.From<T0, T1, T2>(System.Action<T0, T1, T2>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1, T2>(Action<T0, T1, T2> action)
+    parameters:
+    - id: action
+      type: System.Action{{T0},{T1},{T2}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    - id: T2
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1, T2)(action As Action(Of T0, T1, T2)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1, T2)(Action(Of T0, T1, T2))
+  fullName.vb: Godot.Callable.From(Of T0, T1, T2)(System.Action(Of T0, T1, T2))
+  name.vb: From(Of T0, T1, T2)(Action(Of T0, T1, T2))
+- uid: Godot.Callable.From``4(System.Action{``0,``1,``2,``3})
+  commentId: M:Godot.Callable.From``4(System.Action{``0,``1,``2,``3})
+  id: From``4(System.Action{``0,``1,``2,``3})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1, T2, T3>(Action<T0, T1, T2, T3>)
+  nameWithType: Callable.From<T0, T1, T2, T3>(Action<T0, T1, T2, T3>)
+  fullName: Godot.Callable.From<T0, T1, T2, T3>(System.Action<T0, T1, T2, T3>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1, T2, T3>(Action<T0, T1, T2, T3> action)
+    parameters:
+    - id: action
+      type: System.Action{{T0},{T1},{T2},{T3}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    - id: T2
+    - id: T3
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1, T2, T3)(action As Action(Of T0, T1, T2, T3)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1, T2, T3)(Action(Of T0, T1, T2, T3))
+  fullName.vb: Godot.Callable.From(Of T0, T1, T2, T3)(System.Action(Of T0, T1, T2, T3))
+  name.vb: From(Of T0, T1, T2, T3)(Action(Of T0, T1, T2, T3))
+- uid: Godot.Callable.From``5(System.Action{``0,``1,``2,``3,``4})
+  commentId: M:Godot.Callable.From``5(System.Action{``0,``1,``2,``3,``4})
+  id: From``5(System.Action{``0,``1,``2,``3,``4})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1, T2, T3, T4>(Action<T0, T1, T2, T3, T4>)
+  nameWithType: Callable.From<T0, T1, T2, T3, T4>(Action<T0, T1, T2, T3, T4>)
+  fullName: Godot.Callable.From<T0, T1, T2, T3, T4>(System.Action<T0, T1, T2, T3, T4>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1, T2, T3, T4>(Action<T0, T1, T2, T3, T4> action)
+    parameters:
+    - id: action
+      type: System.Action{{T0},{T1},{T2},{T3},{T4}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    - id: T2
+    - id: T3
+    - id: T4
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1, T2, T3, T4)(action As Action(Of T0, T1, T2, T3, T4)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1, T2, T3, T4)(Action(Of T0, T1, T2, T3, T4))
+  fullName.vb: Godot.Callable.From(Of T0, T1, T2, T3, T4)(System.Action(Of T0, T1, T2, T3, T4))
+  name.vb: From(Of T0, T1, T2, T3, T4)(Action(Of T0, T1, T2, T3, T4))
+- uid: Godot.Callable.From``6(System.Action{``0,``1,``2,``3,``4,``5})
+  commentId: M:Godot.Callable.From``6(System.Action{``0,``1,``2,``3,``4,``5})
+  id: From``6(System.Action{``0,``1,``2,``3,``4,``5})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1, T2, T3, T4, T5>(Action<T0, T1, T2, T3, T4, T5>)
+  nameWithType: Callable.From<T0, T1, T2, T3, T4, T5>(Action<T0, T1, T2, T3, T4, T5>)
+  fullName: Godot.Callable.From<T0, T1, T2, T3, T4, T5>(System.Action<T0, T1, T2, T3, T4, T5>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1, T2, T3, T4, T5>(Action<T0, T1, T2, T3, T4, T5> action)
+    parameters:
+    - id: action
+      type: System.Action{{T0},{T1},{T2},{T3},{T4},{T5}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    - id: T2
+    - id: T3
+    - id: T4
+    - id: T5
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1, T2, T3, T4, T5)(action As Action(Of T0, T1, T2, T3, T4, T5)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1, T2, T3, T4, T5)(Action(Of T0, T1, T2, T3, T4, T5))
+  fullName.vb: Godot.Callable.From(Of T0, T1, T2, T3, T4, T5)(System.Action(Of T0, T1, T2, T3, T4, T5))
+  name.vb: From(Of T0, T1, T2, T3, T4, T5)(Action(Of T0, T1, T2, T3, T4, T5))
+- uid: Godot.Callable.From``7(System.Action{``0,``1,``2,``3,``4,``5,``6})
+  commentId: M:Godot.Callable.From``7(System.Action{``0,``1,``2,``3,``4,``5,``6})
+  id: From``7(System.Action{``0,``1,``2,``3,``4,``5,``6})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1, T2, T3, T4, T5, T6>(Action<T0, T1, T2, T3, T4, T5, T6>)
+  nameWithType: Callable.From<T0, T1, T2, T3, T4, T5, T6>(Action<T0, T1, T2, T3, T4, T5, T6>)
+  fullName: Godot.Callable.From<T0, T1, T2, T3, T4, T5, T6>(System.Action<T0, T1, T2, T3, T4, T5, T6>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1, T2, T3, T4, T5, T6>(Action<T0, T1, T2, T3, T4, T5, T6> action)
+    parameters:
+    - id: action
+      type: System.Action{{T0},{T1},{T2},{T3},{T4},{T5},{T6}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    - id: T2
+    - id: T3
+    - id: T4
+    - id: T5
+    - id: T6
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1, T2, T3, T4, T5, T6)(action As Action(Of T0, T1, T2, T3, T4, T5, T6)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1, T2, T3, T4, T5, T6)(Action(Of T0, T1, T2, T3, T4, T5, T6))
+  fullName.vb: Godot.Callable.From(Of T0, T1, T2, T3, T4, T5, T6)(System.Action(Of T0, T1, T2, T3, T4, T5, T6))
+  name.vb: From(Of T0, T1, T2, T3, T4, T5, T6)(Action(Of T0, T1, T2, T3, T4, T5, T6))
+- uid: Godot.Callable.From``8(System.Action{``0,``1,``2,``3,``4,``5,``6,``7})
+  commentId: M:Godot.Callable.From``8(System.Action{``0,``1,``2,``3,``4,``5,``6,``7})
+  id: From``8(System.Action{``0,``1,``2,``3,``4,``5,``6,``7})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1, T2, T3, T4, T5, T6, T7>(Action<T0, T1, T2, T3, T4, T5, T6, T7>)
+  nameWithType: Callable.From<T0, T1, T2, T3, T4, T5, T6, T7>(Action<T0, T1, T2, T3, T4, T5, T6, T7>)
+  fullName: Godot.Callable.From<T0, T1, T2, T3, T4, T5, T6, T7>(System.Action<T0, T1, T2, T3, T4, T5, T6, T7>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1, T2, T3, T4, T5, T6, T7>(Action<T0, T1, T2, T3, T4, T5, T6, T7> action)
+    parameters:
+    - id: action
+      type: System.Action{{T0},{T1},{T2},{T3},{T4},{T5},{T6},{T7}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    - id: T2
+    - id: T3
+    - id: T4
+    - id: T5
+    - id: T6
+    - id: T7
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1, T2, T3, T4, T5, T6, T7)(action As Action(Of T0, T1, T2, T3, T4, T5, T6, T7)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1, T2, T3, T4, T5, T6, T7)(Action(Of T0, T1, T2, T3, T4, T5, T6, T7))
+  fullName.vb: Godot.Callable.From(Of T0, T1, T2, T3, T4, T5, T6, T7)(System.Action(Of T0, T1, T2, T3, T4, T5, T6, T7))
+  name.vb: From(Of T0, T1, T2, T3, T4, T5, T6, T7)(Action(Of T0, T1, T2, T3, T4, T5, T6, T7))
+- uid: Godot.Callable.From``9(System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8})
+  commentId: M:Godot.Callable.From``9(System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8})
+  id: From``9(System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1, T2, T3, T4, T5, T6, T7, T8>(Action<T0, T1, T2, T3, T4, T5, T6, T7, T8>)
+  nameWithType: Callable.From<T0, T1, T2, T3, T4, T5, T6, T7, T8>(Action<T0, T1, T2, T3, T4, T5, T6, T7, T8>)
+  fullName: Godot.Callable.From<T0, T1, T2, T3, T4, T5, T6, T7, T8>(System.Action<T0, T1, T2, T3, T4, T5, T6, T7, T8>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1, T2, T3, T4, T5, T6, T7, T8>(Action<T0, T1, T2, T3, T4, T5, T6, T7, T8> action)
+    parameters:
+    - id: action
+      type: System.Action{{T0},{T1},{T2},{T3},{T4},{T5},{T6},{T7},{T8}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    - id: T2
+    - id: T3
+    - id: T4
+    - id: T5
+    - id: T6
+    - id: T7
+    - id: T8
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1, T2, T3, T4, T5, T6, T7, T8)(action As Action(Of T0, T1, T2, T3, T4, T5, T6, T7, T8)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1, T2, T3, T4, T5, T6, T7, T8)(Action(Of T0, T1, T2, T3, T4, T5, T6, T7, T8))
+  fullName.vb: Godot.Callable.From(Of T0, T1, T2, T3, T4, T5, T6, T7, T8)(System.Action(Of T0, T1, T2, T3, T4, T5, T6, T7, T8))
+  name.vb: From(Of T0, T1, T2, T3, T4, T5, T6, T7, T8)(Action(Of T0, T1, T2, T3, T4, T5, T6, T7, T8))
+- uid: Godot.Callable.From``1(System.Func{``0})
+  commentId: M:Godot.Callable.From``1(System.Func{``0})
+  id: From``1(System.Func{``0})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<TResult>(Func<TResult>)
+  nameWithType: Callable.From<TResult>(Func<TResult>)
+  fullName: Godot.Callable.From<TResult>(System.Func<TResult>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<TResult>(Func<TResult> func)
+    parameters:
+    - id: func
+      type: System.Func{{TResult}}
+    typeParameters:
+    - id: TResult
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of TResult)(func As Func(Of TResult)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of TResult)(Func(Of TResult))
+  fullName.vb: Godot.Callable.From(Of TResult)(System.Func(Of TResult))
+  name.vb: From(Of TResult)(Func(Of TResult))
+- uid: Godot.Callable.From``2(System.Func{``0,``1})
+  commentId: M:Godot.Callable.From``2(System.Func{``0,``1})
+  id: From``2(System.Func{``0,``1})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, TResult>(Func<T0, TResult>)
+  nameWithType: Callable.From<T0, TResult>(Func<T0, TResult>)
+  fullName: Godot.Callable.From<T0, TResult>(System.Func<T0, TResult>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, TResult>(Func<T0, TResult> func)
+    parameters:
+    - id: func
+      type: System.Func{{T0},{TResult}}
+    typeParameters:
+    - id: T0
+    - id: TResult
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, TResult)(func As Func(Of T0, TResult)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, TResult)(Func(Of T0, TResult))
+  fullName.vb: Godot.Callable.From(Of T0, TResult)(System.Func(Of T0, TResult))
+  name.vb: From(Of T0, TResult)(Func(Of T0, TResult))
+- uid: Godot.Callable.From``3(System.Func{``0,``1,``2})
+  commentId: M:Godot.Callable.From``3(System.Func{``0,``1,``2})
+  id: From``3(System.Func{``0,``1,``2})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1, TResult>(Func<T0, T1, TResult>)
+  nameWithType: Callable.From<T0, T1, TResult>(Func<T0, T1, TResult>)
+  fullName: Godot.Callable.From<T0, T1, TResult>(System.Func<T0, T1, TResult>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1, TResult>(Func<T0, T1, TResult> func)
+    parameters:
+    - id: func
+      type: System.Func{{T0},{T1},{TResult}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    - id: TResult
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1, TResult)(func As Func(Of T0, T1, TResult)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1, TResult)(Func(Of T0, T1, TResult))
+  fullName.vb: Godot.Callable.From(Of T0, T1, TResult)(System.Func(Of T0, T1, TResult))
+  name.vb: From(Of T0, T1, TResult)(Func(Of T0, T1, TResult))
+- uid: Godot.Callable.From``4(System.Func{``0,``1,``2,``3})
+  commentId: M:Godot.Callable.From``4(System.Func{``0,``1,``2,``3})
+  id: From``4(System.Func{``0,``1,``2,``3})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1, T2, TResult>(Func<T0, T1, T2, TResult>)
+  nameWithType: Callable.From<T0, T1, T2, TResult>(Func<T0, T1, T2, TResult>)
+  fullName: Godot.Callable.From<T0, T1, T2, TResult>(System.Func<T0, T1, T2, TResult>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1, T2, TResult>(Func<T0, T1, T2, TResult> func)
+    parameters:
+    - id: func
+      type: System.Func{{T0},{T1},{T2},{TResult}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    - id: T2
+    - id: TResult
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1, T2, TResult)(func As Func(Of T0, T1, T2, TResult)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1, T2, TResult)(Func(Of T0, T1, T2, TResult))
+  fullName.vb: Godot.Callable.From(Of T0, T1, T2, TResult)(System.Func(Of T0, T1, T2, TResult))
+  name.vb: From(Of T0, T1, T2, TResult)(Func(Of T0, T1, T2, TResult))
+- uid: Godot.Callable.From``5(System.Func{``0,``1,``2,``3,``4})
+  commentId: M:Godot.Callable.From``5(System.Func{``0,``1,``2,``3,``4})
+  id: From``5(System.Func{``0,``1,``2,``3,``4})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1, T2, T3, TResult>(Func<T0, T1, T2, T3, TResult>)
+  nameWithType: Callable.From<T0, T1, T2, T3, TResult>(Func<T0, T1, T2, T3, TResult>)
+  fullName: Godot.Callable.From<T0, T1, T2, T3, TResult>(System.Func<T0, T1, T2, T3, TResult>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1, T2, T3, TResult>(Func<T0, T1, T2, T3, TResult> func)
+    parameters:
+    - id: func
+      type: System.Func{{T0},{T1},{T2},{T3},{TResult}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    - id: T2
+    - id: T3
+    - id: TResult
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1, T2, T3, TResult)(func As Func(Of T0, T1, T2, T3, TResult)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1, T2, T3, TResult)(Func(Of T0, T1, T2, T3, TResult))
+  fullName.vb: Godot.Callable.From(Of T0, T1, T2, T3, TResult)(System.Func(Of T0, T1, T2, T3, TResult))
+  name.vb: From(Of T0, T1, T2, T3, TResult)(Func(Of T0, T1, T2, T3, TResult))
+- uid: Godot.Callable.From``6(System.Func{``0,``1,``2,``3,``4,``5})
+  commentId: M:Godot.Callable.From``6(System.Func{``0,``1,``2,``3,``4,``5})
+  id: From``6(System.Func{``0,``1,``2,``3,``4,``5})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1, T2, T3, T4, TResult>(Func<T0, T1, T2, T3, T4, TResult>)
+  nameWithType: Callable.From<T0, T1, T2, T3, T4, TResult>(Func<T0, T1, T2, T3, T4, TResult>)
+  fullName: Godot.Callable.From<T0, T1, T2, T3, T4, TResult>(System.Func<T0, T1, T2, T3, T4, TResult>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1, T2, T3, T4, TResult>(Func<T0, T1, T2, T3, T4, TResult> func)
+    parameters:
+    - id: func
+      type: System.Func{{T0},{T1},{T2},{T3},{T4},{TResult}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    - id: T2
+    - id: T3
+    - id: T4
+    - id: TResult
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1, T2, T3, T4, TResult)(func As Func(Of T0, T1, T2, T3, T4, TResult)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1, T2, T3, T4, TResult)(Func(Of T0, T1, T2, T3, T4, TResult))
+  fullName.vb: Godot.Callable.From(Of T0, T1, T2, T3, T4, TResult)(System.Func(Of T0, T1, T2, T3, T4, TResult))
+  name.vb: From(Of T0, T1, T2, T3, T4, TResult)(Func(Of T0, T1, T2, T3, T4, TResult))
+- uid: Godot.Callable.From``7(System.Func{``0,``1,``2,``3,``4,``5,``6})
+  commentId: M:Godot.Callable.From``7(System.Func{``0,``1,``2,``3,``4,``5,``6})
+  id: From``7(System.Func{``0,``1,``2,``3,``4,``5,``6})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1, T2, T3, T4, T5, TResult>(Func<T0, T1, T2, T3, T4, T5, TResult>)
+  nameWithType: Callable.From<T0, T1, T2, T3, T4, T5, TResult>(Func<T0, T1, T2, T3, T4, T5, TResult>)
+  fullName: Godot.Callable.From<T0, T1, T2, T3, T4, T5, TResult>(System.Func<T0, T1, T2, T3, T4, T5, TResult>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1, T2, T3, T4, T5, TResult>(Func<T0, T1, T2, T3, T4, T5, TResult> func)
+    parameters:
+    - id: func
+      type: System.Func{{T0},{T1},{T2},{T3},{T4},{T5},{TResult}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    - id: T2
+    - id: T3
+    - id: T4
+    - id: T5
+    - id: TResult
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1, T2, T3, T4, T5, TResult)(func As Func(Of T0, T1, T2, T3, T4, T5, TResult)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1, T2, T3, T4, T5, TResult)(Func(Of T0, T1, T2, T3, T4, T5, TResult))
+  fullName.vb: Godot.Callable.From(Of T0, T1, T2, T3, T4, T5, TResult)(System.Func(Of T0, T1, T2, T3, T4, T5, TResult))
+  name.vb: From(Of T0, T1, T2, T3, T4, T5, TResult)(Func(Of T0, T1, T2, T3, T4, T5, TResult))
+- uid: Godot.Callable.From``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7})
+  commentId: M:Godot.Callable.From``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7})
+  id: From``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1, T2, T3, T4, T5, T6, TResult>(Func<T0, T1, T2, T3, T4, T5, T6, TResult>)
+  nameWithType: Callable.From<T0, T1, T2, T3, T4, T5, T6, TResult>(Func<T0, T1, T2, T3, T4, T5, T6, TResult>)
+  fullName: Godot.Callable.From<T0, T1, T2, T3, T4, T5, T6, TResult>(System.Func<T0, T1, T2, T3, T4, T5, T6, TResult>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1, T2, T3, T4, T5, T6, TResult>(Func<T0, T1, T2, T3, T4, T5, T6, TResult> func)
+    parameters:
+    - id: func
+      type: System.Func{{T0},{T1},{T2},{T3},{T4},{T5},{T6},{TResult}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    - id: T2
+    - id: T3
+    - id: T4
+    - id: T5
+    - id: T6
+    - id: TResult
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1, T2, T3, T4, T5, T6, TResult)(func As Func(Of T0, T1, T2, T3, T4, T5, T6, TResult)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1, T2, T3, T4, T5, T6, TResult)(Func(Of T0, T1, T2, T3, T4, T5, T6, TResult))
+  fullName.vb: Godot.Callable.From(Of T0, T1, T2, T3, T4, T5, T6, TResult)(System.Func(Of T0, T1, T2, T3, T4, T5, T6, TResult))
+  name.vb: From(Of T0, T1, T2, T3, T4, T5, T6, TResult)(Func(Of T0, T1, T2, T3, T4, T5, T6, TResult))
+- uid: Godot.Callable.From``9(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8})
+  commentId: M:Godot.Callable.From``9(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8})
+  id: From``9(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1, T2, T3, T4, T5, T6, T7, TResult>(Func<T0, T1, T2, T3, T4, T5, T6, T7, TResult>)
+  nameWithType: Callable.From<T0, T1, T2, T3, T4, T5, T6, T7, TResult>(Func<T0, T1, T2, T3, T4, T5, T6, T7, TResult>)
+  fullName: Godot.Callable.From<T0, T1, T2, T3, T4, T5, T6, T7, TResult>(System.Func<T0, T1, T2, T3, T4, T5, T6, T7, TResult>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1, T2, T3, T4, T5, T6, T7, TResult>(Func<T0, T1, T2, T3, T4, T5, T6, T7, TResult> func)
+    parameters:
+    - id: func
+      type: System.Func{{T0},{T1},{T2},{T3},{T4},{T5},{T6},{T7},{TResult}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    - id: T2
+    - id: T3
+    - id: T4
+    - id: T5
+    - id: T6
+    - id: T7
+    - id: TResult
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1, T2, T3, T4, T5, T6, T7, TResult)(func As Func(Of T0, T1, T2, T3, T4, T5, T6, T7, TResult)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1, T2, T3, T4, T5, T6, T7, TResult)(Func(Of T0, T1, T2, T3, T4, T5, T6, T7, TResult))
+  fullName.vb: Godot.Callable.From(Of T0, T1, T2, T3, T4, T5, T6, T7, TResult)(System.Func(Of T0, T1, T2, T3, T4, T5, T6, T7, TResult))
+  name.vb: From(Of T0, T1, T2, T3, T4, T5, T6, T7, TResult)(Func(Of T0, T1, T2, T3, T4, T5, T6, T7, TResult))
+- uid: Godot.Callable.From``10(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9})
+  commentId: M:Godot.Callable.From``10(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9})
+  id: From``10(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9})
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: From<T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult>(Func<T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult>)
+  nameWithType: Callable.From<T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult>(Func<T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult>)
+  fullName: Godot.Callable.From<T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult>(System.Func<T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable From<T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult>(Func<T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult> func)
+    parameters:
+    - id: func
+      type: System.Func{{T0},{T1},{T2},{T3},{T4},{T5},{T6},{T7},{T8},{TResult}}
+    typeParameters:
+    - id: T0
+    - id: T1
+    - id: T2
+    - id: T3
+    - id: T4
+    - id: T5
+    - id: T6
+    - id: T7
+    - id: T8
+    - id: TResult
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function From(Of T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult)(func As Func(Of T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult)) As Callable
+  overload: Godot.Callable.From*
+  nameWithType.vb: Callable.From(Of T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult)(Func(Of T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult))
+  fullName.vb: Godot.Callable.From(Of T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult)(System.Func(Of T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult))
+  name.vb: From(Of T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult)(Func(Of T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult))
+- uid: Godot.Callable.#ctor(Godot.GodotObject,Godot.StringName)
+  commentId: M:Godot.Callable.#ctor(Godot.GodotObject,Godot.StringName)
+  id: '#ctor(Godot.GodotObject,Godot.StringName)'
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: Callable(GodotObject, StringName)
+  nameWithType: Callable.Callable(GodotObject, StringName)
+  fullName: Godot.Callable.Callable(Godot.GodotObject, Godot.StringName)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Callable(GodotObject target, StringName method)
+    parameters:
+    - id: target
+      type: Godot.GodotObject
+    - id: method
+      type: Godot.StringName
+    content.vb: Public Sub New(target As GodotObject, method As StringName)
+  overload: Godot.Callable.#ctor*
+  nameWithType.vb: Callable.New(GodotObject, StringName)
+  fullName.vb: Godot.Callable.New(Godot.GodotObject, Godot.StringName)
+  name.vb: New(GodotObject, StringName)
+- uid: Godot.Callable.Call(Godot.Variant[])
+  commentId: M:Godot.Callable.Call(Godot.Variant[])
+  id: Call(Godot.Variant[])
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: Call(params Variant[])
+  nameWithType: Callable.Call(params Variant[])
+  fullName: Godot.Callable.Call(params Godot.Variant[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Variant Call(params Variant[] args)
+    parameters:
+    - id: args
+      type: Godot.Variant[]
+    return:
+      type: Godot.Variant
+    content.vb: Public Function [Call](ParamArray args As [Variant]()) As [Variant]
+  overload: Godot.Callable.Call*
+  nameWithType.vb: Callable.Call(ParamArray Variant())
+  fullName.vb: Godot.Callable.Call(ParamArray Godot.Variant())
+  name.vb: Call(ParamArray Variant())
+- uid: Godot.Callable.CallDeferred(Godot.Variant[])
+  commentId: M:Godot.Callable.CallDeferred(Godot.Variant[])
+  id: CallDeferred(Godot.Variant[])
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: CallDeferred(params Variant[])
+  nameWithType: Callable.CallDeferred(params Variant[])
+  fullName: Godot.Callable.CallDeferred(params Godot.Variant[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void CallDeferred(params Variant[] args)
+    parameters:
+    - id: args
+      type: Godot.Variant[]
+    content.vb: Public Sub CallDeferred(ParamArray args As [Variant]())
+  overload: Godot.Callable.CallDeferred*
+  nameWithType.vb: Callable.CallDeferred(ParamArray Variant())
+  fullName.vb: Godot.Callable.CallDeferred(ParamArray Godot.Variant())
+  name.vb: CallDeferred(ParamArray Variant())
+- uid: Godot.Callable.CreateWithUnsafeTrampoline(System.Delegate,)
+  commentId: M:Godot.Callable.CreateWithUnsafeTrampoline(System.Delegate,)
+  id: CreateWithUnsafeTrampoline(System.Delegate,)
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: CreateWithUnsafeTrampoline(Delegate, delegate*<object, NativeVariantPtrArgs, out godot_variant, void>)
+  nameWithType: Callable.CreateWithUnsafeTrampoline(Delegate, delegate*<object, NativeVariantPtrArgs, out godot_variant, void>)
+  fullName: Godot.Callable.CreateWithUnsafeTrampoline(System.Delegate, delegate*<object, Godot.NativeInterop.NativeVariantPtrArgs, out Godot.NativeInterop.godot_variant, void>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Callable CreateWithUnsafeTrampoline(Delegate @delegate, delegate*<object, NativeVariantPtrArgs, out godot_variant, void> trampoline)
+    parameters:
+    - id: delegate
+      type: System.Delegate
+    - id: trampoline
+      type: delegate*<object, Godot.NativeInterop.NativeVariantPtrArgs, out Godot.NativeInterop.godot_variant, void>
+    return:
+      type: Godot.Callable
+    content.vb: Public Shared Function CreateWithUnsafeTrampoline([delegate] As [Delegate], trampoline As ) As Callable
+  overload: Godot.Callable.CreateWithUnsafeTrampoline*
+  nameWithType.vb: Callable.CreateWithUnsafeTrampoline(Delegate, )
+  fullName.vb: Godot.Callable.CreateWithUnsafeTrampoline(System.Delegate, )
+  name.vb: CreateWithUnsafeTrampoline(Delegate, )
+- uid: Godot.Callable.Target
+  commentId: P:Godot.Callable.Target
+  id: Target
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: Callable.Target
+  fullName: Godot.Callable.Target
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public GodotObject Target { get; }
+    parameters: []
+    return:
+      type: Godot.GodotObject
+    content.vb: Public ReadOnly Property Target As GodotObject
+  overload: Godot.Callable.Target*
+- uid: Godot.Callable.Method
+  commentId: P:Godot.Callable.Method
+  id: Method
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: Method
+  nameWithType: Callable.Method
+  fullName: Godot.Callable.Method
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public StringName Method { get; }
+    parameters: []
+    return:
+      type: Godot.StringName
+    content.vb: Public ReadOnly Property Method As StringName
+  overload: Godot.Callable.Method*
+- uid: Godot.Callable.Delegate
+  commentId: P:Godot.Callable.Delegate
+  id: Delegate
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: Delegate
+  nameWithType: Callable.Delegate
+  fullName: Godot.Callable.Delegate
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Delegate Delegate { get; }
+    parameters: []
+    return:
+      type: System.Delegate
+    content.vb: Public ReadOnly Property [Delegate] As [Delegate]
+  overload: Godot.Callable.Delegate*
+- uid: Godot.Callable.Trampoline
+  commentId: P:Godot.Callable.Trampoline
+  id: Trampoline
+  parent: Godot.Callable
+  langs:
+  - csharp
+  - vb
+  name: Trampoline
+  nameWithType: Callable.Trampoline
+  fullName: Godot.Callable.Trampoline
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public delegate*<object, NativeVariantPtrArgs, out godot_variant, void> Trampoline { get; }
+    parameters: []
+    return:
+      type: delegate*<object, Godot.NativeInterop.NativeVariantPtrArgs, out Godot.NativeInterop.godot_variant, void>
+    content.vb: 'Public ReadOnly Property Trampoline As '
+  overload: Godot.Callable.Trampoline*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.Callable.From*
+  commentId: Overload:Godot.Callable.From
+  isExternal: true
+  href: Godot.Callable.html#Godot_Callable_From_System_Action_
+  name: From
+  nameWithType: Callable.From
+  fullName: Godot.Callable.From
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Godot.Callable
+  commentId: T:Godot.Callable
+  parent: Godot
+  isExternal: true
+  href: Godot.Callable.html
+  name: Callable
+  nameWithType: Callable
+  fullName: Godot.Callable
+- uid: System.Action{{T0}}
+  commentId: T:System.Action{``0}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T0>
+  nameWithType: Action<T0>
+  fullName: System.Action<T0>
+  nameWithType.vb: Action(Of T0)
+  fullName.vb: System.Action(Of T0)
+  name.vb: Action(Of T0)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T0
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action{{T0},{T1}}
+  commentId: T:System.Action{``0,``1}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T0, T1>
+  nameWithType: Action<T0, T1>
+  fullName: System.Action<T0, T1>
+  nameWithType.vb: Action(Of T0, T1)
+  fullName.vb: System.Action(Of T0, T1)
+  name.vb: Action(Of T0, T1)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System.Action{{T0},{T1},{T2}}
+  commentId: T:System.Action{``0,``1,``2}
+  parent: System
+  definition: System.Action`3
+  href: https://learn.microsoft.com/dotnet/api/system.action-3
+  name: Action<T0, T1, T2>
+  nameWithType: Action<T0, T1, T2>
+  fullName: System.Action<T0, T1, T2>
+  nameWithType.vb: Action(Of T0, T1, T2)
+  fullName.vb: System.Action(Of T0, T1, T2)
+  name.vb: Action(Of T0, T1, T2)
+  spec.csharp:
+  - uid: System.Action`3
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-3
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`3
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System.Action`3
+  commentId: T:System.Action`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-3
+  name: Action<T1, T2, T3>
+  nameWithType: Action<T1, T2, T3>
+  fullName: System.Action<T1, T2, T3>
+  nameWithType.vb: Action(Of T1, T2, T3)
+  fullName.vb: System.Action(Of T1, T2, T3)
+  name.vb: Action(Of T1, T2, T3)
+  spec.csharp:
+  - uid: System.Action`3
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`3
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
+- uid: System.Action{{T0},{T1},{T2},{T3}}
+  commentId: T:System.Action{``0,``1,``2,``3}
+  parent: System
+  definition: System.Action`4
+  href: https://learn.microsoft.com/dotnet/api/system.action-4
+  name: Action<T0, T1, T2, T3>
+  nameWithType: Action<T0, T1, T2, T3>
+  fullName: System.Action<T0, T1, T2, T3>
+  nameWithType.vb: Action(Of T0, T1, T2, T3)
+  fullName.vb: System.Action(Of T0, T1, T2, T3)
+  name.vb: Action(Of T0, T1, T2, T3)
+  spec.csharp:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
+- uid: System.Action`4
+  commentId: T:System.Action`4
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-4
+  name: Action<T1, T2, T3, T4>
+  nameWithType: Action<T1, T2, T3, T4>
+  fullName: System.Action<T1, T2, T3, T4>
+  nameWithType.vb: Action(Of T1, T2, T3, T4)
+  fullName.vb: System.Action(Of T1, T2, T3, T4)
+  name.vb: Action(Of T1, T2, T3, T4)
+  spec.csharp:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: )
+- uid: System.Action{{T0},{T1},{T2},{T3},{T4}}
+  commentId: T:System.Action{``0,``1,``2,``3,``4}
+  parent: System
+  definition: System.Action`5
+  href: https://learn.microsoft.com/dotnet/api/system.action-5
+  name: Action<T0, T1, T2, T3, T4>
+  nameWithType: Action<T0, T1, T2, T3, T4>
+  fullName: System.Action<T0, T1, T2, T3, T4>
+  nameWithType.vb: Action(Of T0, T1, T2, T3, T4)
+  fullName.vb: System.Action(Of T0, T1, T2, T3, T4)
+  name.vb: Action(Of T0, T1, T2, T3, T4)
+  spec.csharp:
+  - uid: System.Action`5
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-5
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`5
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-5
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: )
+- uid: System.Action`5
+  commentId: T:System.Action`5
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-5
+  name: Action<T1, T2, T3, T4, T5>
+  nameWithType: Action<T1, T2, T3, T4, T5>
+  fullName: System.Action<T1, T2, T3, T4, T5>
+  nameWithType.vb: Action(Of T1, T2, T3, T4, T5)
+  fullName.vb: System.Action(Of T1, T2, T3, T4, T5)
+  name.vb: Action(Of T1, T2, T3, T4, T5)
+  spec.csharp:
+  - uid: System.Action`5
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-5
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`5
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-5
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: )
+- uid: System.Action{{T0},{T1},{T2},{T3},{T4},{T5}}
+  commentId: T:System.Action{``0,``1,``2,``3,``4,``5}
+  parent: System
+  definition: System.Action`6
+  href: https://learn.microsoft.com/dotnet/api/system.action-6
+  name: Action<T0, T1, T2, T3, T4, T5>
+  nameWithType: Action<T0, T1, T2, T3, T4, T5>
+  fullName: System.Action<T0, T1, T2, T3, T4, T5>
+  nameWithType.vb: Action(Of T0, T1, T2, T3, T4, T5)
+  fullName.vb: System.Action(Of T0, T1, T2, T3, T4, T5)
+  name.vb: Action(Of T0, T1, T2, T3, T4, T5)
+  spec.csharp:
+  - uid: System.Action`6
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-6
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`6
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-6
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: )
+- uid: System.Action`6
+  commentId: T:System.Action`6
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-6
+  name: Action<T1, T2, T3, T4, T5, T6>
+  nameWithType: Action<T1, T2, T3, T4, T5, T6>
+  fullName: System.Action<T1, T2, T3, T4, T5, T6>
+  nameWithType.vb: Action(Of T1, T2, T3, T4, T5, T6)
+  fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6)
+  name.vb: Action(Of T1, T2, T3, T4, T5, T6)
+  spec.csharp:
+  - uid: System.Action`6
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-6
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`6
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-6
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: )
+- uid: System.Action{{T0},{T1},{T2},{T3},{T4},{T5},{T6}}
+  commentId: T:System.Action{``0,``1,``2,``3,``4,``5,``6}
+  parent: System
+  definition: System.Action`7
+  href: https://learn.microsoft.com/dotnet/api/system.action-7
+  name: Action<T0, T1, T2, T3, T4, T5, T6>
+  nameWithType: Action<T0, T1, T2, T3, T4, T5, T6>
+  fullName: System.Action<T0, T1, T2, T3, T4, T5, T6>
+  nameWithType.vb: Action(Of T0, T1, T2, T3, T4, T5, T6)
+  fullName.vb: System.Action(Of T0, T1, T2, T3, T4, T5, T6)
+  name.vb: Action(Of T0, T1, T2, T3, T4, T5, T6)
+  spec.csharp:
+  - uid: System.Action`7
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-7
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`7
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-7
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: )
+- uid: System.Action`7
+  commentId: T:System.Action`7
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-7
+  name: Action<T1, T2, T3, T4, T5, T6, T7>
+  nameWithType: Action<T1, T2, T3, T4, T5, T6, T7>
+  fullName: System.Action<T1, T2, T3, T4, T5, T6, T7>
+  nameWithType.vb: Action(Of T1, T2, T3, T4, T5, T6, T7)
+  fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6, T7)
+  name.vb: Action(Of T1, T2, T3, T4, T5, T6, T7)
+  spec.csharp:
+  - uid: System.Action`7
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-7
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`7
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-7
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: )
+- uid: System.Action{{T0},{T1},{T2},{T3},{T4},{T5},{T6},{T7}}
+  commentId: T:System.Action{``0,``1,``2,``3,``4,``5,``6,``7}
+  parent: System
+  definition: System.Action`8
+  href: https://learn.microsoft.com/dotnet/api/system.action-8
+  name: Action<T0, T1, T2, T3, T4, T5, T6, T7>
+  nameWithType: Action<T0, T1, T2, T3, T4, T5, T6, T7>
+  fullName: System.Action<T0, T1, T2, T3, T4, T5, T6, T7>
+  nameWithType.vb: Action(Of T0, T1, T2, T3, T4, T5, T6, T7)
+  fullName.vb: System.Action(Of T0, T1, T2, T3, T4, T5, T6, T7)
+  name.vb: Action(Of T0, T1, T2, T3, T4, T5, T6, T7)
+  spec.csharp:
+  - uid: System.Action`8
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-8
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`8
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-8
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: )
+- uid: System.Action`8
+  commentId: T:System.Action`8
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-8
+  name: Action<T1, T2, T3, T4, T5, T6, T7, T8>
+  nameWithType: Action<T1, T2, T3, T4, T5, T6, T7, T8>
+  fullName: System.Action<T1, T2, T3, T4, T5, T6, T7, T8>
+  nameWithType.vb: Action(Of T1, T2, T3, T4, T5, T6, T7, T8)
+  fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8)
+  name.vb: Action(Of T1, T2, T3, T4, T5, T6, T7, T8)
+  spec.csharp:
+  - uid: System.Action`8
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-8
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: T8
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`8
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-8
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: T8
+  - name: )
+- uid: System.Action{{T0},{T1},{T2},{T3},{T4},{T5},{T6},{T7},{T8}}
+  commentId: T:System.Action{``0,``1,``2,``3,``4,``5,``6,``7,``8}
+  parent: System
+  definition: System.Action`9
+  href: https://learn.microsoft.com/dotnet/api/system.action-9
+  name: Action<T0, T1, T2, T3, T4, T5, T6, T7, T8>
+  nameWithType: Action<T0, T1, T2, T3, T4, T5, T6, T7, T8>
+  fullName: System.Action<T0, T1, T2, T3, T4, T5, T6, T7, T8>
+  nameWithType.vb: Action(Of T0, T1, T2, T3, T4, T5, T6, T7, T8)
+  fullName.vb: System.Action(Of T0, T1, T2, T3, T4, T5, T6, T7, T8)
+  name.vb: Action(Of T0, T1, T2, T3, T4, T5, T6, T7, T8)
+  spec.csharp:
+  - uid: System.Action`9
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-9
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: T8
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`9
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-9
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: T8
+  - name: )
+- uid: System.Action`9
+  commentId: T:System.Action`9
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-9
+  name: Action<T1, T2, T3, T4, T5, T6, T7, T8, T9>
+  nameWithType: Action<T1, T2, T3, T4, T5, T6, T7, T8, T9>
+  fullName: System.Action<T1, T2, T3, T4, T5, T6, T7, T8, T9>
+  nameWithType.vb: Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)
+  fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)
+  name.vb: Action(Of T1, T2, T3, T4, T5, T6, T7, T8, T9)
+  spec.csharp:
+  - uid: System.Action`9
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-9
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: T8
+  - name: ','
+  - name: " "
+  - name: T9
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`9
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-9
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: T8
+  - name: ','
+  - name: " "
+  - name: T9
+  - name: )
+- uid: System.Func{{TResult}}
+  commentId: T:System.Func{``0}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{{T0},{TResult}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T0, TResult>
+  nameWithType: Func<T0, TResult>
+  fullName: System.Func<T0, TResult>
+  nameWithType.vb: Func(Of T0, TResult)
+  fullName.vb: System.Func(Of T0, TResult)
+  name.vb: Func(Of T0, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{{T0},{T1},{TResult}}
+  commentId: T:System.Func{``0,``1,``2}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T0, T1, TResult>
+  nameWithType: Func<T0, T1, TResult>
+  fullName: System.Func<T0, T1, TResult>
+  nameWithType.vb: Func(Of T0, T1, TResult)
+  fullName.vb: System.Func(Of T0, T1, TResult)
+  name.vb: Func(Of T0, T1, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{{T0},{T1},{T2},{TResult}}
+  commentId: T:System.Func{``0,``1,``2,``3}
+  parent: System
+  definition: System.Func`4
+  href: https://learn.microsoft.com/dotnet/api/system.func-4
+  name: Func<T0, T1, T2, TResult>
+  nameWithType: Func<T0, T1, T2, TResult>
+  fullName: System.Func<T0, T1, T2, TResult>
+  nameWithType.vb: Func(Of T0, T1, T2, TResult)
+  fullName.vb: System.Func(Of T0, T1, T2, TResult)
+  name.vb: Func(Of T0, T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func`4
+  commentId: T:System.Func`4
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-4
+  name: Func<T1, T2, T3, TResult>
+  nameWithType: Func<T1, T2, T3, TResult>
+  fullName: System.Func<T1, T2, T3, TResult>
+  nameWithType.vb: Func(Of T1, T2, T3, TResult)
+  fullName.vb: System.Func(Of T1, T2, T3, TResult)
+  name.vb: Func(Of T1, T2, T3, TResult)
+  spec.csharp:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{{T0},{T1},{T2},{T3},{TResult}}
+  commentId: T:System.Func{``0,``1,``2,``3,``4}
+  parent: System
+  definition: System.Func`5
+  href: https://learn.microsoft.com/dotnet/api/system.func-5
+  name: Func<T0, T1, T2, T3, TResult>
+  nameWithType: Func<T0, T1, T2, T3, TResult>
+  fullName: System.Func<T0, T1, T2, T3, TResult>
+  nameWithType.vb: Func(Of T0, T1, T2, T3, TResult)
+  fullName.vb: System.Func(Of T0, T1, T2, T3, TResult)
+  name.vb: Func(Of T0, T1, T2, T3, TResult)
+  spec.csharp:
+  - uid: System.Func`5
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-5
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`5
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-5
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func`5
+  commentId: T:System.Func`5
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-5
+  name: Func<T1, T2, T3, T4, TResult>
+  nameWithType: Func<T1, T2, T3, T4, TResult>
+  fullName: System.Func<T1, T2, T3, T4, TResult>
+  nameWithType.vb: Func(Of T1, T2, T3, T4, TResult)
+  fullName.vb: System.Func(Of T1, T2, T3, T4, TResult)
+  name.vb: Func(Of T1, T2, T3, T4, TResult)
+  spec.csharp:
+  - uid: System.Func`5
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-5
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`5
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-5
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{{T0},{T1},{T2},{T3},{T4},{TResult}}
+  commentId: T:System.Func{``0,``1,``2,``3,``4,``5}
+  parent: System
+  definition: System.Func`6
+  href: https://learn.microsoft.com/dotnet/api/system.func-6
+  name: Func<T0, T1, T2, T3, T4, TResult>
+  nameWithType: Func<T0, T1, T2, T3, T4, TResult>
+  fullName: System.Func<T0, T1, T2, T3, T4, TResult>
+  nameWithType.vb: Func(Of T0, T1, T2, T3, T4, TResult)
+  fullName.vb: System.Func(Of T0, T1, T2, T3, T4, TResult)
+  name.vb: Func(Of T0, T1, T2, T3, T4, TResult)
+  spec.csharp:
+  - uid: System.Func`6
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-6
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`6
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-6
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func`6
+  commentId: T:System.Func`6
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-6
+  name: Func<T1, T2, T3, T4, T5, TResult>
+  nameWithType: Func<T1, T2, T3, T4, T5, TResult>
+  fullName: System.Func<T1, T2, T3, T4, T5, TResult>
+  nameWithType.vb: Func(Of T1, T2, T3, T4, T5, TResult)
+  fullName.vb: System.Func(Of T1, T2, T3, T4, T5, TResult)
+  name.vb: Func(Of T1, T2, T3, T4, T5, TResult)
+  spec.csharp:
+  - uid: System.Func`6
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-6
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`6
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-6
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{{T0},{T1},{T2},{T3},{T4},{T5},{TResult}}
+  commentId: T:System.Func{``0,``1,``2,``3,``4,``5,``6}
+  parent: System
+  definition: System.Func`7
+  href: https://learn.microsoft.com/dotnet/api/system.func-7
+  name: Func<T0, T1, T2, T3, T4, T5, TResult>
+  nameWithType: Func<T0, T1, T2, T3, T4, T5, TResult>
+  fullName: System.Func<T0, T1, T2, T3, T4, T5, TResult>
+  nameWithType.vb: Func(Of T0, T1, T2, T3, T4, T5, TResult)
+  fullName.vb: System.Func(Of T0, T1, T2, T3, T4, T5, TResult)
+  name.vb: Func(Of T0, T1, T2, T3, T4, T5, TResult)
+  spec.csharp:
+  - uid: System.Func`7
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-7
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`7
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-7
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func`7
+  commentId: T:System.Func`7
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-7
+  name: Func<T1, T2, T3, T4, T5, T6, TResult>
+  nameWithType: Func<T1, T2, T3, T4, T5, T6, TResult>
+  fullName: System.Func<T1, T2, T3, T4, T5, T6, TResult>
+  nameWithType.vb: Func(Of T1, T2, T3, T4, T5, T6, TResult)
+  fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, TResult)
+  name.vb: Func(Of T1, T2, T3, T4, T5, T6, TResult)
+  spec.csharp:
+  - uid: System.Func`7
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-7
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`7
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-7
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{{T0},{T1},{T2},{T3},{T4},{T5},{T6},{TResult}}
+  commentId: T:System.Func{``0,``1,``2,``3,``4,``5,``6,``7}
+  parent: System
+  definition: System.Func`8
+  href: https://learn.microsoft.com/dotnet/api/system.func-8
+  name: Func<T0, T1, T2, T3, T4, T5, T6, TResult>
+  nameWithType: Func<T0, T1, T2, T3, T4, T5, T6, TResult>
+  fullName: System.Func<T0, T1, T2, T3, T4, T5, T6, TResult>
+  nameWithType.vb: Func(Of T0, T1, T2, T3, T4, T5, T6, TResult)
+  fullName.vb: System.Func(Of T0, T1, T2, T3, T4, T5, T6, TResult)
+  name.vb: Func(Of T0, T1, T2, T3, T4, T5, T6, TResult)
+  spec.csharp:
+  - uid: System.Func`8
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-8
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`8
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-8
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func`8
+  commentId: T:System.Func`8
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-8
+  name: Func<T1, T2, T3, T4, T5, T6, T7, TResult>
+  nameWithType: Func<T1, T2, T3, T4, T5, T6, T7, TResult>
+  fullName: System.Func<T1, T2, T3, T4, T5, T6, T7, TResult>
+  nameWithType.vb: Func(Of T1, T2, T3, T4, T5, T6, T7, TResult)
+  fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, T7, TResult)
+  name.vb: Func(Of T1, T2, T3, T4, T5, T6, T7, TResult)
+  spec.csharp:
+  - uid: System.Func`8
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-8
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`8
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-8
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{{T0},{T1},{T2},{T3},{T4},{T5},{T6},{T7},{TResult}}
+  commentId: T:System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8}
+  parent: System
+  definition: System.Func`9
+  href: https://learn.microsoft.com/dotnet/api/system.func-9
+  name: Func<T0, T1, T2, T3, T4, T5, T6, T7, TResult>
+  nameWithType: Func<T0, T1, T2, T3, T4, T5, T6, T7, TResult>
+  fullName: System.Func<T0, T1, T2, T3, T4, T5, T6, T7, TResult>
+  nameWithType.vb: Func(Of T0, T1, T2, T3, T4, T5, T6, T7, TResult)
+  fullName.vb: System.Func(Of T0, T1, T2, T3, T4, T5, T6, T7, TResult)
+  name.vb: Func(Of T0, T1, T2, T3, T4, T5, T6, T7, TResult)
+  spec.csharp:
+  - uid: System.Func`9
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-9
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`9
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-9
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func`9
+  commentId: T:System.Func`9
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-9
+  name: Func<T1, T2, T3, T4, T5, T6, T7, T8, TResult>
+  nameWithType: Func<T1, T2, T3, T4, T5, T6, T7, T8, TResult>
+  fullName: System.Func<T1, T2, T3, T4, T5, T6, T7, T8, TResult>
+  nameWithType.vb: Func(Of T1, T2, T3, T4, T5, T6, T7, T8, TResult)
+  fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, TResult)
+  name.vb: Func(Of T1, T2, T3, T4, T5, T6, T7, T8, TResult)
+  spec.csharp:
+  - uid: System.Func`9
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-9
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: T8
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`9
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-9
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: T8
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func{{T0},{T1},{T2},{T3},{T4},{T5},{T6},{T7},{T8},{TResult}}
+  commentId: T:System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9}
+  parent: System
+  definition: System.Func`10
+  href: https://learn.microsoft.com/dotnet/api/system.func-10
+  name: Func<T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult>
+  nameWithType: Func<T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult>
+  fullName: System.Func<T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult>
+  nameWithType.vb: Func(Of T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult)
+  fullName.vb: System.Func(Of T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult)
+  name.vb: Func(Of T0, T1, T2, T3, T4, T5, T6, T7, T8, TResult)
+  spec.csharp:
+  - uid: System.Func`10
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-10
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: T8
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`10
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-10
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: T8
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func`10
+  commentId: T:System.Func`10
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-10
+  name: Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>
+  nameWithType: Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>
+  fullName: System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>
+  nameWithType.vb: Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult)
+  fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult)
+  name.vb: Func(Of T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult)
+  spec.csharp:
+  - uid: System.Func`10
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-10
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: T8
+  - name: ','
+  - name: " "
+  - name: T9
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`10
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-10
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: ','
+  - name: " "
+  - name: T7
+  - name: ','
+  - name: " "
+  - name: T8
+  - name: ','
+  - name: " "
+  - name: T9
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Godot.Callable.#ctor*
+  commentId: Overload:Godot.Callable.#ctor
+  isExternal: true
+  href: Godot.Callable.html#Godot_Callable__ctor_Godot_GodotObject_Godot_StringName_
+  name: Callable
+  nameWithType: Callable.Callable
+  fullName: Godot.Callable.Callable
+  nameWithType.vb: Callable.New
+  fullName.vb: Godot.Callable.New
+  name.vb: New
+- uid: Godot.GodotObject
+  commentId: T:Godot.GodotObject
+  parent: Godot
+  isExternal: true
+  href: Godot.GodotObject.html
+  name: GodotObject
+  nameWithType: GodotObject
+  fullName: Godot.GodotObject
+- uid: Godot.StringName
+  commentId: T:Godot.StringName
+  parent: Godot
+  isExternal: true
+  href: Godot.StringName.html
+  name: StringName
+  nameWithType: StringName
+  fullName: Godot.StringName
+- uid: Godot.Callable.Call*
+  commentId: Overload:Godot.Callable.Call
+  isExternal: true
+  href: Godot.Callable.html#Godot_Callable_Call_Godot_Variant___
+  name: Call
+  nameWithType: Callable.Call
+  fullName: Godot.Callable.Call
+- uid: Godot.Variant[]
+  isExternal: true
+  href: Godot.Variant.html
+  name: Variant[]
+  nameWithType: Variant[]
+  fullName: Godot.Variant[]
+  nameWithType.vb: Variant()
+  fullName.vb: Godot.Variant()
+  name.vb: Variant()
+  spec.csharp:
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: (
+  - name: )
+- uid: Godot.Variant
+  commentId: T:Godot.Variant
+  parent: Godot
+  isExternal: true
+  href: Godot.Variant.html
+  name: Variant
+  nameWithType: Variant
+  fullName: Godot.Variant
+- uid: Godot.Callable.CallDeferred*
+  commentId: Overload:Godot.Callable.CallDeferred
+  isExternal: true
+  href: Godot.Callable.html#Godot_Callable_CallDeferred_Godot_Variant___
+  name: CallDeferred
+  nameWithType: Callable.CallDeferred
+  fullName: Godot.Callable.CallDeferred
+- uid: Godot.Callable.CreateWithUnsafeTrampoline*
+  commentId: Overload:Godot.Callable.CreateWithUnsafeTrampoline
+  isExternal: true
+  href: Godot.Callable.html#Godot_Callable_CreateWithUnsafeTrampoline_System_Delegate__
+  name: CreateWithUnsafeTrampoline
+  nameWithType: Callable.CreateWithUnsafeTrampoline
+  fullName: Godot.Callable.CreateWithUnsafeTrampoline
+- uid: System.Delegate
+  commentId: T:System.Delegate
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.delegate
+  name: Delegate
+  nameWithType: Delegate
+  fullName: System.Delegate
+- uid: delegate*<object, Godot.NativeInterop.NativeVariantPtrArgs, out Godot.NativeInterop.godot_variant, void>
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: delegate*<object, NativeVariantPtrArgs, out godot_variant, void>
+  nameWithType: delegate*<object, NativeVariantPtrArgs, out godot_variant, void>
+  fullName: delegate*<object, Godot.NativeInterop.NativeVariantPtrArgs, out Godot.NativeInterop.godot_variant, void>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: Godot.NativeInterop.NativeVariantPtrArgs
+    name: NativeVariantPtrArgs
+    isExternal: true
+    href: Godot.NativeInterop.NativeVariantPtrArgs.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: Godot.NativeInterop.godot_variant
+    name: godot_variant
+    isExternal: true
+    href: Godot.NativeInterop.godot_variant.html
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '>'
+- uid: Godot.Callable.Target*
+  commentId: Overload:Godot.Callable.Target
+  isExternal: true
+  href: Godot.Callable.html#Godot_Callable_Target
+  name: Target
+  nameWithType: Callable.Target
+  fullName: Godot.Callable.Target
+- uid: Godot.Callable.Method*
+  commentId: Overload:Godot.Callable.Method
+  isExternal: true
+  href: Godot.Callable.html#Godot_Callable_Method
+  name: Method
+  nameWithType: Callable.Method
+  fullName: Godot.Callable.Method
+- uid: Godot.Callable.Delegate*
+  commentId: Overload:Godot.Callable.Delegate
+  isExternal: true
+  href: Godot.Callable.html#Godot_Callable_Delegate
+  name: Delegate
+  nameWithType: Callable.Delegate
+  fullName: Godot.Callable.Delegate
+- uid: Godot.Callable.Trampoline*
+  commentId: Overload:Godot.Callable.Trampoline
+  isExternal: true
+  href: Godot.Callable.html#Godot_Callable_Trampoline
+  name: Trampoline
+  nameWithType: Callable.Trampoline
+  fullName: Godot.Callable.Trampoline

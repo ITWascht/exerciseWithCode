@@ -1,0 +1,1983 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.Basis
+  commentId: T:Godot.Basis
+  id: Basis
+  parent: Godot
+  children:
+  - Godot.Basis.#ctor(Godot.Quaternion)
+  - Godot.Basis.#ctor(Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  - Godot.Basis.#ctor(Godot.Vector3,System.Single)
+  - Godot.Basis.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Godot.Basis.Column0
+  - Godot.Basis.Column1
+  - Godot.Basis.Column2
+  - Godot.Basis.Determinant
+  - Godot.Basis.Equals(Godot.Basis)
+  - Godot.Basis.Equals(System.Object)
+  - Godot.Basis.FlipX
+  - Godot.Basis.FlipY
+  - Godot.Basis.FlipZ
+  - Godot.Basis.FromEuler(Godot.Vector3,Godot.EulerOrder)
+  - Godot.Basis.FromScale(Godot.Vector3)
+  - Godot.Basis.GetEuler(Godot.EulerOrder)
+  - Godot.Basis.GetHashCode
+  - Godot.Basis.GetRotationQuaternion
+  - Godot.Basis.Identity
+  - Godot.Basis.Inverse
+  - Godot.Basis.IsEqualApprox(Godot.Basis)
+  - Godot.Basis.IsFinite
+  - Godot.Basis.Item(System.Int32)
+  - Godot.Basis.Item(System.Int32,System.Int32)
+  - Godot.Basis.LookingAt(Godot.Vector3,System.Nullable{Godot.Vector3},System.Boolean)
+  - Godot.Basis.Orthonormalized
+  - Godot.Basis.Rotated(Godot.Vector3,System.Single)
+  - Godot.Basis.Row0
+  - Godot.Basis.Row1
+  - Godot.Basis.Row2
+  - Godot.Basis.Scale
+  - Godot.Basis.Scaled(Godot.Vector3)
+  - Godot.Basis.ScaledLocal(Godot.Vector3)
+  - Godot.Basis.Slerp(Godot.Basis,System.Single)
+  - Godot.Basis.Tdotx(Godot.Vector3)
+  - Godot.Basis.Tdoty(Godot.Vector3)
+  - Godot.Basis.Tdotz(Godot.Vector3)
+  - Godot.Basis.ToString
+  - Godot.Basis.ToString(System.String)
+  - Godot.Basis.Transposed
+  - Godot.Basis.X
+  - Godot.Basis.Y
+  - Godot.Basis.Z
+  - Godot.Basis.op_Equality(Godot.Basis,Godot.Basis)
+  - Godot.Basis.op_Inequality(Godot.Basis,Godot.Basis)
+  - Godot.Basis.op_Multiply(Godot.Basis,Godot.Basis)
+  - Godot.Basis.op_Multiply(Godot.Basis,Godot.Vector3)
+  - Godot.Basis.op_Multiply(Godot.Vector3,Godot.Basis)
+  langs:
+  - csharp
+  - vb
+  name: Basis
+  nameWithType: Basis
+  fullName: Godot.Basis
+  type: Struct
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: 'public struct Basis : IEquatable<Basis>'
+    content.vb: Public Structure Basis Implements IEquatable(Of Basis)
+  implements:
+  - System.IEquatable{Godot.Basis}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Godot.Basis.Row0
+  commentId: F:Godot.Basis.Row0
+  id: Row0
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Row0
+  nameWithType: Basis.Row0
+  fullName: Godot.Basis.Row0
+  type: Field
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 Row0
+    return:
+      type: Godot.Vector3
+    content.vb: Public Row0 As Vector3
+- uid: Godot.Basis.Row1
+  commentId: F:Godot.Basis.Row1
+  id: Row1
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Row1
+  nameWithType: Basis.Row1
+  fullName: Godot.Basis.Row1
+  type: Field
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 Row1
+    return:
+      type: Godot.Vector3
+    content.vb: Public Row1 As Vector3
+- uid: Godot.Basis.Row2
+  commentId: F:Godot.Basis.Row2
+  id: Row2
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Row2
+  nameWithType: Basis.Row2
+  fullName: Godot.Basis.Row2
+  type: Field
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 Row2
+    return:
+      type: Godot.Vector3
+    content.vb: Public Row2 As Vector3
+- uid: Godot.Basis.Determinant
+  commentId: M:Godot.Basis.Determinant
+  id: Determinant
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Determinant()
+  nameWithType: Basis.Determinant()
+  fullName: Godot.Basis.Determinant()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly float Determinant()
+    return:
+      type: System.Single
+    content.vb: Public Function Determinant() As Single
+  overload: Godot.Basis.Determinant*
+- uid: Godot.Basis.GetEuler(Godot.EulerOrder)
+  commentId: M:Godot.Basis.GetEuler(Godot.EulerOrder)
+  id: GetEuler(Godot.EulerOrder)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: GetEuler(EulerOrder)
+  nameWithType: Basis.GetEuler(EulerOrder)
+  fullName: Godot.Basis.GetEuler(Godot.EulerOrder)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3 GetEuler(EulerOrder order = EulerOrder.Yxz)
+    parameters:
+    - id: order
+      type: Godot.EulerOrder
+    return:
+      type: Godot.Vector3
+    content.vb: Public Function GetEuler(order As EulerOrder = EulerOrder.Yxz) As Vector3
+  overload: Godot.Basis.GetEuler*
+- uid: Godot.Basis.GetRotationQuaternion
+  commentId: M:Godot.Basis.GetRotationQuaternion
+  id: GetRotationQuaternion
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: GetRotationQuaternion()
+  nameWithType: Basis.GetRotationQuaternion()
+  fullName: Godot.Basis.GetRotationQuaternion()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Quaternion GetRotationQuaternion()
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Function GetRotationQuaternion() As Quaternion
+  overload: Godot.Basis.GetRotationQuaternion*
+- uid: Godot.Basis.Inverse
+  commentId: M:Godot.Basis.Inverse
+  id: Inverse
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Inverse()
+  nameWithType: Basis.Inverse()
+  fullName: Godot.Basis.Inverse()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Basis Inverse()
+    return:
+      type: Godot.Basis
+    content.vb: Public Function Inverse() As Basis
+  overload: Godot.Basis.Inverse*
+- uid: Godot.Basis.IsFinite
+  commentId: M:Godot.Basis.IsFinite
+  id: IsFinite
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: IsFinite()
+  nameWithType: Basis.IsFinite()
+  fullName: Godot.Basis.IsFinite()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool IsFinite()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsFinite() As Boolean
+  overload: Godot.Basis.IsFinite*
+- uid: Godot.Basis.LookingAt(Godot.Vector3,System.Nullable{Godot.Vector3},System.Boolean)
+  commentId: M:Godot.Basis.LookingAt(Godot.Vector3,System.Nullable{Godot.Vector3},System.Boolean)
+  id: LookingAt(Godot.Vector3,System.Nullable{Godot.Vector3},System.Boolean)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: LookingAt(Vector3, Vector3?, bool)
+  nameWithType: Basis.LookingAt(Vector3, Vector3?, bool)
+  fullName: Godot.Basis.LookingAt(Godot.Vector3, Godot.Vector3?, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Basis LookingAt(Vector3 target, Vector3? up = null, bool useModelFront = false)
+    parameters:
+    - id: target
+      type: Godot.Vector3
+    - id: up
+      type: System.Nullable{Godot.Vector3}
+    - id: useModelFront
+      type: System.Boolean
+    return:
+      type: Godot.Basis
+    content.vb: Public Shared Function LookingAt(target As Vector3, up As Vector3? = Nothing, useModelFront As Boolean = False) As Basis
+  overload: Godot.Basis.LookingAt*
+  nameWithType.vb: Basis.LookingAt(Vector3, Vector3?, Boolean)
+  fullName.vb: Godot.Basis.LookingAt(Godot.Vector3, Godot.Vector3?, Boolean)
+  name.vb: LookingAt(Vector3, Vector3?, Boolean)
+- uid: Godot.Basis.Orthonormalized
+  commentId: M:Godot.Basis.Orthonormalized
+  id: Orthonormalized
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Orthonormalized()
+  nameWithType: Basis.Orthonormalized()
+  fullName: Godot.Basis.Orthonormalized()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Basis Orthonormalized()
+    return:
+      type: Godot.Basis
+    content.vb: Public Function Orthonormalized() As Basis
+  overload: Godot.Basis.Orthonormalized*
+- uid: Godot.Basis.Rotated(Godot.Vector3,System.Single)
+  commentId: M:Godot.Basis.Rotated(Godot.Vector3,System.Single)
+  id: Rotated(Godot.Vector3,System.Single)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Rotated(Vector3, float)
+  nameWithType: Basis.Rotated(Vector3, float)
+  fullName: Godot.Basis.Rotated(Godot.Vector3, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Basis Rotated(Vector3 axis, float angle)
+    parameters:
+    - id: axis
+      type: Godot.Vector3
+    - id: angle
+      type: System.Single
+    return:
+      type: Godot.Basis
+    content.vb: Public Function Rotated(axis As Vector3, angle As Single) As Basis
+  overload: Godot.Basis.Rotated*
+  nameWithType.vb: Basis.Rotated(Vector3, Single)
+  fullName.vb: Godot.Basis.Rotated(Godot.Vector3, Single)
+  name.vb: Rotated(Vector3, Single)
+- uid: Godot.Basis.Scaled(Godot.Vector3)
+  commentId: M:Godot.Basis.Scaled(Godot.Vector3)
+  id: Scaled(Godot.Vector3)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Scaled(Vector3)
+  nameWithType: Basis.Scaled(Vector3)
+  fullName: Godot.Basis.Scaled(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Basis Scaled(Vector3 scale)
+    parameters:
+    - id: scale
+      type: Godot.Vector3
+    return:
+      type: Godot.Basis
+    content.vb: Public Function Scaled(scale As Vector3) As Basis
+  overload: Godot.Basis.Scaled*
+- uid: Godot.Basis.ScaledLocal(Godot.Vector3)
+  commentId: M:Godot.Basis.ScaledLocal(Godot.Vector3)
+  id: ScaledLocal(Godot.Vector3)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: ScaledLocal(Vector3)
+  nameWithType: Basis.ScaledLocal(Vector3)
+  fullName: Godot.Basis.ScaledLocal(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Basis ScaledLocal(Vector3 scale)
+    parameters:
+    - id: scale
+      type: Godot.Vector3
+    return:
+      type: Godot.Basis
+    content.vb: Public Function ScaledLocal(scale As Vector3) As Basis
+  overload: Godot.Basis.ScaledLocal*
+- uid: Godot.Basis.Slerp(Godot.Basis,System.Single)
+  commentId: M:Godot.Basis.Slerp(Godot.Basis,System.Single)
+  id: Slerp(Godot.Basis,System.Single)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Slerp(Basis, float)
+  nameWithType: Basis.Slerp(Basis, float)
+  fullName: Godot.Basis.Slerp(Godot.Basis, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Basis Slerp(Basis target, float weight)
+    parameters:
+    - id: target
+      type: Godot.Basis
+    - id: weight
+      type: System.Single
+    return:
+      type: Godot.Basis
+    content.vb: Public Function Slerp(target As Basis, weight As Single) As Basis
+  overload: Godot.Basis.Slerp*
+  nameWithType.vb: Basis.Slerp(Basis, Single)
+  fullName.vb: Godot.Basis.Slerp(Godot.Basis, Single)
+  name.vb: Slerp(Basis, Single)
+- uid: Godot.Basis.Tdotx(Godot.Vector3)
+  commentId: M:Godot.Basis.Tdotx(Godot.Vector3)
+  id: Tdotx(Godot.Vector3)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Tdotx(Vector3)
+  nameWithType: Basis.Tdotx(Vector3)
+  fullName: Godot.Basis.Tdotx(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly float Tdotx(Vector3 with)
+    parameters:
+    - id: with
+      type: Godot.Vector3
+    return:
+      type: System.Single
+    content.vb: Public Function Tdotx([with] As Vector3) As Single
+  overload: Godot.Basis.Tdotx*
+- uid: Godot.Basis.Tdoty(Godot.Vector3)
+  commentId: M:Godot.Basis.Tdoty(Godot.Vector3)
+  id: Tdoty(Godot.Vector3)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Tdoty(Vector3)
+  nameWithType: Basis.Tdoty(Vector3)
+  fullName: Godot.Basis.Tdoty(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly float Tdoty(Vector3 with)
+    parameters:
+    - id: with
+      type: Godot.Vector3
+    return:
+      type: System.Single
+    content.vb: Public Function Tdoty([with] As Vector3) As Single
+  overload: Godot.Basis.Tdoty*
+- uid: Godot.Basis.Tdotz(Godot.Vector3)
+  commentId: M:Godot.Basis.Tdotz(Godot.Vector3)
+  id: Tdotz(Godot.Vector3)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Tdotz(Vector3)
+  nameWithType: Basis.Tdotz(Vector3)
+  fullName: Godot.Basis.Tdotz(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly float Tdotz(Vector3 with)
+    parameters:
+    - id: with
+      type: Godot.Vector3
+    return:
+      type: System.Single
+    content.vb: Public Function Tdotz([with] As Vector3) As Single
+  overload: Godot.Basis.Tdotz*
+- uid: Godot.Basis.Transposed
+  commentId: M:Godot.Basis.Transposed
+  id: Transposed
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Transposed()
+  nameWithType: Basis.Transposed()
+  fullName: Godot.Basis.Transposed()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Basis Transposed()
+    return:
+      type: Godot.Basis
+    content.vb: Public Function Transposed() As Basis
+  overload: Godot.Basis.Transposed*
+- uid: Godot.Basis.#ctor(Godot.Quaternion)
+  commentId: M:Godot.Basis.#ctor(Godot.Quaternion)
+  id: '#ctor(Godot.Quaternion)'
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Basis(Quaternion)
+  nameWithType: Basis.Basis(Quaternion)
+  fullName: Godot.Basis.Basis(Godot.Quaternion)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Basis(Quaternion quaternion)
+    parameters:
+    - id: quaternion
+      type: Godot.Quaternion
+    content.vb: Public Sub New(quaternion As Quaternion)
+  overload: Godot.Basis.#ctor*
+  nameWithType.vb: Basis.New(Quaternion)
+  fullName.vb: Godot.Basis.New(Godot.Quaternion)
+  name.vb: New(Quaternion)
+- uid: Godot.Basis.#ctor(Godot.Vector3,System.Single)
+  commentId: M:Godot.Basis.#ctor(Godot.Vector3,System.Single)
+  id: '#ctor(Godot.Vector3,System.Single)'
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Basis(Vector3, float)
+  nameWithType: Basis.Basis(Vector3, float)
+  fullName: Godot.Basis.Basis(Godot.Vector3, float)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Basis(Vector3 axis, float angle)
+    parameters:
+    - id: axis
+      type: Godot.Vector3
+    - id: angle
+      type: System.Single
+    content.vb: Public Sub New(axis As Vector3, angle As Single)
+  overload: Godot.Basis.#ctor*
+  nameWithType.vb: Basis.New(Vector3, Single)
+  fullName.vb: Godot.Basis.New(Godot.Vector3, Single)
+  name.vb: New(Vector3, Single)
+- uid: Godot.Basis.#ctor(Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  commentId: M:Godot.Basis.#ctor(Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  id: '#ctor(Godot.Vector3,Godot.Vector3,Godot.Vector3)'
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Basis(Vector3, Vector3, Vector3)
+  nameWithType: Basis.Basis(Vector3, Vector3, Vector3)
+  fullName: Godot.Basis.Basis(Godot.Vector3, Godot.Vector3, Godot.Vector3)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Basis(Vector3 column0, Vector3 column1, Vector3 column2)
+    parameters:
+    - id: column0
+      type: Godot.Vector3
+    - id: column1
+      type: Godot.Vector3
+    - id: column2
+      type: Godot.Vector3
+    content.vb: Public Sub New(column0 As Vector3, column1 As Vector3, column2 As Vector3)
+  overload: Godot.Basis.#ctor*
+  nameWithType.vb: Basis.New(Vector3, Vector3, Vector3)
+  fullName.vb: Godot.Basis.New(Godot.Vector3, Godot.Vector3, Godot.Vector3)
+  name.vb: New(Vector3, Vector3, Vector3)
+- uid: Godot.Basis.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Godot.Basis.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)'
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Basis(float, float, float, float, float, float, float, float, float)
+  nameWithType: Basis.Basis(float, float, float, float, float, float, float, float, float)
+  fullName: Godot.Basis.Basis(float, float, float, float, float, float, float, float, float)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Basis(float xx, float yx, float zx, float xy, float yy, float zy, float xz, float yz, float zz)
+    parameters:
+    - id: xx
+      type: System.Single
+    - id: yx
+      type: System.Single
+    - id: zx
+      type: System.Single
+    - id: xy
+      type: System.Single
+    - id: yy
+      type: System.Single
+    - id: zy
+      type: System.Single
+    - id: xz
+      type: System.Single
+    - id: yz
+      type: System.Single
+    - id: zz
+      type: System.Single
+    content.vb: Public Sub New(xx As Single, yx As Single, zx As Single, xy As Single, yy As Single, zy As Single, xz As Single, yz As Single, zz As Single)
+  overload: Godot.Basis.#ctor*
+  nameWithType.vb: Basis.New(Single, Single, Single, Single, Single, Single, Single, Single, Single)
+  fullName.vb: Godot.Basis.New(Single, Single, Single, Single, Single, Single, Single, Single, Single)
+  name.vb: New(Single, Single, Single, Single, Single, Single, Single, Single, Single)
+- uid: Godot.Basis.FromEuler(Godot.Vector3,Godot.EulerOrder)
+  commentId: M:Godot.Basis.FromEuler(Godot.Vector3,Godot.EulerOrder)
+  id: FromEuler(Godot.Vector3,Godot.EulerOrder)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: FromEuler(Vector3, EulerOrder)
+  nameWithType: Basis.FromEuler(Vector3, EulerOrder)
+  fullName: Godot.Basis.FromEuler(Godot.Vector3, Godot.EulerOrder)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Basis FromEuler(Vector3 euler, EulerOrder order = EulerOrder.Yxz)
+    parameters:
+    - id: euler
+      type: Godot.Vector3
+    - id: order
+      type: Godot.EulerOrder
+    return:
+      type: Godot.Basis
+    content.vb: Public Shared Function FromEuler(euler As Vector3, order As EulerOrder = EulerOrder.Yxz) As Basis
+  overload: Godot.Basis.FromEuler*
+- uid: Godot.Basis.FromScale(Godot.Vector3)
+  commentId: M:Godot.Basis.FromScale(Godot.Vector3)
+  id: FromScale(Godot.Vector3)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: FromScale(Vector3)
+  nameWithType: Basis.FromScale(Vector3)
+  fullName: Godot.Basis.FromScale(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Basis FromScale(Vector3 scale)
+    parameters:
+    - id: scale
+      type: Godot.Vector3
+    return:
+      type: Godot.Basis
+    content.vb: Public Shared Function FromScale(scale As Vector3) As Basis
+  overload: Godot.Basis.FromScale*
+- uid: Godot.Basis.op_Multiply(Godot.Basis,Godot.Basis)
+  commentId: M:Godot.Basis.op_Multiply(Godot.Basis,Godot.Basis)
+  id: op_Multiply(Godot.Basis,Godot.Basis)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: operator *(Basis, Basis)
+  nameWithType: Basis.operator *(Basis, Basis)
+  fullName: Godot.Basis.operator *(Godot.Basis, Godot.Basis)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Basis operator *(Basis left, Basis right)
+    parameters:
+    - id: left
+      type: Godot.Basis
+    - id: right
+      type: Godot.Basis
+    return:
+      type: Godot.Basis
+    content.vb: Public Shared Operator *(left As Basis, right As Basis) As Basis
+  overload: Godot.Basis.op_Multiply*
+  nameWithType.vb: Basis.*(Basis, Basis)
+  fullName.vb: Godot.Basis.*(Godot.Basis, Godot.Basis)
+  name.vb: '*(Basis, Basis)'
+- uid: Godot.Basis.op_Multiply(Godot.Basis,Godot.Vector3)
+  commentId: M:Godot.Basis.op_Multiply(Godot.Basis,Godot.Vector3)
+  id: op_Multiply(Godot.Basis,Godot.Vector3)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: operator *(Basis, Vector3)
+  nameWithType: Basis.operator *(Basis, Vector3)
+  fullName: Godot.Basis.operator *(Godot.Basis, Godot.Vector3)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3 operator *(Basis basis, Vector3 vector)
+    parameters:
+    - id: basis
+      type: Godot.Basis
+    - id: vector
+      type: Godot.Vector3
+    return:
+      type: Godot.Vector3
+    content.vb: Public Shared Operator *(basis As Basis, vector As Vector3) As Vector3
+  overload: Godot.Basis.op_Multiply*
+  nameWithType.vb: Basis.*(Basis, Vector3)
+  fullName.vb: Godot.Basis.*(Godot.Basis, Godot.Vector3)
+  name.vb: '*(Basis, Vector3)'
+- uid: Godot.Basis.op_Multiply(Godot.Vector3,Godot.Basis)
+  commentId: M:Godot.Basis.op_Multiply(Godot.Vector3,Godot.Basis)
+  id: op_Multiply(Godot.Vector3,Godot.Basis)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: operator *(Vector3, Basis)
+  nameWithType: Basis.operator *(Vector3, Basis)
+  fullName: Godot.Basis.operator *(Godot.Vector3, Godot.Basis)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3 operator *(Vector3 vector, Basis basis)
+    parameters:
+    - id: vector
+      type: Godot.Vector3
+    - id: basis
+      type: Godot.Basis
+    return:
+      type: Godot.Vector3
+    content.vb: Public Shared Operator *(vector As Vector3, basis As Basis) As Vector3
+  overload: Godot.Basis.op_Multiply*
+  nameWithType.vb: Basis.*(Vector3, Basis)
+  fullName.vb: Godot.Basis.*(Godot.Vector3, Godot.Basis)
+  name.vb: '*(Vector3, Basis)'
+- uid: Godot.Basis.op_Equality(Godot.Basis,Godot.Basis)
+  commentId: M:Godot.Basis.op_Equality(Godot.Basis,Godot.Basis)
+  id: op_Equality(Godot.Basis,Godot.Basis)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Basis, Basis)
+  nameWithType: Basis.operator ==(Basis, Basis)
+  fullName: Godot.Basis.operator ==(Godot.Basis, Godot.Basis)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool operator ==(Basis left, Basis right)
+    parameters:
+    - id: left
+      type: Godot.Basis
+    - id: right
+      type: Godot.Basis
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Basis, right As Basis) As Boolean
+  overload: Godot.Basis.op_Equality*
+  nameWithType.vb: Basis.=(Basis, Basis)
+  fullName.vb: Godot.Basis.=(Godot.Basis, Godot.Basis)
+  name.vb: =(Basis, Basis)
+- uid: Godot.Basis.op_Inequality(Godot.Basis,Godot.Basis)
+  commentId: M:Godot.Basis.op_Inequality(Godot.Basis,Godot.Basis)
+  id: op_Inequality(Godot.Basis,Godot.Basis)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Basis, Basis)
+  nameWithType: Basis.operator !=(Basis, Basis)
+  fullName: Godot.Basis.operator !=(Godot.Basis, Godot.Basis)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool operator !=(Basis left, Basis right)
+    parameters:
+    - id: left
+      type: Godot.Basis
+    - id: right
+      type: Godot.Basis
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Basis, right As Basis) As Boolean
+  overload: Godot.Basis.op_Inequality*
+  nameWithType.vb: Basis.<>(Basis, Basis)
+  fullName.vb: Godot.Basis.<>(Godot.Basis, Godot.Basis)
+  name.vb: <>(Basis, Basis)
+- uid: Godot.Basis.Equals(System.Object)
+  commentId: M:Godot.Basis.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Basis.Equals(object?)
+  fullName: Godot.Basis.Equals(object?)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)
+        arguments:
+        - type: System.Boolean
+          value: true
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Godot.Basis.Equals*
+  nameWithType.vb: Basis.Equals(Object)
+  fullName.vb: Godot.Basis.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Godot.Basis.Equals(Godot.Basis)
+  commentId: M:Godot.Basis.Equals(Godot.Basis)
+  id: Equals(Godot.Basis)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Equals(Basis)
+  nameWithType: Basis.Equals(Basis)
+  fullName: Godot.Basis.Equals(Godot.Basis)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public readonly bool Equals(Basis other)
+    parameters:
+    - id: other
+      type: Godot.Basis
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Basis) As Boolean
+  overload: Godot.Basis.Equals*
+  implements:
+  - System.IEquatable{Godot.Basis}.Equals(Godot.Basis)
+- uid: Godot.Basis.IsEqualApprox(Godot.Basis)
+  commentId: M:Godot.Basis.IsEqualApprox(Godot.Basis)
+  id: IsEqualApprox(Godot.Basis)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: IsEqualApprox(Basis)
+  nameWithType: Basis.IsEqualApprox(Basis)
+  fullName: Godot.Basis.IsEqualApprox(Godot.Basis)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool IsEqualApprox(Basis other)
+    parameters:
+    - id: other
+      type: Godot.Basis
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsEqualApprox(other As Basis) As Boolean
+  overload: Godot.Basis.IsEqualApprox*
+- uid: Godot.Basis.GetHashCode
+  commentId: M:Godot.Basis.GetHashCode
+  id: GetHashCode
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Basis.GetHashCode()
+  fullName: Godot.Basis.GetHashCode()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Godot.Basis.GetHashCode*
+- uid: Godot.Basis.ToString
+  commentId: M:Godot.Basis.ToString
+  id: ToString
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Basis.ToString()
+  fullName: Godot.Basis.ToString()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Godot.Basis.ToString*
+- uid: Godot.Basis.ToString(System.String)
+  commentId: M:Godot.Basis.ToString(System.String)
+  id: ToString(System.String)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: ToString(string?)
+  nameWithType: Basis.ToString(string?)
+  fullName: Godot.Basis.ToString(string?)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly string ToString(string? format)
+    parameters:
+    - id: format
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function ToString(format As String) As String
+  overload: Godot.Basis.ToString*
+  nameWithType.vb: Basis.ToString(String)
+  fullName.vb: Godot.Basis.ToString(String)
+  name.vb: ToString(String)
+- uid: Godot.Basis.X
+  commentId: P:Godot.Basis.X
+  id: X
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: Basis.X
+  fullName: Godot.Basis.X
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 X { readonly get; set; }
+    parameters: []
+    return:
+      type: Godot.Vector3
+    content.vb: Public Property X As Vector3
+  overload: Godot.Basis.X*
+- uid: Godot.Basis.Y
+  commentId: P:Godot.Basis.Y
+  id: Y
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: Basis.Y
+  fullName: Godot.Basis.Y
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 Y { readonly get; set; }
+    parameters: []
+    return:
+      type: Godot.Vector3
+    content.vb: Public Property Y As Vector3
+  overload: Godot.Basis.Y*
+- uid: Godot.Basis.Z
+  commentId: P:Godot.Basis.Z
+  id: Z
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Z
+  nameWithType: Basis.Z
+  fullName: Godot.Basis.Z
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 Z { readonly get; set; }
+    parameters: []
+    return:
+      type: Godot.Vector3
+    content.vb: Public Property Z As Vector3
+  overload: Godot.Basis.Z*
+- uid: Godot.Basis.Column0
+  commentId: P:Godot.Basis.Column0
+  id: Column0
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Column0
+  nameWithType: Basis.Column0
+  fullName: Godot.Basis.Column0
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 Column0 { readonly get; set; }
+    parameters: []
+    return:
+      type: Godot.Vector3
+    content.vb: Public Property Column0 As Vector3
+  overload: Godot.Basis.Column0*
+- uid: Godot.Basis.Column1
+  commentId: P:Godot.Basis.Column1
+  id: Column1
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Column1
+  nameWithType: Basis.Column1
+  fullName: Godot.Basis.Column1
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 Column1 { readonly get; set; }
+    parameters: []
+    return:
+      type: Godot.Vector3
+    content.vb: Public Property Column1 As Vector3
+  overload: Godot.Basis.Column1*
+- uid: Godot.Basis.Column2
+  commentId: P:Godot.Basis.Column2
+  id: Column2
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Column2
+  nameWithType: Basis.Column2
+  fullName: Godot.Basis.Column2
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 Column2 { readonly get; set; }
+    parameters: []
+    return:
+      type: Godot.Vector3
+    content.vb: Public Property Column2 As Vector3
+  overload: Godot.Basis.Column2*
+- uid: Godot.Basis.Scale
+  commentId: P:Godot.Basis.Scale
+  id: Scale
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Scale
+  nameWithType: Basis.Scale
+  fullName: Godot.Basis.Scale
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3 Scale { get; }
+    parameters: []
+    return:
+      type: Godot.Vector3
+    content.vb: Public ReadOnly Property Scale As Vector3
+  overload: Godot.Basis.Scale*
+- uid: Godot.Basis.Item(System.Int32)
+  commentId: P:Godot.Basis.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: Basis.this[int]
+  fullName: Godot.Basis.this[int]
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 this[int column] { readonly get; set; }
+    parameters:
+    - id: column
+      type: System.Int32
+    return:
+      type: Godot.Vector3
+    content.vb: Public Default Property this[](column As Integer) As Vector3
+  overload: Godot.Basis.Item*
+  nameWithType.vb: Basis.this[](Integer)
+  fullName.vb: Godot.Basis.this[](Integer)
+  name.vb: this[](Integer)
+- uid: Godot.Basis.Item(System.Int32,System.Int32)
+  commentId: P:Godot.Basis.Item(System.Int32,System.Int32)
+  id: Item(System.Int32,System.Int32)
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: this[int, int]
+  nameWithType: Basis.this[int, int]
+  fullName: Godot.Basis.this[int, int]
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public float this[int column, int row] { readonly get; set; }
+    parameters:
+    - id: column
+      type: System.Int32
+    - id: row
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Default Property this[](column As Integer, row As Integer) As Single
+  overload: Godot.Basis.Item*
+  nameWithType.vb: Basis.this[](Integer, Integer)
+  fullName.vb: Godot.Basis.this[](Integer, Integer)
+  name.vb: this[](Integer, Integer)
+- uid: Godot.Basis.Identity
+  commentId: P:Godot.Basis.Identity
+  id: Identity
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: Identity
+  nameWithType: Basis.Identity
+  fullName: Godot.Basis.Identity
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Basis Identity { get; }
+    parameters: []
+    return:
+      type: Godot.Basis
+    content.vb: Public Shared ReadOnly Property Identity As Basis
+  overload: Godot.Basis.Identity*
+- uid: Godot.Basis.FlipX
+  commentId: P:Godot.Basis.FlipX
+  id: FlipX
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: FlipX
+  nameWithType: Basis.FlipX
+  fullName: Godot.Basis.FlipX
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Basis FlipX { get; }
+    parameters: []
+    return:
+      type: Godot.Basis
+    content.vb: Public Shared ReadOnly Property FlipX As Basis
+  overload: Godot.Basis.FlipX*
+- uid: Godot.Basis.FlipY
+  commentId: P:Godot.Basis.FlipY
+  id: FlipY
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: FlipY
+  nameWithType: Basis.FlipY
+  fullName: Godot.Basis.FlipY
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Basis FlipY { get; }
+    parameters: []
+    return:
+      type: Godot.Basis
+    content.vb: Public Shared ReadOnly Property FlipY As Basis
+  overload: Godot.Basis.FlipY*
+- uid: Godot.Basis.FlipZ
+  commentId: P:Godot.Basis.FlipZ
+  id: FlipZ
+  parent: Godot.Basis
+  langs:
+  - csharp
+  - vb
+  name: FlipZ
+  nameWithType: Basis.FlipZ
+  fullName: Godot.Basis.FlipZ
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Basis FlipZ { get; }
+    parameters: []
+    return:
+      type: Godot.Basis
+    content.vb: Public Shared ReadOnly Property FlipZ As Basis
+  overload: Godot.Basis.FlipZ*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.IEquatable{Godot.Basis}
+  commentId: T:System.IEquatable{Godot.Basis}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Basis>
+  nameWithType: IEquatable<Basis>
+  fullName: System.IEquatable<Godot.Basis>
+  nameWithType.vb: IEquatable(Of Basis)
+  fullName.vb: System.IEquatable(Of Godot.Basis)
+  name.vb: IEquatable(Of Basis)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Godot.Basis
+    name: Basis
+    isExternal: true
+    href: Godot.Basis.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Basis
+    name: Basis
+    isExternal: true
+    href: Godot.Basis.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Godot.Vector3
+  commentId: T:Godot.Vector3
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector3.html
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Godot.Vector3
+- uid: Godot.Basis.Determinant*
+  commentId: Overload:Godot.Basis.Determinant
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Determinant
+  name: Determinant
+  nameWithType: Basis.Determinant
+  fullName: Godot.Basis.Determinant
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Godot.Basis.GetEuler*
+  commentId: Overload:Godot.Basis.GetEuler
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_GetEuler_Godot_EulerOrder_
+  name: GetEuler
+  nameWithType: Basis.GetEuler
+  fullName: Godot.Basis.GetEuler
+- uid: Godot.EulerOrder
+  commentId: T:Godot.EulerOrder
+  parent: Godot
+  isExternal: true
+  href: Godot.EulerOrder.html
+  name: EulerOrder
+  nameWithType: EulerOrder
+  fullName: Godot.EulerOrder
+- uid: Godot.Basis.GetRotationQuaternion*
+  commentId: Overload:Godot.Basis.GetRotationQuaternion
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_GetRotationQuaternion
+  name: GetRotationQuaternion
+  nameWithType: Basis.GetRotationQuaternion
+  fullName: Godot.Basis.GetRotationQuaternion
+- uid: Godot.Quaternion
+  commentId: T:Godot.Quaternion
+  parent: Godot
+  isExternal: true
+  href: Godot.Quaternion.html
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: Godot.Quaternion
+- uid: Godot.Basis.Inverse*
+  commentId: Overload:Godot.Basis.Inverse
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Inverse
+  name: Inverse
+  nameWithType: Basis.Inverse
+  fullName: Godot.Basis.Inverse
+- uid: Godot.Basis
+  commentId: T:Godot.Basis
+  parent: Godot
+  isExternal: true
+  href: Godot.Basis.html
+  name: Basis
+  nameWithType: Basis
+  fullName: Godot.Basis
+- uid: Godot.Basis.IsFinite*
+  commentId: Overload:Godot.Basis.IsFinite
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_IsFinite
+  name: IsFinite
+  nameWithType: Basis.IsFinite
+  fullName: Godot.Basis.IsFinite
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.Basis.LookingAt*
+  commentId: Overload:Godot.Basis.LookingAt
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_LookingAt_Godot_Vector3_System_Nullable_Godot_Vector3__System_Boolean_
+  name: LookingAt
+  nameWithType: Basis.LookingAt
+  fullName: Godot.Basis.LookingAt
+- uid: System.Nullable{Godot.Vector3}
+  commentId: T:System.Nullable{Godot.Vector3}
+  parent: System
+  definition: System.Nullable`1
+  href: Godot.Vector3.html
+  name: Vector3?
+  nameWithType: Vector3?
+  fullName: Godot.Vector3?
+  spec.csharp:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: '?'
+  spec.vb:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.Basis.Orthonormalized*
+  commentId: Overload:Godot.Basis.Orthonormalized
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Orthonormalized
+  name: Orthonormalized
+  nameWithType: Basis.Orthonormalized
+  fullName: Godot.Basis.Orthonormalized
+- uid: Godot.Basis.Rotated*
+  commentId: Overload:Godot.Basis.Rotated
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Rotated_Godot_Vector3_System_Single_
+  name: Rotated
+  nameWithType: Basis.Rotated
+  fullName: Godot.Basis.Rotated
+- uid: Godot.Basis.Scaled*
+  commentId: Overload:Godot.Basis.Scaled
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Scaled_Godot_Vector3_
+  name: Scaled
+  nameWithType: Basis.Scaled
+  fullName: Godot.Basis.Scaled
+- uid: Godot.Basis.ScaledLocal*
+  commentId: Overload:Godot.Basis.ScaledLocal
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_ScaledLocal_Godot_Vector3_
+  name: ScaledLocal
+  nameWithType: Basis.ScaledLocal
+  fullName: Godot.Basis.ScaledLocal
+- uid: Godot.Basis.Slerp*
+  commentId: Overload:Godot.Basis.Slerp
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Slerp_Godot_Basis_System_Single_
+  name: Slerp
+  nameWithType: Basis.Slerp
+  fullName: Godot.Basis.Slerp
+- uid: Godot.Basis.Tdotx*
+  commentId: Overload:Godot.Basis.Tdotx
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Tdotx_Godot_Vector3_
+  name: Tdotx
+  nameWithType: Basis.Tdotx
+  fullName: Godot.Basis.Tdotx
+- uid: Godot.Basis.Tdoty*
+  commentId: Overload:Godot.Basis.Tdoty
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Tdoty_Godot_Vector3_
+  name: Tdoty
+  nameWithType: Basis.Tdoty
+  fullName: Godot.Basis.Tdoty
+- uid: Godot.Basis.Tdotz*
+  commentId: Overload:Godot.Basis.Tdotz
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Tdotz_Godot_Vector3_
+  name: Tdotz
+  nameWithType: Basis.Tdotz
+  fullName: Godot.Basis.Tdotz
+- uid: Godot.Basis.Transposed*
+  commentId: Overload:Godot.Basis.Transposed
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Transposed
+  name: Transposed
+  nameWithType: Basis.Transposed
+  fullName: Godot.Basis.Transposed
+- uid: Godot.Basis.#ctor*
+  commentId: Overload:Godot.Basis.#ctor
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis__ctor_Godot_Quaternion_
+  name: Basis
+  nameWithType: Basis.Basis
+  fullName: Godot.Basis.Basis
+  nameWithType.vb: Basis.New
+  fullName.vb: Godot.Basis.New
+  name.vb: New
+- uid: Godot.Basis.FromEuler*
+  commentId: Overload:Godot.Basis.FromEuler
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_FromEuler_Godot_Vector3_Godot_EulerOrder_
+  name: FromEuler
+  nameWithType: Basis.FromEuler
+  fullName: Godot.Basis.FromEuler
+- uid: Godot.Basis.FromScale*
+  commentId: Overload:Godot.Basis.FromScale
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_FromScale_Godot_Vector3_
+  name: FromScale
+  nameWithType: Basis.FromScale
+  fullName: Godot.Basis.FromScale
+- uid: Godot.Basis.op_Multiply*
+  commentId: Overload:Godot.Basis.op_Multiply
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_op_Multiply_Godot_Basis_Godot_Basis_
+  name: operator *
+  nameWithType: Basis.operator *
+  fullName: Godot.Basis.operator *
+  nameWithType.vb: Basis.*
+  fullName.vb: Godot.Basis.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Basis.op_Multiply*
+    name: '*'
+    isExternal: true
+    href: Godot.Basis.html#Godot_Basis_op_Multiply_Godot_Basis_Godot_Basis_
+- uid: Godot.Basis.op_Equality*
+  commentId: Overload:Godot.Basis.op_Equality
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_op_Equality_Godot_Basis_Godot_Basis_
+  name: operator ==
+  nameWithType: Basis.operator ==
+  fullName: Godot.Basis.operator ==
+  nameWithType.vb: Basis.=
+  fullName.vb: Godot.Basis.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Basis.op_Equality*
+    name: ==
+    isExternal: true
+    href: Godot.Basis.html#Godot_Basis_op_Equality_Godot_Basis_Godot_Basis_
+- uid: Godot.Basis.op_Inequality*
+  commentId: Overload:Godot.Basis.op_Inequality
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_op_Inequality_Godot_Basis_Godot_Basis_
+  name: operator !=
+  nameWithType: Basis.operator !=
+  fullName: Godot.Basis.operator !=
+  nameWithType.vb: Basis.<>
+  fullName.vb: Godot.Basis.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Basis.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: Godot.Basis.html#Godot_Basis_op_Inequality_Godot_Basis_Godot_Basis_
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Godot.Basis.Equals*
+  commentId: Overload:Godot.Basis.Equals
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Equals_System_Object_
+  name: Equals
+  nameWithType: Basis.Equals
+  fullName: Godot.Basis.Equals
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.IEquatable{Godot.Basis}.Equals(Godot.Basis)
+  commentId: M:System.IEquatable{Godot.Basis}.Equals(Godot.Basis)
+  parent: System.IEquatable{Godot.Basis}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Basis)
+  nameWithType: IEquatable<Basis>.Equals(Basis)
+  fullName: System.IEquatable<Godot.Basis>.Equals(Godot.Basis)
+  nameWithType.vb: IEquatable(Of Basis).Equals(Basis)
+  fullName.vb: System.IEquatable(Of Godot.Basis).Equals(Godot.Basis)
+  spec.csharp:
+  - uid: System.IEquatable{Godot.Basis}.Equals(Godot.Basis)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.Basis
+    name: Basis
+    isExternal: true
+    href: Godot.Basis.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Godot.Basis}.Equals(Godot.Basis)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.Basis
+    name: Basis
+    isExternal: true
+    href: Godot.Basis.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Godot.Basis.IsEqualApprox*
+  commentId: Overload:Godot.Basis.IsEqualApprox
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_IsEqualApprox_Godot_Basis_
+  name: IsEqualApprox
+  nameWithType: Basis.IsEqualApprox
+  fullName: Godot.Basis.IsEqualApprox
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Godot.Basis.GetHashCode*
+  commentId: Overload:Godot.Basis.GetHashCode
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_GetHashCode
+  name: GetHashCode
+  nameWithType: Basis.GetHashCode
+  fullName: Godot.Basis.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Godot.Basis.ToString*
+  commentId: Overload:Godot.Basis.ToString
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_ToString
+  name: ToString
+  nameWithType: Basis.ToString
+  fullName: Godot.Basis.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.Basis.X*
+  commentId: Overload:Godot.Basis.X
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_X
+  name: X
+  nameWithType: Basis.X
+  fullName: Godot.Basis.X
+- uid: Godot.Basis.Y*
+  commentId: Overload:Godot.Basis.Y
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Y
+  name: Y
+  nameWithType: Basis.Y
+  fullName: Godot.Basis.Y
+- uid: Godot.Basis.Z*
+  commentId: Overload:Godot.Basis.Z
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Z
+  name: Z
+  nameWithType: Basis.Z
+  fullName: Godot.Basis.Z
+- uid: Godot.Basis.Column0*
+  commentId: Overload:Godot.Basis.Column0
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Column0
+  name: Column0
+  nameWithType: Basis.Column0
+  fullName: Godot.Basis.Column0
+- uid: Godot.Basis.Column1*
+  commentId: Overload:Godot.Basis.Column1
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Column1
+  name: Column1
+  nameWithType: Basis.Column1
+  fullName: Godot.Basis.Column1
+- uid: Godot.Basis.Column2*
+  commentId: Overload:Godot.Basis.Column2
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Column2
+  name: Column2
+  nameWithType: Basis.Column2
+  fullName: Godot.Basis.Column2
+- uid: Godot.Basis.Scale*
+  commentId: Overload:Godot.Basis.Scale
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Scale
+  name: Scale
+  nameWithType: Basis.Scale
+  fullName: Godot.Basis.Scale
+- uid: Godot.Basis.Item*
+  commentId: Overload:Godot.Basis.Item
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Item_System_Int32_
+  name: this
+  nameWithType: Basis.this
+  fullName: Godot.Basis.this
+  nameWithType.vb: Basis.this[]
+  fullName.vb: Godot.Basis.this[]
+  name.vb: this[]
+- uid: Godot.Basis.Identity*
+  commentId: Overload:Godot.Basis.Identity
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_Identity
+  name: Identity
+  nameWithType: Basis.Identity
+  fullName: Godot.Basis.Identity
+- uid: Godot.Basis.FlipX*
+  commentId: Overload:Godot.Basis.FlipX
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_FlipX
+  name: FlipX
+  nameWithType: Basis.FlipX
+  fullName: Godot.Basis.FlipX
+- uid: Godot.Basis.FlipY*
+  commentId: Overload:Godot.Basis.FlipY
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_FlipY
+  name: FlipY
+  nameWithType: Basis.FlipY
+  fullName: Godot.Basis.FlipY
+- uid: Godot.Basis.FlipZ*
+  commentId: Overload:Godot.Basis.FlipZ
+  isExternal: true
+  href: Godot.Basis.html#Godot_Basis_FlipZ
+  name: FlipZ
+  nameWithType: Basis.FlipZ
+  fullName: Godot.Basis.FlipZ

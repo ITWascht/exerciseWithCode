@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class XRServer | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class XRServer | mysite ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Godot.XRServer">
+
+
+
+  <h1 id="Godot_XRServer" data-uid="Godot.XRServer" class="text-break">
+Class XRServer  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Godot.html">Godot</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GodotSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class XRServer</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">XRServer</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Godot_XRServer_CameraLockedToOrigin_" data-uid="Godot.XRServer.CameraLockedToOrigin*"></a>
+
+  <h3 id="Godot_XRServer_CameraLockedToOrigin" data-uid="Godot.XRServer.CameraLockedToOrigin">
+  CameraLockedToOrigin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CameraLockedToOrigin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_PrimaryInterface_" data-uid="Godot.XRServer.PrimaryInterface*"></a>
+
+  <h3 id="Godot_XRServer_PrimaryInterface" data-uid="Godot.XRServer.PrimaryInterface">
+  PrimaryInterface
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XRInterface PrimaryInterface { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.XRInterface.html">XRInterface</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_Singleton_" data-uid="Godot.XRServer.Singleton*"></a>
+
+  <h3 id="Godot_XRServer_Singleton" data-uid="Godot.XRServer.Singleton">
+  Singleton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XRServerInstance Singleton { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.XRServerInstance.html">XRServerInstance</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_WorldOrigin_" data-uid="Godot.XRServer.WorldOrigin*"></a>
+
+  <h3 id="Godot_XRServer_WorldOrigin" data-uid="Godot.XRServer.WorldOrigin">
+  WorldOrigin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform3D WorldOrigin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_WorldScale_" data-uid="Godot.XRServer.WorldScale*"></a>
+
+  <h3 id="Godot_XRServer_WorldScale" data-uid="Godot.XRServer.WorldScale">
+  WorldScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double WorldScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">double</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Godot_XRServer_AddInterface_" data-uid="Godot.XRServer.AddInterface*"></a>
+
+  <h3 id="Godot_XRServer_AddInterface_Godot_XRInterface_" data-uid="Godot.XRServer.AddInterface(Godot.XRInterface)">
+  AddInterface(XRInterface)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddInterface(XRInterface @interface)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>interface</code> <a class="xref" href="Godot.XRInterface.html">XRInterface</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_AddTracker_" data-uid="Godot.XRServer.AddTracker*"></a>
+
+  <h3 id="Godot_XRServer_AddTracker_Godot_XRTracker_" data-uid="Godot.XRServer.AddTracker(Godot.XRTracker)">
+  AddTracker(XRTracker)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddTracker(XRTracker tracker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tracker</code> <a class="xref" href="Godot.XRTracker.html">XRTracker</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_CenterOnHmd_" data-uid="Godot.XRServer.CenterOnHmd*"></a>
+
+  <h3 id="Godot_XRServer_CenterOnHmd_Godot_XRServer_RotationMode_System_Boolean_" data-uid="Godot.XRServer.CenterOnHmd(Godot.XRServer.RotationMode,System.Boolean)">
+  CenterOnHmd(RotationMode, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CenterOnHmd(XRServer.RotationMode rotationMode, bool keepHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rotationMode</code> <a class="xref" href="Godot.XRServer.html">XRServer</a>.<a class="xref" href="Godot.XRServer.RotationMode.html">RotationMode</a></dt>
+    <dd></dd>
+    <dt><code>keepHeight</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_ClearReferenceFrame_" data-uid="Godot.XRServer.ClearReferenceFrame*"></a>
+
+  <h3 id="Godot_XRServer_ClearReferenceFrame" data-uid="Godot.XRServer.ClearReferenceFrame">
+  ClearReferenceFrame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearReferenceFrame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_FindInterface_" data-uid="Godot.XRServer.FindInterface*"></a>
+
+  <h3 id="Godot_XRServer_FindInterface_System_String_" data-uid="Godot.XRServer.FindInterface(System.String)">
+  FindInterface(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XRInterface FindInterface(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.XRInterface.html">XRInterface</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_GetHmdTransform_" data-uid="Godot.XRServer.GetHmdTransform*"></a>
+
+  <h3 id="Godot_XRServer_GetHmdTransform" data-uid="Godot.XRServer.GetHmdTransform">
+  GetHmdTransform()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform3D GetHmdTransform()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_GetInterface_" data-uid="Godot.XRServer.GetInterface*"></a>
+
+  <h3 id="Godot_XRServer_GetInterface_System_Int32_" data-uid="Godot.XRServer.GetInterface(System.Int32)">
+  GetInterface(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XRInterface GetInterface(int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idx</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.XRInterface.html">XRInterface</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_GetInterfaceCount_" data-uid="Godot.XRServer.GetInterfaceCount*"></a>
+
+  <h3 id="Godot_XRServer_GetInterfaceCount" data-uid="Godot.XRServer.GetInterfaceCount">
+  GetInterfaceCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetInterfaceCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_GetInterfaces_" data-uid="Godot.XRServer.GetInterfaces*"></a>
+
+  <h3 id="Godot_XRServer_GetInterfaces" data-uid="Godot.XRServer.GetInterfaces">
+  GetInterfaces()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Array&lt;Dictionary&gt; GetInterfaces()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_GetReferenceFrame_" data-uid="Godot.XRServer.GetReferenceFrame*"></a>
+
+  <h3 id="Godot_XRServer_GetReferenceFrame" data-uid="Godot.XRServer.GetReferenceFrame">
+  GetReferenceFrame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform3D GetReferenceFrame()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_GetTracker_" data-uid="Godot.XRServer.GetTracker*"></a>
+
+  <h3 id="Godot_XRServer_GetTracker_Godot_StringName_" data-uid="Godot.XRServer.GetTracker(Godot.StringName)">
+  GetTracker(StringName)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XRTracker GetTracker(StringName trackerName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>trackerName</code> <a class="xref" href="Godot.StringName.html">StringName</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.XRTracker.html">XRTracker</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_GetTrackers_" data-uid="Godot.XRServer.GetTrackers*"></a>
+
+  <h3 id="Godot_XRServer_GetTrackers_System_Int32_" data-uid="Godot.XRServer.GetTrackers(System.Int32)">
+  GetTrackers(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary GetTrackers(int trackerTypes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>trackerTypes</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_RemoveInterface_" data-uid="Godot.XRServer.RemoveInterface*"></a>
+
+  <h3 id="Godot_XRServer_RemoveInterface_Godot_XRInterface_" data-uid="Godot.XRServer.RemoveInterface(Godot.XRInterface)">
+  RemoveInterface(XRInterface)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveInterface(XRInterface @interface)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>interface</code> <a class="xref" href="Godot.XRInterface.html">XRInterface</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_XRServer_RemoveTracker_" data-uid="Godot.XRServer.RemoveTracker*"></a>
+
+  <h3 id="Godot_XRServer_RemoveTracker_Godot_XRTracker_" data-uid="Godot.XRServer.RemoveTracker(Godot.XRTracker)">
+  RemoveTracker(XRTracker)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveTracker(XRTracker tracker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tracker</code> <a class="xref" href="Godot.XRTracker.html">XRTracker</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Godot_XRServer_InterfaceAdded" data-uid="Godot.XRServer.InterfaceAdded">
+  InterfaceAdded
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event XRServer.InterfaceAddedEventHandler InterfaceAdded</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.XRServer.html">XRServer</a>.<a class="xref" href="Godot.XRServer.InterfaceAddedEventHandler.html">InterfaceAddedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Godot_XRServer_InterfaceRemoved" data-uid="Godot.XRServer.InterfaceRemoved">
+  InterfaceRemoved
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event XRServer.InterfaceRemovedEventHandler InterfaceRemoved</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.XRServer.html">XRServer</a>.<a class="xref" href="Godot.XRServer.InterfaceRemovedEventHandler.html">InterfaceRemovedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Godot_XRServer_ReferenceFrameChanged" data-uid="Godot.XRServer.ReferenceFrameChanged">
+  ReferenceFrameChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event Action ReferenceFrameChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Godot_XRServer_TrackerAdded" data-uid="Godot.XRServer.TrackerAdded">
+  TrackerAdded
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event XRServer.TrackerAddedEventHandler TrackerAdded</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.XRServer.html">XRServer</a>.<a class="xref" href="Godot.XRServer.TrackerAddedEventHandler.html">TrackerAddedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Godot_XRServer_TrackerRemoved" data-uid="Godot.XRServer.TrackerRemoved">
+  TrackerRemoved
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event XRServer.TrackerRemovedEventHandler TrackerRemoved</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.XRServer.html">XRServer</a>.<a class="xref" href="Godot.XRServer.TrackerRemovedEventHandler.html">TrackerRemovedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Godot_XRServer_TrackerUpdated" data-uid="Godot.XRServer.TrackerUpdated">
+  TrackerUpdated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event XRServer.TrackerUpdatedEventHandler TrackerUpdated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.XRServer.html">XRServer</a>.<a class="xref" href="Godot.XRServer.TrackerUpdatedEventHandler.html">TrackerUpdatedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,383 @@
+### YamlMime:ManagedReference
+items:
+- uid: SzeneGenerator.HeightMapCreator
+  commentId: T:SzeneGenerator.HeightMapCreator
+  id: HeightMapCreator
+  parent: SzeneGenerator
+  children:
+  - SzeneGenerator.HeightMapCreator.#ctor(System.Int32,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single,Godot.Vector3,System.Single,SzeneGenerator.TerrainRules,System.Collections.Generic.Dictionary{System.String,System.Int32},System.Int32[0:,0:])
+  - SzeneGenerator.HeightMapCreator.ApplyBiomeTexturing(Godot.GodotObject,System.Single[0:,0:],System.Int32[0:,0:],System.Single[0:,0:])
+  - SzeneGenerator.HeightMapCreator.GenerateAndApplyHeightMap(Godot.GodotObject)
+  langs:
+  - csharp
+  - vb
+  name: HeightMapCreator
+  nameWithType: HeightMapCreator
+  fullName: SzeneGenerator.HeightMapCreator
+  type: Class
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/HeightMapCreator.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  summary: >-
+    Creates procedural heightmaps and control maps for Terrain3D,
+
+    applying noise, terrain rules, biome blending, and slope-based layer selection.
+  example: []
+  syntax:
+    content: public class HeightMapCreator
+    content.vb: Public Class HeightMapCreator
+  inheritance:
+  - System.Object
+- uid: SzeneGenerator.HeightMapCreator.#ctor(System.Int32,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single,Godot.Vector3,System.Single,SzeneGenerator.TerrainRules,System.Collections.Generic.Dictionary{System.String,System.Int32},System.Int32[0:,0:])
+  commentId: M:SzeneGenerator.HeightMapCreator.#ctor(System.Int32,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single,Godot.Vector3,System.Single,SzeneGenerator.TerrainRules,System.Collections.Generic.Dictionary{System.String,System.Int32},System.Int32[0:,0:])
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single,Godot.Vector3,System.Single,SzeneGenerator.TerrainRules,System.Collections.Generic.Dictionary{System.String,System.Int32},System.Int32[0:,0:])'
+  parent: SzeneGenerator.HeightMapCreator
+  langs:
+  - csharp
+  - vb
+  name: HeightMapCreator(int, int, int, float, float, float, float, Vector3, float, TerrainRules, Dictionary<string, int>, int[,])
+  nameWithType: HeightMapCreator.HeightMapCreator(int, int, int, float, float, float, float, Vector3, float, TerrainRules, Dictionary<string, int>, int[,])
+  fullName: SzeneGenerator.HeightMapCreator.HeightMapCreator(int, int, int, float, float, float, float, Godot.Vector3, float, SzeneGenerator.TerrainRules, System.Collections.Generic.Dictionary<string, int>, int[,])
+  type: Constructor
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/HeightMapCreator.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public HeightMapCreator(int width, int depth, int seed, float noiseScale, float heightFactor, float offset, float scale, Vector3 worldPos, float metersPerPixel, TerrainRules terrainRules, Dictionary<string, int> layerToSlot, int[,] biome = null)
+    parameters:
+    - id: width
+      type: System.Int32
+    - id: depth
+      type: System.Int32
+    - id: seed
+      type: System.Int32
+    - id: noiseScale
+      type: System.Single
+    - id: heightFactor
+      type: System.Single
+    - id: offset
+      type: System.Single
+    - id: scale
+      type: System.Single
+    - id: worldPos
+      type: Godot.Vector3
+    - id: metersPerPixel
+      type: System.Single
+    - id: terrainRules
+      type: SzeneGenerator.TerrainRules
+    - id: layerToSlot
+      type: System.Collections.Generic.Dictionary{System.String,System.Int32}
+    - id: biome
+      type: System.Int32[,]
+    content.vb: Public Sub New(width As Integer, depth As Integer, seed As Integer, noiseScale As Single, heightFactor As Single, offset As Single, scale As Single, worldPos As Vector3, metersPerPixel As Single, terrainRules As TerrainRules, layerToSlot As Dictionary(Of String, Integer), biome As Integer(,) = Nothing)
+  overload: SzeneGenerator.HeightMapCreator.#ctor*
+  nameWithType.vb: HeightMapCreator.New(Integer, Integer, Integer, Single, Single, Single, Single, Vector3, Single, TerrainRules, Dictionary(Of String, Integer), Integer(,))
+  fullName.vb: SzeneGenerator.HeightMapCreator.New(Integer, Integer, Integer, Single, Single, Single, Single, Godot.Vector3, Single, SzeneGenerator.TerrainRules, System.Collections.Generic.Dictionary(Of String, Integer), Integer(,))
+  name.vb: New(Integer, Integer, Integer, Single, Single, Single, Single, Vector3, Single, TerrainRules, Dictionary(Of String, Integer), Integer(,))
+- uid: SzeneGenerator.HeightMapCreator.GenerateAndApplyHeightMap(Godot.GodotObject)
+  commentId: M:SzeneGenerator.HeightMapCreator.GenerateAndApplyHeightMap(Godot.GodotObject)
+  id: GenerateAndApplyHeightMap(Godot.GodotObject)
+  parent: SzeneGenerator.HeightMapCreator
+  langs:
+  - csharp
+  - vb
+  name: GenerateAndApplyHeightMap(GodotObject)
+  nameWithType: HeightMapCreator.GenerateAndApplyHeightMap(GodotObject)
+  fullName: SzeneGenerator.HeightMapCreator.GenerateAndApplyHeightMap(Godot.GodotObject)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/HeightMapCreator.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  summary: >-
+    Generates the heightmap image, applies it to Terrain3D data,
+
+    and returns normalized height values for further processing.
+  example: []
+  syntax:
+    content: public float[,] GenerateAndApplyHeightMap(GodotObject terrainData)
+    parameters:
+    - id: terrainData
+      type: Godot.GodotObject
+    return:
+      type: System.Single[,]
+    content.vb: Public Function GenerateAndApplyHeightMap(terrainData As GodotObject) As Single(,)
+  overload: SzeneGenerator.HeightMapCreator.GenerateAndApplyHeightMap*
+- uid: SzeneGenerator.HeightMapCreator.ApplyBiomeTexturing(Godot.GodotObject,System.Single[0:,0:],System.Int32[0:,0:],System.Single[0:,0:])
+  commentId: M:SzeneGenerator.HeightMapCreator.ApplyBiomeTexturing(Godot.GodotObject,System.Single[0:,0:],System.Int32[0:,0:],System.Single[0:,0:])
+  id: ApplyBiomeTexturing(Godot.GodotObject,System.Single[0:,0:],System.Int32[0:,0:],System.Single[0:,0:])
+  parent: SzeneGenerator.HeightMapCreator
+  langs:
+  - csharp
+  - vb
+  name: ApplyBiomeTexturing(GodotObject, float[,], int[,], float[,])
+  nameWithType: HeightMapCreator.ApplyBiomeTexturing(GodotObject, float[,], int[,], float[,])
+  fullName: SzeneGenerator.HeightMapCreator.ApplyBiomeTexturing(Godot.GodotObject, float[,], int[,], float[,])
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/HeightMapCreator.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public void ApplyBiomeTexturing(GodotObject terrainData, float[,] heights01, int[,] biome, float[,] edgeDist)
+    parameters:
+    - id: terrainData
+      type: Godot.GodotObject
+    - id: heights01
+      type: System.Single[,]
+    - id: biome
+      type: System.Int32[,]
+    - id: edgeDist
+      type: System.Single[,]
+    content.vb: Public Sub ApplyBiomeTexturing(terrainData As GodotObject, heights01 As Single(,), biome As Integer(,), edgeDist As Single(,))
+  overload: SzeneGenerator.HeightMapCreator.ApplyBiomeTexturing*
+  nameWithType.vb: HeightMapCreator.ApplyBiomeTexturing(GodotObject, Single(,), Integer(,), Single(,))
+  fullName.vb: SzeneGenerator.HeightMapCreator.ApplyBiomeTexturing(Godot.GodotObject, Single(,), Integer(,), Single(,))
+  name.vb: ApplyBiomeTexturing(GodotObject, Single(,), Integer(,), Single(,))
+references:
+- uid: SzeneGenerator
+  commentId: N:SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.html
+  name: SzeneGenerator
+  nameWithType: SzeneGenerator
+  fullName: SzeneGenerator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SzeneGenerator.HeightMapCreator.#ctor*
+  commentId: Overload:SzeneGenerator.HeightMapCreator.#ctor
+  isExternal: true
+  href: SzeneGenerator.HeightMapCreator.html#SzeneGenerator_HeightMapCreator__ctor_System_Int32_System_Int32_System_Int32_System_Single_System_Single_System_Single_System_Single_Godot_Vector3_System_Single_SzeneGenerator_TerrainRules_System_Collections_Generic_Dictionary_System_String_System_Int32__System_Int32_0
+  name: HeightMapCreator
+  nameWithType: HeightMapCreator.HeightMapCreator
+  fullName: SzeneGenerator.HeightMapCreator.HeightMapCreator
+  nameWithType.vb: HeightMapCreator.New
+  fullName.vb: SzeneGenerator.HeightMapCreator.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Godot.Vector3
+  commentId: T:Godot.Vector3
+  parent: Godot
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Godot.Vector3
+- uid: SzeneGenerator.TerrainRules
+  commentId: T:SzeneGenerator.TerrainRules
+  parent: SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.TerrainRules.html
+  name: TerrainRules
+  nameWithType: TerrainRules
+  fullName: SzeneGenerator.TerrainRules
+- uid: System.Collections.Generic.Dictionary{System.String,System.Int32}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<string, int>
+  nameWithType: Dictionary<string, int>
+  fullName: System.Collections.Generic.Dictionary<string, int>
+  nameWithType.vb: Dictionary(Of String, Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Integer)
+  name.vb: Dictionary(Of String, Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: System.Int32[,]
+  isExternal: true
+  name: int[,]
+  nameWithType: int[,]
+  fullName: int[,]
+  nameWithType.vb: Integer(,)
+  fullName.vb: Integer(,)
+  name.vb: Integer(,)
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: (
+  - name: ','
+  - name: )
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: SzeneGenerator.HeightMapCreator.GenerateAndApplyHeightMap*
+  commentId: Overload:SzeneGenerator.HeightMapCreator.GenerateAndApplyHeightMap
+  isExternal: true
+  href: SzeneGenerator.HeightMapCreator.html#SzeneGenerator_HeightMapCreator_GenerateAndApplyHeightMap_Godot_GodotObject_
+  name: GenerateAndApplyHeightMap
+  nameWithType: HeightMapCreator.GenerateAndApplyHeightMap
+  fullName: SzeneGenerator.HeightMapCreator.GenerateAndApplyHeightMap
+- uid: Godot.GodotObject
+  commentId: T:Godot.GodotObject
+  parent: Godot
+  isExternal: true
+  name: GodotObject
+  nameWithType: GodotObject
+  fullName: Godot.GodotObject
+- uid: System.Single[,]
+  isExternal: true
+  name: float[,]
+  nameWithType: float[,]
+  fullName: float[,]
+  nameWithType.vb: Single(,)
+  fullName.vb: Single(,)
+  name.vb: Single(,)
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: (
+  - name: ','
+  - name: )
+- uid: SzeneGenerator.HeightMapCreator.ApplyBiomeTexturing*
+  commentId: Overload:SzeneGenerator.HeightMapCreator.ApplyBiomeTexturing
+  isExternal: true
+  href: SzeneGenerator.HeightMapCreator.html#SzeneGenerator_HeightMapCreator_ApplyBiomeTexturing_Godot_GodotObject_System_Single_0
+  name: ApplyBiomeTexturing
+  nameWithType: HeightMapCreator.ApplyBiomeTexturing
+  fullName: SzeneGenerator.HeightMapCreator.ApplyBiomeTexturing

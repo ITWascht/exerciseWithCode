@@ -1,0 +1,2196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class EditorExportPlugin | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EditorExportPlugin | mysite ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Godot.EditorExportPlugin">
+
+
+
+  <h1 id="Godot_EditorExportPlugin" data-uid="Godot.EditorExportPlugin" class="text-break">
+Class EditorExportPlugin  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Godot.html">Godot</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GodotSharpEditor.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EditorExportPlugin : RefCounted, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="Godot.GodotObject.html">GodotObject</a></div>
+      <div><a class="xref" href="Godot.RefCounted.html">RefCounted</a></div>
+      <div><span class="xref">EditorExportPlugin</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_InitRef">RefCounted.InitRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_Reference">RefCounted.Reference()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_Unreference">RefCounted.Unreference()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_GetReferenceCount">RefCounted.GetReferenceCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPostinitialize">GodotObject.NotificationPostinitialize</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPredelete">GodotObject.NotificationPredelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationExtensionReloaded">GodotObject.NotificationExtensionReloaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_">GodotObject.InstanceFromId(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_">GodotObject.IsInstanceIdValid(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_">GodotObject.IsInstanceValid(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_">GodotObject.WeakRef(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose">GodotObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_">GodotObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToString">GodotObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_">GodotObject.ToSignal(GodotObject, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_">GodotObject._Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__GetPropertyList">GodotObject._GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__IterGet_Godot_Variant_">GodotObject._IterGet(Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__IterInit_Godot_Collections_Array_">GodotObject._IterInit(Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__IterNext_Godot_Collections_Array_">GodotObject._IterNext(Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_">GodotObject._Notification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_">GodotObject._PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_">GodotObject._PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_">GodotObject._Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__ValidateProperty_Godot_Collections_Dictionary_">GodotObject._ValidateProperty(Dictionary)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Free">GodotObject.Free()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetClass">GodotObject.GetClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_">GodotObject.IsClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_">GodotObject.Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_">GodotObject.Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_">GodotObject.SetIndexed(NodePath, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_">GodotObject.GetIndexed(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetPropertyList">GodotObject.GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMethodList">GodotObject.GetMethodList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_">GodotObject.PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_">GodotObject.PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_">GodotObject.Notification(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetInstanceId">GodotObject.GetInstanceId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_">GodotObject.SetScript(Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetScript">GodotObject.GetScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_">GodotObject.SetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_">GodotObject.RemoveMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_">GodotObject.GetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_">GodotObject.HasMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMetaList">GodotObject.GetMetaList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_">GodotObject.AddUserSignal(string, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_">GodotObject.HasUserSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RemoveUserSignal_Godot_StringName_">GodotObject.RemoveUserSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___">GodotObject.EmitSignal(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_System_ReadOnlySpan_Godot_Variant__">GodotObject.EmitSignal(StringName, ReadOnlySpan&lt;Variant&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___">GodotObject.Call(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_System_ReadOnlySpan_Godot_Variant__">GodotObject.Call(StringName, ReadOnlySpan&lt;Variant&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___">GodotObject.CallDeferred(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_System_ReadOnlySpan_Godot_Variant__">GodotObject.CallDeferred(StringName, ReadOnlySpan&lt;Variant&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_">GodotObject.SetDeferred(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_">GodotObject.Callv(StringName, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_">GodotObject.HasMethod(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMethodArgumentCount_Godot_StringName_">GodotObject.GetMethodArgumentCount(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_">GodotObject.HasSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalList">GodotObject.GetSignalList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_">GodotObject.GetSignalConnectionList(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections">GodotObject.GetIncomingConnections()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_">GodotObject.Connect(StringName, Callable, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_">GodotObject.Disconnect(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_">GodotObject.IsConnected(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasConnections_Godot_StringName_">GodotObject.HasConnections(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_">GodotObject.SetBlockSignals(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals">GodotObject.IsBlockingSignals()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged">GodotObject.NotifyPropertyListChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_">GodotObject.SetMessageTranslation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages">GodotObject.CanTranslateMessages()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_">GodotObject.Tr(StringName, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_">GodotObject.TrN(StringName, StringName, int, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetTranslationDomain">GodotObject.GetTranslationDomain()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetTranslationDomain_Godot_StringName_">GodotObject.SetTranslationDomain(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion">GodotObject.IsQueuedForDeletion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CancelFree">GodotObject.CancelFree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignalScriptChanged">GodotObject.EmitSignalScriptChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignalPropertyListChanged">GodotObject.EmitSignalPropertyListChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NativeInstance">GodotObject.NativeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ScriptChanged">GodotObject.ScriptChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyListChanged">GodotObject.PropertyListChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Godot_EditorExportPlugin__ctor_" data-uid="Godot.EditorExportPlugin.#ctor*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__ctor" data-uid="Godot.EditorExportPlugin.#ctor">
+  EditorExportPlugin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditorExportPlugin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Godot_EditorExportPlugin_AddAppleEmbeddedPlatformBundleFile_" data-uid="Godot.EditorExportPlugin.AddAppleEmbeddedPlatformBundleFile*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddAppleEmbeddedPlatformBundleFile_System_String_" data-uid="Godot.EditorExportPlugin.AddAppleEmbeddedPlatformBundleFile(System.String)">
+  AddAppleEmbeddedPlatformBundleFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAppleEmbeddedPlatformBundleFile(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddAppleEmbeddedPlatformCppCode_" data-uid="Godot.EditorExportPlugin.AddAppleEmbeddedPlatformCppCode*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddAppleEmbeddedPlatformCppCode_System_String_" data-uid="Godot.EditorExportPlugin.AddAppleEmbeddedPlatformCppCode(System.String)">
+  AddAppleEmbeddedPlatformCppCode(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAppleEmbeddedPlatformCppCode(string code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddAppleEmbeddedPlatformEmbeddedFramework_" data-uid="Godot.EditorExportPlugin.AddAppleEmbeddedPlatformEmbeddedFramework*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddAppleEmbeddedPlatformEmbeddedFramework_System_String_" data-uid="Godot.EditorExportPlugin.AddAppleEmbeddedPlatformEmbeddedFramework(System.String)">
+  AddAppleEmbeddedPlatformEmbeddedFramework(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAppleEmbeddedPlatformEmbeddedFramework(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddAppleEmbeddedPlatformFramework_" data-uid="Godot.EditorExportPlugin.AddAppleEmbeddedPlatformFramework*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddAppleEmbeddedPlatformFramework_System_String_" data-uid="Godot.EditorExportPlugin.AddAppleEmbeddedPlatformFramework(System.String)">
+  AddAppleEmbeddedPlatformFramework(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAppleEmbeddedPlatformFramework(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddAppleEmbeddedPlatformLinkerFlags_" data-uid="Godot.EditorExportPlugin.AddAppleEmbeddedPlatformLinkerFlags*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddAppleEmbeddedPlatformLinkerFlags_System_String_" data-uid="Godot.EditorExportPlugin.AddAppleEmbeddedPlatformLinkerFlags(System.String)">
+  AddAppleEmbeddedPlatformLinkerFlags(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAppleEmbeddedPlatformLinkerFlags(string flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flags</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddAppleEmbeddedPlatformPlistContent_" data-uid="Godot.EditorExportPlugin.AddAppleEmbeddedPlatformPlistContent*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddAppleEmbeddedPlatformPlistContent_System_String_" data-uid="Godot.EditorExportPlugin.AddAppleEmbeddedPlatformPlistContent(System.String)">
+  AddAppleEmbeddedPlatformPlistContent(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAppleEmbeddedPlatformPlistContent(string plistContent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>plistContent</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddAppleEmbeddedPlatformProjectStaticLib_" data-uid="Godot.EditorExportPlugin.AddAppleEmbeddedPlatformProjectStaticLib*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddAppleEmbeddedPlatformProjectStaticLib_System_String_" data-uid="Godot.EditorExportPlugin.AddAppleEmbeddedPlatformProjectStaticLib(System.String)">
+  AddAppleEmbeddedPlatformProjectStaticLib(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAppleEmbeddedPlatformProjectStaticLib(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddFile_" data-uid="Godot.EditorExportPlugin.AddFile*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddFile_System_String_System_Byte___System_Boolean_" data-uid="Godot.EditorExportPlugin.AddFile(System.String,System.Byte[],System.Boolean)">
+  AddFile(string, byte[], bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFile(string path, byte[] file, bool remap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>remap</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddFile_" data-uid="Godot.EditorExportPlugin.AddFile*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddFile_System_String_System_ReadOnlySpan_System_Byte__System_Boolean_" data-uid="Godot.EditorExportPlugin.AddFile(System.String,System.ReadOnlySpan{System.Byte},System.Boolean)">
+  AddFile(string, ReadOnlySpan&lt;byte&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFile(string path, ReadOnlySpan&lt;byte&gt; file, bool remap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>remap</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddIosBundleFile_" data-uid="Godot.EditorExportPlugin.AddIosBundleFile*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddIosBundleFile_System_String_" data-uid="Godot.EditorExportPlugin.AddIosBundleFile(System.String)">
+  AddIosBundleFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;Godot.EditorExportPlugin.AddAppleEmbeddedPlatformBundleFile(string)&#39; instead.&quot;)]
+public void AddIosBundleFile(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddIosCppCode_" data-uid="Godot.EditorExportPlugin.AddIosCppCode*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddIosCppCode_System_String_" data-uid="Godot.EditorExportPlugin.AddIosCppCode(System.String)">
+  AddIosCppCode(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;Godot.EditorExportPlugin.AddAppleEmbeddedPlatformCppCode(string)&#39; instead.&quot;)]
+public void AddIosCppCode(string code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddIosEmbeddedFramework_" data-uid="Godot.EditorExportPlugin.AddIosEmbeddedFramework*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddIosEmbeddedFramework_System_String_" data-uid="Godot.EditorExportPlugin.AddIosEmbeddedFramework(System.String)">
+  AddIosEmbeddedFramework(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;Godot.EditorExportPlugin.AddAppleEmbeddedPlatformEmbeddedFramework(string)&#39; instead.&quot;)]
+public void AddIosEmbeddedFramework(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddIosFramework_" data-uid="Godot.EditorExportPlugin.AddIosFramework*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddIosFramework_System_String_" data-uid="Godot.EditorExportPlugin.AddIosFramework(System.String)">
+  AddIosFramework(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;Godot.EditorExportPlugin.AddAppleEmbeddedPlatformFramework(string)&#39; instead.&quot;)]
+public void AddIosFramework(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddIosLinkerFlags_" data-uid="Godot.EditorExportPlugin.AddIosLinkerFlags*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddIosLinkerFlags_System_String_" data-uid="Godot.EditorExportPlugin.AddIosLinkerFlags(System.String)">
+  AddIosLinkerFlags(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;Godot.EditorExportPlugin.AddAppleEmbeddedPlatformLinkerFlags(string)&#39; instead.&quot;)]
+public void AddIosLinkerFlags(string flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flags</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddIosPlistContent_" data-uid="Godot.EditorExportPlugin.AddIosPlistContent*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddIosPlistContent_System_String_" data-uid="Godot.EditorExportPlugin.AddIosPlistContent(System.String)">
+  AddIosPlistContent(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;Godot.EditorExportPlugin.AddAppleEmbeddedPlatformPlistContent(string)&#39; instead.&quot;)]
+public void AddIosPlistContent(string plistContent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>plistContent</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddIosProjectStaticLib_" data-uid="Godot.EditorExportPlugin.AddIosProjectStaticLib*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddIosProjectStaticLib_System_String_" data-uid="Godot.EditorExportPlugin.AddIosProjectStaticLib(System.String)">
+  AddIosProjectStaticLib(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use &#39;Godot.EditorExportPlugin.AddAppleEmbeddedPlatformProjectStaticLib(string)&#39; instead.&quot;)]
+public void AddIosProjectStaticLib(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddMacOSPluginFile_" data-uid="Godot.EditorExportPlugin.AddMacOSPluginFile*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddMacOSPluginFile_System_String_" data-uid="Godot.EditorExportPlugin.AddMacOSPluginFile(System.String)">
+  AddMacOSPluginFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMacOSPluginFile(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddSharedObject_" data-uid="Godot.EditorExportPlugin.AddSharedObject*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddSharedObject_System_String_System_ReadOnlySpan_System_String__System_String_" data-uid="Godot.EditorExportPlugin.AddSharedObject(System.String,System.ReadOnlySpan{System.String},System.String)">
+  AddSharedObject(string, ReadOnlySpan&lt;string&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSharedObject(string path, ReadOnlySpan&lt;string&gt; tags, string target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>target</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_AddSharedObject_" data-uid="Godot.EditorExportPlugin.AddSharedObject*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_AddSharedObject_System_String_System_String___System_String_" data-uid="Godot.EditorExportPlugin.AddSharedObject(System.String,System.String[],System.String)">
+  AddSharedObject(string, string[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSharedObject(string path, string[] tags, string target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+    <dt><code>target</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_GetExportPlatform_" data-uid="Godot.EditorExportPlugin.GetExportPlatform*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_GetExportPlatform" data-uid="Godot.EditorExportPlugin.GetExportPlatform">
+  GetExportPlatform()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditorExportPlatform GetExportPlatform()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_GetExportPreset_" data-uid="Godot.EditorExportPlugin.GetExportPreset*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_GetExportPreset" data-uid="Godot.EditorExportPlugin.GetExportPreset">
+  GetExportPreset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditorExportPreset GetExportPreset()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.EditorExportPreset.html">EditorExportPreset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_GetOption_" data-uid="Godot.EditorExportPlugin.GetOption*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_GetOption_Godot_StringName_" data-uid="Godot.EditorExportPlugin.GetOption(Godot.StringName)">
+  GetOption(StringName)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Variant GetOption(StringName name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="Godot.StringName.html">StringName</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_HasGodotClassMethod_" data-uid="Godot.EditorExportPlugin.HasGodotClassMethod*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__" data-uid="Godot.EditorExportPlugin.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+  HasGodotClassMethod(in godot_string_name)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassMethod(in godot_string_name method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_HasGodotClassSignal_" data-uid="Godot.EditorExportPlugin.HasGodotClassSignal*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__" data-uid="Godot.EditorExportPlugin.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)">
+  HasGodotClassSignal(in godot_string_name)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassSignal(in godot_string_name signal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signal</code> <a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_InvokeGodotClassMethod_" data-uid="Godot.EditorExportPlugin.InvokeGodotClassMethod*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__" data-uid="Godot.EditorExportPlugin.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+  InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool InvokeGodotClassMethod(in godot_string_name method, NativeVariantPtrArgs args, out godot_variant ret)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <a class="xref" href="Godot.NativeInterop.NativeVariantPtrArgs.html">NativeVariantPtrArgs</a></dt>
+    <dd></dd>
+    <dt><code>ret</code> <a class="xref" href="Godot.NativeInterop.godot_variant.html">godot_variant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin_Skip_" data-uid="Godot.EditorExportPlugin.Skip*"></a>
+
+  <h3 id="Godot_EditorExportPlugin_Skip" data-uid="Godot.EditorExportPlugin.Skip">
+  Skip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Skip()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__BeginCustomizeResources_" data-uid="Godot.EditorExportPlugin._BeginCustomizeResources*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__BeginCustomizeResources_Godot_EditorExportPlatform_System_String___" data-uid="Godot.EditorExportPlugin._BeginCustomizeResources(Godot.EditorExportPlatform,System.String[])">
+  _BeginCustomizeResources(EditorExportPlatform, string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _BeginCustomizeResources(EditorExportPlatform platform, string[] features)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+    <dt><code>features</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__BeginCustomizeScenes_" data-uid="Godot.EditorExportPlugin._BeginCustomizeScenes*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__BeginCustomizeScenes_Godot_EditorExportPlatform_System_String___" data-uid="Godot.EditorExportPlugin._BeginCustomizeScenes(Godot.EditorExportPlatform,System.String[])">
+  _BeginCustomizeScenes(EditorExportPlatform, string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _BeginCustomizeScenes(EditorExportPlatform platform, string[] features)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+    <dt><code>features</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__CustomizeResource_" data-uid="Godot.EditorExportPlugin._CustomizeResource*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__CustomizeResource_Godot_Resource_System_String_" data-uid="Godot.EditorExportPlugin._CustomizeResource(Godot.Resource,System.String)">
+  _CustomizeResource(Resource, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Resource _CustomizeResource(Resource resource, string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="Godot.Resource.html">Resource</a></dt>
+    <dd></dd>
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Resource.html">Resource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__CustomizeScene_" data-uid="Godot.EditorExportPlugin._CustomizeScene*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__CustomizeScene_Godot_Node_System_String_" data-uid="Godot.EditorExportPlugin._CustomizeScene(Godot.Node,System.String)">
+  _CustomizeScene(Node, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Node _CustomizeScene(Node scene, string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Godot.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__EndCustomizeResources_" data-uid="Godot.EditorExportPlugin._EndCustomizeResources*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__EndCustomizeResources" data-uid="Godot.EditorExportPlugin._EndCustomizeResources">
+  _EndCustomizeResources()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _EndCustomizeResources()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__EndCustomizeScenes_" data-uid="Godot.EditorExportPlugin._EndCustomizeScenes*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__EndCustomizeScenes" data-uid="Godot.EditorExportPlugin._EndCustomizeScenes">
+  _EndCustomizeScenes()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _EndCustomizeScenes()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__ExportBegin_" data-uid="Godot.EditorExportPlugin._ExportBegin*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__ExportBegin_System_String___System_Boolean_System_String_System_UInt32_" data-uid="Godot.EditorExportPlugin._ExportBegin(System.String[],System.Boolean,System.String,System.UInt32)">
+  _ExportBegin(string[], bool, string, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _ExportBegin(string[] features, bool isDebug, string path, uint flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>features</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+    <dt><code>isDebug</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__ExportEnd_" data-uid="Godot.EditorExportPlugin._ExportEnd*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__ExportEnd" data-uid="Godot.EditorExportPlugin._ExportEnd">
+  _ExportEnd()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _ExportEnd()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__ExportFile_" data-uid="Godot.EditorExportPlugin._ExportFile*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__ExportFile_System_String_System_String_System_String___" data-uid="Godot.EditorExportPlugin._ExportFile(System.String,System.String,System.String[])">
+  _ExportFile(string, string, string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void _ExportFile(string path, string type, string[] features)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>type</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>features</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__GetAndroidDependencies_" data-uid="Godot.EditorExportPlugin._GetAndroidDependencies*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__GetAndroidDependencies_Godot_EditorExportPlatform_System_Boolean_" data-uid="Godot.EditorExportPlugin._GetAndroidDependencies(Godot.EditorExportPlatform,System.Boolean)">
+  _GetAndroidDependencies(EditorExportPlatform, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string[] _GetAndroidDependencies(EditorExportPlatform platform, bool debug)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+    <dt><code>debug</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__GetAndroidDependenciesMavenRepos_" data-uid="Godot.EditorExportPlugin._GetAndroidDependenciesMavenRepos*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__GetAndroidDependenciesMavenRepos_Godot_EditorExportPlatform_System_Boolean_" data-uid="Godot.EditorExportPlugin._GetAndroidDependenciesMavenRepos(Godot.EditorExportPlatform,System.Boolean)">
+  _GetAndroidDependenciesMavenRepos(EditorExportPlatform, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string[] _GetAndroidDependenciesMavenRepos(EditorExportPlatform platform, bool debug)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+    <dt><code>debug</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__GetAndroidLibraries_" data-uid="Godot.EditorExportPlugin._GetAndroidLibraries*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__GetAndroidLibraries_Godot_EditorExportPlatform_System_Boolean_" data-uid="Godot.EditorExportPlugin._GetAndroidLibraries(Godot.EditorExportPlatform,System.Boolean)">
+  _GetAndroidLibraries(EditorExportPlatform, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string[] _GetAndroidLibraries(EditorExportPlatform platform, bool debug)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+    <dt><code>debug</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__GetAndroidManifestActivityElementContents_" data-uid="Godot.EditorExportPlugin._GetAndroidManifestActivityElementContents*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__GetAndroidManifestActivityElementContents_Godot_EditorExportPlatform_System_Boolean_" data-uid="Godot.EditorExportPlugin._GetAndroidManifestActivityElementContents(Godot.EditorExportPlatform,System.Boolean)">
+  _GetAndroidManifestActivityElementContents(EditorExportPlatform, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string _GetAndroidManifestActivityElementContents(EditorExportPlatform platform, bool debug)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+    <dt><code>debug</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__GetAndroidManifestApplicationElementContents_" data-uid="Godot.EditorExportPlugin._GetAndroidManifestApplicationElementContents*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__GetAndroidManifestApplicationElementContents_Godot_EditorExportPlatform_System_Boolean_" data-uid="Godot.EditorExportPlugin._GetAndroidManifestApplicationElementContents(Godot.EditorExportPlatform,System.Boolean)">
+  _GetAndroidManifestApplicationElementContents(EditorExportPlatform, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string _GetAndroidManifestApplicationElementContents(EditorExportPlatform platform, bool debug)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+    <dt><code>debug</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__GetAndroidManifestElementContents_" data-uid="Godot.EditorExportPlugin._GetAndroidManifestElementContents*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__GetAndroidManifestElementContents_Godot_EditorExportPlatform_System_Boolean_" data-uid="Godot.EditorExportPlugin._GetAndroidManifestElementContents(Godot.EditorExportPlatform,System.Boolean)">
+  _GetAndroidManifestElementContents(EditorExportPlatform, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string _GetAndroidManifestElementContents(EditorExportPlatform platform, bool debug)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+    <dt><code>debug</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__GetCustomizationConfigurationHash_" data-uid="Godot.EditorExportPlugin._GetCustomizationConfigurationHash*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__GetCustomizationConfigurationHash" data-uid="Godot.EditorExportPlugin._GetCustomizationConfigurationHash">
+  _GetCustomizationConfigurationHash()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ulong _GetCustomizationConfigurationHash()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__GetExportFeatures_" data-uid="Godot.EditorExportPlugin._GetExportFeatures*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__GetExportFeatures_Godot_EditorExportPlatform_System_Boolean_" data-uid="Godot.EditorExportPlugin._GetExportFeatures(Godot.EditorExportPlatform,System.Boolean)">
+  _GetExportFeatures(EditorExportPlatform, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string[] _GetExportFeatures(EditorExportPlatform platform, bool debug)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+    <dt><code>debug</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__GetExportOptionVisibility_" data-uid="Godot.EditorExportPlugin._GetExportOptionVisibility*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__GetExportOptionVisibility_Godot_EditorExportPlatform_System_String_" data-uid="Godot.EditorExportPlugin._GetExportOptionVisibility(Godot.EditorExportPlatform,System.String)">
+  _GetExportOptionVisibility(EditorExportPlatform, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _GetExportOptionVisibility(EditorExportPlatform platform, string option)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+    <dt><code>option</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__GetExportOptionWarning_" data-uid="Godot.EditorExportPlugin._GetExportOptionWarning*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__GetExportOptionWarning_Godot_EditorExportPlatform_System_String_" data-uid="Godot.EditorExportPlugin._GetExportOptionWarning(Godot.EditorExportPlatform,System.String)">
+  _GetExportOptionWarning(EditorExportPlatform, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string _GetExportOptionWarning(EditorExportPlatform platform, string option)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+    <dt><code>option</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__GetExportOptions_" data-uid="Godot.EditorExportPlugin._GetExportOptions*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__GetExportOptions_Godot_EditorExportPlatform_" data-uid="Godot.EditorExportPlugin._GetExportOptions(Godot.EditorExportPlatform)">
+  _GetExportOptions(EditorExportPlatform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Array&lt;Dictionary&gt; _GetExportOptions(EditorExportPlatform platform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;<a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__GetExportOptionsOverrides_" data-uid="Godot.EditorExportPlugin._GetExportOptionsOverrides*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__GetExportOptionsOverrides_Godot_EditorExportPlatform_" data-uid="Godot.EditorExportPlugin._GetExportOptionsOverrides(Godot.EditorExportPlatform)">
+  _GetExportOptionsOverrides(EditorExportPlatform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Dictionary _GetExportOptionsOverrides(EditorExportPlatform platform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__GetName_" data-uid="Godot.EditorExportPlugin._GetName*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__GetName" data-uid="Godot.EditorExportPlugin._GetName">
+  _GetName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string _GetName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__ShouldUpdateExportOptions_" data-uid="Godot.EditorExportPlugin._ShouldUpdateExportOptions*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__ShouldUpdateExportOptions_Godot_EditorExportPlatform_" data-uid="Godot.EditorExportPlugin._ShouldUpdateExportOptions(Godot.EditorExportPlatform)">
+  _ShouldUpdateExportOptions(EditorExportPlatform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _ShouldUpdateExportOptions(EditorExportPlatform platform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__SupportsPlatform_" data-uid="Godot.EditorExportPlugin._SupportsPlatform*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__SupportsPlatform_Godot_EditorExportPlatform_" data-uid="Godot.EditorExportPlugin._SupportsPlatform(Godot.EditorExportPlatform)">
+  _SupportsPlatform(EditorExportPlatform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool _SupportsPlatform(EditorExportPlatform platform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_EditorExportPlugin__UpdateAndroidPrebuiltManifest_" data-uid="Godot.EditorExportPlugin._UpdateAndroidPrebuiltManifest*"></a>
+
+  <h3 id="Godot_EditorExportPlugin__UpdateAndroidPrebuiltManifest_Godot_EditorExportPlatform_System_Byte___" data-uid="Godot.EditorExportPlugin._UpdateAndroidPrebuiltManifest(Godot.EditorExportPlatform,System.Byte[])">
+  _UpdateAndroidPrebuiltManifest(EditorExportPlatform, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] _UpdateAndroidPrebuiltManifest(EditorExportPlatform platform, byte[] manifestData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>platform</code> <a class="xref" href="Godot.EditorExportPlatform.html">EditorExportPlatform</a></dt>
+    <dd></dd>
+    <dt><code>manifestData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

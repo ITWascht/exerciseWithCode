@@ -1,0 +1,1953 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.Geometry2D
+  commentId: T:Godot.Geometry2D
+  id: Geometry2D
+  parent: Godot
+  children:
+  - Godot.Geometry2D.BresenhamLine(Godot.Vector2I,Godot.Vector2I)
+  - Godot.Geometry2D.ClipPolygons(Godot.Vector2[],Godot.Vector2[])
+  - Godot.Geometry2D.ClipPolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  - Godot.Geometry2D.ClipPolylineWithPolygon(Godot.Vector2[],Godot.Vector2[])
+  - Godot.Geometry2D.ClipPolylineWithPolygon(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  - Godot.Geometry2D.ConvexHull(Godot.Vector2[])
+  - Godot.Geometry2D.ConvexHull(System.ReadOnlySpan{Godot.Vector2})
+  - Godot.Geometry2D.DecomposePolygonInConvex(Godot.Vector2[])
+  - Godot.Geometry2D.DecomposePolygonInConvex(System.ReadOnlySpan{Godot.Vector2})
+  - Godot.Geometry2D.ExcludePolygons(Godot.Vector2[],Godot.Vector2[])
+  - Godot.Geometry2D.ExcludePolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  - Godot.Geometry2D.GetClosestPointToSegment(Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  - Godot.Geometry2D.GetClosestPointToSegmentUncapped(Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  - Godot.Geometry2D.GetClosestPointsBetweenSegments(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  - Godot.Geometry2D.IntersectPolygons(Godot.Vector2[],Godot.Vector2[])
+  - Godot.Geometry2D.IntersectPolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  - Godot.Geometry2D.IntersectPolylineWithPolygon(Godot.Vector2[],Godot.Vector2[])
+  - Godot.Geometry2D.IntersectPolylineWithPolygon(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  - Godot.Geometry2D.IsPointInCircle(Godot.Vector2,Godot.Vector2,System.Single)
+  - Godot.Geometry2D.IsPointInPolygon(Godot.Vector2,Godot.Vector2[])
+  - Godot.Geometry2D.IsPointInPolygon(Godot.Vector2,System.ReadOnlySpan{Godot.Vector2})
+  - Godot.Geometry2D.IsPolygonClockwise(Godot.Vector2[])
+  - Godot.Geometry2D.IsPolygonClockwise(System.ReadOnlySpan{Godot.Vector2})
+  - Godot.Geometry2D.LineIntersectsLine(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  - Godot.Geometry2D.MakeAtlas(Godot.Vector2[])
+  - Godot.Geometry2D.MakeAtlas(System.ReadOnlySpan{Godot.Vector2})
+  - Godot.Geometry2D.MergePolygons(Godot.Vector2[],Godot.Vector2[])
+  - Godot.Geometry2D.MergePolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  - Godot.Geometry2D.OffsetPolygon(Godot.Vector2[],System.Single,Godot.Geometry2D.PolyJoinType)
+  - Godot.Geometry2D.OffsetPolygon(System.ReadOnlySpan{Godot.Vector2},System.Single,Godot.Geometry2D.PolyJoinType)
+  - Godot.Geometry2D.OffsetPolyline(Godot.Vector2[],System.Single,Godot.Geometry2D.PolyJoinType,Godot.Geometry2D.PolyEndType)
+  - Godot.Geometry2D.OffsetPolyline(System.ReadOnlySpan{Godot.Vector2},System.Single,Godot.Geometry2D.PolyJoinType,Godot.Geometry2D.PolyEndType)
+  - Godot.Geometry2D.PointIsInsideTriangle(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  - Godot.Geometry2D.SegmentIntersectsCircle(Godot.Vector2,Godot.Vector2,Godot.Vector2,System.Single)
+  - Godot.Geometry2D.SegmentIntersectsSegment(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  - Godot.Geometry2D.Singleton
+  - Godot.Geometry2D.TriangulateDelaunay(Godot.Vector2[])
+  - Godot.Geometry2D.TriangulateDelaunay(System.ReadOnlySpan{Godot.Vector2})
+  - Godot.Geometry2D.TriangulatePolygon(Godot.Vector2[])
+  - Godot.Geometry2D.TriangulatePolygon(System.ReadOnlySpan{Godot.Vector2})
+  langs:
+  - csharp
+  - vb
+  name: Geometry2D
+  nameWithType: Geometry2D
+  fullName: Godot.Geometry2D
+  type: Class
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static class Geometry2D
+    content.vb: Public Module Geometry2D
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Godot.Geometry2D.IsPointInCircle(Godot.Vector2,Godot.Vector2,System.Single)
+  commentId: M:Godot.Geometry2D.IsPointInCircle(Godot.Vector2,Godot.Vector2,System.Single)
+  id: IsPointInCircle(Godot.Vector2,Godot.Vector2,System.Single)
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: IsPointInCircle(Vector2, Vector2, float)
+  nameWithType: Geometry2D.IsPointInCircle(Vector2, Vector2, float)
+  fullName: Godot.Geometry2D.IsPointInCircle(Godot.Vector2, Godot.Vector2, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsPointInCircle(Vector2 point, Vector2 circlePosition, float circleRadius)
+    parameters:
+    - id: point
+      type: Godot.Vector2
+    - id: circlePosition
+      type: Godot.Vector2
+    - id: circleRadius
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsPointInCircle(point As Vector2, circlePosition As Vector2, circleRadius As Single) As Boolean
+  overload: Godot.Geometry2D.IsPointInCircle*
+  nameWithType.vb: Geometry2D.IsPointInCircle(Vector2, Vector2, Single)
+  fullName.vb: Godot.Geometry2D.IsPointInCircle(Godot.Vector2, Godot.Vector2, Single)
+  name.vb: IsPointInCircle(Vector2, Vector2, Single)
+- uid: Godot.Geometry2D.SegmentIntersectsCircle(Godot.Vector2,Godot.Vector2,Godot.Vector2,System.Single)
+  commentId: M:Godot.Geometry2D.SegmentIntersectsCircle(Godot.Vector2,Godot.Vector2,Godot.Vector2,System.Single)
+  id: SegmentIntersectsCircle(Godot.Vector2,Godot.Vector2,Godot.Vector2,System.Single)
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: SegmentIntersectsCircle(Vector2, Vector2, Vector2, float)
+  nameWithType: Geometry2D.SegmentIntersectsCircle(Vector2, Vector2, Vector2, float)
+  fullName: Godot.Geometry2D.SegmentIntersectsCircle(Godot.Vector2, Godot.Vector2, Godot.Vector2, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static float SegmentIntersectsCircle(Vector2 segmentFrom, Vector2 segmentTo, Vector2 circlePosition, float circleRadius)
+    parameters:
+    - id: segmentFrom
+      type: Godot.Vector2
+    - id: segmentTo
+      type: Godot.Vector2
+    - id: circlePosition
+      type: Godot.Vector2
+    - id: circleRadius
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function SegmentIntersectsCircle(segmentFrom As Vector2, segmentTo As Vector2, circlePosition As Vector2, circleRadius As Single) As Single
+  overload: Godot.Geometry2D.SegmentIntersectsCircle*
+  nameWithType.vb: Geometry2D.SegmentIntersectsCircle(Vector2, Vector2, Vector2, Single)
+  fullName.vb: Godot.Geometry2D.SegmentIntersectsCircle(Godot.Vector2, Godot.Vector2, Godot.Vector2, Single)
+  name.vb: SegmentIntersectsCircle(Vector2, Vector2, Vector2, Single)
+- uid: Godot.Geometry2D.SegmentIntersectsSegment(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  commentId: M:Godot.Geometry2D.SegmentIntersectsSegment(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  id: SegmentIntersectsSegment(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: SegmentIntersectsSegment(Vector2, Vector2, Vector2, Vector2)
+  nameWithType: Geometry2D.SegmentIntersectsSegment(Vector2, Vector2, Vector2, Vector2)
+  fullName: Godot.Geometry2D.SegmentIntersectsSegment(Godot.Vector2, Godot.Vector2, Godot.Vector2, Godot.Vector2)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Variant SegmentIntersectsSegment(Vector2 fromA, Vector2 toA, Vector2 fromB, Vector2 toB)
+    parameters:
+    - id: fromA
+      type: Godot.Vector2
+    - id: toA
+      type: Godot.Vector2
+    - id: fromB
+      type: Godot.Vector2
+    - id: toB
+      type: Godot.Vector2
+    return:
+      type: Godot.Variant
+    content.vb: Public Shared Function SegmentIntersectsSegment(fromA As Vector2, toA As Vector2, fromB As Vector2, toB As Vector2) As [Variant]
+  overload: Godot.Geometry2D.SegmentIntersectsSegment*
+- uid: Godot.Geometry2D.LineIntersectsLine(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  commentId: M:Godot.Geometry2D.LineIntersectsLine(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  id: LineIntersectsLine(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: LineIntersectsLine(Vector2, Vector2, Vector2, Vector2)
+  nameWithType: Geometry2D.LineIntersectsLine(Vector2, Vector2, Vector2, Vector2)
+  fullName: Godot.Geometry2D.LineIntersectsLine(Godot.Vector2, Godot.Vector2, Godot.Vector2, Godot.Vector2)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Variant LineIntersectsLine(Vector2 fromA, Vector2 dirA, Vector2 fromB, Vector2 dirB)
+    parameters:
+    - id: fromA
+      type: Godot.Vector2
+    - id: dirA
+      type: Godot.Vector2
+    - id: fromB
+      type: Godot.Vector2
+    - id: dirB
+      type: Godot.Vector2
+    return:
+      type: Godot.Variant
+    content.vb: Public Shared Function LineIntersectsLine(fromA As Vector2, dirA As Vector2, fromB As Vector2, dirB As Vector2) As [Variant]
+  overload: Godot.Geometry2D.LineIntersectsLine*
+- uid: Godot.Geometry2D.GetClosestPointsBetweenSegments(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  commentId: M:Godot.Geometry2D.GetClosestPointsBetweenSegments(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  id: GetClosestPointsBetweenSegments(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: GetClosestPointsBetweenSegments(Vector2, Vector2, Vector2, Vector2)
+  nameWithType: Geometry2D.GetClosestPointsBetweenSegments(Vector2, Vector2, Vector2, Vector2)
+  fullName: Godot.Geometry2D.GetClosestPointsBetweenSegments(Godot.Vector2, Godot.Vector2, Godot.Vector2, Godot.Vector2)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector2[] GetClosestPointsBetweenSegments(Vector2 p1, Vector2 q1, Vector2 p2, Vector2 q2)
+    parameters:
+    - id: p1
+      type: Godot.Vector2
+    - id: q1
+      type: Godot.Vector2
+    - id: p2
+      type: Godot.Vector2
+    - id: q2
+      type: Godot.Vector2
+    return:
+      type: Godot.Vector2[]
+    content.vb: Public Shared Function GetClosestPointsBetweenSegments(p1 As Vector2, q1 As Vector2, p2 As Vector2, q2 As Vector2) As Vector2()
+  overload: Godot.Geometry2D.GetClosestPointsBetweenSegments*
+- uid: Godot.Geometry2D.GetClosestPointToSegment(Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  commentId: M:Godot.Geometry2D.GetClosestPointToSegment(Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  id: GetClosestPointToSegment(Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: GetClosestPointToSegment(Vector2, Vector2, Vector2)
+  nameWithType: Geometry2D.GetClosestPointToSegment(Vector2, Vector2, Vector2)
+  fullName: Godot.Geometry2D.GetClosestPointToSegment(Godot.Vector2, Godot.Vector2, Godot.Vector2)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector2 GetClosestPointToSegment(Vector2 point, Vector2 s1, Vector2 s2)
+    parameters:
+    - id: point
+      type: Godot.Vector2
+    - id: s1
+      type: Godot.Vector2
+    - id: s2
+      type: Godot.Vector2
+    return:
+      type: Godot.Vector2
+    content.vb: Public Shared Function GetClosestPointToSegment(point As Vector2, s1 As Vector2, s2 As Vector2) As Vector2
+  overload: Godot.Geometry2D.GetClosestPointToSegment*
+- uid: Godot.Geometry2D.GetClosestPointToSegmentUncapped(Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  commentId: M:Godot.Geometry2D.GetClosestPointToSegmentUncapped(Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  id: GetClosestPointToSegmentUncapped(Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: GetClosestPointToSegmentUncapped(Vector2, Vector2, Vector2)
+  nameWithType: Geometry2D.GetClosestPointToSegmentUncapped(Vector2, Vector2, Vector2)
+  fullName: Godot.Geometry2D.GetClosestPointToSegmentUncapped(Godot.Vector2, Godot.Vector2, Godot.Vector2)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector2 GetClosestPointToSegmentUncapped(Vector2 point, Vector2 s1, Vector2 s2)
+    parameters:
+    - id: point
+      type: Godot.Vector2
+    - id: s1
+      type: Godot.Vector2
+    - id: s2
+      type: Godot.Vector2
+    return:
+      type: Godot.Vector2
+    content.vb: Public Shared Function GetClosestPointToSegmentUncapped(point As Vector2, s1 As Vector2, s2 As Vector2) As Vector2
+  overload: Godot.Geometry2D.GetClosestPointToSegmentUncapped*
+- uid: Godot.Geometry2D.PointIsInsideTriangle(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  commentId: M:Godot.Geometry2D.PointIsInsideTriangle(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  id: PointIsInsideTriangle(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: PointIsInsideTriangle(Vector2, Vector2, Vector2, Vector2)
+  nameWithType: Geometry2D.PointIsInsideTriangle(Vector2, Vector2, Vector2, Vector2)
+  fullName: Godot.Geometry2D.PointIsInsideTriangle(Godot.Vector2, Godot.Vector2, Godot.Vector2, Godot.Vector2)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool PointIsInsideTriangle(Vector2 point, Vector2 a, Vector2 b, Vector2 c)
+    parameters:
+    - id: point
+      type: Godot.Vector2
+    - id: a
+      type: Godot.Vector2
+    - id: b
+      type: Godot.Vector2
+    - id: c
+      type: Godot.Vector2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function PointIsInsideTriangle(point As Vector2, a As Vector2, b As Vector2, c As Vector2) As Boolean
+  overload: Godot.Geometry2D.PointIsInsideTriangle*
+- uid: Godot.Geometry2D.IsPolygonClockwise(Godot.Vector2[])
+  commentId: M:Godot.Geometry2D.IsPolygonClockwise(Godot.Vector2[])
+  id: IsPolygonClockwise(Godot.Vector2[])
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: IsPolygonClockwise(Vector2[])
+  nameWithType: Geometry2D.IsPolygonClockwise(Vector2[])
+  fullName: Godot.Geometry2D.IsPolygonClockwise(Godot.Vector2[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsPolygonClockwise(Vector2[] polygon)
+    parameters:
+    - id: polygon
+      type: Godot.Vector2[]
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsPolygonClockwise(polygon As Vector2()) As Boolean
+  overload: Godot.Geometry2D.IsPolygonClockwise*
+  nameWithType.vb: Geometry2D.IsPolygonClockwise(Vector2())
+  fullName.vb: Godot.Geometry2D.IsPolygonClockwise(Godot.Vector2())
+  name.vb: IsPolygonClockwise(Vector2())
+- uid: Godot.Geometry2D.IsPolygonClockwise(System.ReadOnlySpan{Godot.Vector2})
+  commentId: M:Godot.Geometry2D.IsPolygonClockwise(System.ReadOnlySpan{Godot.Vector2})
+  id: IsPolygonClockwise(System.ReadOnlySpan{Godot.Vector2})
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: IsPolygonClockwise(ReadOnlySpan<Vector2>)
+  nameWithType: Geometry2D.IsPolygonClockwise(ReadOnlySpan<Vector2>)
+  fullName: Godot.Geometry2D.IsPolygonClockwise(System.ReadOnlySpan<Godot.Vector2>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsPolygonClockwise(ReadOnlySpan<Vector2> polygon)
+    parameters:
+    - id: polygon
+      type: System.ReadOnlySpan{Godot.Vector2}
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsPolygonClockwise(polygon As ReadOnlySpan(Of Vector2)) As Boolean
+  overload: Godot.Geometry2D.IsPolygonClockwise*
+  nameWithType.vb: Geometry2D.IsPolygonClockwise(ReadOnlySpan(Of Vector2))
+  fullName.vb: Godot.Geometry2D.IsPolygonClockwise(System.ReadOnlySpan(Of Godot.Vector2))
+  name.vb: IsPolygonClockwise(ReadOnlySpan(Of Vector2))
+- uid: Godot.Geometry2D.IsPointInPolygon(Godot.Vector2,Godot.Vector2[])
+  commentId: M:Godot.Geometry2D.IsPointInPolygon(Godot.Vector2,Godot.Vector2[])
+  id: IsPointInPolygon(Godot.Vector2,Godot.Vector2[])
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: IsPointInPolygon(Vector2, Vector2[])
+  nameWithType: Geometry2D.IsPointInPolygon(Vector2, Vector2[])
+  fullName: Godot.Geometry2D.IsPointInPolygon(Godot.Vector2, Godot.Vector2[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsPointInPolygon(Vector2 point, Vector2[] polygon)
+    parameters:
+    - id: point
+      type: Godot.Vector2
+    - id: polygon
+      type: Godot.Vector2[]
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsPointInPolygon(point As Vector2, polygon As Vector2()) As Boolean
+  overload: Godot.Geometry2D.IsPointInPolygon*
+  nameWithType.vb: Geometry2D.IsPointInPolygon(Vector2, Vector2())
+  fullName.vb: Godot.Geometry2D.IsPointInPolygon(Godot.Vector2, Godot.Vector2())
+  name.vb: IsPointInPolygon(Vector2, Vector2())
+- uid: Godot.Geometry2D.IsPointInPolygon(Godot.Vector2,System.ReadOnlySpan{Godot.Vector2})
+  commentId: M:Godot.Geometry2D.IsPointInPolygon(Godot.Vector2,System.ReadOnlySpan{Godot.Vector2})
+  id: IsPointInPolygon(Godot.Vector2,System.ReadOnlySpan{Godot.Vector2})
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: IsPointInPolygon(Vector2, ReadOnlySpan<Vector2>)
+  nameWithType: Geometry2D.IsPointInPolygon(Vector2, ReadOnlySpan<Vector2>)
+  fullName: Godot.Geometry2D.IsPointInPolygon(Godot.Vector2, System.ReadOnlySpan<Godot.Vector2>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsPointInPolygon(Vector2 point, ReadOnlySpan<Vector2> polygon)
+    parameters:
+    - id: point
+      type: Godot.Vector2
+    - id: polygon
+      type: System.ReadOnlySpan{Godot.Vector2}
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsPointInPolygon(point As Vector2, polygon As ReadOnlySpan(Of Vector2)) As Boolean
+  overload: Godot.Geometry2D.IsPointInPolygon*
+  nameWithType.vb: Geometry2D.IsPointInPolygon(Vector2, ReadOnlySpan(Of Vector2))
+  fullName.vb: Godot.Geometry2D.IsPointInPolygon(Godot.Vector2, System.ReadOnlySpan(Of Godot.Vector2))
+  name.vb: IsPointInPolygon(Vector2, ReadOnlySpan(Of Vector2))
+- uid: Godot.Geometry2D.TriangulatePolygon(Godot.Vector2[])
+  commentId: M:Godot.Geometry2D.TriangulatePolygon(Godot.Vector2[])
+  id: TriangulatePolygon(Godot.Vector2[])
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: TriangulatePolygon(Vector2[])
+  nameWithType: Geometry2D.TriangulatePolygon(Vector2[])
+  fullName: Godot.Geometry2D.TriangulatePolygon(Godot.Vector2[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int[] TriangulatePolygon(Vector2[] polygon)
+    parameters:
+    - id: polygon
+      type: Godot.Vector2[]
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared Function TriangulatePolygon(polygon As Vector2()) As Integer()
+  overload: Godot.Geometry2D.TriangulatePolygon*
+  nameWithType.vb: Geometry2D.TriangulatePolygon(Vector2())
+  fullName.vb: Godot.Geometry2D.TriangulatePolygon(Godot.Vector2())
+  name.vb: TriangulatePolygon(Vector2())
+- uid: Godot.Geometry2D.TriangulatePolygon(System.ReadOnlySpan{Godot.Vector2})
+  commentId: M:Godot.Geometry2D.TriangulatePolygon(System.ReadOnlySpan{Godot.Vector2})
+  id: TriangulatePolygon(System.ReadOnlySpan{Godot.Vector2})
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: TriangulatePolygon(ReadOnlySpan<Vector2>)
+  nameWithType: Geometry2D.TriangulatePolygon(ReadOnlySpan<Vector2>)
+  fullName: Godot.Geometry2D.TriangulatePolygon(System.ReadOnlySpan<Godot.Vector2>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int[] TriangulatePolygon(ReadOnlySpan<Vector2> polygon)
+    parameters:
+    - id: polygon
+      type: System.ReadOnlySpan{Godot.Vector2}
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared Function TriangulatePolygon(polygon As ReadOnlySpan(Of Vector2)) As Integer()
+  overload: Godot.Geometry2D.TriangulatePolygon*
+  nameWithType.vb: Geometry2D.TriangulatePolygon(ReadOnlySpan(Of Vector2))
+  fullName.vb: Godot.Geometry2D.TriangulatePolygon(System.ReadOnlySpan(Of Godot.Vector2))
+  name.vb: TriangulatePolygon(ReadOnlySpan(Of Vector2))
+- uid: Godot.Geometry2D.TriangulateDelaunay(Godot.Vector2[])
+  commentId: M:Godot.Geometry2D.TriangulateDelaunay(Godot.Vector2[])
+  id: TriangulateDelaunay(Godot.Vector2[])
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: TriangulateDelaunay(Vector2[])
+  nameWithType: Geometry2D.TriangulateDelaunay(Vector2[])
+  fullName: Godot.Geometry2D.TriangulateDelaunay(Godot.Vector2[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int[] TriangulateDelaunay(Vector2[] points)
+    parameters:
+    - id: points
+      type: Godot.Vector2[]
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared Function TriangulateDelaunay(points As Vector2()) As Integer()
+  overload: Godot.Geometry2D.TriangulateDelaunay*
+  nameWithType.vb: Geometry2D.TriangulateDelaunay(Vector2())
+  fullName.vb: Godot.Geometry2D.TriangulateDelaunay(Godot.Vector2())
+  name.vb: TriangulateDelaunay(Vector2())
+- uid: Godot.Geometry2D.TriangulateDelaunay(System.ReadOnlySpan{Godot.Vector2})
+  commentId: M:Godot.Geometry2D.TriangulateDelaunay(System.ReadOnlySpan{Godot.Vector2})
+  id: TriangulateDelaunay(System.ReadOnlySpan{Godot.Vector2})
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: TriangulateDelaunay(ReadOnlySpan<Vector2>)
+  nameWithType: Geometry2D.TriangulateDelaunay(ReadOnlySpan<Vector2>)
+  fullName: Godot.Geometry2D.TriangulateDelaunay(System.ReadOnlySpan<Godot.Vector2>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int[] TriangulateDelaunay(ReadOnlySpan<Vector2> points)
+    parameters:
+    - id: points
+      type: System.ReadOnlySpan{Godot.Vector2}
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared Function TriangulateDelaunay(points As ReadOnlySpan(Of Vector2)) As Integer()
+  overload: Godot.Geometry2D.TriangulateDelaunay*
+  nameWithType.vb: Geometry2D.TriangulateDelaunay(ReadOnlySpan(Of Vector2))
+  fullName.vb: Godot.Geometry2D.TriangulateDelaunay(System.ReadOnlySpan(Of Godot.Vector2))
+  name.vb: TriangulateDelaunay(ReadOnlySpan(Of Vector2))
+- uid: Godot.Geometry2D.ConvexHull(Godot.Vector2[])
+  commentId: M:Godot.Geometry2D.ConvexHull(Godot.Vector2[])
+  id: ConvexHull(Godot.Vector2[])
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: ConvexHull(Vector2[])
+  nameWithType: Geometry2D.ConvexHull(Vector2[])
+  fullName: Godot.Geometry2D.ConvexHull(Godot.Vector2[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector2[] ConvexHull(Vector2[] points)
+    parameters:
+    - id: points
+      type: Godot.Vector2[]
+    return:
+      type: Godot.Vector2[]
+    content.vb: Public Shared Function ConvexHull(points As Vector2()) As Vector2()
+  overload: Godot.Geometry2D.ConvexHull*
+  nameWithType.vb: Geometry2D.ConvexHull(Vector2())
+  fullName.vb: Godot.Geometry2D.ConvexHull(Godot.Vector2())
+  name.vb: ConvexHull(Vector2())
+- uid: Godot.Geometry2D.ConvexHull(System.ReadOnlySpan{Godot.Vector2})
+  commentId: M:Godot.Geometry2D.ConvexHull(System.ReadOnlySpan{Godot.Vector2})
+  id: ConvexHull(System.ReadOnlySpan{Godot.Vector2})
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: ConvexHull(ReadOnlySpan<Vector2>)
+  nameWithType: Geometry2D.ConvexHull(ReadOnlySpan<Vector2>)
+  fullName: Godot.Geometry2D.ConvexHull(System.ReadOnlySpan<Godot.Vector2>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector2[] ConvexHull(ReadOnlySpan<Vector2> points)
+    parameters:
+    - id: points
+      type: System.ReadOnlySpan{Godot.Vector2}
+    return:
+      type: Godot.Vector2[]
+    content.vb: Public Shared Function ConvexHull(points As ReadOnlySpan(Of Vector2)) As Vector2()
+  overload: Godot.Geometry2D.ConvexHull*
+  nameWithType.vb: Geometry2D.ConvexHull(ReadOnlySpan(Of Vector2))
+  fullName.vb: Godot.Geometry2D.ConvexHull(System.ReadOnlySpan(Of Godot.Vector2))
+  name.vb: ConvexHull(ReadOnlySpan(Of Vector2))
+- uid: Godot.Geometry2D.DecomposePolygonInConvex(Godot.Vector2[])
+  commentId: M:Godot.Geometry2D.DecomposePolygonInConvex(Godot.Vector2[])
+  id: DecomposePolygonInConvex(Godot.Vector2[])
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: DecomposePolygonInConvex(Vector2[])
+  nameWithType: Geometry2D.DecomposePolygonInConvex(Vector2[])
+  fullName: Godot.Geometry2D.DecomposePolygonInConvex(Godot.Vector2[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> DecomposePolygonInConvex(Vector2[] polygon)
+    parameters:
+    - id: polygon
+      type: Godot.Vector2[]
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function DecomposePolygonInConvex(polygon As Vector2()) As Array(Of Vector2())
+  overload: Godot.Geometry2D.DecomposePolygonInConvex*
+  nameWithType.vb: Geometry2D.DecomposePolygonInConvex(Vector2())
+  fullName.vb: Godot.Geometry2D.DecomposePolygonInConvex(Godot.Vector2())
+  name.vb: DecomposePolygonInConvex(Vector2())
+- uid: Godot.Geometry2D.DecomposePolygonInConvex(System.ReadOnlySpan{Godot.Vector2})
+  commentId: M:Godot.Geometry2D.DecomposePolygonInConvex(System.ReadOnlySpan{Godot.Vector2})
+  id: DecomposePolygonInConvex(System.ReadOnlySpan{Godot.Vector2})
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: DecomposePolygonInConvex(ReadOnlySpan<Vector2>)
+  nameWithType: Geometry2D.DecomposePolygonInConvex(ReadOnlySpan<Vector2>)
+  fullName: Godot.Geometry2D.DecomposePolygonInConvex(System.ReadOnlySpan<Godot.Vector2>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> DecomposePolygonInConvex(ReadOnlySpan<Vector2> polygon)
+    parameters:
+    - id: polygon
+      type: System.ReadOnlySpan{Godot.Vector2}
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function DecomposePolygonInConvex(polygon As ReadOnlySpan(Of Vector2)) As Array(Of Vector2())
+  overload: Godot.Geometry2D.DecomposePolygonInConvex*
+  nameWithType.vb: Geometry2D.DecomposePolygonInConvex(ReadOnlySpan(Of Vector2))
+  fullName.vb: Godot.Geometry2D.DecomposePolygonInConvex(System.ReadOnlySpan(Of Godot.Vector2))
+  name.vb: DecomposePolygonInConvex(ReadOnlySpan(Of Vector2))
+- uid: Godot.Geometry2D.MergePolygons(Godot.Vector2[],Godot.Vector2[])
+  commentId: M:Godot.Geometry2D.MergePolygons(Godot.Vector2[],Godot.Vector2[])
+  id: MergePolygons(Godot.Vector2[],Godot.Vector2[])
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: MergePolygons(Vector2[], Vector2[])
+  nameWithType: Geometry2D.MergePolygons(Vector2[], Vector2[])
+  fullName: Godot.Geometry2D.MergePolygons(Godot.Vector2[], Godot.Vector2[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> MergePolygons(Vector2[] polygonA, Vector2[] polygonB)
+    parameters:
+    - id: polygonA
+      type: Godot.Vector2[]
+    - id: polygonB
+      type: Godot.Vector2[]
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function MergePolygons(polygonA As Vector2(), polygonB As Vector2()) As Array(Of Vector2())
+  overload: Godot.Geometry2D.MergePolygons*
+  nameWithType.vb: Geometry2D.MergePolygons(Vector2(), Vector2())
+  fullName.vb: Godot.Geometry2D.MergePolygons(Godot.Vector2(), Godot.Vector2())
+  name.vb: MergePolygons(Vector2(), Vector2())
+- uid: Godot.Geometry2D.MergePolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  commentId: M:Godot.Geometry2D.MergePolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  id: MergePolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: MergePolygons(ReadOnlySpan<Vector2>, ReadOnlySpan<Vector2>)
+  nameWithType: Geometry2D.MergePolygons(ReadOnlySpan<Vector2>, ReadOnlySpan<Vector2>)
+  fullName: Godot.Geometry2D.MergePolygons(System.ReadOnlySpan<Godot.Vector2>, System.ReadOnlySpan<Godot.Vector2>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> MergePolygons(ReadOnlySpan<Vector2> polygonA, ReadOnlySpan<Vector2> polygonB)
+    parameters:
+    - id: polygonA
+      type: System.ReadOnlySpan{Godot.Vector2}
+    - id: polygonB
+      type: System.ReadOnlySpan{Godot.Vector2}
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function MergePolygons(polygonA As ReadOnlySpan(Of Vector2), polygonB As ReadOnlySpan(Of Vector2)) As Array(Of Vector2())
+  overload: Godot.Geometry2D.MergePolygons*
+  nameWithType.vb: Geometry2D.MergePolygons(ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Vector2))
+  fullName.vb: Godot.Geometry2D.MergePolygons(System.ReadOnlySpan(Of Godot.Vector2), System.ReadOnlySpan(Of Godot.Vector2))
+  name.vb: MergePolygons(ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Vector2))
+- uid: Godot.Geometry2D.ClipPolygons(Godot.Vector2[],Godot.Vector2[])
+  commentId: M:Godot.Geometry2D.ClipPolygons(Godot.Vector2[],Godot.Vector2[])
+  id: ClipPolygons(Godot.Vector2[],Godot.Vector2[])
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: ClipPolygons(Vector2[], Vector2[])
+  nameWithType: Geometry2D.ClipPolygons(Vector2[], Vector2[])
+  fullName: Godot.Geometry2D.ClipPolygons(Godot.Vector2[], Godot.Vector2[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> ClipPolygons(Vector2[] polygonA, Vector2[] polygonB)
+    parameters:
+    - id: polygonA
+      type: Godot.Vector2[]
+    - id: polygonB
+      type: Godot.Vector2[]
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function ClipPolygons(polygonA As Vector2(), polygonB As Vector2()) As Array(Of Vector2())
+  overload: Godot.Geometry2D.ClipPolygons*
+  nameWithType.vb: Geometry2D.ClipPolygons(Vector2(), Vector2())
+  fullName.vb: Godot.Geometry2D.ClipPolygons(Godot.Vector2(), Godot.Vector2())
+  name.vb: ClipPolygons(Vector2(), Vector2())
+- uid: Godot.Geometry2D.ClipPolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  commentId: M:Godot.Geometry2D.ClipPolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  id: ClipPolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: ClipPolygons(ReadOnlySpan<Vector2>, ReadOnlySpan<Vector2>)
+  nameWithType: Geometry2D.ClipPolygons(ReadOnlySpan<Vector2>, ReadOnlySpan<Vector2>)
+  fullName: Godot.Geometry2D.ClipPolygons(System.ReadOnlySpan<Godot.Vector2>, System.ReadOnlySpan<Godot.Vector2>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> ClipPolygons(ReadOnlySpan<Vector2> polygonA, ReadOnlySpan<Vector2> polygonB)
+    parameters:
+    - id: polygonA
+      type: System.ReadOnlySpan{Godot.Vector2}
+    - id: polygonB
+      type: System.ReadOnlySpan{Godot.Vector2}
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function ClipPolygons(polygonA As ReadOnlySpan(Of Vector2), polygonB As ReadOnlySpan(Of Vector2)) As Array(Of Vector2())
+  overload: Godot.Geometry2D.ClipPolygons*
+  nameWithType.vb: Geometry2D.ClipPolygons(ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Vector2))
+  fullName.vb: Godot.Geometry2D.ClipPolygons(System.ReadOnlySpan(Of Godot.Vector2), System.ReadOnlySpan(Of Godot.Vector2))
+  name.vb: ClipPolygons(ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Vector2))
+- uid: Godot.Geometry2D.IntersectPolygons(Godot.Vector2[],Godot.Vector2[])
+  commentId: M:Godot.Geometry2D.IntersectPolygons(Godot.Vector2[],Godot.Vector2[])
+  id: IntersectPolygons(Godot.Vector2[],Godot.Vector2[])
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: IntersectPolygons(Vector2[], Vector2[])
+  nameWithType: Geometry2D.IntersectPolygons(Vector2[], Vector2[])
+  fullName: Godot.Geometry2D.IntersectPolygons(Godot.Vector2[], Godot.Vector2[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> IntersectPolygons(Vector2[] polygonA, Vector2[] polygonB)
+    parameters:
+    - id: polygonA
+      type: Godot.Vector2[]
+    - id: polygonB
+      type: Godot.Vector2[]
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function IntersectPolygons(polygonA As Vector2(), polygonB As Vector2()) As Array(Of Vector2())
+  overload: Godot.Geometry2D.IntersectPolygons*
+  nameWithType.vb: Geometry2D.IntersectPolygons(Vector2(), Vector2())
+  fullName.vb: Godot.Geometry2D.IntersectPolygons(Godot.Vector2(), Godot.Vector2())
+  name.vb: IntersectPolygons(Vector2(), Vector2())
+- uid: Godot.Geometry2D.IntersectPolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  commentId: M:Godot.Geometry2D.IntersectPolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  id: IntersectPolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: IntersectPolygons(ReadOnlySpan<Vector2>, ReadOnlySpan<Vector2>)
+  nameWithType: Geometry2D.IntersectPolygons(ReadOnlySpan<Vector2>, ReadOnlySpan<Vector2>)
+  fullName: Godot.Geometry2D.IntersectPolygons(System.ReadOnlySpan<Godot.Vector2>, System.ReadOnlySpan<Godot.Vector2>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> IntersectPolygons(ReadOnlySpan<Vector2> polygonA, ReadOnlySpan<Vector2> polygonB)
+    parameters:
+    - id: polygonA
+      type: System.ReadOnlySpan{Godot.Vector2}
+    - id: polygonB
+      type: System.ReadOnlySpan{Godot.Vector2}
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function IntersectPolygons(polygonA As ReadOnlySpan(Of Vector2), polygonB As ReadOnlySpan(Of Vector2)) As Array(Of Vector2())
+  overload: Godot.Geometry2D.IntersectPolygons*
+  nameWithType.vb: Geometry2D.IntersectPolygons(ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Vector2))
+  fullName.vb: Godot.Geometry2D.IntersectPolygons(System.ReadOnlySpan(Of Godot.Vector2), System.ReadOnlySpan(Of Godot.Vector2))
+  name.vb: IntersectPolygons(ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Vector2))
+- uid: Godot.Geometry2D.ExcludePolygons(Godot.Vector2[],Godot.Vector2[])
+  commentId: M:Godot.Geometry2D.ExcludePolygons(Godot.Vector2[],Godot.Vector2[])
+  id: ExcludePolygons(Godot.Vector2[],Godot.Vector2[])
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: ExcludePolygons(Vector2[], Vector2[])
+  nameWithType: Geometry2D.ExcludePolygons(Vector2[], Vector2[])
+  fullName: Godot.Geometry2D.ExcludePolygons(Godot.Vector2[], Godot.Vector2[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> ExcludePolygons(Vector2[] polygonA, Vector2[] polygonB)
+    parameters:
+    - id: polygonA
+      type: Godot.Vector2[]
+    - id: polygonB
+      type: Godot.Vector2[]
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function ExcludePolygons(polygonA As Vector2(), polygonB As Vector2()) As Array(Of Vector2())
+  overload: Godot.Geometry2D.ExcludePolygons*
+  nameWithType.vb: Geometry2D.ExcludePolygons(Vector2(), Vector2())
+  fullName.vb: Godot.Geometry2D.ExcludePolygons(Godot.Vector2(), Godot.Vector2())
+  name.vb: ExcludePolygons(Vector2(), Vector2())
+- uid: Godot.Geometry2D.ExcludePolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  commentId: M:Godot.Geometry2D.ExcludePolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  id: ExcludePolygons(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: ExcludePolygons(ReadOnlySpan<Vector2>, ReadOnlySpan<Vector2>)
+  nameWithType: Geometry2D.ExcludePolygons(ReadOnlySpan<Vector2>, ReadOnlySpan<Vector2>)
+  fullName: Godot.Geometry2D.ExcludePolygons(System.ReadOnlySpan<Godot.Vector2>, System.ReadOnlySpan<Godot.Vector2>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> ExcludePolygons(ReadOnlySpan<Vector2> polygonA, ReadOnlySpan<Vector2> polygonB)
+    parameters:
+    - id: polygonA
+      type: System.ReadOnlySpan{Godot.Vector2}
+    - id: polygonB
+      type: System.ReadOnlySpan{Godot.Vector2}
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function ExcludePolygons(polygonA As ReadOnlySpan(Of Vector2), polygonB As ReadOnlySpan(Of Vector2)) As Array(Of Vector2())
+  overload: Godot.Geometry2D.ExcludePolygons*
+  nameWithType.vb: Geometry2D.ExcludePolygons(ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Vector2))
+  fullName.vb: Godot.Geometry2D.ExcludePolygons(System.ReadOnlySpan(Of Godot.Vector2), System.ReadOnlySpan(Of Godot.Vector2))
+  name.vb: ExcludePolygons(ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Vector2))
+- uid: Godot.Geometry2D.ClipPolylineWithPolygon(Godot.Vector2[],Godot.Vector2[])
+  commentId: M:Godot.Geometry2D.ClipPolylineWithPolygon(Godot.Vector2[],Godot.Vector2[])
+  id: ClipPolylineWithPolygon(Godot.Vector2[],Godot.Vector2[])
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: ClipPolylineWithPolygon(Vector2[], Vector2[])
+  nameWithType: Geometry2D.ClipPolylineWithPolygon(Vector2[], Vector2[])
+  fullName: Godot.Geometry2D.ClipPolylineWithPolygon(Godot.Vector2[], Godot.Vector2[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> ClipPolylineWithPolygon(Vector2[] polyline, Vector2[] polygon)
+    parameters:
+    - id: polyline
+      type: Godot.Vector2[]
+    - id: polygon
+      type: Godot.Vector2[]
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function ClipPolylineWithPolygon(polyline As Vector2(), polygon As Vector2()) As Array(Of Vector2())
+  overload: Godot.Geometry2D.ClipPolylineWithPolygon*
+  nameWithType.vb: Geometry2D.ClipPolylineWithPolygon(Vector2(), Vector2())
+  fullName.vb: Godot.Geometry2D.ClipPolylineWithPolygon(Godot.Vector2(), Godot.Vector2())
+  name.vb: ClipPolylineWithPolygon(Vector2(), Vector2())
+- uid: Godot.Geometry2D.ClipPolylineWithPolygon(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  commentId: M:Godot.Geometry2D.ClipPolylineWithPolygon(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  id: ClipPolylineWithPolygon(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: ClipPolylineWithPolygon(ReadOnlySpan<Vector2>, ReadOnlySpan<Vector2>)
+  nameWithType: Geometry2D.ClipPolylineWithPolygon(ReadOnlySpan<Vector2>, ReadOnlySpan<Vector2>)
+  fullName: Godot.Geometry2D.ClipPolylineWithPolygon(System.ReadOnlySpan<Godot.Vector2>, System.ReadOnlySpan<Godot.Vector2>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> ClipPolylineWithPolygon(ReadOnlySpan<Vector2> polyline, ReadOnlySpan<Vector2> polygon)
+    parameters:
+    - id: polyline
+      type: System.ReadOnlySpan{Godot.Vector2}
+    - id: polygon
+      type: System.ReadOnlySpan{Godot.Vector2}
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function ClipPolylineWithPolygon(polyline As ReadOnlySpan(Of Vector2), polygon As ReadOnlySpan(Of Vector2)) As Array(Of Vector2())
+  overload: Godot.Geometry2D.ClipPolylineWithPolygon*
+  nameWithType.vb: Geometry2D.ClipPolylineWithPolygon(ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Vector2))
+  fullName.vb: Godot.Geometry2D.ClipPolylineWithPolygon(System.ReadOnlySpan(Of Godot.Vector2), System.ReadOnlySpan(Of Godot.Vector2))
+  name.vb: ClipPolylineWithPolygon(ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Vector2))
+- uid: Godot.Geometry2D.IntersectPolylineWithPolygon(Godot.Vector2[],Godot.Vector2[])
+  commentId: M:Godot.Geometry2D.IntersectPolylineWithPolygon(Godot.Vector2[],Godot.Vector2[])
+  id: IntersectPolylineWithPolygon(Godot.Vector2[],Godot.Vector2[])
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: IntersectPolylineWithPolygon(Vector2[], Vector2[])
+  nameWithType: Geometry2D.IntersectPolylineWithPolygon(Vector2[], Vector2[])
+  fullName: Godot.Geometry2D.IntersectPolylineWithPolygon(Godot.Vector2[], Godot.Vector2[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> IntersectPolylineWithPolygon(Vector2[] polyline, Vector2[] polygon)
+    parameters:
+    - id: polyline
+      type: Godot.Vector2[]
+    - id: polygon
+      type: Godot.Vector2[]
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function IntersectPolylineWithPolygon(polyline As Vector2(), polygon As Vector2()) As Array(Of Vector2())
+  overload: Godot.Geometry2D.IntersectPolylineWithPolygon*
+  nameWithType.vb: Geometry2D.IntersectPolylineWithPolygon(Vector2(), Vector2())
+  fullName.vb: Godot.Geometry2D.IntersectPolylineWithPolygon(Godot.Vector2(), Godot.Vector2())
+  name.vb: IntersectPolylineWithPolygon(Vector2(), Vector2())
+- uid: Godot.Geometry2D.IntersectPolylineWithPolygon(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  commentId: M:Godot.Geometry2D.IntersectPolylineWithPolygon(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  id: IntersectPolylineWithPolygon(System.ReadOnlySpan{Godot.Vector2},System.ReadOnlySpan{Godot.Vector2})
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: IntersectPolylineWithPolygon(ReadOnlySpan<Vector2>, ReadOnlySpan<Vector2>)
+  nameWithType: Geometry2D.IntersectPolylineWithPolygon(ReadOnlySpan<Vector2>, ReadOnlySpan<Vector2>)
+  fullName: Godot.Geometry2D.IntersectPolylineWithPolygon(System.ReadOnlySpan<Godot.Vector2>, System.ReadOnlySpan<Godot.Vector2>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> IntersectPolylineWithPolygon(ReadOnlySpan<Vector2> polyline, ReadOnlySpan<Vector2> polygon)
+    parameters:
+    - id: polyline
+      type: System.ReadOnlySpan{Godot.Vector2}
+    - id: polygon
+      type: System.ReadOnlySpan{Godot.Vector2}
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function IntersectPolylineWithPolygon(polyline As ReadOnlySpan(Of Vector2), polygon As ReadOnlySpan(Of Vector2)) As Array(Of Vector2())
+  overload: Godot.Geometry2D.IntersectPolylineWithPolygon*
+  nameWithType.vb: Geometry2D.IntersectPolylineWithPolygon(ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Vector2))
+  fullName.vb: Godot.Geometry2D.IntersectPolylineWithPolygon(System.ReadOnlySpan(Of Godot.Vector2), System.ReadOnlySpan(Of Godot.Vector2))
+  name.vb: IntersectPolylineWithPolygon(ReadOnlySpan(Of Vector2), ReadOnlySpan(Of Vector2))
+- uid: Godot.Geometry2D.OffsetPolygon(Godot.Vector2[],System.Single,Godot.Geometry2D.PolyJoinType)
+  commentId: M:Godot.Geometry2D.OffsetPolygon(Godot.Vector2[],System.Single,Godot.Geometry2D.PolyJoinType)
+  id: OffsetPolygon(Godot.Vector2[],System.Single,Godot.Geometry2D.PolyJoinType)
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: OffsetPolygon(Vector2[], float, PolyJoinType)
+  nameWithType: Geometry2D.OffsetPolygon(Vector2[], float, Geometry2D.PolyJoinType)
+  fullName: Godot.Geometry2D.OffsetPolygon(Godot.Vector2[], float, Godot.Geometry2D.PolyJoinType)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> OffsetPolygon(Vector2[] polygon, float delta, Geometry2D.PolyJoinType joinType = PolyJoinType.Square)
+    parameters:
+    - id: polygon
+      type: Godot.Vector2[]
+    - id: delta
+      type: System.Single
+    - id: joinType
+      type: Godot.Geometry2D.PolyJoinType
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function OffsetPolygon(polygon As Vector2(), delta As Single, joinType As Geometry2D.PolyJoinType = PolyJoinType.Square) As Array(Of Vector2())
+  overload: Godot.Geometry2D.OffsetPolygon*
+  nameWithType.vb: Geometry2D.OffsetPolygon(Vector2(), Single, Geometry2D.PolyJoinType)
+  fullName.vb: Godot.Geometry2D.OffsetPolygon(Godot.Vector2(), Single, Godot.Geometry2D.PolyJoinType)
+  name.vb: OffsetPolygon(Vector2(), Single, PolyJoinType)
+- uid: Godot.Geometry2D.OffsetPolygon(System.ReadOnlySpan{Godot.Vector2},System.Single,Godot.Geometry2D.PolyJoinType)
+  commentId: M:Godot.Geometry2D.OffsetPolygon(System.ReadOnlySpan{Godot.Vector2},System.Single,Godot.Geometry2D.PolyJoinType)
+  id: OffsetPolygon(System.ReadOnlySpan{Godot.Vector2},System.Single,Godot.Geometry2D.PolyJoinType)
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: OffsetPolygon(ReadOnlySpan<Vector2>, float, PolyJoinType)
+  nameWithType: Geometry2D.OffsetPolygon(ReadOnlySpan<Vector2>, float, Geometry2D.PolyJoinType)
+  fullName: Godot.Geometry2D.OffsetPolygon(System.ReadOnlySpan<Godot.Vector2>, float, Godot.Geometry2D.PolyJoinType)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> OffsetPolygon(ReadOnlySpan<Vector2> polygon, float delta, Geometry2D.PolyJoinType joinType)
+    parameters:
+    - id: polygon
+      type: System.ReadOnlySpan{Godot.Vector2}
+    - id: delta
+      type: System.Single
+    - id: joinType
+      type: Godot.Geometry2D.PolyJoinType
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function OffsetPolygon(polygon As ReadOnlySpan(Of Vector2), delta As Single, joinType As Geometry2D.PolyJoinType) As Array(Of Vector2())
+  overload: Godot.Geometry2D.OffsetPolygon*
+  nameWithType.vb: Geometry2D.OffsetPolygon(ReadOnlySpan(Of Vector2), Single, Geometry2D.PolyJoinType)
+  fullName.vb: Godot.Geometry2D.OffsetPolygon(System.ReadOnlySpan(Of Godot.Vector2), Single, Godot.Geometry2D.PolyJoinType)
+  name.vb: OffsetPolygon(ReadOnlySpan(Of Vector2), Single, PolyJoinType)
+- uid: Godot.Geometry2D.OffsetPolyline(Godot.Vector2[],System.Single,Godot.Geometry2D.PolyJoinType,Godot.Geometry2D.PolyEndType)
+  commentId: M:Godot.Geometry2D.OffsetPolyline(Godot.Vector2[],System.Single,Godot.Geometry2D.PolyJoinType,Godot.Geometry2D.PolyEndType)
+  id: OffsetPolyline(Godot.Vector2[],System.Single,Godot.Geometry2D.PolyJoinType,Godot.Geometry2D.PolyEndType)
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: OffsetPolyline(Vector2[], float, PolyJoinType, PolyEndType)
+  nameWithType: Geometry2D.OffsetPolyline(Vector2[], float, Geometry2D.PolyJoinType, Geometry2D.PolyEndType)
+  fullName: Godot.Geometry2D.OffsetPolyline(Godot.Vector2[], float, Godot.Geometry2D.PolyJoinType, Godot.Geometry2D.PolyEndType)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> OffsetPolyline(Vector2[] polyline, float delta, Geometry2D.PolyJoinType joinType = PolyJoinType.Square, Geometry2D.PolyEndType endType = PolyEndType.Square)
+    parameters:
+    - id: polyline
+      type: Godot.Vector2[]
+    - id: delta
+      type: System.Single
+    - id: joinType
+      type: Godot.Geometry2D.PolyJoinType
+    - id: endType
+      type: Godot.Geometry2D.PolyEndType
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function OffsetPolyline(polyline As Vector2(), delta As Single, joinType As Geometry2D.PolyJoinType = PolyJoinType.Square, endType As Geometry2D.PolyEndType = PolyEndType.Square) As Array(Of Vector2())
+  overload: Godot.Geometry2D.OffsetPolyline*
+  nameWithType.vb: Geometry2D.OffsetPolyline(Vector2(), Single, Geometry2D.PolyJoinType, Geometry2D.PolyEndType)
+  fullName.vb: Godot.Geometry2D.OffsetPolyline(Godot.Vector2(), Single, Godot.Geometry2D.PolyJoinType, Godot.Geometry2D.PolyEndType)
+  name.vb: OffsetPolyline(Vector2(), Single, PolyJoinType, PolyEndType)
+- uid: Godot.Geometry2D.OffsetPolyline(System.ReadOnlySpan{Godot.Vector2},System.Single,Godot.Geometry2D.PolyJoinType,Godot.Geometry2D.PolyEndType)
+  commentId: M:Godot.Geometry2D.OffsetPolyline(System.ReadOnlySpan{Godot.Vector2},System.Single,Godot.Geometry2D.PolyJoinType,Godot.Geometry2D.PolyEndType)
+  id: OffsetPolyline(System.ReadOnlySpan{Godot.Vector2},System.Single,Godot.Geometry2D.PolyJoinType,Godot.Geometry2D.PolyEndType)
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: OffsetPolyline(ReadOnlySpan<Vector2>, float, PolyJoinType, PolyEndType)
+  nameWithType: Geometry2D.OffsetPolyline(ReadOnlySpan<Vector2>, float, Geometry2D.PolyJoinType, Geometry2D.PolyEndType)
+  fullName: Godot.Geometry2D.OffsetPolyline(System.ReadOnlySpan<Godot.Vector2>, float, Godot.Geometry2D.PolyJoinType, Godot.Geometry2D.PolyEndType)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2[]> OffsetPolyline(ReadOnlySpan<Vector2> polyline, float delta, Geometry2D.PolyJoinType joinType, Geometry2D.PolyEndType endType)
+    parameters:
+    - id: polyline
+      type: System.ReadOnlySpan{Godot.Vector2}
+    - id: delta
+      type: System.Single
+    - id: joinType
+      type: Godot.Geometry2D.PolyJoinType
+    - id: endType
+      type: Godot.Geometry2D.PolyEndType
+    return:
+      type: Godot.Collections.Array{Godot.Vector2[]}
+    content.vb: Public Shared Function OffsetPolyline(polyline As ReadOnlySpan(Of Vector2), delta As Single, joinType As Geometry2D.PolyJoinType, endType As Geometry2D.PolyEndType) As Array(Of Vector2())
+  overload: Godot.Geometry2D.OffsetPolyline*
+  nameWithType.vb: Geometry2D.OffsetPolyline(ReadOnlySpan(Of Vector2), Single, Geometry2D.PolyJoinType, Geometry2D.PolyEndType)
+  fullName.vb: Godot.Geometry2D.OffsetPolyline(System.ReadOnlySpan(Of Godot.Vector2), Single, Godot.Geometry2D.PolyJoinType, Godot.Geometry2D.PolyEndType)
+  name.vb: OffsetPolyline(ReadOnlySpan(Of Vector2), Single, PolyJoinType, PolyEndType)
+- uid: Godot.Geometry2D.MakeAtlas(Godot.Vector2[])
+  commentId: M:Godot.Geometry2D.MakeAtlas(Godot.Vector2[])
+  id: MakeAtlas(Godot.Vector2[])
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: MakeAtlas(Vector2[])
+  nameWithType: Geometry2D.MakeAtlas(Vector2[])
+  fullName: Godot.Geometry2D.MakeAtlas(Godot.Vector2[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Dictionary MakeAtlas(Vector2[] sizes)
+    parameters:
+    - id: sizes
+      type: Godot.Vector2[]
+    return:
+      type: Godot.Collections.Dictionary
+    content.vb: Public Shared Function MakeAtlas(sizes As Vector2()) As Dictionary
+  overload: Godot.Geometry2D.MakeAtlas*
+  nameWithType.vb: Geometry2D.MakeAtlas(Vector2())
+  fullName.vb: Godot.Geometry2D.MakeAtlas(Godot.Vector2())
+  name.vb: MakeAtlas(Vector2())
+- uid: Godot.Geometry2D.MakeAtlas(System.ReadOnlySpan{Godot.Vector2})
+  commentId: M:Godot.Geometry2D.MakeAtlas(System.ReadOnlySpan{Godot.Vector2})
+  id: MakeAtlas(System.ReadOnlySpan{Godot.Vector2})
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: MakeAtlas(ReadOnlySpan<Vector2>)
+  nameWithType: Geometry2D.MakeAtlas(ReadOnlySpan<Vector2>)
+  fullName: Godot.Geometry2D.MakeAtlas(System.ReadOnlySpan<Godot.Vector2>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Dictionary MakeAtlas(ReadOnlySpan<Vector2> sizes)
+    parameters:
+    - id: sizes
+      type: System.ReadOnlySpan{Godot.Vector2}
+    return:
+      type: Godot.Collections.Dictionary
+    content.vb: Public Shared Function MakeAtlas(sizes As ReadOnlySpan(Of Vector2)) As Dictionary
+  overload: Godot.Geometry2D.MakeAtlas*
+  nameWithType.vb: Geometry2D.MakeAtlas(ReadOnlySpan(Of Vector2))
+  fullName.vb: Godot.Geometry2D.MakeAtlas(System.ReadOnlySpan(Of Godot.Vector2))
+  name.vb: MakeAtlas(ReadOnlySpan(Of Vector2))
+- uid: Godot.Geometry2D.BresenhamLine(Godot.Vector2I,Godot.Vector2I)
+  commentId: M:Godot.Geometry2D.BresenhamLine(Godot.Vector2I,Godot.Vector2I)
+  id: BresenhamLine(Godot.Vector2I,Godot.Vector2I)
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: BresenhamLine(Vector2I, Vector2I)
+  nameWithType: Geometry2D.BresenhamLine(Vector2I, Vector2I)
+  fullName: Godot.Geometry2D.BresenhamLine(Godot.Vector2I, Godot.Vector2I)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Vector2I> BresenhamLine(Vector2I from, Vector2I to)
+    parameters:
+    - id: from
+      type: Godot.Vector2I
+    - id: to
+      type: Godot.Vector2I
+    return:
+      type: Godot.Collections.Array{Godot.Vector2I}
+    content.vb: Public Shared Function BresenhamLine(from As Vector2I, [to] As Vector2I) As Array(Of Vector2I)
+  overload: Godot.Geometry2D.BresenhamLine*
+- uid: Godot.Geometry2D.Singleton
+  commentId: P:Godot.Geometry2D.Singleton
+  id: Singleton
+  parent: Godot.Geometry2D
+  langs:
+  - csharp
+  - vb
+  name: Singleton
+  nameWithType: Geometry2D.Singleton
+  fullName: Godot.Geometry2D.Singleton
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Geometry2DInstance Singleton { get; }
+    parameters: []
+    return:
+      type: Godot.Geometry2DInstance
+    content.vb: Public Shared ReadOnly Property Singleton As Geometry2DInstance
+  overload: Godot.Geometry2D.Singleton*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.Geometry2D.IsPointInCircle*
+  commentId: Overload:Godot.Geometry2D.IsPointInCircle
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_IsPointInCircle_Godot_Vector2_Godot_Vector2_System_Single_
+  name: IsPointInCircle
+  nameWithType: Geometry2D.IsPointInCircle
+  fullName: Godot.Geometry2D.IsPointInCircle
+- uid: Godot.Vector2
+  commentId: T:Godot.Vector2
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector2.html
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Godot.Vector2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.Geometry2D.SegmentIntersectsCircle*
+  commentId: Overload:Godot.Geometry2D.SegmentIntersectsCircle
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_SegmentIntersectsCircle_Godot_Vector2_Godot_Vector2_Godot_Vector2_System_Single_
+  name: SegmentIntersectsCircle
+  nameWithType: Geometry2D.SegmentIntersectsCircle
+  fullName: Godot.Geometry2D.SegmentIntersectsCircle
+- uid: Godot.Geometry2D.SegmentIntersectsSegment*
+  commentId: Overload:Godot.Geometry2D.SegmentIntersectsSegment
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_SegmentIntersectsSegment_Godot_Vector2_Godot_Vector2_Godot_Vector2_Godot_Vector2_
+  name: SegmentIntersectsSegment
+  nameWithType: Geometry2D.SegmentIntersectsSegment
+  fullName: Godot.Geometry2D.SegmentIntersectsSegment
+- uid: Godot.Variant
+  commentId: T:Godot.Variant
+  parent: Godot
+  isExternal: true
+  href: Godot.Variant.html
+  name: Variant
+  nameWithType: Variant
+  fullName: Godot.Variant
+- uid: Godot.Geometry2D.LineIntersectsLine*
+  commentId: Overload:Godot.Geometry2D.LineIntersectsLine
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_LineIntersectsLine_Godot_Vector2_Godot_Vector2_Godot_Vector2_Godot_Vector2_
+  name: LineIntersectsLine
+  nameWithType: Geometry2D.LineIntersectsLine
+  fullName: Godot.Geometry2D.LineIntersectsLine
+- uid: Godot.Geometry2D.GetClosestPointsBetweenSegments*
+  commentId: Overload:Godot.Geometry2D.GetClosestPointsBetweenSegments
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_GetClosestPointsBetweenSegments_Godot_Vector2_Godot_Vector2_Godot_Vector2_Godot_Vector2_
+  name: GetClosestPointsBetweenSegments
+  nameWithType: Geometry2D.GetClosestPointsBetweenSegments
+  fullName: Godot.Geometry2D.GetClosestPointsBetweenSegments
+- uid: Godot.Vector2[]
+  isExternal: true
+  href: Godot.Vector2.html
+  name: Vector2[]
+  nameWithType: Vector2[]
+  fullName: Godot.Vector2[]
+  nameWithType.vb: Vector2()
+  fullName.vb: Godot.Vector2()
+  name.vb: Vector2()
+  spec.csharp:
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+    href: Godot.Vector2.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+    href: Godot.Vector2.html
+  - name: (
+  - name: )
+- uid: Godot.Geometry2D.GetClosestPointToSegment*
+  commentId: Overload:Godot.Geometry2D.GetClosestPointToSegment
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_GetClosestPointToSegment_Godot_Vector2_Godot_Vector2_Godot_Vector2_
+  name: GetClosestPointToSegment
+  nameWithType: Geometry2D.GetClosestPointToSegment
+  fullName: Godot.Geometry2D.GetClosestPointToSegment
+- uid: Godot.Geometry2D.GetClosestPointToSegmentUncapped*
+  commentId: Overload:Godot.Geometry2D.GetClosestPointToSegmentUncapped
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_GetClosestPointToSegmentUncapped_Godot_Vector2_Godot_Vector2_Godot_Vector2_
+  name: GetClosestPointToSegmentUncapped
+  nameWithType: Geometry2D.GetClosestPointToSegmentUncapped
+  fullName: Godot.Geometry2D.GetClosestPointToSegmentUncapped
+- uid: Godot.Geometry2D.PointIsInsideTriangle*
+  commentId: Overload:Godot.Geometry2D.PointIsInsideTriangle
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_PointIsInsideTriangle_Godot_Vector2_Godot_Vector2_Godot_Vector2_Godot_Vector2_
+  name: PointIsInsideTriangle
+  nameWithType: Geometry2D.PointIsInsideTriangle
+  fullName: Godot.Geometry2D.PointIsInsideTriangle
+- uid: Godot.Geometry2D.IsPolygonClockwise*
+  commentId: Overload:Godot.Geometry2D.IsPolygonClockwise
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_IsPolygonClockwise_Godot_Vector2___
+  name: IsPolygonClockwise
+  nameWithType: Geometry2D.IsPolygonClockwise
+  fullName: Godot.Geometry2D.IsPolygonClockwise
+- uid: System.ReadOnlySpan{Godot.Vector2}
+  commentId: T:System.ReadOnlySpan{Godot.Vector2}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<Vector2>
+  nameWithType: ReadOnlySpan<Vector2>
+  fullName: System.ReadOnlySpan<Godot.Vector2>
+  nameWithType.vb: ReadOnlySpan(Of Vector2)
+  fullName.vb: System.ReadOnlySpan(Of Godot.Vector2)
+  name.vb: ReadOnlySpan(Of Vector2)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+    href: Godot.Vector2.html
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+    href: Godot.Vector2.html
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.Geometry2D.IsPointInPolygon*
+  commentId: Overload:Godot.Geometry2D.IsPointInPolygon
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_IsPointInPolygon_Godot_Vector2_Godot_Vector2___
+  name: IsPointInPolygon
+  nameWithType: Geometry2D.IsPointInPolygon
+  fullName: Godot.Geometry2D.IsPointInPolygon
+- uid: Godot.Geometry2D.TriangulatePolygon*
+  commentId: Overload:Godot.Geometry2D.TriangulatePolygon
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_TriangulatePolygon_Godot_Vector2___
+  name: TriangulatePolygon
+  nameWithType: Geometry2D.TriangulatePolygon
+  fullName: Godot.Geometry2D.TriangulatePolygon
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: Godot.Geometry2D.TriangulateDelaunay*
+  commentId: Overload:Godot.Geometry2D.TriangulateDelaunay
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_TriangulateDelaunay_Godot_Vector2___
+  name: TriangulateDelaunay
+  nameWithType: Geometry2D.TriangulateDelaunay
+  fullName: Godot.Geometry2D.TriangulateDelaunay
+- uid: Godot.Geometry2D.ConvexHull*
+  commentId: Overload:Godot.Geometry2D.ConvexHull
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_ConvexHull_Godot_Vector2___
+  name: ConvexHull
+  nameWithType: Geometry2D.ConvexHull
+  fullName: Godot.Geometry2D.ConvexHull
+- uid: Godot.Geometry2D.DecomposePolygonInConvex*
+  commentId: Overload:Godot.Geometry2D.DecomposePolygonInConvex
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_DecomposePolygonInConvex_Godot_Vector2___
+  name: DecomposePolygonInConvex
+  nameWithType: Geometry2D.DecomposePolygonInConvex
+  fullName: Godot.Geometry2D.DecomposePolygonInConvex
+- uid: Godot.Collections.Array{Godot.Vector2[]}
+  commentId: T:Godot.Collections.Array{Godot.Vector2[]}
+  parent: Godot.Collections
+  definition: Godot.Collections.Array`1
+  href: Godot.Collections.Array-1.html
+  name: Array<Vector2[]>
+  nameWithType: Array<Vector2[]>
+  fullName: Godot.Collections.Array<Godot.Vector2[]>
+  nameWithType.vb: Array(Of Vector2())
+  fullName.vb: Godot.Collections.Array(Of Godot.Vector2())
+  name.vb: Array(Of Vector2())
+  spec.csharp:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: <
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+    href: Godot.Vector2.html
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+    href: Godot.Vector2.html
+  - name: (
+  - name: )
+  - name: )
+- uid: Godot.Collections.Array`1
+  commentId: T:Godot.Collections.Array`1
+  parent: Godot.Collections
+  isExternal: true
+  href: Godot.Collections.Array-1.html
+  name: Array<T>
+  nameWithType: Array<T>
+  fullName: Godot.Collections.Array<T>
+  nameWithType.vb: Array(Of T)
+  fullName.vb: Godot.Collections.Array(Of T)
+  name.vb: Array(Of T)
+  spec.csharp:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.Collections
+  commentId: N:Godot.Collections
+  isExternal: true
+  href: Godot.html
+  name: Godot.Collections
+  nameWithType: Godot.Collections
+  fullName: Godot.Collections
+  spec.csharp:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+  spec.vb:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+- uid: Godot.Geometry2D.MergePolygons*
+  commentId: Overload:Godot.Geometry2D.MergePolygons
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_MergePolygons_Godot_Vector2___Godot_Vector2___
+  name: MergePolygons
+  nameWithType: Geometry2D.MergePolygons
+  fullName: Godot.Geometry2D.MergePolygons
+- uid: Godot.Geometry2D.ClipPolygons*
+  commentId: Overload:Godot.Geometry2D.ClipPolygons
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_ClipPolygons_Godot_Vector2___Godot_Vector2___
+  name: ClipPolygons
+  nameWithType: Geometry2D.ClipPolygons
+  fullName: Godot.Geometry2D.ClipPolygons
+- uid: Godot.Geometry2D.IntersectPolygons*
+  commentId: Overload:Godot.Geometry2D.IntersectPolygons
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_IntersectPolygons_Godot_Vector2___Godot_Vector2___
+  name: IntersectPolygons
+  nameWithType: Geometry2D.IntersectPolygons
+  fullName: Godot.Geometry2D.IntersectPolygons
+- uid: Godot.Geometry2D.ExcludePolygons*
+  commentId: Overload:Godot.Geometry2D.ExcludePolygons
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_ExcludePolygons_Godot_Vector2___Godot_Vector2___
+  name: ExcludePolygons
+  nameWithType: Geometry2D.ExcludePolygons
+  fullName: Godot.Geometry2D.ExcludePolygons
+- uid: Godot.Geometry2D.ClipPolylineWithPolygon*
+  commentId: Overload:Godot.Geometry2D.ClipPolylineWithPolygon
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_ClipPolylineWithPolygon_Godot_Vector2___Godot_Vector2___
+  name: ClipPolylineWithPolygon
+  nameWithType: Geometry2D.ClipPolylineWithPolygon
+  fullName: Godot.Geometry2D.ClipPolylineWithPolygon
+- uid: Godot.Geometry2D.IntersectPolylineWithPolygon*
+  commentId: Overload:Godot.Geometry2D.IntersectPolylineWithPolygon
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_IntersectPolylineWithPolygon_Godot_Vector2___Godot_Vector2___
+  name: IntersectPolylineWithPolygon
+  nameWithType: Geometry2D.IntersectPolylineWithPolygon
+  fullName: Godot.Geometry2D.IntersectPolylineWithPolygon
+- uid: Godot.Geometry2D.OffsetPolygon*
+  commentId: Overload:Godot.Geometry2D.OffsetPolygon
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_OffsetPolygon_Godot_Vector2___System_Single_Godot_Geometry2D_PolyJoinType_
+  name: OffsetPolygon
+  nameWithType: Geometry2D.OffsetPolygon
+  fullName: Godot.Geometry2D.OffsetPolygon
+- uid: Godot.Geometry2D.PolyJoinType
+  commentId: T:Godot.Geometry2D.PolyJoinType
+  parent: Godot
+  isExternal: true
+  href: Godot.Geometry2D.html
+  name: Geometry2D.PolyJoinType
+  nameWithType: Geometry2D.PolyJoinType
+  fullName: Godot.Geometry2D.PolyJoinType
+  spec.csharp:
+  - uid: Godot.Geometry2D
+    name: Geometry2D
+    isExternal: true
+    href: Godot.Geometry2D.html
+  - name: .
+  - uid: Godot.Geometry2D.PolyJoinType
+    name: PolyJoinType
+    isExternal: true
+    href: Godot.Geometry2D.PolyJoinType.html
+  spec.vb:
+  - uid: Godot.Geometry2D
+    name: Geometry2D
+    isExternal: true
+    href: Godot.Geometry2D.html
+  - name: .
+  - uid: Godot.Geometry2D.PolyJoinType
+    name: PolyJoinType
+    isExternal: true
+    href: Godot.Geometry2D.PolyJoinType.html
+- uid: Godot.Geometry2D.OffsetPolyline*
+  commentId: Overload:Godot.Geometry2D.OffsetPolyline
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_OffsetPolyline_Godot_Vector2___System_Single_Godot_Geometry2D_PolyJoinType_Godot_Geometry2D_PolyEndType_
+  name: OffsetPolyline
+  nameWithType: Geometry2D.OffsetPolyline
+  fullName: Godot.Geometry2D.OffsetPolyline
+- uid: Godot.Geometry2D.PolyEndType
+  commentId: T:Godot.Geometry2D.PolyEndType
+  parent: Godot
+  isExternal: true
+  href: Godot.Geometry2D.html
+  name: Geometry2D.PolyEndType
+  nameWithType: Geometry2D.PolyEndType
+  fullName: Godot.Geometry2D.PolyEndType
+  spec.csharp:
+  - uid: Godot.Geometry2D
+    name: Geometry2D
+    isExternal: true
+    href: Godot.Geometry2D.html
+  - name: .
+  - uid: Godot.Geometry2D.PolyEndType
+    name: PolyEndType
+    isExternal: true
+    href: Godot.Geometry2D.PolyEndType.html
+  spec.vb:
+  - uid: Godot.Geometry2D
+    name: Geometry2D
+    isExternal: true
+    href: Godot.Geometry2D.html
+  - name: .
+  - uid: Godot.Geometry2D.PolyEndType
+    name: PolyEndType
+    isExternal: true
+    href: Godot.Geometry2D.PolyEndType.html
+- uid: Godot.Geometry2D.MakeAtlas*
+  commentId: Overload:Godot.Geometry2D.MakeAtlas
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_MakeAtlas_Godot_Vector2___
+  name: MakeAtlas
+  nameWithType: Geometry2D.MakeAtlas
+  fullName: Godot.Geometry2D.MakeAtlas
+- uid: Godot.Collections.Dictionary
+  commentId: T:Godot.Collections.Dictionary
+  parent: Godot.Collections
+  isExternal: true
+  href: Godot.Collections.Dictionary.html
+  name: Dictionary
+  nameWithType: Dictionary
+  fullName: Godot.Collections.Dictionary
+- uid: Godot.Geometry2D.BresenhamLine*
+  commentId: Overload:Godot.Geometry2D.BresenhamLine
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_BresenhamLine_Godot_Vector2I_Godot_Vector2I_
+  name: BresenhamLine
+  nameWithType: Geometry2D.BresenhamLine
+  fullName: Godot.Geometry2D.BresenhamLine
+- uid: Godot.Vector2I
+  commentId: T:Godot.Vector2I
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector2I.html
+  name: Vector2I
+  nameWithType: Vector2I
+  fullName: Godot.Vector2I
+- uid: Godot.Collections.Array{Godot.Vector2I}
+  commentId: T:Godot.Collections.Array{Godot.Vector2I}
+  parent: Godot.Collections
+  definition: Godot.Collections.Array`1
+  href: Godot.Collections.Array-1.html
+  name: Array<Vector2I>
+  nameWithType: Array<Vector2I>
+  fullName: Godot.Collections.Array<Godot.Vector2I>
+  nameWithType.vb: Array(Of Vector2I)
+  fullName.vb: Godot.Collections.Array(Of Godot.Vector2I)
+  name.vb: Array(Of Vector2I)
+  spec.csharp:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: <
+  - uid: Godot.Vector2I
+    name: Vector2I
+    isExternal: true
+    href: Godot.Vector2I.html
+  - name: '>'
+  spec.vb:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Vector2I
+    name: Vector2I
+    isExternal: true
+    href: Godot.Vector2I.html
+  - name: )
+- uid: Godot.Geometry2D.Singleton*
+  commentId: Overload:Godot.Geometry2D.Singleton
+  isExternal: true
+  href: Godot.Geometry2D.html#Godot_Geometry2D_Singleton
+  name: Singleton
+  nameWithType: Geometry2D.Singleton
+  fullName: Godot.Geometry2D.Singleton
+- uid: Godot.Geometry2DInstance
+  commentId: T:Godot.Geometry2DInstance
+  parent: Godot
+  isExternal: true
+  href: Godot.Geometry2DInstance.html
+  name: Geometry2DInstance
+  nameWithType: Geometry2DInstance
+  fullName: Godot.Geometry2DInstance

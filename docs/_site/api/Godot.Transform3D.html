@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct Transform3D | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Transform3D | mysite ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Godot.Transform3D">
+
+
+
+  <h1 id="Godot_Transform3D" data-uid="Godot.Transform3D" class="text-break">
+Struct Transform3D  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Godot.html">Godot</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GodotSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Transform3D : IEquatable&lt;Transform3D&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Godot.Transform3D.html">Transform3D</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Godot_Transform3D__ctor_" data-uid="Godot.Transform3D.#ctor*"></a>
+
+  <h3 id="Godot_Transform3D__ctor_Godot_Basis_Godot_Vector3_" data-uid="Godot.Transform3D.#ctor(Godot.Basis,Godot.Vector3)">
+  Transform3D(Basis, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform3D(Basis basis, Vector3 origin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>basis</code> <a class="xref" href="Godot.Basis.html">Basis</a></dt>
+    <dd></dd>
+    <dt><code>origin</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D__ctor_" data-uid="Godot.Transform3D.#ctor*"></a>
+
+  <h3 id="Godot_Transform3D__ctor_Godot_Projection_" data-uid="Godot.Transform3D.#ctor(Godot.Projection)">
+  Transform3D(Projection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform3D(Projection projection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>projection</code> <a class="xref" href="Godot.Projection.html">Projection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D__ctor_" data-uid="Godot.Transform3D.#ctor*"></a>
+
+  <h3 id="Godot_Transform3D__ctor_Godot_Vector3_Godot_Vector3_Godot_Vector3_Godot_Vector3_" data-uid="Godot.Transform3D.#ctor(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)">
+  Transform3D(Vector3, Vector3, Vector3, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform3D(Vector3 column0, Vector3 column1, Vector3 column2, Vector3 origin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>column0</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>column1</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>column2</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>origin</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D__ctor_" data-uid="Godot.Transform3D.#ctor*"></a>
+
+  <h3 id="Godot_Transform3D__ctor_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="Godot.Transform3D.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+  Transform3D(float, float, float, float, float, float, float, float, float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform3D(float xx, float yx, float zx, float xy, float yy, float zy, float xz, float yz, float zz, float ox, float oy, float oz)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xx</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>yx</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zx</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>xy</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>yy</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zy</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>xz</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>yz</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>zz</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>ox</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>oy</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>oz</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Godot_Transform3D_Basis" data-uid="Godot.Transform3D.Basis">
+  Basis
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Basis Basis</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Basis.html">Basis</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Godot_Transform3D_Origin" data-uid="Godot.Transform3D.Origin">
+  Origin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Origin</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Godot_Transform3D_FlipX_" data-uid="Godot.Transform3D.FlipX*"></a>
+
+  <h3 id="Godot_Transform3D_FlipX" data-uid="Godot.Transform3D.FlipX">
+  FlipX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform3D FlipX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_FlipY_" data-uid="Godot.Transform3D.FlipY*"></a>
+
+  <h3 id="Godot_Transform3D_FlipY" data-uid="Godot.Transform3D.FlipY">
+  FlipY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform3D FlipY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_FlipZ_" data-uid="Godot.Transform3D.FlipZ*"></a>
+
+  <h3 id="Godot_Transform3D_FlipZ" data-uid="Godot.Transform3D.FlipZ">
+  FlipZ
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform3D FlipZ { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_Identity_" data-uid="Godot.Transform3D.Identity*"></a>
+
+  <h3 id="Godot_Transform3D_Identity" data-uid="Godot.Transform3D.Identity">
+  Identity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform3D Identity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_Item_" data-uid="Godot.Transform3D.Item*"></a>
+
+  <h3 id="Godot_Transform3D_Item_System_Int32_" data-uid="Godot.Transform3D.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 this[int column] { readonly get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>column</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_Item_" data-uid="Godot.Transform3D.Item*"></a>
+
+  <h3 id="Godot_Transform3D_Item_System_Int32_System_Int32_" data-uid="Godot.Transform3D.Item(System.Int32,System.Int32)">
+  this[int, int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float this[int column, int row] { readonly get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>column</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>row</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Godot_Transform3D_AffineInverse_" data-uid="Godot.Transform3D.AffineInverse*"></a>
+
+  <h3 id="Godot_Transform3D_AffineInverse" data-uid="Godot.Transform3D.AffineInverse">
+  AffineInverse()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Transform3D AffineInverse()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_Equals_" data-uid="Godot.Transform3D.Equals*"></a>
+
+  <h3 id="Godot_Transform3D_Equals_Godot_Transform3D_" data-uid="Godot.Transform3D.Equals(Godot.Transform3D)">
+  Equals(Transform3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(Transform3D other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_Equals_" data-uid="Godot.Transform3D.Equals*"></a>
+
+  <h3 id="Godot_Transform3D_Equals_System_Object_" data-uid="Godot.Transform3D.Equals(System.Object)">
+  Equals(object?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">object</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_GetHashCode_" data-uid="Godot.Transform3D.GetHashCode*"></a>
+
+  <h3 id="Godot_Transform3D_GetHashCode" data-uid="Godot.Transform3D.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_InterpolateWith_" data-uid="Godot.Transform3D.InterpolateWith*"></a>
+
+  <h3 id="Godot_Transform3D_InterpolateWith_Godot_Transform3D_System_Single_" data-uid="Godot.Transform3D.InterpolateWith(Godot.Transform3D,System.Single)">
+  InterpolateWith(Transform3D, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Transform3D InterpolateWith(Transform3D transform, float weight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+    <dt><code>weight</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_Inverse_" data-uid="Godot.Transform3D.Inverse*"></a>
+
+  <h3 id="Godot_Transform3D_Inverse" data-uid="Godot.Transform3D.Inverse">
+  Inverse()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Transform3D Inverse()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_IsEqualApprox_" data-uid="Godot.Transform3D.IsEqualApprox*"></a>
+
+  <h3 id="Godot_Transform3D_IsEqualApprox_Godot_Transform3D_" data-uid="Godot.Transform3D.IsEqualApprox(Godot.Transform3D)">
+  IsEqualApprox(Transform3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool IsEqualApprox(Transform3D other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_IsFinite_" data-uid="Godot.Transform3D.IsFinite*"></a>
+
+  <h3 id="Godot_Transform3D_IsFinite" data-uid="Godot.Transform3D.IsFinite">
+  IsFinite()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool IsFinite()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_LookingAt_" data-uid="Godot.Transform3D.LookingAt*"></a>
+
+  <h3 id="Godot_Transform3D_LookingAt_Godot_Vector3_System_Nullable_Godot_Vector3__System_Boolean_" data-uid="Godot.Transform3D.LookingAt(Godot.Vector3,System.Nullable{Godot.Vector3},System.Boolean)">
+  LookingAt(Vector3, Vector3?, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Transform3D LookingAt(Vector3 target, Vector3? up = null, bool useModelFront = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>up</code> <a class="xref" href="Godot.Vector3.html">Vector3</a>?</dt>
+    <dd></dd>
+    <dt><code>useModelFront</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_Orthonormalized_" data-uid="Godot.Transform3D.Orthonormalized*"></a>
+
+  <h3 id="Godot_Transform3D_Orthonormalized" data-uid="Godot.Transform3D.Orthonormalized">
+  Orthonormalized()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Transform3D Orthonormalized()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_Rotated_" data-uid="Godot.Transform3D.Rotated*"></a>
+
+  <h3 id="Godot_Transform3D_Rotated_Godot_Vector3_System_Single_" data-uid="Godot.Transform3D.Rotated(Godot.Vector3,System.Single)">
+  Rotated(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Transform3D Rotated(Vector3 axis, float angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>axis</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>angle</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_RotatedLocal_" data-uid="Godot.Transform3D.RotatedLocal*"></a>
+
+  <h3 id="Godot_Transform3D_RotatedLocal_Godot_Vector3_System_Single_" data-uid="Godot.Transform3D.RotatedLocal(Godot.Vector3,System.Single)">
+  RotatedLocal(Vector3, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Transform3D RotatedLocal(Vector3 axis, float angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>axis</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>angle</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_Scaled_" data-uid="Godot.Transform3D.Scaled*"></a>
+
+  <h3 id="Godot_Transform3D_Scaled_Godot_Vector3_" data-uid="Godot.Transform3D.Scaled(Godot.Vector3)">
+  Scaled(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Transform3D Scaled(Vector3 scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scale</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_ScaledLocal_" data-uid="Godot.Transform3D.ScaledLocal*"></a>
+
+  <h3 id="Godot_Transform3D_ScaledLocal_Godot_Vector3_" data-uid="Godot.Transform3D.ScaledLocal(Godot.Vector3)">
+  ScaledLocal(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Transform3D ScaledLocal(Vector3 scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scale</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_ToString_" data-uid="Godot.Transform3D.ToString*"></a>
+
+  <h3 id="Godot_Transform3D_ToString" data-uid="Godot.Transform3D.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_ToString_" data-uid="Godot.Transform3D.ToString*"></a>
+
+  <h3 id="Godot_Transform3D_ToString_System_String_" data-uid="Godot.Transform3D.ToString(System.String)">
+  ToString(string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string ToString(string? format)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_Translated_" data-uid="Godot.Transform3D.Translated*"></a>
+
+  <h3 id="Godot_Transform3D_Translated_Godot_Vector3_" data-uid="Godot.Transform3D.Translated(Godot.Vector3)">
+  Translated(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Transform3D Translated(Vector3 offset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>offset</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_TranslatedLocal_" data-uid="Godot.Transform3D.TranslatedLocal*"></a>
+
+  <h3 id="Godot_Transform3D_TranslatedLocal_Godot_Vector3_" data-uid="Godot.Transform3D.TranslatedLocal(Godot.Vector3)">
+  TranslatedLocal(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Transform3D TranslatedLocal(Vector3 offset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>offset</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Godot_Transform3D_op_Equality_" data-uid="Godot.Transform3D.op_Equality*"></a>
+
+  <h3 id="Godot_Transform3D_op_Equality_Godot_Transform3D_Godot_Transform3D_" data-uid="Godot.Transform3D.op_Equality(Godot.Transform3D,Godot.Transform3D)">
+  operator ==(Transform3D, Transform3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Transform3D left, Transform3D right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_op_Inequality_" data-uid="Godot.Transform3D.op_Inequality*"></a>
+
+  <h3 id="Godot_Transform3D_op_Inequality_Godot_Transform3D_Godot_Transform3D_" data-uid="Godot.Transform3D.op_Inequality(Godot.Transform3D,Godot.Transform3D)">
+  operator !=(Transform3D, Transform3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Transform3D left, Transform3D right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_op_Multiply_" data-uid="Godot.Transform3D.op_Multiply*"></a>
+
+  <h3 id="Godot_Transform3D_op_Multiply_Godot_Aabb_Godot_Transform3D_" data-uid="Godot.Transform3D.op_Multiply(Godot.Aabb,Godot.Transform3D)">
+  operator *(Aabb, Transform3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Aabb operator *(Aabb aabb, Transform3D transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aabb</code> <a class="xref" href="Godot.Aabb.html">Aabb</a></dt>
+    <dd></dd>
+    <dt><code>transform</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Aabb.html">Aabb</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_op_Multiply_" data-uid="Godot.Transform3D.op_Multiply*"></a>
+
+  <h3 id="Godot_Transform3D_op_Multiply_Godot_Plane_Godot_Transform3D_" data-uid="Godot.Transform3D.op_Multiply(Godot.Plane,Godot.Transform3D)">
+  operator *(Plane, Transform3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Plane operator *(Plane plane, Transform3D transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>plane</code> <a class="xref" href="Godot.Plane.html">Plane</a></dt>
+    <dd></dd>
+    <dt><code>transform</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Plane.html">Plane</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_op_Multiply_" data-uid="Godot.Transform3D.op_Multiply*"></a>
+
+  <h3 id="Godot_Transform3D_op_Multiply_Godot_Transform3D_Godot_Aabb_" data-uid="Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Aabb)">
+  operator *(Transform3D, Aabb)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Aabb operator *(Transform3D transform, Aabb aabb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+    <dt><code>aabb</code> <a class="xref" href="Godot.Aabb.html">Aabb</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Aabb.html">Aabb</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_op_Multiply_" data-uid="Godot.Transform3D.op_Multiply*"></a>
+
+  <h3 id="Godot_Transform3D_op_Multiply_Godot_Transform3D_Godot_Plane_" data-uid="Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Plane)">
+  operator *(Transform3D, Plane)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Plane operator *(Transform3D transform, Plane plane)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+    <dt><code>plane</code> <a class="xref" href="Godot.Plane.html">Plane</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Plane.html">Plane</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_op_Multiply_" data-uid="Godot.Transform3D.op_Multiply*"></a>
+
+  <h3 id="Godot_Transform3D_op_Multiply_Godot_Transform3D_Godot_Transform3D_" data-uid="Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Transform3D)">
+  operator *(Transform3D, Transform3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform3D operator *(Transform3D left, Transform3D right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_op_Multiply_" data-uid="Godot.Transform3D.op_Multiply*"></a>
+
+  <h3 id="Godot_Transform3D_op_Multiply_Godot_Transform3D_Godot_Vector3_" data-uid="Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Vector3)">
+  operator *(Transform3D, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 operator *(Transform3D transform, Vector3 vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+    <dt><code>vector</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_op_Multiply_" data-uid="Godot.Transform3D.op_Multiply*"></a>
+
+  <h3 id="Godot_Transform3D_op_Multiply_Godot_Transform3D_Godot_Vector3___" data-uid="Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Vector3[])">
+  operator *(Transform3D, Vector3[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3[] operator *(Transform3D transform, Vector3[] array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transform</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+    <dt><code>array</code> <a class="xref" href="Godot.Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_op_Multiply_" data-uid="Godot.Transform3D.op_Multiply*"></a>
+
+  <h3 id="Godot_Transform3D_op_Multiply_Godot_Vector3_Godot_Transform3D_" data-uid="Godot.Transform3D.op_Multiply(Godot.Vector3,Godot.Transform3D)">
+  operator *(Vector3, Transform3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 operator *(Vector3 vector, Transform3D transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector</code> <a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>transform</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Transform3D_op_Multiply_" data-uid="Godot.Transform3D.op_Multiply*"></a>
+
+  <h3 id="Godot_Transform3D_op_Multiply_Godot_Vector3___Godot_Transform3D_" data-uid="Godot.Transform3D.op_Multiply(Godot.Vector3[],Godot.Transform3D)">
+  operator *(Vector3[], Transform3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3[] operator *(Vector3[] array, Transform3D transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="Godot.Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+    <dt><code>transform</code> <a class="xref" href="Godot.Transform3D.html">Transform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1898 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.Quaternion
+  commentId: T:Godot.Quaternion
+  id: Quaternion
+  parent: Godot
+  children:
+  - Godot.Quaternion.#ctor(Godot.Basis)
+  - Godot.Quaternion.#ctor(Godot.Vector3,Godot.Vector3)
+  - Godot.Quaternion.#ctor(Godot.Vector3,System.Single)
+  - Godot.Quaternion.#ctor(System.Single,System.Single,System.Single,System.Single)
+  - Godot.Quaternion.AngleTo(Godot.Quaternion)
+  - Godot.Quaternion.Dot(Godot.Quaternion)
+  - Godot.Quaternion.Equals(Godot.Quaternion)
+  - Godot.Quaternion.Equals(System.Object)
+  - Godot.Quaternion.Exp
+  - Godot.Quaternion.FromEuler(Godot.Vector3)
+  - Godot.Quaternion.GetAngle
+  - Godot.Quaternion.GetAxis
+  - Godot.Quaternion.GetEuler(Godot.EulerOrder)
+  - Godot.Quaternion.GetHashCode
+  - Godot.Quaternion.Identity
+  - Godot.Quaternion.Inverse
+  - Godot.Quaternion.IsEqualApprox(Godot.Quaternion)
+  - Godot.Quaternion.IsFinite
+  - Godot.Quaternion.IsNormalized
+  - Godot.Quaternion.Item(System.Int32)
+  - Godot.Quaternion.Length
+  - Godot.Quaternion.LengthSquared
+  - Godot.Quaternion.Log
+  - Godot.Quaternion.Normalized
+  - Godot.Quaternion.Slerp(Godot.Quaternion,System.Single)
+  - Godot.Quaternion.Slerpni(Godot.Quaternion,System.Single)
+  - Godot.Quaternion.SphericalCubicInterpolate(Godot.Quaternion,Godot.Quaternion,Godot.Quaternion,System.Single)
+  - Godot.Quaternion.SphericalCubicInterpolateInTime(Godot.Quaternion,Godot.Quaternion,Godot.Quaternion,System.Single,System.Single,System.Single,System.Single)
+  - Godot.Quaternion.ToString
+  - Godot.Quaternion.ToString(System.String)
+  - Godot.Quaternion.W
+  - Godot.Quaternion.X
+  - Godot.Quaternion.Y
+  - Godot.Quaternion.Z
+  - Godot.Quaternion.op_Addition(Godot.Quaternion,Godot.Quaternion)
+  - Godot.Quaternion.op_Division(Godot.Quaternion,System.Single)
+  - Godot.Quaternion.op_Equality(Godot.Quaternion,Godot.Quaternion)
+  - Godot.Quaternion.op_Inequality(Godot.Quaternion,Godot.Quaternion)
+  - Godot.Quaternion.op_Multiply(Godot.Quaternion,Godot.Quaternion)
+  - Godot.Quaternion.op_Multiply(Godot.Quaternion,Godot.Vector3)
+  - Godot.Quaternion.op_Multiply(Godot.Quaternion,System.Single)
+  - Godot.Quaternion.op_Multiply(Godot.Vector3,Godot.Quaternion)
+  - Godot.Quaternion.op_Multiply(System.Single,Godot.Quaternion)
+  - Godot.Quaternion.op_Subtraction(Godot.Quaternion,Godot.Quaternion)
+  - Godot.Quaternion.op_UnaryNegation(Godot.Quaternion)
+  langs:
+  - csharp
+  - vb
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: Godot.Quaternion
+  type: Struct
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: 'public struct Quaternion : IEquatable<Quaternion>'
+    content.vb: Public Structure Quaternion Implements IEquatable(Of Quaternion)
+  implements:
+  - System.IEquatable{Godot.Quaternion}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Godot.Quaternion.X
+  commentId: F:Godot.Quaternion.X
+  id: X
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: Quaternion.X
+  fullName: Godot.Quaternion.X
+  type: Field
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public float X
+    return:
+      type: System.Single
+    content.vb: Public X As Single
+- uid: Godot.Quaternion.Y
+  commentId: F:Godot.Quaternion.Y
+  id: Y
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: Quaternion.Y
+  fullName: Godot.Quaternion.Y
+  type: Field
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public float Y
+    return:
+      type: System.Single
+    content.vb: Public Y As Single
+- uid: Godot.Quaternion.Z
+  commentId: F:Godot.Quaternion.Z
+  id: Z
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Z
+  nameWithType: Quaternion.Z
+  fullName: Godot.Quaternion.Z
+  type: Field
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public float Z
+    return:
+      type: System.Single
+    content.vb: Public Z As Single
+- uid: Godot.Quaternion.W
+  commentId: F:Godot.Quaternion.W
+  id: W
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: W
+  nameWithType: Quaternion.W
+  fullName: Godot.Quaternion.W
+  type: Field
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public float W
+    return:
+      type: System.Single
+    content.vb: Public W As Single
+- uid: Godot.Quaternion.AngleTo(Godot.Quaternion)
+  commentId: M:Godot.Quaternion.AngleTo(Godot.Quaternion)
+  id: AngleTo(Godot.Quaternion)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: AngleTo(Quaternion)
+  nameWithType: Quaternion.AngleTo(Quaternion)
+  fullName: Godot.Quaternion.AngleTo(Godot.Quaternion)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly float AngleTo(Quaternion to)
+    parameters:
+    - id: to
+      type: Godot.Quaternion
+    return:
+      type: System.Single
+    content.vb: Public Function AngleTo([to] As Quaternion) As Single
+  overload: Godot.Quaternion.AngleTo*
+- uid: Godot.Quaternion.SphericalCubicInterpolate(Godot.Quaternion,Godot.Quaternion,Godot.Quaternion,System.Single)
+  commentId: M:Godot.Quaternion.SphericalCubicInterpolate(Godot.Quaternion,Godot.Quaternion,Godot.Quaternion,System.Single)
+  id: SphericalCubicInterpolate(Godot.Quaternion,Godot.Quaternion,Godot.Quaternion,System.Single)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: SphericalCubicInterpolate(Quaternion, Quaternion, Quaternion, float)
+  nameWithType: Quaternion.SphericalCubicInterpolate(Quaternion, Quaternion, Quaternion, float)
+  fullName: Godot.Quaternion.SphericalCubicInterpolate(Godot.Quaternion, Godot.Quaternion, Godot.Quaternion, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Quaternion SphericalCubicInterpolate(Quaternion b, Quaternion preA, Quaternion postB, float weight)
+    parameters:
+    - id: b
+      type: Godot.Quaternion
+    - id: preA
+      type: Godot.Quaternion
+    - id: postB
+      type: Godot.Quaternion
+    - id: weight
+      type: System.Single
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Function SphericalCubicInterpolate(b As Quaternion, preA As Quaternion, postB As Quaternion, weight As Single) As Quaternion
+  overload: Godot.Quaternion.SphericalCubicInterpolate*
+  nameWithType.vb: Quaternion.SphericalCubicInterpolate(Quaternion, Quaternion, Quaternion, Single)
+  fullName.vb: Godot.Quaternion.SphericalCubicInterpolate(Godot.Quaternion, Godot.Quaternion, Godot.Quaternion, Single)
+  name.vb: SphericalCubicInterpolate(Quaternion, Quaternion, Quaternion, Single)
+- uid: Godot.Quaternion.SphericalCubicInterpolateInTime(Godot.Quaternion,Godot.Quaternion,Godot.Quaternion,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Godot.Quaternion.SphericalCubicInterpolateInTime(Godot.Quaternion,Godot.Quaternion,Godot.Quaternion,System.Single,System.Single,System.Single,System.Single)
+  id: SphericalCubicInterpolateInTime(Godot.Quaternion,Godot.Quaternion,Godot.Quaternion,System.Single,System.Single,System.Single,System.Single)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: SphericalCubicInterpolateInTime(Quaternion, Quaternion, Quaternion, float, float, float, float)
+  nameWithType: Quaternion.SphericalCubicInterpolateInTime(Quaternion, Quaternion, Quaternion, float, float, float, float)
+  fullName: Godot.Quaternion.SphericalCubicInterpolateInTime(Godot.Quaternion, Godot.Quaternion, Godot.Quaternion, float, float, float, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Quaternion SphericalCubicInterpolateInTime(Quaternion b, Quaternion preA, Quaternion postB, float weight, float bT, float preAT, float postBT)
+    parameters:
+    - id: b
+      type: Godot.Quaternion
+    - id: preA
+      type: Godot.Quaternion
+    - id: postB
+      type: Godot.Quaternion
+    - id: weight
+      type: System.Single
+    - id: bT
+      type: System.Single
+    - id: preAT
+      type: System.Single
+    - id: postBT
+      type: System.Single
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Function SphericalCubicInterpolateInTime(b As Quaternion, preA As Quaternion, postB As Quaternion, weight As Single, bT As Single, preAT As Single, postBT As Single) As Quaternion
+  overload: Godot.Quaternion.SphericalCubicInterpolateInTime*
+  nameWithType.vb: Quaternion.SphericalCubicInterpolateInTime(Quaternion, Quaternion, Quaternion, Single, Single, Single, Single)
+  fullName.vb: Godot.Quaternion.SphericalCubicInterpolateInTime(Godot.Quaternion, Godot.Quaternion, Godot.Quaternion, Single, Single, Single, Single)
+  name.vb: SphericalCubicInterpolateInTime(Quaternion, Quaternion, Quaternion, Single, Single, Single, Single)
+- uid: Godot.Quaternion.Dot(Godot.Quaternion)
+  commentId: M:Godot.Quaternion.Dot(Godot.Quaternion)
+  id: Dot(Godot.Quaternion)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Dot(Quaternion)
+  nameWithType: Quaternion.Dot(Quaternion)
+  fullName: Godot.Quaternion.Dot(Godot.Quaternion)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly float Dot(Quaternion b)
+    parameters:
+    - id: b
+      type: Godot.Quaternion
+    return:
+      type: System.Single
+    content.vb: Public Function Dot(b As Quaternion) As Single
+  overload: Godot.Quaternion.Dot*
+- uid: Godot.Quaternion.Exp
+  commentId: M:Godot.Quaternion.Exp
+  id: Exp
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Exp()
+  nameWithType: Quaternion.Exp()
+  fullName: Godot.Quaternion.Exp()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Quaternion Exp()
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Function Exp() As Quaternion
+  overload: Godot.Quaternion.Exp*
+- uid: Godot.Quaternion.GetAngle
+  commentId: M:Godot.Quaternion.GetAngle
+  id: GetAngle
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: GetAngle()
+  nameWithType: Quaternion.GetAngle()
+  fullName: Godot.Quaternion.GetAngle()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly float GetAngle()
+    return:
+      type: System.Single
+    content.vb: Public Function GetAngle() As Single
+  overload: Godot.Quaternion.GetAngle*
+- uid: Godot.Quaternion.GetAxis
+  commentId: M:Godot.Quaternion.GetAxis
+  id: GetAxis
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: GetAxis()
+  nameWithType: Quaternion.GetAxis()
+  fullName: Godot.Quaternion.GetAxis()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3 GetAxis()
+    return:
+      type: Godot.Vector3
+    content.vb: Public Function GetAxis() As Vector3
+  overload: Godot.Quaternion.GetAxis*
+- uid: Godot.Quaternion.GetEuler(Godot.EulerOrder)
+  commentId: M:Godot.Quaternion.GetEuler(Godot.EulerOrder)
+  id: GetEuler(Godot.EulerOrder)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: GetEuler(EulerOrder)
+  nameWithType: Quaternion.GetEuler(EulerOrder)
+  fullName: Godot.Quaternion.GetEuler(Godot.EulerOrder)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3 GetEuler(EulerOrder order = EulerOrder.Yxz)
+    parameters:
+    - id: order
+      type: Godot.EulerOrder
+    return:
+      type: Godot.Vector3
+    content.vb: Public Function GetEuler(order As EulerOrder = EulerOrder.Yxz) As Vector3
+  overload: Godot.Quaternion.GetEuler*
+- uid: Godot.Quaternion.Inverse
+  commentId: M:Godot.Quaternion.Inverse
+  id: Inverse
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Inverse()
+  nameWithType: Quaternion.Inverse()
+  fullName: Godot.Quaternion.Inverse()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Quaternion Inverse()
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Function Inverse() As Quaternion
+  overload: Godot.Quaternion.Inverse*
+- uid: Godot.Quaternion.IsFinite
+  commentId: M:Godot.Quaternion.IsFinite
+  id: IsFinite
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: IsFinite()
+  nameWithType: Quaternion.IsFinite()
+  fullName: Godot.Quaternion.IsFinite()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool IsFinite()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsFinite() As Boolean
+  overload: Godot.Quaternion.IsFinite*
+- uid: Godot.Quaternion.IsNormalized
+  commentId: M:Godot.Quaternion.IsNormalized
+  id: IsNormalized
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: IsNormalized()
+  nameWithType: Quaternion.IsNormalized()
+  fullName: Godot.Quaternion.IsNormalized()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool IsNormalized()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsNormalized() As Boolean
+  overload: Godot.Quaternion.IsNormalized*
+- uid: Godot.Quaternion.Log
+  commentId: M:Godot.Quaternion.Log
+  id: Log
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Log()
+  nameWithType: Quaternion.Log()
+  fullName: Godot.Quaternion.Log()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Quaternion Log()
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Function Log() As Quaternion
+  overload: Godot.Quaternion.Log*
+- uid: Godot.Quaternion.Length
+  commentId: M:Godot.Quaternion.Length
+  id: Length
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Length()
+  nameWithType: Quaternion.Length()
+  fullName: Godot.Quaternion.Length()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly float Length()
+    return:
+      type: System.Single
+    content.vb: Public Function Length() As Single
+  overload: Godot.Quaternion.Length*
+- uid: Godot.Quaternion.LengthSquared
+  commentId: M:Godot.Quaternion.LengthSquared
+  id: LengthSquared
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: LengthSquared()
+  nameWithType: Quaternion.LengthSquared()
+  fullName: Godot.Quaternion.LengthSquared()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly float LengthSquared()
+    return:
+      type: System.Single
+    content.vb: Public Function LengthSquared() As Single
+  overload: Godot.Quaternion.LengthSquared*
+- uid: Godot.Quaternion.Normalized
+  commentId: M:Godot.Quaternion.Normalized
+  id: Normalized
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Normalized()
+  nameWithType: Quaternion.Normalized()
+  fullName: Godot.Quaternion.Normalized()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Quaternion Normalized()
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Function Normalized() As Quaternion
+  overload: Godot.Quaternion.Normalized*
+- uid: Godot.Quaternion.Slerp(Godot.Quaternion,System.Single)
+  commentId: M:Godot.Quaternion.Slerp(Godot.Quaternion,System.Single)
+  id: Slerp(Godot.Quaternion,System.Single)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Slerp(Quaternion, float)
+  nameWithType: Quaternion.Slerp(Quaternion, float)
+  fullName: Godot.Quaternion.Slerp(Godot.Quaternion, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Quaternion Slerp(Quaternion to, float weight)
+    parameters:
+    - id: to
+      type: Godot.Quaternion
+    - id: weight
+      type: System.Single
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Function Slerp([to] As Quaternion, weight As Single) As Quaternion
+  overload: Godot.Quaternion.Slerp*
+  nameWithType.vb: Quaternion.Slerp(Quaternion, Single)
+  fullName.vb: Godot.Quaternion.Slerp(Godot.Quaternion, Single)
+  name.vb: Slerp(Quaternion, Single)
+- uid: Godot.Quaternion.Slerpni(Godot.Quaternion,System.Single)
+  commentId: M:Godot.Quaternion.Slerpni(Godot.Quaternion,System.Single)
+  id: Slerpni(Godot.Quaternion,System.Single)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Slerpni(Quaternion, float)
+  nameWithType: Quaternion.Slerpni(Quaternion, float)
+  fullName: Godot.Quaternion.Slerpni(Godot.Quaternion, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Quaternion Slerpni(Quaternion to, float weight)
+    parameters:
+    - id: to
+      type: Godot.Quaternion
+    - id: weight
+      type: System.Single
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Function Slerpni([to] As Quaternion, weight As Single) As Quaternion
+  overload: Godot.Quaternion.Slerpni*
+  nameWithType.vb: Quaternion.Slerpni(Quaternion, Single)
+  fullName.vb: Godot.Quaternion.Slerpni(Godot.Quaternion, Single)
+  name.vb: Slerpni(Quaternion, Single)
+- uid: Godot.Quaternion.#ctor(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Godot.Quaternion.#ctor(System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single)'
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Quaternion(float, float, float, float)
+  nameWithType: Quaternion.Quaternion(float, float, float, float)
+  fullName: Godot.Quaternion.Quaternion(float, float, float, float)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Quaternion(float x, float y, float z, float w)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: z
+      type: System.Single
+    - id: w
+      type: System.Single
+    content.vb: Public Sub New(x As Single, y As Single, z As Single, w As Single)
+  overload: Godot.Quaternion.#ctor*
+  nameWithType.vb: Quaternion.New(Single, Single, Single, Single)
+  fullName.vb: Godot.Quaternion.New(Single, Single, Single, Single)
+  name.vb: New(Single, Single, Single, Single)
+- uid: Godot.Quaternion.#ctor(Godot.Basis)
+  commentId: M:Godot.Quaternion.#ctor(Godot.Basis)
+  id: '#ctor(Godot.Basis)'
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Quaternion(Basis)
+  nameWithType: Quaternion.Quaternion(Basis)
+  fullName: Godot.Quaternion.Quaternion(Godot.Basis)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Quaternion(Basis basis)
+    parameters:
+    - id: basis
+      type: Godot.Basis
+    content.vb: Public Sub New(basis As Basis)
+  overload: Godot.Quaternion.#ctor*
+  nameWithType.vb: Quaternion.New(Basis)
+  fullName.vb: Godot.Quaternion.New(Godot.Basis)
+  name.vb: New(Basis)
+- uid: Godot.Quaternion.#ctor(Godot.Vector3,System.Single)
+  commentId: M:Godot.Quaternion.#ctor(Godot.Vector3,System.Single)
+  id: '#ctor(Godot.Vector3,System.Single)'
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Quaternion(Vector3, float)
+  nameWithType: Quaternion.Quaternion(Vector3, float)
+  fullName: Godot.Quaternion.Quaternion(Godot.Vector3, float)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Quaternion(Vector3 axis, float angle)
+    parameters:
+    - id: axis
+      type: Godot.Vector3
+    - id: angle
+      type: System.Single
+    content.vb: Public Sub New(axis As Vector3, angle As Single)
+  overload: Godot.Quaternion.#ctor*
+  nameWithType.vb: Quaternion.New(Vector3, Single)
+  fullName.vb: Godot.Quaternion.New(Godot.Vector3, Single)
+  name.vb: New(Vector3, Single)
+- uid: Godot.Quaternion.#ctor(Godot.Vector3,Godot.Vector3)
+  commentId: M:Godot.Quaternion.#ctor(Godot.Vector3,Godot.Vector3)
+  id: '#ctor(Godot.Vector3,Godot.Vector3)'
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Quaternion(Vector3, Vector3)
+  nameWithType: Quaternion.Quaternion(Vector3, Vector3)
+  fullName: Godot.Quaternion.Quaternion(Godot.Vector3, Godot.Vector3)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Quaternion(Vector3 arcFrom, Vector3 arcTo)
+    parameters:
+    - id: arcFrom
+      type: Godot.Vector3
+    - id: arcTo
+      type: Godot.Vector3
+    content.vb: Public Sub New(arcFrom As Vector3, arcTo As Vector3)
+  overload: Godot.Quaternion.#ctor*
+  nameWithType.vb: Quaternion.New(Vector3, Vector3)
+  fullName.vb: Godot.Quaternion.New(Godot.Vector3, Godot.Vector3)
+  name.vb: New(Vector3, Vector3)
+- uid: Godot.Quaternion.FromEuler(Godot.Vector3)
+  commentId: M:Godot.Quaternion.FromEuler(Godot.Vector3)
+  id: FromEuler(Godot.Vector3)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: FromEuler(Vector3)
+  nameWithType: Quaternion.FromEuler(Vector3)
+  fullName: Godot.Quaternion.FromEuler(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Quaternion FromEuler(Vector3 eulerYXZ)
+    parameters:
+    - id: eulerYXZ
+      type: Godot.Vector3
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Shared Function FromEuler(eulerYXZ As Vector3) As Quaternion
+  overload: Godot.Quaternion.FromEuler*
+- uid: Godot.Quaternion.op_Multiply(Godot.Quaternion,Godot.Quaternion)
+  commentId: M:Godot.Quaternion.op_Multiply(Godot.Quaternion,Godot.Quaternion)
+  id: op_Multiply(Godot.Quaternion,Godot.Quaternion)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: operator *(Quaternion, Quaternion)
+  nameWithType: Quaternion.operator *(Quaternion, Quaternion)
+  fullName: Godot.Quaternion.operator *(Godot.Quaternion, Godot.Quaternion)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Quaternion operator *(Quaternion left, Quaternion right)
+    parameters:
+    - id: left
+      type: Godot.Quaternion
+    - id: right
+      type: Godot.Quaternion
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Shared Operator *(left As Quaternion, right As Quaternion) As Quaternion
+  overload: Godot.Quaternion.op_Multiply*
+  nameWithType.vb: Quaternion.*(Quaternion, Quaternion)
+  fullName.vb: Godot.Quaternion.*(Godot.Quaternion, Godot.Quaternion)
+  name.vb: '*(Quaternion, Quaternion)'
+- uid: Godot.Quaternion.op_Multiply(Godot.Quaternion,Godot.Vector3)
+  commentId: M:Godot.Quaternion.op_Multiply(Godot.Quaternion,Godot.Vector3)
+  id: op_Multiply(Godot.Quaternion,Godot.Vector3)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: operator *(Quaternion, Vector3)
+  nameWithType: Quaternion.operator *(Quaternion, Vector3)
+  fullName: Godot.Quaternion.operator *(Godot.Quaternion, Godot.Vector3)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3 operator *(Quaternion quaternion, Vector3 vector)
+    parameters:
+    - id: quaternion
+      type: Godot.Quaternion
+    - id: vector
+      type: Godot.Vector3
+    return:
+      type: Godot.Vector3
+    content.vb: Public Shared Operator *(quaternion As Quaternion, vector As Vector3) As Vector3
+  overload: Godot.Quaternion.op_Multiply*
+  nameWithType.vb: Quaternion.*(Quaternion, Vector3)
+  fullName.vb: Godot.Quaternion.*(Godot.Quaternion, Godot.Vector3)
+  name.vb: '*(Quaternion, Vector3)'
+- uid: Godot.Quaternion.op_Multiply(Godot.Vector3,Godot.Quaternion)
+  commentId: M:Godot.Quaternion.op_Multiply(Godot.Vector3,Godot.Quaternion)
+  id: op_Multiply(Godot.Vector3,Godot.Quaternion)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: operator *(Vector3, Quaternion)
+  nameWithType: Quaternion.operator *(Vector3, Quaternion)
+  fullName: Godot.Quaternion.operator *(Godot.Vector3, Godot.Quaternion)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3 operator *(Vector3 vector, Quaternion quaternion)
+    parameters:
+    - id: vector
+      type: Godot.Vector3
+    - id: quaternion
+      type: Godot.Quaternion
+    return:
+      type: Godot.Vector3
+    content.vb: Public Shared Operator *(vector As Vector3, quaternion As Quaternion) As Vector3
+  overload: Godot.Quaternion.op_Multiply*
+  nameWithType.vb: Quaternion.*(Vector3, Quaternion)
+  fullName.vb: Godot.Quaternion.*(Godot.Vector3, Godot.Quaternion)
+  name.vb: '*(Vector3, Quaternion)'
+- uid: Godot.Quaternion.op_Addition(Godot.Quaternion,Godot.Quaternion)
+  commentId: M:Godot.Quaternion.op_Addition(Godot.Quaternion,Godot.Quaternion)
+  id: op_Addition(Godot.Quaternion,Godot.Quaternion)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: operator +(Quaternion, Quaternion)
+  nameWithType: Quaternion.operator +(Quaternion, Quaternion)
+  fullName: Godot.Quaternion.operator +(Godot.Quaternion, Godot.Quaternion)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Quaternion operator +(Quaternion left, Quaternion right)
+    parameters:
+    - id: left
+      type: Godot.Quaternion
+    - id: right
+      type: Godot.Quaternion
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Shared Operator +(left As Quaternion, right As Quaternion) As Quaternion
+  overload: Godot.Quaternion.op_Addition*
+  nameWithType.vb: Quaternion.+(Quaternion, Quaternion)
+  fullName.vb: Godot.Quaternion.+(Godot.Quaternion, Godot.Quaternion)
+  name.vb: +(Quaternion, Quaternion)
+- uid: Godot.Quaternion.op_Subtraction(Godot.Quaternion,Godot.Quaternion)
+  commentId: M:Godot.Quaternion.op_Subtraction(Godot.Quaternion,Godot.Quaternion)
+  id: op_Subtraction(Godot.Quaternion,Godot.Quaternion)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: operator -(Quaternion, Quaternion)
+  nameWithType: Quaternion.operator -(Quaternion, Quaternion)
+  fullName: Godot.Quaternion.operator -(Godot.Quaternion, Godot.Quaternion)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Quaternion operator -(Quaternion left, Quaternion right)
+    parameters:
+    - id: left
+      type: Godot.Quaternion
+    - id: right
+      type: Godot.Quaternion
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Shared Operator -(left As Quaternion, right As Quaternion) As Quaternion
+  overload: Godot.Quaternion.op_Subtraction*
+  nameWithType.vb: Quaternion.-(Quaternion, Quaternion)
+  fullName.vb: Godot.Quaternion.-(Godot.Quaternion, Godot.Quaternion)
+  name.vb: -(Quaternion, Quaternion)
+- uid: Godot.Quaternion.op_UnaryNegation(Godot.Quaternion)
+  commentId: M:Godot.Quaternion.op_UnaryNegation(Godot.Quaternion)
+  id: op_UnaryNegation(Godot.Quaternion)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: operator -(Quaternion)
+  nameWithType: Quaternion.operator -(Quaternion)
+  fullName: Godot.Quaternion.operator -(Godot.Quaternion)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Quaternion operator -(Quaternion quat)
+    parameters:
+    - id: quat
+      type: Godot.Quaternion
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Shared Operator -(quat As Quaternion) As Quaternion
+  overload: Godot.Quaternion.op_UnaryNegation*
+  nameWithType.vb: Quaternion.-(Quaternion)
+  fullName.vb: Godot.Quaternion.-(Godot.Quaternion)
+  name.vb: -(Quaternion)
+- uid: Godot.Quaternion.op_Multiply(Godot.Quaternion,System.Single)
+  commentId: M:Godot.Quaternion.op_Multiply(Godot.Quaternion,System.Single)
+  id: op_Multiply(Godot.Quaternion,System.Single)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: operator *(Quaternion, float)
+  nameWithType: Quaternion.operator *(Quaternion, float)
+  fullName: Godot.Quaternion.operator *(Godot.Quaternion, float)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Quaternion operator *(Quaternion left, float right)
+    parameters:
+    - id: left
+      type: Godot.Quaternion
+    - id: right
+      type: System.Single
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Shared Operator *(left As Quaternion, right As Single) As Quaternion
+  overload: Godot.Quaternion.op_Multiply*
+  nameWithType.vb: Quaternion.*(Quaternion, Single)
+  fullName.vb: Godot.Quaternion.*(Godot.Quaternion, Single)
+  name.vb: '*(Quaternion, Single)'
+- uid: Godot.Quaternion.op_Multiply(System.Single,Godot.Quaternion)
+  commentId: M:Godot.Quaternion.op_Multiply(System.Single,Godot.Quaternion)
+  id: op_Multiply(System.Single,Godot.Quaternion)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: operator *(float, Quaternion)
+  nameWithType: Quaternion.operator *(float, Quaternion)
+  fullName: Godot.Quaternion.operator *(float, Godot.Quaternion)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Quaternion operator *(float left, Quaternion right)
+    parameters:
+    - id: left
+      type: System.Single
+    - id: right
+      type: Godot.Quaternion
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Shared Operator *(left As Single, right As Quaternion) As Quaternion
+  overload: Godot.Quaternion.op_Multiply*
+  nameWithType.vb: Quaternion.*(Single, Quaternion)
+  fullName.vb: Godot.Quaternion.*(Single, Godot.Quaternion)
+  name.vb: '*(Single, Quaternion)'
+- uid: Godot.Quaternion.op_Division(Godot.Quaternion,System.Single)
+  commentId: M:Godot.Quaternion.op_Division(Godot.Quaternion,System.Single)
+  id: op_Division(Godot.Quaternion,System.Single)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: operator /(Quaternion, float)
+  nameWithType: Quaternion.operator /(Quaternion, float)
+  fullName: Godot.Quaternion.operator /(Godot.Quaternion, float)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Quaternion operator /(Quaternion left, float right)
+    parameters:
+    - id: left
+      type: Godot.Quaternion
+    - id: right
+      type: System.Single
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Shared Operator /(left As Quaternion, right As Single) As Quaternion
+  overload: Godot.Quaternion.op_Division*
+  nameWithType.vb: Quaternion./(Quaternion, Single)
+  fullName.vb: Godot.Quaternion./(Godot.Quaternion, Single)
+  name.vb: /(Quaternion, Single)
+- uid: Godot.Quaternion.op_Equality(Godot.Quaternion,Godot.Quaternion)
+  commentId: M:Godot.Quaternion.op_Equality(Godot.Quaternion,Godot.Quaternion)
+  id: op_Equality(Godot.Quaternion,Godot.Quaternion)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Quaternion, Quaternion)
+  nameWithType: Quaternion.operator ==(Quaternion, Quaternion)
+  fullName: Godot.Quaternion.operator ==(Godot.Quaternion, Godot.Quaternion)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool operator ==(Quaternion left, Quaternion right)
+    parameters:
+    - id: left
+      type: Godot.Quaternion
+    - id: right
+      type: Godot.Quaternion
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Quaternion, right As Quaternion) As Boolean
+  overload: Godot.Quaternion.op_Equality*
+  nameWithType.vb: Quaternion.=(Quaternion, Quaternion)
+  fullName.vb: Godot.Quaternion.=(Godot.Quaternion, Godot.Quaternion)
+  name.vb: =(Quaternion, Quaternion)
+- uid: Godot.Quaternion.op_Inequality(Godot.Quaternion,Godot.Quaternion)
+  commentId: M:Godot.Quaternion.op_Inequality(Godot.Quaternion,Godot.Quaternion)
+  id: op_Inequality(Godot.Quaternion,Godot.Quaternion)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Quaternion, Quaternion)
+  nameWithType: Quaternion.operator !=(Quaternion, Quaternion)
+  fullName: Godot.Quaternion.operator !=(Godot.Quaternion, Godot.Quaternion)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool operator !=(Quaternion left, Quaternion right)
+    parameters:
+    - id: left
+      type: Godot.Quaternion
+    - id: right
+      type: Godot.Quaternion
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Quaternion, right As Quaternion) As Boolean
+  overload: Godot.Quaternion.op_Inequality*
+  nameWithType.vb: Quaternion.<>(Quaternion, Quaternion)
+  fullName.vb: Godot.Quaternion.<>(Godot.Quaternion, Godot.Quaternion)
+  name.vb: <>(Quaternion, Quaternion)
+- uid: Godot.Quaternion.Equals(System.Object)
+  commentId: M:Godot.Quaternion.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Quaternion.Equals(object?)
+  fullName: Godot.Quaternion.Equals(object?)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)
+        arguments:
+        - type: System.Boolean
+          value: true
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Godot.Quaternion.Equals*
+  nameWithType.vb: Quaternion.Equals(Object)
+  fullName.vb: Godot.Quaternion.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Godot.Quaternion.Equals(Godot.Quaternion)
+  commentId: M:Godot.Quaternion.Equals(Godot.Quaternion)
+  id: Equals(Godot.Quaternion)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Equals(Quaternion)
+  nameWithType: Quaternion.Equals(Quaternion)
+  fullName: Godot.Quaternion.Equals(Godot.Quaternion)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public readonly bool Equals(Quaternion other)
+    parameters:
+    - id: other
+      type: Godot.Quaternion
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Quaternion) As Boolean
+  overload: Godot.Quaternion.Equals*
+  implements:
+  - System.IEquatable{Godot.Quaternion}.Equals(Godot.Quaternion)
+- uid: Godot.Quaternion.IsEqualApprox(Godot.Quaternion)
+  commentId: M:Godot.Quaternion.IsEqualApprox(Godot.Quaternion)
+  id: IsEqualApprox(Godot.Quaternion)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: IsEqualApprox(Quaternion)
+  nameWithType: Quaternion.IsEqualApprox(Quaternion)
+  fullName: Godot.Quaternion.IsEqualApprox(Godot.Quaternion)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool IsEqualApprox(Quaternion other)
+    parameters:
+    - id: other
+      type: Godot.Quaternion
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsEqualApprox(other As Quaternion) As Boolean
+  overload: Godot.Quaternion.IsEqualApprox*
+- uid: Godot.Quaternion.GetHashCode
+  commentId: M:Godot.Quaternion.GetHashCode
+  id: GetHashCode
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Quaternion.GetHashCode()
+  fullName: Godot.Quaternion.GetHashCode()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Godot.Quaternion.GetHashCode*
+- uid: Godot.Quaternion.ToString
+  commentId: M:Godot.Quaternion.ToString
+  id: ToString
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Quaternion.ToString()
+  fullName: Godot.Quaternion.ToString()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Godot.Quaternion.ToString*
+- uid: Godot.Quaternion.ToString(System.String)
+  commentId: M:Godot.Quaternion.ToString(System.String)
+  id: ToString(System.String)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: ToString(string?)
+  nameWithType: Quaternion.ToString(string?)
+  fullName: Godot.Quaternion.ToString(string?)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly string ToString(string? format)
+    parameters:
+    - id: format
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function ToString(format As String) As String
+  overload: Godot.Quaternion.ToString*
+  nameWithType.vb: Quaternion.ToString(String)
+  fullName.vb: Godot.Quaternion.ToString(String)
+  name.vb: ToString(String)
+- uid: Godot.Quaternion.Item(System.Int32)
+  commentId: P:Godot.Quaternion.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: Quaternion.this[int]
+  fullName: Godot.Quaternion.this[int]
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public float this[int index] { readonly get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Default Property this[](index As Integer) As Single
+  overload: Godot.Quaternion.Item*
+  nameWithType.vb: Quaternion.this[](Integer)
+  fullName.vb: Godot.Quaternion.this[](Integer)
+  name.vb: this[](Integer)
+- uid: Godot.Quaternion.Identity
+  commentId: P:Godot.Quaternion.Identity
+  id: Identity
+  parent: Godot.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: Identity
+  nameWithType: Quaternion.Identity
+  fullName: Godot.Quaternion.Identity
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Quaternion Identity { get; }
+    parameters: []
+    return:
+      type: Godot.Quaternion
+    content.vb: Public Shared ReadOnly Property Identity As Quaternion
+  overload: Godot.Quaternion.Identity*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.IEquatable{Godot.Quaternion}
+  commentId: T:System.IEquatable{Godot.Quaternion}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Quaternion>
+  nameWithType: IEquatable<Quaternion>
+  fullName: System.IEquatable<Godot.Quaternion>
+  nameWithType.vb: IEquatable(Of Quaternion)
+  fullName.vb: System.IEquatable(Of Godot.Quaternion)
+  name.vb: IEquatable(Of Quaternion)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Godot.Quaternion
+    name: Quaternion
+    isExternal: true
+    href: Godot.Quaternion.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Quaternion
+    name: Quaternion
+    isExternal: true
+    href: Godot.Quaternion.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Godot.Quaternion.AngleTo*
+  commentId: Overload:Godot.Quaternion.AngleTo
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_AngleTo_Godot_Quaternion_
+  name: AngleTo
+  nameWithType: Quaternion.AngleTo
+  fullName: Godot.Quaternion.AngleTo
+- uid: Godot.Quaternion
+  commentId: T:Godot.Quaternion
+  parent: Godot
+  isExternal: true
+  href: Godot.Quaternion.html
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: Godot.Quaternion
+- uid: Godot.Quaternion.SphericalCubicInterpolate*
+  commentId: Overload:Godot.Quaternion.SphericalCubicInterpolate
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_SphericalCubicInterpolate_Godot_Quaternion_Godot_Quaternion_Godot_Quaternion_System_Single_
+  name: SphericalCubicInterpolate
+  nameWithType: Quaternion.SphericalCubicInterpolate
+  fullName: Godot.Quaternion.SphericalCubicInterpolate
+- uid: Godot.Quaternion.SphericalCubicInterpolateInTime*
+  commentId: Overload:Godot.Quaternion.SphericalCubicInterpolateInTime
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_SphericalCubicInterpolateInTime_Godot_Quaternion_Godot_Quaternion_Godot_Quaternion_System_Single_System_Single_System_Single_System_Single_
+  name: SphericalCubicInterpolateInTime
+  nameWithType: Quaternion.SphericalCubicInterpolateInTime
+  fullName: Godot.Quaternion.SphericalCubicInterpolateInTime
+- uid: Godot.Quaternion.Dot*
+  commentId: Overload:Godot.Quaternion.Dot
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_Dot_Godot_Quaternion_
+  name: Dot
+  nameWithType: Quaternion.Dot
+  fullName: Godot.Quaternion.Dot
+- uid: Godot.Quaternion.Exp*
+  commentId: Overload:Godot.Quaternion.Exp
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_Exp
+  name: Exp
+  nameWithType: Quaternion.Exp
+  fullName: Godot.Quaternion.Exp
+- uid: Godot.Quaternion.GetAngle*
+  commentId: Overload:Godot.Quaternion.GetAngle
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_GetAngle
+  name: GetAngle
+  nameWithType: Quaternion.GetAngle
+  fullName: Godot.Quaternion.GetAngle
+- uid: Godot.Quaternion.GetAxis*
+  commentId: Overload:Godot.Quaternion.GetAxis
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_GetAxis
+  name: GetAxis
+  nameWithType: Quaternion.GetAxis
+  fullName: Godot.Quaternion.GetAxis
+- uid: Godot.Vector3
+  commentId: T:Godot.Vector3
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector3.html
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Godot.Vector3
+- uid: Godot.Quaternion.GetEuler*
+  commentId: Overload:Godot.Quaternion.GetEuler
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_GetEuler_Godot_EulerOrder_
+  name: GetEuler
+  nameWithType: Quaternion.GetEuler
+  fullName: Godot.Quaternion.GetEuler
+- uid: Godot.EulerOrder
+  commentId: T:Godot.EulerOrder
+  parent: Godot
+  isExternal: true
+  href: Godot.EulerOrder.html
+  name: EulerOrder
+  nameWithType: EulerOrder
+  fullName: Godot.EulerOrder
+- uid: Godot.Quaternion.Inverse*
+  commentId: Overload:Godot.Quaternion.Inverse
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_Inverse
+  name: Inverse
+  nameWithType: Quaternion.Inverse
+  fullName: Godot.Quaternion.Inverse
+- uid: Godot.Quaternion.IsFinite*
+  commentId: Overload:Godot.Quaternion.IsFinite
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_IsFinite
+  name: IsFinite
+  nameWithType: Quaternion.IsFinite
+  fullName: Godot.Quaternion.IsFinite
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.Quaternion.IsNormalized*
+  commentId: Overload:Godot.Quaternion.IsNormalized
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_IsNormalized
+  name: IsNormalized
+  nameWithType: Quaternion.IsNormalized
+  fullName: Godot.Quaternion.IsNormalized
+- uid: Godot.Quaternion.Log*
+  commentId: Overload:Godot.Quaternion.Log
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_Log
+  name: Log
+  nameWithType: Quaternion.Log
+  fullName: Godot.Quaternion.Log
+- uid: Godot.Quaternion.Length*
+  commentId: Overload:Godot.Quaternion.Length
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_Length
+  name: Length
+  nameWithType: Quaternion.Length
+  fullName: Godot.Quaternion.Length
+- uid: Godot.Quaternion.LengthSquared*
+  commentId: Overload:Godot.Quaternion.LengthSquared
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_LengthSquared
+  name: LengthSquared
+  nameWithType: Quaternion.LengthSquared
+  fullName: Godot.Quaternion.LengthSquared
+- uid: Godot.Quaternion.Normalized*
+  commentId: Overload:Godot.Quaternion.Normalized
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_Normalized
+  name: Normalized
+  nameWithType: Quaternion.Normalized
+  fullName: Godot.Quaternion.Normalized
+- uid: Godot.Quaternion.Slerp*
+  commentId: Overload:Godot.Quaternion.Slerp
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_Slerp_Godot_Quaternion_System_Single_
+  name: Slerp
+  nameWithType: Quaternion.Slerp
+  fullName: Godot.Quaternion.Slerp
+- uid: Godot.Quaternion.Slerpni*
+  commentId: Overload:Godot.Quaternion.Slerpni
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_Slerpni_Godot_Quaternion_System_Single_
+  name: Slerpni
+  nameWithType: Quaternion.Slerpni
+  fullName: Godot.Quaternion.Slerpni
+- uid: Godot.Quaternion.#ctor*
+  commentId: Overload:Godot.Quaternion.#ctor
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion__ctor_System_Single_System_Single_System_Single_System_Single_
+  name: Quaternion
+  nameWithType: Quaternion.Quaternion
+  fullName: Godot.Quaternion.Quaternion
+  nameWithType.vb: Quaternion.New
+  fullName.vb: Godot.Quaternion.New
+  name.vb: New
+- uid: Godot.Basis
+  commentId: T:Godot.Basis
+  parent: Godot
+  isExternal: true
+  href: Godot.Basis.html
+  name: Basis
+  nameWithType: Basis
+  fullName: Godot.Basis
+- uid: Godot.Quaternion.FromEuler*
+  commentId: Overload:Godot.Quaternion.FromEuler
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_FromEuler_Godot_Vector3_
+  name: FromEuler
+  nameWithType: Quaternion.FromEuler
+  fullName: Godot.Quaternion.FromEuler
+- uid: Godot.Quaternion.op_Multiply*
+  commentId: Overload:Godot.Quaternion.op_Multiply
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_op_Multiply_Godot_Quaternion_Godot_Quaternion_
+  name: operator *
+  nameWithType: Quaternion.operator *
+  fullName: Godot.Quaternion.operator *
+  nameWithType.vb: Quaternion.*
+  fullName.vb: Godot.Quaternion.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Quaternion.op_Multiply*
+    name: '*'
+    isExternal: true
+    href: Godot.Quaternion.html#Godot_Quaternion_op_Multiply_Godot_Quaternion_Godot_Quaternion_
+- uid: Godot.Quaternion.op_Addition*
+  commentId: Overload:Godot.Quaternion.op_Addition
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_op_Addition_Godot_Quaternion_Godot_Quaternion_
+  name: operator +
+  nameWithType: Quaternion.operator +
+  fullName: Godot.Quaternion.operator +
+  nameWithType.vb: Quaternion.+
+  fullName.vb: Godot.Quaternion.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Quaternion.op_Addition*
+    name: +
+    isExternal: true
+    href: Godot.Quaternion.html#Godot_Quaternion_op_Addition_Godot_Quaternion_Godot_Quaternion_
+- uid: Godot.Quaternion.op_Subtraction*
+  commentId: Overload:Godot.Quaternion.op_Subtraction
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_op_Subtraction_Godot_Quaternion_Godot_Quaternion_
+  name: operator -
+  nameWithType: Quaternion.operator -
+  fullName: Godot.Quaternion.operator -
+  nameWithType.vb: Quaternion.-
+  fullName.vb: Godot.Quaternion.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Quaternion.op_Subtraction*
+    name: '-'
+    isExternal: true
+    href: Godot.Quaternion.html#Godot_Quaternion_op_Subtraction_Godot_Quaternion_Godot_Quaternion_
+- uid: Godot.Quaternion.op_UnaryNegation*
+  commentId: Overload:Godot.Quaternion.op_UnaryNegation
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_op_UnaryNegation_Godot_Quaternion_
+  name: operator -
+  nameWithType: Quaternion.operator -
+  fullName: Godot.Quaternion.operator -
+  nameWithType.vb: Quaternion.-
+  fullName.vb: Godot.Quaternion.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Quaternion.op_UnaryNegation*
+    name: '-'
+    isExternal: true
+    href: Godot.Quaternion.html#Godot_Quaternion_op_UnaryNegation_Godot_Quaternion_
+- uid: Godot.Quaternion.op_Division*
+  commentId: Overload:Godot.Quaternion.op_Division
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_op_Division_Godot_Quaternion_System_Single_
+  name: operator /
+  nameWithType: Quaternion.operator /
+  fullName: Godot.Quaternion.operator /
+  nameWithType.vb: Quaternion./
+  fullName.vb: Godot.Quaternion./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Quaternion.op_Division*
+    name: /
+    isExternal: true
+    href: Godot.Quaternion.html#Godot_Quaternion_op_Division_Godot_Quaternion_System_Single_
+- uid: Godot.Quaternion.op_Equality*
+  commentId: Overload:Godot.Quaternion.op_Equality
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_op_Equality_Godot_Quaternion_Godot_Quaternion_
+  name: operator ==
+  nameWithType: Quaternion.operator ==
+  fullName: Godot.Quaternion.operator ==
+  nameWithType.vb: Quaternion.=
+  fullName.vb: Godot.Quaternion.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Quaternion.op_Equality*
+    name: ==
+    isExternal: true
+    href: Godot.Quaternion.html#Godot_Quaternion_op_Equality_Godot_Quaternion_Godot_Quaternion_
+- uid: Godot.Quaternion.op_Inequality*
+  commentId: Overload:Godot.Quaternion.op_Inequality
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_op_Inequality_Godot_Quaternion_Godot_Quaternion_
+  name: operator !=
+  nameWithType: Quaternion.operator !=
+  fullName: Godot.Quaternion.operator !=
+  nameWithType.vb: Quaternion.<>
+  fullName.vb: Godot.Quaternion.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Quaternion.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: Godot.Quaternion.html#Godot_Quaternion_op_Inequality_Godot_Quaternion_Godot_Quaternion_
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Godot.Quaternion.Equals*
+  commentId: Overload:Godot.Quaternion.Equals
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_Equals_System_Object_
+  name: Equals
+  nameWithType: Quaternion.Equals
+  fullName: Godot.Quaternion.Equals
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.IEquatable{Godot.Quaternion}.Equals(Godot.Quaternion)
+  commentId: M:System.IEquatable{Godot.Quaternion}.Equals(Godot.Quaternion)
+  parent: System.IEquatable{Godot.Quaternion}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Quaternion)
+  nameWithType: IEquatable<Quaternion>.Equals(Quaternion)
+  fullName: System.IEquatable<Godot.Quaternion>.Equals(Godot.Quaternion)
+  nameWithType.vb: IEquatable(Of Quaternion).Equals(Quaternion)
+  fullName.vb: System.IEquatable(Of Godot.Quaternion).Equals(Godot.Quaternion)
+  spec.csharp:
+  - uid: System.IEquatable{Godot.Quaternion}.Equals(Godot.Quaternion)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.Quaternion
+    name: Quaternion
+    isExternal: true
+    href: Godot.Quaternion.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Godot.Quaternion}.Equals(Godot.Quaternion)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.Quaternion
+    name: Quaternion
+    isExternal: true
+    href: Godot.Quaternion.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Godot.Quaternion.IsEqualApprox*
+  commentId: Overload:Godot.Quaternion.IsEqualApprox
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_IsEqualApprox_Godot_Quaternion_
+  name: IsEqualApprox
+  nameWithType: Quaternion.IsEqualApprox
+  fullName: Godot.Quaternion.IsEqualApprox
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Godot.Quaternion.GetHashCode*
+  commentId: Overload:Godot.Quaternion.GetHashCode
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_GetHashCode
+  name: GetHashCode
+  nameWithType: Quaternion.GetHashCode
+  fullName: Godot.Quaternion.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Godot.Quaternion.ToString*
+  commentId: Overload:Godot.Quaternion.ToString
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_ToString
+  name: ToString
+  nameWithType: Quaternion.ToString
+  fullName: Godot.Quaternion.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.Quaternion.Item*
+  commentId: Overload:Godot.Quaternion.Item
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_Item_System_Int32_
+  name: this
+  nameWithType: Quaternion.this
+  fullName: Godot.Quaternion.this
+  nameWithType.vb: Quaternion.this[]
+  fullName.vb: Godot.Quaternion.this[]
+  name.vb: this[]
+- uid: Godot.Quaternion.Identity*
+  commentId: Overload:Godot.Quaternion.Identity
+  isExternal: true
+  href: Godot.Quaternion.html#Godot_Quaternion_Identity
+  name: Identity
+  nameWithType: Quaternion.Identity
+  fullName: Godot.Quaternion.Identity

@@ -1,0 +1,577 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.Signal
+  commentId: T:Godot.Signal
+  id: Signal
+  parent: Godot
+  children:
+  - Godot.Signal.#ctor(Godot.GodotObject,Godot.StringName)
+  - Godot.Signal.GetAwaiter
+  - Godot.Signal.Name
+  - Godot.Signal.Owner
+  langs:
+  - csharp
+  - vb
+  name: Signal
+  nameWithType: Signal
+  fullName: Godot.Signal
+  type: Struct
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: 'public readonly struct Signal : IAwaitable<Variant[]>'
+    content.vb: Public Structure Signal Implements IAwaitable(Of Variant())
+  implements:
+  - Godot.IAwaitable{Godot.Variant[]}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Godot.Signal.#ctor(Godot.GodotObject,Godot.StringName)
+  commentId: M:Godot.Signal.#ctor(Godot.GodotObject,Godot.StringName)
+  id: '#ctor(Godot.GodotObject,Godot.StringName)'
+  parent: Godot.Signal
+  langs:
+  - csharp
+  - vb
+  name: Signal(GodotObject, StringName)
+  nameWithType: Signal.Signal(GodotObject, StringName)
+  fullName: Godot.Signal.Signal(Godot.GodotObject, Godot.StringName)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Signal(GodotObject owner, StringName name)
+    parameters:
+    - id: owner
+      type: Godot.GodotObject
+    - id: name
+      type: Godot.StringName
+    content.vb: Public Sub New(owner As GodotObject, name As StringName)
+  overload: Godot.Signal.#ctor*
+  nameWithType.vb: Signal.New(GodotObject, StringName)
+  fullName.vb: Godot.Signal.New(Godot.GodotObject, Godot.StringName)
+  name.vb: New(GodotObject, StringName)
+- uid: Godot.Signal.GetAwaiter
+  commentId: M:Godot.Signal.GetAwaiter
+  id: GetAwaiter
+  parent: Godot.Signal
+  langs:
+  - csharp
+  - vb
+  name: GetAwaiter()
+  nameWithType: Signal.GetAwaiter()
+  fullName: Godot.Signal.GetAwaiter()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public IAwaiter<Variant[]> GetAwaiter()
+    return:
+      type: Godot.IAwaiter{Godot.Variant[]}
+    content.vb: Public Function GetAwaiter() As IAwaiter(Of [Variant]())
+  overload: Godot.Signal.GetAwaiter*
+  implements:
+  - Godot.IAwaitable{Godot.Variant[]}.GetAwaiter
+- uid: Godot.Signal.Owner
+  commentId: P:Godot.Signal.Owner
+  id: Owner
+  parent: Godot.Signal
+  langs:
+  - csharp
+  - vb
+  name: Owner
+  nameWithType: Signal.Owner
+  fullName: Godot.Signal.Owner
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public GodotObject Owner { get; }
+    parameters: []
+    return:
+      type: Godot.GodotObject
+    content.vb: Public ReadOnly Property Owner As GodotObject
+  overload: Godot.Signal.Owner*
+- uid: Godot.Signal.Name
+  commentId: P:Godot.Signal.Name
+  id: Name
+  parent: Godot.Signal
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Signal.Name
+  fullName: Godot.Signal.Name
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public StringName Name { get; }
+    parameters: []
+    return:
+      type: Godot.StringName
+    content.vb: Public ReadOnly Property Name As StringName
+  overload: Godot.Signal.Name*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: Godot.IAwaitable{Godot.Variant[]}
+  commentId: T:Godot.IAwaitable{Godot.Variant[]}
+  parent: Godot
+  definition: Godot.IAwaitable`1
+  href: Godot.IAwaitable-1.html
+  name: IAwaitable<Variant[]>
+  nameWithType: IAwaitable<Variant[]>
+  fullName: Godot.IAwaitable<Godot.Variant[]>
+  nameWithType.vb: IAwaitable(Of Variant())
+  fullName.vb: Godot.IAwaitable(Of Godot.Variant())
+  name.vb: IAwaitable(Of Variant())
+  spec.csharp:
+  - uid: Godot.IAwaitable`1
+    name: IAwaitable
+    isExternal: true
+    href: Godot.IAwaitable-1.html
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: Godot.IAwaitable`1
+    name: IAwaitable
+    isExternal: true
+    href: Godot.IAwaitable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: (
+  - name: )
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Godot.IAwaitable`1
+  commentId: T:Godot.IAwaitable`1
+  isExternal: true
+  href: Godot.IAwaitable-1.html
+  name: IAwaitable<TResult>
+  nameWithType: IAwaitable<TResult>
+  fullName: Godot.IAwaitable<TResult>
+  nameWithType.vb: IAwaitable(Of TResult)
+  fullName.vb: Godot.IAwaitable(Of TResult)
+  name.vb: IAwaitable(Of TResult)
+  spec.csharp:
+  - uid: Godot.IAwaitable`1
+    name: IAwaitable
+    isExternal: true
+    href: Godot.IAwaitable-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Godot.IAwaitable`1
+    name: IAwaitable
+    isExternal: true
+    href: Godot.IAwaitable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.Signal.#ctor*
+  commentId: Overload:Godot.Signal.#ctor
+  isExternal: true
+  href: Godot.Signal.html#Godot_Signal__ctor_Godot_GodotObject_Godot_StringName_
+  name: Signal
+  nameWithType: Signal.Signal
+  fullName: Godot.Signal.Signal
+  nameWithType.vb: Signal.New
+  fullName.vb: Godot.Signal.New
+  name.vb: New
+- uid: Godot.GodotObject
+  commentId: T:Godot.GodotObject
+  parent: Godot
+  isExternal: true
+  href: Godot.GodotObject.html
+  name: GodotObject
+  nameWithType: GodotObject
+  fullName: Godot.GodotObject
+- uid: Godot.StringName
+  commentId: T:Godot.StringName
+  parent: Godot
+  isExternal: true
+  href: Godot.StringName.html
+  name: StringName
+  nameWithType: StringName
+  fullName: Godot.StringName
+- uid: Godot.Signal.GetAwaiter*
+  commentId: Overload:Godot.Signal.GetAwaiter
+  isExternal: true
+  href: Godot.Signal.html#Godot_Signal_GetAwaiter
+  name: GetAwaiter
+  nameWithType: Signal.GetAwaiter
+  fullName: Godot.Signal.GetAwaiter
+- uid: Godot.IAwaitable{Godot.Variant[]}.GetAwaiter
+  commentId: M:Godot.IAwaitable{Godot.Variant[]}.GetAwaiter
+  parent: Godot.IAwaitable{Godot.Variant[]}
+  definition: Godot.IAwaitable`1.GetAwaiter
+  href: Godot.IAwaitable-1.html#Godot_IAwaitable_1_GetAwaiter
+  name: GetAwaiter()
+  nameWithType: IAwaitable<Variant[]>.GetAwaiter()
+  fullName: Godot.IAwaitable<Godot.Variant[]>.GetAwaiter()
+  nameWithType.vb: IAwaitable(Of Variant()).GetAwaiter()
+  fullName.vb: Godot.IAwaitable(Of Godot.Variant()).GetAwaiter()
+  spec.csharp:
+  - uid: Godot.IAwaitable{Godot.Variant[]}.GetAwaiter
+    name: GetAwaiter
+    isExternal: true
+    href: Godot.IAwaitable-1.html#Godot_IAwaitable_1_GetAwaiter
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.IAwaitable{Godot.Variant[]}.GetAwaiter
+    name: GetAwaiter
+    isExternal: true
+    href: Godot.IAwaitable-1.html#Godot_IAwaitable_1_GetAwaiter
+  - name: (
+  - name: )
+- uid: Godot.IAwaiter{Godot.Variant[]}
+  commentId: T:Godot.IAwaiter{Godot.Variant[]}
+  parent: Godot
+  definition: Godot.IAwaiter`1
+  href: Godot.IAwaiter-1.html
+  name: IAwaiter<Variant[]>
+  nameWithType: IAwaiter<Variant[]>
+  fullName: Godot.IAwaiter<Godot.Variant[]>
+  nameWithType.vb: IAwaiter(Of Variant())
+  fullName.vb: Godot.IAwaiter(Of Godot.Variant())
+  name.vb: IAwaiter(Of Variant())
+  spec.csharp:
+  - uid: Godot.IAwaiter`1
+    name: IAwaiter
+    isExternal: true
+    href: Godot.IAwaiter-1.html
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: Godot.IAwaiter`1
+    name: IAwaiter
+    isExternal: true
+    href: Godot.IAwaiter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: (
+  - name: )
+  - name: )
+- uid: Godot.IAwaitable`1.GetAwaiter
+  commentId: M:Godot.IAwaitable`1.GetAwaiter
+  isExternal: true
+  href: Godot.IAwaitable-1.html#Godot_IAwaitable_1_GetAwaiter
+  name: GetAwaiter()
+  nameWithType: IAwaitable<TResult>.GetAwaiter()
+  fullName: Godot.IAwaitable<TResult>.GetAwaiter()
+  nameWithType.vb: IAwaitable(Of TResult).GetAwaiter()
+  fullName.vb: Godot.IAwaitable(Of TResult).GetAwaiter()
+  spec.csharp:
+  - uid: Godot.IAwaitable`1.GetAwaiter
+    name: GetAwaiter
+    isExternal: true
+    href: Godot.IAwaitable-1.html#Godot_IAwaitable_1_GetAwaiter
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.IAwaitable`1.GetAwaiter
+    name: GetAwaiter
+    isExternal: true
+    href: Godot.IAwaitable-1.html#Godot_IAwaitable_1_GetAwaiter
+  - name: (
+  - name: )
+- uid: Godot.IAwaiter`1
+  commentId: T:Godot.IAwaiter`1
+  isExternal: true
+  href: Godot.IAwaiter-1.html
+  name: IAwaiter<TResult>
+  nameWithType: IAwaiter<TResult>
+  fullName: Godot.IAwaiter<TResult>
+  nameWithType.vb: IAwaiter(Of TResult)
+  fullName.vb: Godot.IAwaiter(Of TResult)
+  name.vb: IAwaiter(Of TResult)
+  spec.csharp:
+  - uid: Godot.IAwaiter`1
+    name: IAwaiter
+    isExternal: true
+    href: Godot.IAwaiter-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Godot.IAwaiter`1
+    name: IAwaiter
+    isExternal: true
+    href: Godot.IAwaiter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Godot.Signal.Owner*
+  commentId: Overload:Godot.Signal.Owner
+  isExternal: true
+  href: Godot.Signal.html#Godot_Signal_Owner
+  name: Owner
+  nameWithType: Signal.Owner
+  fullName: Godot.Signal.Owner
+- uid: Godot.Signal.Name*
+  commentId: Overload:Godot.Signal.Name
+  isExternal: true
+  href: Godot.Signal.html#Godot_Signal_Name
+  name: Name
+  nameWithType: Signal.Name
+  fullName: Godot.Signal.Name

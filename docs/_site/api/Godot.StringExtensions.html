@@ -1,0 +1,3124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class StringExtensions | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class StringExtensions | mysite ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Godot.StringExtensions">
+
+
+
+  <h1 id="Godot_StringExtensions" data-uid="Godot.StringExtensions" class="text-break">
+Class StringExtensions  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Godot.html">Godot</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GodotSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class StringExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">StringExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Godot_StringExtensions_Bigrams_" data-uid="Godot.StringExtensions.Bigrams*"></a>
+
+  <h3 id="Godot_StringExtensions_Bigrams_System_String_" data-uid="Godot.StringExtensions.Bigrams(System.String)">
+  Bigrams(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] Bigrams(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_BinToInt_" data-uid="Godot.StringExtensions.BinToInt*"></a>
+
+  <h3 id="Godot_StringExtensions_BinToInt_System_String_" data-uid="Godot.StringExtensions.BinToInt(System.String)">
+  BinToInt(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BinToInt(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_CEscape_" data-uid="Godot.StringExtensions.CEscape*"></a>
+
+  <h3 id="Godot_StringExtensions_CEscape_System_String_" data-uid="Godot.StringExtensions.CEscape(System.String)">
+  CEscape(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CEscape(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_CUnescape_" data-uid="Godot.StringExtensions.CUnescape*"></a>
+
+  <h3 id="Godot_StringExtensions_CUnescape_System_String_" data-uid="Godot.StringExtensions.CUnescape(System.String)">
+  CUnescape(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CUnescape(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Capitalize_" data-uid="Godot.StringExtensions.Capitalize*"></a>
+
+  <h3 id="Godot_StringExtensions_Capitalize_System_String_" data-uid="Godot.StringExtensions.Capitalize(System.String)">
+  Capitalize(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Capitalize(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_CasecmpTo_" data-uid="Godot.StringExtensions.CasecmpTo*"></a>
+
+  <h3 id="Godot_StringExtensions_CasecmpTo_System_String_System_String_" data-uid="Godot.StringExtensions.CasecmpTo(System.String,System.String)">
+  CasecmpTo(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CasecmpTo(this string instance, string to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>to</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_CompareTo_" data-uid="Godot.StringExtensions.CompareTo*"></a>
+
+  <h3 id="Godot_StringExtensions_CompareTo_System_String_System_String_System_Boolean_" data-uid="Godot.StringExtensions.CompareTo(System.String,System.String,System.Boolean)">
+  CompareTo(string, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use string.Compare instead.&quot;)]
+public static int CompareTo(this string instance, string to, bool caseSensitive = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>to</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>caseSensitive</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Count_" data-uid="Godot.StringExtensions.Count*"></a>
+
+  <h3 id="Godot_StringExtensions_Count_System_String_System_String_System_Int32_System_Int32_System_Boolean_" data-uid="Godot.StringExtensions.Count(System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+  Count(string, string, int, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Count(this string instance, string what, int from = 0, int to = 0, bool caseSensitive = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>what</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>from</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>to</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>caseSensitive</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_CountN_" data-uid="Godot.StringExtensions.CountN*"></a>
+
+  <h3 id="Godot_StringExtensions_CountN_System_String_System_String_System_Int32_System_Int32_" data-uid="Godot.StringExtensions.CountN(System.String,System.String,System.Int32,System.Int32)">
+  CountN(string, string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CountN(this string instance, string what, int from = 0, int to = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>what</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>from</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>to</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Dedent_" data-uid="Godot.StringExtensions.Dedent*"></a>
+
+  <h3 id="Godot_StringExtensions_Dedent_System_String_" data-uid="Godot.StringExtensions.Dedent(System.String)">
+  Dedent(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Dedent(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Find_" data-uid="Godot.StringExtensions.Find*"></a>
+
+  <h3 id="Godot_StringExtensions_Find_System_String_System_Char_System_Int32_System_Boolean_" data-uid="Godot.StringExtensions.Find(System.String,System.Char,System.Int32,System.Boolean)">
+  Find(string, char, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Find(this string instance, char what, int from = 0, bool caseSensitive = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>what</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+    <dt><code>from</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>caseSensitive</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Find_" data-uid="Godot.StringExtensions.Find*"></a>
+
+  <h3 id="Godot_StringExtensions_Find_System_String_System_String_System_Int32_System_Boolean_" data-uid="Godot.StringExtensions.Find(System.String,System.String,System.Int32,System.Boolean)">
+  Find(string, string, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Find(this string instance, string what, int from = 0, bool caseSensitive = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>what</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>from</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>caseSensitive</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_FindN_" data-uid="Godot.StringExtensions.FindN*"></a>
+
+  <h3 id="Godot_StringExtensions_FindN_System_String_System_String_System_Int32_" data-uid="Godot.StringExtensions.FindN(System.String,System.String,System.Int32)">
+  FindN(string, string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FindN(this string instance, string what, int from = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>what</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>from</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_GetBaseDir_" data-uid="Godot.StringExtensions.GetBaseDir*"></a>
+
+  <h3 id="Godot_StringExtensions_GetBaseDir_System_String_" data-uid="Godot.StringExtensions.GetBaseDir(System.String)">
+  GetBaseDir(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetBaseDir(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_GetBaseName_" data-uid="Godot.StringExtensions.GetBaseName*"></a>
+
+  <h3 id="Godot_StringExtensions_GetBaseName_System_String_" data-uid="Godot.StringExtensions.GetBaseName(System.String)">
+  GetBaseName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetBaseName(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_GetExtension_" data-uid="Godot.StringExtensions.GetExtension*"></a>
+
+  <h3 id="Godot_StringExtensions_GetExtension_System_String_" data-uid="Godot.StringExtensions.GetExtension(System.String)">
+  GetExtension(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetExtension(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_GetFile_" data-uid="Godot.StringExtensions.GetFile*"></a>
+
+  <h3 id="Godot_StringExtensions_GetFile_System_String_" data-uid="Godot.StringExtensions.GetFile(System.String)">
+  GetFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetFile(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_GetStringFromAscii_" data-uid="Godot.StringExtensions.GetStringFromAscii*"></a>
+
+  <h3 id="Godot_StringExtensions_GetStringFromAscii_System_Byte___" data-uid="Godot.StringExtensions.GetStringFromAscii(System.Byte[])">
+  GetStringFromAscii(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetStringFromAscii(this byte[] bytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_GetStringFromUtf16_" data-uid="Godot.StringExtensions.GetStringFromUtf16*"></a>
+
+  <h3 id="Godot_StringExtensions_GetStringFromUtf16_System_Byte___" data-uid="Godot.StringExtensions.GetStringFromUtf16(System.Byte[])">
+  GetStringFromUtf16(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetStringFromUtf16(this byte[] bytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_GetStringFromUtf32_" data-uid="Godot.StringExtensions.GetStringFromUtf32*"></a>
+
+  <h3 id="Godot_StringExtensions_GetStringFromUtf32_System_Byte___" data-uid="Godot.StringExtensions.GetStringFromUtf32(System.Byte[])">
+  GetStringFromUtf32(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetStringFromUtf32(this byte[] bytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_GetStringFromUtf8_" data-uid="Godot.StringExtensions.GetStringFromUtf8*"></a>
+
+  <h3 id="Godot_StringExtensions_GetStringFromUtf8_System_Byte___" data-uid="Godot.StringExtensions.GetStringFromUtf8(System.Byte[])">
+  GetStringFromUtf8(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetStringFromUtf8(this byte[] bytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Hash_" data-uid="Godot.StringExtensions.Hash*"></a>
+
+  <h3 id="Godot_StringExtensions_Hash_System_String_" data-uid="Godot.StringExtensions.Hash(System.String)">
+  Hash(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint Hash(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_HexDecode_" data-uid="Godot.StringExtensions.HexDecode*"></a>
+
+  <h3 id="Godot_StringExtensions_HexDecode_System_String_" data-uid="Godot.StringExtensions.HexDecode(System.String)">
+  HexDecode(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] HexDecode(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_HexEncode_" data-uid="Godot.StringExtensions.HexEncode*"></a>
+
+  <h3 id="Godot_StringExtensions_HexEncode_System_Byte___" data-uid="Godot.StringExtensions.HexEncode(System.Byte[])">
+  HexEncode(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string HexEncode(this byte[] bytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_HexToInt_" data-uid="Godot.StringExtensions.HexToInt*"></a>
+
+  <h3 id="Godot_StringExtensions_HexToInt_System_String_" data-uid="Godot.StringExtensions.HexToInt(System.String)">
+  HexToInt(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HexToInt(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Indent_" data-uid="Godot.StringExtensions.Indent*"></a>
+
+  <h3 id="Godot_StringExtensions_Indent_System_String_System_String_" data-uid="Godot.StringExtensions.Indent(System.String,System.String)">
+  Indent(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Indent(this string instance, string prefix)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>prefix</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_IsAbsolutePath_" data-uid="Godot.StringExtensions.IsAbsolutePath*"></a>
+
+  <h3 id="Godot_StringExtensions_IsAbsolutePath_System_String_" data-uid="Godot.StringExtensions.IsAbsolutePath(System.String)">
+  IsAbsolutePath(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsAbsolutePath(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_IsRelativePath_" data-uid="Godot.StringExtensions.IsRelativePath*"></a>
+
+  <h3 id="Godot_StringExtensions_IsRelativePath_System_String_" data-uid="Godot.StringExtensions.IsRelativePath(System.String)">
+  IsRelativePath(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsRelativePath(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_IsSubsequenceOf_" data-uid="Godot.StringExtensions.IsSubsequenceOf*"></a>
+
+  <h3 id="Godot_StringExtensions_IsSubsequenceOf_System_String_System_String_System_Boolean_" data-uid="Godot.StringExtensions.IsSubsequenceOf(System.String,System.String,System.Boolean)">
+  IsSubsequenceOf(string, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSubsequenceOf(this string instance, string text, bool caseSensitive = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>text</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>caseSensitive</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_IsSubsequenceOfN_" data-uid="Godot.StringExtensions.IsSubsequenceOfN*"></a>
+
+  <h3 id="Godot_StringExtensions_IsSubsequenceOfN_System_String_System_String_" data-uid="Godot.StringExtensions.IsSubsequenceOfN(System.String,System.String)">
+  IsSubsequenceOfN(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSubsequenceOfN(this string instance, string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>text</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_IsValidFileName_" data-uid="Godot.StringExtensions.IsValidFileName*"></a>
+
+  <h3 id="Godot_StringExtensions_IsValidFileName_System_String_" data-uid="Godot.StringExtensions.IsValidFileName(System.String)">
+  IsValidFileName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidFileName(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_IsValidFloat_" data-uid="Godot.StringExtensions.IsValidFloat*"></a>
+
+  <h3 id="Godot_StringExtensions_IsValidFloat_System_String_" data-uid="Godot.StringExtensions.IsValidFloat(System.String)">
+  IsValidFloat(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidFloat(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_IsValidHexNumber_" data-uid="Godot.StringExtensions.IsValidHexNumber*"></a>
+
+  <h3 id="Godot_StringExtensions_IsValidHexNumber_System_String_System_Boolean_" data-uid="Godot.StringExtensions.IsValidHexNumber(System.String,System.Boolean)">
+  IsValidHexNumber(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidHexNumber(this string instance, bool withPrefix = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>withPrefix</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_IsValidHtmlColor_" data-uid="Godot.StringExtensions.IsValidHtmlColor*"></a>
+
+  <h3 id="Godot_StringExtensions_IsValidHtmlColor_System_String_" data-uid="Godot.StringExtensions.IsValidHtmlColor(System.String)">
+  IsValidHtmlColor(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidHtmlColor(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_IsValidIPAddress_" data-uid="Godot.StringExtensions.IsValidIPAddress*"></a>
+
+  <h3 id="Godot_StringExtensions_IsValidIPAddress_System_String_" data-uid="Godot.StringExtensions.IsValidIPAddress(System.String)">
+  IsValidIPAddress(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidIPAddress(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_IsValidIdentifier_" data-uid="Godot.StringExtensions.IsValidIdentifier*"></a>
+
+  <h3 id="Godot_StringExtensions_IsValidIdentifier_System_String_" data-uid="Godot.StringExtensions.IsValidIdentifier(System.String)">
+  IsValidIdentifier(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidIdentifier(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_IsValidInt_" data-uid="Godot.StringExtensions.IsValidInt*"></a>
+
+  <h3 id="Godot_StringExtensions_IsValidInt_System_String_" data-uid="Godot.StringExtensions.IsValidInt(System.String)">
+  IsValidInt(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidInt(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_JSONEscape_" data-uid="Godot.StringExtensions.JSONEscape*"></a>
+
+  <h3 id="Godot_StringExtensions_JSONEscape_System_String_" data-uid="Godot.StringExtensions.JSONEscape(System.String)">
+  JSONEscape(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string JSONEscape(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Left_" data-uid="Godot.StringExtensions.Left*"></a>
+
+  <h3 id="Godot_StringExtensions_Left_System_String_System_Int32_" data-uid="Godot.StringExtensions.Left(System.String,System.Int32)">
+  Left(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Left(this string instance, int pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>pos</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Match_" data-uid="Godot.StringExtensions.Match*"></a>
+
+  <h3 id="Godot_StringExtensions_Match_System_String_System_String_System_Boolean_" data-uid="Godot.StringExtensions.Match(System.String,System.String,System.Boolean)">
+  Match(string, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Match(this string instance, string expr, bool caseSensitive = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>expr</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>caseSensitive</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_MatchN_" data-uid="Godot.StringExtensions.MatchN*"></a>
+
+  <h3 id="Godot_StringExtensions_MatchN_System_String_System_String_" data-uid="Godot.StringExtensions.MatchN(System.String,System.String)">
+  MatchN(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool MatchN(this string instance, string expr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>expr</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Md5Buffer_" data-uid="Godot.StringExtensions.Md5Buffer*"></a>
+
+  <h3 id="Godot_StringExtensions_Md5Buffer_System_String_" data-uid="Godot.StringExtensions.Md5Buffer(System.String)">
+  Md5Buffer(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] Md5Buffer(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Md5Text_" data-uid="Godot.StringExtensions.Md5Text*"></a>
+
+  <h3 id="Godot_StringExtensions_Md5Text_System_String_" data-uid="Godot.StringExtensions.Md5Text(System.String)">
+  Md5Text(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Md5Text(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_NocasecmpTo_" data-uid="Godot.StringExtensions.NocasecmpTo*"></a>
+
+  <h3 id="Godot_StringExtensions_NocasecmpTo_System_String_System_String_" data-uid="Godot.StringExtensions.NocasecmpTo(System.String,System.String)">
+  NocasecmpTo(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NocasecmpTo(this string instance, string to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>to</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_PadDecimals_" data-uid="Godot.StringExtensions.PadDecimals*"></a>
+
+  <h3 id="Godot_StringExtensions_PadDecimals_System_String_System_Int32_" data-uid="Godot.StringExtensions.PadDecimals(System.String,System.Int32)">
+  PadDecimals(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PadDecimals(this string instance, int digits)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>digits</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_PadZeros_" data-uid="Godot.StringExtensions.PadZeros*"></a>
+
+  <h3 id="Godot_StringExtensions_PadZeros_System_String_System_Int32_" data-uid="Godot.StringExtensions.PadZeros(System.String,System.Int32)">
+  PadZeros(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PadZeros(this string instance, int digits)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>digits</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_PathJoin_" data-uid="Godot.StringExtensions.PathJoin*"></a>
+
+  <h3 id="Godot_StringExtensions_PathJoin_System_String_System_String_" data-uid="Godot.StringExtensions.PathJoin(System.String,System.String)">
+  PathJoin(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PathJoin(this string instance, string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>file</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_RFind_" data-uid="Godot.StringExtensions.RFind*"></a>
+
+  <h3 id="Godot_StringExtensions_RFind_System_String_System_String_System_Int32_System_Boolean_" data-uid="Godot.StringExtensions.RFind(System.String,System.String,System.Int32,System.Boolean)">
+  RFind(string, string, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RFind(this string instance, string what, int from = -1, bool caseSensitive = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>what</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>from</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>caseSensitive</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_RFindN_" data-uid="Godot.StringExtensions.RFindN*"></a>
+
+  <h3 id="Godot_StringExtensions_RFindN_System_String_System_String_System_Int32_" data-uid="Godot.StringExtensions.RFindN(System.String,System.String,System.Int32)">
+  RFindN(string, string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RFindN(this string instance, string what, int from = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>what</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>from</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_ReplaceN_" data-uid="Godot.StringExtensions.ReplaceN*"></a>
+
+  <h3 id="Godot_StringExtensions_ReplaceN_System_String_System_String_System_String_" data-uid="Godot.StringExtensions.ReplaceN(System.String,System.String,System.String)">
+  ReplaceN(string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReplaceN(this string instance, string what, string forwhat)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>what</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>forwhat</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Right_" data-uid="Godot.StringExtensions.Right*"></a>
+
+  <h3 id="Godot_StringExtensions_Right_System_String_System_Int32_" data-uid="Godot.StringExtensions.Right(System.String,System.Int32)">
+  Right(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Right(this string instance, int pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>pos</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Sha1Buffer_" data-uid="Godot.StringExtensions.Sha1Buffer*"></a>
+
+  <h3 id="Godot_StringExtensions_Sha1Buffer_System_String_" data-uid="Godot.StringExtensions.Sha1Buffer(System.String)">
+  Sha1Buffer(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] Sha1Buffer(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Sha1Text_" data-uid="Godot.StringExtensions.Sha1Text*"></a>
+
+  <h3 id="Godot_StringExtensions_Sha1Text_System_String_" data-uid="Godot.StringExtensions.Sha1Text(System.String)">
+  Sha1Text(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Sha1Text(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Sha256Buffer_" data-uid="Godot.StringExtensions.Sha256Buffer*"></a>
+
+  <h3 id="Godot_StringExtensions_Sha256Buffer_System_String_" data-uid="Godot.StringExtensions.Sha256Buffer(System.String)">
+  Sha256Buffer(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] Sha256Buffer(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Sha256Text_" data-uid="Godot.StringExtensions.Sha256Text*"></a>
+
+  <h3 id="Godot_StringExtensions_Sha256Text_System_String_" data-uid="Godot.StringExtensions.Sha256Text(System.String)">
+  Sha256Text(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Sha256Text(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Similarity_" data-uid="Godot.StringExtensions.Similarity*"></a>
+
+  <h3 id="Godot_StringExtensions_Similarity_System_String_System_String_" data-uid="Godot.StringExtensions.Similarity(System.String,System.String)">
+  Similarity(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Similarity(this string instance, string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>text</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_SimplifyPath_" data-uid="Godot.StringExtensions.SimplifyPath*"></a>
+
+  <h3 id="Godot_StringExtensions_SimplifyPath_System_String_" data-uid="Godot.StringExtensions.SimplifyPath(System.String)">
+  SimplifyPath(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SimplifyPath(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Split_" data-uid="Godot.StringExtensions.Split*"></a>
+
+  <h3 id="Godot_StringExtensions_Split_System_String_System_String_System_Boolean_" data-uid="Godot.StringExtensions.Split(System.String,System.String,System.Boolean)">
+  Split(string, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] Split(this string instance, string divisor, bool allowEmpty = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>divisor</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>allowEmpty</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_SplitFloats_" data-uid="Godot.StringExtensions.SplitFloats*"></a>
+
+  <h3 id="Godot_StringExtensions_SplitFloats_System_String_System_String_System_Boolean_" data-uid="Godot.StringExtensions.SplitFloats(System.String,System.String,System.Boolean)">
+  SplitFloats(string, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float[] SplitFloats(this string instance, string divisor, bool allowEmpty = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>divisor</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>allowEmpty</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_StripEdges_" data-uid="Godot.StringExtensions.StripEdges*"></a>
+
+  <h3 id="Godot_StringExtensions_StripEdges_System_String_System_Boolean_System_Boolean_" data-uid="Godot.StringExtensions.StripEdges(System.String,System.Boolean,System.Boolean)">
+  StripEdges(string, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StripEdges(this string instance, bool left = true, bool right = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>left</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>right</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_StripEscapes_" data-uid="Godot.StringExtensions.StripEscapes*"></a>
+
+  <h3 id="Godot_StringExtensions_StripEscapes_System_String_" data-uid="Godot.StringExtensions.StripEscapes(System.String)">
+  StripEscapes(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StripEscapes(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_Substr_" data-uid="Godot.StringExtensions.Substr*"></a>
+
+  <h3 id="Godot_StringExtensions_Substr_System_String_System_Int32_System_Int32_" data-uid="Godot.StringExtensions.Substr(System.String,System.Int32,System.Int32)">
+  Substr(string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Substr(this string instance, int from, int len)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>from</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>len</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_ToAsciiBuffer_" data-uid="Godot.StringExtensions.ToAsciiBuffer*"></a>
+
+  <h3 id="Godot_StringExtensions_ToAsciiBuffer_System_String_" data-uid="Godot.StringExtensions.ToAsciiBuffer(System.String)">
+  ToAsciiBuffer(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ToAsciiBuffer(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_ToCamelCase_" data-uid="Godot.StringExtensions.ToCamelCase*"></a>
+
+  <h3 id="Godot_StringExtensions_ToCamelCase_System_String_" data-uid="Godot.StringExtensions.ToCamelCase(System.String)">
+  ToCamelCase(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToCamelCase(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_ToFloat_" data-uid="Godot.StringExtensions.ToFloat*"></a>
+
+  <h3 id="Godot_StringExtensions_ToFloat_System_String_" data-uid="Godot.StringExtensions.ToFloat(System.String)">
+  ToFloat(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ToFloat(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_ToInt_" data-uid="Godot.StringExtensions.ToInt*"></a>
+
+  <h3 id="Godot_StringExtensions_ToInt_System_String_" data-uid="Godot.StringExtensions.ToInt(System.String)">
+  ToInt(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ToInt(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_ToKebabCase_" data-uid="Godot.StringExtensions.ToKebabCase*"></a>
+
+  <h3 id="Godot_StringExtensions_ToKebabCase_System_String_" data-uid="Godot.StringExtensions.ToKebabCase(System.String)">
+  ToKebabCase(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToKebabCase(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_ToPascalCase_" data-uid="Godot.StringExtensions.ToPascalCase*"></a>
+
+  <h3 id="Godot_StringExtensions_ToPascalCase_System_String_" data-uid="Godot.StringExtensions.ToPascalCase(System.String)">
+  ToPascalCase(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToPascalCase(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_ToSnakeCase_" data-uid="Godot.StringExtensions.ToSnakeCase*"></a>
+
+  <h3 id="Godot_StringExtensions_ToSnakeCase_System_String_" data-uid="Godot.StringExtensions.ToSnakeCase(System.String)">
+  ToSnakeCase(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToSnakeCase(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_ToUtf16Buffer_" data-uid="Godot.StringExtensions.ToUtf16Buffer*"></a>
+
+  <h3 id="Godot_StringExtensions_ToUtf16Buffer_System_String_" data-uid="Godot.StringExtensions.ToUtf16Buffer(System.String)">
+  ToUtf16Buffer(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ToUtf16Buffer(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_ToUtf32Buffer_" data-uid="Godot.StringExtensions.ToUtf32Buffer*"></a>
+
+  <h3 id="Godot_StringExtensions_ToUtf32Buffer_System_String_" data-uid="Godot.StringExtensions.ToUtf32Buffer(System.String)">
+  ToUtf32Buffer(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ToUtf32Buffer(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_ToUtf8Buffer_" data-uid="Godot.StringExtensions.ToUtf8Buffer*"></a>
+
+  <h3 id="Godot_StringExtensions_ToUtf8Buffer_System_String_" data-uid="Godot.StringExtensions.ToUtf8Buffer(System.String)">
+  ToUtf8Buffer(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ToUtf8Buffer(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_TrimPrefix_" data-uid="Godot.StringExtensions.TrimPrefix*"></a>
+
+  <h3 id="Godot_StringExtensions_TrimPrefix_System_String_System_String_" data-uid="Godot.StringExtensions.TrimPrefix(System.String,System.String)">
+  TrimPrefix(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TrimPrefix(this string instance, string prefix)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>prefix</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_TrimSuffix_" data-uid="Godot.StringExtensions.TrimSuffix*"></a>
+
+  <h3 id="Godot_StringExtensions_TrimSuffix_System_String_System_String_" data-uid="Godot.StringExtensions.TrimSuffix(System.String,System.String)">
+  TrimSuffix(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TrimSuffix(this string instance, string suffix)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>suffix</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_URIDecode_" data-uid="Godot.StringExtensions.URIDecode*"></a>
+
+  <h3 id="Godot_StringExtensions_URIDecode_System_String_" data-uid="Godot.StringExtensions.URIDecode(System.String)">
+  URIDecode(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string URIDecode(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_URIEncode_" data-uid="Godot.StringExtensions.URIEncode*"></a>
+
+  <h3 id="Godot_StringExtensions_URIEncode_System_String_" data-uid="Godot.StringExtensions.URIEncode(System.String)">
+  URIEncode(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string URIEncode(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_ValidateNodeName_" data-uid="Godot.StringExtensions.ValidateNodeName*"></a>
+
+  <h3 id="Godot_StringExtensions_ValidateNodeName_System_String_" data-uid="Godot.StringExtensions.ValidateNodeName(System.String)">
+  ValidateNodeName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ValidateNodeName(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_XMLEscape_" data-uid="Godot.StringExtensions.XMLEscape*"></a>
+
+  <h3 id="Godot_StringExtensions_XMLEscape_System_String_" data-uid="Godot.StringExtensions.XMLEscape(System.String)">
+  XMLEscape(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string XMLEscape(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_StringExtensions_XMLUnescape_" data-uid="Godot.StringExtensions.XMLUnescape*"></a>
+
+  <h3 id="Godot_StringExtensions_XMLUnescape_System_String_" data-uid="Godot.StringExtensions.XMLUnescape(System.String)">
+  XMLUnescape(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string? XMLUnescape(this string instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

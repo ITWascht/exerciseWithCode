@@ -1,0 +1,251 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.GraphEdit.ConnectionToEmptyEventHandler
+  commentId: T:Godot.GraphEdit.ConnectionToEmptyEventHandler
+  id: GraphEdit.ConnectionToEmptyEventHandler
+  parent: Godot
+  children:
+  - Godot.GraphEdit.ConnectionToEmptyEventHandler.#ctor(System.Object,System.IntPtr)
+  - Godot.GraphEdit.ConnectionToEmptyEventHandler.BeginInvoke(Godot.StringName,System.Int64,Godot.Vector2,System.AsyncCallback,System.Object)
+  - Godot.GraphEdit.ConnectionToEmptyEventHandler.EndInvoke(System.IAsyncResult)
+  - Godot.GraphEdit.ConnectionToEmptyEventHandler.Invoke(Godot.StringName,System.Int64,Godot.Vector2)
+  langs:
+  - csharp
+  - vb
+  name: GraphEdit.ConnectionToEmptyEventHandler
+  nameWithType: GraphEdit.ConnectionToEmptyEventHandler
+  fullName: Godot.GraphEdit.ConnectionToEmptyEventHandler
+  type: Delegate
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public delegate void GraphEdit.ConnectionToEmptyEventHandler(StringName fromNode, long fromPort, Vector2 releasePosition)
+    parameters:
+    - id: fromNode
+      type: Godot.StringName
+    - id: fromPort
+      type: System.Int64
+    - id: releasePosition
+      type: Godot.Vector2
+    content.vb: Public Delegate Sub GraphEdit.ConnectionToEmptyEventHandler(fromNode As StringName, fromPort As Long, releasePosition As Vector2)
+- uid: Godot.GraphEdit.ConnectionToEmptyEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Godot.GraphEdit.ConnectionToEmptyEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Godot.GraphEdit.ConnectionToEmptyEventHandler
+  langs:
+  - csharp
+  - vb
+  name: ConnectionToEmptyEventHandler(object, nint)
+  nameWithType: GraphEdit.ConnectionToEmptyEventHandler.ConnectionToEmptyEventHandler(object, nint)
+  fullName: Godot.GraphEdit.ConnectionToEmptyEventHandler.ConnectionToEmptyEventHandler(object, nint)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public ConnectionToEmptyEventHandler(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Godot.GraphEdit.ConnectionToEmptyEventHandler.#ctor*
+  nameWithType.vb: GraphEdit.ConnectionToEmptyEventHandler.New(Object, IntPtr)
+  fullName.vb: Godot.GraphEdit.ConnectionToEmptyEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Godot.GraphEdit.ConnectionToEmptyEventHandler.Invoke(Godot.StringName,System.Int64,Godot.Vector2)
+  commentId: M:Godot.GraphEdit.ConnectionToEmptyEventHandler.Invoke(Godot.StringName,System.Int64,Godot.Vector2)
+  id: Invoke(Godot.StringName,System.Int64,Godot.Vector2)
+  parent: Godot.GraphEdit.ConnectionToEmptyEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(StringName, long, Vector2)
+  nameWithType: GraphEdit.ConnectionToEmptyEventHandler.Invoke(StringName, long, Vector2)
+  fullName: Godot.GraphEdit.ConnectionToEmptyEventHandler.Invoke(Godot.StringName, long, Godot.Vector2)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void Invoke(StringName fromNode, long fromPort, Vector2 releasePosition)
+    parameters:
+    - id: fromNode
+      type: Godot.StringName
+    - id: fromPort
+      type: System.Int64
+    - id: releasePosition
+      type: Godot.Vector2
+    content.vb: Public Overridable Sub Invoke(fromNode As StringName, fromPort As Long, releasePosition As Vector2)
+  overload: Godot.GraphEdit.ConnectionToEmptyEventHandler.Invoke*
+  nameWithType.vb: GraphEdit.ConnectionToEmptyEventHandler.Invoke(StringName, Long, Vector2)
+  fullName.vb: Godot.GraphEdit.ConnectionToEmptyEventHandler.Invoke(Godot.StringName, Long, Godot.Vector2)
+  name.vb: Invoke(StringName, Long, Vector2)
+- uid: Godot.GraphEdit.ConnectionToEmptyEventHandler.BeginInvoke(Godot.StringName,System.Int64,Godot.Vector2,System.AsyncCallback,System.Object)
+  commentId: M:Godot.GraphEdit.ConnectionToEmptyEventHandler.BeginInvoke(Godot.StringName,System.Int64,Godot.Vector2,System.AsyncCallback,System.Object)
+  id: BeginInvoke(Godot.StringName,System.Int64,Godot.Vector2,System.AsyncCallback,System.Object)
+  parent: Godot.GraphEdit.ConnectionToEmptyEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(StringName, long, Vector2, AsyncCallback, object)
+  nameWithType: GraphEdit.ConnectionToEmptyEventHandler.BeginInvoke(StringName, long, Vector2, AsyncCallback, object)
+  fullName: Godot.GraphEdit.ConnectionToEmptyEventHandler.BeginInvoke(Godot.StringName, long, Godot.Vector2, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(StringName fromNode, long fromPort, Vector2 releasePosition, AsyncCallback callback, object @object)
+    parameters:
+    - id: fromNode
+      type: Godot.StringName
+    - id: fromPort
+      type: System.Int64
+    - id: releasePosition
+      type: Godot.Vector2
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(fromNode As StringName, fromPort As Long, releasePosition As Vector2, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Godot.GraphEdit.ConnectionToEmptyEventHandler.BeginInvoke*
+  nameWithType.vb: GraphEdit.ConnectionToEmptyEventHandler.BeginInvoke(StringName, Long, Vector2, AsyncCallback, Object)
+  fullName.vb: Godot.GraphEdit.ConnectionToEmptyEventHandler.BeginInvoke(Godot.StringName, Long, Godot.Vector2, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(StringName, Long, Vector2, AsyncCallback, Object)
+- uid: Godot.GraphEdit.ConnectionToEmptyEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Godot.GraphEdit.ConnectionToEmptyEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Godot.GraphEdit.ConnectionToEmptyEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: GraphEdit.ConnectionToEmptyEventHandler.EndInvoke(IAsyncResult)
+  fullName: Godot.GraphEdit.ConnectionToEmptyEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: Godot.GraphEdit.ConnectionToEmptyEventHandler.EndInvoke*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: Godot.StringName
+  commentId: T:Godot.StringName
+  parent: Godot
+  isExternal: true
+  href: Godot.StringName.html
+  name: StringName
+  nameWithType: StringName
+  fullName: Godot.StringName
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Godot.Vector2
+  commentId: T:Godot.Vector2
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector2.html
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Godot.Vector2
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.GraphEdit.ConnectionToEmptyEventHandler.#ctor*
+  commentId: Overload:Godot.GraphEdit.ConnectionToEmptyEventHandler.#ctor
+  isExternal: true
+  href: Godot.GraphEdit.ConnectionToEmptyEventHandler.html#Godot_GraphEdit_ConnectionToEmptyEventHandler__ctor_System_Object_System_IntPtr_
+  name: ConnectionToEmptyEventHandler
+  nameWithType: GraphEdit.ConnectionToEmptyEventHandler.ConnectionToEmptyEventHandler
+  fullName: Godot.GraphEdit.ConnectionToEmptyEventHandler.ConnectionToEmptyEventHandler
+  nameWithType.vb: GraphEdit.ConnectionToEmptyEventHandler.New
+  fullName.vb: Godot.GraphEdit.ConnectionToEmptyEventHandler.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Godot.GraphEdit.ConnectionToEmptyEventHandler.Invoke*
+  commentId: Overload:Godot.GraphEdit.ConnectionToEmptyEventHandler.Invoke
+  isExternal: true
+  href: Godot.GraphEdit.ConnectionToEmptyEventHandler.html#Godot_GraphEdit_ConnectionToEmptyEventHandler_Invoke_Godot_StringName_System_Int64_Godot_Vector2_
+  name: Invoke
+  nameWithType: GraphEdit.ConnectionToEmptyEventHandler.Invoke
+  fullName: Godot.GraphEdit.ConnectionToEmptyEventHandler.Invoke
+- uid: Godot.GraphEdit.ConnectionToEmptyEventHandler.BeginInvoke*
+  commentId: Overload:Godot.GraphEdit.ConnectionToEmptyEventHandler.BeginInvoke
+  isExternal: true
+  href: Godot.GraphEdit.ConnectionToEmptyEventHandler.html#Godot_GraphEdit_ConnectionToEmptyEventHandler_BeginInvoke_Godot_StringName_System_Int64_Godot_Vector2_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: GraphEdit.ConnectionToEmptyEventHandler.BeginInvoke
+  fullName: Godot.GraphEdit.ConnectionToEmptyEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Godot.GraphEdit.ConnectionToEmptyEventHandler.EndInvoke*
+  commentId: Overload:Godot.GraphEdit.ConnectionToEmptyEventHandler.EndInvoke
+  isExternal: true
+  href: Godot.GraphEdit.ConnectionToEmptyEventHandler.html#Godot_GraphEdit_ConnectionToEmptyEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: GraphEdit.ConnectionToEmptyEventHandler.EndInvoke
+  fullName: Godot.GraphEdit.ConnectionToEmptyEventHandler.EndInvoke

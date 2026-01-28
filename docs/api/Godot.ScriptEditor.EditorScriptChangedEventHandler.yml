@@ -1,0 +1,217 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.ScriptEditor.EditorScriptChangedEventHandler
+  commentId: T:Godot.ScriptEditor.EditorScriptChangedEventHandler
+  id: ScriptEditor.EditorScriptChangedEventHandler
+  parent: Godot
+  children:
+  - Godot.ScriptEditor.EditorScriptChangedEventHandler.#ctor(System.Object,System.IntPtr)
+  - Godot.ScriptEditor.EditorScriptChangedEventHandler.BeginInvoke(Godot.Script,System.AsyncCallback,System.Object)
+  - Godot.ScriptEditor.EditorScriptChangedEventHandler.EndInvoke(System.IAsyncResult)
+  - Godot.ScriptEditor.EditorScriptChangedEventHandler.Invoke(Godot.Script)
+  langs:
+  - csharp
+  - vb
+  name: ScriptEditor.EditorScriptChangedEventHandler
+  nameWithType: ScriptEditor.EditorScriptChangedEventHandler
+  fullName: Godot.ScriptEditor.EditorScriptChangedEventHandler
+  type: Delegate
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public delegate void ScriptEditor.EditorScriptChangedEventHandler(Script script)
+    parameters:
+    - id: script
+      type: Godot.Script
+    content.vb: Public Delegate Sub ScriptEditor.EditorScriptChangedEventHandler(script As Script)
+- uid: Godot.ScriptEditor.EditorScriptChangedEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Godot.ScriptEditor.EditorScriptChangedEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Godot.ScriptEditor.EditorScriptChangedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EditorScriptChangedEventHandler(object, nint)
+  nameWithType: ScriptEditor.EditorScriptChangedEventHandler.EditorScriptChangedEventHandler(object, nint)
+  fullName: Godot.ScriptEditor.EditorScriptChangedEventHandler.EditorScriptChangedEventHandler(object, nint)
+  type: Constructor
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public EditorScriptChangedEventHandler(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Godot.ScriptEditor.EditorScriptChangedEventHandler.#ctor*
+  nameWithType.vb: ScriptEditor.EditorScriptChangedEventHandler.New(Object, IntPtr)
+  fullName.vb: Godot.ScriptEditor.EditorScriptChangedEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Godot.ScriptEditor.EditorScriptChangedEventHandler.Invoke(Godot.Script)
+  commentId: M:Godot.ScriptEditor.EditorScriptChangedEventHandler.Invoke(Godot.Script)
+  id: Invoke(Godot.Script)
+  parent: Godot.ScriptEditor.EditorScriptChangedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(Script)
+  nameWithType: ScriptEditor.EditorScriptChangedEventHandler.Invoke(Script)
+  fullName: Godot.ScriptEditor.EditorScriptChangedEventHandler.Invoke(Godot.Script)
+  type: Method
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public virtual void Invoke(Script script)
+    parameters:
+    - id: script
+      type: Godot.Script
+    content.vb: Public Overridable Sub Invoke(script As Script)
+  overload: Godot.ScriptEditor.EditorScriptChangedEventHandler.Invoke*
+- uid: Godot.ScriptEditor.EditorScriptChangedEventHandler.BeginInvoke(Godot.Script,System.AsyncCallback,System.Object)
+  commentId: M:Godot.ScriptEditor.EditorScriptChangedEventHandler.BeginInvoke(Godot.Script,System.AsyncCallback,System.Object)
+  id: BeginInvoke(Godot.Script,System.AsyncCallback,System.Object)
+  parent: Godot.ScriptEditor.EditorScriptChangedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(Script, AsyncCallback, object)
+  nameWithType: ScriptEditor.EditorScriptChangedEventHandler.BeginInvoke(Script, AsyncCallback, object)
+  fullName: Godot.ScriptEditor.EditorScriptChangedEventHandler.BeginInvoke(Godot.Script, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(Script script, AsyncCallback callback, object @object)
+    parameters:
+    - id: script
+      type: Godot.Script
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(script As Script, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Godot.ScriptEditor.EditorScriptChangedEventHandler.BeginInvoke*
+  nameWithType.vb: ScriptEditor.EditorScriptChangedEventHandler.BeginInvoke(Script, AsyncCallback, Object)
+  fullName.vb: Godot.ScriptEditor.EditorScriptChangedEventHandler.BeginInvoke(Godot.Script, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(Script, AsyncCallback, Object)
+- uid: Godot.ScriptEditor.EditorScriptChangedEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Godot.ScriptEditor.EditorScriptChangedEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Godot.ScriptEditor.EditorScriptChangedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: ScriptEditor.EditorScriptChangedEventHandler.EndInvoke(IAsyncResult)
+  fullName: Godot.ScriptEditor.EditorScriptChangedEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: Godot.ScriptEditor.EditorScriptChangedEventHandler.EndInvoke*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: Godot.Script
+  commentId: T:Godot.Script
+  parent: Godot
+  isExternal: true
+  href: Godot.Script.html
+  name: Script
+  nameWithType: Script
+  fullName: Godot.Script
+- uid: Godot.ScriptEditor.EditorScriptChangedEventHandler.#ctor*
+  commentId: Overload:Godot.ScriptEditor.EditorScriptChangedEventHandler.#ctor
+  isExternal: true
+  href: Godot.ScriptEditor.EditorScriptChangedEventHandler.html#Godot_ScriptEditor_EditorScriptChangedEventHandler__ctor_System_Object_System_IntPtr_
+  name: EditorScriptChangedEventHandler
+  nameWithType: ScriptEditor.EditorScriptChangedEventHandler.EditorScriptChangedEventHandler
+  fullName: Godot.ScriptEditor.EditorScriptChangedEventHandler.EditorScriptChangedEventHandler
+  nameWithType.vb: ScriptEditor.EditorScriptChangedEventHandler.New
+  fullName.vb: Godot.ScriptEditor.EditorScriptChangedEventHandler.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.ScriptEditor.EditorScriptChangedEventHandler.Invoke*
+  commentId: Overload:Godot.ScriptEditor.EditorScriptChangedEventHandler.Invoke
+  isExternal: true
+  href: Godot.ScriptEditor.EditorScriptChangedEventHandler.html#Godot_ScriptEditor_EditorScriptChangedEventHandler_Invoke_Godot_Script_
+  name: Invoke
+  nameWithType: ScriptEditor.EditorScriptChangedEventHandler.Invoke
+  fullName: Godot.ScriptEditor.EditorScriptChangedEventHandler.Invoke
+- uid: Godot.ScriptEditor.EditorScriptChangedEventHandler.BeginInvoke*
+  commentId: Overload:Godot.ScriptEditor.EditorScriptChangedEventHandler.BeginInvoke
+  isExternal: true
+  href: Godot.ScriptEditor.EditorScriptChangedEventHandler.html#Godot_ScriptEditor_EditorScriptChangedEventHandler_BeginInvoke_Godot_Script_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: ScriptEditor.EditorScriptChangedEventHandler.BeginInvoke
+  fullName: Godot.ScriptEditor.EditorScriptChangedEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Godot.ScriptEditor.EditorScriptChangedEventHandler.EndInvoke*
+  commentId: Overload:Godot.ScriptEditor.EditorScriptChangedEventHandler.EndInvoke
+  isExternal: true
+  href: Godot.ScriptEditor.EditorScriptChangedEventHandler.html#Godot_ScriptEditor_EditorScriptChangedEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: ScriptEditor.EditorScriptChangedEventHandler.EndInvoke
+  fullName: Godot.ScriptEditor.EditorScriptChangedEventHandler.EndInvoke

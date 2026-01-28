@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SimpleCamera | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SimpleCamera | mysite ">
+      
+      <meta name="description" content="Free-fly camera with preset views and procedural spawn logic. Can position itself relative to targets while keeping them inside the view frustum.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SzeneGenerator.SimpleCamera">
+
+
+
+  <h1 id="SzeneGenerator_SimpleCamera" data-uid="SzeneGenerator.SimpleCamera" class="text-break">
+Class SimpleCamera  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.SimpleCamera_ScriptMethods.generated.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SzeneGenerator.html">SzeneGenerator</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>exerciseWithCode.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Free-fly camera with preset views and procedural spawn logic.
+Can position itself relative to targets while keeping them inside the view frustum.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ScriptPath(&quot;res://Scripts/World/SimpleCamera.cs&quot;)]
+public class SimpleCamera : Camera3D</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="Godot.GodotObject.html">GodotObject</a></div>
+      <div><a class="xref" href="Godot.Node.html">Node</a></div>
+      <div><a class="xref" href="Godot.Node3D.html">Node3D</a></div>
+      <div><a class="xref" href="Godot.Camera3D.html">Camera3D</a></div>
+      <div><span class="xref">SimpleCamera</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SzeneGenerator_SimpleCamera__ctor_" data-uid="SzeneGenerator.SimpleCamera.#ctor*"></a>
+
+  <h3 id="SzeneGenerator_SimpleCamera__ctor" data-uid="SzeneGenerator.SimpleCamera.#ctor">
+  SimpleCamera()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleCamera()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SzeneGenerator_SimpleCamera_AutoLookAtTarget" data-uid="SzeneGenerator.SimpleCamera.AutoLookAtTarget">
+  AutoLookAtTarget
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.SimpleCamera_ScriptMethods.generated.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoLookAtTarget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SzeneGenerator_SimpleCamera_FocusHeight" data-uid="SzeneGenerator.SimpleCamera.FocusHeight">
+  FocusHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.SimpleCamera_ScriptMethods.generated.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FocusHeight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SzeneGenerator_SimpleCamera_MouseSensitivity" data-uid="SzeneGenerator.SimpleCamera.MouseSensitivity">
+  MouseSensitivity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.SimpleCamera_ScriptMethods.generated.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MouseSensitivity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SzeneGenerator_SimpleCamera_Speed" data-uid="SzeneGenerator.SimpleCamera.Speed">
+  Speed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.SimpleCamera_ScriptMethods.generated.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Speed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SzeneGenerator_SimpleCamera_ApplyPreset_" data-uid="SzeneGenerator.SimpleCamera.ApplyPreset*"></a>
+
+  <h3 id="SzeneGenerator_SimpleCamera_ApplyPreset_System_Int32_" data-uid="SzeneGenerator.SimpleCamera.ApplyPreset(System.Int32)">
+  ApplyPreset(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyPreset(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SzeneGenerator_SimpleCamera_Configure_" data-uid="SzeneGenerator.SimpleCamera.Configure*"></a>
+
+  <h3 id="SzeneGenerator_SimpleCamera_Configure_SzeneGenerator_CameraSettings_" data-uid="SzeneGenerator.SimpleCamera.Configure(SzeneGenerator.CameraSettings)">
+  Configure(CameraSettings)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Configure(CameraSettings cfg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cfg</code> <a class="xref" href="SzeneGenerator.CameraSettings.html">CameraSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SzeneGenerator_SimpleCamera_FocusRandomTarget_" data-uid="SzeneGenerator.SimpleCamera.FocusRandomTarget*"></a>
+
+  <h3 id="SzeneGenerator_SimpleCamera_FocusRandomTarget_System_Int32_SzeneGenerator_CameraTargetPreset_" data-uid="SzeneGenerator.SimpleCamera.FocusRandomTarget(System.Int32,SzeneGenerator.CameraTargetPreset)">
+  FocusRandomTarget(int, CameraTargetPreset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FocusRandomTarget(int seed, CameraTargetPreset preset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>seed</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>preset</code> <a class="xref" href="SzeneGenerator.CameraTargetPreset.html">CameraTargetPreset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SzeneGenerator_SimpleCamera_SetHeightSampler_" data-uid="SzeneGenerator.SimpleCamera.SetHeightSampler*"></a>
+
+  <h3 id="SzeneGenerator_SimpleCamera_SetHeightSampler_System_Func_Godot_Vector3_System_Single__" data-uid="SzeneGenerator.SimpleCamera.SetHeightSampler(System.Func{Godot.Vector3,System.Single})">
+  SetHeightSampler(Func&lt;Vector3, float&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHeightSampler(Func&lt;Vector3, float&gt; sampler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sampler</code> <span class="xref">Func</span>&lt;<a class="xref" href="Godot.Vector3.html">Vector3</a>, <span class="xref">float</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SzeneGenerator_SimpleCamera_SetTargets_" data-uid="SzeneGenerator.SimpleCamera.SetTargets*"></a>
+
+  <h3 id="SzeneGenerator_SimpleCamera_SetTargets_System_Collections_Generic_List_Godot_Node3D__" data-uid="SzeneGenerator.SimpleCamera.SetTargets(System.Collections.Generic.List{Godot.Node3D})">
+  SetTargets(List&lt;Node3D&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTargets(List&lt;Node3D&gt; targets)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targets</code> <span class="xref">List</span>&lt;<a class="xref" href="Godot.Node3D.html">Node3D</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SzeneGenerator_SimpleCamera_SetWorldBounds_" data-uid="SzeneGenerator.SimpleCamera.SetWorldBounds*"></a>
+
+  <h3 id="SzeneGenerator_SimpleCamera_SetWorldBounds_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="SzeneGenerator.SimpleCamera.SetWorldBounds(System.Single,System.Single,System.Single,System.Single,System.Single)">
+  SetWorldBounds(float, float, float, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWorldBounds(float minX, float maxX, float minZ, float maxZ, float edgeMarginMeters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minX</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>maxX</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>minZ</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>maxZ</code> <span class="xref">float</span></dt>
+    <dd></dd>
+    <dt><code>edgeMarginMeters</code> <span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SzeneGenerator_SimpleCamera_SpawnRandomFromPreset_" data-uid="SzeneGenerator.SimpleCamera.SpawnRandomFromPreset*"></a>
+
+  <h3 id="SzeneGenerator_SimpleCamera_SpawnRandomFromPreset_System_Int32_System_Int32_SzeneGenerator_CameraTargetPreset_" data-uid="SzeneGenerator.SimpleCamera.SpawnRandomFromPreset(System.Int32,System.Int32,SzeneGenerator.CameraTargetPreset)">
+  SpawnRandomFromPreset(int, int, CameraTargetPreset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to spawn the camera at a random valid position based on a preset,
+ensuring terrain bounds, visibility of a target, and optional line-of-sight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SpawnRandomFromPreset(int seed, int presetId, CameraTargetPreset focusPreset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>seed</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>presetId</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>focusPreset</code> <a class="xref" href="SzeneGenerator.CameraTargetPreset.html">CameraTargetPreset</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SzeneGenerator_SimpleCamera_TakeScreenshotAsync_" data-uid="SzeneGenerator.SimpleCamera.TakeScreenshotAsync*"></a>
+
+  <h3 id="SzeneGenerator_SimpleCamera_TakeScreenshotAsync_System_String_System_Boolean_System_String_System_Int32_" data-uid="SzeneGenerator.SimpleCamera.TakeScreenshotAsync(System.String,System.Boolean,System.String,System.Int32)">
+  TakeScreenshotAsync(string, bool, string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.SimpleCamera_ScriptMethods.generated.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; TakeScreenshotAsync(string fileNameWithoutExt = &quot;&quot;, bool exportTargetCoordinates = false, string regionId = &quot;&quot;, int seed = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileNameWithoutExt</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>exportTargetCoordinates</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>regionId</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>seed</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Task</span>&lt;<span class="xref">string</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SzeneGenerator_SimpleCamera__Input_" data-uid="SzeneGenerator.SimpleCamera._Input*"></a>
+
+  <h3 id="SzeneGenerator_SimpleCamera__Input_Godot_InputEvent_" data-uid="SzeneGenerator.SimpleCamera._Input(Godot.InputEvent)">
+  _Input(InputEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void _Input(InputEvent @event)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>event</code> <a class="xref" href="Godot.InputEvent.html">InputEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SzeneGenerator_SimpleCamera__Process_" data-uid="SzeneGenerator.SimpleCamera._Process*"></a>
+
+  <h3 id="SzeneGenerator_SimpleCamera__Process_System_Double_" data-uid="SzeneGenerator.SimpleCamera._Process(System.Double)">
+  _Process(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void _Process(double delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>delta</code> <span class="xref">double</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SzeneGenerator_SimpleCamera__Ready_" data-uid="SzeneGenerator.SimpleCamera._Ready*"></a>
+
+  <h3 id="SzeneGenerator_SimpleCamera__Ready" data-uid="SzeneGenerator.SimpleCamera._Ready">
+  _Ready()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/SimpleCamera.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void _Ready()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.SimpleCamera_ScriptMethods.generated.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1384 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.Rect2I
+  commentId: T:Godot.Rect2I
+  id: Rect2I
+  parent: Godot
+  children:
+  - Godot.Rect2I.#ctor(Godot.Vector2I,Godot.Vector2I)
+  - Godot.Rect2I.#ctor(Godot.Vector2I,System.Int32,System.Int32)
+  - Godot.Rect2I.#ctor(System.Int32,System.Int32,Godot.Vector2I)
+  - Godot.Rect2I.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Godot.Rect2I.Abs
+  - Godot.Rect2I.Area
+  - Godot.Rect2I.Encloses(Godot.Rect2I)
+  - Godot.Rect2I.End
+  - Godot.Rect2I.Equals(Godot.Rect2I)
+  - Godot.Rect2I.Equals(System.Object)
+  - Godot.Rect2I.Expand(Godot.Vector2I)
+  - Godot.Rect2I.GetCenter
+  - Godot.Rect2I.GetHashCode
+  - Godot.Rect2I.Grow(System.Int32)
+  - Godot.Rect2I.GrowIndividual(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Godot.Rect2I.GrowSide(Godot.Side,System.Int32)
+  - Godot.Rect2I.HasArea
+  - Godot.Rect2I.HasPoint(Godot.Vector2I)
+  - Godot.Rect2I.Intersection(Godot.Rect2I)
+  - Godot.Rect2I.Intersects(Godot.Rect2I)
+  - Godot.Rect2I.Merge(Godot.Rect2I)
+  - Godot.Rect2I.Position
+  - Godot.Rect2I.Size
+  - Godot.Rect2I.ToString
+  - Godot.Rect2I.ToString(System.String)
+  - Godot.Rect2I.op_Equality(Godot.Rect2I,Godot.Rect2I)
+  - Godot.Rect2I.op_Explicit(Godot.Rect2)~Godot.Rect2I
+  - Godot.Rect2I.op_Implicit(Godot.Rect2I)~Godot.Rect2
+  - Godot.Rect2I.op_Inequality(Godot.Rect2I,Godot.Rect2I)
+  langs:
+  - csharp
+  - vb
+  name: Rect2I
+  nameWithType: Rect2I
+  fullName: Godot.Rect2I
+  type: Struct
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: 'public struct Rect2I : IEquatable<Rect2I>'
+    content.vb: Public Structure Rect2I Implements IEquatable(Of Rect2I)
+  implements:
+  - System.IEquatable{Godot.Rect2I}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Godot.Rect2I.Abs
+  commentId: M:Godot.Rect2I.Abs
+  id: Abs
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Abs()
+  nameWithType: Rect2I.Abs()
+  fullName: Godot.Rect2I.Abs()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Rect2I Abs()
+    return:
+      type: Godot.Rect2I
+    content.vb: Public Function Abs() As Rect2I
+  overload: Godot.Rect2I.Abs*
+- uid: Godot.Rect2I.Intersection(Godot.Rect2I)
+  commentId: M:Godot.Rect2I.Intersection(Godot.Rect2I)
+  id: Intersection(Godot.Rect2I)
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Intersection(Rect2I)
+  nameWithType: Rect2I.Intersection(Rect2I)
+  fullName: Godot.Rect2I.Intersection(Godot.Rect2I)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Rect2I Intersection(Rect2I b)
+    parameters:
+    - id: b
+      type: Godot.Rect2I
+    return:
+      type: Godot.Rect2I
+    content.vb: Public Function Intersection(b As Rect2I) As Rect2I
+  overload: Godot.Rect2I.Intersection*
+- uid: Godot.Rect2I.Encloses(Godot.Rect2I)
+  commentId: M:Godot.Rect2I.Encloses(Godot.Rect2I)
+  id: Encloses(Godot.Rect2I)
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Encloses(Rect2I)
+  nameWithType: Rect2I.Encloses(Rect2I)
+  fullName: Godot.Rect2I.Encloses(Godot.Rect2I)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool Encloses(Rect2I b)
+    parameters:
+    - id: b
+      type: Godot.Rect2I
+    return:
+      type: System.Boolean
+    content.vb: Public Function Encloses(b As Rect2I) As Boolean
+  overload: Godot.Rect2I.Encloses*
+- uid: Godot.Rect2I.Expand(Godot.Vector2I)
+  commentId: M:Godot.Rect2I.Expand(Godot.Vector2I)
+  id: Expand(Godot.Vector2I)
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Expand(Vector2I)
+  nameWithType: Rect2I.Expand(Vector2I)
+  fullName: Godot.Rect2I.Expand(Godot.Vector2I)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Rect2I Expand(Vector2I to)
+    parameters:
+    - id: to
+      type: Godot.Vector2I
+    return:
+      type: Godot.Rect2I
+    content.vb: Public Function Expand([to] As Vector2I) As Rect2I
+  overload: Godot.Rect2I.Expand*
+- uid: Godot.Rect2I.GetCenter
+  commentId: M:Godot.Rect2I.GetCenter
+  id: GetCenter
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: GetCenter()
+  nameWithType: Rect2I.GetCenter()
+  fullName: Godot.Rect2I.GetCenter()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector2I GetCenter()
+    return:
+      type: Godot.Vector2I
+    content.vb: Public Function GetCenter() As Vector2I
+  overload: Godot.Rect2I.GetCenter*
+- uid: Godot.Rect2I.Grow(System.Int32)
+  commentId: M:Godot.Rect2I.Grow(System.Int32)
+  id: Grow(System.Int32)
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Grow(int)
+  nameWithType: Rect2I.Grow(int)
+  fullName: Godot.Rect2I.Grow(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Rect2I Grow(int by)
+    parameters:
+    - id: by
+      type: System.Int32
+    return:
+      type: Godot.Rect2I
+    content.vb: Public Function Grow(by As Integer) As Rect2I
+  overload: Godot.Rect2I.Grow*
+  nameWithType.vb: Rect2I.Grow(Integer)
+  fullName.vb: Godot.Rect2I.Grow(Integer)
+  name.vb: Grow(Integer)
+- uid: Godot.Rect2I.GrowIndividual(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Godot.Rect2I.GrowIndividual(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: GrowIndividual(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: GrowIndividual(int, int, int, int)
+  nameWithType: Rect2I.GrowIndividual(int, int, int, int)
+  fullName: Godot.Rect2I.GrowIndividual(int, int, int, int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Rect2I GrowIndividual(int left, int top, int right, int bottom)
+    parameters:
+    - id: left
+      type: System.Int32
+    - id: top
+      type: System.Int32
+    - id: right
+      type: System.Int32
+    - id: bottom
+      type: System.Int32
+    return:
+      type: Godot.Rect2I
+    content.vb: Public Function GrowIndividual(left As Integer, top As Integer, right As Integer, bottom As Integer) As Rect2I
+  overload: Godot.Rect2I.GrowIndividual*
+  nameWithType.vb: Rect2I.GrowIndividual(Integer, Integer, Integer, Integer)
+  fullName.vb: Godot.Rect2I.GrowIndividual(Integer, Integer, Integer, Integer)
+  name.vb: GrowIndividual(Integer, Integer, Integer, Integer)
+- uid: Godot.Rect2I.GrowSide(Godot.Side,System.Int32)
+  commentId: M:Godot.Rect2I.GrowSide(Godot.Side,System.Int32)
+  id: GrowSide(Godot.Side,System.Int32)
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: GrowSide(Side, int)
+  nameWithType: Rect2I.GrowSide(Side, int)
+  fullName: Godot.Rect2I.GrowSide(Godot.Side, int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Rect2I GrowSide(Side side, int by)
+    parameters:
+    - id: side
+      type: Godot.Side
+    - id: by
+      type: System.Int32
+    return:
+      type: Godot.Rect2I
+    content.vb: Public Function GrowSide(side As Side, by As Integer) As Rect2I
+  overload: Godot.Rect2I.GrowSide*
+  nameWithType.vb: Rect2I.GrowSide(Side, Integer)
+  fullName.vb: Godot.Rect2I.GrowSide(Godot.Side, Integer)
+  name.vb: GrowSide(Side, Integer)
+- uid: Godot.Rect2I.HasArea
+  commentId: M:Godot.Rect2I.HasArea
+  id: HasArea
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: HasArea()
+  nameWithType: Rect2I.HasArea()
+  fullName: Godot.Rect2I.HasArea()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool HasArea()
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasArea() As Boolean
+  overload: Godot.Rect2I.HasArea*
+- uid: Godot.Rect2I.HasPoint(Godot.Vector2I)
+  commentId: M:Godot.Rect2I.HasPoint(Godot.Vector2I)
+  id: HasPoint(Godot.Vector2I)
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: HasPoint(Vector2I)
+  nameWithType: Rect2I.HasPoint(Vector2I)
+  fullName: Godot.Rect2I.HasPoint(Godot.Vector2I)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool HasPoint(Vector2I point)
+    parameters:
+    - id: point
+      type: Godot.Vector2I
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasPoint(point As Vector2I) As Boolean
+  overload: Godot.Rect2I.HasPoint*
+- uid: Godot.Rect2I.Intersects(Godot.Rect2I)
+  commentId: M:Godot.Rect2I.Intersects(Godot.Rect2I)
+  id: Intersects(Godot.Rect2I)
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Intersects(Rect2I)
+  nameWithType: Rect2I.Intersects(Rect2I)
+  fullName: Godot.Rect2I.Intersects(Godot.Rect2I)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool Intersects(Rect2I b)
+    parameters:
+    - id: b
+      type: Godot.Rect2I
+    return:
+      type: System.Boolean
+    content.vb: Public Function Intersects(b As Rect2I) As Boolean
+  overload: Godot.Rect2I.Intersects*
+- uid: Godot.Rect2I.Merge(Godot.Rect2I)
+  commentId: M:Godot.Rect2I.Merge(Godot.Rect2I)
+  id: Merge(Godot.Rect2I)
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Merge(Rect2I)
+  nameWithType: Rect2I.Merge(Rect2I)
+  fullName: Godot.Rect2I.Merge(Godot.Rect2I)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Rect2I Merge(Rect2I b)
+    parameters:
+    - id: b
+      type: Godot.Rect2I
+    return:
+      type: Godot.Rect2I
+    content.vb: Public Function Merge(b As Rect2I) As Rect2I
+  overload: Godot.Rect2I.Merge*
+- uid: Godot.Rect2I.#ctor(Godot.Vector2I,Godot.Vector2I)
+  commentId: M:Godot.Rect2I.#ctor(Godot.Vector2I,Godot.Vector2I)
+  id: '#ctor(Godot.Vector2I,Godot.Vector2I)'
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Rect2I(Vector2I, Vector2I)
+  nameWithType: Rect2I.Rect2I(Vector2I, Vector2I)
+  fullName: Godot.Rect2I.Rect2I(Godot.Vector2I, Godot.Vector2I)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Rect2I(Vector2I position, Vector2I size)
+    parameters:
+    - id: position
+      type: Godot.Vector2I
+    - id: size
+      type: Godot.Vector2I
+    content.vb: Public Sub New(position As Vector2I, size As Vector2I)
+  overload: Godot.Rect2I.#ctor*
+  nameWithType.vb: Rect2I.New(Vector2I, Vector2I)
+  fullName.vb: Godot.Rect2I.New(Godot.Vector2I, Godot.Vector2I)
+  name.vb: New(Vector2I, Vector2I)
+- uid: Godot.Rect2I.#ctor(Godot.Vector2I,System.Int32,System.Int32)
+  commentId: M:Godot.Rect2I.#ctor(Godot.Vector2I,System.Int32,System.Int32)
+  id: '#ctor(Godot.Vector2I,System.Int32,System.Int32)'
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Rect2I(Vector2I, int, int)
+  nameWithType: Rect2I.Rect2I(Vector2I, int, int)
+  fullName: Godot.Rect2I.Rect2I(Godot.Vector2I, int, int)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Rect2I(Vector2I position, int width, int height)
+    parameters:
+    - id: position
+      type: Godot.Vector2I
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    content.vb: Public Sub New(position As Vector2I, width As Integer, height As Integer)
+  overload: Godot.Rect2I.#ctor*
+  nameWithType.vb: Rect2I.New(Vector2I, Integer, Integer)
+  fullName.vb: Godot.Rect2I.New(Godot.Vector2I, Integer, Integer)
+  name.vb: New(Vector2I, Integer, Integer)
+- uid: Godot.Rect2I.#ctor(System.Int32,System.Int32,Godot.Vector2I)
+  commentId: M:Godot.Rect2I.#ctor(System.Int32,System.Int32,Godot.Vector2I)
+  id: '#ctor(System.Int32,System.Int32,Godot.Vector2I)'
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Rect2I(int, int, Vector2I)
+  nameWithType: Rect2I.Rect2I(int, int, Vector2I)
+  fullName: Godot.Rect2I.Rect2I(int, int, Godot.Vector2I)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Rect2I(int x, int y, Vector2I size)
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    - id: size
+      type: Godot.Vector2I
+    content.vb: Public Sub New(x As Integer, y As Integer, size As Vector2I)
+  overload: Godot.Rect2I.#ctor*
+  nameWithType.vb: Rect2I.New(Integer, Integer, Vector2I)
+  fullName.vb: Godot.Rect2I.New(Integer, Integer, Godot.Vector2I)
+  name.vb: New(Integer, Integer, Vector2I)
+- uid: Godot.Rect2I.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Godot.Rect2I.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32)'
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Rect2I(int, int, int, int)
+  nameWithType: Rect2I.Rect2I(int, int, int, int)
+  fullName: Godot.Rect2I.Rect2I(int, int, int, int)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Rect2I(int x, int y, int width, int height)
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    content.vb: Public Sub New(x As Integer, y As Integer, width As Integer, height As Integer)
+  overload: Godot.Rect2I.#ctor*
+  nameWithType.vb: Rect2I.New(Integer, Integer, Integer, Integer)
+  fullName.vb: Godot.Rect2I.New(Integer, Integer, Integer, Integer)
+  name.vb: New(Integer, Integer, Integer, Integer)
+- uid: Godot.Rect2I.op_Equality(Godot.Rect2I,Godot.Rect2I)
+  commentId: M:Godot.Rect2I.op_Equality(Godot.Rect2I,Godot.Rect2I)
+  id: op_Equality(Godot.Rect2I,Godot.Rect2I)
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Rect2I, Rect2I)
+  nameWithType: Rect2I.operator ==(Rect2I, Rect2I)
+  fullName: Godot.Rect2I.operator ==(Godot.Rect2I, Godot.Rect2I)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool operator ==(Rect2I left, Rect2I right)
+    parameters:
+    - id: left
+      type: Godot.Rect2I
+    - id: right
+      type: Godot.Rect2I
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Rect2I, right As Rect2I) As Boolean
+  overload: Godot.Rect2I.op_Equality*
+  nameWithType.vb: Rect2I.=(Rect2I, Rect2I)
+  fullName.vb: Godot.Rect2I.=(Godot.Rect2I, Godot.Rect2I)
+  name.vb: =(Rect2I, Rect2I)
+- uid: Godot.Rect2I.op_Inequality(Godot.Rect2I,Godot.Rect2I)
+  commentId: M:Godot.Rect2I.op_Inequality(Godot.Rect2I,Godot.Rect2I)
+  id: op_Inequality(Godot.Rect2I,Godot.Rect2I)
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Rect2I, Rect2I)
+  nameWithType: Rect2I.operator !=(Rect2I, Rect2I)
+  fullName: Godot.Rect2I.operator !=(Godot.Rect2I, Godot.Rect2I)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool operator !=(Rect2I left, Rect2I right)
+    parameters:
+    - id: left
+      type: Godot.Rect2I
+    - id: right
+      type: Godot.Rect2I
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Rect2I, right As Rect2I) As Boolean
+  overload: Godot.Rect2I.op_Inequality*
+  nameWithType.vb: Rect2I.<>(Rect2I, Rect2I)
+  fullName.vb: Godot.Rect2I.<>(Godot.Rect2I, Godot.Rect2I)
+  name.vb: <>(Rect2I, Rect2I)
+- uid: Godot.Rect2I.op_Implicit(Godot.Rect2I)~Godot.Rect2
+  commentId: M:Godot.Rect2I.op_Implicit(Godot.Rect2I)~Godot.Rect2
+  id: op_Implicit(Godot.Rect2I)~Godot.Rect2
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Rect2(Rect2I)
+  nameWithType: Rect2I.implicit operator Rect2(Rect2I)
+  fullName: Godot.Rect2I.implicit operator Godot.Rect2(Godot.Rect2I)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static implicit operator Rect2(Rect2I value)
+    parameters:
+    - id: value
+      type: Godot.Rect2I
+    return:
+      type: Godot.Rect2
+    content.vb: Public Shared Widening Operator CType(value As Rect2I) As Rect2
+  overload: Godot.Rect2I.op_Implicit*
+  nameWithType.vb: Rect2I.CType(Rect2I)
+  fullName.vb: Godot.Rect2I.CType(Godot.Rect2I)
+  name.vb: CType(Rect2I)
+- uid: Godot.Rect2I.op_Explicit(Godot.Rect2)~Godot.Rect2I
+  commentId: M:Godot.Rect2I.op_Explicit(Godot.Rect2)~Godot.Rect2I
+  id: op_Explicit(Godot.Rect2)~Godot.Rect2I
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: explicit operator Rect2I(Rect2)
+  nameWithType: Rect2I.explicit operator Rect2I(Rect2)
+  fullName: Godot.Rect2I.explicit operator Godot.Rect2I(Godot.Rect2)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static explicit operator Rect2I(Rect2 value)
+    parameters:
+    - id: value
+      type: Godot.Rect2
+    return:
+      type: Godot.Rect2I
+    content.vb: Public Shared Narrowing Operator CType(value As Rect2) As Rect2I
+  overload: Godot.Rect2I.op_Explicit*
+  nameWithType.vb: Rect2I.CType(Rect2)
+  fullName.vb: Godot.Rect2I.CType(Godot.Rect2)
+  name.vb: CType(Rect2)
+- uid: Godot.Rect2I.Equals(System.Object)
+  commentId: M:Godot.Rect2I.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Rect2I.Equals(object?)
+  fullName: Godot.Rect2I.Equals(object?)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)
+        arguments:
+        - type: System.Boolean
+          value: true
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Godot.Rect2I.Equals*
+  nameWithType.vb: Rect2I.Equals(Object)
+  fullName.vb: Godot.Rect2I.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Godot.Rect2I.Equals(Godot.Rect2I)
+  commentId: M:Godot.Rect2I.Equals(Godot.Rect2I)
+  id: Equals(Godot.Rect2I)
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Equals(Rect2I)
+  nameWithType: Rect2I.Equals(Rect2I)
+  fullName: Godot.Rect2I.Equals(Godot.Rect2I)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public readonly bool Equals(Rect2I other)
+    parameters:
+    - id: other
+      type: Godot.Rect2I
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Rect2I) As Boolean
+  overload: Godot.Rect2I.Equals*
+  implements:
+  - System.IEquatable{Godot.Rect2I}.Equals(Godot.Rect2I)
+- uid: Godot.Rect2I.GetHashCode
+  commentId: M:Godot.Rect2I.GetHashCode
+  id: GetHashCode
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Rect2I.GetHashCode()
+  fullName: Godot.Rect2I.GetHashCode()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Godot.Rect2I.GetHashCode*
+- uid: Godot.Rect2I.ToString
+  commentId: M:Godot.Rect2I.ToString
+  id: ToString
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Rect2I.ToString()
+  fullName: Godot.Rect2I.ToString()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Godot.Rect2I.ToString*
+- uid: Godot.Rect2I.ToString(System.String)
+  commentId: M:Godot.Rect2I.ToString(System.String)
+  id: ToString(System.String)
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: ToString(string?)
+  nameWithType: Rect2I.ToString(string?)
+  fullName: Godot.Rect2I.ToString(string?)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly string ToString(string? format)
+    parameters:
+    - id: format
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function ToString(format As String) As String
+  overload: Godot.Rect2I.ToString*
+  nameWithType.vb: Rect2I.ToString(String)
+  fullName.vb: Godot.Rect2I.ToString(String)
+  name.vb: ToString(String)
+- uid: Godot.Rect2I.Position
+  commentId: P:Godot.Rect2I.Position
+  id: Position
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: Rect2I.Position
+  fullName: Godot.Rect2I.Position
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector2I Position { readonly get; set; }
+    parameters: []
+    return:
+      type: Godot.Vector2I
+    content.vb: Public Property Position As Vector2I
+  overload: Godot.Rect2I.Position*
+- uid: Godot.Rect2I.Size
+  commentId: P:Godot.Rect2I.Size
+  id: Size
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: Rect2I.Size
+  fullName: Godot.Rect2I.Size
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector2I Size { readonly get; set; }
+    parameters: []
+    return:
+      type: Godot.Vector2I
+    content.vb: Public Property Size As Vector2I
+  overload: Godot.Rect2I.Size*
+- uid: Godot.Rect2I.End
+  commentId: P:Godot.Rect2I.End
+  id: End
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: Rect2I.End
+  fullName: Godot.Rect2I.End
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector2I End { readonly get; set; }
+    parameters: []
+    return:
+      type: Godot.Vector2I
+    content.vb: Public Property [End] As Vector2I
+  overload: Godot.Rect2I.End*
+- uid: Godot.Rect2I.Area
+  commentId: P:Godot.Rect2I.Area
+  id: Area
+  parent: Godot.Rect2I
+  langs:
+  - csharp
+  - vb
+  name: Area
+  nameWithType: Rect2I.Area
+  fullName: Godot.Rect2I.Area
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly int Area { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Area As Integer
+  overload: Godot.Rect2I.Area*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.IEquatable{Godot.Rect2I}
+  commentId: T:System.IEquatable{Godot.Rect2I}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Rect2I>
+  nameWithType: IEquatable<Rect2I>
+  fullName: System.IEquatable<Godot.Rect2I>
+  nameWithType.vb: IEquatable(Of Rect2I)
+  fullName.vb: System.IEquatable(Of Godot.Rect2I)
+  name.vb: IEquatable(Of Rect2I)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Godot.Rect2I
+    name: Rect2I
+    isExternal: true
+    href: Godot.Rect2I.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Rect2I
+    name: Rect2I
+    isExternal: true
+    href: Godot.Rect2I.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Godot.Rect2I.Abs*
+  commentId: Overload:Godot.Rect2I.Abs
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_Abs
+  name: Abs
+  nameWithType: Rect2I.Abs
+  fullName: Godot.Rect2I.Abs
+- uid: Godot.Rect2I
+  commentId: T:Godot.Rect2I
+  parent: Godot
+  isExternal: true
+  href: Godot.Rect2I.html
+  name: Rect2I
+  nameWithType: Rect2I
+  fullName: Godot.Rect2I
+- uid: Godot.Rect2I.Intersection*
+  commentId: Overload:Godot.Rect2I.Intersection
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_Intersection_Godot_Rect2I_
+  name: Intersection
+  nameWithType: Rect2I.Intersection
+  fullName: Godot.Rect2I.Intersection
+- uid: Godot.Rect2I.Encloses*
+  commentId: Overload:Godot.Rect2I.Encloses
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_Encloses_Godot_Rect2I_
+  name: Encloses
+  nameWithType: Rect2I.Encloses
+  fullName: Godot.Rect2I.Encloses
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.Rect2I.Expand*
+  commentId: Overload:Godot.Rect2I.Expand
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_Expand_Godot_Vector2I_
+  name: Expand
+  nameWithType: Rect2I.Expand
+  fullName: Godot.Rect2I.Expand
+- uid: Godot.Vector2I
+  commentId: T:Godot.Vector2I
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector2I.html
+  name: Vector2I
+  nameWithType: Vector2I
+  fullName: Godot.Vector2I
+- uid: Godot.Rect2I.GetCenter*
+  commentId: Overload:Godot.Rect2I.GetCenter
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_GetCenter
+  name: GetCenter
+  nameWithType: Rect2I.GetCenter
+  fullName: Godot.Rect2I.GetCenter
+- uid: Godot.Rect2I.Grow*
+  commentId: Overload:Godot.Rect2I.Grow
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_Grow_System_Int32_
+  name: Grow
+  nameWithType: Rect2I.Grow
+  fullName: Godot.Rect2I.Grow
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Godot.Rect2I.GrowIndividual*
+  commentId: Overload:Godot.Rect2I.GrowIndividual
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_GrowIndividual_System_Int32_System_Int32_System_Int32_System_Int32_
+  name: GrowIndividual
+  nameWithType: Rect2I.GrowIndividual
+  fullName: Godot.Rect2I.GrowIndividual
+- uid: Godot.Rect2I.GrowSide*
+  commentId: Overload:Godot.Rect2I.GrowSide
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_GrowSide_Godot_Side_System_Int32_
+  name: GrowSide
+  nameWithType: Rect2I.GrowSide
+  fullName: Godot.Rect2I.GrowSide
+- uid: Godot.Side
+  commentId: T:Godot.Side
+  parent: Godot
+  isExternal: true
+  href: Godot.Side.html
+  name: Side
+  nameWithType: Side
+  fullName: Godot.Side
+- uid: Godot.Rect2I.HasArea*
+  commentId: Overload:Godot.Rect2I.HasArea
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_HasArea
+  name: HasArea
+  nameWithType: Rect2I.HasArea
+  fullName: Godot.Rect2I.HasArea
+- uid: Godot.Rect2I.HasPoint*
+  commentId: Overload:Godot.Rect2I.HasPoint
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_HasPoint_Godot_Vector2I_
+  name: HasPoint
+  nameWithType: Rect2I.HasPoint
+  fullName: Godot.Rect2I.HasPoint
+- uid: Godot.Rect2I.Intersects*
+  commentId: Overload:Godot.Rect2I.Intersects
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_Intersects_Godot_Rect2I_
+  name: Intersects
+  nameWithType: Rect2I.Intersects
+  fullName: Godot.Rect2I.Intersects
+- uid: Godot.Rect2I.Merge*
+  commentId: Overload:Godot.Rect2I.Merge
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_Merge_Godot_Rect2I_
+  name: Merge
+  nameWithType: Rect2I.Merge
+  fullName: Godot.Rect2I.Merge
+- uid: Godot.Rect2I.#ctor*
+  commentId: Overload:Godot.Rect2I.#ctor
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I__ctor_Godot_Vector2I_Godot_Vector2I_
+  name: Rect2I
+  nameWithType: Rect2I.Rect2I
+  fullName: Godot.Rect2I.Rect2I
+  nameWithType.vb: Rect2I.New
+  fullName.vb: Godot.Rect2I.New
+  name.vb: New
+- uid: Godot.Rect2I.op_Equality*
+  commentId: Overload:Godot.Rect2I.op_Equality
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_op_Equality_Godot_Rect2I_Godot_Rect2I_
+  name: operator ==
+  nameWithType: Rect2I.operator ==
+  fullName: Godot.Rect2I.operator ==
+  nameWithType.vb: Rect2I.=
+  fullName.vb: Godot.Rect2I.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Rect2I.op_Equality*
+    name: ==
+    isExternal: true
+    href: Godot.Rect2I.html#Godot_Rect2I_op_Equality_Godot_Rect2I_Godot_Rect2I_
+- uid: Godot.Rect2I.op_Inequality*
+  commentId: Overload:Godot.Rect2I.op_Inequality
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_op_Inequality_Godot_Rect2I_Godot_Rect2I_
+  name: operator !=
+  nameWithType: Rect2I.operator !=
+  fullName: Godot.Rect2I.operator !=
+  nameWithType.vb: Rect2I.<>
+  fullName.vb: Godot.Rect2I.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Rect2I.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: Godot.Rect2I.html#Godot_Rect2I_op_Inequality_Godot_Rect2I_Godot_Rect2I_
+- uid: Godot.Rect2I.op_Implicit*
+  commentId: Overload:Godot.Rect2I.op_Implicit
+  name: implicit operator
+  nameWithType: Rect2I.implicit operator
+  fullName: Godot.Rect2I.implicit operator
+  nameWithType.vb: Rect2I.CType
+  fullName.vb: Godot.Rect2I.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: Godot.Rect2
+  commentId: T:Godot.Rect2
+  parent: Godot
+  isExternal: true
+  href: Godot.Rect2.html
+  name: Rect2
+  nameWithType: Rect2
+  fullName: Godot.Rect2
+- uid: Godot.Rect2I.op_Explicit*
+  commentId: Overload:Godot.Rect2I.op_Explicit
+  name: explicit operator
+  nameWithType: Rect2I.explicit operator
+  fullName: Godot.Rect2I.explicit operator
+  nameWithType.vb: Rect2I.CType
+  fullName.vb: Godot.Rect2I.CType
+  name.vb: CType
+  spec.csharp:
+  - name: explicit
+  - name: " "
+  - name: operator
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Godot.Rect2I.Equals*
+  commentId: Overload:Godot.Rect2I.Equals
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_Equals_System_Object_
+  name: Equals
+  nameWithType: Rect2I.Equals
+  fullName: Godot.Rect2I.Equals
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.IEquatable{Godot.Rect2I}.Equals(Godot.Rect2I)
+  commentId: M:System.IEquatable{Godot.Rect2I}.Equals(Godot.Rect2I)
+  parent: System.IEquatable{Godot.Rect2I}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Rect2I)
+  nameWithType: IEquatable<Rect2I>.Equals(Rect2I)
+  fullName: System.IEquatable<Godot.Rect2I>.Equals(Godot.Rect2I)
+  nameWithType.vb: IEquatable(Of Rect2I).Equals(Rect2I)
+  fullName.vb: System.IEquatable(Of Godot.Rect2I).Equals(Godot.Rect2I)
+  spec.csharp:
+  - uid: System.IEquatable{Godot.Rect2I}.Equals(Godot.Rect2I)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.Rect2I
+    name: Rect2I
+    isExternal: true
+    href: Godot.Rect2I.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Godot.Rect2I}.Equals(Godot.Rect2I)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.Rect2I
+    name: Rect2I
+    isExternal: true
+    href: Godot.Rect2I.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Godot.Rect2I.GetHashCode*
+  commentId: Overload:Godot.Rect2I.GetHashCode
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_GetHashCode
+  name: GetHashCode
+  nameWithType: Rect2I.GetHashCode
+  fullName: Godot.Rect2I.GetHashCode
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Godot.Rect2I.ToString*
+  commentId: Overload:Godot.Rect2I.ToString
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_ToString
+  name: ToString
+  nameWithType: Rect2I.ToString
+  fullName: Godot.Rect2I.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.Rect2I.Position*
+  commentId: Overload:Godot.Rect2I.Position
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_Position
+  name: Position
+  nameWithType: Rect2I.Position
+  fullName: Godot.Rect2I.Position
+- uid: Godot.Rect2I.Size*
+  commentId: Overload:Godot.Rect2I.Size
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_Size
+  name: Size
+  nameWithType: Rect2I.Size
+  fullName: Godot.Rect2I.Size
+- uid: Godot.Rect2I.End*
+  commentId: Overload:Godot.Rect2I.End
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_End
+  name: End
+  nameWithType: Rect2I.End
+  fullName: Godot.Rect2I.End
+- uid: Godot.Rect2I.Area*
+  commentId: Overload:Godot.Rect2I.Area
+  isExternal: true
+  href: Godot.Rect2I.html#Godot_Rect2I_Area
+  name: Area
+  nameWithType: Rect2I.Area
+  fullName: Godot.Rect2I.Area

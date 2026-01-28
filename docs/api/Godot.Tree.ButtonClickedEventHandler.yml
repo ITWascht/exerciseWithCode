@@ -1,0 +1,249 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.Tree.ButtonClickedEventHandler
+  commentId: T:Godot.Tree.ButtonClickedEventHandler
+  id: Tree.ButtonClickedEventHandler
+  parent: Godot
+  children:
+  - Godot.Tree.ButtonClickedEventHandler.#ctor(System.Object,System.IntPtr)
+  - Godot.Tree.ButtonClickedEventHandler.BeginInvoke(Godot.TreeItem,System.Int64,System.Int64,System.Int64,System.AsyncCallback,System.Object)
+  - Godot.Tree.ButtonClickedEventHandler.EndInvoke(System.IAsyncResult)
+  - Godot.Tree.ButtonClickedEventHandler.Invoke(Godot.TreeItem,System.Int64,System.Int64,System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: Tree.ButtonClickedEventHandler
+  nameWithType: Tree.ButtonClickedEventHandler
+  fullName: Godot.Tree.ButtonClickedEventHandler
+  type: Delegate
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public delegate void Tree.ButtonClickedEventHandler(TreeItem item, long column, long id, long mouseButtonIndex)
+    parameters:
+    - id: item
+      type: Godot.TreeItem
+    - id: column
+      type: System.Int64
+    - id: id
+      type: System.Int64
+    - id: mouseButtonIndex
+      type: System.Int64
+    content.vb: Public Delegate Sub Tree.ButtonClickedEventHandler(item As TreeItem, column As Long, id As Long, mouseButtonIndex As Long)
+- uid: Godot.Tree.ButtonClickedEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Godot.Tree.ButtonClickedEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Godot.Tree.ButtonClickedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: ButtonClickedEventHandler(object, nint)
+  nameWithType: Tree.ButtonClickedEventHandler.ButtonClickedEventHandler(object, nint)
+  fullName: Godot.Tree.ButtonClickedEventHandler.ButtonClickedEventHandler(object, nint)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public ButtonClickedEventHandler(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Godot.Tree.ButtonClickedEventHandler.#ctor*
+  nameWithType.vb: Tree.ButtonClickedEventHandler.New(Object, IntPtr)
+  fullName.vb: Godot.Tree.ButtonClickedEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Godot.Tree.ButtonClickedEventHandler.Invoke(Godot.TreeItem,System.Int64,System.Int64,System.Int64)
+  commentId: M:Godot.Tree.ButtonClickedEventHandler.Invoke(Godot.TreeItem,System.Int64,System.Int64,System.Int64)
+  id: Invoke(Godot.TreeItem,System.Int64,System.Int64,System.Int64)
+  parent: Godot.Tree.ButtonClickedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(TreeItem, long, long, long)
+  nameWithType: Tree.ButtonClickedEventHandler.Invoke(TreeItem, long, long, long)
+  fullName: Godot.Tree.ButtonClickedEventHandler.Invoke(Godot.TreeItem, long, long, long)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void Invoke(TreeItem item, long column, long id, long mouseButtonIndex)
+    parameters:
+    - id: item
+      type: Godot.TreeItem
+    - id: column
+      type: System.Int64
+    - id: id
+      type: System.Int64
+    - id: mouseButtonIndex
+      type: System.Int64
+    content.vb: Public Overridable Sub Invoke(item As TreeItem, column As Long, id As Long, mouseButtonIndex As Long)
+  overload: Godot.Tree.ButtonClickedEventHandler.Invoke*
+  nameWithType.vb: Tree.ButtonClickedEventHandler.Invoke(TreeItem, Long, Long, Long)
+  fullName.vb: Godot.Tree.ButtonClickedEventHandler.Invoke(Godot.TreeItem, Long, Long, Long)
+  name.vb: Invoke(TreeItem, Long, Long, Long)
+- uid: Godot.Tree.ButtonClickedEventHandler.BeginInvoke(Godot.TreeItem,System.Int64,System.Int64,System.Int64,System.AsyncCallback,System.Object)
+  commentId: M:Godot.Tree.ButtonClickedEventHandler.BeginInvoke(Godot.TreeItem,System.Int64,System.Int64,System.Int64,System.AsyncCallback,System.Object)
+  id: BeginInvoke(Godot.TreeItem,System.Int64,System.Int64,System.Int64,System.AsyncCallback,System.Object)
+  parent: Godot.Tree.ButtonClickedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(TreeItem, long, long, long, AsyncCallback, object)
+  nameWithType: Tree.ButtonClickedEventHandler.BeginInvoke(TreeItem, long, long, long, AsyncCallback, object)
+  fullName: Godot.Tree.ButtonClickedEventHandler.BeginInvoke(Godot.TreeItem, long, long, long, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(TreeItem item, long column, long id, long mouseButtonIndex, AsyncCallback callback, object @object)
+    parameters:
+    - id: item
+      type: Godot.TreeItem
+    - id: column
+      type: System.Int64
+    - id: id
+      type: System.Int64
+    - id: mouseButtonIndex
+      type: System.Int64
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(item As TreeItem, column As Long, id As Long, mouseButtonIndex As Long, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Godot.Tree.ButtonClickedEventHandler.BeginInvoke*
+  nameWithType.vb: Tree.ButtonClickedEventHandler.BeginInvoke(TreeItem, Long, Long, Long, AsyncCallback, Object)
+  fullName.vb: Godot.Tree.ButtonClickedEventHandler.BeginInvoke(Godot.TreeItem, Long, Long, Long, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(TreeItem, Long, Long, Long, AsyncCallback, Object)
+- uid: Godot.Tree.ButtonClickedEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Godot.Tree.ButtonClickedEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Godot.Tree.ButtonClickedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: Tree.ButtonClickedEventHandler.EndInvoke(IAsyncResult)
+  fullName: Godot.Tree.ButtonClickedEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: Godot.Tree.ButtonClickedEventHandler.EndInvoke*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: Godot.TreeItem
+  commentId: T:Godot.TreeItem
+  parent: Godot
+  isExternal: true
+  href: Godot.TreeItem.html
+  name: TreeItem
+  nameWithType: TreeItem
+  fullName: Godot.TreeItem
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.Tree.ButtonClickedEventHandler.#ctor*
+  commentId: Overload:Godot.Tree.ButtonClickedEventHandler.#ctor
+  isExternal: true
+  href: Godot.Tree.ButtonClickedEventHandler.html#Godot_Tree_ButtonClickedEventHandler__ctor_System_Object_System_IntPtr_
+  name: ButtonClickedEventHandler
+  nameWithType: Tree.ButtonClickedEventHandler.ButtonClickedEventHandler
+  fullName: Godot.Tree.ButtonClickedEventHandler.ButtonClickedEventHandler
+  nameWithType.vb: Tree.ButtonClickedEventHandler.New
+  fullName.vb: Godot.Tree.ButtonClickedEventHandler.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Godot.Tree.ButtonClickedEventHandler.Invoke*
+  commentId: Overload:Godot.Tree.ButtonClickedEventHandler.Invoke
+  isExternal: true
+  href: Godot.Tree.ButtonClickedEventHandler.html#Godot_Tree_ButtonClickedEventHandler_Invoke_Godot_TreeItem_System_Int64_System_Int64_System_Int64_
+  name: Invoke
+  nameWithType: Tree.ButtonClickedEventHandler.Invoke
+  fullName: Godot.Tree.ButtonClickedEventHandler.Invoke
+- uid: Godot.Tree.ButtonClickedEventHandler.BeginInvoke*
+  commentId: Overload:Godot.Tree.ButtonClickedEventHandler.BeginInvoke
+  isExternal: true
+  href: Godot.Tree.ButtonClickedEventHandler.html#Godot_Tree_ButtonClickedEventHandler_BeginInvoke_Godot_TreeItem_System_Int64_System_Int64_System_Int64_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: Tree.ButtonClickedEventHandler.BeginInvoke
+  fullName: Godot.Tree.ButtonClickedEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Godot.Tree.ButtonClickedEventHandler.EndInvoke*
+  commentId: Overload:Godot.Tree.ButtonClickedEventHandler.EndInvoke
+  isExternal: true
+  href: Godot.Tree.ButtonClickedEventHandler.html#Godot_Tree_ButtonClickedEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: Tree.ButtonClickedEventHandler.EndInvoke
+  fullName: Godot.Tree.ButtonClickedEventHandler.EndInvoke

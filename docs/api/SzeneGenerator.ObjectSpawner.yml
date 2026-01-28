@@ -1,0 +1,389 @@
+### YamlMime:ManagedReference
+items:
+- uid: SzeneGenerator.ObjectSpawner
+  commentId: T:SzeneGenerator.ObjectSpawner
+  id: ObjectSpawner
+  parent: SzeneGenerator
+  children:
+  - SzeneGenerator.ObjectSpawner.#ctor(System.Int32,System.Int32,System.Single,System.Single,System.Single)
+  - SzeneGenerator.ObjectSpawner.Spawn(Godot.Node,System.Single[0:,0:],SzeneGenerator.RegionRules,System.Collections.Generic.Dictionary{System.String,Godot.PackedScene},System.Int32,System.Int32[0:,0:],System.Single[0:,0:])
+  langs:
+  - csharp
+  - vb
+  name: ObjectSpawner
+  nameWithType: ObjectSpawner
+  fullName: SzeneGenerator.ObjectSpawner
+  type: Class
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/ObjectSpawner.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  summary: >-
+    Places environment objects and targets into the scene based on biome,
+
+    height, slope, and distance rules defined in region configuration.
+
+    Returns all spawned objects marked as targets.
+  example: []
+  syntax:
+    content: public class ObjectSpawner
+    content.vb: Public Class ObjectSpawner
+  inheritance:
+  - System.Object
+- uid: SzeneGenerator.ObjectSpawner.#ctor(System.Int32,System.Int32,System.Single,System.Single,System.Single)
+  commentId: M:SzeneGenerator.ObjectSpawner.#ctor(System.Int32,System.Int32,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Int32,System.Int32,System.Single,System.Single,System.Single)'
+  parent: SzeneGenerator.ObjectSpawner
+  langs:
+  - csharp
+  - vb
+  name: ObjectSpawner(int, int, float, float, float)
+  nameWithType: ObjectSpawner.ObjectSpawner(int, int, float, float, float)
+  fullName: SzeneGenerator.ObjectSpawner.ObjectSpawner(int, int, float, float, float)
+  type: Constructor
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/ObjectSpawner.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public ObjectSpawner(int width, int depth, float metersPerPixel, float scale, float offset)
+    parameters:
+    - id: width
+      type: System.Int32
+    - id: depth
+      type: System.Int32
+    - id: metersPerPixel
+      type: System.Single
+    - id: scale
+      type: System.Single
+    - id: offset
+      type: System.Single
+    content.vb: Public Sub New(width As Integer, depth As Integer, metersPerPixel As Single, scale As Single, offset As Single)
+  overload: SzeneGenerator.ObjectSpawner.#ctor*
+  nameWithType.vb: ObjectSpawner.New(Integer, Integer, Single, Single, Single)
+  fullName.vb: SzeneGenerator.ObjectSpawner.New(Integer, Integer, Single, Single, Single)
+  name.vb: New(Integer, Integer, Single, Single, Single)
+- uid: SzeneGenerator.ObjectSpawner.Spawn(Godot.Node,System.Single[0:,0:],SzeneGenerator.RegionRules,System.Collections.Generic.Dictionary{System.String,Godot.PackedScene},System.Int32,System.Int32[0:,0:],System.Single[0:,0:])
+  commentId: M:SzeneGenerator.ObjectSpawner.Spawn(Godot.Node,System.Single[0:,0:],SzeneGenerator.RegionRules,System.Collections.Generic.Dictionary{System.String,Godot.PackedScene},System.Int32,System.Int32[0:,0:],System.Single[0:,0:])
+  id: Spawn(Godot.Node,System.Single[0:,0:],SzeneGenerator.RegionRules,System.Collections.Generic.Dictionary{System.String,Godot.PackedScene},System.Int32,System.Int32[0:,0:],System.Single[0:,0:])
+  parent: SzeneGenerator.ObjectSpawner
+  langs:
+  - csharp
+  - vb
+  name: Spawn(Node, float[,], RegionRules, Dictionary<string, PackedScene>, int, int[,], float[,])
+  nameWithType: ObjectSpawner.Spawn(Node, float[,], RegionRules, Dictionary<string, PackedScene>, int, int[,], float[,])
+  fullName: SzeneGenerator.ObjectSpawner.Spawn(Godot.Node, float[,], SzeneGenerator.RegionRules, System.Collections.Generic.Dictionary<string, Godot.PackedScene>, int, int[,], float[,])
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/ObjectSpawner.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public List<Node3D> Spawn(Node parent, float[,] heights01, RegionRules rules, Dictionary<string, PackedScene> prefabMap, int seed, int[,] biome = null, float[,] edgeDist = null)
+    parameters:
+    - id: parent
+      type: Godot.Node
+    - id: heights01
+      type: System.Single[,]
+    - id: rules
+      type: SzeneGenerator.RegionRules
+    - id: prefabMap
+      type: System.Collections.Generic.Dictionary{System.String,Godot.PackedScene}
+    - id: seed
+      type: System.Int32
+    - id: biome
+      type: System.Int32[,]
+    - id: edgeDist
+      type: System.Single[,]
+    return:
+      type: System.Collections.Generic.List{Godot.Node3D}
+    content.vb: Public Function Spawn(parent As Node, heights01 As Single(,), rules As RegionRules, prefabMap As Dictionary(Of String, PackedScene), seed As Integer, biome As Integer(,) = Nothing, edgeDist As Single(,) = Nothing) As List(Of Node3D)
+  overload: SzeneGenerator.ObjectSpawner.Spawn*
+  nameWithType.vb: ObjectSpawner.Spawn(Node, Single(,), RegionRules, Dictionary(Of String, PackedScene), Integer, Integer(,), Single(,))
+  fullName.vb: SzeneGenerator.ObjectSpawner.Spawn(Godot.Node, Single(,), SzeneGenerator.RegionRules, System.Collections.Generic.Dictionary(Of String, Godot.PackedScene), Integer, Integer(,), Single(,))
+  name.vb: Spawn(Node, Single(,), RegionRules, Dictionary(Of String, PackedScene), Integer, Integer(,), Single(,))
+references:
+- uid: SzeneGenerator
+  commentId: N:SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.html
+  name: SzeneGenerator
+  nameWithType: SzeneGenerator
+  fullName: SzeneGenerator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SzeneGenerator.ObjectSpawner.#ctor*
+  commentId: Overload:SzeneGenerator.ObjectSpawner.#ctor
+  isExternal: true
+  href: SzeneGenerator.ObjectSpawner.html#SzeneGenerator_ObjectSpawner__ctor_System_Int32_System_Int32_System_Single_System_Single_System_Single_
+  name: ObjectSpawner
+  nameWithType: ObjectSpawner.ObjectSpawner
+  fullName: SzeneGenerator.ObjectSpawner.ObjectSpawner
+  nameWithType.vb: ObjectSpawner.New
+  fullName.vb: SzeneGenerator.ObjectSpawner.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SzeneGenerator.ObjectSpawner.Spawn*
+  commentId: Overload:SzeneGenerator.ObjectSpawner.Spawn
+  isExternal: true
+  href: SzeneGenerator.ObjectSpawner.html#SzeneGenerator_ObjectSpawner_Spawn_Godot_Node_System_Single_0
+  name: Spawn
+  nameWithType: ObjectSpawner.Spawn
+  fullName: SzeneGenerator.ObjectSpawner.Spawn
+- uid: Godot.Node
+  commentId: T:Godot.Node
+  parent: Godot
+  isExternal: true
+  name: Node
+  nameWithType: Node
+  fullName: Godot.Node
+- uid: System.Single[,]
+  isExternal: true
+  name: float[,]
+  nameWithType: float[,]
+  fullName: float[,]
+  nameWithType.vb: Single(,)
+  fullName.vb: Single(,)
+  name.vb: Single(,)
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: (
+  - name: ','
+  - name: )
+- uid: SzeneGenerator.RegionRules
+  commentId: T:SzeneGenerator.RegionRules
+  parent: SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.RegionRules.html
+  name: RegionRules
+  nameWithType: RegionRules
+  fullName: SzeneGenerator.RegionRules
+- uid: System.Collections.Generic.Dictionary{System.String,Godot.PackedScene}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,Godot.PackedScene}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<string, PackedScene>
+  nameWithType: Dictionary<string, PackedScene>
+  fullName: System.Collections.Generic.Dictionary<string, Godot.PackedScene>
+  nameWithType.vb: Dictionary(Of String, PackedScene)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Godot.PackedScene)
+  name.vb: Dictionary(Of String, PackedScene)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.PackedScene
+    name: PackedScene
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Godot.PackedScene
+    name: PackedScene
+    isExternal: true
+  - name: )
+- uid: System.Int32[,]
+  isExternal: true
+  name: int[,]
+  nameWithType: int[,]
+  fullName: int[,]
+  nameWithType.vb: Integer(,)
+  fullName.vb: Integer(,)
+  name.vb: Integer(,)
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: (
+  - name: ','
+  - name: )
+- uid: System.Collections.Generic.List{Godot.Node3D}
+  commentId: T:System.Collections.Generic.List{Godot.Node3D}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Node3D>
+  nameWithType: List<Node3D>
+  fullName: System.Collections.Generic.List<Godot.Node3D>
+  nameWithType.vb: List(Of Node3D)
+  fullName.vb: System.Collections.Generic.List(Of Godot.Node3D)
+  name.vb: List(Of Node3D)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Godot.Node3D
+    name: Node3D
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Node3D
+    name: Node3D
+    isExternal: true
+  - name: )
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

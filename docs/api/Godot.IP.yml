@@ -1,0 +1,893 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.IP
+  commentId: T:Godot.IP
+  id: IP
+  parent: Godot
+  children:
+  - Godot.IP.ClearCache(System.String)
+  - Godot.IP.EraseResolveItem(System.Int32)
+  - Godot.IP.GetLocalAddresses
+  - Godot.IP.GetLocalInterfaces
+  - Godot.IP.GetResolveItemAddress(System.Int32)
+  - Godot.IP.GetResolveItemAddresses(System.Int32)
+  - Godot.IP.GetResolveItemStatus(System.Int32)
+  - Godot.IP.ResolveHostname(System.String,Godot.IP.Type)
+  - Godot.IP.ResolveHostnameAddresses(System.String,Godot.IP.Type)
+  - Godot.IP.ResolveHostnameQueueItem(System.String,Godot.IP.Type)
+  - Godot.IP.ResolverInvalidId
+  - Godot.IP.ResolverMaxQueries
+  - Godot.IP.Singleton
+  langs:
+  - csharp
+  - vb
+  name: IP
+  nameWithType: IP
+  fullName: Godot.IP
+  type: Class
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static class IP
+    content.vb: Public Module IP
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Godot.IP.ResolverMaxQueries
+  commentId: F:Godot.IP.ResolverMaxQueries
+  id: ResolverMaxQueries
+  parent: Godot.IP
+  langs:
+  - csharp
+  - vb
+  name: ResolverMaxQueries
+  nameWithType: IP.ResolverMaxQueries
+  fullName: Godot.IP.ResolverMaxQueries
+  type: Field
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public const long ResolverMaxQueries = 256
+    return:
+      type: System.Int64
+    content.vb: Public Const ResolverMaxQueries As Long = 256
+- uid: Godot.IP.ResolverInvalidId
+  commentId: F:Godot.IP.ResolverInvalidId
+  id: ResolverInvalidId
+  parent: Godot.IP
+  langs:
+  - csharp
+  - vb
+  name: ResolverInvalidId
+  nameWithType: IP.ResolverInvalidId
+  fullName: Godot.IP.ResolverInvalidId
+  type: Field
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public const long ResolverInvalidId = -1
+    return:
+      type: System.Int64
+    content.vb: Public Const ResolverInvalidId As Long = -1
+- uid: Godot.IP.ResolveHostname(System.String,Godot.IP.Type)
+  commentId: M:Godot.IP.ResolveHostname(System.String,Godot.IP.Type)
+  id: ResolveHostname(System.String,Godot.IP.Type)
+  parent: Godot.IP
+  langs:
+  - csharp
+  - vb
+  name: ResolveHostname(string, Type)
+  nameWithType: IP.ResolveHostname(string, IP.Type)
+  fullName: Godot.IP.ResolveHostname(string, Godot.IP.Type)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string ResolveHostname(string host, IP.Type iPType = Type.Any)
+    parameters:
+    - id: host
+      type: System.String
+    - id: iPType
+      type: Godot.IP.Type
+    return:
+      type: System.String
+    content.vb: Public Shared Function ResolveHostname(host As String, iPType As IP.Type = Type.Any) As String
+  overload: Godot.IP.ResolveHostname*
+  nameWithType.vb: IP.ResolveHostname(String, IP.Type)
+  fullName.vb: Godot.IP.ResolveHostname(String, Godot.IP.Type)
+  name.vb: ResolveHostname(String, Type)
+- uid: Godot.IP.ResolveHostnameAddresses(System.String,Godot.IP.Type)
+  commentId: M:Godot.IP.ResolveHostnameAddresses(System.String,Godot.IP.Type)
+  id: ResolveHostnameAddresses(System.String,Godot.IP.Type)
+  parent: Godot.IP
+  langs:
+  - csharp
+  - vb
+  name: ResolveHostnameAddresses(string, Type)
+  nameWithType: IP.ResolveHostnameAddresses(string, IP.Type)
+  fullName: Godot.IP.ResolveHostnameAddresses(string, Godot.IP.Type)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] ResolveHostnameAddresses(string host, IP.Type iPType = Type.Any)
+    parameters:
+    - id: host
+      type: System.String
+    - id: iPType
+      type: Godot.IP.Type
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function ResolveHostnameAddresses(host As String, iPType As IP.Type = Type.Any) As String()
+  overload: Godot.IP.ResolveHostnameAddresses*
+  nameWithType.vb: IP.ResolveHostnameAddresses(String, IP.Type)
+  fullName.vb: Godot.IP.ResolveHostnameAddresses(String, Godot.IP.Type)
+  name.vb: ResolveHostnameAddresses(String, Type)
+- uid: Godot.IP.ResolveHostnameQueueItem(System.String,Godot.IP.Type)
+  commentId: M:Godot.IP.ResolveHostnameQueueItem(System.String,Godot.IP.Type)
+  id: ResolveHostnameQueueItem(System.String,Godot.IP.Type)
+  parent: Godot.IP
+  langs:
+  - csharp
+  - vb
+  name: ResolveHostnameQueueItem(string, Type)
+  nameWithType: IP.ResolveHostnameQueueItem(string, IP.Type)
+  fullName: Godot.IP.ResolveHostnameQueueItem(string, Godot.IP.Type)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int ResolveHostnameQueueItem(string host, IP.Type iPType = Type.Any)
+    parameters:
+    - id: host
+      type: System.String
+    - id: iPType
+      type: Godot.IP.Type
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function ResolveHostnameQueueItem(host As String, iPType As IP.Type = Type.Any) As Integer
+  overload: Godot.IP.ResolveHostnameQueueItem*
+  nameWithType.vb: IP.ResolveHostnameQueueItem(String, IP.Type)
+  fullName.vb: Godot.IP.ResolveHostnameQueueItem(String, Godot.IP.Type)
+  name.vb: ResolveHostnameQueueItem(String, Type)
+- uid: Godot.IP.GetResolveItemStatus(System.Int32)
+  commentId: M:Godot.IP.GetResolveItemStatus(System.Int32)
+  id: GetResolveItemStatus(System.Int32)
+  parent: Godot.IP
+  langs:
+  - csharp
+  - vb
+  name: GetResolveItemStatus(int)
+  nameWithType: IP.GetResolveItemStatus(int)
+  fullName: Godot.IP.GetResolveItemStatus(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static IP.ResolverStatus GetResolveItemStatus(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Godot.IP.ResolverStatus
+    content.vb: Public Shared Function GetResolveItemStatus(id As Integer) As IP.ResolverStatus
+  overload: Godot.IP.GetResolveItemStatus*
+  nameWithType.vb: IP.GetResolveItemStatus(Integer)
+  fullName.vb: Godot.IP.GetResolveItemStatus(Integer)
+  name.vb: GetResolveItemStatus(Integer)
+- uid: Godot.IP.GetResolveItemAddress(System.Int32)
+  commentId: M:Godot.IP.GetResolveItemAddress(System.Int32)
+  id: GetResolveItemAddress(System.Int32)
+  parent: Godot.IP
+  langs:
+  - csharp
+  - vb
+  name: GetResolveItemAddress(int)
+  nameWithType: IP.GetResolveItemAddress(int)
+  fullName: Godot.IP.GetResolveItemAddress(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetResolveItemAddress(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetResolveItemAddress(id As Integer) As String
+  overload: Godot.IP.GetResolveItemAddress*
+  nameWithType.vb: IP.GetResolveItemAddress(Integer)
+  fullName.vb: Godot.IP.GetResolveItemAddress(Integer)
+  name.vb: GetResolveItemAddress(Integer)
+- uid: Godot.IP.GetResolveItemAddresses(System.Int32)
+  commentId: M:Godot.IP.GetResolveItemAddresses(System.Int32)
+  id: GetResolveItemAddresses(System.Int32)
+  parent: Godot.IP
+  langs:
+  - csharp
+  - vb
+  name: GetResolveItemAddresses(int)
+  nameWithType: IP.GetResolveItemAddresses(int)
+  fullName: Godot.IP.GetResolveItemAddresses(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array GetResolveItemAddresses(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Godot.Collections.Array
+    content.vb: Public Shared Function GetResolveItemAddresses(id As Integer) As Array
+  overload: Godot.IP.GetResolveItemAddresses*
+  nameWithType.vb: IP.GetResolveItemAddresses(Integer)
+  fullName.vb: Godot.IP.GetResolveItemAddresses(Integer)
+  name.vb: GetResolveItemAddresses(Integer)
+- uid: Godot.IP.EraseResolveItem(System.Int32)
+  commentId: M:Godot.IP.EraseResolveItem(System.Int32)
+  id: EraseResolveItem(System.Int32)
+  parent: Godot.IP
+  langs:
+  - csharp
+  - vb
+  name: EraseResolveItem(int)
+  nameWithType: IP.EraseResolveItem(int)
+  fullName: Godot.IP.EraseResolveItem(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void EraseResolveItem(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    content.vb: Public Shared Sub EraseResolveItem(id As Integer)
+  overload: Godot.IP.EraseResolveItem*
+  nameWithType.vb: IP.EraseResolveItem(Integer)
+  fullName.vb: Godot.IP.EraseResolveItem(Integer)
+  name.vb: EraseResolveItem(Integer)
+- uid: Godot.IP.GetLocalAddresses
+  commentId: M:Godot.IP.GetLocalAddresses
+  id: GetLocalAddresses
+  parent: Godot.IP
+  langs:
+  - csharp
+  - vb
+  name: GetLocalAddresses()
+  nameWithType: IP.GetLocalAddresses()
+  fullName: Godot.IP.GetLocalAddresses()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] GetLocalAddresses()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetLocalAddresses() As String()
+  overload: Godot.IP.GetLocalAddresses*
+- uid: Godot.IP.GetLocalInterfaces
+  commentId: M:Godot.IP.GetLocalInterfaces
+  id: GetLocalInterfaces
+  parent: Godot.IP
+  langs:
+  - csharp
+  - vb
+  name: GetLocalInterfaces()
+  nameWithType: IP.GetLocalInterfaces()
+  fullName: Godot.IP.GetLocalInterfaces()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Dictionary> GetLocalInterfaces()
+    return:
+      type: Godot.Collections.Array{Godot.Collections.Dictionary}
+    content.vb: Public Shared Function GetLocalInterfaces() As Array(Of Dictionary)
+  overload: Godot.IP.GetLocalInterfaces*
+- uid: Godot.IP.ClearCache(System.String)
+  commentId: M:Godot.IP.ClearCache(System.String)
+  id: ClearCache(System.String)
+  parent: Godot.IP
+  langs:
+  - csharp
+  - vb
+  name: ClearCache(string)
+  nameWithType: IP.ClearCache(string)
+  fullName: Godot.IP.ClearCache(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void ClearCache(string hostname = "")
+    parameters:
+    - id: hostname
+      type: System.String
+    content.vb: Public Shared Sub ClearCache(hostname As String = "")
+  overload: Godot.IP.ClearCache*
+  nameWithType.vb: IP.ClearCache(String)
+  fullName.vb: Godot.IP.ClearCache(String)
+  name.vb: ClearCache(String)
+- uid: Godot.IP.Singleton
+  commentId: P:Godot.IP.Singleton
+  id: Singleton
+  parent: Godot.IP
+  langs:
+  - csharp
+  - vb
+  name: Singleton
+  nameWithType: IP.Singleton
+  fullName: Godot.IP.Singleton
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static IPInstance Singleton { get; }
+    parameters: []
+    return:
+      type: Godot.IPInstance
+    content.vb: Public Shared ReadOnly Property Singleton As IPInstance
+  overload: Godot.IP.Singleton*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Godot.IP.ResolveHostname*
+  commentId: Overload:Godot.IP.ResolveHostname
+  isExternal: true
+  href: Godot.IP.html#Godot_IP_ResolveHostname_System_String_Godot_IP_Type_
+  name: ResolveHostname
+  nameWithType: IP.ResolveHostname
+  fullName: Godot.IP.ResolveHostname
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.IP.Type
+  commentId: T:Godot.IP.Type
+  parent: Godot
+  isExternal: true
+  href: Godot.IP.html
+  name: IP.Type
+  nameWithType: IP.Type
+  fullName: Godot.IP.Type
+  spec.csharp:
+  - uid: Godot.IP
+    name: IP
+    isExternal: true
+    href: Godot.IP.html
+  - name: .
+  - uid: Godot.IP.Type
+    name: Type
+    isExternal: true
+    href: Godot.IP.Type.html
+  spec.vb:
+  - uid: Godot.IP
+    name: IP
+    isExternal: true
+    href: Godot.IP.html
+  - name: .
+  - uid: Godot.IP.Type
+    name: Type
+    isExternal: true
+    href: Godot.IP.Type.html
+- uid: Godot.IP.ResolveHostnameAddresses*
+  commentId: Overload:Godot.IP.ResolveHostnameAddresses
+  isExternal: true
+  href: Godot.IP.html#Godot_IP_ResolveHostnameAddresses_System_String_Godot_IP_Type_
+  name: ResolveHostnameAddresses
+  nameWithType: IP.ResolveHostnameAddresses
+  fullName: Godot.IP.ResolveHostnameAddresses
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Godot.IP.ResolveHostnameQueueItem*
+  commentId: Overload:Godot.IP.ResolveHostnameQueueItem
+  isExternal: true
+  href: Godot.IP.html#Godot_IP_ResolveHostnameQueueItem_System_String_Godot_IP_Type_
+  name: ResolveHostnameQueueItem
+  nameWithType: IP.ResolveHostnameQueueItem
+  fullName: Godot.IP.ResolveHostnameQueueItem
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Godot.IP.GetResolveItemStatus*
+  commentId: Overload:Godot.IP.GetResolveItemStatus
+  isExternal: true
+  href: Godot.IP.html#Godot_IP_GetResolveItemStatus_System_Int32_
+  name: GetResolveItemStatus
+  nameWithType: IP.GetResolveItemStatus
+  fullName: Godot.IP.GetResolveItemStatus
+- uid: Godot.IP.ResolverStatus
+  commentId: T:Godot.IP.ResolverStatus
+  parent: Godot
+  isExternal: true
+  href: Godot.IP.html
+  name: IP.ResolverStatus
+  nameWithType: IP.ResolverStatus
+  fullName: Godot.IP.ResolverStatus
+  spec.csharp:
+  - uid: Godot.IP
+    name: IP
+    isExternal: true
+    href: Godot.IP.html
+  - name: .
+  - uid: Godot.IP.ResolverStatus
+    name: ResolverStatus
+    isExternal: true
+    href: Godot.IP.ResolverStatus.html
+  spec.vb:
+  - uid: Godot.IP
+    name: IP
+    isExternal: true
+    href: Godot.IP.html
+  - name: .
+  - uid: Godot.IP.ResolverStatus
+    name: ResolverStatus
+    isExternal: true
+    href: Godot.IP.ResolverStatus.html
+- uid: Godot.IP.GetResolveItemAddress*
+  commentId: Overload:Godot.IP.GetResolveItemAddress
+  isExternal: true
+  href: Godot.IP.html#Godot_IP_GetResolveItemAddress_System_Int32_
+  name: GetResolveItemAddress
+  nameWithType: IP.GetResolveItemAddress
+  fullName: Godot.IP.GetResolveItemAddress
+- uid: Godot.IP.GetResolveItemAddresses*
+  commentId: Overload:Godot.IP.GetResolveItemAddresses
+  isExternal: true
+  href: Godot.IP.html#Godot_IP_GetResolveItemAddresses_System_Int32_
+  name: GetResolveItemAddresses
+  nameWithType: IP.GetResolveItemAddresses
+  fullName: Godot.IP.GetResolveItemAddresses
+- uid: Godot.Collections.Array
+  commentId: T:Godot.Collections.Array
+  parent: Godot.Collections
+  isExternal: true
+  href: Godot.Collections.Array.html
+  name: Array
+  nameWithType: Array
+  fullName: Godot.Collections.Array
+- uid: Godot.Collections
+  commentId: N:Godot.Collections
+  isExternal: true
+  href: Godot.html
+  name: Godot.Collections
+  nameWithType: Godot.Collections
+  fullName: Godot.Collections
+  spec.csharp:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+  spec.vb:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+- uid: Godot.IP.EraseResolveItem*
+  commentId: Overload:Godot.IP.EraseResolveItem
+  isExternal: true
+  href: Godot.IP.html#Godot_IP_EraseResolveItem_System_Int32_
+  name: EraseResolveItem
+  nameWithType: IP.EraseResolveItem
+  fullName: Godot.IP.EraseResolveItem
+- uid: Godot.IP.GetLocalAddresses*
+  commentId: Overload:Godot.IP.GetLocalAddresses
+  isExternal: true
+  href: Godot.IP.html#Godot_IP_GetLocalAddresses
+  name: GetLocalAddresses
+  nameWithType: IP.GetLocalAddresses
+  fullName: Godot.IP.GetLocalAddresses
+- uid: Godot.IP.GetLocalInterfaces*
+  commentId: Overload:Godot.IP.GetLocalInterfaces
+  isExternal: true
+  href: Godot.IP.html#Godot_IP_GetLocalInterfaces
+  name: GetLocalInterfaces
+  nameWithType: IP.GetLocalInterfaces
+  fullName: Godot.IP.GetLocalInterfaces
+- uid: Godot.Collections.Array{Godot.Collections.Dictionary}
+  commentId: T:Godot.Collections.Array{Godot.Collections.Dictionary}
+  parent: Godot.Collections
+  definition: Godot.Collections.Array`1
+  href: Godot.Collections.Array-1.html
+  name: Array<Dictionary>
+  nameWithType: Array<Dictionary>
+  fullName: Godot.Collections.Array<Godot.Collections.Dictionary>
+  nameWithType.vb: Array(Of Dictionary)
+  fullName.vb: Godot.Collections.Array(Of Godot.Collections.Dictionary)
+  name.vb: Array(Of Dictionary)
+  spec.csharp:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: <
+  - uid: Godot.Collections.Dictionary
+    name: Dictionary
+    isExternal: true
+    href: Godot.Collections.Dictionary.html
+  - name: '>'
+  spec.vb:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Collections.Dictionary
+    name: Dictionary
+    isExternal: true
+    href: Godot.Collections.Dictionary.html
+  - name: )
+- uid: Godot.Collections.Array`1
+  commentId: T:Godot.Collections.Array`1
+  parent: Godot.Collections
+  isExternal: true
+  href: Godot.Collections.Array-1.html
+  name: Array<T>
+  nameWithType: Array<T>
+  fullName: Godot.Collections.Array<T>
+  nameWithType.vb: Array(Of T)
+  fullName.vb: Godot.Collections.Array(Of T)
+  name.vb: Array(Of T)
+  spec.csharp:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.IP.ClearCache*
+  commentId: Overload:Godot.IP.ClearCache
+  isExternal: true
+  href: Godot.IP.html#Godot_IP_ClearCache_System_String_
+  name: ClearCache
+  nameWithType: IP.ClearCache
+  fullName: Godot.IP.ClearCache
+- uid: Godot.IP.Singleton*
+  commentId: Overload:Godot.IP.Singleton
+  isExternal: true
+  href: Godot.IP.html#Godot_IP_Singleton
+  name: Singleton
+  nameWithType: IP.Singleton
+  fullName: Godot.IP.Singleton
+- uid: Godot.IPInstance
+  commentId: T:Godot.IPInstance
+  parent: Godot
+  isExternal: true
+  href: Godot.IPInstance.html
+  name: IPInstance
+  nameWithType: IPInstance
+  fullName: Godot.IPInstance

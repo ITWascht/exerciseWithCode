@@ -1,0 +1,354 @@
+### YamlMime:ManagedReference
+items:
+- uid: SzeneGenerator.GlobalSkyManager
+  commentId: T:SzeneGenerator.GlobalSkyManager
+  id: GlobalSkyManager
+  parent: SzeneGenerator
+  children:
+  - SzeneGenerator.GlobalSkyManager.#ctor
+  - SzeneGenerator.GlobalSkyManager.ApplyLocalSkySettings(SzeneGenerator.LocalSkySettings)
+  - SzeneGenerator.GlobalSkyManager.Configure(SzeneGenerator.GlobalSkySettings)
+  - SzeneGenerator.GlobalSkyManager.Configure(SzeneGenerator.RegionRules)
+  - SzeneGenerator.GlobalSkyManager._Process(System.Double)
+  - SzeneGenerator.GlobalSkyManager._Ready
+  langs:
+  - csharp
+  - vb
+  name: GlobalSkyManager
+  nameWithType: GlobalSkyManager
+  fullName: SzeneGenerator.GlobalSkyManager
+  type: Class
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.GlobalSkyManager_ScriptMethods.generated.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  summary: >-
+    Manages global sky, atmosphere, fog, and weather effects such as rain and snow.
+
+    Follows the camera position and applies region-specific sky presets and weather profiles.
+  example: []
+  syntax:
+    content: >-
+      [ScriptPath("res://Scripts/World/GlobalSkyManager.cs")]
+
+      public class GlobalSkyManager : Node
+    content.vb: >-
+      <ScriptPath("res://Scripts/World/GlobalSkyManager.cs")>
+
+      Public Class GlobalSkyManager Inherits Node
+  inheritance:
+  - System.Object
+  - Godot.GodotObject
+  - Godot.Node
+  attributes:
+  - type: Godot.ScriptPathAttribute
+    ctor: Godot.ScriptPathAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: res://Scripts/World/GlobalSkyManager.cs
+- uid: SzeneGenerator.GlobalSkyManager._Ready
+  commentId: M:SzeneGenerator.GlobalSkyManager._Ready
+  id: _Ready
+  parent: SzeneGenerator.GlobalSkyManager
+  langs:
+  - csharp
+  - vb
+  name: _Ready()
+  nameWithType: GlobalSkyManager._Ready()
+  fullName: SzeneGenerator.GlobalSkyManager._Ready()
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/GlobalSkyManager.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  example: []
+  syntax:
+    content: public override void _Ready()
+    content.vb: Public Overrides Sub _Ready()
+  overridden: Godot.Node._Ready
+  overload: SzeneGenerator.GlobalSkyManager._Ready*
+- uid: SzeneGenerator.GlobalSkyManager._Process(System.Double)
+  commentId: M:SzeneGenerator.GlobalSkyManager._Process(System.Double)
+  id: _Process(System.Double)
+  parent: SzeneGenerator.GlobalSkyManager
+  langs:
+  - csharp
+  - vb
+  name: _Process(double)
+  nameWithType: GlobalSkyManager._Process(double)
+  fullName: SzeneGenerator.GlobalSkyManager._Process(double)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/GlobalSkyManager.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  example: []
+  syntax:
+    content: public override void _Process(double delta)
+    parameters:
+    - id: delta
+      type: System.Double
+    content.vb: Public Overrides Sub _Process(delta As Double)
+  overridden: Godot.Node._Process(System.Double)
+  overload: SzeneGenerator.GlobalSkyManager._Process*
+  nameWithType.vb: GlobalSkyManager._Process(Double)
+  fullName.vb: SzeneGenerator.GlobalSkyManager._Process(Double)
+  name.vb: _Process(Double)
+- uid: SzeneGenerator.GlobalSkyManager.Configure(SzeneGenerator.GlobalSkySettings)
+  commentId: M:SzeneGenerator.GlobalSkyManager.Configure(SzeneGenerator.GlobalSkySettings)
+  id: Configure(SzeneGenerator.GlobalSkySettings)
+  parent: SzeneGenerator.GlobalSkyManager
+  langs:
+  - csharp
+  - vb
+  name: Configure(GlobalSkySettings)
+  nameWithType: GlobalSkyManager.Configure(GlobalSkySettings)
+  fullName: SzeneGenerator.GlobalSkyManager.Configure(SzeneGenerator.GlobalSkySettings)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/GlobalSkyManager.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public void Configure(GlobalSkySettings cfg)
+    parameters:
+    - id: cfg
+      type: SzeneGenerator.GlobalSkySettings
+    content.vb: Public Sub Configure(cfg As GlobalSkySettings)
+  overload: SzeneGenerator.GlobalSkyManager.Configure*
+- uid: SzeneGenerator.GlobalSkyManager.Configure(SzeneGenerator.RegionRules)
+  commentId: M:SzeneGenerator.GlobalSkyManager.Configure(SzeneGenerator.RegionRules)
+  id: Configure(SzeneGenerator.RegionRules)
+  parent: SzeneGenerator.GlobalSkyManager
+  langs:
+  - csharp
+  - vb
+  name: Configure(RegionRules)
+  nameWithType: GlobalSkyManager.Configure(RegionRules)
+  fullName: SzeneGenerator.GlobalSkyManager.Configure(SzeneGenerator.RegionRules)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/GlobalSkyManager.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public void Configure(RegionRules rules)
+    parameters:
+    - id: rules
+      type: SzeneGenerator.RegionRules
+    content.vb: Public Sub Configure(rules As RegionRules)
+  overload: SzeneGenerator.GlobalSkyManager.Configure*
+- uid: SzeneGenerator.GlobalSkyManager.ApplyLocalSkySettings(SzeneGenerator.LocalSkySettings)
+  commentId: M:SzeneGenerator.GlobalSkyManager.ApplyLocalSkySettings(SzeneGenerator.LocalSkySettings)
+  id: ApplyLocalSkySettings(SzeneGenerator.LocalSkySettings)
+  parent: SzeneGenerator.GlobalSkyManager
+  langs:
+  - csharp
+  - vb
+  name: ApplyLocalSkySettings(LocalSkySettings)
+  nameWithType: GlobalSkyManager.ApplyLocalSkySettings(LocalSkySettings)
+  fullName: SzeneGenerator.GlobalSkyManager.ApplyLocalSkySettings(SzeneGenerator.LocalSkySettings)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/GlobalSkyManager.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public void ApplyLocalSkySettings(LocalSkySettings settings)
+    parameters:
+    - id: settings
+      type: SzeneGenerator.LocalSkySettings
+    content.vb: Public Sub ApplyLocalSkySettings(settings As LocalSkySettings)
+  overload: SzeneGenerator.GlobalSkyManager.ApplyLocalSkySettings*
+- uid: SzeneGenerator.GlobalSkyManager.#ctor
+  commentId: M:SzeneGenerator.GlobalSkyManager.#ctor
+  id: '#ctor'
+  parent: SzeneGenerator.GlobalSkyManager
+  langs:
+  - csharp
+  - vb
+  name: GlobalSkyManager()
+  nameWithType: GlobalSkyManager.GlobalSkyManager()
+  fullName: SzeneGenerator.GlobalSkyManager.GlobalSkyManager()
+  type: Constructor
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/World/GlobalSkyManager.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public GlobalSkyManager()
+    content.vb: Public Sub New()
+  overload: SzeneGenerator.GlobalSkyManager.#ctor*
+  nameWithType.vb: GlobalSkyManager.New()
+  fullName.vb: SzeneGenerator.GlobalSkyManager.New()
+  name.vb: New()
+references:
+- uid: SzeneGenerator
+  commentId: N:SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.html
+  name: SzeneGenerator
+  nameWithType: SzeneGenerator
+  fullName: SzeneGenerator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Godot.GodotObject
+  commentId: T:Godot.GodotObject
+  parent: Godot
+  isExternal: true
+  name: GodotObject
+  nameWithType: GodotObject
+  fullName: Godot.GodotObject
+- uid: Godot.Node
+  commentId: T:Godot.Node
+  parent: Godot
+  isExternal: true
+  name: Node
+  nameWithType: Node
+  fullName: Godot.Node
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: Godot.Node._Ready
+  commentId: M:Godot.Node._Ready
+  parent: Godot.Node
+  isExternal: true
+  name: _Ready()
+  nameWithType: Node._Ready()
+  fullName: Godot.Node._Ready()
+  spec.csharp:
+  - uid: Godot.Node._Ready
+    name: _Ready
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.Node._Ready
+    name: _Ready
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SzeneGenerator.GlobalSkyManager._Ready*
+  commentId: Overload:SzeneGenerator.GlobalSkyManager._Ready
+  isExternal: true
+  href: SzeneGenerator.GlobalSkyManager.html#SzeneGenerator_GlobalSkyManager__Ready
+  name: _Ready
+  nameWithType: GlobalSkyManager._Ready
+  fullName: SzeneGenerator.GlobalSkyManager._Ready
+- uid: Godot.Node._Process(System.Double)
+  commentId: M:Godot.Node._Process(System.Double)
+  parent: Godot.Node
+  isExternal: true
+  name: _Process(double)
+  nameWithType: Node._Process(double)
+  fullName: Godot.Node._Process(double)
+  nameWithType.vb: Node._Process(Double)
+  fullName.vb: Godot.Node._Process(Double)
+  name.vb: _Process(Double)
+  spec.csharp:
+  - uid: Godot.Node._Process(System.Double)
+    name: _Process
+    isExternal: true
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Godot.Node._Process(System.Double)
+    name: _Process
+    isExternal: true
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+  - name: )
+- uid: SzeneGenerator.GlobalSkyManager._Process*
+  commentId: Overload:SzeneGenerator.GlobalSkyManager._Process
+  isExternal: true
+  href: SzeneGenerator.GlobalSkyManager.html#SzeneGenerator_GlobalSkyManager__Process_System_Double_
+  name: _Process
+  nameWithType: GlobalSkyManager._Process
+  fullName: SzeneGenerator.GlobalSkyManager._Process
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: SzeneGenerator.GlobalSkyManager.Configure*
+  commentId: Overload:SzeneGenerator.GlobalSkyManager.Configure
+  isExternal: true
+  href: SzeneGenerator.GlobalSkyManager.html#SzeneGenerator_GlobalSkyManager_Configure_SzeneGenerator_GlobalSkySettings_
+  name: Configure
+  nameWithType: GlobalSkyManager.Configure
+  fullName: SzeneGenerator.GlobalSkyManager.Configure
+- uid: SzeneGenerator.GlobalSkySettings
+  commentId: T:SzeneGenerator.GlobalSkySettings
+  parent: SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.GlobalSkySettings.html
+  name: GlobalSkySettings
+  nameWithType: GlobalSkySettings
+  fullName: SzeneGenerator.GlobalSkySettings
+- uid: SzeneGenerator.RegionRules
+  commentId: T:SzeneGenerator.RegionRules
+  parent: SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.RegionRules.html
+  name: RegionRules
+  nameWithType: RegionRules
+  fullName: SzeneGenerator.RegionRules
+- uid: SzeneGenerator.GlobalSkyManager.ApplyLocalSkySettings*
+  commentId: Overload:SzeneGenerator.GlobalSkyManager.ApplyLocalSkySettings
+  isExternal: true
+  href: SzeneGenerator.GlobalSkyManager.html#SzeneGenerator_GlobalSkyManager_ApplyLocalSkySettings_SzeneGenerator_LocalSkySettings_
+  name: ApplyLocalSkySettings
+  nameWithType: GlobalSkyManager.ApplyLocalSkySettings
+  fullName: SzeneGenerator.GlobalSkyManager.ApplyLocalSkySettings
+- uid: SzeneGenerator.LocalSkySettings
+  commentId: T:SzeneGenerator.LocalSkySettings
+  parent: SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.LocalSkySettings.html
+  name: LocalSkySettings
+  nameWithType: LocalSkySettings
+  fullName: SzeneGenerator.LocalSkySettings
+- uid: SzeneGenerator.GlobalSkyManager.#ctor*
+  commentId: Overload:SzeneGenerator.GlobalSkyManager.#ctor
+  isExternal: true
+  href: SzeneGenerator.GlobalSkyManager.html#SzeneGenerator_GlobalSkyManager__ctor
+  name: GlobalSkyManager
+  nameWithType: GlobalSkyManager.GlobalSkyManager
+  fullName: SzeneGenerator.GlobalSkyManager.GlobalSkyManager
+  nameWithType.vb: GlobalSkyManager.New
+  fullName.vb: SzeneGenerator.GlobalSkyManager.New
+  name.vb: New

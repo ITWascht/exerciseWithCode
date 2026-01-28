@@ -1,0 +1,287 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.HttpRequest.RequestCompletedEventHandler
+  commentId: T:Godot.HttpRequest.RequestCompletedEventHandler
+  id: HttpRequest.RequestCompletedEventHandler
+  parent: Godot
+  children:
+  - Godot.HttpRequest.RequestCompletedEventHandler.#ctor(System.Object,System.IntPtr)
+  - Godot.HttpRequest.RequestCompletedEventHandler.BeginInvoke(System.Int64,System.Int64,System.String[],System.Byte[],System.AsyncCallback,System.Object)
+  - Godot.HttpRequest.RequestCompletedEventHandler.EndInvoke(System.IAsyncResult)
+  - Godot.HttpRequest.RequestCompletedEventHandler.Invoke(System.Int64,System.Int64,System.String[],System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: HttpRequest.RequestCompletedEventHandler
+  nameWithType: HttpRequest.RequestCompletedEventHandler
+  fullName: Godot.HttpRequest.RequestCompletedEventHandler
+  type: Delegate
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public delegate void HttpRequest.RequestCompletedEventHandler(long result, long responseCode, string[] headers, byte[] body)
+    parameters:
+    - id: result
+      type: System.Int64
+    - id: responseCode
+      type: System.Int64
+    - id: headers
+      type: System.String[]
+    - id: body
+      type: System.Byte[]
+    content.vb: Public Delegate Sub HttpRequest.RequestCompletedEventHandler(result As Long, responseCode As Long, headers As String(), body As Byte())
+- uid: Godot.HttpRequest.RequestCompletedEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Godot.HttpRequest.RequestCompletedEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Godot.HttpRequest.RequestCompletedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: RequestCompletedEventHandler(object, nint)
+  nameWithType: HttpRequest.RequestCompletedEventHandler.RequestCompletedEventHandler(object, nint)
+  fullName: Godot.HttpRequest.RequestCompletedEventHandler.RequestCompletedEventHandler(object, nint)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public RequestCompletedEventHandler(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Godot.HttpRequest.RequestCompletedEventHandler.#ctor*
+  nameWithType.vb: HttpRequest.RequestCompletedEventHandler.New(Object, IntPtr)
+  fullName.vb: Godot.HttpRequest.RequestCompletedEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Godot.HttpRequest.RequestCompletedEventHandler.Invoke(System.Int64,System.Int64,System.String[],System.Byte[])
+  commentId: M:Godot.HttpRequest.RequestCompletedEventHandler.Invoke(System.Int64,System.Int64,System.String[],System.Byte[])
+  id: Invoke(System.Int64,System.Int64,System.String[],System.Byte[])
+  parent: Godot.HttpRequest.RequestCompletedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(long, long, string[], byte[])
+  nameWithType: HttpRequest.RequestCompletedEventHandler.Invoke(long, long, string[], byte[])
+  fullName: Godot.HttpRequest.RequestCompletedEventHandler.Invoke(long, long, string[], byte[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void Invoke(long result, long responseCode, string[] headers, byte[] body)
+    parameters:
+    - id: result
+      type: System.Int64
+    - id: responseCode
+      type: System.Int64
+    - id: headers
+      type: System.String[]
+    - id: body
+      type: System.Byte[]
+    content.vb: Public Overridable Sub Invoke(result As Long, responseCode As Long, headers As String(), body As Byte())
+  overload: Godot.HttpRequest.RequestCompletedEventHandler.Invoke*
+  nameWithType.vb: HttpRequest.RequestCompletedEventHandler.Invoke(Long, Long, String(), Byte())
+  fullName.vb: Godot.HttpRequest.RequestCompletedEventHandler.Invoke(Long, Long, String(), Byte())
+  name.vb: Invoke(Long, Long, String(), Byte())
+- uid: Godot.HttpRequest.RequestCompletedEventHandler.BeginInvoke(System.Int64,System.Int64,System.String[],System.Byte[],System.AsyncCallback,System.Object)
+  commentId: M:Godot.HttpRequest.RequestCompletedEventHandler.BeginInvoke(System.Int64,System.Int64,System.String[],System.Byte[],System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.Int64,System.Int64,System.String[],System.Byte[],System.AsyncCallback,System.Object)
+  parent: Godot.HttpRequest.RequestCompletedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(long, long, string[], byte[], AsyncCallback, object)
+  nameWithType: HttpRequest.RequestCompletedEventHandler.BeginInvoke(long, long, string[], byte[], AsyncCallback, object)
+  fullName: Godot.HttpRequest.RequestCompletedEventHandler.BeginInvoke(long, long, string[], byte[], System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(long result, long responseCode, string[] headers, byte[] body, AsyncCallback callback, object @object)
+    parameters:
+    - id: result
+      type: System.Int64
+    - id: responseCode
+      type: System.Int64
+    - id: headers
+      type: System.String[]
+    - id: body
+      type: System.Byte[]
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(result As Long, responseCode As Long, headers As String(), body As Byte(), callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Godot.HttpRequest.RequestCompletedEventHandler.BeginInvoke*
+  nameWithType.vb: HttpRequest.RequestCompletedEventHandler.BeginInvoke(Long, Long, String(), Byte(), AsyncCallback, Object)
+  fullName.vb: Godot.HttpRequest.RequestCompletedEventHandler.BeginInvoke(Long, Long, String(), Byte(), System.AsyncCallback, Object)
+  name.vb: BeginInvoke(Long, Long, String(), Byte(), AsyncCallback, Object)
+- uid: Godot.HttpRequest.RequestCompletedEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Godot.HttpRequest.RequestCompletedEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Godot.HttpRequest.RequestCompletedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: HttpRequest.RequestCompletedEventHandler.EndInvoke(IAsyncResult)
+  fullName: Godot.HttpRequest.RequestCompletedEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: Godot.HttpRequest.RequestCompletedEventHandler.EndInvoke*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.HttpRequest.RequestCompletedEventHandler.#ctor*
+  commentId: Overload:Godot.HttpRequest.RequestCompletedEventHandler.#ctor
+  isExternal: true
+  href: Godot.HttpRequest.RequestCompletedEventHandler.html#Godot_HttpRequest_RequestCompletedEventHandler__ctor_System_Object_System_IntPtr_
+  name: RequestCompletedEventHandler
+  nameWithType: HttpRequest.RequestCompletedEventHandler.RequestCompletedEventHandler
+  fullName: Godot.HttpRequest.RequestCompletedEventHandler.RequestCompletedEventHandler
+  nameWithType.vb: HttpRequest.RequestCompletedEventHandler.New
+  fullName.vb: Godot.HttpRequest.RequestCompletedEventHandler.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Godot.HttpRequest.RequestCompletedEventHandler.Invoke*
+  commentId: Overload:Godot.HttpRequest.RequestCompletedEventHandler.Invoke
+  isExternal: true
+  href: Godot.HttpRequest.RequestCompletedEventHandler.html#Godot_HttpRequest_RequestCompletedEventHandler_Invoke_System_Int64_System_Int64_System_String___System_Byte___
+  name: Invoke
+  nameWithType: HttpRequest.RequestCompletedEventHandler.Invoke
+  fullName: Godot.HttpRequest.RequestCompletedEventHandler.Invoke
+- uid: Godot.HttpRequest.RequestCompletedEventHandler.BeginInvoke*
+  commentId: Overload:Godot.HttpRequest.RequestCompletedEventHandler.BeginInvoke
+  isExternal: true
+  href: Godot.HttpRequest.RequestCompletedEventHandler.html#Godot_HttpRequest_RequestCompletedEventHandler_BeginInvoke_System_Int64_System_Int64_System_String___System_Byte___System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: HttpRequest.RequestCompletedEventHandler.BeginInvoke
+  fullName: Godot.HttpRequest.RequestCompletedEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Godot.HttpRequest.RequestCompletedEventHandler.EndInvoke*
+  commentId: Overload:Godot.HttpRequest.RequestCompletedEventHandler.EndInvoke
+  isExternal: true
+  href: Godot.HttpRequest.RequestCompletedEventHandler.html#Godot_HttpRequest_RequestCompletedEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: HttpRequest.RequestCompletedEventHandler.EndInvoke
+  fullName: Godot.HttpRequest.RequestCompletedEventHandler.EndInvoke

@@ -1,0 +1,3081 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class OS | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class OS | mysite ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Godot.OS">
+
+
+
+  <h1 id="Godot_OS" data-uid="Godot.OS" class="text-break">
+Class OS  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Godot.html">Godot</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GodotSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class OS</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">OS</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Godot_OS_DeltaSmoothing_" data-uid="Godot.OS.DeltaSmoothing*"></a>
+
+  <h3 id="Godot_OS_DeltaSmoothing" data-uid="Godot.OS.DeltaSmoothing">
+  DeltaSmoothing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DeltaSmoothing { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_LowProcessorUsageMode_" data-uid="Godot.OS.LowProcessorUsageMode*"></a>
+
+  <h3 id="Godot_OS_LowProcessorUsageMode" data-uid="Godot.OS.LowProcessorUsageMode">
+  LowProcessorUsageMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LowProcessorUsageMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_LowProcessorUsageModeSleepUsec_" data-uid="Godot.OS.LowProcessorUsageModeSleepUsec*"></a>
+
+  <h3 id="Godot_OS_LowProcessorUsageModeSleepUsec" data-uid="Godot.OS.LowProcessorUsageModeSleepUsec">
+  LowProcessorUsageModeSleepUsec
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LowProcessorUsageModeSleepUsec { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_Singleton_" data-uid="Godot.OS.Singleton*"></a>
+
+  <h3 id="Godot_OS_Singleton" data-uid="Godot.OS.Singleton">
+  Singleton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSInstance Singleton { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.OSInstance.html">OSInstance</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Godot_OS_AddLogger_" data-uid="Godot.OS.AddLogger*"></a>
+
+  <h3 id="Godot_OS_AddLogger_Godot_Logger_" data-uid="Godot.OS.AddLogger(Godot.Logger)">
+  AddLogger(Logger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddLogger(Logger logger)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logger</code> <a class="xref" href="Godot.Logger.html">Logger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_Alert_" data-uid="Godot.OS.Alert*"></a>
+
+  <h3 id="Godot_OS_Alert_System_String_System_String_" data-uid="Godot.OS.Alert(System.String,System.String)">
+  Alert(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Alert(string text, string title = &quot;Alert!&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>title</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_CloseMidiInputs_" data-uid="Godot.OS.CloseMidiInputs*"></a>
+
+  <h3 id="Godot_OS_CloseMidiInputs" data-uid="Godot.OS.CloseMidiInputs">
+  CloseMidiInputs()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CloseMidiInputs()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_Crash_" data-uid="Godot.OS.Crash*"></a>
+
+  <h3 id="Godot_OS_Crash_System_String_" data-uid="Godot.OS.Crash(System.String)">
+  Crash(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Crash(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_CreateInstance_" data-uid="Godot.OS.CreateInstance*"></a>
+
+  <h3 id="Godot_OS_CreateInstance_System_ReadOnlySpan_System_String__" data-uid="Godot.OS.CreateInstance(System.ReadOnlySpan{System.String})">
+  CreateInstance(ReadOnlySpan&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CreateInstance(ReadOnlySpan&lt;string&gt; arguments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arguments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_CreateInstance_" data-uid="Godot.OS.CreateInstance*"></a>
+
+  <h3 id="Godot_OS_CreateInstance_System_String___" data-uid="Godot.OS.CreateInstance(System.String[])">
+  CreateInstance(string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CreateInstance(string[] arguments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arguments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_CreateProcess_" data-uid="Godot.OS.CreateProcess*"></a>
+
+  <h3 id="Godot_OS_CreateProcess_System_String_System_ReadOnlySpan_System_String__System_Boolean_" data-uid="Godot.OS.CreateProcess(System.String,System.ReadOnlySpan{System.String},System.Boolean)">
+  CreateProcess(string, ReadOnlySpan&lt;string&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CreateProcess(string path, ReadOnlySpan&lt;string&gt; arguments, bool openConsole)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>arguments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>openConsole</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_CreateProcess_" data-uid="Godot.OS.CreateProcess*"></a>
+
+  <h3 id="Godot_OS_CreateProcess_System_String_System_String___System_Boolean_" data-uid="Godot.OS.CreateProcess(System.String,System.String[],System.Boolean)">
+  CreateProcess(string, string[], bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CreateProcess(string path, string[] arguments, bool openConsole = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>arguments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+    <dt><code>openConsole</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_DelayMsec_" data-uid="Godot.OS.DelayMsec*"></a>
+
+  <h3 id="Godot_OS_DelayMsec_System_Int32_" data-uid="Godot.OS.DelayMsec(System.Int32)">
+  DelayMsec(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DelayMsec(int msec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>msec</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_DelayUsec_" data-uid="Godot.OS.DelayUsec*"></a>
+
+  <h3 id="Godot_OS_DelayUsec_System_Int32_" data-uid="Godot.OS.DelayUsec(System.Int32)">
+  DelayUsec(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DelayUsec(int usec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>usec</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_Execute_" data-uid="Godot.OS.Execute*"></a>
+
+  <h3 id="Godot_OS_Execute_System_String_System_ReadOnlySpan_System_String__Godot_Collections_Array_System_Boolean_System_Boolean_" data-uid="Godot.OS.Execute(System.String,System.ReadOnlySpan{System.String},Godot.Collections.Array,System.Boolean,System.Boolean)">
+  Execute(string, ReadOnlySpan&lt;string&gt;, Array, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Execute(string path, ReadOnlySpan&lt;string&gt; arguments, Array output, bool readStderr, bool openConsole)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>arguments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="Godot.Collections.Array.html">Array</a></dt>
+    <dd></dd>
+    <dt><code>readStderr</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>openConsole</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_Execute_" data-uid="Godot.OS.Execute*"></a>
+
+  <h3 id="Godot_OS_Execute_System_String_System_String___Godot_Collections_Array_System_Boolean_System_Boolean_" data-uid="Godot.OS.Execute(System.String,System.String[],Godot.Collections.Array,System.Boolean,System.Boolean)">
+  Execute(string, string[], Array, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Execute(string path, string[] arguments, Array output = null, bool readStderr = false, bool openConsole = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>arguments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="Godot.Collections.Array.html">Array</a></dt>
+    <dd></dd>
+    <dt><code>readStderr</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>openConsole</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_ExecuteWithPipe_" data-uid="Godot.OS.ExecuteWithPipe*"></a>
+
+  <h3 id="Godot_OS_ExecuteWithPipe_System_String_System_ReadOnlySpan_System_String__System_Boolean_" data-uid="Godot.OS.ExecuteWithPipe(System.String,System.ReadOnlySpan{System.String},System.Boolean)">
+  ExecuteWithPipe(string, ReadOnlySpan&lt;string&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary ExecuteWithPipe(string path, ReadOnlySpan&lt;string&gt; arguments, bool blocking)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>arguments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>blocking</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_ExecuteWithPipe_" data-uid="Godot.OS.ExecuteWithPipe*"></a>
+
+  <h3 id="Godot_OS_ExecuteWithPipe_System_String_System_String___System_Boolean_" data-uid="Godot.OS.ExecuteWithPipe(System.String,System.String[],System.Boolean)">
+  ExecuteWithPipe(string, string[], bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary ExecuteWithPipe(string path, string[] arguments, bool blocking = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>arguments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+    <dt><code>blocking</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_FindKeycodeFromString_" data-uid="Godot.OS.FindKeycodeFromString*"></a>
+
+  <h3 id="Godot_OS_FindKeycodeFromString_System_String_" data-uid="Godot.OS.FindKeycodeFromString(System.String)">
+  FindKeycodeFromString(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Key FindKeycodeFromString(string @string)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>string</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Key.html">Key</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetCacheDir_" data-uid="Godot.OS.GetCacheDir*"></a>
+
+  <h3 id="Godot_OS_GetCacheDir" data-uid="Godot.OS.GetCacheDir">
+  GetCacheDir()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetCacheDir()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetCmdlineArgs_" data-uid="Godot.OS.GetCmdlineArgs*"></a>
+
+  <h3 id="Godot_OS_GetCmdlineArgs" data-uid="Godot.OS.GetCmdlineArgs">
+  GetCmdlineArgs()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetCmdlineArgs()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetCmdlineUserArgs_" data-uid="Godot.OS.GetCmdlineUserArgs*"></a>
+
+  <h3 id="Godot_OS_GetCmdlineUserArgs" data-uid="Godot.OS.GetCmdlineUserArgs">
+  GetCmdlineUserArgs()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetCmdlineUserArgs()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetConfigDir_" data-uid="Godot.OS.GetConfigDir*"></a>
+
+  <h3 id="Godot_OS_GetConfigDir" data-uid="Godot.OS.GetConfigDir">
+  GetConfigDir()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetConfigDir()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetConnectedMidiInputs_" data-uid="Godot.OS.GetConnectedMidiInputs*"></a>
+
+  <h3 id="Godot_OS_GetConnectedMidiInputs" data-uid="Godot.OS.GetConnectedMidiInputs">
+  GetConnectedMidiInputs()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetConnectedMidiInputs()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetDataDir_" data-uid="Godot.OS.GetDataDir*"></a>
+
+  <h3 id="Godot_OS_GetDataDir" data-uid="Godot.OS.GetDataDir">
+  GetDataDir()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDataDir()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetDistributionName_" data-uid="Godot.OS.GetDistributionName*"></a>
+
+  <h3 id="Godot_OS_GetDistributionName" data-uid="Godot.OS.GetDistributionName">
+  GetDistributionName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDistributionName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetEntropy_" data-uid="Godot.OS.GetEntropy*"></a>
+
+  <h3 id="Godot_OS_GetEntropy_System_Int32_" data-uid="Godot.OS.GetEntropy(System.Int32)">
+  GetEntropy(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] GetEntropy(int size)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>size</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetEnvironment_" data-uid="Godot.OS.GetEnvironment*"></a>
+
+  <h3 id="Godot_OS_GetEnvironment_System_String_" data-uid="Godot.OS.GetEnvironment(System.String)">
+  GetEnvironment(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetEnvironment(string variable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variable</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetExecutablePath_" data-uid="Godot.OS.GetExecutablePath*"></a>
+
+  <h3 id="Godot_OS_GetExecutablePath" data-uid="Godot.OS.GetExecutablePath">
+  GetExecutablePath()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetExecutablePath()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetGrantedPermissions_" data-uid="Godot.OS.GetGrantedPermissions*"></a>
+
+  <h3 id="Godot_OS_GetGrantedPermissions" data-uid="Godot.OS.GetGrantedPermissions">
+  GetGrantedPermissions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetGrantedPermissions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetKeycodeString_" data-uid="Godot.OS.GetKeycodeString*"></a>
+
+  <h3 id="Godot_OS_GetKeycodeString_Godot_Key_" data-uid="Godot.OS.GetKeycodeString(Godot.Key)">
+  GetKeycodeString(Key)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetKeycodeString(Key code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="Godot.Key.html">Key</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetLocale_" data-uid="Godot.OS.GetLocale*"></a>
+
+  <h3 id="Godot_OS_GetLocale" data-uid="Godot.OS.GetLocale">
+  GetLocale()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetLocale()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetLocaleLanguage_" data-uid="Godot.OS.GetLocaleLanguage*"></a>
+
+  <h3 id="Godot_OS_GetLocaleLanguage" data-uid="Godot.OS.GetLocaleLanguage">
+  GetLocaleLanguage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetLocaleLanguage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetMainThreadId_" data-uid="Godot.OS.GetMainThreadId*"></a>
+
+  <h3 id="Godot_OS_GetMainThreadId" data-uid="Godot.OS.GetMainThreadId">
+  GetMainThreadId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong GetMainThreadId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetMemoryInfo_" data-uid="Godot.OS.GetMemoryInfo*"></a>
+
+  <h3 id="Godot_OS_GetMemoryInfo" data-uid="Godot.OS.GetMemoryInfo">
+  GetMemoryInfo()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary GetMemoryInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Dictionary.html">Dictionary</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetModelName_" data-uid="Godot.OS.GetModelName*"></a>
+
+  <h3 id="Godot_OS_GetModelName" data-uid="Godot.OS.GetModelName">
+  GetModelName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetModelName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetName_" data-uid="Godot.OS.GetName*"></a>
+
+  <h3 id="Godot_OS_GetName" data-uid="Godot.OS.GetName">
+  GetName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetProcessExitCode_" data-uid="Godot.OS.GetProcessExitCode*"></a>
+
+  <h3 id="Godot_OS_GetProcessExitCode_System_Int32_" data-uid="Godot.OS.GetProcessExitCode(System.Int32)">
+  GetProcessExitCode(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetProcessExitCode(int pid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pid</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetProcessId_" data-uid="Godot.OS.GetProcessId*"></a>
+
+  <h3 id="Godot_OS_GetProcessId" data-uid="Godot.OS.GetProcessId">
+  GetProcessId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetProcessId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetProcessorCount_" data-uid="Godot.OS.GetProcessorCount*"></a>
+
+  <h3 id="Godot_OS_GetProcessorCount" data-uid="Godot.OS.GetProcessorCount">
+  GetProcessorCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetProcessorCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetProcessorName_" data-uid="Godot.OS.GetProcessorName*"></a>
+
+  <h3 id="Godot_OS_GetProcessorName" data-uid="Godot.OS.GetProcessorName">
+  GetProcessorName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetProcessorName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetRestartOnExitArguments_" data-uid="Godot.OS.GetRestartOnExitArguments*"></a>
+
+  <h3 id="Godot_OS_GetRestartOnExitArguments" data-uid="Godot.OS.GetRestartOnExitArguments">
+  GetRestartOnExitArguments()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetRestartOnExitArguments()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetStaticMemoryPeakUsage_" data-uid="Godot.OS.GetStaticMemoryPeakUsage*"></a>
+
+  <h3 id="Godot_OS_GetStaticMemoryPeakUsage" data-uid="Godot.OS.GetStaticMemoryPeakUsage">
+  GetStaticMemoryPeakUsage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong GetStaticMemoryPeakUsage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetStaticMemoryUsage_" data-uid="Godot.OS.GetStaticMemoryUsage*"></a>
+
+  <h3 id="Godot_OS_GetStaticMemoryUsage" data-uid="Godot.OS.GetStaticMemoryUsage">
+  GetStaticMemoryUsage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong GetStaticMemoryUsage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetStdInType_" data-uid="Godot.OS.GetStdInType*"></a>
+
+  <h3 id="Godot_OS_GetStdInType" data-uid="Godot.OS.GetStdInType">
+  GetStdInType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OS.StdHandleType GetStdInType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.OS.html">OS</a>.<a class="xref" href="Godot.OS.StdHandleType.html">StdHandleType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetStdOutType_" data-uid="Godot.OS.GetStdOutType*"></a>
+
+  <h3 id="Godot_OS_GetStdOutType" data-uid="Godot.OS.GetStdOutType">
+  GetStdOutType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OS.StdHandleType GetStdOutType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.OS.html">OS</a>.<a class="xref" href="Godot.OS.StdHandleType.html">StdHandleType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetStderrType_" data-uid="Godot.OS.GetStderrType*"></a>
+
+  <h3 id="Godot_OS_GetStderrType" data-uid="Godot.OS.GetStderrType">
+  GetStderrType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OS.StdHandleType GetStderrType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.OS.html">OS</a>.<a class="xref" href="Godot.OS.StdHandleType.html">StdHandleType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetSystemCaCertificates_" data-uid="Godot.OS.GetSystemCaCertificates*"></a>
+
+  <h3 id="Godot_OS_GetSystemCaCertificates" data-uid="Godot.OS.GetSystemCaCertificates">
+  GetSystemCaCertificates()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSystemCaCertificates()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetSystemDir_" data-uid="Godot.OS.GetSystemDir*"></a>
+
+  <h3 id="Godot_OS_GetSystemDir_Godot_OS_SystemDir_System_Boolean_" data-uid="Godot.OS.GetSystemDir(Godot.OS.SystemDir,System.Boolean)">
+  GetSystemDir(SystemDir, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSystemDir(OS.SystemDir dir, bool sharedStorage = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dir</code> <a class="xref" href="Godot.OS.html">OS</a>.<a class="xref" href="Godot.OS.SystemDir.html">SystemDir</a></dt>
+    <dd></dd>
+    <dt><code>sharedStorage</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetSystemFontPath_" data-uid="Godot.OS.GetSystemFontPath*"></a>
+
+  <h3 id="Godot_OS_GetSystemFontPath_System_String_System_Int32_System_Int32_System_Boolean_" data-uid="Godot.OS.GetSystemFontPath(System.String,System.Int32,System.Int32,System.Boolean)">
+  GetSystemFontPath(string, int, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSystemFontPath(string fontName, int weight = 400, int stretch = 100, bool italic = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fontName</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>weight</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>stretch</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>italic</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetSystemFontPathForText_" data-uid="Godot.OS.GetSystemFontPathForText*"></a>
+
+  <h3 id="Godot_OS_GetSystemFontPathForText_System_String_System_String_System_String_System_String_System_Int32_System_Int32_System_Boolean_" data-uid="Godot.OS.GetSystemFontPathForText(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+  GetSystemFontPathForText(string, string, string, string, int, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetSystemFontPathForText(string fontName, string text, string locale = &quot;&quot;, string script = &quot;&quot;, int weight = 400, int stretch = 100, bool italic = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fontName</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>text</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>locale</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>script</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>weight</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>stretch</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>italic</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetSystemFonts_" data-uid="Godot.OS.GetSystemFonts*"></a>
+
+  <h3 id="Godot_OS_GetSystemFonts" data-uid="Godot.OS.GetSystemFonts">
+  GetSystemFonts()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetSystemFonts()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetTempDir_" data-uid="Godot.OS.GetTempDir*"></a>
+
+  <h3 id="Godot_OS_GetTempDir" data-uid="Godot.OS.GetTempDir">
+  GetTempDir()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetTempDir()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetThreadCallerId_" data-uid="Godot.OS.GetThreadCallerId*"></a>
+
+  <h3 id="Godot_OS_GetThreadCallerId" data-uid="Godot.OS.GetThreadCallerId">
+  GetThreadCallerId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong GetThreadCallerId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetUniqueId_" data-uid="Godot.OS.GetUniqueId*"></a>
+
+  <h3 id="Godot_OS_GetUniqueId" data-uid="Godot.OS.GetUniqueId">
+  GetUniqueId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetUniqueId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetUserDataDir_" data-uid="Godot.OS.GetUserDataDir*"></a>
+
+  <h3 id="Godot_OS_GetUserDataDir" data-uid="Godot.OS.GetUserDataDir">
+  GetUserDataDir()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetUserDataDir()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetVersion_" data-uid="Godot.OS.GetVersion*"></a>
+
+  <h3 id="Godot_OS_GetVersion" data-uid="Godot.OS.GetVersion">
+  GetVersion()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetVersion()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetVersionAlias_" data-uid="Godot.OS.GetVersionAlias*"></a>
+
+  <h3 id="Godot_OS_GetVersionAlias" data-uid="Godot.OS.GetVersionAlias">
+  GetVersionAlias()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetVersionAlias()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_GetVideoAdapterDriverInfo_" data-uid="Godot.OS.GetVideoAdapterDriverInfo*"></a>
+
+  <h3 id="Godot_OS_GetVideoAdapterDriverInfo" data-uid="Godot.OS.GetVideoAdapterDriverInfo">
+  GetVideoAdapterDriverInfo()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetVideoAdapterDriverInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_HasEnvironment_" data-uid="Godot.OS.HasEnvironment*"></a>
+
+  <h3 id="Godot_OS_HasEnvironment_System_String_" data-uid="Godot.OS.HasEnvironment(System.String)">
+  HasEnvironment(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasEnvironment(string variable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variable</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_HasFeature_" data-uid="Godot.OS.HasFeature*"></a>
+
+  <h3 id="Godot_OS_HasFeature_System_String_" data-uid="Godot.OS.HasFeature(System.String)">
+  HasFeature(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasFeature(string tagName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tagName</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_IsDebugBuild_" data-uid="Godot.OS.IsDebugBuild*"></a>
+
+  <h3 id="Godot_OS_IsDebugBuild" data-uid="Godot.OS.IsDebugBuild">
+  IsDebugBuild()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsDebugBuild()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_IsKeycodeUnicode_" data-uid="Godot.OS.IsKeycodeUnicode*"></a>
+
+  <h3 id="Godot_OS_IsKeycodeUnicode_System_Int64_" data-uid="Godot.OS.IsKeycodeUnicode(System.Int64)">
+  IsKeycodeUnicode(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsKeycodeUnicode(long code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_IsProcessRunning_" data-uid="Godot.OS.IsProcessRunning*"></a>
+
+  <h3 id="Godot_OS_IsProcessRunning_System_Int32_" data-uid="Godot.OS.IsProcessRunning(System.Int32)">
+  IsProcessRunning(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsProcessRunning(int pid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pid</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_IsRestartOnExitSet_" data-uid="Godot.OS.IsRestartOnExitSet*"></a>
+
+  <h3 id="Godot_OS_IsRestartOnExitSet" data-uid="Godot.OS.IsRestartOnExitSet">
+  IsRestartOnExitSet()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsRestartOnExitSet()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_IsSandboxed_" data-uid="Godot.OS.IsSandboxed*"></a>
+
+  <h3 id="Godot_OS_IsSandboxed" data-uid="Godot.OS.IsSandboxed">
+  IsSandboxed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSandboxed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_IsStdOutVerbose_" data-uid="Godot.OS.IsStdOutVerbose*"></a>
+
+  <h3 id="Godot_OS_IsStdOutVerbose" data-uid="Godot.OS.IsStdOutVerbose">
+  IsStdOutVerbose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsStdOutVerbose()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_IsUserfsPersistent_" data-uid="Godot.OS.IsUserfsPersistent*"></a>
+
+  <h3 id="Godot_OS_IsUserfsPersistent" data-uid="Godot.OS.IsUserfsPersistent">
+  IsUserfsPersistent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsUserfsPersistent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_Kill_" data-uid="Godot.OS.Kill*"></a>
+
+  <h3 id="Godot_OS_Kill_System_Int32_" data-uid="Godot.OS.Kill(System.Int32)">
+  Kill(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Error Kill(int pid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pid</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Error.html">Error</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_MoveToTrash_" data-uid="Godot.OS.MoveToTrash*"></a>
+
+  <h3 id="Godot_OS_MoveToTrash_System_String_" data-uid="Godot.OS.MoveToTrash(System.String)">
+  MoveToTrash(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Error MoveToTrash(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Error.html">Error</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_OpenMidiInputs_" data-uid="Godot.OS.OpenMidiInputs*"></a>
+
+  <h3 id="Godot_OS_OpenMidiInputs" data-uid="Godot.OS.OpenMidiInputs">
+  OpenMidiInputs()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenMidiInputs()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_OpenWithProgram_" data-uid="Godot.OS.OpenWithProgram*"></a>
+
+  <h3 id="Godot_OS_OpenWithProgram_System_String_System_ReadOnlySpan_System_String__" data-uid="Godot.OS.OpenWithProgram(System.String,System.ReadOnlySpan{System.String})">
+  OpenWithProgram(string, ReadOnlySpan&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Error OpenWithProgram(string programPath, ReadOnlySpan&lt;string&gt; paths)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>programPath</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>paths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Error.html">Error</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_OpenWithProgram_" data-uid="Godot.OS.OpenWithProgram*"></a>
+
+  <h3 id="Godot_OS_OpenWithProgram_System_String_System_String___" data-uid="Godot.OS.OpenWithProgram(System.String,System.String[])">
+  OpenWithProgram(string, string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Error OpenWithProgram(string programPath, string[] paths)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>programPath</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>paths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Error.html">Error</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_ReadBufferFromStdIn_" data-uid="Godot.OS.ReadBufferFromStdIn*"></a>
+
+  <h3 id="Godot_OS_ReadBufferFromStdIn_System_Int64_" data-uid="Godot.OS.ReadBufferFromStdIn(System.Int64)">
+  ReadBufferFromStdIn(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ReadBufferFromStdIn(long bufferSize = 1024)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_ReadStringFromStdIn_" data-uid="Godot.OS.ReadStringFromStdIn*"></a>
+
+  <h3 id="Godot_OS_ReadStringFromStdIn_System_Int64_" data-uid="Godot.OS.ReadStringFromStdIn(System.Int64)">
+  ReadStringFromStdIn(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadStringFromStdIn(long bufferSize = 1024)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_RemoveLogger_" data-uid="Godot.OS.RemoveLogger*"></a>
+
+  <h3 id="Godot_OS_RemoveLogger_Godot_Logger_" data-uid="Godot.OS.RemoveLogger(Godot.Logger)">
+  RemoveLogger(Logger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveLogger(Logger logger)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logger</code> <a class="xref" href="Godot.Logger.html">Logger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_RequestPermission_" data-uid="Godot.OS.RequestPermission*"></a>
+
+  <h3 id="Godot_OS_RequestPermission_System_String_" data-uid="Godot.OS.RequestPermission(System.String)">
+  RequestPermission(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RequestPermission(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_RequestPermissions_" data-uid="Godot.OS.RequestPermissions*"></a>
+
+  <h3 id="Godot_OS_RequestPermissions" data-uid="Godot.OS.RequestPermissions">
+  RequestPermissions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RequestPermissions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_RevokeGrantedPermissions_" data-uid="Godot.OS.RevokeGrantedPermissions*"></a>
+
+  <h3 id="Godot_OS_RevokeGrantedPermissions" data-uid="Godot.OS.RevokeGrantedPermissions">
+  RevokeGrantedPermissions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RevokeGrantedPermissions()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_SetEnvironment_" data-uid="Godot.OS.SetEnvironment*"></a>
+
+  <h3 id="Godot_OS_SetEnvironment_System_String_System_String_" data-uid="Godot.OS.SetEnvironment(System.String,System.String)">
+  SetEnvironment(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetEnvironment(string variable, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variable</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>value</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_SetRestartOnExit_" data-uid="Godot.OS.SetRestartOnExit*"></a>
+
+  <h3 id="Godot_OS_SetRestartOnExit_System_Boolean_System_ReadOnlySpan_System_String__" data-uid="Godot.OS.SetRestartOnExit(System.Boolean,System.ReadOnlySpan{System.String})">
+  SetRestartOnExit(bool, ReadOnlySpan&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRestartOnExit(bool restart, ReadOnlySpan&lt;string&gt; arguments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>restart</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>arguments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_SetRestartOnExit_" data-uid="Godot.OS.SetRestartOnExit*"></a>
+
+  <h3 id="Godot_OS_SetRestartOnExit_System_Boolean_System_String___" data-uid="Godot.OS.SetRestartOnExit(System.Boolean,System.String[])">
+  SetRestartOnExit(bool, string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRestartOnExit(bool restart, string[] arguments = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>restart</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+    <dt><code>arguments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_SetThreadName_" data-uid="Godot.OS.SetThreadName*"></a>
+
+  <h3 id="Godot_OS_SetThreadName_System_String_" data-uid="Godot.OS.SetThreadName(System.String)">
+  SetThreadName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Error SetThreadName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Error.html">Error</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_SetUseFileAccessSaveAndSwap_" data-uid="Godot.OS.SetUseFileAccessSaveAndSwap*"></a>
+
+  <h3 id="Godot_OS_SetUseFileAccessSaveAndSwap_System_Boolean_" data-uid="Godot.OS.SetUseFileAccessSaveAndSwap(System.Boolean)">
+  SetUseFileAccessSaveAndSwap(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetUseFileAccessSaveAndSwap(bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enabled</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_ShellOpen_" data-uid="Godot.OS.ShellOpen*"></a>
+
+  <h3 id="Godot_OS_ShellOpen_System_String_" data-uid="Godot.OS.ShellOpen(System.String)">
+  ShellOpen(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Error ShellOpen(string uri)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uri</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Error.html">Error</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_ShellShowInFileManager_" data-uid="Godot.OS.ShellShowInFileManager*"></a>
+
+  <h3 id="Godot_OS_ShellShowInFileManager_System_String_System_Boolean_" data-uid="Godot.OS.ShellShowInFileManager(System.String,System.Boolean)">
+  ShellShowInFileManager(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Error ShellShowInFileManager(string fileOrDirPath, bool openFolder = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileOrDirPath</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>openFolder</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Error.html">Error</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_OS_UnsetEnvironment_" data-uid="Godot.OS.UnsetEnvironment*"></a>
+
+  <h3 id="Godot_OS_UnsetEnvironment_System_String_" data-uid="Godot.OS.UnsetEnvironment(System.String)">
+  UnsetEnvironment(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnsetEnvironment(string variable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variable</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

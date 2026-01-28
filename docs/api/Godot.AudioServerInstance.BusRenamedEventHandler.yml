@@ -1,0 +1,243 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.AudioServerInstance.BusRenamedEventHandler
+  commentId: T:Godot.AudioServerInstance.BusRenamedEventHandler
+  id: AudioServerInstance.BusRenamedEventHandler
+  parent: Godot
+  children:
+  - Godot.AudioServerInstance.BusRenamedEventHandler.#ctor(System.Object,System.IntPtr)
+  - Godot.AudioServerInstance.BusRenamedEventHandler.BeginInvoke(System.Int64,Godot.StringName,Godot.StringName,System.AsyncCallback,System.Object)
+  - Godot.AudioServerInstance.BusRenamedEventHandler.EndInvoke(System.IAsyncResult)
+  - Godot.AudioServerInstance.BusRenamedEventHandler.Invoke(System.Int64,Godot.StringName,Godot.StringName)
+  langs:
+  - csharp
+  - vb
+  name: AudioServerInstance.BusRenamedEventHandler
+  nameWithType: AudioServerInstance.BusRenamedEventHandler
+  fullName: Godot.AudioServerInstance.BusRenamedEventHandler
+  type: Delegate
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public delegate void AudioServerInstance.BusRenamedEventHandler(long busIndex, StringName oldName, StringName newName)
+    parameters:
+    - id: busIndex
+      type: System.Int64
+    - id: oldName
+      type: Godot.StringName
+    - id: newName
+      type: Godot.StringName
+    content.vb: Public Delegate Sub AudioServerInstance.BusRenamedEventHandler(busIndex As Long, oldName As StringName, newName As StringName)
+- uid: Godot.AudioServerInstance.BusRenamedEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Godot.AudioServerInstance.BusRenamedEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Godot.AudioServerInstance.BusRenamedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BusRenamedEventHandler(object, nint)
+  nameWithType: AudioServerInstance.BusRenamedEventHandler.BusRenamedEventHandler(object, nint)
+  fullName: Godot.AudioServerInstance.BusRenamedEventHandler.BusRenamedEventHandler(object, nint)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public BusRenamedEventHandler(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Godot.AudioServerInstance.BusRenamedEventHandler.#ctor*
+  nameWithType.vb: AudioServerInstance.BusRenamedEventHandler.New(Object, IntPtr)
+  fullName.vb: Godot.AudioServerInstance.BusRenamedEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Godot.AudioServerInstance.BusRenamedEventHandler.Invoke(System.Int64,Godot.StringName,Godot.StringName)
+  commentId: M:Godot.AudioServerInstance.BusRenamedEventHandler.Invoke(System.Int64,Godot.StringName,Godot.StringName)
+  id: Invoke(System.Int64,Godot.StringName,Godot.StringName)
+  parent: Godot.AudioServerInstance.BusRenamedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(long, StringName, StringName)
+  nameWithType: AudioServerInstance.BusRenamedEventHandler.Invoke(long, StringName, StringName)
+  fullName: Godot.AudioServerInstance.BusRenamedEventHandler.Invoke(long, Godot.StringName, Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void Invoke(long busIndex, StringName oldName, StringName newName)
+    parameters:
+    - id: busIndex
+      type: System.Int64
+    - id: oldName
+      type: Godot.StringName
+    - id: newName
+      type: Godot.StringName
+    content.vb: Public Overridable Sub Invoke(busIndex As Long, oldName As StringName, newName As StringName)
+  overload: Godot.AudioServerInstance.BusRenamedEventHandler.Invoke*
+  nameWithType.vb: AudioServerInstance.BusRenamedEventHandler.Invoke(Long, StringName, StringName)
+  fullName.vb: Godot.AudioServerInstance.BusRenamedEventHandler.Invoke(Long, Godot.StringName, Godot.StringName)
+  name.vb: Invoke(Long, StringName, StringName)
+- uid: Godot.AudioServerInstance.BusRenamedEventHandler.BeginInvoke(System.Int64,Godot.StringName,Godot.StringName,System.AsyncCallback,System.Object)
+  commentId: M:Godot.AudioServerInstance.BusRenamedEventHandler.BeginInvoke(System.Int64,Godot.StringName,Godot.StringName,System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.Int64,Godot.StringName,Godot.StringName,System.AsyncCallback,System.Object)
+  parent: Godot.AudioServerInstance.BusRenamedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(long, StringName, StringName, AsyncCallback, object)
+  nameWithType: AudioServerInstance.BusRenamedEventHandler.BeginInvoke(long, StringName, StringName, AsyncCallback, object)
+  fullName: Godot.AudioServerInstance.BusRenamedEventHandler.BeginInvoke(long, Godot.StringName, Godot.StringName, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(long busIndex, StringName oldName, StringName newName, AsyncCallback callback, object @object)
+    parameters:
+    - id: busIndex
+      type: System.Int64
+    - id: oldName
+      type: Godot.StringName
+    - id: newName
+      type: Godot.StringName
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(busIndex As Long, oldName As StringName, newName As StringName, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Godot.AudioServerInstance.BusRenamedEventHandler.BeginInvoke*
+  nameWithType.vb: AudioServerInstance.BusRenamedEventHandler.BeginInvoke(Long, StringName, StringName, AsyncCallback, Object)
+  fullName.vb: Godot.AudioServerInstance.BusRenamedEventHandler.BeginInvoke(Long, Godot.StringName, Godot.StringName, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(Long, StringName, StringName, AsyncCallback, Object)
+- uid: Godot.AudioServerInstance.BusRenamedEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Godot.AudioServerInstance.BusRenamedEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Godot.AudioServerInstance.BusRenamedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: AudioServerInstance.BusRenamedEventHandler.EndInvoke(IAsyncResult)
+  fullName: Godot.AudioServerInstance.BusRenamedEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: Godot.AudioServerInstance.BusRenamedEventHandler.EndInvoke*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Godot.StringName
+  commentId: T:Godot.StringName
+  parent: Godot
+  isExternal: true
+  href: Godot.StringName.html
+  name: StringName
+  nameWithType: StringName
+  fullName: Godot.StringName
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.AudioServerInstance.BusRenamedEventHandler.#ctor*
+  commentId: Overload:Godot.AudioServerInstance.BusRenamedEventHandler.#ctor
+  isExternal: true
+  href: Godot.AudioServerInstance.BusRenamedEventHandler.html#Godot_AudioServerInstance_BusRenamedEventHandler__ctor_System_Object_System_IntPtr_
+  name: BusRenamedEventHandler
+  nameWithType: AudioServerInstance.BusRenamedEventHandler.BusRenamedEventHandler
+  fullName: Godot.AudioServerInstance.BusRenamedEventHandler.BusRenamedEventHandler
+  nameWithType.vb: AudioServerInstance.BusRenamedEventHandler.New
+  fullName.vb: Godot.AudioServerInstance.BusRenamedEventHandler.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Godot.AudioServerInstance.BusRenamedEventHandler.Invoke*
+  commentId: Overload:Godot.AudioServerInstance.BusRenamedEventHandler.Invoke
+  isExternal: true
+  href: Godot.AudioServerInstance.BusRenamedEventHandler.html#Godot_AudioServerInstance_BusRenamedEventHandler_Invoke_System_Int64_Godot_StringName_Godot_StringName_
+  name: Invoke
+  nameWithType: AudioServerInstance.BusRenamedEventHandler.Invoke
+  fullName: Godot.AudioServerInstance.BusRenamedEventHandler.Invoke
+- uid: Godot.AudioServerInstance.BusRenamedEventHandler.BeginInvoke*
+  commentId: Overload:Godot.AudioServerInstance.BusRenamedEventHandler.BeginInvoke
+  isExternal: true
+  href: Godot.AudioServerInstance.BusRenamedEventHandler.html#Godot_AudioServerInstance_BusRenamedEventHandler_BeginInvoke_System_Int64_Godot_StringName_Godot_StringName_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: AudioServerInstance.BusRenamedEventHandler.BeginInvoke
+  fullName: Godot.AudioServerInstance.BusRenamedEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Godot.AudioServerInstance.BusRenamedEventHandler.EndInvoke*
+  commentId: Overload:Godot.AudioServerInstance.BusRenamedEventHandler.EndInvoke
+  isExternal: true
+  href: Godot.AudioServerInstance.BusRenamedEventHandler.html#Godot_AudioServerInstance_BusRenamedEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: AudioServerInstance.BusRenamedEventHandler.EndInvoke
+  fullName: Godot.AudioServerInstance.BusRenamedEventHandler.EndInvoke

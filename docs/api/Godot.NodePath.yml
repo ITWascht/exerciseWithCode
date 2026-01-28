@@ -1,0 +1,1154 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.NodePath
+  commentId: T:Godot.NodePath
+  id: NodePath
+  parent: Godot
+  children:
+  - Godot.NodePath.#ctor
+  - Godot.NodePath.#ctor(System.String)
+  - Godot.NodePath.Dispose
+  - Godot.NodePath.Dispose(System.Boolean)
+  - Godot.NodePath.Equals(Godot.NodePath)
+  - Godot.NodePath.Equals(System.Object)
+  - Godot.NodePath.Finalize
+  - Godot.NodePath.GetAsPropertyPath
+  - Godot.NodePath.GetConcatenatedNames
+  - Godot.NodePath.GetConcatenatedSubNames
+  - Godot.NodePath.GetHashCode
+  - Godot.NodePath.GetName(System.Int32)
+  - Godot.NodePath.GetNameCount
+  - Godot.NodePath.GetSubName(System.Int32)
+  - Godot.NodePath.GetSubNameCount
+  - Godot.NodePath.IsAbsolute
+  - Godot.NodePath.IsEmpty
+  - Godot.NodePath.ToString
+  - Godot.NodePath.op_Equality(Godot.NodePath,Godot.NodePath)
+  - Godot.NodePath.op_Implicit(Godot.NodePath)~System.String
+  - Godot.NodePath.op_Implicit(System.String)~Godot.NodePath
+  - Godot.NodePath.op_Inequality(Godot.NodePath,Godot.NodePath)
+  langs:
+  - csharp
+  - vb
+  name: NodePath
+  nameWithType: NodePath
+  fullName: Godot.NodePath
+  type: Class
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: 'public sealed class NodePath : IDisposable, IEquatable<NodePath?>'
+    content.vb: Public NotInheritable Class NodePath Implements IDisposable, IEquatable(Of NodePath)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  - System.IEquatable{Godot.NodePath}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Godot.NodePath.Finalize
+  commentId: M:Godot.NodePath.Finalize
+  id: Finalize
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: ~NodePath()
+  nameWithType: NodePath.~NodePath()
+  fullName: Godot.NodePath.~NodePath()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: protected ~NodePath()
+    content.vb: 'Protected '
+  overload: Godot.NodePath.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: Godot.NodePath.Dispose
+  commentId: M:Godot.NodePath.Dispose
+  id: Dispose
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: NodePath.Dispose()
+  fullName: Godot.NodePath.Dispose()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Godot.NodePath.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Godot.NodePath.Dispose(System.Boolean)
+  commentId: M:Godot.NodePath.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: NodePath.Dispose(bool)
+  fullName: Godot.NodePath.Dispose(bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Public Sub Dispose(disposing As Boolean)
+  overload: Godot.NodePath.Dispose*
+  nameWithType.vb: NodePath.Dispose(Boolean)
+  fullName.vb: Godot.NodePath.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: Godot.NodePath.#ctor
+  commentId: M:Godot.NodePath.#ctor
+  id: '#ctor'
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: NodePath()
+  nameWithType: NodePath.NodePath()
+  fullName: Godot.NodePath.NodePath()
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public NodePath()
+    content.vb: Public Sub New()
+  overload: Godot.NodePath.#ctor*
+  nameWithType.vb: NodePath.New()
+  fullName.vb: Godot.NodePath.New()
+  name.vb: New()
+- uid: Godot.NodePath.#ctor(System.String)
+  commentId: M:Godot.NodePath.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: NodePath(string)
+  nameWithType: NodePath.NodePath(string)
+  fullName: Godot.NodePath.NodePath(string)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public NodePath(string path)
+    parameters:
+    - id: path
+      type: System.String
+    content.vb: Public Sub New(path As String)
+  overload: Godot.NodePath.#ctor*
+  nameWithType.vb: NodePath.New(String)
+  fullName.vb: Godot.NodePath.New(String)
+  name.vb: New(String)
+- uid: Godot.NodePath.op_Implicit(System.String)~Godot.NodePath
+  commentId: M:Godot.NodePath.op_Implicit(System.String)~Godot.NodePath
+  id: op_Implicit(System.String)~Godot.NodePath
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: implicit operator NodePath(string)
+  nameWithType: NodePath.implicit operator NodePath(string)
+  fullName: Godot.NodePath.implicit operator Godot.NodePath(string)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static implicit operator NodePath(string from)
+    parameters:
+    - id: from
+      type: System.String
+    return:
+      type: Godot.NodePath
+    content.vb: Public Shared Widening Operator CType(from As String) As NodePath
+  overload: Godot.NodePath.op_Implicit*
+  nameWithType.vb: NodePath.CType(String)
+  fullName.vb: Godot.NodePath.CType(String)
+  name.vb: CType(String)
+- uid: Godot.NodePath.op_Implicit(Godot.NodePath)~System.String
+  commentId: M:Godot.NodePath.op_Implicit(Godot.NodePath)~System.String
+  id: op_Implicit(Godot.NodePath)~System.String
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: implicit operator string?(NodePath?)
+  nameWithType: NodePath.implicit operator string?(NodePath?)
+  fullName: Godot.NodePath.implicit operator string?(Godot.NodePath?)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static implicit operator string?(NodePath? from)
+    parameters:
+    - id: from
+      type: Godot.NodePath
+    return:
+      type: System.String
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute.#ctor(System.String)
+        arguments:
+        - type: System.String
+          value: from
+    content.vb: Public Shared Widening Operator CType(from As NodePath) As String
+  overload: Godot.NodePath.op_Implicit*
+  nameWithType.vb: NodePath.CType(NodePath)
+  fullName.vb: Godot.NodePath.CType(Godot.NodePath)
+  name.vb: CType(NodePath)
+- uid: Godot.NodePath.ToString
+  commentId: M:Godot.NodePath.ToString
+  id: ToString
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: NodePath.ToString()
+  fullName: Godot.NodePath.ToString()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Godot.NodePath.ToString*
+- uid: Godot.NodePath.GetAsPropertyPath
+  commentId: M:Godot.NodePath.GetAsPropertyPath
+  id: GetAsPropertyPath
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: GetAsPropertyPath()
+  nameWithType: NodePath.GetAsPropertyPath()
+  fullName: Godot.NodePath.GetAsPropertyPath()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public NodePath GetAsPropertyPath()
+    return:
+      type: Godot.NodePath
+    content.vb: Public Function GetAsPropertyPath() As NodePath
+  overload: Godot.NodePath.GetAsPropertyPath*
+- uid: Godot.NodePath.GetConcatenatedNames
+  commentId: M:Godot.NodePath.GetConcatenatedNames
+  id: GetConcatenatedNames
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: GetConcatenatedNames()
+  nameWithType: NodePath.GetConcatenatedNames()
+  fullName: Godot.NodePath.GetConcatenatedNames()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public string GetConcatenatedNames()
+    return:
+      type: System.String
+    content.vb: Public Function GetConcatenatedNames() As String
+  overload: Godot.NodePath.GetConcatenatedNames*
+- uid: Godot.NodePath.GetConcatenatedSubNames
+  commentId: M:Godot.NodePath.GetConcatenatedSubNames
+  id: GetConcatenatedSubNames
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: GetConcatenatedSubNames()
+  nameWithType: NodePath.GetConcatenatedSubNames()
+  fullName: Godot.NodePath.GetConcatenatedSubNames()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public string GetConcatenatedSubNames()
+    return:
+      type: System.String
+    content.vb: Public Function GetConcatenatedSubNames() As String
+  overload: Godot.NodePath.GetConcatenatedSubNames*
+- uid: Godot.NodePath.GetName(System.Int32)
+  commentId: M:Godot.NodePath.GetName(System.Int32)
+  id: GetName(System.Int32)
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: GetName(int)
+  nameWithType: NodePath.GetName(int)
+  fullName: Godot.NodePath.GetName(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public string GetName(int idx)
+    parameters:
+    - id: idx
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function GetName(idx As Integer) As String
+  overload: Godot.NodePath.GetName*
+  nameWithType.vb: NodePath.GetName(Integer)
+  fullName.vb: Godot.NodePath.GetName(Integer)
+  name.vb: GetName(Integer)
+- uid: Godot.NodePath.GetNameCount
+  commentId: M:Godot.NodePath.GetNameCount
+  id: GetNameCount
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: GetNameCount()
+  nameWithType: NodePath.GetNameCount()
+  fullName: Godot.NodePath.GetNameCount()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public int GetNameCount()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetNameCount() As Integer
+  overload: Godot.NodePath.GetNameCount*
+- uid: Godot.NodePath.GetSubName(System.Int32)
+  commentId: M:Godot.NodePath.GetSubName(System.Int32)
+  id: GetSubName(System.Int32)
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: GetSubName(int)
+  nameWithType: NodePath.GetSubName(int)
+  fullName: Godot.NodePath.GetSubName(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public string GetSubName(int idx)
+    parameters:
+    - id: idx
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function GetSubName(idx As Integer) As String
+  overload: Godot.NodePath.GetSubName*
+  nameWithType.vb: NodePath.GetSubName(Integer)
+  fullName.vb: Godot.NodePath.GetSubName(Integer)
+  name.vb: GetSubName(Integer)
+- uid: Godot.NodePath.GetSubNameCount
+  commentId: M:Godot.NodePath.GetSubNameCount
+  id: GetSubNameCount
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: GetSubNameCount()
+  nameWithType: NodePath.GetSubNameCount()
+  fullName: Godot.NodePath.GetSubNameCount()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public int GetSubNameCount()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetSubNameCount() As Integer
+  overload: Godot.NodePath.GetSubNameCount*
+- uid: Godot.NodePath.IsAbsolute
+  commentId: M:Godot.NodePath.IsAbsolute
+  id: IsAbsolute
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: IsAbsolute()
+  nameWithType: NodePath.IsAbsolute()
+  fullName: Godot.NodePath.IsAbsolute()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool IsAbsolute()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsAbsolute() As Boolean
+  overload: Godot.NodePath.IsAbsolute*
+- uid: Godot.NodePath.op_Equality(Godot.NodePath,Godot.NodePath)
+  commentId: M:Godot.NodePath.op_Equality(Godot.NodePath,Godot.NodePath)
+  id: op_Equality(Godot.NodePath,Godot.NodePath)
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: operator ==(NodePath?, NodePath?)
+  nameWithType: NodePath.operator ==(NodePath?, NodePath?)
+  fullName: Godot.NodePath.operator ==(Godot.NodePath?, Godot.NodePath?)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool operator ==(NodePath? left, NodePath? right)
+    parameters:
+    - id: left
+      type: Godot.NodePath
+    - id: right
+      type: Godot.NodePath
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As NodePath, right As NodePath) As Boolean
+  overload: Godot.NodePath.op_Equality*
+  nameWithType.vb: NodePath.=(NodePath, NodePath)
+  fullName.vb: Godot.NodePath.=(Godot.NodePath, Godot.NodePath)
+  name.vb: =(NodePath, NodePath)
+- uid: Godot.NodePath.op_Inequality(Godot.NodePath,Godot.NodePath)
+  commentId: M:Godot.NodePath.op_Inequality(Godot.NodePath,Godot.NodePath)
+  id: op_Inequality(Godot.NodePath,Godot.NodePath)
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: operator !=(NodePath?, NodePath?)
+  nameWithType: NodePath.operator !=(NodePath?, NodePath?)
+  fullName: Godot.NodePath.operator !=(Godot.NodePath?, Godot.NodePath?)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool operator !=(NodePath? left, NodePath? right)
+    parameters:
+    - id: left
+      type: Godot.NodePath
+    - id: right
+      type: Godot.NodePath
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As NodePath, right As NodePath) As Boolean
+  overload: Godot.NodePath.op_Inequality*
+  nameWithType.vb: NodePath.<>(NodePath, NodePath)
+  fullName.vb: Godot.NodePath.<>(Godot.NodePath, Godot.NodePath)
+  name.vb: <>(NodePath, NodePath)
+- uid: Godot.NodePath.Equals(Godot.NodePath)
+  commentId: M:Godot.NodePath.Equals(Godot.NodePath)
+  id: Equals(Godot.NodePath)
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: Equals(NodePath?)
+  nameWithType: NodePath.Equals(NodePath?)
+  fullName: Godot.NodePath.Equals(Godot.NodePath?)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public bool Equals(NodePath? other)
+    parameters:
+    - id: other
+      type: Godot.NodePath
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)
+        arguments:
+        - type: System.Boolean
+          value: true
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As NodePath) As Boolean
+  overload: Godot.NodePath.Equals*
+  implements:
+  - System.IEquatable{Godot.NodePath}.Equals(Godot.NodePath)
+  nameWithType.vb: NodePath.Equals(NodePath)
+  fullName.vb: Godot.NodePath.Equals(Godot.NodePath)
+  name.vb: Equals(NodePath)
+- uid: Godot.NodePath.Equals(System.Object)
+  commentId: M:Godot.NodePath.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: NodePath.Equals(object?)
+  fullName: Godot.NodePath.Equals(object?)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)
+        arguments:
+        - type: System.Boolean
+          value: true
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Godot.NodePath.Equals*
+  nameWithType.vb: NodePath.Equals(Object)
+  fullName.vb: Godot.NodePath.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Godot.NodePath.GetHashCode
+  commentId: M:Godot.NodePath.GetHashCode
+  id: GetHashCode
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: NodePath.GetHashCode()
+  fullName: Godot.NodePath.GetHashCode()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Godot.NodePath.GetHashCode*
+- uid: Godot.NodePath.IsEmpty
+  commentId: P:Godot.NodePath.IsEmpty
+  id: IsEmpty
+  parent: Godot.NodePath
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty
+  nameWithType: NodePath.IsEmpty
+  fullName: Godot.NodePath.IsEmpty
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public bool IsEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsEmpty As Boolean
+  overload: Godot.NodePath.IsEmpty*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IEquatable{Godot.NodePath}
+  commentId: T:System.IEquatable{Godot.NodePath}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<NodePath>
+  nameWithType: IEquatable<NodePath>
+  fullName: System.IEquatable<Godot.NodePath>
+  nameWithType.vb: IEquatable(Of NodePath)
+  fullName.vb: System.IEquatable(Of Godot.NodePath)
+  name.vb: IEquatable(Of NodePath)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Godot.NodePath
+    name: NodePath
+    isExternal: true
+    href: Godot.NodePath.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.NodePath
+    name: NodePath
+    isExternal: true
+    href: Godot.NodePath.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.NodePath.Finalize*
+  commentId: Overload:Godot.NodePath.Finalize
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_Finalize
+  name: ~NodePath
+  nameWithType: NodePath.~NodePath
+  fullName: Godot.NodePath.~NodePath
+  spec.csharp:
+  - name: "~"
+  - uid: Godot.NodePath.Finalize*
+    name: NodePath
+    isExternal: true
+    href: Godot.NodePath.html#Godot_NodePath_Finalize
+- uid: Godot.NodePath.Dispose*
+  commentId: Overload:Godot.NodePath.Dispose
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_Dispose
+  name: Dispose
+  nameWithType: NodePath.Dispose
+  fullName: Godot.NodePath.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.NodePath.#ctor*
+  commentId: Overload:Godot.NodePath.#ctor
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath__ctor
+  name: NodePath
+  nameWithType: NodePath.NodePath
+  fullName: Godot.NodePath.NodePath
+  nameWithType.vb: NodePath.New
+  fullName.vb: Godot.NodePath.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.NodePath.op_Implicit*
+  commentId: Overload:Godot.NodePath.op_Implicit
+  name: implicit operator
+  nameWithType: NodePath.implicit operator
+  fullName: Godot.NodePath.implicit operator
+  nameWithType.vb: NodePath.CType
+  fullName.vb: Godot.NodePath.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: Godot.NodePath
+  commentId: T:Godot.NodePath
+  parent: Godot
+  isExternal: true
+  href: Godot.NodePath.html
+  name: NodePath
+  nameWithType: NodePath
+  fullName: Godot.NodePath
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Godot.NodePath.ToString*
+  commentId: Overload:Godot.NodePath.ToString
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_ToString
+  name: ToString
+  nameWithType: NodePath.ToString
+  fullName: Godot.NodePath.ToString
+- uid: Godot.NodePath.GetAsPropertyPath*
+  commentId: Overload:Godot.NodePath.GetAsPropertyPath
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_GetAsPropertyPath
+  name: GetAsPropertyPath
+  nameWithType: NodePath.GetAsPropertyPath
+  fullName: Godot.NodePath.GetAsPropertyPath
+- uid: Godot.NodePath.GetConcatenatedNames*
+  commentId: Overload:Godot.NodePath.GetConcatenatedNames
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_GetConcatenatedNames
+  name: GetConcatenatedNames
+  nameWithType: NodePath.GetConcatenatedNames
+  fullName: Godot.NodePath.GetConcatenatedNames
+- uid: Godot.NodePath.GetConcatenatedSubNames*
+  commentId: Overload:Godot.NodePath.GetConcatenatedSubNames
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_GetConcatenatedSubNames
+  name: GetConcatenatedSubNames
+  nameWithType: NodePath.GetConcatenatedSubNames
+  fullName: Godot.NodePath.GetConcatenatedSubNames
+- uid: Godot.NodePath.GetName*
+  commentId: Overload:Godot.NodePath.GetName
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_GetName_System_Int32_
+  name: GetName
+  nameWithType: NodePath.GetName
+  fullName: Godot.NodePath.GetName
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Godot.NodePath.GetNameCount*
+  commentId: Overload:Godot.NodePath.GetNameCount
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_GetNameCount
+  name: GetNameCount
+  nameWithType: NodePath.GetNameCount
+  fullName: Godot.NodePath.GetNameCount
+- uid: Godot.NodePath.GetSubName*
+  commentId: Overload:Godot.NodePath.GetSubName
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_GetSubName_System_Int32_
+  name: GetSubName
+  nameWithType: NodePath.GetSubName
+  fullName: Godot.NodePath.GetSubName
+- uid: Godot.NodePath.GetSubNameCount*
+  commentId: Overload:Godot.NodePath.GetSubNameCount
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_GetSubNameCount
+  name: GetSubNameCount
+  nameWithType: NodePath.GetSubNameCount
+  fullName: Godot.NodePath.GetSubNameCount
+- uid: Godot.NodePath.IsAbsolute*
+  commentId: Overload:Godot.NodePath.IsAbsolute
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_IsAbsolute
+  name: IsAbsolute
+  nameWithType: NodePath.IsAbsolute
+  fullName: Godot.NodePath.IsAbsolute
+- uid: Godot.NodePath.op_Equality*
+  commentId: Overload:Godot.NodePath.op_Equality
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_op_Equality_Godot_NodePath_Godot_NodePath_
+  name: operator ==
+  nameWithType: NodePath.operator ==
+  fullName: Godot.NodePath.operator ==
+  nameWithType.vb: NodePath.=
+  fullName.vb: Godot.NodePath.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.NodePath.op_Equality*
+    name: ==
+    isExternal: true
+    href: Godot.NodePath.html#Godot_NodePath_op_Equality_Godot_NodePath_Godot_NodePath_
+- uid: Godot.NodePath.op_Inequality*
+  commentId: Overload:Godot.NodePath.op_Inequality
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_op_Inequality_Godot_NodePath_Godot_NodePath_
+  name: operator !=
+  nameWithType: NodePath.operator !=
+  fullName: Godot.NodePath.operator !=
+  nameWithType.vb: NodePath.<>
+  fullName.vb: Godot.NodePath.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.NodePath.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: Godot.NodePath.html#Godot_NodePath_op_Inequality_Godot_NodePath_Godot_NodePath_
+- uid: Godot.NodePath.Equals*
+  commentId: Overload:Godot.NodePath.Equals
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_Equals_Godot_NodePath_
+  name: Equals
+  nameWithType: NodePath.Equals
+  fullName: Godot.NodePath.Equals
+- uid: System.IEquatable{Godot.NodePath}.Equals(Godot.NodePath)
+  commentId: M:System.IEquatable{Godot.NodePath}.Equals(Godot.NodePath)
+  parent: System.IEquatable{Godot.NodePath}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(NodePath)
+  nameWithType: IEquatable<NodePath>.Equals(NodePath)
+  fullName: System.IEquatable<Godot.NodePath>.Equals(Godot.NodePath)
+  nameWithType.vb: IEquatable(Of NodePath).Equals(NodePath)
+  fullName.vb: System.IEquatable(Of Godot.NodePath).Equals(Godot.NodePath)
+  spec.csharp:
+  - uid: System.IEquatable{Godot.NodePath}.Equals(Godot.NodePath)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.NodePath
+    name: NodePath
+    isExternal: true
+    href: Godot.NodePath.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Godot.NodePath}.Equals(Godot.NodePath)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.NodePath
+    name: NodePath
+    isExternal: true
+    href: Godot.NodePath.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Godot.NodePath.GetHashCode*
+  commentId: Overload:Godot.NodePath.GetHashCode
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_GetHashCode
+  name: GetHashCode
+  nameWithType: NodePath.GetHashCode
+  fullName: Godot.NodePath.GetHashCode
+- uid: Godot.NodePath.IsEmpty*
+  commentId: Overload:Godot.NodePath.IsEmpty
+  isExternal: true
+  href: Godot.NodePath.html#Godot_NodePath_IsEmpty
+  name: IsEmpty
+  nameWithType: NodePath.IsEmpty
+  fullName: Godot.NodePath.IsEmpty

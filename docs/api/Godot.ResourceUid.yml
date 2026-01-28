@@ -1,0 +1,777 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.ResourceUid
+  commentId: T:Godot.ResourceUid
+  id: ResourceUid
+  parent: Godot
+  children:
+  - Godot.ResourceUid.AddId(System.Int64,System.String)
+  - Godot.ResourceUid.CreateId
+  - Godot.ResourceUid.CreateIdForPath(System.String)
+  - Godot.ResourceUid.EnsurePath(System.String)
+  - Godot.ResourceUid.GetIdPath(System.Int64)
+  - Godot.ResourceUid.HasId(System.Int64)
+  - Godot.ResourceUid.IdToText(System.Int64)
+  - Godot.ResourceUid.InvalidId
+  - Godot.ResourceUid.PathToUid(System.String)
+  - Godot.ResourceUid.RemoveId(System.Int64)
+  - Godot.ResourceUid.SetId(System.Int64,System.String)
+  - Godot.ResourceUid.Singleton
+  - Godot.ResourceUid.TextToId(System.String)
+  - Godot.ResourceUid.UidToPath(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ResourceUid
+  nameWithType: ResourceUid
+  fullName: Godot.ResourceUid
+  type: Class
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: >-
+      [GodotClassName("ResourceUID")]
+
+      public static class ResourceUid
+    content.vb: >-
+      <GodotClassName("ResourceUID")>
+
+      Public Module ResourceUid
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: Godot.GodotClassNameAttribute
+    ctor: Godot.GodotClassNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ResourceUID
+- uid: Godot.ResourceUid.InvalidId
+  commentId: F:Godot.ResourceUid.InvalidId
+  id: InvalidId
+  parent: Godot.ResourceUid
+  langs:
+  - csharp
+  - vb
+  name: InvalidId
+  nameWithType: ResourceUid.InvalidId
+  fullName: Godot.ResourceUid.InvalidId
+  type: Field
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public const long InvalidId = -1
+    return:
+      type: System.Int64
+    content.vb: Public Const InvalidId As Long = -1
+- uid: Godot.ResourceUid.IdToText(System.Int64)
+  commentId: M:Godot.ResourceUid.IdToText(System.Int64)
+  id: IdToText(System.Int64)
+  parent: Godot.ResourceUid
+  langs:
+  - csharp
+  - vb
+  name: IdToText(long)
+  nameWithType: ResourceUid.IdToText(long)
+  fullName: Godot.ResourceUid.IdToText(long)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string IdToText(long id)
+    parameters:
+    - id: id
+      type: System.Int64
+    return:
+      type: System.String
+    content.vb: Public Shared Function IdToText(id As Long) As String
+  overload: Godot.ResourceUid.IdToText*
+  nameWithType.vb: ResourceUid.IdToText(Long)
+  fullName.vb: Godot.ResourceUid.IdToText(Long)
+  name.vb: IdToText(Long)
+- uid: Godot.ResourceUid.TextToId(System.String)
+  commentId: M:Godot.ResourceUid.TextToId(System.String)
+  id: TextToId(System.String)
+  parent: Godot.ResourceUid
+  langs:
+  - csharp
+  - vb
+  name: TextToId(string)
+  nameWithType: ResourceUid.TextToId(string)
+  fullName: Godot.ResourceUid.TextToId(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static long TextToId(string textId)
+    parameters:
+    - id: textId
+      type: System.String
+    return:
+      type: System.Int64
+    content.vb: Public Shared Function TextToId(textId As String) As Long
+  overload: Godot.ResourceUid.TextToId*
+  nameWithType.vb: ResourceUid.TextToId(String)
+  fullName.vb: Godot.ResourceUid.TextToId(String)
+  name.vb: TextToId(String)
+- uid: Godot.ResourceUid.CreateId
+  commentId: M:Godot.ResourceUid.CreateId
+  id: CreateId
+  parent: Godot.ResourceUid
+  langs:
+  - csharp
+  - vb
+  name: CreateId()
+  nameWithType: ResourceUid.CreateId()
+  fullName: Godot.ResourceUid.CreateId()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static long CreateId()
+    return:
+      type: System.Int64
+    content.vb: Public Shared Function CreateId() As Long
+  overload: Godot.ResourceUid.CreateId*
+- uid: Godot.ResourceUid.CreateIdForPath(System.String)
+  commentId: M:Godot.ResourceUid.CreateIdForPath(System.String)
+  id: CreateIdForPath(System.String)
+  parent: Godot.ResourceUid
+  langs:
+  - csharp
+  - vb
+  name: CreateIdForPath(string)
+  nameWithType: ResourceUid.CreateIdForPath(string)
+  fullName: Godot.ResourceUid.CreateIdForPath(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static long CreateIdForPath(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.Int64
+    content.vb: Public Shared Function CreateIdForPath(path As String) As Long
+  overload: Godot.ResourceUid.CreateIdForPath*
+  nameWithType.vb: ResourceUid.CreateIdForPath(String)
+  fullName.vb: Godot.ResourceUid.CreateIdForPath(String)
+  name.vb: CreateIdForPath(String)
+- uid: Godot.ResourceUid.HasId(System.Int64)
+  commentId: M:Godot.ResourceUid.HasId(System.Int64)
+  id: HasId(System.Int64)
+  parent: Godot.ResourceUid
+  langs:
+  - csharp
+  - vb
+  name: HasId(long)
+  nameWithType: ResourceUid.HasId(long)
+  fullName: Godot.ResourceUid.HasId(long)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool HasId(long id)
+    parameters:
+    - id: id
+      type: System.Int64
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function HasId(id As Long) As Boolean
+  overload: Godot.ResourceUid.HasId*
+  nameWithType.vb: ResourceUid.HasId(Long)
+  fullName.vb: Godot.ResourceUid.HasId(Long)
+  name.vb: HasId(Long)
+- uid: Godot.ResourceUid.AddId(System.Int64,System.String)
+  commentId: M:Godot.ResourceUid.AddId(System.Int64,System.String)
+  id: AddId(System.Int64,System.String)
+  parent: Godot.ResourceUid
+  langs:
+  - csharp
+  - vb
+  name: AddId(long, string)
+  nameWithType: ResourceUid.AddId(long, string)
+  fullName: Godot.ResourceUid.AddId(long, string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void AddId(long id, string path)
+    parameters:
+    - id: id
+      type: System.Int64
+    - id: path
+      type: System.String
+    content.vb: Public Shared Sub AddId(id As Long, path As String)
+  overload: Godot.ResourceUid.AddId*
+  nameWithType.vb: ResourceUid.AddId(Long, String)
+  fullName.vb: Godot.ResourceUid.AddId(Long, String)
+  name.vb: AddId(Long, String)
+- uid: Godot.ResourceUid.SetId(System.Int64,System.String)
+  commentId: M:Godot.ResourceUid.SetId(System.Int64,System.String)
+  id: SetId(System.Int64,System.String)
+  parent: Godot.ResourceUid
+  langs:
+  - csharp
+  - vb
+  name: SetId(long, string)
+  nameWithType: ResourceUid.SetId(long, string)
+  fullName: Godot.ResourceUid.SetId(long, string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetId(long id, string path)
+    parameters:
+    - id: id
+      type: System.Int64
+    - id: path
+      type: System.String
+    content.vb: Public Shared Sub SetId(id As Long, path As String)
+  overload: Godot.ResourceUid.SetId*
+  nameWithType.vb: ResourceUid.SetId(Long, String)
+  fullName.vb: Godot.ResourceUid.SetId(Long, String)
+  name.vb: SetId(Long, String)
+- uid: Godot.ResourceUid.GetIdPath(System.Int64)
+  commentId: M:Godot.ResourceUid.GetIdPath(System.Int64)
+  id: GetIdPath(System.Int64)
+  parent: Godot.ResourceUid
+  langs:
+  - csharp
+  - vb
+  name: GetIdPath(long)
+  nameWithType: ResourceUid.GetIdPath(long)
+  fullName: Godot.ResourceUid.GetIdPath(long)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetIdPath(long id)
+    parameters:
+    - id: id
+      type: System.Int64
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetIdPath(id As Long) As String
+  overload: Godot.ResourceUid.GetIdPath*
+  nameWithType.vb: ResourceUid.GetIdPath(Long)
+  fullName.vb: Godot.ResourceUid.GetIdPath(Long)
+  name.vb: GetIdPath(Long)
+- uid: Godot.ResourceUid.RemoveId(System.Int64)
+  commentId: M:Godot.ResourceUid.RemoveId(System.Int64)
+  id: RemoveId(System.Int64)
+  parent: Godot.ResourceUid
+  langs:
+  - csharp
+  - vb
+  name: RemoveId(long)
+  nameWithType: ResourceUid.RemoveId(long)
+  fullName: Godot.ResourceUid.RemoveId(long)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void RemoveId(long id)
+    parameters:
+    - id: id
+      type: System.Int64
+    content.vb: Public Shared Sub RemoveId(id As Long)
+  overload: Godot.ResourceUid.RemoveId*
+  nameWithType.vb: ResourceUid.RemoveId(Long)
+  fullName.vb: Godot.ResourceUid.RemoveId(Long)
+  name.vb: RemoveId(Long)
+- uid: Godot.ResourceUid.UidToPath(System.String)
+  commentId: M:Godot.ResourceUid.UidToPath(System.String)
+  id: UidToPath(System.String)
+  parent: Godot.ResourceUid
+  langs:
+  - csharp
+  - vb
+  name: UidToPath(string)
+  nameWithType: ResourceUid.UidToPath(string)
+  fullName: Godot.ResourceUid.UidToPath(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string UidToPath(string uid)
+    parameters:
+    - id: uid
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function UidToPath(uid As String) As String
+  overload: Godot.ResourceUid.UidToPath*
+  nameWithType.vb: ResourceUid.UidToPath(String)
+  fullName.vb: Godot.ResourceUid.UidToPath(String)
+  name.vb: UidToPath(String)
+- uid: Godot.ResourceUid.PathToUid(System.String)
+  commentId: M:Godot.ResourceUid.PathToUid(System.String)
+  id: PathToUid(System.String)
+  parent: Godot.ResourceUid
+  langs:
+  - csharp
+  - vb
+  name: PathToUid(string)
+  nameWithType: ResourceUid.PathToUid(string)
+  fullName: Godot.ResourceUid.PathToUid(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string PathToUid(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function PathToUid(path As String) As String
+  overload: Godot.ResourceUid.PathToUid*
+  nameWithType.vb: ResourceUid.PathToUid(String)
+  fullName.vb: Godot.ResourceUid.PathToUid(String)
+  name.vb: PathToUid(String)
+- uid: Godot.ResourceUid.EnsurePath(System.String)
+  commentId: M:Godot.ResourceUid.EnsurePath(System.String)
+  id: EnsurePath(System.String)
+  parent: Godot.ResourceUid
+  langs:
+  - csharp
+  - vb
+  name: EnsurePath(string)
+  nameWithType: ResourceUid.EnsurePath(string)
+  fullName: Godot.ResourceUid.EnsurePath(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string EnsurePath(string pathOrUid)
+    parameters:
+    - id: pathOrUid
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function EnsurePath(pathOrUid As String) As String
+  overload: Godot.ResourceUid.EnsurePath*
+  nameWithType.vb: ResourceUid.EnsurePath(String)
+  fullName.vb: Godot.ResourceUid.EnsurePath(String)
+  name.vb: EnsurePath(String)
+- uid: Godot.ResourceUid.Singleton
+  commentId: P:Godot.ResourceUid.Singleton
+  id: Singleton
+  parent: Godot.ResourceUid
+  langs:
+  - csharp
+  - vb
+  name: Singleton
+  nameWithType: ResourceUid.Singleton
+  fullName: Godot.ResourceUid.Singleton
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static ResourceUidInstance Singleton { get; }
+    parameters: []
+    return:
+      type: Godot.ResourceUidInstance
+    content.vb: Public Shared ReadOnly Property Singleton As ResourceUidInstance
+  overload: Godot.ResourceUid.Singleton*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Godot.ResourceUid.IdToText*
+  commentId: Overload:Godot.ResourceUid.IdToText
+  isExternal: true
+  href: Godot.ResourceUid.html#Godot_ResourceUid_IdToText_System_Int64_
+  name: IdToText
+  nameWithType: ResourceUid.IdToText
+  fullName: Godot.ResourceUid.IdToText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.ResourceUid.TextToId*
+  commentId: Overload:Godot.ResourceUid.TextToId
+  isExternal: true
+  href: Godot.ResourceUid.html#Godot_ResourceUid_TextToId_System_String_
+  name: TextToId
+  nameWithType: ResourceUid.TextToId
+  fullName: Godot.ResourceUid.TextToId
+- uid: Godot.ResourceUid.CreateId*
+  commentId: Overload:Godot.ResourceUid.CreateId
+  isExternal: true
+  href: Godot.ResourceUid.html#Godot_ResourceUid_CreateId
+  name: CreateId
+  nameWithType: ResourceUid.CreateId
+  fullName: Godot.ResourceUid.CreateId
+- uid: Godot.ResourceUid.CreateIdForPath*
+  commentId: Overload:Godot.ResourceUid.CreateIdForPath
+  isExternal: true
+  href: Godot.ResourceUid.html#Godot_ResourceUid_CreateIdForPath_System_String_
+  name: CreateIdForPath
+  nameWithType: ResourceUid.CreateIdForPath
+  fullName: Godot.ResourceUid.CreateIdForPath
+- uid: Godot.ResourceUid.HasId*
+  commentId: Overload:Godot.ResourceUid.HasId
+  isExternal: true
+  href: Godot.ResourceUid.html#Godot_ResourceUid_HasId_System_Int64_
+  name: HasId
+  nameWithType: ResourceUid.HasId
+  fullName: Godot.ResourceUid.HasId
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.ResourceUid.AddId*
+  commentId: Overload:Godot.ResourceUid.AddId
+  isExternal: true
+  href: Godot.ResourceUid.html#Godot_ResourceUid_AddId_System_Int64_System_String_
+  name: AddId
+  nameWithType: ResourceUid.AddId
+  fullName: Godot.ResourceUid.AddId
+- uid: Godot.ResourceUid.SetId*
+  commentId: Overload:Godot.ResourceUid.SetId
+  isExternal: true
+  href: Godot.ResourceUid.html#Godot_ResourceUid_SetId_System_Int64_System_String_
+  name: SetId
+  nameWithType: ResourceUid.SetId
+  fullName: Godot.ResourceUid.SetId
+- uid: Godot.ResourceUid.GetIdPath*
+  commentId: Overload:Godot.ResourceUid.GetIdPath
+  isExternal: true
+  href: Godot.ResourceUid.html#Godot_ResourceUid_GetIdPath_System_Int64_
+  name: GetIdPath
+  nameWithType: ResourceUid.GetIdPath
+  fullName: Godot.ResourceUid.GetIdPath
+- uid: Godot.ResourceUid.RemoveId*
+  commentId: Overload:Godot.ResourceUid.RemoveId
+  isExternal: true
+  href: Godot.ResourceUid.html#Godot_ResourceUid_RemoveId_System_Int64_
+  name: RemoveId
+  nameWithType: ResourceUid.RemoveId
+  fullName: Godot.ResourceUid.RemoveId
+- uid: Godot.ResourceUid.UidToPath*
+  commentId: Overload:Godot.ResourceUid.UidToPath
+  isExternal: true
+  href: Godot.ResourceUid.html#Godot_ResourceUid_UidToPath_System_String_
+  name: UidToPath
+  nameWithType: ResourceUid.UidToPath
+  fullName: Godot.ResourceUid.UidToPath
+- uid: Godot.ResourceUid.PathToUid*
+  commentId: Overload:Godot.ResourceUid.PathToUid
+  isExternal: true
+  href: Godot.ResourceUid.html#Godot_ResourceUid_PathToUid_System_String_
+  name: PathToUid
+  nameWithType: ResourceUid.PathToUid
+  fullName: Godot.ResourceUid.PathToUid
+- uid: Godot.ResourceUid.EnsurePath*
+  commentId: Overload:Godot.ResourceUid.EnsurePath
+  isExternal: true
+  href: Godot.ResourceUid.html#Godot_ResourceUid_EnsurePath_System_String_
+  name: EnsurePath
+  nameWithType: ResourceUid.EnsurePath
+  fullName: Godot.ResourceUid.EnsurePath
+- uid: Godot.ResourceUid.Singleton*
+  commentId: Overload:Godot.ResourceUid.Singleton
+  isExternal: true
+  href: Godot.ResourceUid.html#Godot_ResourceUid_Singleton
+  name: Singleton
+  nameWithType: ResourceUid.Singleton
+  fullName: Godot.ResourceUid.Singleton
+- uid: Godot.ResourceUidInstance
+  commentId: T:Godot.ResourceUidInstance
+  parent: Godot
+  isExternal: true
+  href: Godot.ResourceUidInstance.html
+  name: ResourceUidInstance
+  nameWithType: ResourceUidInstance
+  fullName: Godot.ResourceUidInstance

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Example Region Configuration | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Example Region Configuration | mysite ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ITWascht/exerciseWithCode/blob/master/docs/example_region.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="example-region-configuration">Example Region Configuration</h1>
+
+<p>This example shows how a region is fully defined using a JSON rules file.</p>
+<hr>
+<h2 id="region-identity">Region Identity</h2>
+<p><code>&quot;regionId&quot;: &quot;field_road_forest&quot;</code>
+<strong>File:</strong> <a href="examples/field_road_forest_exs.rules.json"><code>field_road_forest_exs.rules.json</code></a></p>
+<p>Defines the region name and links this configuration to the matching asset set.</p>
+<p align="center">
+  <img src="images/field_road_forest.png" width="850">
+</p>
+This example shows how a region is fully defined using a JSON rules file.
+---
+<h2 id="terrain-configuration">Terrain Configuration</h2>
+<p><strong>Base parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>noiseScale</td>
+<td>2</td>
+<td>Controls terrain variation frequency</td>
+</tr>
+<tr>
+<td>heightFactor</td>
+<td>0.5</td>
+<td>Scales elevation intensity</td>
+</tr>
+<tr>
+<td>offSet</td>
+<td>0</td>
+<td>Vertical terrain shift</td>
+</tr>
+<tr>
+<td>defaultLayer</td>
+<td>grass</td>
+<td>Base terrain texture</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="biome-texture-overrides">Biome Texture Overrides</h3>
+<table>
+<thead>
+<tr>
+<th>Biome ID</th>
+<th>Texture Layer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>field_ground</td>
+</tr>
+<tr>
+<td>1</td>
+<td>forest_floor</td>
+</tr>
+<tr>
+<td>2</td>
+<td>road_ground</td>
+</tr>
+</tbody>
+</table>
+<p>These overrides replace the default terrain layer depending on biome classification.</p>
+<hr>
+<h2 id="object-spawning">Object Spawning</h2>
+<p>Each entry defines how objects appear in the scene.</p>
+<h3 id="forest-trees">Forest Trees</h3>
+<ul>
+<li><strong>assetId:</strong> pine_tree</li>
+<li><strong>densityPerKm2:</strong> 15000</li>
+<li><strong>allowedBiomes:</strong> [1]</li>
+</ul>
+<p>Pine trees spawn only in the forest biome.</p>
+<hr>
+<h3 id="wheat-fields">Wheat Fields</h3>
+<ul>
+<li><strong>assetId:</strong> wheat</li>
+<li><strong>densityPerKm2:</strong> 300000</li>
+<li><strong>allowedBiomes:</strong> [0]</li>
+</ul>
+<p>High-density crop spawning in field areas.</p>
+<hr>
+<h3 id="road-targets">Road Targets</h3>
+<ul>
+<li><strong>assetId:</strong> target</li>
+<li><strong>densityPerKm2:</strong> 1</li>
+<li><strong>minCount:</strong> 1</li>
+<li><strong>isTarget:</strong> true</li>
+<li><strong>allowedBiomes:</strong> [2]</li>
+</ul>
+<p>This object:</p>
+<ul>
+<li>Is treated as a <strong>scene target</strong></li>
+<li>Spawns on the road biome</li>
+<li>Must be visible in the camera frame</li>
+<li>Has its coordinates exported to JSON</li>
+</ul>
+<hr>
+<h2 id="weather-configuration">Weather Configuration</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>preset</td>
+<td>Stormy</td>
+<td>Dark sky and heavy clouds</td>
+</tr>
+<tr>
+<td>rainEnabled</td>
+<td>true</td>
+<td>Rain system active</td>
+</tr>
+<tr>
+<td>rainProfile</td>
+<td>storm</td>
+<td>Intense rainfall visuals</td>
+</tr>
+<tr>
+<td>snowEnabled</td>
+<td>false</td>
+<td>No snowfall</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="resulting-scene">Resulting Scene</h2>
+<p>Using this configuration, the system generates:</p>
+<ul>
+<li>A mixed environment with fields, forest, and road areas</li>
+<li>Region-specific textures</li>
+<li>Biome-dependent object placement</li>
+<li>Stormy weather conditions</li>
+<li>At least one visible target object on the road</li>
+<li>Screenshot + JSON export of target coordinates</li>
+</ul>
+<hr>
+<h1 id="example-region-configuration--winter-tundra">Example Region Configuration – Winter Tundra</h1>
+<p>This configuration defines a cold, snow-dominated environment with rocky slopes and sparse vegetation.</p>
+<p><strong>File:</strong> <a href="examples/winter_tundra.rules_exs.json"><code>winter_tundra_exs.rules.json</code></a></p>
+<p align="center">
+  <img src="images/winter_tundra.png" width="850">
+</p>
+<h2 id="this-example-shows-how-a-region-is-fully-defined-using-a-json-rules-file">This example shows how a region is fully defined using a JSON rules file.</h2>
+<h2 id="terrain-behavior">Terrain Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>noiseScale</td>
+<td>1.5</td>
+<td>Medium terrain variation</td>
+</tr>
+<tr>
+<td>heightFactor</td>
+<td>1.0</td>
+<td>Strong vertical elevation</td>
+</tr>
+<tr>
+<td>defaultLayer</td>
+<td>grass</td>
+<td>Base layer before overrides</td>
+</tr>
+</tbody>
+</table>
+<h3 id="height-based-layers">Height-Based Layers</h3>
+<table>
+<thead>
+<tr>
+<th>Height Range (m)</th>
+<th>Layer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-100 → 18</td>
+<td>snowGround</td>
+</tr>
+<tr>
+<td>18 → 25</td>
+<td>rock</td>
+</tr>
+<tr>
+<td>25 → 999</td>
+<td>snow</td>
+</tr>
+</tbody>
+</table>
+<p>Terrain becomes snow-covered at higher elevations.</p>
+<hr>
+<h3 id="slope-overrides">Slope Overrides</h3>
+<p>Steep terrain automatically transitions to rock:</p>
+<table>
+<thead>
+<tr>
+<th>Slope Angle</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&gt;45°</td>
+<td>snowGround → rock</td>
+</tr>
+<tr>
+<td>&gt;50°</td>
+<td>rock stays rock</td>
+</tr>
+<tr>
+<td>&gt;60°</td>
+<td>snow blends into rock</td>
+</tr>
+</tbody>
+</table>
+<p>This prevents unrealistic snow on cliffs.</p>
+<hr>
+<h3 id="biome-overrides">Biome Overrides</h3>
+<table>
+<thead>
+<tr>
+<th>Biome ID</th>
+<th>Layer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>field_ground</td>
+</tr>
+<tr>
+<td>1</td>
+<td>snowGround</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="object-spawning-1">Object Spawning</h2>
+<h3 id="pine-trees">Pine Trees</h3>
+<ul>
+<li>Forest biome only</li>
+<li>Moderate density</li>
+<li>No slope alignment</li>
+</ul>
+<h3 id="tundra-shrubs">Tundra Shrubs</h3>
+<ul>
+<li>Spawn in multiple biomes</li>
+<li>High density</li>
+<li>Align with terrain slope</li>
+</ul>
+<h3 id="rocks">Rocks</h3>
+<ul>
+<li>Low density</li>
+<li>Large minimum distance</li>
+</ul>
+<h3 id="targets">Targets</h3>
+<ul>
+<li><strong>3 targets guaranteed</strong></li>
+<li>Spaced apart</li>
+<li>Must appear in camera view</li>
+<li>Exported to JSON</li>
+</ul>
+<hr>
+<h2 id="weather-setup">Weather Setup</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>preset</td>
+<td>Stormy</td>
+<td>Dark sky and heavy cloud cover</td>
+</tr>
+<tr>
+<td>rainEnabled</td>
+<td>true</td>
+<td>Rain system active</td>
+</tr>
+<tr>
+<td>rainProfile</td>
+<td>storm</td>
+<td>Intense precipitation visuals</td>
+</tr>
+<tr>
+<td>snowEnabled</td>
+<td>false</td>
+<td>Snow particles disabled</td>
+</tr>
+</tbody>
+</table>
+<p>Despite the snowy terrain, active precipitation is configured as storm rain for dramatic atmosphere.</p>
+<hr>
+<h2 id="resulting-scene-1">Resulting Scene</h2>
+<p>This configuration produces:</p>
+<ul>
+<li>Snow-covered landscape with rocky cliffs</li>
+<li>Sparse cold-climate vegetation</li>
+<li>High-contrast lighting</li>
+<li>Multiple visible targets</li>
+<li>Screenshot + coordinate export</li>
+</ul>
+<hr>
+<p>This example shows how terrain, slope rules, spawning density, and atmosphere combine to form a cold-region biome.</p>
+<hr>
+<p>This example demonstrates how terrain, assets, objects, weather, and output behavior are fully controlled through region configuration.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ITWascht/exerciseWithCode/blob/master/docs/example_region.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

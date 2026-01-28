@@ -1,0 +1,223 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.EditorPlugin.SceneSavedEventHandler
+  commentId: T:Godot.EditorPlugin.SceneSavedEventHandler
+  id: EditorPlugin.SceneSavedEventHandler
+  parent: Godot
+  children:
+  - Godot.EditorPlugin.SceneSavedEventHandler.#ctor(System.Object,System.IntPtr)
+  - Godot.EditorPlugin.SceneSavedEventHandler.BeginInvoke(System.String,System.AsyncCallback,System.Object)
+  - Godot.EditorPlugin.SceneSavedEventHandler.EndInvoke(System.IAsyncResult)
+  - Godot.EditorPlugin.SceneSavedEventHandler.Invoke(System.String)
+  langs:
+  - csharp
+  - vb
+  name: EditorPlugin.SceneSavedEventHandler
+  nameWithType: EditorPlugin.SceneSavedEventHandler
+  fullName: Godot.EditorPlugin.SceneSavedEventHandler
+  type: Delegate
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public delegate void EditorPlugin.SceneSavedEventHandler(string filepath)
+    parameters:
+    - id: filepath
+      type: System.String
+    content.vb: Public Delegate Sub EditorPlugin.SceneSavedEventHandler(filepath As String)
+- uid: Godot.EditorPlugin.SceneSavedEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Godot.EditorPlugin.SceneSavedEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Godot.EditorPlugin.SceneSavedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: SceneSavedEventHandler(object, nint)
+  nameWithType: EditorPlugin.SceneSavedEventHandler.SceneSavedEventHandler(object, nint)
+  fullName: Godot.EditorPlugin.SceneSavedEventHandler.SceneSavedEventHandler(object, nint)
+  type: Constructor
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public SceneSavedEventHandler(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Godot.EditorPlugin.SceneSavedEventHandler.#ctor*
+  nameWithType.vb: EditorPlugin.SceneSavedEventHandler.New(Object, IntPtr)
+  fullName.vb: Godot.EditorPlugin.SceneSavedEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Godot.EditorPlugin.SceneSavedEventHandler.Invoke(System.String)
+  commentId: M:Godot.EditorPlugin.SceneSavedEventHandler.Invoke(System.String)
+  id: Invoke(System.String)
+  parent: Godot.EditorPlugin.SceneSavedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(string)
+  nameWithType: EditorPlugin.SceneSavedEventHandler.Invoke(string)
+  fullName: Godot.EditorPlugin.SceneSavedEventHandler.Invoke(string)
+  type: Method
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public virtual void Invoke(string filepath)
+    parameters:
+    - id: filepath
+      type: System.String
+    content.vb: Public Overridable Sub Invoke(filepath As String)
+  overload: Godot.EditorPlugin.SceneSavedEventHandler.Invoke*
+  nameWithType.vb: EditorPlugin.SceneSavedEventHandler.Invoke(String)
+  fullName.vb: Godot.EditorPlugin.SceneSavedEventHandler.Invoke(String)
+  name.vb: Invoke(String)
+- uid: Godot.EditorPlugin.SceneSavedEventHandler.BeginInvoke(System.String,System.AsyncCallback,System.Object)
+  commentId: M:Godot.EditorPlugin.SceneSavedEventHandler.BeginInvoke(System.String,System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.String,System.AsyncCallback,System.Object)
+  parent: Godot.EditorPlugin.SceneSavedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(string, AsyncCallback, object)
+  nameWithType: EditorPlugin.SceneSavedEventHandler.BeginInvoke(string, AsyncCallback, object)
+  fullName: Godot.EditorPlugin.SceneSavedEventHandler.BeginInvoke(string, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(string filepath, AsyncCallback callback, object @object)
+    parameters:
+    - id: filepath
+      type: System.String
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(filepath As String, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Godot.EditorPlugin.SceneSavedEventHandler.BeginInvoke*
+  nameWithType.vb: EditorPlugin.SceneSavedEventHandler.BeginInvoke(String, AsyncCallback, Object)
+  fullName.vb: Godot.EditorPlugin.SceneSavedEventHandler.BeginInvoke(String, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(String, AsyncCallback, Object)
+- uid: Godot.EditorPlugin.SceneSavedEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Godot.EditorPlugin.SceneSavedEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Godot.EditorPlugin.SceneSavedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: EditorPlugin.SceneSavedEventHandler.EndInvoke(IAsyncResult)
+  fullName: Godot.EditorPlugin.SceneSavedEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: Godot.EditorPlugin.SceneSavedEventHandler.EndInvoke*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.EditorPlugin.SceneSavedEventHandler.#ctor*
+  commentId: Overload:Godot.EditorPlugin.SceneSavedEventHandler.#ctor
+  isExternal: true
+  href: Godot.EditorPlugin.SceneSavedEventHandler.html#Godot_EditorPlugin_SceneSavedEventHandler__ctor_System_Object_System_IntPtr_
+  name: SceneSavedEventHandler
+  nameWithType: EditorPlugin.SceneSavedEventHandler.SceneSavedEventHandler
+  fullName: Godot.EditorPlugin.SceneSavedEventHandler.SceneSavedEventHandler
+  nameWithType.vb: EditorPlugin.SceneSavedEventHandler.New
+  fullName.vb: Godot.EditorPlugin.SceneSavedEventHandler.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Godot.EditorPlugin.SceneSavedEventHandler.Invoke*
+  commentId: Overload:Godot.EditorPlugin.SceneSavedEventHandler.Invoke
+  isExternal: true
+  href: Godot.EditorPlugin.SceneSavedEventHandler.html#Godot_EditorPlugin_SceneSavedEventHandler_Invoke_System_String_
+  name: Invoke
+  nameWithType: EditorPlugin.SceneSavedEventHandler.Invoke
+  fullName: Godot.EditorPlugin.SceneSavedEventHandler.Invoke
+- uid: Godot.EditorPlugin.SceneSavedEventHandler.BeginInvoke*
+  commentId: Overload:Godot.EditorPlugin.SceneSavedEventHandler.BeginInvoke
+  isExternal: true
+  href: Godot.EditorPlugin.SceneSavedEventHandler.html#Godot_EditorPlugin_SceneSavedEventHandler_BeginInvoke_System_String_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: EditorPlugin.SceneSavedEventHandler.BeginInvoke
+  fullName: Godot.EditorPlugin.SceneSavedEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Godot.EditorPlugin.SceneSavedEventHandler.EndInvoke*
+  commentId: Overload:Godot.EditorPlugin.SceneSavedEventHandler.EndInvoke
+  isExternal: true
+  href: Godot.EditorPlugin.SceneSavedEventHandler.html#Godot_EditorPlugin_SceneSavedEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: EditorPlugin.SceneSavedEventHandler.EndInvoke
+  fullName: Godot.EditorPlugin.SceneSavedEventHandler.EndInvoke

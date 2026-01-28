@@ -1,0 +1,1835 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.Transform3D
+  commentId: T:Godot.Transform3D
+  id: Transform3D
+  parent: Godot
+  children:
+  - Godot.Transform3D.#ctor(Godot.Basis,Godot.Vector3)
+  - Godot.Transform3D.#ctor(Godot.Projection)
+  - Godot.Transform3D.#ctor(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  - Godot.Transform3D.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Godot.Transform3D.AffineInverse
+  - Godot.Transform3D.Basis
+  - Godot.Transform3D.Equals(Godot.Transform3D)
+  - Godot.Transform3D.Equals(System.Object)
+  - Godot.Transform3D.FlipX
+  - Godot.Transform3D.FlipY
+  - Godot.Transform3D.FlipZ
+  - Godot.Transform3D.GetHashCode
+  - Godot.Transform3D.Identity
+  - Godot.Transform3D.InterpolateWith(Godot.Transform3D,System.Single)
+  - Godot.Transform3D.Inverse
+  - Godot.Transform3D.IsEqualApprox(Godot.Transform3D)
+  - Godot.Transform3D.IsFinite
+  - Godot.Transform3D.Item(System.Int32)
+  - Godot.Transform3D.Item(System.Int32,System.Int32)
+  - Godot.Transform3D.LookingAt(Godot.Vector3,System.Nullable{Godot.Vector3},System.Boolean)
+  - Godot.Transform3D.Origin
+  - Godot.Transform3D.Orthonormalized
+  - Godot.Transform3D.Rotated(Godot.Vector3,System.Single)
+  - Godot.Transform3D.RotatedLocal(Godot.Vector3,System.Single)
+  - Godot.Transform3D.Scaled(Godot.Vector3)
+  - Godot.Transform3D.ScaledLocal(Godot.Vector3)
+  - Godot.Transform3D.ToString
+  - Godot.Transform3D.ToString(System.String)
+  - Godot.Transform3D.Translated(Godot.Vector3)
+  - Godot.Transform3D.TranslatedLocal(Godot.Vector3)
+  - Godot.Transform3D.op_Equality(Godot.Transform3D,Godot.Transform3D)
+  - Godot.Transform3D.op_Inequality(Godot.Transform3D,Godot.Transform3D)
+  - Godot.Transform3D.op_Multiply(Godot.Aabb,Godot.Transform3D)
+  - Godot.Transform3D.op_Multiply(Godot.Plane,Godot.Transform3D)
+  - Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Aabb)
+  - Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Plane)
+  - Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Transform3D)
+  - Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Vector3)
+  - Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Vector3[])
+  - Godot.Transform3D.op_Multiply(Godot.Vector3,Godot.Transform3D)
+  - Godot.Transform3D.op_Multiply(Godot.Vector3[],Godot.Transform3D)
+  langs:
+  - csharp
+  - vb
+  name: Transform3D
+  nameWithType: Transform3D
+  fullName: Godot.Transform3D
+  type: Struct
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: 'public struct Transform3D : IEquatable<Transform3D>'
+    content.vb: Public Structure Transform3D Implements IEquatable(Of Transform3D)
+  implements:
+  - System.IEquatable{Godot.Transform3D}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Godot.Transform3D.Basis
+  commentId: F:Godot.Transform3D.Basis
+  id: Basis
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: Basis
+  nameWithType: Transform3D.Basis
+  fullName: Godot.Transform3D.Basis
+  type: Field
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Basis Basis
+    return:
+      type: Godot.Basis
+    content.vb: Public Basis As Basis
+- uid: Godot.Transform3D.Origin
+  commentId: F:Godot.Transform3D.Origin
+  id: Origin
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: Origin
+  nameWithType: Transform3D.Origin
+  fullName: Godot.Transform3D.Origin
+  type: Field
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 Origin
+    return:
+      type: Godot.Vector3
+    content.vb: Public Origin As Vector3
+- uid: Godot.Transform3D.AffineInverse
+  commentId: M:Godot.Transform3D.AffineInverse
+  id: AffineInverse
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: AffineInverse()
+  nameWithType: Transform3D.AffineInverse()
+  fullName: Godot.Transform3D.AffineInverse()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Transform3D AffineInverse()
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Function AffineInverse() As Transform3D
+  overload: Godot.Transform3D.AffineInverse*
+- uid: Godot.Transform3D.InterpolateWith(Godot.Transform3D,System.Single)
+  commentId: M:Godot.Transform3D.InterpolateWith(Godot.Transform3D,System.Single)
+  id: InterpolateWith(Godot.Transform3D,System.Single)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: InterpolateWith(Transform3D, float)
+  nameWithType: Transform3D.InterpolateWith(Transform3D, float)
+  fullName: Godot.Transform3D.InterpolateWith(Godot.Transform3D, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Transform3D InterpolateWith(Transform3D transform, float weight)
+    parameters:
+    - id: transform
+      type: Godot.Transform3D
+    - id: weight
+      type: System.Single
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Function InterpolateWith(transform As Transform3D, weight As Single) As Transform3D
+  overload: Godot.Transform3D.InterpolateWith*
+  nameWithType.vb: Transform3D.InterpolateWith(Transform3D, Single)
+  fullName.vb: Godot.Transform3D.InterpolateWith(Godot.Transform3D, Single)
+  name.vb: InterpolateWith(Transform3D, Single)
+- uid: Godot.Transform3D.Inverse
+  commentId: M:Godot.Transform3D.Inverse
+  id: Inverse
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: Inverse()
+  nameWithType: Transform3D.Inverse()
+  fullName: Godot.Transform3D.Inverse()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Transform3D Inverse()
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Function Inverse() As Transform3D
+  overload: Godot.Transform3D.Inverse*
+- uid: Godot.Transform3D.IsFinite
+  commentId: M:Godot.Transform3D.IsFinite
+  id: IsFinite
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: IsFinite()
+  nameWithType: Transform3D.IsFinite()
+  fullName: Godot.Transform3D.IsFinite()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool IsFinite()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsFinite() As Boolean
+  overload: Godot.Transform3D.IsFinite*
+- uid: Godot.Transform3D.LookingAt(Godot.Vector3,System.Nullable{Godot.Vector3},System.Boolean)
+  commentId: M:Godot.Transform3D.LookingAt(Godot.Vector3,System.Nullable{Godot.Vector3},System.Boolean)
+  id: LookingAt(Godot.Vector3,System.Nullable{Godot.Vector3},System.Boolean)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: LookingAt(Vector3, Vector3?, bool)
+  nameWithType: Transform3D.LookingAt(Vector3, Vector3?, bool)
+  fullName: Godot.Transform3D.LookingAt(Godot.Vector3, Godot.Vector3?, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Transform3D LookingAt(Vector3 target, Vector3? up = null, bool useModelFront = false)
+    parameters:
+    - id: target
+      type: Godot.Vector3
+    - id: up
+      type: System.Nullable{Godot.Vector3}
+    - id: useModelFront
+      type: System.Boolean
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Function LookingAt(target As Vector3, up As Vector3? = Nothing, useModelFront As Boolean = False) As Transform3D
+  overload: Godot.Transform3D.LookingAt*
+  nameWithType.vb: Transform3D.LookingAt(Vector3, Vector3?, Boolean)
+  fullName.vb: Godot.Transform3D.LookingAt(Godot.Vector3, Godot.Vector3?, Boolean)
+  name.vb: LookingAt(Vector3, Vector3?, Boolean)
+- uid: Godot.Transform3D.Orthonormalized
+  commentId: M:Godot.Transform3D.Orthonormalized
+  id: Orthonormalized
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: Orthonormalized()
+  nameWithType: Transform3D.Orthonormalized()
+  fullName: Godot.Transform3D.Orthonormalized()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Transform3D Orthonormalized()
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Function Orthonormalized() As Transform3D
+  overload: Godot.Transform3D.Orthonormalized*
+- uid: Godot.Transform3D.Rotated(Godot.Vector3,System.Single)
+  commentId: M:Godot.Transform3D.Rotated(Godot.Vector3,System.Single)
+  id: Rotated(Godot.Vector3,System.Single)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: Rotated(Vector3, float)
+  nameWithType: Transform3D.Rotated(Vector3, float)
+  fullName: Godot.Transform3D.Rotated(Godot.Vector3, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Transform3D Rotated(Vector3 axis, float angle)
+    parameters:
+    - id: axis
+      type: Godot.Vector3
+    - id: angle
+      type: System.Single
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Function Rotated(axis As Vector3, angle As Single) As Transform3D
+  overload: Godot.Transform3D.Rotated*
+  nameWithType.vb: Transform3D.Rotated(Vector3, Single)
+  fullName.vb: Godot.Transform3D.Rotated(Godot.Vector3, Single)
+  name.vb: Rotated(Vector3, Single)
+- uid: Godot.Transform3D.RotatedLocal(Godot.Vector3,System.Single)
+  commentId: M:Godot.Transform3D.RotatedLocal(Godot.Vector3,System.Single)
+  id: RotatedLocal(Godot.Vector3,System.Single)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: RotatedLocal(Vector3, float)
+  nameWithType: Transform3D.RotatedLocal(Vector3, float)
+  fullName: Godot.Transform3D.RotatedLocal(Godot.Vector3, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Transform3D RotatedLocal(Vector3 axis, float angle)
+    parameters:
+    - id: axis
+      type: Godot.Vector3
+    - id: angle
+      type: System.Single
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Function RotatedLocal(axis As Vector3, angle As Single) As Transform3D
+  overload: Godot.Transform3D.RotatedLocal*
+  nameWithType.vb: Transform3D.RotatedLocal(Vector3, Single)
+  fullName.vb: Godot.Transform3D.RotatedLocal(Godot.Vector3, Single)
+  name.vb: RotatedLocal(Vector3, Single)
+- uid: Godot.Transform3D.Scaled(Godot.Vector3)
+  commentId: M:Godot.Transform3D.Scaled(Godot.Vector3)
+  id: Scaled(Godot.Vector3)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: Scaled(Vector3)
+  nameWithType: Transform3D.Scaled(Vector3)
+  fullName: Godot.Transform3D.Scaled(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Transform3D Scaled(Vector3 scale)
+    parameters:
+    - id: scale
+      type: Godot.Vector3
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Function Scaled(scale As Vector3) As Transform3D
+  overload: Godot.Transform3D.Scaled*
+- uid: Godot.Transform3D.ScaledLocal(Godot.Vector3)
+  commentId: M:Godot.Transform3D.ScaledLocal(Godot.Vector3)
+  id: ScaledLocal(Godot.Vector3)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: ScaledLocal(Vector3)
+  nameWithType: Transform3D.ScaledLocal(Vector3)
+  fullName: Godot.Transform3D.ScaledLocal(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Transform3D ScaledLocal(Vector3 scale)
+    parameters:
+    - id: scale
+      type: Godot.Vector3
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Function ScaledLocal(scale As Vector3) As Transform3D
+  overload: Godot.Transform3D.ScaledLocal*
+- uid: Godot.Transform3D.Translated(Godot.Vector3)
+  commentId: M:Godot.Transform3D.Translated(Godot.Vector3)
+  id: Translated(Godot.Vector3)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: Translated(Vector3)
+  nameWithType: Transform3D.Translated(Vector3)
+  fullName: Godot.Transform3D.Translated(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Transform3D Translated(Vector3 offset)
+    parameters:
+    - id: offset
+      type: Godot.Vector3
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Function Translated(offset As Vector3) As Transform3D
+  overload: Godot.Transform3D.Translated*
+- uid: Godot.Transform3D.TranslatedLocal(Godot.Vector3)
+  commentId: M:Godot.Transform3D.TranslatedLocal(Godot.Vector3)
+  id: TranslatedLocal(Godot.Vector3)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: TranslatedLocal(Vector3)
+  nameWithType: Transform3D.TranslatedLocal(Vector3)
+  fullName: Godot.Transform3D.TranslatedLocal(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Transform3D TranslatedLocal(Vector3 offset)
+    parameters:
+    - id: offset
+      type: Godot.Vector3
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Function TranslatedLocal(offset As Vector3) As Transform3D
+  overload: Godot.Transform3D.TranslatedLocal*
+- uid: Godot.Transform3D.#ctor(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  commentId: M:Godot.Transform3D.#ctor(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)
+  id: '#ctor(Godot.Vector3,Godot.Vector3,Godot.Vector3,Godot.Vector3)'
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: Transform3D(Vector3, Vector3, Vector3, Vector3)
+  nameWithType: Transform3D.Transform3D(Vector3, Vector3, Vector3, Vector3)
+  fullName: Godot.Transform3D.Transform3D(Godot.Vector3, Godot.Vector3, Godot.Vector3, Godot.Vector3)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Transform3D(Vector3 column0, Vector3 column1, Vector3 column2, Vector3 origin)
+    parameters:
+    - id: column0
+      type: Godot.Vector3
+    - id: column1
+      type: Godot.Vector3
+    - id: column2
+      type: Godot.Vector3
+    - id: origin
+      type: Godot.Vector3
+    content.vb: Public Sub New(column0 As Vector3, column1 As Vector3, column2 As Vector3, origin As Vector3)
+  overload: Godot.Transform3D.#ctor*
+  nameWithType.vb: Transform3D.New(Vector3, Vector3, Vector3, Vector3)
+  fullName.vb: Godot.Transform3D.New(Godot.Vector3, Godot.Vector3, Godot.Vector3, Godot.Vector3)
+  name.vb: New(Vector3, Vector3, Vector3, Vector3)
+- uid: Godot.Transform3D.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Godot.Transform3D.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)'
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: Transform3D(float, float, float, float, float, float, float, float, float, float, float, float)
+  nameWithType: Transform3D.Transform3D(float, float, float, float, float, float, float, float, float, float, float, float)
+  fullName: Godot.Transform3D.Transform3D(float, float, float, float, float, float, float, float, float, float, float, float)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Transform3D(float xx, float yx, float zx, float xy, float yy, float zy, float xz, float yz, float zz, float ox, float oy, float oz)
+    parameters:
+    - id: xx
+      type: System.Single
+    - id: yx
+      type: System.Single
+    - id: zx
+      type: System.Single
+    - id: xy
+      type: System.Single
+    - id: yy
+      type: System.Single
+    - id: zy
+      type: System.Single
+    - id: xz
+      type: System.Single
+    - id: yz
+      type: System.Single
+    - id: zz
+      type: System.Single
+    - id: ox
+      type: System.Single
+    - id: oy
+      type: System.Single
+    - id: oz
+      type: System.Single
+    content.vb: Public Sub New(xx As Single, yx As Single, zx As Single, xy As Single, yy As Single, zy As Single, xz As Single, yz As Single, zz As Single, ox As Single, oy As Single, oz As Single)
+  overload: Godot.Transform3D.#ctor*
+  nameWithType.vb: Transform3D.New(Single, Single, Single, Single, Single, Single, Single, Single, Single, Single, Single, Single)
+  fullName.vb: Godot.Transform3D.New(Single, Single, Single, Single, Single, Single, Single, Single, Single, Single, Single, Single)
+  name.vb: New(Single, Single, Single, Single, Single, Single, Single, Single, Single, Single, Single, Single)
+- uid: Godot.Transform3D.#ctor(Godot.Basis,Godot.Vector3)
+  commentId: M:Godot.Transform3D.#ctor(Godot.Basis,Godot.Vector3)
+  id: '#ctor(Godot.Basis,Godot.Vector3)'
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: Transform3D(Basis, Vector3)
+  nameWithType: Transform3D.Transform3D(Basis, Vector3)
+  fullName: Godot.Transform3D.Transform3D(Godot.Basis, Godot.Vector3)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Transform3D(Basis basis, Vector3 origin)
+    parameters:
+    - id: basis
+      type: Godot.Basis
+    - id: origin
+      type: Godot.Vector3
+    content.vb: Public Sub New(basis As Basis, origin As Vector3)
+  overload: Godot.Transform3D.#ctor*
+  nameWithType.vb: Transform3D.New(Basis, Vector3)
+  fullName.vb: Godot.Transform3D.New(Godot.Basis, Godot.Vector3)
+  name.vb: New(Basis, Vector3)
+- uid: Godot.Transform3D.#ctor(Godot.Projection)
+  commentId: M:Godot.Transform3D.#ctor(Godot.Projection)
+  id: '#ctor(Godot.Projection)'
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: Transform3D(Projection)
+  nameWithType: Transform3D.Transform3D(Projection)
+  fullName: Godot.Transform3D.Transform3D(Godot.Projection)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Transform3D(Projection projection)
+    parameters:
+    - id: projection
+      type: Godot.Projection
+    content.vb: Public Sub New(projection As Projection)
+  overload: Godot.Transform3D.#ctor*
+  nameWithType.vb: Transform3D.New(Projection)
+  fullName.vb: Godot.Transform3D.New(Godot.Projection)
+  name.vb: New(Projection)
+- uid: Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Transform3D)
+  commentId: M:Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Transform3D)
+  id: op_Multiply(Godot.Transform3D,Godot.Transform3D)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: operator *(Transform3D, Transform3D)
+  nameWithType: Transform3D.operator *(Transform3D, Transform3D)
+  fullName: Godot.Transform3D.operator *(Godot.Transform3D, Godot.Transform3D)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Transform3D operator *(Transform3D left, Transform3D right)
+    parameters:
+    - id: left
+      type: Godot.Transform3D
+    - id: right
+      type: Godot.Transform3D
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Shared Operator *(left As Transform3D, right As Transform3D) As Transform3D
+  overload: Godot.Transform3D.op_Multiply*
+  nameWithType.vb: Transform3D.*(Transform3D, Transform3D)
+  fullName.vb: Godot.Transform3D.*(Godot.Transform3D, Godot.Transform3D)
+  name.vb: '*(Transform3D, Transform3D)'
+- uid: Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Vector3)
+  commentId: M:Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Vector3)
+  id: op_Multiply(Godot.Transform3D,Godot.Vector3)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: operator *(Transform3D, Vector3)
+  nameWithType: Transform3D.operator *(Transform3D, Vector3)
+  fullName: Godot.Transform3D.operator *(Godot.Transform3D, Godot.Vector3)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3 operator *(Transform3D transform, Vector3 vector)
+    parameters:
+    - id: transform
+      type: Godot.Transform3D
+    - id: vector
+      type: Godot.Vector3
+    return:
+      type: Godot.Vector3
+    content.vb: Public Shared Operator *(transform As Transform3D, vector As Vector3) As Vector3
+  overload: Godot.Transform3D.op_Multiply*
+  nameWithType.vb: Transform3D.*(Transform3D, Vector3)
+  fullName.vb: Godot.Transform3D.*(Godot.Transform3D, Godot.Vector3)
+  name.vb: '*(Transform3D, Vector3)'
+- uid: Godot.Transform3D.op_Multiply(Godot.Vector3,Godot.Transform3D)
+  commentId: M:Godot.Transform3D.op_Multiply(Godot.Vector3,Godot.Transform3D)
+  id: op_Multiply(Godot.Vector3,Godot.Transform3D)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: operator *(Vector3, Transform3D)
+  nameWithType: Transform3D.operator *(Vector3, Transform3D)
+  fullName: Godot.Transform3D.operator *(Godot.Vector3, Godot.Transform3D)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3 operator *(Vector3 vector, Transform3D transform)
+    parameters:
+    - id: vector
+      type: Godot.Vector3
+    - id: transform
+      type: Godot.Transform3D
+    return:
+      type: Godot.Vector3
+    content.vb: Public Shared Operator *(vector As Vector3, transform As Transform3D) As Vector3
+  overload: Godot.Transform3D.op_Multiply*
+  nameWithType.vb: Transform3D.*(Vector3, Transform3D)
+  fullName.vb: Godot.Transform3D.*(Godot.Vector3, Godot.Transform3D)
+  name.vb: '*(Vector3, Transform3D)'
+- uid: Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Aabb)
+  commentId: M:Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Aabb)
+  id: op_Multiply(Godot.Transform3D,Godot.Aabb)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: operator *(Transform3D, Aabb)
+  nameWithType: Transform3D.operator *(Transform3D, Aabb)
+  fullName: Godot.Transform3D.operator *(Godot.Transform3D, Godot.Aabb)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Aabb operator *(Transform3D transform, Aabb aabb)
+    parameters:
+    - id: transform
+      type: Godot.Transform3D
+    - id: aabb
+      type: Godot.Aabb
+    return:
+      type: Godot.Aabb
+    content.vb: Public Shared Operator *(transform As Transform3D, aabb As Aabb) As Aabb
+  overload: Godot.Transform3D.op_Multiply*
+  nameWithType.vb: Transform3D.*(Transform3D, Aabb)
+  fullName.vb: Godot.Transform3D.*(Godot.Transform3D, Godot.Aabb)
+  name.vb: '*(Transform3D, Aabb)'
+- uid: Godot.Transform3D.op_Multiply(Godot.Aabb,Godot.Transform3D)
+  commentId: M:Godot.Transform3D.op_Multiply(Godot.Aabb,Godot.Transform3D)
+  id: op_Multiply(Godot.Aabb,Godot.Transform3D)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: operator *(Aabb, Transform3D)
+  nameWithType: Transform3D.operator *(Aabb, Transform3D)
+  fullName: Godot.Transform3D.operator *(Godot.Aabb, Godot.Transform3D)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Aabb operator *(Aabb aabb, Transform3D transform)
+    parameters:
+    - id: aabb
+      type: Godot.Aabb
+    - id: transform
+      type: Godot.Transform3D
+    return:
+      type: Godot.Aabb
+    content.vb: Public Shared Operator *(aabb As Aabb, transform As Transform3D) As Aabb
+  overload: Godot.Transform3D.op_Multiply*
+  nameWithType.vb: Transform3D.*(Aabb, Transform3D)
+  fullName.vb: Godot.Transform3D.*(Godot.Aabb, Godot.Transform3D)
+  name.vb: '*(Aabb, Transform3D)'
+- uid: Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Plane)
+  commentId: M:Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Plane)
+  id: op_Multiply(Godot.Transform3D,Godot.Plane)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: operator *(Transform3D, Plane)
+  nameWithType: Transform3D.operator *(Transform3D, Plane)
+  fullName: Godot.Transform3D.operator *(Godot.Transform3D, Godot.Plane)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Plane operator *(Transform3D transform, Plane plane)
+    parameters:
+    - id: transform
+      type: Godot.Transform3D
+    - id: plane
+      type: Godot.Plane
+    return:
+      type: Godot.Plane
+    content.vb: Public Shared Operator *(transform As Transform3D, plane As Plane) As Plane
+  overload: Godot.Transform3D.op_Multiply*
+  nameWithType.vb: Transform3D.*(Transform3D, Plane)
+  fullName.vb: Godot.Transform3D.*(Godot.Transform3D, Godot.Plane)
+  name.vb: '*(Transform3D, Plane)'
+- uid: Godot.Transform3D.op_Multiply(Godot.Plane,Godot.Transform3D)
+  commentId: M:Godot.Transform3D.op_Multiply(Godot.Plane,Godot.Transform3D)
+  id: op_Multiply(Godot.Plane,Godot.Transform3D)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: operator *(Plane, Transform3D)
+  nameWithType: Transform3D.operator *(Plane, Transform3D)
+  fullName: Godot.Transform3D.operator *(Godot.Plane, Godot.Transform3D)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Plane operator *(Plane plane, Transform3D transform)
+    parameters:
+    - id: plane
+      type: Godot.Plane
+    - id: transform
+      type: Godot.Transform3D
+    return:
+      type: Godot.Plane
+    content.vb: Public Shared Operator *(plane As Plane, transform As Transform3D) As Plane
+  overload: Godot.Transform3D.op_Multiply*
+  nameWithType.vb: Transform3D.*(Plane, Transform3D)
+  fullName.vb: Godot.Transform3D.*(Godot.Plane, Godot.Transform3D)
+  name.vb: '*(Plane, Transform3D)'
+- uid: Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Vector3[])
+  commentId: M:Godot.Transform3D.op_Multiply(Godot.Transform3D,Godot.Vector3[])
+  id: op_Multiply(Godot.Transform3D,Godot.Vector3[])
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: operator *(Transform3D, Vector3[])
+  nameWithType: Transform3D.operator *(Transform3D, Vector3[])
+  fullName: Godot.Transform3D.operator *(Godot.Transform3D, Godot.Vector3[])
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3[] operator *(Transform3D transform, Vector3[] array)
+    parameters:
+    - id: transform
+      type: Godot.Transform3D
+    - id: array
+      type: Godot.Vector3[]
+    return:
+      type: Godot.Vector3[]
+    content.vb: Public Shared Operator *(transform As Transform3D, array As Vector3()) As Vector3()
+  overload: Godot.Transform3D.op_Multiply*
+  nameWithType.vb: Transform3D.*(Transform3D, Vector3())
+  fullName.vb: Godot.Transform3D.*(Godot.Transform3D, Godot.Vector3())
+  name.vb: '*(Transform3D, Vector3())'
+- uid: Godot.Transform3D.op_Multiply(Godot.Vector3[],Godot.Transform3D)
+  commentId: M:Godot.Transform3D.op_Multiply(Godot.Vector3[],Godot.Transform3D)
+  id: op_Multiply(Godot.Vector3[],Godot.Transform3D)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: operator *(Vector3[], Transform3D)
+  nameWithType: Transform3D.operator *(Vector3[], Transform3D)
+  fullName: Godot.Transform3D.operator *(Godot.Vector3[], Godot.Transform3D)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3[] operator *(Vector3[] array, Transform3D transform)
+    parameters:
+    - id: array
+      type: Godot.Vector3[]
+    - id: transform
+      type: Godot.Transform3D
+    return:
+      type: Godot.Vector3[]
+    content.vb: Public Shared Operator *(array As Vector3(), transform As Transform3D) As Vector3()
+  overload: Godot.Transform3D.op_Multiply*
+  nameWithType.vb: Transform3D.*(Vector3(), Transform3D)
+  fullName.vb: Godot.Transform3D.*(Godot.Vector3(), Godot.Transform3D)
+  name.vb: '*(Vector3(), Transform3D)'
+- uid: Godot.Transform3D.op_Equality(Godot.Transform3D,Godot.Transform3D)
+  commentId: M:Godot.Transform3D.op_Equality(Godot.Transform3D,Godot.Transform3D)
+  id: op_Equality(Godot.Transform3D,Godot.Transform3D)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Transform3D, Transform3D)
+  nameWithType: Transform3D.operator ==(Transform3D, Transform3D)
+  fullName: Godot.Transform3D.operator ==(Godot.Transform3D, Godot.Transform3D)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool operator ==(Transform3D left, Transform3D right)
+    parameters:
+    - id: left
+      type: Godot.Transform3D
+    - id: right
+      type: Godot.Transform3D
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Transform3D, right As Transform3D) As Boolean
+  overload: Godot.Transform3D.op_Equality*
+  nameWithType.vb: Transform3D.=(Transform3D, Transform3D)
+  fullName.vb: Godot.Transform3D.=(Godot.Transform3D, Godot.Transform3D)
+  name.vb: =(Transform3D, Transform3D)
+- uid: Godot.Transform3D.op_Inequality(Godot.Transform3D,Godot.Transform3D)
+  commentId: M:Godot.Transform3D.op_Inequality(Godot.Transform3D,Godot.Transform3D)
+  id: op_Inequality(Godot.Transform3D,Godot.Transform3D)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Transform3D, Transform3D)
+  nameWithType: Transform3D.operator !=(Transform3D, Transform3D)
+  fullName: Godot.Transform3D.operator !=(Godot.Transform3D, Godot.Transform3D)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool operator !=(Transform3D left, Transform3D right)
+    parameters:
+    - id: left
+      type: Godot.Transform3D
+    - id: right
+      type: Godot.Transform3D
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Transform3D, right As Transform3D) As Boolean
+  overload: Godot.Transform3D.op_Inequality*
+  nameWithType.vb: Transform3D.<>(Transform3D, Transform3D)
+  fullName.vb: Godot.Transform3D.<>(Godot.Transform3D, Godot.Transform3D)
+  name.vb: <>(Transform3D, Transform3D)
+- uid: Godot.Transform3D.Equals(System.Object)
+  commentId: M:Godot.Transform3D.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Transform3D.Equals(object?)
+  fullName: Godot.Transform3D.Equals(object?)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)
+        arguments:
+        - type: System.Boolean
+          value: true
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Godot.Transform3D.Equals*
+  nameWithType.vb: Transform3D.Equals(Object)
+  fullName.vb: Godot.Transform3D.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Godot.Transform3D.Equals(Godot.Transform3D)
+  commentId: M:Godot.Transform3D.Equals(Godot.Transform3D)
+  id: Equals(Godot.Transform3D)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: Equals(Transform3D)
+  nameWithType: Transform3D.Equals(Transform3D)
+  fullName: Godot.Transform3D.Equals(Godot.Transform3D)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public readonly bool Equals(Transform3D other)
+    parameters:
+    - id: other
+      type: Godot.Transform3D
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Transform3D) As Boolean
+  overload: Godot.Transform3D.Equals*
+  implements:
+  - System.IEquatable{Godot.Transform3D}.Equals(Godot.Transform3D)
+- uid: Godot.Transform3D.IsEqualApprox(Godot.Transform3D)
+  commentId: M:Godot.Transform3D.IsEqualApprox(Godot.Transform3D)
+  id: IsEqualApprox(Godot.Transform3D)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: IsEqualApprox(Transform3D)
+  nameWithType: Transform3D.IsEqualApprox(Transform3D)
+  fullName: Godot.Transform3D.IsEqualApprox(Godot.Transform3D)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool IsEqualApprox(Transform3D other)
+    parameters:
+    - id: other
+      type: Godot.Transform3D
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsEqualApprox(other As Transform3D) As Boolean
+  overload: Godot.Transform3D.IsEqualApprox*
+- uid: Godot.Transform3D.GetHashCode
+  commentId: M:Godot.Transform3D.GetHashCode
+  id: GetHashCode
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Transform3D.GetHashCode()
+  fullName: Godot.Transform3D.GetHashCode()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Godot.Transform3D.GetHashCode*
+- uid: Godot.Transform3D.ToString
+  commentId: M:Godot.Transform3D.ToString
+  id: ToString
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Transform3D.ToString()
+  fullName: Godot.Transform3D.ToString()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Godot.Transform3D.ToString*
+- uid: Godot.Transform3D.ToString(System.String)
+  commentId: M:Godot.Transform3D.ToString(System.String)
+  id: ToString(System.String)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: ToString(string?)
+  nameWithType: Transform3D.ToString(string?)
+  fullName: Godot.Transform3D.ToString(string?)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly string ToString(string? format)
+    parameters:
+    - id: format
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function ToString(format As String) As String
+  overload: Godot.Transform3D.ToString*
+  nameWithType.vb: Transform3D.ToString(String)
+  fullName.vb: Godot.Transform3D.ToString(String)
+  name.vb: ToString(String)
+- uid: Godot.Transform3D.Item(System.Int32)
+  commentId: P:Godot.Transform3D.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: Transform3D.this[int]
+  fullName: Godot.Transform3D.this[int]
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 this[int column] { readonly get; set; }
+    parameters:
+    - id: column
+      type: System.Int32
+    return:
+      type: Godot.Vector3
+    content.vb: Public Default Property this[](column As Integer) As Vector3
+  overload: Godot.Transform3D.Item*
+  nameWithType.vb: Transform3D.this[](Integer)
+  fullName.vb: Godot.Transform3D.this[](Integer)
+  name.vb: this[](Integer)
+- uid: Godot.Transform3D.Item(System.Int32,System.Int32)
+  commentId: P:Godot.Transform3D.Item(System.Int32,System.Int32)
+  id: Item(System.Int32,System.Int32)
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: this[int, int]
+  nameWithType: Transform3D.this[int, int]
+  fullName: Godot.Transform3D.this[int, int]
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public float this[int column, int row] { readonly get; set; }
+    parameters:
+    - id: column
+      type: System.Int32
+    - id: row
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Default Property this[](column As Integer, row As Integer) As Single
+  overload: Godot.Transform3D.Item*
+  nameWithType.vb: Transform3D.this[](Integer, Integer)
+  fullName.vb: Godot.Transform3D.this[](Integer, Integer)
+  name.vb: this[](Integer, Integer)
+- uid: Godot.Transform3D.Identity
+  commentId: P:Godot.Transform3D.Identity
+  id: Identity
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: Identity
+  nameWithType: Transform3D.Identity
+  fullName: Godot.Transform3D.Identity
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Transform3D Identity { get; }
+    parameters: []
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Shared ReadOnly Property Identity As Transform3D
+  overload: Godot.Transform3D.Identity*
+- uid: Godot.Transform3D.FlipX
+  commentId: P:Godot.Transform3D.FlipX
+  id: FlipX
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: FlipX
+  nameWithType: Transform3D.FlipX
+  fullName: Godot.Transform3D.FlipX
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Transform3D FlipX { get; }
+    parameters: []
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Shared ReadOnly Property FlipX As Transform3D
+  overload: Godot.Transform3D.FlipX*
+- uid: Godot.Transform3D.FlipY
+  commentId: P:Godot.Transform3D.FlipY
+  id: FlipY
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: FlipY
+  nameWithType: Transform3D.FlipY
+  fullName: Godot.Transform3D.FlipY
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Transform3D FlipY { get; }
+    parameters: []
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Shared ReadOnly Property FlipY As Transform3D
+  overload: Godot.Transform3D.FlipY*
+- uid: Godot.Transform3D.FlipZ
+  commentId: P:Godot.Transform3D.FlipZ
+  id: FlipZ
+  parent: Godot.Transform3D
+  langs:
+  - csharp
+  - vb
+  name: FlipZ
+  nameWithType: Transform3D.FlipZ
+  fullName: Godot.Transform3D.FlipZ
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Transform3D FlipZ { get; }
+    parameters: []
+    return:
+      type: Godot.Transform3D
+    content.vb: Public Shared ReadOnly Property FlipZ As Transform3D
+  overload: Godot.Transform3D.FlipZ*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.IEquatable{Godot.Transform3D}
+  commentId: T:System.IEquatable{Godot.Transform3D}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Transform3D>
+  nameWithType: IEquatable<Transform3D>
+  fullName: System.IEquatable<Godot.Transform3D>
+  nameWithType.vb: IEquatable(Of Transform3D)
+  fullName.vb: System.IEquatable(Of Godot.Transform3D)
+  name.vb: IEquatable(Of Transform3D)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Godot.Transform3D
+    name: Transform3D
+    isExternal: true
+    href: Godot.Transform3D.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Transform3D
+    name: Transform3D
+    isExternal: true
+    href: Godot.Transform3D.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Godot.Basis
+  commentId: T:Godot.Basis
+  parent: Godot
+  isExternal: true
+  href: Godot.Basis.html
+  name: Basis
+  nameWithType: Basis
+  fullName: Godot.Basis
+- uid: Godot.Vector3
+  commentId: T:Godot.Vector3
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector3.html
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Godot.Vector3
+- uid: Godot.Transform3D.AffineInverse*
+  commentId: Overload:Godot.Transform3D.AffineInverse
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_AffineInverse
+  name: AffineInverse
+  nameWithType: Transform3D.AffineInverse
+  fullName: Godot.Transform3D.AffineInverse
+- uid: Godot.Transform3D
+  commentId: T:Godot.Transform3D
+  parent: Godot
+  isExternal: true
+  href: Godot.Transform3D.html
+  name: Transform3D
+  nameWithType: Transform3D
+  fullName: Godot.Transform3D
+- uid: Godot.Transform3D.InterpolateWith*
+  commentId: Overload:Godot.Transform3D.InterpolateWith
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_InterpolateWith_Godot_Transform3D_System_Single_
+  name: InterpolateWith
+  nameWithType: Transform3D.InterpolateWith
+  fullName: Godot.Transform3D.InterpolateWith
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Godot.Transform3D.Inverse*
+  commentId: Overload:Godot.Transform3D.Inverse
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_Inverse
+  name: Inverse
+  nameWithType: Transform3D.Inverse
+  fullName: Godot.Transform3D.Inverse
+- uid: Godot.Transform3D.IsFinite*
+  commentId: Overload:Godot.Transform3D.IsFinite
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_IsFinite
+  name: IsFinite
+  nameWithType: Transform3D.IsFinite
+  fullName: Godot.Transform3D.IsFinite
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.Transform3D.LookingAt*
+  commentId: Overload:Godot.Transform3D.LookingAt
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_LookingAt_Godot_Vector3_System_Nullable_Godot_Vector3__System_Boolean_
+  name: LookingAt
+  nameWithType: Transform3D.LookingAt
+  fullName: Godot.Transform3D.LookingAt
+- uid: System.Nullable{Godot.Vector3}
+  commentId: T:System.Nullable{Godot.Vector3}
+  parent: System
+  definition: System.Nullable`1
+  href: Godot.Vector3.html
+  name: Vector3?
+  nameWithType: Vector3?
+  fullName: Godot.Vector3?
+  spec.csharp:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: '?'
+  spec.vb:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.Transform3D.Orthonormalized*
+  commentId: Overload:Godot.Transform3D.Orthonormalized
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_Orthonormalized
+  name: Orthonormalized
+  nameWithType: Transform3D.Orthonormalized
+  fullName: Godot.Transform3D.Orthonormalized
+- uid: Godot.Transform3D.Rotated*
+  commentId: Overload:Godot.Transform3D.Rotated
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_Rotated_Godot_Vector3_System_Single_
+  name: Rotated
+  nameWithType: Transform3D.Rotated
+  fullName: Godot.Transform3D.Rotated
+- uid: Godot.Transform3D.RotatedLocal*
+  commentId: Overload:Godot.Transform3D.RotatedLocal
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_RotatedLocal_Godot_Vector3_System_Single_
+  name: RotatedLocal
+  nameWithType: Transform3D.RotatedLocal
+  fullName: Godot.Transform3D.RotatedLocal
+- uid: Godot.Transform3D.Scaled*
+  commentId: Overload:Godot.Transform3D.Scaled
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_Scaled_Godot_Vector3_
+  name: Scaled
+  nameWithType: Transform3D.Scaled
+  fullName: Godot.Transform3D.Scaled
+- uid: Godot.Transform3D.ScaledLocal*
+  commentId: Overload:Godot.Transform3D.ScaledLocal
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_ScaledLocal_Godot_Vector3_
+  name: ScaledLocal
+  nameWithType: Transform3D.ScaledLocal
+  fullName: Godot.Transform3D.ScaledLocal
+- uid: Godot.Transform3D.Translated*
+  commentId: Overload:Godot.Transform3D.Translated
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_Translated_Godot_Vector3_
+  name: Translated
+  nameWithType: Transform3D.Translated
+  fullName: Godot.Transform3D.Translated
+- uid: Godot.Transform3D.TranslatedLocal*
+  commentId: Overload:Godot.Transform3D.TranslatedLocal
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_TranslatedLocal_Godot_Vector3_
+  name: TranslatedLocal
+  nameWithType: Transform3D.TranslatedLocal
+  fullName: Godot.Transform3D.TranslatedLocal
+- uid: Godot.Transform3D.#ctor*
+  commentId: Overload:Godot.Transform3D.#ctor
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D__ctor_Godot_Vector3_Godot_Vector3_Godot_Vector3_Godot_Vector3_
+  name: Transform3D
+  nameWithType: Transform3D.Transform3D
+  fullName: Godot.Transform3D.Transform3D
+  nameWithType.vb: Transform3D.New
+  fullName.vb: Godot.Transform3D.New
+  name.vb: New
+- uid: Godot.Projection
+  commentId: T:Godot.Projection
+  parent: Godot
+  isExternal: true
+  href: Godot.Projection.html
+  name: Projection
+  nameWithType: Projection
+  fullName: Godot.Projection
+- uid: Godot.Transform3D.op_Multiply*
+  commentId: Overload:Godot.Transform3D.op_Multiply
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_op_Multiply_Godot_Transform3D_Godot_Transform3D_
+  name: operator *
+  nameWithType: Transform3D.operator *
+  fullName: Godot.Transform3D.operator *
+  nameWithType.vb: Transform3D.*
+  fullName.vb: Godot.Transform3D.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Transform3D.op_Multiply*
+    name: '*'
+    isExternal: true
+    href: Godot.Transform3D.html#Godot_Transform3D_op_Multiply_Godot_Transform3D_Godot_Transform3D_
+- uid: Godot.Aabb
+  commentId: T:Godot.Aabb
+  parent: Godot
+  isExternal: true
+  href: Godot.Aabb.html
+  name: Aabb
+  nameWithType: Aabb
+  fullName: Godot.Aabb
+- uid: Godot.Plane
+  commentId: T:Godot.Plane
+  parent: Godot
+  isExternal: true
+  href: Godot.Plane.html
+  name: Plane
+  nameWithType: Plane
+  fullName: Godot.Plane
+- uid: Godot.Vector3[]
+  isExternal: true
+  href: Godot.Vector3.html
+  name: Vector3[]
+  nameWithType: Vector3[]
+  fullName: Godot.Vector3[]
+  nameWithType.vb: Vector3()
+  fullName.vb: Godot.Vector3()
+  name.vb: Vector3()
+  spec.csharp:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: (
+  - name: )
+- uid: Godot.Transform3D.op_Equality*
+  commentId: Overload:Godot.Transform3D.op_Equality
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_op_Equality_Godot_Transform3D_Godot_Transform3D_
+  name: operator ==
+  nameWithType: Transform3D.operator ==
+  fullName: Godot.Transform3D.operator ==
+  nameWithType.vb: Transform3D.=
+  fullName.vb: Godot.Transform3D.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Transform3D.op_Equality*
+    name: ==
+    isExternal: true
+    href: Godot.Transform3D.html#Godot_Transform3D_op_Equality_Godot_Transform3D_Godot_Transform3D_
+- uid: Godot.Transform3D.op_Inequality*
+  commentId: Overload:Godot.Transform3D.op_Inequality
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_op_Inequality_Godot_Transform3D_Godot_Transform3D_
+  name: operator !=
+  nameWithType: Transform3D.operator !=
+  fullName: Godot.Transform3D.operator !=
+  nameWithType.vb: Transform3D.<>
+  fullName.vb: Godot.Transform3D.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Transform3D.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: Godot.Transform3D.html#Godot_Transform3D_op_Inequality_Godot_Transform3D_Godot_Transform3D_
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Godot.Transform3D.Equals*
+  commentId: Overload:Godot.Transform3D.Equals
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_Equals_System_Object_
+  name: Equals
+  nameWithType: Transform3D.Equals
+  fullName: Godot.Transform3D.Equals
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.IEquatable{Godot.Transform3D}.Equals(Godot.Transform3D)
+  commentId: M:System.IEquatable{Godot.Transform3D}.Equals(Godot.Transform3D)
+  parent: System.IEquatable{Godot.Transform3D}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Transform3D)
+  nameWithType: IEquatable<Transform3D>.Equals(Transform3D)
+  fullName: System.IEquatable<Godot.Transform3D>.Equals(Godot.Transform3D)
+  nameWithType.vb: IEquatable(Of Transform3D).Equals(Transform3D)
+  fullName.vb: System.IEquatable(Of Godot.Transform3D).Equals(Godot.Transform3D)
+  spec.csharp:
+  - uid: System.IEquatable{Godot.Transform3D}.Equals(Godot.Transform3D)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.Transform3D
+    name: Transform3D
+    isExternal: true
+    href: Godot.Transform3D.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Godot.Transform3D}.Equals(Godot.Transform3D)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.Transform3D
+    name: Transform3D
+    isExternal: true
+    href: Godot.Transform3D.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Godot.Transform3D.IsEqualApprox*
+  commentId: Overload:Godot.Transform3D.IsEqualApprox
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_IsEqualApprox_Godot_Transform3D_
+  name: IsEqualApprox
+  nameWithType: Transform3D.IsEqualApprox
+  fullName: Godot.Transform3D.IsEqualApprox
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Godot.Transform3D.GetHashCode*
+  commentId: Overload:Godot.Transform3D.GetHashCode
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_GetHashCode
+  name: GetHashCode
+  nameWithType: Transform3D.GetHashCode
+  fullName: Godot.Transform3D.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Godot.Transform3D.ToString*
+  commentId: Overload:Godot.Transform3D.ToString
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_ToString
+  name: ToString
+  nameWithType: Transform3D.ToString
+  fullName: Godot.Transform3D.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.Transform3D.Item*
+  commentId: Overload:Godot.Transform3D.Item
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_Item_System_Int32_
+  name: this
+  nameWithType: Transform3D.this
+  fullName: Godot.Transform3D.this
+  nameWithType.vb: Transform3D.this[]
+  fullName.vb: Godot.Transform3D.this[]
+  name.vb: this[]
+- uid: Godot.Transform3D.Identity*
+  commentId: Overload:Godot.Transform3D.Identity
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_Identity
+  name: Identity
+  nameWithType: Transform3D.Identity
+  fullName: Godot.Transform3D.Identity
+- uid: Godot.Transform3D.FlipX*
+  commentId: Overload:Godot.Transform3D.FlipX
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_FlipX
+  name: FlipX
+  nameWithType: Transform3D.FlipX
+  fullName: Godot.Transform3D.FlipX
+- uid: Godot.Transform3D.FlipY*
+  commentId: Overload:Godot.Transform3D.FlipY
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_FlipY
+  name: FlipY
+  nameWithType: Transform3D.FlipY
+  fullName: Godot.Transform3D.FlipY
+- uid: Godot.Transform3D.FlipZ*
+  commentId: Overload:Godot.Transform3D.FlipZ
+  isExternal: true
+  href: Godot.Transform3D.html#Godot_Transform3D_FlipZ
+  name: FlipZ
+  nameWithType: Transform3D.FlipZ
+  fullName: Godot.Transform3D.FlipZ

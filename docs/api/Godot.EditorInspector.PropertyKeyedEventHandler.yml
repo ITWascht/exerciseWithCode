@@ -1,0 +1,254 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.EditorInspector.PropertyKeyedEventHandler
+  commentId: T:Godot.EditorInspector.PropertyKeyedEventHandler
+  id: EditorInspector.PropertyKeyedEventHandler
+  parent: Godot
+  children:
+  - Godot.EditorInspector.PropertyKeyedEventHandler.#ctor(System.Object,System.IntPtr)
+  - Godot.EditorInspector.PropertyKeyedEventHandler.BeginInvoke(System.String,Godot.Variant,System.Boolean,System.AsyncCallback,System.Object)
+  - Godot.EditorInspector.PropertyKeyedEventHandler.EndInvoke(System.IAsyncResult)
+  - Godot.EditorInspector.PropertyKeyedEventHandler.Invoke(System.String,Godot.Variant,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: EditorInspector.PropertyKeyedEventHandler
+  nameWithType: EditorInspector.PropertyKeyedEventHandler
+  fullName: Godot.EditorInspector.PropertyKeyedEventHandler
+  type: Delegate
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public delegate void EditorInspector.PropertyKeyedEventHandler(string property, Variant value, bool advance)
+    parameters:
+    - id: property
+      type: System.String
+    - id: value
+      type: Godot.Variant
+    - id: advance
+      type: System.Boolean
+    content.vb: Public Delegate Sub EditorInspector.PropertyKeyedEventHandler([property] As String, value As [Variant], advance As Boolean)
+- uid: Godot.EditorInspector.PropertyKeyedEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Godot.EditorInspector.PropertyKeyedEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Godot.EditorInspector.PropertyKeyedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: PropertyKeyedEventHandler(object, nint)
+  nameWithType: EditorInspector.PropertyKeyedEventHandler.PropertyKeyedEventHandler(object, nint)
+  fullName: Godot.EditorInspector.PropertyKeyedEventHandler.PropertyKeyedEventHandler(object, nint)
+  type: Constructor
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public PropertyKeyedEventHandler(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Godot.EditorInspector.PropertyKeyedEventHandler.#ctor*
+  nameWithType.vb: EditorInspector.PropertyKeyedEventHandler.New(Object, IntPtr)
+  fullName.vb: Godot.EditorInspector.PropertyKeyedEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Godot.EditorInspector.PropertyKeyedEventHandler.Invoke(System.String,Godot.Variant,System.Boolean)
+  commentId: M:Godot.EditorInspector.PropertyKeyedEventHandler.Invoke(System.String,Godot.Variant,System.Boolean)
+  id: Invoke(System.String,Godot.Variant,System.Boolean)
+  parent: Godot.EditorInspector.PropertyKeyedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(string, Variant, bool)
+  nameWithType: EditorInspector.PropertyKeyedEventHandler.Invoke(string, Variant, bool)
+  fullName: Godot.EditorInspector.PropertyKeyedEventHandler.Invoke(string, Godot.Variant, bool)
+  type: Method
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public virtual void Invoke(string property, Variant value, bool advance)
+    parameters:
+    - id: property
+      type: System.String
+    - id: value
+      type: Godot.Variant
+    - id: advance
+      type: System.Boolean
+    content.vb: Public Overridable Sub Invoke([property] As String, value As [Variant], advance As Boolean)
+  overload: Godot.EditorInspector.PropertyKeyedEventHandler.Invoke*
+  nameWithType.vb: EditorInspector.PropertyKeyedEventHandler.Invoke(String, Variant, Boolean)
+  fullName.vb: Godot.EditorInspector.PropertyKeyedEventHandler.Invoke(String, Godot.Variant, Boolean)
+  name.vb: Invoke(String, Variant, Boolean)
+- uid: Godot.EditorInspector.PropertyKeyedEventHandler.BeginInvoke(System.String,Godot.Variant,System.Boolean,System.AsyncCallback,System.Object)
+  commentId: M:Godot.EditorInspector.PropertyKeyedEventHandler.BeginInvoke(System.String,Godot.Variant,System.Boolean,System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.String,Godot.Variant,System.Boolean,System.AsyncCallback,System.Object)
+  parent: Godot.EditorInspector.PropertyKeyedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(string, Variant, bool, AsyncCallback, object)
+  nameWithType: EditorInspector.PropertyKeyedEventHandler.BeginInvoke(string, Variant, bool, AsyncCallback, object)
+  fullName: Godot.EditorInspector.PropertyKeyedEventHandler.BeginInvoke(string, Godot.Variant, bool, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(string property, Variant value, bool advance, AsyncCallback callback, object @object)
+    parameters:
+    - id: property
+      type: System.String
+    - id: value
+      type: Godot.Variant
+    - id: advance
+      type: System.Boolean
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke([property] As String, value As [Variant], advance As Boolean, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Godot.EditorInspector.PropertyKeyedEventHandler.BeginInvoke*
+  nameWithType.vb: EditorInspector.PropertyKeyedEventHandler.BeginInvoke(String, Variant, Boolean, AsyncCallback, Object)
+  fullName.vb: Godot.EditorInspector.PropertyKeyedEventHandler.BeginInvoke(String, Godot.Variant, Boolean, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(String, Variant, Boolean, AsyncCallback, Object)
+- uid: Godot.EditorInspector.PropertyKeyedEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Godot.EditorInspector.PropertyKeyedEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Godot.EditorInspector.PropertyKeyedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: EditorInspector.PropertyKeyedEventHandler.EndInvoke(IAsyncResult)
+  fullName: Godot.EditorInspector.PropertyKeyedEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - GodotSharpEditor
+  namespace: Godot
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: Godot.EditorInspector.PropertyKeyedEventHandler.EndInvoke*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.Variant
+  commentId: T:Godot.Variant
+  parent: Godot
+  isExternal: true
+  href: Godot.Variant.html
+  name: Variant
+  nameWithType: Variant
+  fullName: Godot.Variant
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.EditorInspector.PropertyKeyedEventHandler.#ctor*
+  commentId: Overload:Godot.EditorInspector.PropertyKeyedEventHandler.#ctor
+  isExternal: true
+  href: Godot.EditorInspector.PropertyKeyedEventHandler.html#Godot_EditorInspector_PropertyKeyedEventHandler__ctor_System_Object_System_IntPtr_
+  name: PropertyKeyedEventHandler
+  nameWithType: EditorInspector.PropertyKeyedEventHandler.PropertyKeyedEventHandler
+  fullName: Godot.EditorInspector.PropertyKeyedEventHandler.PropertyKeyedEventHandler
+  nameWithType.vb: EditorInspector.PropertyKeyedEventHandler.New
+  fullName.vb: Godot.EditorInspector.PropertyKeyedEventHandler.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Godot.EditorInspector.PropertyKeyedEventHandler.Invoke*
+  commentId: Overload:Godot.EditorInspector.PropertyKeyedEventHandler.Invoke
+  isExternal: true
+  href: Godot.EditorInspector.PropertyKeyedEventHandler.html#Godot_EditorInspector_PropertyKeyedEventHandler_Invoke_System_String_Godot_Variant_System_Boolean_
+  name: Invoke
+  nameWithType: EditorInspector.PropertyKeyedEventHandler.Invoke
+  fullName: Godot.EditorInspector.PropertyKeyedEventHandler.Invoke
+- uid: Godot.EditorInspector.PropertyKeyedEventHandler.BeginInvoke*
+  commentId: Overload:Godot.EditorInspector.PropertyKeyedEventHandler.BeginInvoke
+  isExternal: true
+  href: Godot.EditorInspector.PropertyKeyedEventHandler.html#Godot_EditorInspector_PropertyKeyedEventHandler_BeginInvoke_System_String_Godot_Variant_System_Boolean_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: EditorInspector.PropertyKeyedEventHandler.BeginInvoke
+  fullName: Godot.EditorInspector.PropertyKeyedEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Godot.EditorInspector.PropertyKeyedEventHandler.EndInvoke*
+  commentId: Overload:Godot.EditorInspector.PropertyKeyedEventHandler.EndInvoke
+  isExternal: true
+  href: Godot.EditorInspector.PropertyKeyedEventHandler.html#Godot_EditorInspector_PropertyKeyedEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: EditorInspector.PropertyKeyedEventHandler.EndInvoke
+  fullName: Godot.EditorInspector.PropertyKeyedEventHandler.EndInvoke

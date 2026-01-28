@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace SzeneGenerator | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace SzeneGenerator | mysite ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SzeneGenerator">
+
+  <h1 id="SzeneGenerator" data-uid="SzeneGenerator" class="text-break">Namespace SzeneGenerator</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.BiomeMapGenerator.html">BiomeMapGenerator</a></dt>
+      <dd><p>Generates biome distribution maps used for terrain texturing and object spawning.
+Supports simple splits and height/slope-based procedural biome assignment.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.BiomeOverride.html">BiomeOverride</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.CameraSettings.html">CameraSettings</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.CameraTargetPreset.html">CameraTargetPreset</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.GlobalSkyManager.html">GlobalSkyManager</a></dt>
+      <dd><p>Manages global sky, atmosphere, fog, and weather effects such as rain and snow.
+Follows the camera position and applies region-specific sky presets and weather profiles.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.GlobalSkySettings.html">GlobalSkySettings</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.HeightBand.html">HeightBand</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.HeightMapCreator.html">HeightMapCreator</a></dt>
+      <dd><p>Creates procedural heightmaps and control maps for Terrain3D,
+applying noise, terrain rules, biome blending, and slope-based layer selection.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.LocalSkySettings.html">LocalSkySettings</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.ObjectSpawner.html">ObjectSpawner</a></dt>
+      <dd><p>Places environment objects and targets into the scene based on biome,
+height, slope, and distance rules defined in region configuration.
+Returns all spawned objects marked as targets.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.PrefabEntry.html">PrefabEntry</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.RegionAssetSet.html">RegionAssetSet</a></dt>
+      <dd><p>Region-specific asset container used to build a scene.
+Holds Terrain3D texture slots and prefab mappings referenced by region JSON rules.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.RegionRules.html">RegionRules</a></dt>
+      <dd><p>Region-specific rules loaded from JSON controlling terrain layers,
+spawning behavior, and local sky settings.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.RegionRulesLoader.html">RegionRulesLoader</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.SimpleCamera.html">SimpleCamera</a></dt>
+      <dd><p>Free-fly camera with preset views and procedural spawn logic.
+Can position itself relative to targets while keeping them inside the view frustum.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.SimpleNoiseGenerator.html">SimpleNoiseGenerator</a></dt>
+      <dd><p>Lightweight noise-based heightmap generator producing normalized values (0..1).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.SlopeOverride.html">SlopeOverride</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.SpawnEntry.html">SpawnEntry</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.SpawningRules.html">SpawningRules</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.TargetCoordinateExporter.html">TargetCoordinateExporter</a></dt>
+      <dd><p>Exports spawned target objects (including metadata like asset_id) to a JSON file.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.TerrainAssetManager.html">TerrainAssetManager</a></dt>
+      <dd><p>Creates and applies Terrain3D asset resources (textures) from a RegionAssetSet.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.TerrainManager.html">TerrainManager</a></dt>
+      <dd><p>Generates terrain geometry, applies heightmaps and biome texturing,
+and spawns environment objects based on region configuration.
+Provides terrain height sampling and target spawn data for camera placement.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.TerrainRules.html">TerrainRules</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.TerrainSettings.html">TerrainSettings</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.TerrainSlotEntry.html">TerrainSlotEntry</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.WorldManager.html">WorldManager</a></dt>
+      <dd><p>Central coordinator responsible for building the procedural world.
+Initializes sky, terrain, spawning, camera placement, and triggers
+screenshot and metadata export.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.WorldSettings.html">WorldSettings</a></dt>
+      <dd><p>Root configuration container for terrain, sky, and camera settings.</p>
+</dd>
+    </dl>
+    <h3 id="delegates">
+Delegates
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SzeneGenerator.TerrainManager.TargetsReadyEventHandler.html">TerrainManager.TargetsReadyEventHandler</a></dt>
+      <dd></dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

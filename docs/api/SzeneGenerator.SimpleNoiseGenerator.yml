@@ -1,0 +1,173 @@
+### YamlMime:ManagedReference
+items:
+- uid: SzeneGenerator.SimpleNoiseGenerator
+  commentId: T:SzeneGenerator.SimpleNoiseGenerator
+  id: SimpleNoiseGenerator
+  parent: SzeneGenerator
+  children:
+  - SzeneGenerator.SimpleNoiseGenerator.#ctor(System.Int32,System.Single)
+  - SzeneGenerator.SimpleNoiseGenerator.GenerateHeightMap(System.Int32,System.Int32,System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: SimpleNoiseGenerator
+  nameWithType: SimpleNoiseGenerator
+  fullName: SzeneGenerator.SimpleNoiseGenerator
+  type: Class
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/SimpleNoiseGenerator.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  summary: Lightweight noise-based heightmap generator producing normalized values (0..1).
+  example: []
+  syntax:
+    content: public class SimpleNoiseGenerator
+    content.vb: Public Class SimpleNoiseGenerator
+  inheritance:
+  - System.Object
+- uid: SzeneGenerator.SimpleNoiseGenerator.#ctor(System.Int32,System.Single)
+  commentId: M:SzeneGenerator.SimpleNoiseGenerator.#ctor(System.Int32,System.Single)
+  id: '#ctor(System.Int32,System.Single)'
+  parent: SzeneGenerator.SimpleNoiseGenerator
+  langs:
+  - csharp
+  - vb
+  name: SimpleNoiseGenerator(int, float)
+  nameWithType: SimpleNoiseGenerator.SimpleNoiseGenerator(int, float)
+  fullName: SzeneGenerator.SimpleNoiseGenerator.SimpleNoiseGenerator(int, float)
+  type: Constructor
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/SimpleNoiseGenerator.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public SimpleNoiseGenerator(int seed = 0, float frequency = 0.01)
+    parameters:
+    - id: seed
+      type: System.Int32
+    - id: frequency
+      type: System.Single
+    content.vb: Public Sub New(seed As Integer = 0, frequency As Single = 0.01)
+  overload: SzeneGenerator.SimpleNoiseGenerator.#ctor*
+  nameWithType.vb: SimpleNoiseGenerator.New(Integer, Single)
+  fullName.vb: SzeneGenerator.SimpleNoiseGenerator.New(Integer, Single)
+  name.vb: New(Integer, Single)
+- uid: SzeneGenerator.SimpleNoiseGenerator.GenerateHeightMap(System.Int32,System.Int32,System.Single,System.Single)
+  commentId: M:SzeneGenerator.SimpleNoiseGenerator.GenerateHeightMap(System.Int32,System.Int32,System.Single,System.Single)
+  id: GenerateHeightMap(System.Int32,System.Int32,System.Single,System.Single)
+  parent: SzeneGenerator.SimpleNoiseGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateHeightMap(int, int, float, float)
+  nameWithType: SimpleNoiseGenerator.GenerateHeightMap(int, int, float, float)
+  fullName: SzeneGenerator.SimpleNoiseGenerator.GenerateHeightMap(int, int, float, float)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/SimpleNoiseGenerator.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public float[,] GenerateHeightMap(int width, int depth, float noiseScale = 1, float heightFactor = 1)
+    parameters:
+    - id: width
+      type: System.Int32
+    - id: depth
+      type: System.Int32
+    - id: noiseScale
+      type: System.Single
+    - id: heightFactor
+      type: System.Single
+    return:
+      type: System.Single[,]
+    content.vb: Public Function GenerateHeightMap(width As Integer, depth As Integer, noiseScale As Single = 1, heightFactor As Single = 1) As Single(,)
+  overload: SzeneGenerator.SimpleNoiseGenerator.GenerateHeightMap*
+  nameWithType.vb: SimpleNoiseGenerator.GenerateHeightMap(Integer, Integer, Single, Single)
+  fullName.vb: SzeneGenerator.SimpleNoiseGenerator.GenerateHeightMap(Integer, Integer, Single, Single)
+  name.vb: GenerateHeightMap(Integer, Integer, Single, Single)
+references:
+- uid: SzeneGenerator
+  commentId: N:SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.html
+  name: SzeneGenerator
+  nameWithType: SzeneGenerator
+  fullName: SzeneGenerator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SzeneGenerator.SimpleNoiseGenerator.#ctor*
+  commentId: Overload:SzeneGenerator.SimpleNoiseGenerator.#ctor
+  isExternal: true
+  href: SzeneGenerator.SimpleNoiseGenerator.html#SzeneGenerator_SimpleNoiseGenerator__ctor_System_Int32_System_Single_
+  name: SimpleNoiseGenerator
+  nameWithType: SimpleNoiseGenerator.SimpleNoiseGenerator
+  fullName: SzeneGenerator.SimpleNoiseGenerator.SimpleNoiseGenerator
+  nameWithType.vb: SimpleNoiseGenerator.New
+  fullName.vb: SzeneGenerator.SimpleNoiseGenerator.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SzeneGenerator.SimpleNoiseGenerator.GenerateHeightMap*
+  commentId: Overload:SzeneGenerator.SimpleNoiseGenerator.GenerateHeightMap
+  isExternal: true
+  href: SzeneGenerator.SimpleNoiseGenerator.html#SzeneGenerator_SimpleNoiseGenerator_GenerateHeightMap_System_Int32_System_Int32_System_Single_System_Single_
+  name: GenerateHeightMap
+  nameWithType: SimpleNoiseGenerator.GenerateHeightMap
+  fullName: SzeneGenerator.SimpleNoiseGenerator.GenerateHeightMap
+- uid: System.Single[,]
+  isExternal: true
+  name: float[,]
+  nameWithType: float[,]
+  fullName: float[,]
+  nameWithType.vb: Single(,)
+  fullName.vb: Single(,)
+  name.vb: Single(,)
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: (
+  - name: ','
+  - name: )

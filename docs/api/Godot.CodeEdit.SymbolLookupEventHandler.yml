@@ -1,0 +1,246 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.CodeEdit.SymbolLookupEventHandler
+  commentId: T:Godot.CodeEdit.SymbolLookupEventHandler
+  id: CodeEdit.SymbolLookupEventHandler
+  parent: Godot
+  children:
+  - Godot.CodeEdit.SymbolLookupEventHandler.#ctor(System.Object,System.IntPtr)
+  - Godot.CodeEdit.SymbolLookupEventHandler.BeginInvoke(System.String,System.Int64,System.Int64,System.AsyncCallback,System.Object)
+  - Godot.CodeEdit.SymbolLookupEventHandler.EndInvoke(System.IAsyncResult)
+  - Godot.CodeEdit.SymbolLookupEventHandler.Invoke(System.String,System.Int64,System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: CodeEdit.SymbolLookupEventHandler
+  nameWithType: CodeEdit.SymbolLookupEventHandler
+  fullName: Godot.CodeEdit.SymbolLookupEventHandler
+  type: Delegate
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public delegate void CodeEdit.SymbolLookupEventHandler(string symbol, long line, long column)
+    parameters:
+    - id: symbol
+      type: System.String
+    - id: line
+      type: System.Int64
+    - id: column
+      type: System.Int64
+    content.vb: Public Delegate Sub CodeEdit.SymbolLookupEventHandler(symbol As String, line As Long, column As Long)
+- uid: Godot.CodeEdit.SymbolLookupEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Godot.CodeEdit.SymbolLookupEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Godot.CodeEdit.SymbolLookupEventHandler
+  langs:
+  - csharp
+  - vb
+  name: SymbolLookupEventHandler(object, nint)
+  nameWithType: CodeEdit.SymbolLookupEventHandler.SymbolLookupEventHandler(object, nint)
+  fullName: Godot.CodeEdit.SymbolLookupEventHandler.SymbolLookupEventHandler(object, nint)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public SymbolLookupEventHandler(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Godot.CodeEdit.SymbolLookupEventHandler.#ctor*
+  nameWithType.vb: CodeEdit.SymbolLookupEventHandler.New(Object, IntPtr)
+  fullName.vb: Godot.CodeEdit.SymbolLookupEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Godot.CodeEdit.SymbolLookupEventHandler.Invoke(System.String,System.Int64,System.Int64)
+  commentId: M:Godot.CodeEdit.SymbolLookupEventHandler.Invoke(System.String,System.Int64,System.Int64)
+  id: Invoke(System.String,System.Int64,System.Int64)
+  parent: Godot.CodeEdit.SymbolLookupEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(string, long, long)
+  nameWithType: CodeEdit.SymbolLookupEventHandler.Invoke(string, long, long)
+  fullName: Godot.CodeEdit.SymbolLookupEventHandler.Invoke(string, long, long)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void Invoke(string symbol, long line, long column)
+    parameters:
+    - id: symbol
+      type: System.String
+    - id: line
+      type: System.Int64
+    - id: column
+      type: System.Int64
+    content.vb: Public Overridable Sub Invoke(symbol As String, line As Long, column As Long)
+  overload: Godot.CodeEdit.SymbolLookupEventHandler.Invoke*
+  nameWithType.vb: CodeEdit.SymbolLookupEventHandler.Invoke(String, Long, Long)
+  fullName.vb: Godot.CodeEdit.SymbolLookupEventHandler.Invoke(String, Long, Long)
+  name.vb: Invoke(String, Long, Long)
+- uid: Godot.CodeEdit.SymbolLookupEventHandler.BeginInvoke(System.String,System.Int64,System.Int64,System.AsyncCallback,System.Object)
+  commentId: M:Godot.CodeEdit.SymbolLookupEventHandler.BeginInvoke(System.String,System.Int64,System.Int64,System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.String,System.Int64,System.Int64,System.AsyncCallback,System.Object)
+  parent: Godot.CodeEdit.SymbolLookupEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(string, long, long, AsyncCallback, object)
+  nameWithType: CodeEdit.SymbolLookupEventHandler.BeginInvoke(string, long, long, AsyncCallback, object)
+  fullName: Godot.CodeEdit.SymbolLookupEventHandler.BeginInvoke(string, long, long, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(string symbol, long line, long column, AsyncCallback callback, object @object)
+    parameters:
+    - id: symbol
+      type: System.String
+    - id: line
+      type: System.Int64
+    - id: column
+      type: System.Int64
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(symbol As String, line As Long, column As Long, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Godot.CodeEdit.SymbolLookupEventHandler.BeginInvoke*
+  nameWithType.vb: CodeEdit.SymbolLookupEventHandler.BeginInvoke(String, Long, Long, AsyncCallback, Object)
+  fullName.vb: Godot.CodeEdit.SymbolLookupEventHandler.BeginInvoke(String, Long, Long, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(String, Long, Long, AsyncCallback, Object)
+- uid: Godot.CodeEdit.SymbolLookupEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Godot.CodeEdit.SymbolLookupEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Godot.CodeEdit.SymbolLookupEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: CodeEdit.SymbolLookupEventHandler.EndInvoke(IAsyncResult)
+  fullName: Godot.CodeEdit.SymbolLookupEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: Godot.CodeEdit.SymbolLookupEventHandler.EndInvoke*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.CodeEdit.SymbolLookupEventHandler.#ctor*
+  commentId: Overload:Godot.CodeEdit.SymbolLookupEventHandler.#ctor
+  isExternal: true
+  href: Godot.CodeEdit.SymbolLookupEventHandler.html#Godot_CodeEdit_SymbolLookupEventHandler__ctor_System_Object_System_IntPtr_
+  name: SymbolLookupEventHandler
+  nameWithType: CodeEdit.SymbolLookupEventHandler.SymbolLookupEventHandler
+  fullName: Godot.CodeEdit.SymbolLookupEventHandler.SymbolLookupEventHandler
+  nameWithType.vb: CodeEdit.SymbolLookupEventHandler.New
+  fullName.vb: Godot.CodeEdit.SymbolLookupEventHandler.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Godot.CodeEdit.SymbolLookupEventHandler.Invoke*
+  commentId: Overload:Godot.CodeEdit.SymbolLookupEventHandler.Invoke
+  isExternal: true
+  href: Godot.CodeEdit.SymbolLookupEventHandler.html#Godot_CodeEdit_SymbolLookupEventHandler_Invoke_System_String_System_Int64_System_Int64_
+  name: Invoke
+  nameWithType: CodeEdit.SymbolLookupEventHandler.Invoke
+  fullName: Godot.CodeEdit.SymbolLookupEventHandler.Invoke
+- uid: Godot.CodeEdit.SymbolLookupEventHandler.BeginInvoke*
+  commentId: Overload:Godot.CodeEdit.SymbolLookupEventHandler.BeginInvoke
+  isExternal: true
+  href: Godot.CodeEdit.SymbolLookupEventHandler.html#Godot_CodeEdit_SymbolLookupEventHandler_BeginInvoke_System_String_System_Int64_System_Int64_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: CodeEdit.SymbolLookupEventHandler.BeginInvoke
+  fullName: Godot.CodeEdit.SymbolLookupEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Godot.CodeEdit.SymbolLookupEventHandler.EndInvoke*
+  commentId: Overload:Godot.CodeEdit.SymbolLookupEventHandler.EndInvoke
+  isExternal: true
+  href: Godot.CodeEdit.SymbolLookupEventHandler.html#Godot_CodeEdit_SymbolLookupEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: CodeEdit.SymbolLookupEventHandler.EndInvoke
+  fullName: Godot.CodeEdit.SymbolLookupEventHandler.EndInvoke

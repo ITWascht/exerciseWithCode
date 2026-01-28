@@ -1,0 +1,3788 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ParticleProcessMaterial | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ParticleProcessMaterial | mysite ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Godot.ParticleProcessMaterial">
+
+
+
+  <h1 id="Godot_ParticleProcessMaterial" data-uid="Godot.ParticleProcessMaterial" class="text-break">
+Class ParticleProcessMaterial  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Godot.html">Godot</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GodotSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ParticleProcessMaterial : Material, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><a class="xref" href="Godot.GodotObject.html">GodotObject</a></div>
+      <div><a class="xref" href="Godot.RefCounted.html">RefCounted</a></div>
+      <div><a class="xref" href="Godot.Resource.html">Resource</a></div>
+      <div><a class="xref" href="Godot.Material.html">Material</a></div>
+      <div><span class="xref">ParticleProcessMaterial</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Godot.Material.html#Godot_Material_RenderPriorityMax">Material.RenderPriorityMax</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Material.html#Godot_Material_RenderPriorityMin">Material.RenderPriorityMin</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Material.html#Godot_Material__CanDoNextPass">Material._CanDoNextPass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Material.html#Godot_Material__CanUseRenderPriority">Material._CanUseRenderPriority()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Material.html#Godot_Material__GetShaderMode">Material._GetShaderMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Material.html#Godot_Material__GetShaderRid">Material._GetShaderRid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Material.html#Godot_Material_InspectNativeShaderCode">Material.InspectNativeShaderCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Material.html#Godot_Material_CreatePlaceholder">Material.CreatePlaceholder()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Material.html#Godot_Material_RenderPriority">Material.RenderPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Material.html#Godot_Material_NextPass">Material.NextPass</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource__GetRid">Resource._GetRid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource__ResetState">Resource._ResetState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource__SetPathCache_System_String_">Resource._SetPathCache(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource__SetupLocalToScene">Resource._SetupLocalToScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_TakeOverPath_System_String_">Resource.TakeOverPath(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_SetPathCache_System_String_">Resource.SetPathCache(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_GetRid">Resource.GetRid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_GetLocalScene">Resource.GetLocalScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_SetupLocalToScene">Resource.SetupLocalToScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_ResetState">Resource.ResetState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_SetIdForPath_System_String_System_String_">Resource.SetIdForPath(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_GetIdForPath_System_String_">Resource.GetIdForPath(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_IsBuiltIn">Resource.IsBuiltIn()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_GenerateSceneUniqueId">Resource.GenerateSceneUniqueId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_EmitChanged">Resource.EmitChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_Duplicate_System_Boolean_">Resource.Duplicate(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_DuplicateDeep_Godot_Resource_DeepDuplicateMode_">Resource.DuplicateDeep(Resource.DeepDuplicateMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_EmitSignalChanged">Resource.EmitSignalChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_EmitSignalSetupLocalToSceneRequested">Resource.EmitSignalSetupLocalToSceneRequested()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_ResourceLocalToScene">Resource.ResourceLocalToScene</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_ResourcePath">Resource.ResourcePath</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_ResourceName">Resource.ResourceName</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_ResourceSceneUniqueId">Resource.ResourceSceneUniqueId</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_Changed">Resource.Changed</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.Resource.html#Godot_Resource_SetupLocalToSceneRequested">Resource.SetupLocalToSceneRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_InitRef">RefCounted.InitRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_Reference">RefCounted.Reference()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_Unreference">RefCounted.Unreference()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.RefCounted.html#Godot_RefCounted_GetReferenceCount">RefCounted.GetReferenceCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPostinitialize">GodotObject.NotificationPostinitialize</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationPredelete">GodotObject.NotificationPredelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotificationExtensionReloaded">GodotObject.NotificationExtensionReloaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_InstanceFromId_System_UInt64_">GodotObject.InstanceFromId(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceIdValid_System_UInt64_">GodotObject.IsInstanceIdValid(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsInstanceValid_Godot_GodotObject_">GodotObject.IsInstanceValid(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_WeakRef_Godot_GodotObject_">GodotObject.WeakRef(GodotObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose">GodotObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Dispose_System_Boolean_">GodotObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToString">GodotObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ToSignal_Godot_GodotObject_Godot_StringName_">GodotObject.ToSignal(GodotObject, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Get_Godot_StringName_">GodotObject._Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__GetPropertyList">GodotObject._GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__IterGet_Godot_Variant_">GodotObject._IterGet(Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__IterInit_Godot_Collections_Array_">GodotObject._IterInit(Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__IterNext_Godot_Collections_Array_">GodotObject._IterNext(Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Notification_System_Int32_">GodotObject._Notification(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyCanRevert_Godot_StringName_">GodotObject._PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__PropertyGetRevert_Godot_StringName_">GodotObject._PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__Set_Godot_StringName_Godot_Variant_">GodotObject._Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject__ValidateProperty_Godot_Collections_Dictionary_">GodotObject._ValidateProperty(Dictionary)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Free">GodotObject.Free()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetClass">GodotObject.GetClass()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsClass_System_String_">GodotObject.IsClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Set_Godot_StringName_Godot_Variant_">GodotObject.Set(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Get_Godot_StringName_">GodotObject.Get(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetIndexed_Godot_NodePath_Godot_Variant_">GodotObject.SetIndexed(NodePath, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIndexed_Godot_NodePath_">GodotObject.GetIndexed(NodePath)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetPropertyList">GodotObject.GetPropertyList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMethodList">GodotObject.GetMethodList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyCanRevert_Godot_StringName_">GodotObject.PropertyCanRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyGetRevert_Godot_StringName_">GodotObject.PropertyGetRevert(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Notification_System_Int32_System_Boolean_">GodotObject.Notification(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetInstanceId">GodotObject.GetInstanceId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetScript_Godot_Variant_">GodotObject.SetScript(Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetScript">GodotObject.GetScript()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMeta_Godot_StringName_Godot_Variant_">GodotObject.SetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RemoveMeta_Godot_StringName_">GodotObject.RemoveMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMeta_Godot_StringName_Godot_Variant_">GodotObject.GetMeta(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMeta_Godot_StringName_">GodotObject.HasMeta(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMetaList">GodotObject.GetMetaList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_AddUserSignal_System_String_Godot_Collections_Array_">GodotObject.AddUserSignal(string, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasUserSignal_Godot_StringName_">GodotObject.HasUserSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_RemoveUserSignal_Godot_StringName_">GodotObject.RemoveUserSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_Godot_Variant___">GodotObject.EmitSignal(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignal_Godot_StringName_System_ReadOnlySpan_Godot_Variant__">GodotObject.EmitSignal(StringName, ReadOnlySpan&lt;Variant&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_Godot_Variant___">GodotObject.Call(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Call_Godot_StringName_System_ReadOnlySpan_Godot_Variant__">GodotObject.Call(StringName, ReadOnlySpan&lt;Variant&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_Godot_Variant___">GodotObject.CallDeferred(StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CallDeferred_Godot_StringName_System_ReadOnlySpan_Godot_Variant__">GodotObject.CallDeferred(StringName, ReadOnlySpan&lt;Variant&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetDeferred_Godot_StringName_Godot_Variant_">GodotObject.SetDeferred(StringName, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Callv_Godot_StringName_Godot_Collections_Array_">GodotObject.Callv(StringName, Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasMethod_Godot_StringName_">GodotObject.HasMethod(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetMethodArgumentCount_Godot_StringName_">GodotObject.GetMethodArgumentCount(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasSignal_Godot_StringName_">GodotObject.HasSignal(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalList">GodotObject.GetSignalList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetSignalConnectionList_Godot_StringName_">GodotObject.GetSignalConnectionList(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetIncomingConnections">GodotObject.GetIncomingConnections()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Connect_Godot_StringName_Godot_Callable_System_UInt32_">GodotObject.Connect(StringName, Callable, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Disconnect_Godot_StringName_Godot_Callable_">GodotObject.Disconnect(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsConnected_Godot_StringName_Godot_Callable_">GodotObject.IsConnected(StringName, Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_HasConnections_Godot_StringName_">GodotObject.HasConnections(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetBlockSignals_System_Boolean_">GodotObject.SetBlockSignals(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsBlockingSignals">GodotObject.IsBlockingSignals()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NotifyPropertyListChanged">GodotObject.NotifyPropertyListChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetMessageTranslation_System_Boolean_">GodotObject.SetMessageTranslation(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CanTranslateMessages">GodotObject.CanTranslateMessages()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_Tr_Godot_StringName_Godot_StringName_">GodotObject.Tr(StringName, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_TrN_Godot_StringName_Godot_StringName_System_Int32_Godot_StringName_">GodotObject.TrN(StringName, StringName, int, StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_GetTranslationDomain">GodotObject.GetTranslationDomain()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_SetTranslationDomain_Godot_StringName_">GodotObject.SetTranslationDomain(StringName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_IsQueuedForDeletion">GodotObject.IsQueuedForDeletion()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_CancelFree">GodotObject.CancelFree()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignalScriptChanged">GodotObject.EmitSignalScriptChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_EmitSignalPropertyListChanged">GodotObject.EmitSignalPropertyListChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_NativeInstance">GodotObject.NativeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_ScriptChanged">GodotObject.ScriptChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Godot.GodotObject.html#Godot_GodotObject_PropertyListChanged">GodotObject.PropertyListChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Godot_ParticleProcessMaterial__ctor_" data-uid="Godot.ParticleProcessMaterial.#ctor*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial__ctor" data-uid="Godot.ParticleProcessMaterial.#ctor">
+  ParticleProcessMaterial()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParticleProcessMaterial()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Godot_ParticleProcessMaterial_AlphaCurve_" data-uid="Godot.ParticleProcessMaterial.AlphaCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_AlphaCurve" data-uid="Godot.ParticleProcessMaterial.AlphaCurve">
+  AlphaCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D AlphaCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_AngleCurve_" data-uid="Godot.ParticleProcessMaterial.AngleCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_AngleCurve" data-uid="Godot.ParticleProcessMaterial.AngleCurve">
+  AngleCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D AngleCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_AngleMax_" data-uid="Godot.ParticleProcessMaterial.AngleMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_AngleMax" data-uid="Godot.ParticleProcessMaterial.AngleMax">
+  AngleMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AngleMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_AngleMin_" data-uid="Godot.ParticleProcessMaterial.AngleMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_AngleMin" data-uid="Godot.ParticleProcessMaterial.AngleMin">
+  AngleMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AngleMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_AngularVelocityCurve_" data-uid="Godot.ParticleProcessMaterial.AngularVelocityCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_AngularVelocityCurve" data-uid="Godot.ParticleProcessMaterial.AngularVelocityCurve">
+  AngularVelocityCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D AngularVelocityCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_AngularVelocityMax_" data-uid="Godot.ParticleProcessMaterial.AngularVelocityMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_AngularVelocityMax" data-uid="Godot.ParticleProcessMaterial.AngularVelocityMax">
+  AngularVelocityMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AngularVelocityMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_AngularVelocityMin_" data-uid="Godot.ParticleProcessMaterial.AngularVelocityMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_AngularVelocityMin" data-uid="Godot.ParticleProcessMaterial.AngularVelocityMin">
+  AngularVelocityMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AngularVelocityMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_AnimOffsetCurve_" data-uid="Godot.ParticleProcessMaterial.AnimOffsetCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_AnimOffsetCurve" data-uid="Godot.ParticleProcessMaterial.AnimOffsetCurve">
+  AnimOffsetCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D AnimOffsetCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_AnimOffsetMax_" data-uid="Godot.ParticleProcessMaterial.AnimOffsetMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_AnimOffsetMax" data-uid="Godot.ParticleProcessMaterial.AnimOffsetMax">
+  AnimOffsetMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AnimOffsetMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_AnimOffsetMin_" data-uid="Godot.ParticleProcessMaterial.AnimOffsetMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_AnimOffsetMin" data-uid="Godot.ParticleProcessMaterial.AnimOffsetMin">
+  AnimOffsetMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AnimOffsetMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_AnimSpeedCurve_" data-uid="Godot.ParticleProcessMaterial.AnimSpeedCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_AnimSpeedCurve" data-uid="Godot.ParticleProcessMaterial.AnimSpeedCurve">
+  AnimSpeedCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D AnimSpeedCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_AnimSpeedMax_" data-uid="Godot.ParticleProcessMaterial.AnimSpeedMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_AnimSpeedMax" data-uid="Godot.ParticleProcessMaterial.AnimSpeedMax">
+  AnimSpeedMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AnimSpeedMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_AnimSpeedMin_" data-uid="Godot.ParticleProcessMaterial.AnimSpeedMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_AnimSpeedMin" data-uid="Godot.ParticleProcessMaterial.AnimSpeedMin">
+  AnimSpeedMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AnimSpeedMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_AttractorInteractionEnabled_" data-uid="Godot.ParticleProcessMaterial.AttractorInteractionEnabled*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_AttractorInteractionEnabled" data-uid="Godot.ParticleProcessMaterial.AttractorInteractionEnabled">
+  AttractorInteractionEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AttractorInteractionEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_CollisionBounce_" data-uid="Godot.ParticleProcessMaterial.CollisionBounce*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_CollisionBounce" data-uid="Godot.ParticleProcessMaterial.CollisionBounce">
+  CollisionBounce
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CollisionBounce { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_CollisionFriction_" data-uid="Godot.ParticleProcessMaterial.CollisionFriction*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_CollisionFriction" data-uid="Godot.ParticleProcessMaterial.CollisionFriction">
+  CollisionFriction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CollisionFriction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_CollisionMode_" data-uid="Godot.ParticleProcessMaterial.CollisionMode*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_CollisionMode" data-uid="Godot.ParticleProcessMaterial.CollisionMode">
+  CollisionMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParticleProcessMaterial.CollisionModeEnum CollisionMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.ParticleProcessMaterial.html">ParticleProcessMaterial</a>.<a class="xref" href="Godot.ParticleProcessMaterial.CollisionModeEnum.html">CollisionModeEnum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_CollisionUseScale_" data-uid="Godot.ParticleProcessMaterial.CollisionUseScale*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_CollisionUseScale" data-uid="Godot.ParticleProcessMaterial.CollisionUseScale">
+  CollisionUseScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CollisionUseScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_Color_" data-uid="Godot.ParticleProcessMaterial.Color*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_Color" data-uid="Godot.ParticleProcessMaterial.Color">
+  Color
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color Color { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_ColorInitialRamp_" data-uid="Godot.ParticleProcessMaterial.ColorInitialRamp*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_ColorInitialRamp" data-uid="Godot.ParticleProcessMaterial.ColorInitialRamp">
+  ColorInitialRamp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D ColorInitialRamp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_ColorRamp_" data-uid="Godot.ParticleProcessMaterial.ColorRamp*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_ColorRamp" data-uid="Godot.ParticleProcessMaterial.ColorRamp">
+  ColorRamp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D ColorRamp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_DampingCurve_" data-uid="Godot.ParticleProcessMaterial.DampingCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_DampingCurve" data-uid="Godot.ParticleProcessMaterial.DampingCurve">
+  DampingCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D DampingCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_DampingMax_" data-uid="Godot.ParticleProcessMaterial.DampingMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_DampingMax" data-uid="Godot.ParticleProcessMaterial.DampingMax">
+  DampingMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DampingMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_DampingMin_" data-uid="Godot.ParticleProcessMaterial.DampingMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_DampingMin" data-uid="Godot.ParticleProcessMaterial.DampingMin">
+  DampingMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DampingMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_Direction_" data-uid="Godot.ParticleProcessMaterial.Direction*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_Direction" data-uid="Godot.ParticleProcessMaterial.Direction">
+  Direction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Direction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_DirectionalVelocityCurve_" data-uid="Godot.ParticleProcessMaterial.DirectionalVelocityCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_DirectionalVelocityCurve" data-uid="Godot.ParticleProcessMaterial.DirectionalVelocityCurve">
+  DirectionalVelocityCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D DirectionalVelocityCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_DirectionalVelocityMax_" data-uid="Godot.ParticleProcessMaterial.DirectionalVelocityMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_DirectionalVelocityMax" data-uid="Godot.ParticleProcessMaterial.DirectionalVelocityMax">
+  DirectionalVelocityMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DirectionalVelocityMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_DirectionalVelocityMin_" data-uid="Godot.ParticleProcessMaterial.DirectionalVelocityMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_DirectionalVelocityMin" data-uid="Godot.ParticleProcessMaterial.DirectionalVelocityMin">
+  DirectionalVelocityMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DirectionalVelocityMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_EmissionBoxExtents_" data-uid="Godot.ParticleProcessMaterial.EmissionBoxExtents*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionBoxExtents" data-uid="Godot.ParticleProcessMaterial.EmissionBoxExtents">
+  EmissionBoxExtents
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 EmissionBoxExtents { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_EmissionColorTexture_" data-uid="Godot.ParticleProcessMaterial.EmissionColorTexture*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionColorTexture" data-uid="Godot.ParticleProcessMaterial.EmissionColorTexture">
+  EmissionColorTexture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D EmissionColorTexture { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_EmissionCurve_" data-uid="Godot.ParticleProcessMaterial.EmissionCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionCurve" data-uid="Godot.ParticleProcessMaterial.EmissionCurve">
+  EmissionCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D EmissionCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_EmissionNormalTexture_" data-uid="Godot.ParticleProcessMaterial.EmissionNormalTexture*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionNormalTexture" data-uid="Godot.ParticleProcessMaterial.EmissionNormalTexture">
+  EmissionNormalTexture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D EmissionNormalTexture { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_EmissionPointCount_" data-uid="Godot.ParticleProcessMaterial.EmissionPointCount*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionPointCount" data-uid="Godot.ParticleProcessMaterial.EmissionPointCount">
+  EmissionPointCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int EmissionPointCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_EmissionPointTexture_" data-uid="Godot.ParticleProcessMaterial.EmissionPointTexture*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionPointTexture" data-uid="Godot.ParticleProcessMaterial.EmissionPointTexture">
+  EmissionPointTexture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D EmissionPointTexture { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_EmissionRingAxis_" data-uid="Godot.ParticleProcessMaterial.EmissionRingAxis*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionRingAxis" data-uid="Godot.ParticleProcessMaterial.EmissionRingAxis">
+  EmissionRingAxis
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 EmissionRingAxis { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_EmissionRingConeAngle_" data-uid="Godot.ParticleProcessMaterial.EmissionRingConeAngle*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionRingConeAngle" data-uid="Godot.ParticleProcessMaterial.EmissionRingConeAngle">
+  EmissionRingConeAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float EmissionRingConeAngle { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_EmissionRingHeight_" data-uid="Godot.ParticleProcessMaterial.EmissionRingHeight*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionRingHeight" data-uid="Godot.ParticleProcessMaterial.EmissionRingHeight">
+  EmissionRingHeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float EmissionRingHeight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_EmissionRingInnerRadius_" data-uid="Godot.ParticleProcessMaterial.EmissionRingInnerRadius*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionRingInnerRadius" data-uid="Godot.ParticleProcessMaterial.EmissionRingInnerRadius">
+  EmissionRingInnerRadius
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float EmissionRingInnerRadius { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_EmissionRingRadius_" data-uid="Godot.ParticleProcessMaterial.EmissionRingRadius*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionRingRadius" data-uid="Godot.ParticleProcessMaterial.EmissionRingRadius">
+  EmissionRingRadius
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float EmissionRingRadius { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_EmissionShape_" data-uid="Godot.ParticleProcessMaterial.EmissionShape*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionShape" data-uid="Godot.ParticleProcessMaterial.EmissionShape">
+  EmissionShape
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParticleProcessMaterial.EmissionShapeEnum EmissionShape { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.ParticleProcessMaterial.html">ParticleProcessMaterial</a>.<a class="xref" href="Godot.ParticleProcessMaterial.EmissionShapeEnum.html">EmissionShapeEnum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_EmissionShapeOffset_" data-uid="Godot.ParticleProcessMaterial.EmissionShapeOffset*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionShapeOffset" data-uid="Godot.ParticleProcessMaterial.EmissionShapeOffset">
+  EmissionShapeOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 EmissionShapeOffset { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_EmissionShapeScale_" data-uid="Godot.ParticleProcessMaterial.EmissionShapeScale*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionShapeScale" data-uid="Godot.ParticleProcessMaterial.EmissionShapeScale">
+  EmissionShapeScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 EmissionShapeScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_EmissionSphereRadius_" data-uid="Godot.ParticleProcessMaterial.EmissionSphereRadius*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionSphereRadius" data-uid="Godot.ParticleProcessMaterial.EmissionSphereRadius">
+  EmissionSphereRadius
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float EmissionSphereRadius { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_Flatness_" data-uid="Godot.ParticleProcessMaterial.Flatness*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_Flatness" data-uid="Godot.ParticleProcessMaterial.Flatness">
+  Flatness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Flatness { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_Gravity_" data-uid="Godot.ParticleProcessMaterial.Gravity*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_Gravity" data-uid="Godot.ParticleProcessMaterial.Gravity">
+  Gravity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Gravity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_HueVariationCurve_" data-uid="Godot.ParticleProcessMaterial.HueVariationCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_HueVariationCurve" data-uid="Godot.ParticleProcessMaterial.HueVariationCurve">
+  HueVariationCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D HueVariationCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_HueVariationMax_" data-uid="Godot.ParticleProcessMaterial.HueVariationMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_HueVariationMax" data-uid="Godot.ParticleProcessMaterial.HueVariationMax">
+  HueVariationMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HueVariationMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_HueVariationMin_" data-uid="Godot.ParticleProcessMaterial.HueVariationMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_HueVariationMin" data-uid="Godot.ParticleProcessMaterial.HueVariationMin">
+  HueVariationMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HueVariationMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_InheritVelocityRatio_" data-uid="Godot.ParticleProcessMaterial.InheritVelocityRatio*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_InheritVelocityRatio" data-uid="Godot.ParticleProcessMaterial.InheritVelocityRatio">
+  InheritVelocityRatio
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double InheritVelocityRatio { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">double</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_InitialVelocityMax_" data-uid="Godot.ParticleProcessMaterial.InitialVelocityMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_InitialVelocityMax" data-uid="Godot.ParticleProcessMaterial.InitialVelocityMax">
+  InitialVelocityMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float InitialVelocityMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_InitialVelocityMin_" data-uid="Godot.ParticleProcessMaterial.InitialVelocityMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_InitialVelocityMin" data-uid="Godot.ParticleProcessMaterial.InitialVelocityMin">
+  InitialVelocityMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float InitialVelocityMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_LifetimeRandomness_" data-uid="Godot.ParticleProcessMaterial.LifetimeRandomness*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_LifetimeRandomness" data-uid="Godot.ParticleProcessMaterial.LifetimeRandomness">
+  LifetimeRandomness
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double LifetimeRandomness { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">double</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_LinearAccelCurve_" data-uid="Godot.ParticleProcessMaterial.LinearAccelCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_LinearAccelCurve" data-uid="Godot.ParticleProcessMaterial.LinearAccelCurve">
+  LinearAccelCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D LinearAccelCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_LinearAccelMax_" data-uid="Godot.ParticleProcessMaterial.LinearAccelMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_LinearAccelMax" data-uid="Godot.ParticleProcessMaterial.LinearAccelMax">
+  LinearAccelMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LinearAccelMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_LinearAccelMin_" data-uid="Godot.ParticleProcessMaterial.LinearAccelMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_LinearAccelMin" data-uid="Godot.ParticleProcessMaterial.LinearAccelMin">
+  LinearAccelMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LinearAccelMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_OrbitVelocityCurve_" data-uid="Godot.ParticleProcessMaterial.OrbitVelocityCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_OrbitVelocityCurve" data-uid="Godot.ParticleProcessMaterial.OrbitVelocityCurve">
+  OrbitVelocityCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D OrbitVelocityCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_OrbitVelocityMax_" data-uid="Godot.ParticleProcessMaterial.OrbitVelocityMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_OrbitVelocityMax" data-uid="Godot.ParticleProcessMaterial.OrbitVelocityMax">
+  OrbitVelocityMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float OrbitVelocityMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_OrbitVelocityMin_" data-uid="Godot.ParticleProcessMaterial.OrbitVelocityMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_OrbitVelocityMin" data-uid="Godot.ParticleProcessMaterial.OrbitVelocityMin">
+  OrbitVelocityMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float OrbitVelocityMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_ParticleFlagAlignY_" data-uid="Godot.ParticleProcessMaterial.ParticleFlagAlignY*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_ParticleFlagAlignY" data-uid="Godot.ParticleProcessMaterial.ParticleFlagAlignY">
+  ParticleFlagAlignY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ParticleFlagAlignY { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_ParticleFlagDampingAsFriction_" data-uid="Godot.ParticleProcessMaterial.ParticleFlagDampingAsFriction*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_ParticleFlagDampingAsFriction" data-uid="Godot.ParticleProcessMaterial.ParticleFlagDampingAsFriction">
+  ParticleFlagDampingAsFriction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ParticleFlagDampingAsFriction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_ParticleFlagDisableZ_" data-uid="Godot.ParticleProcessMaterial.ParticleFlagDisableZ*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_ParticleFlagDisableZ" data-uid="Godot.ParticleProcessMaterial.ParticleFlagDisableZ">
+  ParticleFlagDisableZ
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ParticleFlagDisableZ { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_ParticleFlagRotateY_" data-uid="Godot.ParticleProcessMaterial.ParticleFlagRotateY*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_ParticleFlagRotateY" data-uid="Godot.ParticleProcessMaterial.ParticleFlagRotateY">
+  ParticleFlagRotateY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ParticleFlagRotateY { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_RadialAccelCurve_" data-uid="Godot.ParticleProcessMaterial.RadialAccelCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_RadialAccelCurve" data-uid="Godot.ParticleProcessMaterial.RadialAccelCurve">
+  RadialAccelCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D RadialAccelCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_RadialAccelMax_" data-uid="Godot.ParticleProcessMaterial.RadialAccelMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_RadialAccelMax" data-uid="Godot.ParticleProcessMaterial.RadialAccelMax">
+  RadialAccelMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RadialAccelMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_RadialAccelMin_" data-uid="Godot.ParticleProcessMaterial.RadialAccelMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_RadialAccelMin" data-uid="Godot.ParticleProcessMaterial.RadialAccelMin">
+  RadialAccelMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RadialAccelMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_RadialVelocityCurve_" data-uid="Godot.ParticleProcessMaterial.RadialVelocityCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_RadialVelocityCurve" data-uid="Godot.ParticleProcessMaterial.RadialVelocityCurve">
+  RadialVelocityCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D RadialVelocityCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_RadialVelocityMax_" data-uid="Godot.ParticleProcessMaterial.RadialVelocityMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_RadialVelocityMax" data-uid="Godot.ParticleProcessMaterial.RadialVelocityMax">
+  RadialVelocityMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RadialVelocityMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_RadialVelocityMin_" data-uid="Godot.ParticleProcessMaterial.RadialVelocityMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_RadialVelocityMin" data-uid="Godot.ParticleProcessMaterial.RadialVelocityMin">
+  RadialVelocityMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RadialVelocityMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_ScaleCurve_" data-uid="Godot.ParticleProcessMaterial.ScaleCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_ScaleCurve" data-uid="Godot.ParticleProcessMaterial.ScaleCurve">
+  ScaleCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D ScaleCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_ScaleMax_" data-uid="Godot.ParticleProcessMaterial.ScaleMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_ScaleMax" data-uid="Godot.ParticleProcessMaterial.ScaleMax">
+  ScaleMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ScaleMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_ScaleMin_" data-uid="Godot.ParticleProcessMaterial.ScaleMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_ScaleMin" data-uid="Godot.ParticleProcessMaterial.ScaleMin">
+  ScaleMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ScaleMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_ScaleOverVelocityCurve_" data-uid="Godot.ParticleProcessMaterial.ScaleOverVelocityCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_ScaleOverVelocityCurve" data-uid="Godot.ParticleProcessMaterial.ScaleOverVelocityCurve">
+  ScaleOverVelocityCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D ScaleOverVelocityCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_ScaleOverVelocityMax_" data-uid="Godot.ParticleProcessMaterial.ScaleOverVelocityMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_ScaleOverVelocityMax" data-uid="Godot.ParticleProcessMaterial.ScaleOverVelocityMax">
+  ScaleOverVelocityMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ScaleOverVelocityMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_ScaleOverVelocityMin_" data-uid="Godot.ParticleProcessMaterial.ScaleOverVelocityMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_ScaleOverVelocityMin" data-uid="Godot.ParticleProcessMaterial.ScaleOverVelocityMin">
+  ScaleOverVelocityMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ScaleOverVelocityMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_Spread_" data-uid="Godot.ParticleProcessMaterial.Spread*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_Spread" data-uid="Godot.ParticleProcessMaterial.Spread">
+  Spread
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Spread { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_SubEmitterAmountAtCollision_" data-uid="Godot.ParticleProcessMaterial.SubEmitterAmountAtCollision*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_SubEmitterAmountAtCollision" data-uid="Godot.ParticleProcessMaterial.SubEmitterAmountAtCollision">
+  SubEmitterAmountAtCollision
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SubEmitterAmountAtCollision { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_SubEmitterAmountAtEnd_" data-uid="Godot.ParticleProcessMaterial.SubEmitterAmountAtEnd*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_SubEmitterAmountAtEnd" data-uid="Godot.ParticleProcessMaterial.SubEmitterAmountAtEnd">
+  SubEmitterAmountAtEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SubEmitterAmountAtEnd { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_SubEmitterAmountAtStart_" data-uid="Godot.ParticleProcessMaterial.SubEmitterAmountAtStart*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_SubEmitterAmountAtStart" data-uid="Godot.ParticleProcessMaterial.SubEmitterAmountAtStart">
+  SubEmitterAmountAtStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SubEmitterAmountAtStart { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_SubEmitterFrequency_" data-uid="Godot.ParticleProcessMaterial.SubEmitterFrequency*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_SubEmitterFrequency" data-uid="Godot.ParticleProcessMaterial.SubEmitterFrequency">
+  SubEmitterFrequency
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double SubEmitterFrequency { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">double</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_SubEmitterKeepVelocity_" data-uid="Godot.ParticleProcessMaterial.SubEmitterKeepVelocity*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_SubEmitterKeepVelocity" data-uid="Godot.ParticleProcessMaterial.SubEmitterKeepVelocity">
+  SubEmitterKeepVelocity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SubEmitterKeepVelocity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_SubEmitterMode_" data-uid="Godot.ParticleProcessMaterial.SubEmitterMode*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_SubEmitterMode" data-uid="Godot.ParticleProcessMaterial.SubEmitterMode">
+  SubEmitterMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParticleProcessMaterial.SubEmitterModeEnum SubEmitterMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.ParticleProcessMaterial.html">ParticleProcessMaterial</a>.<a class="xref" href="Godot.ParticleProcessMaterial.SubEmitterModeEnum.html">SubEmitterModeEnum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_TangentialAccelCurve_" data-uid="Godot.ParticleProcessMaterial.TangentialAccelCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_TangentialAccelCurve" data-uid="Godot.ParticleProcessMaterial.TangentialAccelCurve">
+  TangentialAccelCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D TangentialAccelCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_TangentialAccelMax_" data-uid="Godot.ParticleProcessMaterial.TangentialAccelMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_TangentialAccelMax" data-uid="Godot.ParticleProcessMaterial.TangentialAccelMax">
+  TangentialAccelMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TangentialAccelMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_TangentialAccelMin_" data-uid="Godot.ParticleProcessMaterial.TangentialAccelMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_TangentialAccelMin" data-uid="Godot.ParticleProcessMaterial.TangentialAccelMin">
+  TangentialAccelMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TangentialAccelMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_TurbulenceEnabled_" data-uid="Godot.ParticleProcessMaterial.TurbulenceEnabled*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_TurbulenceEnabled" data-uid="Godot.ParticleProcessMaterial.TurbulenceEnabled">
+  TurbulenceEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TurbulenceEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_TurbulenceInfluenceMax_" data-uid="Godot.ParticleProcessMaterial.TurbulenceInfluenceMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_TurbulenceInfluenceMax" data-uid="Godot.ParticleProcessMaterial.TurbulenceInfluenceMax">
+  TurbulenceInfluenceMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TurbulenceInfluenceMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_TurbulenceInfluenceMin_" data-uid="Godot.ParticleProcessMaterial.TurbulenceInfluenceMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_TurbulenceInfluenceMin" data-uid="Godot.ParticleProcessMaterial.TurbulenceInfluenceMin">
+  TurbulenceInfluenceMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TurbulenceInfluenceMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_TurbulenceInfluenceOverLife_" data-uid="Godot.ParticleProcessMaterial.TurbulenceInfluenceOverLife*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_TurbulenceInfluenceOverLife" data-uid="Godot.ParticleProcessMaterial.TurbulenceInfluenceOverLife">
+  TurbulenceInfluenceOverLife
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D TurbulenceInfluenceOverLife { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_TurbulenceInitialDisplacementMax_" data-uid="Godot.ParticleProcessMaterial.TurbulenceInitialDisplacementMax*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_TurbulenceInitialDisplacementMax" data-uid="Godot.ParticleProcessMaterial.TurbulenceInitialDisplacementMax">
+  TurbulenceInitialDisplacementMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TurbulenceInitialDisplacementMax { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_TurbulenceInitialDisplacementMin_" data-uid="Godot.ParticleProcessMaterial.TurbulenceInitialDisplacementMin*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_TurbulenceInitialDisplacementMin" data-uid="Godot.ParticleProcessMaterial.TurbulenceInitialDisplacementMin">
+  TurbulenceInitialDisplacementMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TurbulenceInitialDisplacementMin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_TurbulenceNoiseScale_" data-uid="Godot.ParticleProcessMaterial.TurbulenceNoiseScale*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_TurbulenceNoiseScale" data-uid="Godot.ParticleProcessMaterial.TurbulenceNoiseScale">
+  TurbulenceNoiseScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TurbulenceNoiseScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_TurbulenceNoiseSpeed_" data-uid="Godot.ParticleProcessMaterial.TurbulenceNoiseSpeed*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_TurbulenceNoiseSpeed" data-uid="Godot.ParticleProcessMaterial.TurbulenceNoiseSpeed">
+  TurbulenceNoiseSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 TurbulenceNoiseSpeed { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_TurbulenceNoiseSpeedRandom_" data-uid="Godot.ParticleProcessMaterial.TurbulenceNoiseSpeedRandom*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_TurbulenceNoiseSpeedRandom" data-uid="Godot.ParticleProcessMaterial.TurbulenceNoiseSpeedRandom">
+  TurbulenceNoiseSpeedRandom
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TurbulenceNoiseSpeedRandom { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_TurbulenceNoiseStrength_" data-uid="Godot.ParticleProcessMaterial.TurbulenceNoiseStrength*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_TurbulenceNoiseStrength" data-uid="Godot.ParticleProcessMaterial.TurbulenceNoiseStrength">
+  TurbulenceNoiseStrength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TurbulenceNoiseStrength { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_VelocityLimitCurve_" data-uid="Godot.ParticleProcessMaterial.VelocityLimitCurve*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_VelocityLimitCurve" data-uid="Godot.ParticleProcessMaterial.VelocityLimitCurve">
+  VelocityLimitCurve
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D VelocityLimitCurve { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Texture2D.html">Texture2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_VelocityPivot_" data-uid="Godot.ParticleProcessMaterial.VelocityPivot*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_VelocityPivot" data-uid="Godot.ParticleProcessMaterial.VelocityPivot">
+  VelocityPivot
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 VelocityPivot { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Godot_ParticleProcessMaterial_EmitSignalEmissionShapeChanged_" data-uid="Godot.ParticleProcessMaterial.EmitSignalEmissionShapeChanged*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_EmitSignalEmissionShapeChanged" data-uid="Godot.ParticleProcessMaterial.EmitSignalEmissionShapeChanged">
+  EmitSignalEmissionShapeChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EmitSignalEmissionShapeChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_GetParam_" data-uid="Godot.ParticleProcessMaterial.GetParam*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_GetParam_Godot_ParticleProcessMaterial_Parameter_" data-uid="Godot.ParticleProcessMaterial.GetParam(Godot.ParticleProcessMaterial.Parameter)">
+  GetParam(Parameter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetParam(ParticleProcessMaterial.Parameter param)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param</code> <a class="xref" href="Godot.ParticleProcessMaterial.html">ParticleProcessMaterial</a>.<a class="xref" href="Godot.ParticleProcessMaterial.Parameter.html">Parameter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_HasGodotClassMethod_" data-uid="Godot.ParticleProcessMaterial.HasGodotClassMethod*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_HasGodotClassMethod_Godot_NativeInterop_godot_string_name__" data-uid="Godot.ParticleProcessMaterial.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+  HasGodotClassMethod(in godot_string_name)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassMethod(in godot_string_name method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_HasGodotClassSignal_" data-uid="Godot.ParticleProcessMaterial.HasGodotClassSignal*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_HasGodotClassSignal_Godot_NativeInterop_godot_string_name__" data-uid="Godot.ParticleProcessMaterial.HasGodotClassSignal(Godot.NativeInterop.godot_string_name@)">
+  HasGodotClassSignal(in godot_string_name)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HasGodotClassSignal(in godot_string_name signal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signal</code> <a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_InvokeGodotClassMethod_" data-uid="Godot.ParticleProcessMaterial.InvokeGodotClassMethod*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_InvokeGodotClassMethod_Godot_NativeInterop_godot_string_name__Godot_NativeInterop_NativeVariantPtrArgs_Godot_NativeInterop_godot_variant__" data-uid="Godot.ParticleProcessMaterial.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+  InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool InvokeGodotClassMethod(in godot_string_name method, NativeVariantPtrArgs args, out godot_variant ret)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="Godot.NativeInterop.godot_string_name.html">godot_string_name</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <a class="xref" href="Godot.NativeInterop.NativeVariantPtrArgs.html">NativeVariantPtrArgs</a></dt>
+    <dd></dd>
+    <dt><code>ret</code> <a class="xref" href="Godot.NativeInterop.godot_variant.html">godot_variant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_ParticleProcessMaterial_SetParam_" data-uid="Godot.ParticleProcessMaterial.SetParam*"></a>
+
+  <h3 id="Godot_ParticleProcessMaterial_SetParam_Godot_ParticleProcessMaterial_Parameter_Godot_Vector2_" data-uid="Godot.ParticleProcessMaterial.SetParam(Godot.ParticleProcessMaterial.Parameter,Godot.Vector2)">
+  SetParam(Parameter, Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetParam(ParticleProcessMaterial.Parameter param, Vector2 value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param</code> <a class="xref" href="Godot.ParticleProcessMaterial.html">ParticleProcessMaterial</a>.<a class="xref" href="Godot.ParticleProcessMaterial.Parameter.html">Parameter</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Godot.Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Godot_ParticleProcessMaterial_EmissionShapeChanged" data-uid="Godot.ParticleProcessMaterial.EmissionShapeChanged">
+  EmissionShapeChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action EmissionShapeChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

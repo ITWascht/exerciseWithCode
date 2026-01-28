@@ -1,0 +1,666 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.Bridge.MethodInfo
+  commentId: T:Godot.Bridge.MethodInfo
+  id: MethodInfo
+  parent: Godot.Bridge
+  children:
+  - Godot.Bridge.MethodInfo.#ctor(Godot.StringName,Godot.Bridge.PropertyInfo,Godot.MethodFlags,System.Collections.Generic.List{Godot.Bridge.PropertyInfo},System.Collections.Generic.List{Godot.Variant})
+  - Godot.Bridge.MethodInfo.Arguments
+  - Godot.Bridge.MethodInfo.DefaultArguments
+  - Godot.Bridge.MethodInfo.Flags
+  - Godot.Bridge.MethodInfo.Id
+  - Godot.Bridge.MethodInfo.Name
+  - Godot.Bridge.MethodInfo.ReturnVal
+  langs:
+  - csharp
+  - vb
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: Godot.Bridge.MethodInfo
+  type: Struct
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Bridge
+  syntax:
+    content: public readonly struct MethodInfo
+    content.vb: Public Structure MethodInfo
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Godot.Bridge.MethodInfo.#ctor(Godot.StringName,Godot.Bridge.PropertyInfo,Godot.MethodFlags,System.Collections.Generic.List{Godot.Bridge.PropertyInfo},System.Collections.Generic.List{Godot.Variant})
+  commentId: M:Godot.Bridge.MethodInfo.#ctor(Godot.StringName,Godot.Bridge.PropertyInfo,Godot.MethodFlags,System.Collections.Generic.List{Godot.Bridge.PropertyInfo},System.Collections.Generic.List{Godot.Variant})
+  id: '#ctor(Godot.StringName,Godot.Bridge.PropertyInfo,Godot.MethodFlags,System.Collections.Generic.List{Godot.Bridge.PropertyInfo},System.Collections.Generic.List{Godot.Variant})'
+  parent: Godot.Bridge.MethodInfo
+  langs:
+  - csharp
+  - vb
+  name: MethodInfo(StringName, PropertyInfo, MethodFlags, List<PropertyInfo>?, List<Variant>?)
+  nameWithType: MethodInfo.MethodInfo(StringName, PropertyInfo, MethodFlags, List<PropertyInfo>?, List<Variant>?)
+  fullName: Godot.Bridge.MethodInfo.MethodInfo(Godot.StringName, Godot.Bridge.PropertyInfo, Godot.MethodFlags, System.Collections.Generic.List<Godot.Bridge.PropertyInfo>?, System.Collections.Generic.List<Godot.Variant>?)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Bridge
+  syntax:
+    content: public MethodInfo(StringName name, PropertyInfo returnVal, MethodFlags flags, List<PropertyInfo>? arguments, List<Variant>? defaultArguments)
+    parameters:
+    - id: name
+      type: Godot.StringName
+    - id: returnVal
+      type: Godot.Bridge.PropertyInfo
+    - id: flags
+      type: Godot.MethodFlags
+    - id: arguments
+      type: System.Collections.Generic.List{Godot.Bridge.PropertyInfo}
+    - id: defaultArguments
+      type: System.Collections.Generic.List{Godot.Variant}
+    content.vb: Public Sub New(name As StringName, returnVal As PropertyInfo, flags As MethodFlags, arguments As List(Of PropertyInfo), defaultArguments As List(Of [Variant]))
+  overload: Godot.Bridge.MethodInfo.#ctor*
+  nameWithType.vb: MethodInfo.New(StringName, PropertyInfo, MethodFlags, List(Of PropertyInfo), List(Of Variant))
+  fullName.vb: Godot.Bridge.MethodInfo.New(Godot.StringName, Godot.Bridge.PropertyInfo, Godot.MethodFlags, System.Collections.Generic.List(Of Godot.Bridge.PropertyInfo), System.Collections.Generic.List(Of Godot.Variant))
+  name.vb: New(StringName, PropertyInfo, MethodFlags, List(Of PropertyInfo), List(Of Variant))
+- uid: Godot.Bridge.MethodInfo.Name
+  commentId: P:Godot.Bridge.MethodInfo.Name
+  id: Name
+  parent: Godot.Bridge.MethodInfo
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: MethodInfo.Name
+  fullName: Godot.Bridge.MethodInfo.Name
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Bridge
+  syntax:
+    content: public StringName Name { get; init; }
+    parameters: []
+    return:
+      type: Godot.StringName
+    content.vb: Public Property Name As StringName
+  overload: Godot.Bridge.MethodInfo.Name*
+- uid: Godot.Bridge.MethodInfo.ReturnVal
+  commentId: P:Godot.Bridge.MethodInfo.ReturnVal
+  id: ReturnVal
+  parent: Godot.Bridge.MethodInfo
+  langs:
+  - csharp
+  - vb
+  name: ReturnVal
+  nameWithType: MethodInfo.ReturnVal
+  fullName: Godot.Bridge.MethodInfo.ReturnVal
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Bridge
+  syntax:
+    content: public PropertyInfo ReturnVal { get; init; }
+    parameters: []
+    return:
+      type: Godot.Bridge.PropertyInfo
+    content.vb: Public Property ReturnVal As PropertyInfo
+  overload: Godot.Bridge.MethodInfo.ReturnVal*
+- uid: Godot.Bridge.MethodInfo.Flags
+  commentId: P:Godot.Bridge.MethodInfo.Flags
+  id: Flags
+  parent: Godot.Bridge.MethodInfo
+  langs:
+  - csharp
+  - vb
+  name: Flags
+  nameWithType: MethodInfo.Flags
+  fullName: Godot.Bridge.MethodInfo.Flags
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Bridge
+  syntax:
+    content: public MethodFlags Flags { get; init; }
+    parameters: []
+    return:
+      type: Godot.MethodFlags
+    content.vb: Public Property Flags As MethodFlags
+  overload: Godot.Bridge.MethodInfo.Flags*
+- uid: Godot.Bridge.MethodInfo.Id
+  commentId: P:Godot.Bridge.MethodInfo.Id
+  id: Id
+  parent: Godot.Bridge.MethodInfo
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: MethodInfo.Id
+  fullName: Godot.Bridge.MethodInfo.Id
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Bridge
+  syntax:
+    content: public int Id { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: Godot.Bridge.MethodInfo.Id*
+- uid: Godot.Bridge.MethodInfo.Arguments
+  commentId: P:Godot.Bridge.MethodInfo.Arguments
+  id: Arguments
+  parent: Godot.Bridge.MethodInfo
+  langs:
+  - csharp
+  - vb
+  name: Arguments
+  nameWithType: MethodInfo.Arguments
+  fullName: Godot.Bridge.MethodInfo.Arguments
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Bridge
+  syntax:
+    content: public List<PropertyInfo>? Arguments { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Godot.Bridge.PropertyInfo}
+    content.vb: Public Property Arguments As List(Of PropertyInfo)
+  overload: Godot.Bridge.MethodInfo.Arguments*
+- uid: Godot.Bridge.MethodInfo.DefaultArguments
+  commentId: P:Godot.Bridge.MethodInfo.DefaultArguments
+  id: DefaultArguments
+  parent: Godot.Bridge.MethodInfo
+  langs:
+  - csharp
+  - vb
+  name: DefaultArguments
+  nameWithType: MethodInfo.DefaultArguments
+  fullName: Godot.Bridge.MethodInfo.DefaultArguments
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Bridge
+  syntax:
+    content: public List<Variant>? DefaultArguments { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Godot.Variant}
+    content.vb: Public Property DefaultArguments As List(Of [Variant])
+  overload: Godot.Bridge.MethodInfo.DefaultArguments*
+references:
+- uid: Godot.Bridge
+  commentId: N:Godot.Bridge
+  isExternal: true
+  href: Godot.html
+  name: Godot.Bridge
+  nameWithType: Godot.Bridge
+  fullName: Godot.Bridge
+  spec.csharp:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Bridge
+    name: Bridge
+    isExternal: true
+    href: Godot.Bridge.html
+  spec.vb:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Bridge
+    name: Bridge
+    isExternal: true
+    href: Godot.Bridge.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.Bridge.MethodInfo.#ctor*
+  commentId: Overload:Godot.Bridge.MethodInfo.#ctor
+  isExternal: true
+  href: Godot.Bridge.MethodInfo.html#Godot_Bridge_MethodInfo__ctor_Godot_StringName_Godot_Bridge_PropertyInfo_Godot_MethodFlags_System_Collections_Generic_List_Godot_Bridge_PropertyInfo__System_Collections_Generic_List_Godot_Variant__
+  name: MethodInfo
+  nameWithType: MethodInfo.MethodInfo
+  fullName: Godot.Bridge.MethodInfo.MethodInfo
+  nameWithType.vb: MethodInfo.New
+  fullName.vb: Godot.Bridge.MethodInfo.New
+  name.vb: New
+- uid: Godot.StringName
+  commentId: T:Godot.StringName
+  parent: Godot
+  isExternal: true
+  href: Godot.StringName.html
+  name: StringName
+  nameWithType: StringName
+  fullName: Godot.StringName
+- uid: Godot.Bridge.PropertyInfo
+  commentId: T:Godot.Bridge.PropertyInfo
+  parent: Godot.Bridge
+  isExternal: true
+  href: Godot.Bridge.PropertyInfo.html
+  name: PropertyInfo
+  nameWithType: PropertyInfo
+  fullName: Godot.Bridge.PropertyInfo
+- uid: Godot.MethodFlags
+  commentId: T:Godot.MethodFlags
+  parent: Godot
+  isExternal: true
+  href: Godot.MethodFlags.html
+  name: MethodFlags
+  nameWithType: MethodFlags
+  fullName: Godot.MethodFlags
+- uid: System.Collections.Generic.List{Godot.Bridge.PropertyInfo}
+  commentId: T:System.Collections.Generic.List{Godot.Bridge.PropertyInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<PropertyInfo>
+  nameWithType: List<PropertyInfo>
+  fullName: System.Collections.Generic.List<Godot.Bridge.PropertyInfo>
+  nameWithType.vb: List(Of PropertyInfo)
+  fullName.vb: System.Collections.Generic.List(Of Godot.Bridge.PropertyInfo)
+  name.vb: List(Of PropertyInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Godot.Bridge.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: Godot.Bridge.PropertyInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Bridge.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: Godot.Bridge.PropertyInfo.html
+  - name: )
+- uid: System.Collections.Generic.List{Godot.Variant}
+  commentId: T:System.Collections.Generic.List{Godot.Variant}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Variant>
+  nameWithType: List<Variant>
+  fullName: System.Collections.Generic.List<Godot.Variant>
+  nameWithType.vb: List(Of Variant)
+  fullName.vb: System.Collections.Generic.List(Of Godot.Variant)
+  name.vb: List(Of Variant)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Godot.Bridge.MethodInfo.Name*
+  commentId: Overload:Godot.Bridge.MethodInfo.Name
+  isExternal: true
+  href: Godot.Bridge.MethodInfo.html#Godot_Bridge_MethodInfo_Name
+  name: Name
+  nameWithType: MethodInfo.Name
+  fullName: Godot.Bridge.MethodInfo.Name
+- uid: Godot.Bridge.MethodInfo.ReturnVal*
+  commentId: Overload:Godot.Bridge.MethodInfo.ReturnVal
+  isExternal: true
+  href: Godot.Bridge.MethodInfo.html#Godot_Bridge_MethodInfo_ReturnVal
+  name: ReturnVal
+  nameWithType: MethodInfo.ReturnVal
+  fullName: Godot.Bridge.MethodInfo.ReturnVal
+- uid: Godot.Bridge.MethodInfo.Flags*
+  commentId: Overload:Godot.Bridge.MethodInfo.Flags
+  isExternal: true
+  href: Godot.Bridge.MethodInfo.html#Godot_Bridge_MethodInfo_Flags
+  name: Flags
+  nameWithType: MethodInfo.Flags
+  fullName: Godot.Bridge.MethodInfo.Flags
+- uid: Godot.Bridge.MethodInfo.Id*
+  commentId: Overload:Godot.Bridge.MethodInfo.Id
+  isExternal: true
+  href: Godot.Bridge.MethodInfo.html#Godot_Bridge_MethodInfo_Id
+  name: Id
+  nameWithType: MethodInfo.Id
+  fullName: Godot.Bridge.MethodInfo.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Godot.Bridge.MethodInfo.Arguments*
+  commentId: Overload:Godot.Bridge.MethodInfo.Arguments
+  isExternal: true
+  href: Godot.Bridge.MethodInfo.html#Godot_Bridge_MethodInfo_Arguments
+  name: Arguments
+  nameWithType: MethodInfo.Arguments
+  fullName: Godot.Bridge.MethodInfo.Arguments
+- uid: Godot.Bridge.MethodInfo.DefaultArguments*
+  commentId: Overload:Godot.Bridge.MethodInfo.DefaultArguments
+  isExternal: true
+  href: Godot.Bridge.MethodInfo.html#Godot_Bridge_MethodInfo_DefaultArguments
+  name: DefaultArguments
+  nameWithType: MethodInfo.DefaultArguments
+  fullName: Godot.Bridge.MethodInfo.DefaultArguments

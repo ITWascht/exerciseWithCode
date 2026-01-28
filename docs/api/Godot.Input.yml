@@ -1,0 +1,2345 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.Input
+  commentId: T:Godot.Input
+  id: Input
+  parent: Godot
+  children:
+  - Godot.Input.ActionPress(Godot.StringName,System.Single)
+  - Godot.Input.ActionRelease(Godot.StringName)
+  - Godot.Input.AddJoyMapping(System.String,System.Boolean)
+  - Godot.Input.EmulateMouseFromTouch
+  - Godot.Input.EmulateTouchFromMouse
+  - Godot.Input.FlushBufferedEvents
+  - Godot.Input.GetAccelerometer
+  - Godot.Input.GetActionRawStrength(Godot.StringName,System.Boolean)
+  - Godot.Input.GetActionStrength(Godot.StringName,System.Boolean)
+  - Godot.Input.GetAxis(Godot.StringName,Godot.StringName)
+  - Godot.Input.GetConnectedJoypads
+  - Godot.Input.GetCurrentCursorShape
+  - Godot.Input.GetGravity
+  - Godot.Input.GetGyroscope
+  - Godot.Input.GetJoyAxis(System.Int32,Godot.JoyAxis)
+  - Godot.Input.GetJoyGuid(System.Int32)
+  - Godot.Input.GetJoyInfo(System.Int32)
+  - Godot.Input.GetJoyName(System.Int32)
+  - Godot.Input.GetJoyVibrationDuration(System.Int32)
+  - Godot.Input.GetJoyVibrationStrength(System.Int32)
+  - Godot.Input.GetLastMouseScreenVelocity
+  - Godot.Input.GetLastMouseVelocity
+  - Godot.Input.GetMagnetometer
+  - Godot.Input.GetMouseButtonMask
+  - Godot.Input.GetVector(Godot.StringName,Godot.StringName,Godot.StringName,Godot.StringName,System.Single)
+  - Godot.Input.IsActionJustPressed(Godot.StringName,System.Boolean)
+  - Godot.Input.IsActionJustPressedByEvent(Godot.StringName,Godot.InputEvent,System.Boolean)
+  - Godot.Input.IsActionJustReleased(Godot.StringName,System.Boolean)
+  - Godot.Input.IsActionJustReleasedByEvent(Godot.StringName,Godot.InputEvent,System.Boolean)
+  - Godot.Input.IsActionPressed(Godot.StringName,System.Boolean)
+  - Godot.Input.IsAnythingPressed
+  - Godot.Input.IsJoyButtonPressed(System.Int32,Godot.JoyButton)
+  - Godot.Input.IsJoyKnown(System.Int32)
+  - Godot.Input.IsKeyLabelPressed(Godot.Key)
+  - Godot.Input.IsKeyPressed(Godot.Key)
+  - Godot.Input.IsMouseButtonPressed(Godot.MouseButton)
+  - Godot.Input.IsPhysicalKeyPressed(Godot.Key)
+  - Godot.Input.JoyConnectionChanged
+  - Godot.Input.MouseMode
+  - Godot.Input.ParseInputEvent(Godot.InputEvent)
+  - Godot.Input.RemoveJoyMapping(System.String)
+  - Godot.Input.SetAccelerometer(Godot.Vector3)
+  - Godot.Input.SetCustomMouseCursor(Godot.Resource,Godot.Input.CursorShape,System.Nullable{Godot.Vector2})
+  - Godot.Input.SetDefaultCursorShape(Godot.Input.CursorShape)
+  - Godot.Input.SetGravity(Godot.Vector3)
+  - Godot.Input.SetGyroscope(Godot.Vector3)
+  - Godot.Input.SetMagnetometer(Godot.Vector3)
+  - Godot.Input.ShouldIgnoreDevice(System.Int32,System.Int32)
+  - Godot.Input.Singleton
+  - Godot.Input.StartJoyVibration(System.Int32,System.Single,System.Single,System.Single)
+  - Godot.Input.StopJoyVibration(System.Int32)
+  - Godot.Input.UseAccumulatedInput
+  - Godot.Input.VibrateHandheld(System.Int32,System.Single)
+  - Godot.Input.WarpMouse(Godot.Vector2)
+  langs:
+  - csharp
+  - vb
+  name: Input
+  nameWithType: Input
+  fullName: Godot.Input
+  type: Class
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static class Input
+    content.vb: Public Module Input
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Godot.Input.IsAnythingPressed
+  commentId: M:Godot.Input.IsAnythingPressed
+  id: IsAnythingPressed
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: IsAnythingPressed()
+  nameWithType: Input.IsAnythingPressed()
+  fullName: Godot.Input.IsAnythingPressed()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsAnythingPressed()
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsAnythingPressed() As Boolean
+  overload: Godot.Input.IsAnythingPressed*
+- uid: Godot.Input.IsKeyPressed(Godot.Key)
+  commentId: M:Godot.Input.IsKeyPressed(Godot.Key)
+  id: IsKeyPressed(Godot.Key)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: IsKeyPressed(Key)
+  nameWithType: Input.IsKeyPressed(Key)
+  fullName: Godot.Input.IsKeyPressed(Godot.Key)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsKeyPressed(Key keycode)
+    parameters:
+    - id: keycode
+      type: Godot.Key
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsKeyPressed(keycode As Key) As Boolean
+  overload: Godot.Input.IsKeyPressed*
+- uid: Godot.Input.IsPhysicalKeyPressed(Godot.Key)
+  commentId: M:Godot.Input.IsPhysicalKeyPressed(Godot.Key)
+  id: IsPhysicalKeyPressed(Godot.Key)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: IsPhysicalKeyPressed(Key)
+  nameWithType: Input.IsPhysicalKeyPressed(Key)
+  fullName: Godot.Input.IsPhysicalKeyPressed(Godot.Key)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsPhysicalKeyPressed(Key keycode)
+    parameters:
+    - id: keycode
+      type: Godot.Key
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsPhysicalKeyPressed(keycode As Key) As Boolean
+  overload: Godot.Input.IsPhysicalKeyPressed*
+- uid: Godot.Input.IsKeyLabelPressed(Godot.Key)
+  commentId: M:Godot.Input.IsKeyLabelPressed(Godot.Key)
+  id: IsKeyLabelPressed(Godot.Key)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: IsKeyLabelPressed(Key)
+  nameWithType: Input.IsKeyLabelPressed(Key)
+  fullName: Godot.Input.IsKeyLabelPressed(Godot.Key)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsKeyLabelPressed(Key keycode)
+    parameters:
+    - id: keycode
+      type: Godot.Key
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsKeyLabelPressed(keycode As Key) As Boolean
+  overload: Godot.Input.IsKeyLabelPressed*
+- uid: Godot.Input.IsMouseButtonPressed(Godot.MouseButton)
+  commentId: M:Godot.Input.IsMouseButtonPressed(Godot.MouseButton)
+  id: IsMouseButtonPressed(Godot.MouseButton)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: IsMouseButtonPressed(MouseButton)
+  nameWithType: Input.IsMouseButtonPressed(MouseButton)
+  fullName: Godot.Input.IsMouseButtonPressed(Godot.MouseButton)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsMouseButtonPressed(MouseButton button)
+    parameters:
+    - id: button
+      type: Godot.MouseButton
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsMouseButtonPressed(button As MouseButton) As Boolean
+  overload: Godot.Input.IsMouseButtonPressed*
+- uid: Godot.Input.IsJoyButtonPressed(System.Int32,Godot.JoyButton)
+  commentId: M:Godot.Input.IsJoyButtonPressed(System.Int32,Godot.JoyButton)
+  id: IsJoyButtonPressed(System.Int32,Godot.JoyButton)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: IsJoyButtonPressed(int, JoyButton)
+  nameWithType: Input.IsJoyButtonPressed(int, JoyButton)
+  fullName: Godot.Input.IsJoyButtonPressed(int, Godot.JoyButton)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsJoyButtonPressed(int device, JoyButton button)
+    parameters:
+    - id: device
+      type: System.Int32
+    - id: button
+      type: Godot.JoyButton
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsJoyButtonPressed(device As Integer, button As JoyButton) As Boolean
+  overload: Godot.Input.IsJoyButtonPressed*
+  nameWithType.vb: Input.IsJoyButtonPressed(Integer, JoyButton)
+  fullName.vb: Godot.Input.IsJoyButtonPressed(Integer, Godot.JoyButton)
+  name.vb: IsJoyButtonPressed(Integer, JoyButton)
+- uid: Godot.Input.IsActionPressed(Godot.StringName,System.Boolean)
+  commentId: M:Godot.Input.IsActionPressed(Godot.StringName,System.Boolean)
+  id: IsActionPressed(Godot.StringName,System.Boolean)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: IsActionPressed(StringName, bool)
+  nameWithType: Input.IsActionPressed(StringName, bool)
+  fullName: Godot.Input.IsActionPressed(Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsActionPressed(StringName action, bool exactMatch = false)
+    parameters:
+    - id: action
+      type: Godot.StringName
+    - id: exactMatch
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsActionPressed(action As StringName, exactMatch As Boolean = False) As Boolean
+  overload: Godot.Input.IsActionPressed*
+  nameWithType.vb: Input.IsActionPressed(StringName, Boolean)
+  fullName.vb: Godot.Input.IsActionPressed(Godot.StringName, Boolean)
+  name.vb: IsActionPressed(StringName, Boolean)
+- uid: Godot.Input.IsActionJustPressed(Godot.StringName,System.Boolean)
+  commentId: M:Godot.Input.IsActionJustPressed(Godot.StringName,System.Boolean)
+  id: IsActionJustPressed(Godot.StringName,System.Boolean)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: IsActionJustPressed(StringName, bool)
+  nameWithType: Input.IsActionJustPressed(StringName, bool)
+  fullName: Godot.Input.IsActionJustPressed(Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsActionJustPressed(StringName action, bool exactMatch = false)
+    parameters:
+    - id: action
+      type: Godot.StringName
+    - id: exactMatch
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsActionJustPressed(action As StringName, exactMatch As Boolean = False) As Boolean
+  overload: Godot.Input.IsActionJustPressed*
+  nameWithType.vb: Input.IsActionJustPressed(StringName, Boolean)
+  fullName.vb: Godot.Input.IsActionJustPressed(Godot.StringName, Boolean)
+  name.vb: IsActionJustPressed(StringName, Boolean)
+- uid: Godot.Input.IsActionJustReleased(Godot.StringName,System.Boolean)
+  commentId: M:Godot.Input.IsActionJustReleased(Godot.StringName,System.Boolean)
+  id: IsActionJustReleased(Godot.StringName,System.Boolean)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: IsActionJustReleased(StringName, bool)
+  nameWithType: Input.IsActionJustReleased(StringName, bool)
+  fullName: Godot.Input.IsActionJustReleased(Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsActionJustReleased(StringName action, bool exactMatch = false)
+    parameters:
+    - id: action
+      type: Godot.StringName
+    - id: exactMatch
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsActionJustReleased(action As StringName, exactMatch As Boolean = False) As Boolean
+  overload: Godot.Input.IsActionJustReleased*
+  nameWithType.vb: Input.IsActionJustReleased(StringName, Boolean)
+  fullName.vb: Godot.Input.IsActionJustReleased(Godot.StringName, Boolean)
+  name.vb: IsActionJustReleased(StringName, Boolean)
+- uid: Godot.Input.IsActionJustPressedByEvent(Godot.StringName,Godot.InputEvent,System.Boolean)
+  commentId: M:Godot.Input.IsActionJustPressedByEvent(Godot.StringName,Godot.InputEvent,System.Boolean)
+  id: IsActionJustPressedByEvent(Godot.StringName,Godot.InputEvent,System.Boolean)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: IsActionJustPressedByEvent(StringName, InputEvent, bool)
+  nameWithType: Input.IsActionJustPressedByEvent(StringName, InputEvent, bool)
+  fullName: Godot.Input.IsActionJustPressedByEvent(Godot.StringName, Godot.InputEvent, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsActionJustPressedByEvent(StringName action, InputEvent @event, bool exactMatch = false)
+    parameters:
+    - id: action
+      type: Godot.StringName
+    - id: event
+      type: Godot.InputEvent
+    - id: exactMatch
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsActionJustPressedByEvent(action As StringName, [event] As InputEvent, exactMatch As Boolean = False) As Boolean
+  overload: Godot.Input.IsActionJustPressedByEvent*
+  nameWithType.vb: Input.IsActionJustPressedByEvent(StringName, InputEvent, Boolean)
+  fullName.vb: Godot.Input.IsActionJustPressedByEvent(Godot.StringName, Godot.InputEvent, Boolean)
+  name.vb: IsActionJustPressedByEvent(StringName, InputEvent, Boolean)
+- uid: Godot.Input.IsActionJustReleasedByEvent(Godot.StringName,Godot.InputEvent,System.Boolean)
+  commentId: M:Godot.Input.IsActionJustReleasedByEvent(Godot.StringName,Godot.InputEvent,System.Boolean)
+  id: IsActionJustReleasedByEvent(Godot.StringName,Godot.InputEvent,System.Boolean)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: IsActionJustReleasedByEvent(StringName, InputEvent, bool)
+  nameWithType: Input.IsActionJustReleasedByEvent(StringName, InputEvent, bool)
+  fullName: Godot.Input.IsActionJustReleasedByEvent(Godot.StringName, Godot.InputEvent, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsActionJustReleasedByEvent(StringName action, InputEvent @event, bool exactMatch = false)
+    parameters:
+    - id: action
+      type: Godot.StringName
+    - id: event
+      type: Godot.InputEvent
+    - id: exactMatch
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsActionJustReleasedByEvent(action As StringName, [event] As InputEvent, exactMatch As Boolean = False) As Boolean
+  overload: Godot.Input.IsActionJustReleasedByEvent*
+  nameWithType.vb: Input.IsActionJustReleasedByEvent(StringName, InputEvent, Boolean)
+  fullName.vb: Godot.Input.IsActionJustReleasedByEvent(Godot.StringName, Godot.InputEvent, Boolean)
+  name.vb: IsActionJustReleasedByEvent(StringName, InputEvent, Boolean)
+- uid: Godot.Input.GetActionStrength(Godot.StringName,System.Boolean)
+  commentId: M:Godot.Input.GetActionStrength(Godot.StringName,System.Boolean)
+  id: GetActionStrength(Godot.StringName,System.Boolean)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetActionStrength(StringName, bool)
+  nameWithType: Input.GetActionStrength(StringName, bool)
+  fullName: Godot.Input.GetActionStrength(Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static float GetActionStrength(StringName action, bool exactMatch = false)
+    parameters:
+    - id: action
+      type: Godot.StringName
+    - id: exactMatch
+      type: System.Boolean
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetActionStrength(action As StringName, exactMatch As Boolean = False) As Single
+  overload: Godot.Input.GetActionStrength*
+  nameWithType.vb: Input.GetActionStrength(StringName, Boolean)
+  fullName.vb: Godot.Input.GetActionStrength(Godot.StringName, Boolean)
+  name.vb: GetActionStrength(StringName, Boolean)
+- uid: Godot.Input.GetActionRawStrength(Godot.StringName,System.Boolean)
+  commentId: M:Godot.Input.GetActionRawStrength(Godot.StringName,System.Boolean)
+  id: GetActionRawStrength(Godot.StringName,System.Boolean)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetActionRawStrength(StringName, bool)
+  nameWithType: Input.GetActionRawStrength(StringName, bool)
+  fullName: Godot.Input.GetActionRawStrength(Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static float GetActionRawStrength(StringName action, bool exactMatch = false)
+    parameters:
+    - id: action
+      type: Godot.StringName
+    - id: exactMatch
+      type: System.Boolean
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetActionRawStrength(action As StringName, exactMatch As Boolean = False) As Single
+  overload: Godot.Input.GetActionRawStrength*
+  nameWithType.vb: Input.GetActionRawStrength(StringName, Boolean)
+  fullName.vb: Godot.Input.GetActionRawStrength(Godot.StringName, Boolean)
+  name.vb: GetActionRawStrength(StringName, Boolean)
+- uid: Godot.Input.GetAxis(Godot.StringName,Godot.StringName)
+  commentId: M:Godot.Input.GetAxis(Godot.StringName,Godot.StringName)
+  id: GetAxis(Godot.StringName,Godot.StringName)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetAxis(StringName, StringName)
+  nameWithType: Input.GetAxis(StringName, StringName)
+  fullName: Godot.Input.GetAxis(Godot.StringName, Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static float GetAxis(StringName negativeAction, StringName positiveAction)
+    parameters:
+    - id: negativeAction
+      type: Godot.StringName
+    - id: positiveAction
+      type: Godot.StringName
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetAxis(negativeAction As StringName, positiveAction As StringName) As Single
+  overload: Godot.Input.GetAxis*
+- uid: Godot.Input.GetVector(Godot.StringName,Godot.StringName,Godot.StringName,Godot.StringName,System.Single)
+  commentId: M:Godot.Input.GetVector(Godot.StringName,Godot.StringName,Godot.StringName,Godot.StringName,System.Single)
+  id: GetVector(Godot.StringName,Godot.StringName,Godot.StringName,Godot.StringName,System.Single)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetVector(StringName, StringName, StringName, StringName, float)
+  nameWithType: Input.GetVector(StringName, StringName, StringName, StringName, float)
+  fullName: Godot.Input.GetVector(Godot.StringName, Godot.StringName, Godot.StringName, Godot.StringName, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector2 GetVector(StringName negativeX, StringName positiveX, StringName negativeY, StringName positiveY, float deadzone = -1)
+    parameters:
+    - id: negativeX
+      type: Godot.StringName
+    - id: positiveX
+      type: Godot.StringName
+    - id: negativeY
+      type: Godot.StringName
+    - id: positiveY
+      type: Godot.StringName
+    - id: deadzone
+      type: System.Single
+    return:
+      type: Godot.Vector2
+    content.vb: Public Shared Function GetVector(negativeX As StringName, positiveX As StringName, negativeY As StringName, positiveY As StringName, deadzone As Single = -1) As Vector2
+  overload: Godot.Input.GetVector*
+  nameWithType.vb: Input.GetVector(StringName, StringName, StringName, StringName, Single)
+  fullName.vb: Godot.Input.GetVector(Godot.StringName, Godot.StringName, Godot.StringName, Godot.StringName, Single)
+  name.vb: GetVector(StringName, StringName, StringName, StringName, Single)
+- uid: Godot.Input.AddJoyMapping(System.String,System.Boolean)
+  commentId: M:Godot.Input.AddJoyMapping(System.String,System.Boolean)
+  id: AddJoyMapping(System.String,System.Boolean)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: AddJoyMapping(string, bool)
+  nameWithType: Input.AddJoyMapping(string, bool)
+  fullName: Godot.Input.AddJoyMapping(string, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void AddJoyMapping(string mapping, bool updateExisting = false)
+    parameters:
+    - id: mapping
+      type: System.String
+    - id: updateExisting
+      type: System.Boolean
+    content.vb: Public Shared Sub AddJoyMapping(mapping As String, updateExisting As Boolean = False)
+  overload: Godot.Input.AddJoyMapping*
+  nameWithType.vb: Input.AddJoyMapping(String, Boolean)
+  fullName.vb: Godot.Input.AddJoyMapping(String, Boolean)
+  name.vb: AddJoyMapping(String, Boolean)
+- uid: Godot.Input.RemoveJoyMapping(System.String)
+  commentId: M:Godot.Input.RemoveJoyMapping(System.String)
+  id: RemoveJoyMapping(System.String)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: RemoveJoyMapping(string)
+  nameWithType: Input.RemoveJoyMapping(string)
+  fullName: Godot.Input.RemoveJoyMapping(string)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void RemoveJoyMapping(string guid)
+    parameters:
+    - id: guid
+      type: System.String
+    content.vb: Public Shared Sub RemoveJoyMapping(guid As String)
+  overload: Godot.Input.RemoveJoyMapping*
+  nameWithType.vb: Input.RemoveJoyMapping(String)
+  fullName.vb: Godot.Input.RemoveJoyMapping(String)
+  name.vb: RemoveJoyMapping(String)
+- uid: Godot.Input.IsJoyKnown(System.Int32)
+  commentId: M:Godot.Input.IsJoyKnown(System.Int32)
+  id: IsJoyKnown(System.Int32)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: IsJoyKnown(int)
+  nameWithType: Input.IsJoyKnown(int)
+  fullName: Godot.Input.IsJoyKnown(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsJoyKnown(int device)
+    parameters:
+    - id: device
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsJoyKnown(device As Integer) As Boolean
+  overload: Godot.Input.IsJoyKnown*
+  nameWithType.vb: Input.IsJoyKnown(Integer)
+  fullName.vb: Godot.Input.IsJoyKnown(Integer)
+  name.vb: IsJoyKnown(Integer)
+- uid: Godot.Input.GetJoyAxis(System.Int32,Godot.JoyAxis)
+  commentId: M:Godot.Input.GetJoyAxis(System.Int32,Godot.JoyAxis)
+  id: GetJoyAxis(System.Int32,Godot.JoyAxis)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetJoyAxis(int, JoyAxis)
+  nameWithType: Input.GetJoyAxis(int, JoyAxis)
+  fullName: Godot.Input.GetJoyAxis(int, Godot.JoyAxis)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static float GetJoyAxis(int device, JoyAxis axis)
+    parameters:
+    - id: device
+      type: System.Int32
+    - id: axis
+      type: Godot.JoyAxis
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetJoyAxis(device As Integer, axis As JoyAxis) As Single
+  overload: Godot.Input.GetJoyAxis*
+  nameWithType.vb: Input.GetJoyAxis(Integer, JoyAxis)
+  fullName.vb: Godot.Input.GetJoyAxis(Integer, Godot.JoyAxis)
+  name.vb: GetJoyAxis(Integer, JoyAxis)
+- uid: Godot.Input.GetJoyName(System.Int32)
+  commentId: M:Godot.Input.GetJoyName(System.Int32)
+  id: GetJoyName(System.Int32)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetJoyName(int)
+  nameWithType: Input.GetJoyName(int)
+  fullName: Godot.Input.GetJoyName(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetJoyName(int device)
+    parameters:
+    - id: device
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetJoyName(device As Integer) As String
+  overload: Godot.Input.GetJoyName*
+  nameWithType.vb: Input.GetJoyName(Integer)
+  fullName.vb: Godot.Input.GetJoyName(Integer)
+  name.vb: GetJoyName(Integer)
+- uid: Godot.Input.GetJoyGuid(System.Int32)
+  commentId: M:Godot.Input.GetJoyGuid(System.Int32)
+  id: GetJoyGuid(System.Int32)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetJoyGuid(int)
+  nameWithType: Input.GetJoyGuid(int)
+  fullName: Godot.Input.GetJoyGuid(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string GetJoyGuid(int device)
+    parameters:
+    - id: device
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetJoyGuid(device As Integer) As String
+  overload: Godot.Input.GetJoyGuid*
+  nameWithType.vb: Input.GetJoyGuid(Integer)
+  fullName.vb: Godot.Input.GetJoyGuid(Integer)
+  name.vb: GetJoyGuid(Integer)
+- uid: Godot.Input.GetJoyInfo(System.Int32)
+  commentId: M:Godot.Input.GetJoyInfo(System.Int32)
+  id: GetJoyInfo(System.Int32)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetJoyInfo(int)
+  nameWithType: Input.GetJoyInfo(int)
+  fullName: Godot.Input.GetJoyInfo(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Dictionary GetJoyInfo(int device)
+    parameters:
+    - id: device
+      type: System.Int32
+    return:
+      type: Godot.Collections.Dictionary
+    content.vb: Public Shared Function GetJoyInfo(device As Integer) As Dictionary
+  overload: Godot.Input.GetJoyInfo*
+  nameWithType.vb: Input.GetJoyInfo(Integer)
+  fullName.vb: Godot.Input.GetJoyInfo(Integer)
+  name.vb: GetJoyInfo(Integer)
+- uid: Godot.Input.ShouldIgnoreDevice(System.Int32,System.Int32)
+  commentId: M:Godot.Input.ShouldIgnoreDevice(System.Int32,System.Int32)
+  id: ShouldIgnoreDevice(System.Int32,System.Int32)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: ShouldIgnoreDevice(int, int)
+  nameWithType: Input.ShouldIgnoreDevice(int, int)
+  fullName: Godot.Input.ShouldIgnoreDevice(int, int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool ShouldIgnoreDevice(int vendorId, int productId)
+    parameters:
+    - id: vendorId
+      type: System.Int32
+    - id: productId
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function ShouldIgnoreDevice(vendorId As Integer, productId As Integer) As Boolean
+  overload: Godot.Input.ShouldIgnoreDevice*
+  nameWithType.vb: Input.ShouldIgnoreDevice(Integer, Integer)
+  fullName.vb: Godot.Input.ShouldIgnoreDevice(Integer, Integer)
+  name.vb: ShouldIgnoreDevice(Integer, Integer)
+- uid: Godot.Input.GetConnectedJoypads
+  commentId: M:Godot.Input.GetConnectedJoypads
+  id: GetConnectedJoypads
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetConnectedJoypads()
+  nameWithType: Input.GetConnectedJoypads()
+  fullName: Godot.Input.GetConnectedJoypads()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<int> GetConnectedJoypads()
+    return:
+      type: Godot.Collections.Array{System.Int32}
+    content.vb: Public Shared Function GetConnectedJoypads() As Array(Of Integer)
+  overload: Godot.Input.GetConnectedJoypads*
+- uid: Godot.Input.GetJoyVibrationStrength(System.Int32)
+  commentId: M:Godot.Input.GetJoyVibrationStrength(System.Int32)
+  id: GetJoyVibrationStrength(System.Int32)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetJoyVibrationStrength(int)
+  nameWithType: Input.GetJoyVibrationStrength(int)
+  fullName: Godot.Input.GetJoyVibrationStrength(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector2 GetJoyVibrationStrength(int device)
+    parameters:
+    - id: device
+      type: System.Int32
+    return:
+      type: Godot.Vector2
+    content.vb: Public Shared Function GetJoyVibrationStrength(device As Integer) As Vector2
+  overload: Godot.Input.GetJoyVibrationStrength*
+  nameWithType.vb: Input.GetJoyVibrationStrength(Integer)
+  fullName.vb: Godot.Input.GetJoyVibrationStrength(Integer)
+  name.vb: GetJoyVibrationStrength(Integer)
+- uid: Godot.Input.GetJoyVibrationDuration(System.Int32)
+  commentId: M:Godot.Input.GetJoyVibrationDuration(System.Int32)
+  id: GetJoyVibrationDuration(System.Int32)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetJoyVibrationDuration(int)
+  nameWithType: Input.GetJoyVibrationDuration(int)
+  fullName: Godot.Input.GetJoyVibrationDuration(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static float GetJoyVibrationDuration(int device)
+    parameters:
+    - id: device
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetJoyVibrationDuration(device As Integer) As Single
+  overload: Godot.Input.GetJoyVibrationDuration*
+  nameWithType.vb: Input.GetJoyVibrationDuration(Integer)
+  fullName.vb: Godot.Input.GetJoyVibrationDuration(Integer)
+  name.vb: GetJoyVibrationDuration(Integer)
+- uid: Godot.Input.StartJoyVibration(System.Int32,System.Single,System.Single,System.Single)
+  commentId: M:Godot.Input.StartJoyVibration(System.Int32,System.Single,System.Single,System.Single)
+  id: StartJoyVibration(System.Int32,System.Single,System.Single,System.Single)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: StartJoyVibration(int, float, float, float)
+  nameWithType: Input.StartJoyVibration(int, float, float, float)
+  fullName: Godot.Input.StartJoyVibration(int, float, float, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void StartJoyVibration(int device, float weakMagnitude, float strongMagnitude, float duration = 0)
+    parameters:
+    - id: device
+      type: System.Int32
+    - id: weakMagnitude
+      type: System.Single
+    - id: strongMagnitude
+      type: System.Single
+    - id: duration
+      type: System.Single
+    content.vb: Public Shared Sub StartJoyVibration(device As Integer, weakMagnitude As Single, strongMagnitude As Single, duration As Single = 0)
+  overload: Godot.Input.StartJoyVibration*
+  nameWithType.vb: Input.StartJoyVibration(Integer, Single, Single, Single)
+  fullName.vb: Godot.Input.StartJoyVibration(Integer, Single, Single, Single)
+  name.vb: StartJoyVibration(Integer, Single, Single, Single)
+- uid: Godot.Input.StopJoyVibration(System.Int32)
+  commentId: M:Godot.Input.StopJoyVibration(System.Int32)
+  id: StopJoyVibration(System.Int32)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: StopJoyVibration(int)
+  nameWithType: Input.StopJoyVibration(int)
+  fullName: Godot.Input.StopJoyVibration(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void StopJoyVibration(int device)
+    parameters:
+    - id: device
+      type: System.Int32
+    content.vb: Public Shared Sub StopJoyVibration(device As Integer)
+  overload: Godot.Input.StopJoyVibration*
+  nameWithType.vb: Input.StopJoyVibration(Integer)
+  fullName.vb: Godot.Input.StopJoyVibration(Integer)
+  name.vb: StopJoyVibration(Integer)
+- uid: Godot.Input.VibrateHandheld(System.Int32,System.Single)
+  commentId: M:Godot.Input.VibrateHandheld(System.Int32,System.Single)
+  id: VibrateHandheld(System.Int32,System.Single)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: VibrateHandheld(int, float)
+  nameWithType: Input.VibrateHandheld(int, float)
+  fullName: Godot.Input.VibrateHandheld(int, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void VibrateHandheld(int durationMs = 500, float amplitude = -1)
+    parameters:
+    - id: durationMs
+      type: System.Int32
+    - id: amplitude
+      type: System.Single
+    content.vb: Public Shared Sub VibrateHandheld(durationMs As Integer = 500, amplitude As Single = -1)
+  overload: Godot.Input.VibrateHandheld*
+  nameWithType.vb: Input.VibrateHandheld(Integer, Single)
+  fullName.vb: Godot.Input.VibrateHandheld(Integer, Single)
+  name.vb: VibrateHandheld(Integer, Single)
+- uid: Godot.Input.GetGravity
+  commentId: M:Godot.Input.GetGravity
+  id: GetGravity
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetGravity()
+  nameWithType: Input.GetGravity()
+  fullName: Godot.Input.GetGravity()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3 GetGravity()
+    return:
+      type: Godot.Vector3
+    content.vb: Public Shared Function GetGravity() As Vector3
+  overload: Godot.Input.GetGravity*
+- uid: Godot.Input.GetAccelerometer
+  commentId: M:Godot.Input.GetAccelerometer
+  id: GetAccelerometer
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetAccelerometer()
+  nameWithType: Input.GetAccelerometer()
+  fullName: Godot.Input.GetAccelerometer()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3 GetAccelerometer()
+    return:
+      type: Godot.Vector3
+    content.vb: Public Shared Function GetAccelerometer() As Vector3
+  overload: Godot.Input.GetAccelerometer*
+- uid: Godot.Input.GetMagnetometer
+  commentId: M:Godot.Input.GetMagnetometer
+  id: GetMagnetometer
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetMagnetometer()
+  nameWithType: Input.GetMagnetometer()
+  fullName: Godot.Input.GetMagnetometer()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3 GetMagnetometer()
+    return:
+      type: Godot.Vector3
+    content.vb: Public Shared Function GetMagnetometer() As Vector3
+  overload: Godot.Input.GetMagnetometer*
+- uid: Godot.Input.GetGyroscope
+  commentId: M:Godot.Input.GetGyroscope
+  id: GetGyroscope
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetGyroscope()
+  nameWithType: Input.GetGyroscope()
+  fullName: Godot.Input.GetGyroscope()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector3 GetGyroscope()
+    return:
+      type: Godot.Vector3
+    content.vb: Public Shared Function GetGyroscope() As Vector3
+  overload: Godot.Input.GetGyroscope*
+- uid: Godot.Input.SetGravity(Godot.Vector3)
+  commentId: M:Godot.Input.SetGravity(Godot.Vector3)
+  id: SetGravity(Godot.Vector3)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: SetGravity(Vector3)
+  nameWithType: Input.SetGravity(Vector3)
+  fullName: Godot.Input.SetGravity(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetGravity(Vector3 value)
+    parameters:
+    - id: value
+      type: Godot.Vector3
+    content.vb: Public Shared Sub SetGravity(value As Vector3)
+  overload: Godot.Input.SetGravity*
+- uid: Godot.Input.SetAccelerometer(Godot.Vector3)
+  commentId: M:Godot.Input.SetAccelerometer(Godot.Vector3)
+  id: SetAccelerometer(Godot.Vector3)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: SetAccelerometer(Vector3)
+  nameWithType: Input.SetAccelerometer(Vector3)
+  fullName: Godot.Input.SetAccelerometer(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetAccelerometer(Vector3 value)
+    parameters:
+    - id: value
+      type: Godot.Vector3
+    content.vb: Public Shared Sub SetAccelerometer(value As Vector3)
+  overload: Godot.Input.SetAccelerometer*
+- uid: Godot.Input.SetMagnetometer(Godot.Vector3)
+  commentId: M:Godot.Input.SetMagnetometer(Godot.Vector3)
+  id: SetMagnetometer(Godot.Vector3)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: SetMagnetometer(Vector3)
+  nameWithType: Input.SetMagnetometer(Vector3)
+  fullName: Godot.Input.SetMagnetometer(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetMagnetometer(Vector3 value)
+    parameters:
+    - id: value
+      type: Godot.Vector3
+    content.vb: Public Shared Sub SetMagnetometer(value As Vector3)
+  overload: Godot.Input.SetMagnetometer*
+- uid: Godot.Input.SetGyroscope(Godot.Vector3)
+  commentId: M:Godot.Input.SetGyroscope(Godot.Vector3)
+  id: SetGyroscope(Godot.Vector3)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: SetGyroscope(Vector3)
+  nameWithType: Input.SetGyroscope(Vector3)
+  fullName: Godot.Input.SetGyroscope(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetGyroscope(Vector3 value)
+    parameters:
+    - id: value
+      type: Godot.Vector3
+    content.vb: Public Shared Sub SetGyroscope(value As Vector3)
+  overload: Godot.Input.SetGyroscope*
+- uid: Godot.Input.GetLastMouseVelocity
+  commentId: M:Godot.Input.GetLastMouseVelocity
+  id: GetLastMouseVelocity
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetLastMouseVelocity()
+  nameWithType: Input.GetLastMouseVelocity()
+  fullName: Godot.Input.GetLastMouseVelocity()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector2 GetLastMouseVelocity()
+    return:
+      type: Godot.Vector2
+    content.vb: Public Shared Function GetLastMouseVelocity() As Vector2
+  overload: Godot.Input.GetLastMouseVelocity*
+- uid: Godot.Input.GetLastMouseScreenVelocity
+  commentId: M:Godot.Input.GetLastMouseScreenVelocity
+  id: GetLastMouseScreenVelocity
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetLastMouseScreenVelocity()
+  nameWithType: Input.GetLastMouseScreenVelocity()
+  fullName: Godot.Input.GetLastMouseScreenVelocity()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Vector2 GetLastMouseScreenVelocity()
+    return:
+      type: Godot.Vector2
+    content.vb: Public Shared Function GetLastMouseScreenVelocity() As Vector2
+  overload: Godot.Input.GetLastMouseScreenVelocity*
+- uid: Godot.Input.GetMouseButtonMask
+  commentId: M:Godot.Input.GetMouseButtonMask
+  id: GetMouseButtonMask
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetMouseButtonMask()
+  nameWithType: Input.GetMouseButtonMask()
+  fullName: Godot.Input.GetMouseButtonMask()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static MouseButtonMask GetMouseButtonMask()
+    return:
+      type: Godot.MouseButtonMask
+    content.vb: Public Shared Function GetMouseButtonMask() As MouseButtonMask
+  overload: Godot.Input.GetMouseButtonMask*
+- uid: Godot.Input.WarpMouse(Godot.Vector2)
+  commentId: M:Godot.Input.WarpMouse(Godot.Vector2)
+  id: WarpMouse(Godot.Vector2)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: WarpMouse(Vector2)
+  nameWithType: Input.WarpMouse(Vector2)
+  fullName: Godot.Input.WarpMouse(Godot.Vector2)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void WarpMouse(Vector2 position)
+    parameters:
+    - id: position
+      type: Godot.Vector2
+    content.vb: Public Shared Sub WarpMouse(position As Vector2)
+  overload: Godot.Input.WarpMouse*
+- uid: Godot.Input.ActionPress(Godot.StringName,System.Single)
+  commentId: M:Godot.Input.ActionPress(Godot.StringName,System.Single)
+  id: ActionPress(Godot.StringName,System.Single)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: ActionPress(StringName, float)
+  nameWithType: Input.ActionPress(StringName, float)
+  fullName: Godot.Input.ActionPress(Godot.StringName, float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void ActionPress(StringName action, float strength = 1)
+    parameters:
+    - id: action
+      type: Godot.StringName
+    - id: strength
+      type: System.Single
+    content.vb: Public Shared Sub ActionPress(action As StringName, strength As Single = 1)
+  overload: Godot.Input.ActionPress*
+  nameWithType.vb: Input.ActionPress(StringName, Single)
+  fullName.vb: Godot.Input.ActionPress(Godot.StringName, Single)
+  name.vb: ActionPress(StringName, Single)
+- uid: Godot.Input.ActionRelease(Godot.StringName)
+  commentId: M:Godot.Input.ActionRelease(Godot.StringName)
+  id: ActionRelease(Godot.StringName)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: ActionRelease(StringName)
+  nameWithType: Input.ActionRelease(StringName)
+  fullName: Godot.Input.ActionRelease(Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void ActionRelease(StringName action)
+    parameters:
+    - id: action
+      type: Godot.StringName
+    content.vb: Public Shared Sub ActionRelease(action As StringName)
+  overload: Godot.Input.ActionRelease*
+- uid: Godot.Input.SetDefaultCursorShape(Godot.Input.CursorShape)
+  commentId: M:Godot.Input.SetDefaultCursorShape(Godot.Input.CursorShape)
+  id: SetDefaultCursorShape(Godot.Input.CursorShape)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: SetDefaultCursorShape(CursorShape)
+  nameWithType: Input.SetDefaultCursorShape(Input.CursorShape)
+  fullName: Godot.Input.SetDefaultCursorShape(Godot.Input.CursorShape)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetDefaultCursorShape(Input.CursorShape shape = CursorShape.Arrow)
+    parameters:
+    - id: shape
+      type: Godot.Input.CursorShape
+    content.vb: Public Shared Sub SetDefaultCursorShape(shape As Input.CursorShape = CursorShape.Arrow)
+  overload: Godot.Input.SetDefaultCursorShape*
+- uid: Godot.Input.GetCurrentCursorShape
+  commentId: M:Godot.Input.GetCurrentCursorShape
+  id: GetCurrentCursorShape
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentCursorShape()
+  nameWithType: Input.GetCurrentCursorShape()
+  fullName: Godot.Input.GetCurrentCursorShape()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Input.CursorShape GetCurrentCursorShape()
+    return:
+      type: Godot.Input.CursorShape
+    content.vb: Public Shared Function GetCurrentCursorShape() As Input.CursorShape
+  overload: Godot.Input.GetCurrentCursorShape*
+- uid: Godot.Input.SetCustomMouseCursor(Godot.Resource,Godot.Input.CursorShape,System.Nullable{Godot.Vector2})
+  commentId: M:Godot.Input.SetCustomMouseCursor(Godot.Resource,Godot.Input.CursorShape,System.Nullable{Godot.Vector2})
+  id: SetCustomMouseCursor(Godot.Resource,Godot.Input.CursorShape,System.Nullable{Godot.Vector2})
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: SetCustomMouseCursor(Resource, CursorShape, Vector2?)
+  nameWithType: Input.SetCustomMouseCursor(Resource, Input.CursorShape, Vector2?)
+  fullName: Godot.Input.SetCustomMouseCursor(Godot.Resource, Godot.Input.CursorShape, Godot.Vector2?)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void SetCustomMouseCursor(Resource image, Input.CursorShape shape = CursorShape.Arrow, Vector2? hotspot = null)
+    parameters:
+    - id: image
+      type: Godot.Resource
+    - id: shape
+      type: Godot.Input.CursorShape
+    - id: hotspot
+      type: System.Nullable{Godot.Vector2}
+    content.vb: Public Shared Sub SetCustomMouseCursor(image As Resource, shape As Input.CursorShape = CursorShape.Arrow, hotspot As Vector2? = Nothing)
+  overload: Godot.Input.SetCustomMouseCursor*
+- uid: Godot.Input.ParseInputEvent(Godot.InputEvent)
+  commentId: M:Godot.Input.ParseInputEvent(Godot.InputEvent)
+  id: ParseInputEvent(Godot.InputEvent)
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: ParseInputEvent(InputEvent)
+  nameWithType: Input.ParseInputEvent(InputEvent)
+  fullName: Godot.Input.ParseInputEvent(Godot.InputEvent)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void ParseInputEvent(InputEvent @event)
+    parameters:
+    - id: event
+      type: Godot.InputEvent
+    content.vb: Public Shared Sub ParseInputEvent([event] As InputEvent)
+  overload: Godot.Input.ParseInputEvent*
+- uid: Godot.Input.FlushBufferedEvents
+  commentId: M:Godot.Input.FlushBufferedEvents
+  id: FlushBufferedEvents
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: FlushBufferedEvents()
+  nameWithType: Input.FlushBufferedEvents()
+  fullName: Godot.Input.FlushBufferedEvents()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static void FlushBufferedEvents()
+    content.vb: Public Shared Sub FlushBufferedEvents()
+  overload: Godot.Input.FlushBufferedEvents*
+- uid: Godot.Input.MouseMode
+  commentId: P:Godot.Input.MouseMode
+  id: MouseMode
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: MouseMode
+  nameWithType: Input.MouseMode
+  fullName: Godot.Input.MouseMode
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Input.MouseModeEnum MouseMode { get; set; }
+    parameters: []
+    return:
+      type: Godot.Input.MouseModeEnum
+    content.vb: Public Shared Property MouseMode As Input.MouseModeEnum
+  overload: Godot.Input.MouseMode*
+- uid: Godot.Input.UseAccumulatedInput
+  commentId: P:Godot.Input.UseAccumulatedInput
+  id: UseAccumulatedInput
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: UseAccumulatedInput
+  nameWithType: Input.UseAccumulatedInput
+  fullName: Godot.Input.UseAccumulatedInput
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool UseAccumulatedInput { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property UseAccumulatedInput As Boolean
+  overload: Godot.Input.UseAccumulatedInput*
+- uid: Godot.Input.EmulateMouseFromTouch
+  commentId: P:Godot.Input.EmulateMouseFromTouch
+  id: EmulateMouseFromTouch
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: EmulateMouseFromTouch
+  nameWithType: Input.EmulateMouseFromTouch
+  fullName: Godot.Input.EmulateMouseFromTouch
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool EmulateMouseFromTouch { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property EmulateMouseFromTouch As Boolean
+  overload: Godot.Input.EmulateMouseFromTouch*
+- uid: Godot.Input.EmulateTouchFromMouse
+  commentId: P:Godot.Input.EmulateTouchFromMouse
+  id: EmulateTouchFromMouse
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: EmulateTouchFromMouse
+  nameWithType: Input.EmulateTouchFromMouse
+  fullName: Godot.Input.EmulateTouchFromMouse
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool EmulateTouchFromMouse { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property EmulateTouchFromMouse As Boolean
+  overload: Godot.Input.EmulateTouchFromMouse*
+- uid: Godot.Input.Singleton
+  commentId: P:Godot.Input.Singleton
+  id: Singleton
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: Singleton
+  nameWithType: Input.Singleton
+  fullName: Godot.Input.Singleton
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static InputInstance Singleton { get; }
+    parameters: []
+    return:
+      type: Godot.InputInstance
+    content.vb: Public Shared ReadOnly Property Singleton As InputInstance
+  overload: Godot.Input.Singleton*
+- uid: Godot.Input.JoyConnectionChanged
+  commentId: E:Godot.Input.JoyConnectionChanged
+  id: JoyConnectionChanged
+  parent: Godot.Input
+  langs:
+  - csharp
+  - vb
+  name: JoyConnectionChanged
+  nameWithType: Input.JoyConnectionChanged
+  fullName: Godot.Input.JoyConnectionChanged
+  type: Event
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static event Input.JoyConnectionChangedEventHandler JoyConnectionChanged
+    return:
+      type: Godot.Input.JoyConnectionChangedEventHandler
+    content.vb: Public Shared Event JoyConnectionChanged As Input.JoyConnectionChangedEventHandler
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.Input.IsAnythingPressed*
+  commentId: Overload:Godot.Input.IsAnythingPressed
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_IsAnythingPressed
+  name: IsAnythingPressed
+  nameWithType: Input.IsAnythingPressed
+  fullName: Godot.Input.IsAnythingPressed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.Input.IsKeyPressed*
+  commentId: Overload:Godot.Input.IsKeyPressed
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_IsKeyPressed_Godot_Key_
+  name: IsKeyPressed
+  nameWithType: Input.IsKeyPressed
+  fullName: Godot.Input.IsKeyPressed
+- uid: Godot.Key
+  commentId: T:Godot.Key
+  parent: Godot
+  isExternal: true
+  href: Godot.Key.html
+  name: Key
+  nameWithType: Key
+  fullName: Godot.Key
+- uid: Godot.Input.IsPhysicalKeyPressed*
+  commentId: Overload:Godot.Input.IsPhysicalKeyPressed
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_IsPhysicalKeyPressed_Godot_Key_
+  name: IsPhysicalKeyPressed
+  nameWithType: Input.IsPhysicalKeyPressed
+  fullName: Godot.Input.IsPhysicalKeyPressed
+- uid: Godot.Input.IsKeyLabelPressed*
+  commentId: Overload:Godot.Input.IsKeyLabelPressed
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_IsKeyLabelPressed_Godot_Key_
+  name: IsKeyLabelPressed
+  nameWithType: Input.IsKeyLabelPressed
+  fullName: Godot.Input.IsKeyLabelPressed
+- uid: Godot.Input.IsMouseButtonPressed*
+  commentId: Overload:Godot.Input.IsMouseButtonPressed
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_IsMouseButtonPressed_Godot_MouseButton_
+  name: IsMouseButtonPressed
+  nameWithType: Input.IsMouseButtonPressed
+  fullName: Godot.Input.IsMouseButtonPressed
+- uid: Godot.MouseButton
+  commentId: T:Godot.MouseButton
+  parent: Godot
+  isExternal: true
+  href: Godot.MouseButton.html
+  name: MouseButton
+  nameWithType: MouseButton
+  fullName: Godot.MouseButton
+- uid: Godot.Input.IsJoyButtonPressed*
+  commentId: Overload:Godot.Input.IsJoyButtonPressed
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_IsJoyButtonPressed_System_Int32_Godot_JoyButton_
+  name: IsJoyButtonPressed
+  nameWithType: Input.IsJoyButtonPressed
+  fullName: Godot.Input.IsJoyButtonPressed
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Godot.JoyButton
+  commentId: T:Godot.JoyButton
+  parent: Godot
+  isExternal: true
+  href: Godot.JoyButton.html
+  name: JoyButton
+  nameWithType: JoyButton
+  fullName: Godot.JoyButton
+- uid: Godot.Input.IsActionPressed*
+  commentId: Overload:Godot.Input.IsActionPressed
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_IsActionPressed_Godot_StringName_System_Boolean_
+  name: IsActionPressed
+  nameWithType: Input.IsActionPressed
+  fullName: Godot.Input.IsActionPressed
+- uid: Godot.StringName
+  commentId: T:Godot.StringName
+  parent: Godot
+  isExternal: true
+  href: Godot.StringName.html
+  name: StringName
+  nameWithType: StringName
+  fullName: Godot.StringName
+- uid: Godot.Input.IsActionJustPressed*
+  commentId: Overload:Godot.Input.IsActionJustPressed
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_IsActionJustPressed_Godot_StringName_System_Boolean_
+  name: IsActionJustPressed
+  nameWithType: Input.IsActionJustPressed
+  fullName: Godot.Input.IsActionJustPressed
+- uid: Godot.Input.IsActionJustReleased*
+  commentId: Overload:Godot.Input.IsActionJustReleased
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_IsActionJustReleased_Godot_StringName_System_Boolean_
+  name: IsActionJustReleased
+  nameWithType: Input.IsActionJustReleased
+  fullName: Godot.Input.IsActionJustReleased
+- uid: Godot.Input.IsActionJustPressedByEvent*
+  commentId: Overload:Godot.Input.IsActionJustPressedByEvent
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_IsActionJustPressedByEvent_Godot_StringName_Godot_InputEvent_System_Boolean_
+  name: IsActionJustPressedByEvent
+  nameWithType: Input.IsActionJustPressedByEvent
+  fullName: Godot.Input.IsActionJustPressedByEvent
+- uid: Godot.InputEvent
+  commentId: T:Godot.InputEvent
+  parent: Godot
+  isExternal: true
+  href: Godot.InputEvent.html
+  name: InputEvent
+  nameWithType: InputEvent
+  fullName: Godot.InputEvent
+- uid: Godot.Input.IsActionJustReleasedByEvent*
+  commentId: Overload:Godot.Input.IsActionJustReleasedByEvent
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_IsActionJustReleasedByEvent_Godot_StringName_Godot_InputEvent_System_Boolean_
+  name: IsActionJustReleasedByEvent
+  nameWithType: Input.IsActionJustReleasedByEvent
+  fullName: Godot.Input.IsActionJustReleasedByEvent
+- uid: Godot.Input.GetActionStrength*
+  commentId: Overload:Godot.Input.GetActionStrength
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetActionStrength_Godot_StringName_System_Boolean_
+  name: GetActionStrength
+  nameWithType: Input.GetActionStrength
+  fullName: Godot.Input.GetActionStrength
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Godot.Input.GetActionRawStrength*
+  commentId: Overload:Godot.Input.GetActionRawStrength
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetActionRawStrength_Godot_StringName_System_Boolean_
+  name: GetActionRawStrength
+  nameWithType: Input.GetActionRawStrength
+  fullName: Godot.Input.GetActionRawStrength
+- uid: Godot.Input.GetAxis*
+  commentId: Overload:Godot.Input.GetAxis
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetAxis_Godot_StringName_Godot_StringName_
+  name: GetAxis
+  nameWithType: Input.GetAxis
+  fullName: Godot.Input.GetAxis
+- uid: Godot.Input.GetVector*
+  commentId: Overload:Godot.Input.GetVector
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetVector_Godot_StringName_Godot_StringName_Godot_StringName_Godot_StringName_System_Single_
+  name: GetVector
+  nameWithType: Input.GetVector
+  fullName: Godot.Input.GetVector
+- uid: Godot.Vector2
+  commentId: T:Godot.Vector2
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector2.html
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Godot.Vector2
+- uid: Godot.Input.AddJoyMapping*
+  commentId: Overload:Godot.Input.AddJoyMapping
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_AddJoyMapping_System_String_System_Boolean_
+  name: AddJoyMapping
+  nameWithType: Input.AddJoyMapping
+  fullName: Godot.Input.AddJoyMapping
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.Input.RemoveJoyMapping*
+  commentId: Overload:Godot.Input.RemoveJoyMapping
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_RemoveJoyMapping_System_String_
+  name: RemoveJoyMapping
+  nameWithType: Input.RemoveJoyMapping
+  fullName: Godot.Input.RemoveJoyMapping
+- uid: Godot.Input.IsJoyKnown*
+  commentId: Overload:Godot.Input.IsJoyKnown
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_IsJoyKnown_System_Int32_
+  name: IsJoyKnown
+  nameWithType: Input.IsJoyKnown
+  fullName: Godot.Input.IsJoyKnown
+- uid: Godot.Input.GetJoyAxis*
+  commentId: Overload:Godot.Input.GetJoyAxis
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetJoyAxis_System_Int32_Godot_JoyAxis_
+  name: GetJoyAxis
+  nameWithType: Input.GetJoyAxis
+  fullName: Godot.Input.GetJoyAxis
+- uid: Godot.JoyAxis
+  commentId: T:Godot.JoyAxis
+  parent: Godot
+  isExternal: true
+  href: Godot.JoyAxis.html
+  name: JoyAxis
+  nameWithType: JoyAxis
+  fullName: Godot.JoyAxis
+- uid: Godot.Input.GetJoyName*
+  commentId: Overload:Godot.Input.GetJoyName
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetJoyName_System_Int32_
+  name: GetJoyName
+  nameWithType: Input.GetJoyName
+  fullName: Godot.Input.GetJoyName
+- uid: Godot.Input.GetJoyGuid*
+  commentId: Overload:Godot.Input.GetJoyGuid
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetJoyGuid_System_Int32_
+  name: GetJoyGuid
+  nameWithType: Input.GetJoyGuid
+  fullName: Godot.Input.GetJoyGuid
+- uid: Godot.Input.GetJoyInfo*
+  commentId: Overload:Godot.Input.GetJoyInfo
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetJoyInfo_System_Int32_
+  name: GetJoyInfo
+  nameWithType: Input.GetJoyInfo
+  fullName: Godot.Input.GetJoyInfo
+- uid: Godot.Collections.Dictionary
+  commentId: T:Godot.Collections.Dictionary
+  parent: Godot.Collections
+  isExternal: true
+  href: Godot.Collections.Dictionary.html
+  name: Dictionary
+  nameWithType: Dictionary
+  fullName: Godot.Collections.Dictionary
+- uid: Godot.Collections
+  commentId: N:Godot.Collections
+  isExternal: true
+  href: Godot.html
+  name: Godot.Collections
+  nameWithType: Godot.Collections
+  fullName: Godot.Collections
+  spec.csharp:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+  spec.vb:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+- uid: Godot.Input.ShouldIgnoreDevice*
+  commentId: Overload:Godot.Input.ShouldIgnoreDevice
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_ShouldIgnoreDevice_System_Int32_System_Int32_
+  name: ShouldIgnoreDevice
+  nameWithType: Input.ShouldIgnoreDevice
+  fullName: Godot.Input.ShouldIgnoreDevice
+- uid: Godot.Input.GetConnectedJoypads*
+  commentId: Overload:Godot.Input.GetConnectedJoypads
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetConnectedJoypads
+  name: GetConnectedJoypads
+  nameWithType: Input.GetConnectedJoypads
+  fullName: Godot.Input.GetConnectedJoypads
+- uid: Godot.Collections.Array{System.Int32}
+  commentId: T:Godot.Collections.Array{System.Int32}
+  parent: Godot.Collections
+  definition: Godot.Collections.Array`1
+  href: Godot.Collections.Array-1.html
+  name: Array<int>
+  nameWithType: Array<int>
+  fullName: Godot.Collections.Array<int>
+  nameWithType.vb: Array(Of Integer)
+  fullName.vb: Godot.Collections.Array(Of Integer)
+  name.vb: Array(Of Integer)
+  spec.csharp:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Godot.Collections.Array`1
+  commentId: T:Godot.Collections.Array`1
+  parent: Godot.Collections
+  isExternal: true
+  href: Godot.Collections.Array-1.html
+  name: Array<T>
+  nameWithType: Array<T>
+  fullName: Godot.Collections.Array<T>
+  nameWithType.vb: Array(Of T)
+  fullName.vb: Godot.Collections.Array(Of T)
+  name.vb: Array(Of T)
+  spec.csharp:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.Input.GetJoyVibrationStrength*
+  commentId: Overload:Godot.Input.GetJoyVibrationStrength
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetJoyVibrationStrength_System_Int32_
+  name: GetJoyVibrationStrength
+  nameWithType: Input.GetJoyVibrationStrength
+  fullName: Godot.Input.GetJoyVibrationStrength
+- uid: Godot.Input.GetJoyVibrationDuration*
+  commentId: Overload:Godot.Input.GetJoyVibrationDuration
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetJoyVibrationDuration_System_Int32_
+  name: GetJoyVibrationDuration
+  nameWithType: Input.GetJoyVibrationDuration
+  fullName: Godot.Input.GetJoyVibrationDuration
+- uid: Godot.Input.StartJoyVibration*
+  commentId: Overload:Godot.Input.StartJoyVibration
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_StartJoyVibration_System_Int32_System_Single_System_Single_System_Single_
+  name: StartJoyVibration
+  nameWithType: Input.StartJoyVibration
+  fullName: Godot.Input.StartJoyVibration
+- uid: Godot.Input.StopJoyVibration*
+  commentId: Overload:Godot.Input.StopJoyVibration
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_StopJoyVibration_System_Int32_
+  name: StopJoyVibration
+  nameWithType: Input.StopJoyVibration
+  fullName: Godot.Input.StopJoyVibration
+- uid: Godot.Input.VibrateHandheld*
+  commentId: Overload:Godot.Input.VibrateHandheld
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_VibrateHandheld_System_Int32_System_Single_
+  name: VibrateHandheld
+  nameWithType: Input.VibrateHandheld
+  fullName: Godot.Input.VibrateHandheld
+- uid: Godot.Input.GetGravity*
+  commentId: Overload:Godot.Input.GetGravity
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetGravity
+  name: GetGravity
+  nameWithType: Input.GetGravity
+  fullName: Godot.Input.GetGravity
+- uid: Godot.Vector3
+  commentId: T:Godot.Vector3
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector3.html
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Godot.Vector3
+- uid: Godot.Input.GetAccelerometer*
+  commentId: Overload:Godot.Input.GetAccelerometer
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetAccelerometer
+  name: GetAccelerometer
+  nameWithType: Input.GetAccelerometer
+  fullName: Godot.Input.GetAccelerometer
+- uid: Godot.Input.GetMagnetometer*
+  commentId: Overload:Godot.Input.GetMagnetometer
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetMagnetometer
+  name: GetMagnetometer
+  nameWithType: Input.GetMagnetometer
+  fullName: Godot.Input.GetMagnetometer
+- uid: Godot.Input.GetGyroscope*
+  commentId: Overload:Godot.Input.GetGyroscope
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetGyroscope
+  name: GetGyroscope
+  nameWithType: Input.GetGyroscope
+  fullName: Godot.Input.GetGyroscope
+- uid: Godot.Input.SetGravity*
+  commentId: Overload:Godot.Input.SetGravity
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_SetGravity_Godot_Vector3_
+  name: SetGravity
+  nameWithType: Input.SetGravity
+  fullName: Godot.Input.SetGravity
+- uid: Godot.Input.SetAccelerometer*
+  commentId: Overload:Godot.Input.SetAccelerometer
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_SetAccelerometer_Godot_Vector3_
+  name: SetAccelerometer
+  nameWithType: Input.SetAccelerometer
+  fullName: Godot.Input.SetAccelerometer
+- uid: Godot.Input.SetMagnetometer*
+  commentId: Overload:Godot.Input.SetMagnetometer
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_SetMagnetometer_Godot_Vector3_
+  name: SetMagnetometer
+  nameWithType: Input.SetMagnetometer
+  fullName: Godot.Input.SetMagnetometer
+- uid: Godot.Input.SetGyroscope*
+  commentId: Overload:Godot.Input.SetGyroscope
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_SetGyroscope_Godot_Vector3_
+  name: SetGyroscope
+  nameWithType: Input.SetGyroscope
+  fullName: Godot.Input.SetGyroscope
+- uid: Godot.Input.GetLastMouseVelocity*
+  commentId: Overload:Godot.Input.GetLastMouseVelocity
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetLastMouseVelocity
+  name: GetLastMouseVelocity
+  nameWithType: Input.GetLastMouseVelocity
+  fullName: Godot.Input.GetLastMouseVelocity
+- uid: Godot.Input.GetLastMouseScreenVelocity*
+  commentId: Overload:Godot.Input.GetLastMouseScreenVelocity
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetLastMouseScreenVelocity
+  name: GetLastMouseScreenVelocity
+  nameWithType: Input.GetLastMouseScreenVelocity
+  fullName: Godot.Input.GetLastMouseScreenVelocity
+- uid: Godot.Input.GetMouseButtonMask*
+  commentId: Overload:Godot.Input.GetMouseButtonMask
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetMouseButtonMask
+  name: GetMouseButtonMask
+  nameWithType: Input.GetMouseButtonMask
+  fullName: Godot.Input.GetMouseButtonMask
+- uid: Godot.MouseButtonMask
+  commentId: T:Godot.MouseButtonMask
+  parent: Godot
+  isExternal: true
+  href: Godot.MouseButtonMask.html
+  name: MouseButtonMask
+  nameWithType: MouseButtonMask
+  fullName: Godot.MouseButtonMask
+- uid: Godot.Input.WarpMouse*
+  commentId: Overload:Godot.Input.WarpMouse
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_WarpMouse_Godot_Vector2_
+  name: WarpMouse
+  nameWithType: Input.WarpMouse
+  fullName: Godot.Input.WarpMouse
+- uid: Godot.Input.ActionPress*
+  commentId: Overload:Godot.Input.ActionPress
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_ActionPress_Godot_StringName_System_Single_
+  name: ActionPress
+  nameWithType: Input.ActionPress
+  fullName: Godot.Input.ActionPress
+- uid: Godot.Input.ActionRelease*
+  commentId: Overload:Godot.Input.ActionRelease
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_ActionRelease_Godot_StringName_
+  name: ActionRelease
+  nameWithType: Input.ActionRelease
+  fullName: Godot.Input.ActionRelease
+- uid: Godot.Input.SetDefaultCursorShape*
+  commentId: Overload:Godot.Input.SetDefaultCursorShape
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_SetDefaultCursorShape_Godot_Input_CursorShape_
+  name: SetDefaultCursorShape
+  nameWithType: Input.SetDefaultCursorShape
+  fullName: Godot.Input.SetDefaultCursorShape
+- uid: Godot.Input.CursorShape
+  commentId: T:Godot.Input.CursorShape
+  parent: Godot
+  isExternal: true
+  href: Godot.Input.html
+  name: Input.CursorShape
+  nameWithType: Input.CursorShape
+  fullName: Godot.Input.CursorShape
+  spec.csharp:
+  - uid: Godot.Input
+    name: Input
+    isExternal: true
+    href: Godot.Input.html
+  - name: .
+  - uid: Godot.Input.CursorShape
+    name: CursorShape
+    isExternal: true
+    href: Godot.Input.CursorShape.html
+  spec.vb:
+  - uid: Godot.Input
+    name: Input
+    isExternal: true
+    href: Godot.Input.html
+  - name: .
+  - uid: Godot.Input.CursorShape
+    name: CursorShape
+    isExternal: true
+    href: Godot.Input.CursorShape.html
+- uid: Godot.Input.GetCurrentCursorShape*
+  commentId: Overload:Godot.Input.GetCurrentCursorShape
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_GetCurrentCursorShape
+  name: GetCurrentCursorShape
+  nameWithType: Input.GetCurrentCursorShape
+  fullName: Godot.Input.GetCurrentCursorShape
+- uid: Godot.Input.SetCustomMouseCursor*
+  commentId: Overload:Godot.Input.SetCustomMouseCursor
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_SetCustomMouseCursor_Godot_Resource_Godot_Input_CursorShape_System_Nullable_Godot_Vector2__
+  name: SetCustomMouseCursor
+  nameWithType: Input.SetCustomMouseCursor
+  fullName: Godot.Input.SetCustomMouseCursor
+- uid: Godot.Resource
+  commentId: T:Godot.Resource
+  parent: Godot
+  isExternal: true
+  href: Godot.Resource.html
+  name: Resource
+  nameWithType: Resource
+  fullName: Godot.Resource
+- uid: System.Nullable{Godot.Vector2}
+  commentId: T:System.Nullable{Godot.Vector2}
+  parent: System
+  definition: System.Nullable`1
+  href: Godot.Vector2.html
+  name: Vector2?
+  nameWithType: Vector2?
+  fullName: Godot.Vector2?
+  spec.csharp:
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+    href: Godot.Vector2.html
+  - name: '?'
+  spec.vb:
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+    href: Godot.Vector2.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.Input.ParseInputEvent*
+  commentId: Overload:Godot.Input.ParseInputEvent
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_ParseInputEvent_Godot_InputEvent_
+  name: ParseInputEvent
+  nameWithType: Input.ParseInputEvent
+  fullName: Godot.Input.ParseInputEvent
+- uid: Godot.Input.FlushBufferedEvents*
+  commentId: Overload:Godot.Input.FlushBufferedEvents
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_FlushBufferedEvents
+  name: FlushBufferedEvents
+  nameWithType: Input.FlushBufferedEvents
+  fullName: Godot.Input.FlushBufferedEvents
+- uid: Godot.Input.MouseMode*
+  commentId: Overload:Godot.Input.MouseMode
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_MouseMode
+  name: MouseMode
+  nameWithType: Input.MouseMode
+  fullName: Godot.Input.MouseMode
+- uid: Godot.Input.MouseModeEnum
+  commentId: T:Godot.Input.MouseModeEnum
+  parent: Godot
+  isExternal: true
+  href: Godot.Input.html
+  name: Input.MouseModeEnum
+  nameWithType: Input.MouseModeEnum
+  fullName: Godot.Input.MouseModeEnum
+  spec.csharp:
+  - uid: Godot.Input
+    name: Input
+    isExternal: true
+    href: Godot.Input.html
+  - name: .
+  - uid: Godot.Input.MouseModeEnum
+    name: MouseModeEnum
+    isExternal: true
+    href: Godot.Input.MouseModeEnum.html
+  spec.vb:
+  - uid: Godot.Input
+    name: Input
+    isExternal: true
+    href: Godot.Input.html
+  - name: .
+  - uid: Godot.Input.MouseModeEnum
+    name: MouseModeEnum
+    isExternal: true
+    href: Godot.Input.MouseModeEnum.html
+- uid: Godot.Input.UseAccumulatedInput*
+  commentId: Overload:Godot.Input.UseAccumulatedInput
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_UseAccumulatedInput
+  name: UseAccumulatedInput
+  nameWithType: Input.UseAccumulatedInput
+  fullName: Godot.Input.UseAccumulatedInput
+- uid: Godot.Input.EmulateMouseFromTouch*
+  commentId: Overload:Godot.Input.EmulateMouseFromTouch
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_EmulateMouseFromTouch
+  name: EmulateMouseFromTouch
+  nameWithType: Input.EmulateMouseFromTouch
+  fullName: Godot.Input.EmulateMouseFromTouch
+- uid: Godot.Input.EmulateTouchFromMouse*
+  commentId: Overload:Godot.Input.EmulateTouchFromMouse
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_EmulateTouchFromMouse
+  name: EmulateTouchFromMouse
+  nameWithType: Input.EmulateTouchFromMouse
+  fullName: Godot.Input.EmulateTouchFromMouse
+- uid: Godot.Input.Singleton*
+  commentId: Overload:Godot.Input.Singleton
+  isExternal: true
+  href: Godot.Input.html#Godot_Input_Singleton
+  name: Singleton
+  nameWithType: Input.Singleton
+  fullName: Godot.Input.Singleton
+- uid: Godot.InputInstance
+  commentId: T:Godot.InputInstance
+  parent: Godot
+  isExternal: true
+  href: Godot.InputInstance.html
+  name: InputInstance
+  nameWithType: InputInstance
+  fullName: Godot.InputInstance
+- uid: Godot.Input.JoyConnectionChangedEventHandler
+  commentId: T:Godot.Input.JoyConnectionChangedEventHandler
+  parent: Godot
+  isExternal: true
+  href: Godot.Input.html
+  name: Input.JoyConnectionChangedEventHandler
+  nameWithType: Input.JoyConnectionChangedEventHandler
+  fullName: Godot.Input.JoyConnectionChangedEventHandler
+  spec.csharp:
+  - uid: Godot.Input
+    name: Input
+    isExternal: true
+    href: Godot.Input.html
+  - name: .
+  - uid: Godot.Input.JoyConnectionChangedEventHandler
+    name: JoyConnectionChangedEventHandler
+    isExternal: true
+    href: Godot.Input.JoyConnectionChangedEventHandler.html
+  spec.vb:
+  - uid: Godot.Input
+    name: Input
+    isExternal: true
+    href: Godot.Input.html
+  - name: .
+  - uid: Godot.Input.JoyConnectionChangedEventHandler
+    name: JoyConnectionChangedEventHandler
+    isExternal: true
+    href: Godot.Input.JoyConnectionChangedEventHandler.html

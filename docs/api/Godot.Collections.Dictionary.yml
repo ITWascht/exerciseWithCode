@@ -1,0 +1,2340 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.Collections.Dictionary
+  commentId: T:Godot.Collections.Dictionary
+  id: Dictionary
+  parent: Godot.Collections
+  children:
+  - Godot.Collections.Dictionary.#ctor
+  - Godot.Collections.Dictionary.Add(Godot.Variant,Godot.Variant)
+  - Godot.Collections.Dictionary.Clear
+  - Godot.Collections.Dictionary.ContainsKey(Godot.Variant)
+  - Godot.Collections.Dictionary.Count
+  - Godot.Collections.Dictionary.Dispose
+  - Godot.Collections.Dictionary.Dispose(System.Boolean)
+  - Godot.Collections.Dictionary.Duplicate(System.Boolean)
+  - Godot.Collections.Dictionary.Finalize
+  - Godot.Collections.Dictionary.GetEnumerator
+  - Godot.Collections.Dictionary.IsReadOnly
+  - Godot.Collections.Dictionary.Item(Godot.Variant)
+  - Godot.Collections.Dictionary.Keys
+  - Godot.Collections.Dictionary.MakeReadOnly
+  - Godot.Collections.Dictionary.Merge(Godot.Collections.Dictionary,System.Boolean)
+  - Godot.Collections.Dictionary.RecursiveEqual(Godot.Collections.Dictionary)
+  - Godot.Collections.Dictionary.Remove(Godot.Variant)
+  - Godot.Collections.Dictionary.ToString
+  - Godot.Collections.Dictionary.TryGetValue(Godot.Variant,Godot.Variant@)
+  - Godot.Collections.Dictionary.Values
+  langs:
+  - csharp
+  - vb
+  name: Dictionary
+  nameWithType: Dictionary
+  fullName: Godot.Collections.Dictionary
+  type: Class
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  syntax:
+    content: 'public sealed class Dictionary : IDictionary<Variant, Variant>, ICollection<KeyValuePair<Variant, Variant>>, IReadOnlyDictionary<Variant, Variant>, IReadOnlyCollection<KeyValuePair<Variant, Variant>>, IEnumerable<KeyValuePair<Variant, Variant>>, IEnumerable, IDisposable'
+    content.vb: Public NotInheritable Class Dictionary Implements IDictionary(Of Variant, Variant), ICollection(Of KeyValuePair(Of Variant, Variant)), IReadOnlyDictionary(Of Variant, Variant), IReadOnlyCollection(Of KeyValuePair(Of Variant, Variant)), IEnumerable(Of KeyValuePair(Of Variant, Variant)), IEnumerable, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  - System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}
+  - System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  - System.Collections.IEnumerable
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Godot.Collections.Dictionary.#ctor
+  commentId: M:Godot.Collections.Dictionary.#ctor
+  id: '#ctor'
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: Dictionary()
+  nameWithType: Dictionary.Dictionary()
+  fullName: Godot.Collections.Dictionary.Dictionary()
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  syntax:
+    content: public Dictionary()
+    content.vb: Public Sub New()
+  overload: Godot.Collections.Dictionary.#ctor*
+  nameWithType.vb: Dictionary.New()
+  fullName.vb: Godot.Collections.Dictionary.New()
+  name.vb: New()
+- uid: Godot.Collections.Dictionary.Finalize
+  commentId: M:Godot.Collections.Dictionary.Finalize
+  id: Finalize
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: ~Dictionary()
+  nameWithType: Dictionary.~Dictionary()
+  fullName: Godot.Collections.Dictionary.~Dictionary()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  syntax:
+    content: protected ~Dictionary()
+    content.vb: 'Protected '
+  overload: Godot.Collections.Dictionary.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: Godot.Collections.Dictionary.Dispose
+  commentId: M:Godot.Collections.Dictionary.Dispose
+  id: Dispose
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: Dictionary.Dispose()
+  fullName: Godot.Collections.Dictionary.Dispose()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Godot.Collections.Dictionary.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Godot.Collections.Dictionary.Dispose(System.Boolean)
+  commentId: M:Godot.Collections.Dictionary.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: Dictionary.Dispose(bool)
+  fullName: Godot.Collections.Dictionary.Dispose(bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  syntax:
+    content: public void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Public Sub Dispose(disposing As Boolean)
+  overload: Godot.Collections.Dictionary.Dispose*
+  nameWithType.vb: Dictionary.Dispose(Boolean)
+  fullName.vb: Godot.Collections.Dictionary.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: Godot.Collections.Dictionary.Duplicate(System.Boolean)
+  commentId: M:Godot.Collections.Dictionary.Duplicate(System.Boolean)
+  id: Duplicate(System.Boolean)
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: Duplicate(bool)
+  nameWithType: Dictionary.Duplicate(bool)
+  fullName: Godot.Collections.Dictionary.Duplicate(bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  syntax:
+    content: public Dictionary Duplicate(bool deep = false)
+    parameters:
+    - id: deep
+      type: System.Boolean
+    return:
+      type: Godot.Collections.Dictionary
+    content.vb: Public Function Duplicate(deep As Boolean = False) As Dictionary
+  overload: Godot.Collections.Dictionary.Duplicate*
+  nameWithType.vb: Dictionary.Duplicate(Boolean)
+  fullName.vb: Godot.Collections.Dictionary.Duplicate(Boolean)
+  name.vb: Duplicate(Boolean)
+- uid: Godot.Collections.Dictionary.Merge(Godot.Collections.Dictionary,System.Boolean)
+  commentId: M:Godot.Collections.Dictionary.Merge(Godot.Collections.Dictionary,System.Boolean)
+  id: Merge(Godot.Collections.Dictionary,System.Boolean)
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: Merge(Dictionary, bool)
+  nameWithType: Dictionary.Merge(Dictionary, bool)
+  fullName: Godot.Collections.Dictionary.Merge(Godot.Collections.Dictionary, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  syntax:
+    content: public void Merge(Dictionary dictionary, bool overwrite = false)
+    parameters:
+    - id: dictionary
+      type: Godot.Collections.Dictionary
+    - id: overwrite
+      type: System.Boolean
+    content.vb: Public Sub Merge(dictionary As Dictionary, overwrite As Boolean = False)
+  overload: Godot.Collections.Dictionary.Merge*
+  nameWithType.vb: Dictionary.Merge(Dictionary, Boolean)
+  fullName.vb: Godot.Collections.Dictionary.Merge(Godot.Collections.Dictionary, Boolean)
+  name.vb: Merge(Dictionary, Boolean)
+- uid: Godot.Collections.Dictionary.RecursiveEqual(Godot.Collections.Dictionary)
+  commentId: M:Godot.Collections.Dictionary.RecursiveEqual(Godot.Collections.Dictionary)
+  id: RecursiveEqual(Godot.Collections.Dictionary)
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: RecursiveEqual(Dictionary)
+  nameWithType: Dictionary.RecursiveEqual(Dictionary)
+  fullName: Godot.Collections.Dictionary.RecursiveEqual(Godot.Collections.Dictionary)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  syntax:
+    content: public bool RecursiveEqual(Dictionary other)
+    parameters:
+    - id: other
+      type: Godot.Collections.Dictionary
+    return:
+      type: System.Boolean
+    content.vb: Public Function RecursiveEqual(other As Dictionary) As Boolean
+  overload: Godot.Collections.Dictionary.RecursiveEqual*
+- uid: Godot.Collections.Dictionary.Add(Godot.Variant,Godot.Variant)
+  commentId: M:Godot.Collections.Dictionary.Add(Godot.Variant,Godot.Variant)
+  id: Add(Godot.Variant,Godot.Variant)
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: Add(Variant, Variant)
+  nameWithType: Dictionary.Add(Variant, Variant)
+  fullName: Godot.Collections.Dictionary.Add(Godot.Variant, Godot.Variant)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  example: []
+  syntax:
+    content: public void Add(Variant key, Variant value)
+    parameters:
+    - id: key
+      type: Godot.Variant
+    - id: value
+      type: Godot.Variant
+    content.vb: Public Sub Add(key As [Variant], value As [Variant])
+  overload: Godot.Collections.Dictionary.Add*
+  implements:
+  - System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Add(Godot.Variant,Godot.Variant)
+- uid: Godot.Collections.Dictionary.Clear
+  commentId: M:Godot.Collections.Dictionary.Clear
+  id: Clear
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: Dictionary.Clear()
+  fullName: Godot.Collections.Dictionary.Clear()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: Godot.Collections.Dictionary.Clear*
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.Clear
+- uid: Godot.Collections.Dictionary.ContainsKey(Godot.Variant)
+  commentId: M:Godot.Collections.Dictionary.ContainsKey(Godot.Variant)
+  id: ContainsKey(Godot.Variant)
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: ContainsKey(Variant)
+  nameWithType: Dictionary.ContainsKey(Variant)
+  fullName: Godot.Collections.Dictionary.ContainsKey(Godot.Variant)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  example: []
+  syntax:
+    content: public bool ContainsKey(Variant key)
+    parameters:
+    - id: key
+      type: Godot.Variant
+    return:
+      type: System.Boolean
+    content.vb: Public Function ContainsKey(key As [Variant]) As Boolean
+  overload: Godot.Collections.Dictionary.ContainsKey*
+  implements:
+  - System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.ContainsKey(Godot.Variant)
+  - System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}.ContainsKey(Godot.Variant)
+- uid: Godot.Collections.Dictionary.Remove(Godot.Variant)
+  commentId: M:Godot.Collections.Dictionary.Remove(Godot.Variant)
+  id: Remove(Godot.Variant)
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: Remove(Variant)
+  nameWithType: Dictionary.Remove(Variant)
+  fullName: Godot.Collections.Dictionary.Remove(Godot.Variant)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  example: []
+  syntax:
+    content: public bool Remove(Variant key)
+    parameters:
+    - id: key
+      type: Godot.Variant
+    return:
+      type: System.Boolean
+    content.vb: Public Function Remove(key As [Variant]) As Boolean
+  overload: Godot.Collections.Dictionary.Remove*
+  implements:
+  - System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Remove(Godot.Variant)
+- uid: Godot.Collections.Dictionary.MakeReadOnly
+  commentId: M:Godot.Collections.Dictionary.MakeReadOnly
+  id: MakeReadOnly
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: MakeReadOnly()
+  nameWithType: Dictionary.MakeReadOnly()
+  fullName: Godot.Collections.Dictionary.MakeReadOnly()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  syntax:
+    content: public void MakeReadOnly()
+    content.vb: Public Sub MakeReadOnly()
+  overload: Godot.Collections.Dictionary.MakeReadOnly*
+- uid: Godot.Collections.Dictionary.TryGetValue(Godot.Variant,Godot.Variant@)
+  commentId: M:Godot.Collections.Dictionary.TryGetValue(Godot.Variant,Godot.Variant@)
+  id: TryGetValue(Godot.Variant,Godot.Variant@)
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: TryGetValue(Variant, out Variant)
+  nameWithType: Dictionary.TryGetValue(Variant, out Variant)
+  fullName: Godot.Collections.Dictionary.TryGetValue(Godot.Variant, out Godot.Variant)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  example: []
+  syntax:
+    content: public bool TryGetValue(Variant key, out Variant value)
+    parameters:
+    - id: key
+      type: Godot.Variant
+    - id: value
+      type: Godot.Variant
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetValue(key As [Variant], value As [Variant]) As Boolean
+  overload: Godot.Collections.Dictionary.TryGetValue*
+  implements:
+  - System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.TryGetValue(Godot.Variant,Godot.Variant@)
+  - System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}.TryGetValue(Godot.Variant,Godot.Variant@)
+  nameWithType.vb: Dictionary.TryGetValue(Variant, Variant)
+  fullName.vb: Godot.Collections.Dictionary.TryGetValue(Godot.Variant, Godot.Variant)
+  name.vb: TryGetValue(Variant, Variant)
+- uid: Godot.Collections.Dictionary.GetEnumerator
+  commentId: M:Godot.Collections.Dictionary.GetEnumerator
+  id: GetEnumerator
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: Dictionary.GetEnumerator()
+  fullName: Godot.Collections.Dictionary.GetEnumerator()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  example: []
+  syntax:
+    content: public IEnumerator<KeyValuePair<Variant, Variant>> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of KeyValuePair(Of [Variant], [Variant]))
+  overload: Godot.Collections.Dictionary.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.GetEnumerator
+- uid: Godot.Collections.Dictionary.ToString
+  commentId: M:Godot.Collections.Dictionary.ToString
+  id: ToString
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Dictionary.ToString()
+  fullName: Godot.Collections.Dictionary.ToString()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Godot.Collections.Dictionary.ToString*
+- uid: Godot.Collections.Dictionary.Keys
+  commentId: P:Godot.Collections.Dictionary.Keys
+  id: Keys
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: Keys
+  nameWithType: Dictionary.Keys
+  fullName: Godot.Collections.Dictionary.Keys
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  example: []
+  syntax:
+    content: public ICollection<Variant> Keys { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{Godot.Variant}
+    content.vb: Public ReadOnly Property Keys As ICollection(Of [Variant])
+  overload: Godot.Collections.Dictionary.Keys*
+  implements:
+  - System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Keys
+- uid: Godot.Collections.Dictionary.Values
+  commentId: P:Godot.Collections.Dictionary.Values
+  id: Values
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: Values
+  nameWithType: Dictionary.Values
+  fullName: Godot.Collections.Dictionary.Values
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  example: []
+  syntax:
+    content: public ICollection<Variant> Values { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{Godot.Variant}
+    content.vb: Public ReadOnly Property Values As ICollection(Of [Variant])
+  overload: Godot.Collections.Dictionary.Values*
+  implements:
+  - System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Values
+- uid: Godot.Collections.Dictionary.Item(Godot.Variant)
+  commentId: P:Godot.Collections.Dictionary.Item(Godot.Variant)
+  id: Item(Godot.Variant)
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: this[Variant]
+  nameWithType: Dictionary.this[Variant]
+  fullName: Godot.Collections.Dictionary.this[Godot.Variant]
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  example: []
+  syntax:
+    content: public Variant this[Variant key] { get; set; }
+    parameters:
+    - id: key
+      type: Godot.Variant
+    return:
+      type: Godot.Variant
+    content.vb: Public Default Property this[](key As [Variant]) As [Variant]
+  overload: Godot.Collections.Dictionary.Item*
+  implements:
+  - System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Item(Godot.Variant)
+  - System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}.Item(Godot.Variant)
+  nameWithType.vb: Dictionary.this[](Variant)
+  fullName.vb: Godot.Collections.Dictionary.this[](Godot.Variant)
+  name.vb: this[](Variant)
+- uid: Godot.Collections.Dictionary.Count
+  commentId: P:Godot.Collections.Dictionary.Count
+  id: Count
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: Dictionary.Count
+  fullName: Godot.Collections.Dictionary.Count
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Godot.Collections.Dictionary.Count*
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.Count
+  - System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.Count
+- uid: Godot.Collections.Dictionary.IsReadOnly
+  commentId: P:Godot.Collections.Dictionary.IsReadOnly
+  id: IsReadOnly
+  parent: Godot.Collections.Dictionary
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: Dictionary.IsReadOnly
+  fullName: Godot.Collections.Dictionary.IsReadOnly
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot.Collections
+  example: []
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: Godot.Collections.Dictionary.IsReadOnly*
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.IsReadOnly
+references:
+- uid: Godot.Collections
+  commentId: N:Godot.Collections
+  isExternal: true
+  href: Godot.html
+  name: Godot.Collections
+  nameWithType: Godot.Collections
+  fullName: Godot.Collections
+  spec.csharp:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+  spec.vb:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}
+  commentId: T:System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<Variant, Variant>
+  nameWithType: IDictionary<Variant, Variant>
+  fullName: System.Collections.Generic.IDictionary<Godot.Variant, Godot.Variant>
+  nameWithType.vb: IDictionary(Of Variant, Variant)
+  fullName.vb: System.Collections.Generic.IDictionary(Of Godot.Variant, Godot.Variant)
+  name.vb: IDictionary(Of Variant, Variant)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  commentId: T:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<KeyValuePair<Variant, Variant>>
+  nameWithType: ICollection<KeyValuePair<Variant, Variant>>
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<Godot.Variant, Godot.Variant>>
+  nameWithType.vb: ICollection(Of KeyValuePair(Of Variant, Variant))
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of Godot.Variant, Godot.Variant))
+  name.vb: ICollection(Of KeyValuePair(Of Variant, Variant))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<Variant, Variant>
+  nameWithType: IReadOnlyDictionary<Variant, Variant>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<Godot.Variant, Godot.Variant>
+  nameWithType.vb: IReadOnlyDictionary(Of Variant, Variant)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of Godot.Variant, Godot.Variant)
+  name.vb: IReadOnlyDictionary(Of Variant, Variant)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<KeyValuePair<Variant, Variant>>
+  nameWithType: IReadOnlyCollection<KeyValuePair<Variant, Variant>>
+  fullName: System.Collections.Generic.IReadOnlyCollection<System.Collections.Generic.KeyValuePair<Godot.Variant, Godot.Variant>>
+  nameWithType.vb: IReadOnlyCollection(Of KeyValuePair(Of Variant, Variant))
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of System.Collections.Generic.KeyValuePair(Of Godot.Variant, Godot.Variant))
+  name.vb: IReadOnlyCollection(Of KeyValuePair(Of Variant, Variant))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<KeyValuePair<Variant, Variant>>
+  nameWithType: IEnumerable<KeyValuePair<Variant, Variant>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<Godot.Variant, Godot.Variant>>
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of Variant, Variant))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of Godot.Variant, Godot.Variant))
+  name.vb: IEnumerable(Of KeyValuePair(Of Variant, Variant))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: Godot.Collections.Dictionary.#ctor*
+  commentId: Overload:Godot.Collections.Dictionary.#ctor
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary__ctor
+  name: Dictionary
+  nameWithType: Dictionary.Dictionary
+  fullName: Godot.Collections.Dictionary.Dictionary
+  nameWithType.vb: Dictionary.New
+  fullName.vb: Godot.Collections.Dictionary.New
+  name.vb: New
+- uid: Godot.Collections.Dictionary.Finalize*
+  commentId: Overload:Godot.Collections.Dictionary.Finalize
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_Finalize
+  name: ~Dictionary
+  nameWithType: Dictionary.~Dictionary
+  fullName: Godot.Collections.Dictionary.~Dictionary
+  spec.csharp:
+  - name: "~"
+  - uid: Godot.Collections.Dictionary.Finalize*
+    name: Dictionary
+    isExternal: true
+    href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_Finalize
+- uid: Godot.Collections.Dictionary.Dispose*
+  commentId: Overload:Godot.Collections.Dictionary.Dispose
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_Dispose
+  name: Dispose
+  nameWithType: Dictionary.Dispose
+  fullName: Godot.Collections.Dictionary.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.Collections.Dictionary.Duplicate*
+  commentId: Overload:Godot.Collections.Dictionary.Duplicate
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_Duplicate_System_Boolean_
+  name: Duplicate
+  nameWithType: Dictionary.Duplicate
+  fullName: Godot.Collections.Dictionary.Duplicate
+- uid: Godot.Collections.Dictionary
+  commentId: T:Godot.Collections.Dictionary
+  parent: Godot.Collections
+  isExternal: true
+  href: Godot.Collections.Dictionary.html
+  name: Dictionary
+  nameWithType: Dictionary
+  fullName: Godot.Collections.Dictionary
+- uid: Godot.Collections.Dictionary.Merge*
+  commentId: Overload:Godot.Collections.Dictionary.Merge
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_Merge_Godot_Collections_Dictionary_System_Boolean_
+  name: Merge
+  nameWithType: Dictionary.Merge
+  fullName: Godot.Collections.Dictionary.Merge
+- uid: Godot.Collections.Dictionary.RecursiveEqual*
+  commentId: Overload:Godot.Collections.Dictionary.RecursiveEqual
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_RecursiveEqual_Godot_Collections_Dictionary_
+  name: RecursiveEqual
+  nameWithType: Dictionary.RecursiveEqual
+  fullName: Godot.Collections.Dictionary.RecursiveEqual
+- uid: Godot.Collections.Dictionary.Add*
+  commentId: Overload:Godot.Collections.Dictionary.Add
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_Add_Godot_Variant_Godot_Variant_
+  name: Add
+  nameWithType: Dictionary.Add
+  fullName: Godot.Collections.Dictionary.Add
+- uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Add(Godot.Variant,Godot.Variant)
+  commentId: M:System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Add(Godot.Variant,Godot.Variant)
+  parent: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}
+  definition: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  name: Add(Variant, Variant)
+  nameWithType: IDictionary<Variant, Variant>.Add(Variant, Variant)
+  fullName: System.Collections.Generic.IDictionary<Godot.Variant, Godot.Variant>.Add(Godot.Variant, Godot.Variant)
+  nameWithType.vb: IDictionary(Of Variant, Variant).Add(Variant, Variant)
+  fullName.vb: System.Collections.Generic.IDictionary(Of Godot.Variant, Godot.Variant).Add(Godot.Variant, Godot.Variant)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Add(Godot.Variant,Godot.Variant)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Add(Godot.Variant,Godot.Variant)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: Godot.Variant
+  commentId: T:Godot.Variant
+  parent: Godot
+  isExternal: true
+  href: Godot.Variant.html
+  name: Variant
+  nameWithType: Variant
+  fullName: Godot.Variant
+- uid: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+  commentId: M:System.Collections.Generic.IDictionary`2.Add(`0,`1)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  name: Add(TKey, TValue)
+  nameWithType: IDictionary<TKey, TValue>.Add(TKey, TValue)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Add(TKey, TValue)
+  nameWithType.vb: IDictionary(Of TKey, TValue).Add(TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).Add(TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+    name: Add
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: Godot.Collections.Dictionary.Clear*
+  commentId: Overload:Godot.Collections.Dictionary.Clear
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_Clear
+  name: Clear
+  nameWithType: Dictionary.Clear
+  fullName: Godot.Collections.Dictionary.Clear
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.Clear
+  commentId: M:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.Clear
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<KeyValuePair<Variant, Variant>>.Clear()
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<Godot.Variant, Godot.Variant>>.Clear()
+  nameWithType.vb: ICollection(Of KeyValuePair(Of Variant, Variant)).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of Godot.Variant, Godot.Variant)).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: Godot.Collections.Dictionary.ContainsKey*
+  commentId: Overload:Godot.Collections.Dictionary.ContainsKey
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_ContainsKey_Godot_Variant_
+  name: ContainsKey
+  nameWithType: Dictionary.ContainsKey
+  fullName: Godot.Collections.Dictionary.ContainsKey
+- uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.ContainsKey(Godot.Variant)
+  commentId: M:System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.ContainsKey(Godot.Variant)
+  parent: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}
+  definition: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  name: ContainsKey(Variant)
+  nameWithType: IDictionary<Variant, Variant>.ContainsKey(Variant)
+  fullName: System.Collections.Generic.IDictionary<Godot.Variant, Godot.Variant>.ContainsKey(Godot.Variant)
+  nameWithType.vb: IDictionary(Of Variant, Variant).ContainsKey(Variant)
+  fullName.vb: System.Collections.Generic.IDictionary(Of Godot.Variant, Godot.Variant).ContainsKey(Godot.Variant)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.ContainsKey(Godot.Variant)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.ContainsKey(Godot.Variant)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}.ContainsKey(Godot.Variant)
+  commentId: M:System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}.ContainsKey(Godot.Variant)
+  parent: System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}
+  definition: System.Collections.Generic.IReadOnlyDictionary`2.ContainsKey(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.containskey
+  name: ContainsKey(Variant)
+  nameWithType: IReadOnlyDictionary<Variant, Variant>.ContainsKey(Variant)
+  fullName: System.Collections.Generic.IReadOnlyDictionary<Godot.Variant, Godot.Variant>.ContainsKey(Godot.Variant)
+  nameWithType.vb: IReadOnlyDictionary(Of Variant, Variant).ContainsKey(Variant)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of Godot.Variant, Godot.Variant).ContainsKey(Godot.Variant)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}.ContainsKey(Godot.Variant)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.containskey
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}.ContainsKey(Godot.Variant)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.containskey
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+  commentId: M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  name: ContainsKey(TKey)
+  nameWithType: IDictionary<TKey, TValue>.ContainsKey(TKey)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: IDictionary(Of TKey, TValue).ContainsKey(TKey)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).ContainsKey(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey
+  - name: (
+  - name: TKey
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2.ContainsKey(`0)
+  commentId: M:System.Collections.Generic.IReadOnlyDictionary`2.ContainsKey(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.containskey
+  name: ContainsKey(TKey)
+  nameWithType: IReadOnlyDictionary<TKey, TValue>.ContainsKey(TKey)
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue).ContainsKey(TKey)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue).ContainsKey(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.containskey
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.containskey
+  - name: (
+  - name: TKey
+  - name: )
+- uid: Godot.Collections.Dictionary.Remove*
+  commentId: Overload:Godot.Collections.Dictionary.Remove
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_Remove_Godot_Variant_
+  name: Remove
+  nameWithType: Dictionary.Remove
+  fullName: Godot.Collections.Dictionary.Remove
+- uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Remove(Godot.Variant)
+  commentId: M:System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Remove(Godot.Variant)
+  parent: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}
+  definition: System.Collections.Generic.IDictionary`2.Remove(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  name: Remove(Variant)
+  nameWithType: IDictionary<Variant, Variant>.Remove(Variant)
+  fullName: System.Collections.Generic.IDictionary<Godot.Variant, Godot.Variant>.Remove(Godot.Variant)
+  nameWithType.vb: IDictionary(Of Variant, Variant).Remove(Variant)
+  fullName.vb: System.Collections.Generic.IDictionary(Of Godot.Variant, Godot.Variant).Remove(Godot.Variant)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Remove(Godot.Variant)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Remove(Godot.Variant)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2.Remove(`0)
+  commentId: M:System.Collections.Generic.IDictionary`2.Remove(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  name: Remove(TKey)
+  nameWithType: IDictionary<TKey, TValue>.Remove(TKey)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Remove(TKey)
+  nameWithType.vb: IDictionary(Of TKey, TValue).Remove(TKey)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).Remove(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove
+  - name: (
+  - name: TKey
+  - name: )
+- uid: Godot.Collections.Dictionary.MakeReadOnly*
+  commentId: Overload:Godot.Collections.Dictionary.MakeReadOnly
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_MakeReadOnly
+  name: MakeReadOnly
+  nameWithType: Dictionary.MakeReadOnly
+  fullName: Godot.Collections.Dictionary.MakeReadOnly
+- uid: Godot.Collections.Dictionary.TryGetValue*
+  commentId: Overload:Godot.Collections.Dictionary.TryGetValue
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_TryGetValue_Godot_Variant_Godot_Variant__
+  name: TryGetValue
+  nameWithType: Dictionary.TryGetValue
+  fullName: Godot.Collections.Dictionary.TryGetValue
+- uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.TryGetValue(Godot.Variant,Godot.Variant@)
+  commentId: M:System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.TryGetValue(Godot.Variant,Godot.Variant@)
+  parent: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}
+  definition: System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.trygetvalue
+  name: TryGetValue(Variant, out Variant)
+  nameWithType: IDictionary<Variant, Variant>.TryGetValue(Variant, out Variant)
+  fullName: System.Collections.Generic.IDictionary<Godot.Variant, Godot.Variant>.TryGetValue(Godot.Variant, out Godot.Variant)
+  nameWithType.vb: IDictionary(Of Variant, Variant).TryGetValue(Variant, Variant)
+  fullName.vb: System.Collections.Generic.IDictionary(Of Godot.Variant, Godot.Variant).TryGetValue(Godot.Variant, Godot.Variant)
+  name.vb: TryGetValue(Variant, Variant)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.TryGetValue(Godot.Variant,Godot.Variant@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.trygetvalue
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.TryGetValue(Godot.Variant,Godot.Variant@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.trygetvalue
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}.TryGetValue(Godot.Variant,Godot.Variant@)
+  commentId: M:System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}.TryGetValue(Godot.Variant,Godot.Variant@)
+  parent: System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}
+  definition: System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1@)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.trygetvalue
+  name: TryGetValue(Variant, out Variant)
+  nameWithType: IReadOnlyDictionary<Variant, Variant>.TryGetValue(Variant, out Variant)
+  fullName: System.Collections.Generic.IReadOnlyDictionary<Godot.Variant, Godot.Variant>.TryGetValue(Godot.Variant, out Godot.Variant)
+  nameWithType.vb: IReadOnlyDictionary(Of Variant, Variant).TryGetValue(Variant, Variant)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of Godot.Variant, Godot.Variant).TryGetValue(Godot.Variant, Godot.Variant)
+  name.vb: TryGetValue(Variant, Variant)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}.TryGetValue(Godot.Variant,Godot.Variant@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.trygetvalue
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}.TryGetValue(Godot.Variant,Godot.Variant@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.trygetvalue
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+  commentId: M:System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.trygetvalue
+  name: TryGetValue(TKey, out TValue)
+  nameWithType: IDictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+  nameWithType.vb: IDictionary(Of TKey, TValue).TryGetValue(TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).TryGetValue(TKey, TValue)
+  name.vb: TryGetValue(TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.trygetvalue
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.trygetvalue
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1@)
+  commentId: M:System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1@)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.trygetvalue
+  name: TryGetValue(TKey, out TValue)
+  nameWithType: IReadOnlyDictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue).TryGetValue(TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue).TryGetValue(TKey, TValue)
+  name.vb: TryGetValue(TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.trygetvalue
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.trygetvalue
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Godot.Collections.Dictionary.GetEnumerator*
+  commentId: Overload:Godot.Collections.Dictionary.GetEnumerator
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_GetEnumerator
+  name: GetEnumerator
+  nameWithType: Dictionary.GetEnumerator
+  fullName: Godot.Collections.Dictionary.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<KeyValuePair<Variant, Variant>>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<Godot.Variant, Godot.Variant>>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of Variant, Variant)).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of Godot.Variant, Godot.Variant)).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  commentId: T:System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<KeyValuePair<Variant, Variant>>
+  nameWithType: IEnumerator<KeyValuePair<Variant, Variant>>
+  fullName: System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<Godot.Variant, Godot.Variant>>
+  nameWithType.vb: IEnumerator(Of KeyValuePair(Of Variant, Variant))
+  fullName.vb: System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of Godot.Variant, Godot.Variant))
+  name.vb: IEnumerator(Of KeyValuePair(Of Variant, Variant))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ','
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Godot.Collections.Dictionary.ToString*
+  commentId: Overload:Godot.Collections.Dictionary.ToString
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_ToString
+  name: ToString
+  nameWithType: Dictionary.ToString
+  fullName: Godot.Collections.Dictionary.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.Collections.Dictionary.Keys*
+  commentId: Overload:Godot.Collections.Dictionary.Keys
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_Keys
+  name: Keys
+  nameWithType: Dictionary.Keys
+  fullName: Godot.Collections.Dictionary.Keys
+- uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Keys
+  commentId: P:System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Keys
+  parent: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}
+  definition: System.Collections.Generic.IDictionary`2.Keys
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.keys
+  name: Keys
+  nameWithType: IDictionary<Variant, Variant>.Keys
+  fullName: System.Collections.Generic.IDictionary<Godot.Variant, Godot.Variant>.Keys
+  nameWithType.vb: IDictionary(Of Variant, Variant).Keys
+  fullName.vb: System.Collections.Generic.IDictionary(Of Godot.Variant, Godot.Variant).Keys
+- uid: System.Collections.Generic.ICollection{Godot.Variant}
+  commentId: T:System.Collections.Generic.ICollection{Godot.Variant}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<Variant>
+  nameWithType: ICollection<Variant>
+  fullName: System.Collections.Generic.ICollection<Godot.Variant>
+  nameWithType.vb: ICollection(Of Variant)
+  fullName.vb: System.Collections.Generic.ICollection(Of Godot.Variant)
+  name.vb: ICollection(Of Variant)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2.Keys
+  commentId: P:System.Collections.Generic.IDictionary`2.Keys
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.keys
+  name: Keys
+  nameWithType: IDictionary<TKey, TValue>.Keys
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Keys
+  nameWithType.vb: IDictionary(Of TKey, TValue).Keys
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).Keys
+- uid: Godot.Collections.Dictionary.Values*
+  commentId: Overload:Godot.Collections.Dictionary.Values
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_Values
+  name: Values
+  nameWithType: Dictionary.Values
+  fullName: Godot.Collections.Dictionary.Values
+- uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Values
+  commentId: P:System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Values
+  parent: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}
+  definition: System.Collections.Generic.IDictionary`2.Values
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.values
+  name: Values
+  nameWithType: IDictionary<Variant, Variant>.Values
+  fullName: System.Collections.Generic.IDictionary<Godot.Variant, Godot.Variant>.Values
+  nameWithType.vb: IDictionary(Of Variant, Variant).Values
+  fullName.vb: System.Collections.Generic.IDictionary(Of Godot.Variant, Godot.Variant).Values
+- uid: System.Collections.Generic.IDictionary`2.Values
+  commentId: P:System.Collections.Generic.IDictionary`2.Values
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.values
+  name: Values
+  nameWithType: IDictionary<TKey, TValue>.Values
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Values
+  nameWithType.vb: IDictionary(Of TKey, TValue).Values
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).Values
+- uid: Godot.Collections.Dictionary.Item*
+  commentId: Overload:Godot.Collections.Dictionary.Item
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_Item_Godot_Variant_
+  name: this
+  nameWithType: Dictionary.this
+  fullName: Godot.Collections.Dictionary.this
+  nameWithType.vb: Dictionary.this[]
+  fullName.vb: Godot.Collections.Dictionary.this[]
+  name.vb: this[]
+- uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Item(Godot.Variant)
+  commentId: P:System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Item(Godot.Variant)
+  parent: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}
+  definition: System.Collections.Generic.IDictionary`2.Item(`0)
+  href: Godot.Variant.html
+  name: this[Variant]
+  nameWithType: IDictionary<Variant, Variant>.this[Variant]
+  fullName: System.Collections.Generic.IDictionary<Godot.Variant, Godot.Variant>.this[Godot.Variant]
+  nameWithType.vb: IDictionary(Of Variant, Variant).this[](Variant)
+  fullName.vb: System.Collections.Generic.IDictionary(Of Godot.Variant, Godot.Variant).this[](Godot.Variant)
+  name.vb: this[](Variant)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary{Godot.Variant,Godot.Variant}.Item(Godot.Variant)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.item
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}.Item(Godot.Variant)
+  commentId: P:System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}.Item(Godot.Variant)
+  parent: System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}
+  definition: System.Collections.Generic.IReadOnlyDictionary`2.Item(`0)
+  href: Godot.Variant.html
+  name: this[Variant]
+  nameWithType: IReadOnlyDictionary<Variant, Variant>.this[Variant]
+  fullName: System.Collections.Generic.IReadOnlyDictionary<Godot.Variant, Godot.Variant>.this[Godot.Variant]
+  nameWithType.vb: IReadOnlyDictionary(Of Variant, Variant).this[](Variant)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of Godot.Variant, Godot.Variant).this[](Godot.Variant)
+  name.vb: this[](Variant)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary{Godot.Variant,Godot.Variant}.Item(Godot.Variant)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.item
+  - name: (
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2.Item(`0)
+  commentId: P:System.Collections.Generic.IDictionary`2.Item(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.item
+  name: this[TKey]
+  nameWithType: IDictionary<TKey, TValue>.this[TKey]
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.this[TKey]
+  nameWithType.vb: IDictionary(Of TKey, TValue).this[](TKey)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).this[](TKey)
+  name.vb: this[](TKey)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - name: TKey
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.Item(`0)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.item
+  - name: (
+  - name: TKey
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2.Item(`0)
+  commentId: P:System.Collections.Generic.IReadOnlyDictionary`2.Item(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.item
+  name: this[TKey]
+  nameWithType: IReadOnlyDictionary<TKey, TValue>.this[TKey]
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>.this[TKey]
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue).this[](TKey)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue).this[](TKey)
+  name.vb: this[](TKey)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - name: TKey
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2.Item(`0)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2.item
+  - name: (
+  - name: TKey
+  - name: )
+- uid: Godot.Collections.Dictionary.Count*
+  commentId: Overload:Godot.Collections.Dictionary.Count
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_Count
+  name: Count
+  nameWithType: Dictionary.Count
+  fullName: Godot.Collections.Dictionary.Count
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.Count
+  commentId: P:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.Count
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  definition: System.Collections.Generic.ICollection`1.Count
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<KeyValuePair<Variant, Variant>>.Count
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<Godot.Variant, Godot.Variant>>.Count
+  nameWithType.vb: ICollection(Of KeyValuePair(Of Variant, Variant)).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of Godot.Variant, Godot.Variant)).Count
+- uid: System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.Count
+  commentId: P:System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.Count
+  parent: System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  definition: System.Collections.Generic.IReadOnlyCollection`1.Count
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1.count
+  name: Count
+  nameWithType: IReadOnlyCollection<KeyValuePair<Variant, Variant>>.Count
+  fullName: System.Collections.Generic.IReadOnlyCollection<System.Collections.Generic.KeyValuePair<Godot.Variant, Godot.Variant>>.Count
+  nameWithType.vb: IReadOnlyCollection(Of KeyValuePair(Of Variant, Variant)).Count
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of System.Collections.Generic.KeyValuePair(Of Godot.Variant, Godot.Variant)).Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: System.Collections.Generic.IReadOnlyCollection`1.Count
+  commentId: P:System.Collections.Generic.IReadOnlyCollection`1.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1.count
+  name: Count
+  nameWithType: IReadOnlyCollection<T>.Count
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>.Count
+  nameWithType.vb: IReadOnlyCollection(Of T).Count
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T).Count
+- uid: Godot.Collections.Dictionary.IsReadOnly*
+  commentId: Overload:Godot.Collections.Dictionary.IsReadOnly
+  isExternal: true
+  href: Godot.Collections.Dictionary.html#Godot_Collections_Dictionary_IsReadOnly
+  name: IsReadOnly
+  nameWithType: Dictionary.IsReadOnly
+  fullName: Godot.Collections.Dictionary.IsReadOnly
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{Godot.Variant,Godot.Variant}}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly
+  name: IsReadOnly
+  nameWithType: ICollection<KeyValuePair<Variant, Variant>>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<Godot.Variant, Godot.Variant>>.IsReadOnly
+  nameWithType.vb: ICollection(Of KeyValuePair(Of Variant, Variant)).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of Godot.Variant, Godot.Variant)).IsReadOnly
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly

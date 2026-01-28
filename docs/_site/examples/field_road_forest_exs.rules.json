@@ -1,0 +1,96 @@
+{
+  "regionId": "field_road_forest",
+  "terrain": {
+	"noiseScale": 2,
+	"heightFactor": 0.5,
+	"offSet": 0,
+	"defaultLayer": "grass",
+
+	"heightBands": [
+	  { "minMeters": -100, "maxMeters": 999, "layerId": "grass" }
+	],
+
+	"biomeOverrides": [
+	  { "biomeId": 0, "layerId": "field_ground" },
+	  { "biomeId": 2, "layerId": "road_ground" },
+	  { "biomeId": 1, "layerId": "forest_floor" }
+	]
+  },
+
+  "spawning": {
+	"entries": [
+	  {
+		"assetId": "pine_tree",
+		"densityPerKm2": 15000,
+		"minCount": 0,
+		"minDistanceMeters": 1.2,
+		"allowedBiomes": [1],
+		"alignToSlope": false,
+		"maxTiltDeg": 10,
+		"minHeightMeters": -100,
+		"maxSlopeDeg": 25
+	  },
+	{
+		"assetId": "firn",
+		"densityPerKm2": 50000,
+		"minCount": 1,
+		"minDistanceMeters": 0.1,
+		"allowedBiomes": [1],
+		"alignToSlope": true,
+		"maxTiltDeg": 15,
+		"minHeightMeters": -100,
+		"maxSlopeDeg": 30
+	  },
+	  {
+		"assetId": "wheat",
+		"densityPerKm2": 300000,
+		"minCount": 1,
+		"minDistanceMeters": 0.1,
+		"allowedBiomes": [0],
+		"alignToSlope": true,
+		"maxTiltDeg": 15,
+		"minHeightMeters": -100,
+		"maxSlopeDeg": 30
+	  },
+	  {
+		"assetId": "road_stone_a",
+		"densityPerKm2": 100,
+		"minCount": 1,
+		"minDistanceMeters": 0.6,
+		"allowedBiomes": [1],
+		"alignToSlope": true,
+		"maxTiltDeg": 20,
+		"minHeightMeters": -100,
+		"maxSlopeDeg": 30
+	  },
+	{
+		"assetId": "target",
+		"densityPerKm2": 1,
+		"minCount": 1,
+		"minDistanceMeters": 0.6,
+		"isTarget": true,
+		"allowedBiomes": [2],
+		"alignToSlope": true,
+		"maxTiltDeg": 20,
+		"minHeightMeters": -100,
+		"maxSlopeDeg": 30
+	  }
+	]
+  },
+"localSky": {
+	"_comment_sky": [
+	  "Cloudy baseline for a temperate forest edge.",
+	  "Cirrus = high thin clouds (soft haze).",
+	  "Cumulus = low clouds (main cloud mass).",
+      "WindSpeed controls cloud movement speed."
+	],
+	"preset": "Stormy",
+	"rainEnabled": false,
+  	"rainIntensity": 1.0,
+	"rainProfile": "storm",
+	
+	"snowEnabled": false,
+	"snowProfile": "blizzard",  	
+  	"snowIntensity": 0.1
+  }
+}

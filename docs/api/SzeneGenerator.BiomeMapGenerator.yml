@@ -1,0 +1,303 @@
+### YamlMime:ManagedReference
+items:
+- uid: SzeneGenerator.BiomeMapGenerator
+  commentId: T:SzeneGenerator.BiomeMapGenerator
+  id: BiomeMapGenerator
+  parent: SzeneGenerator
+  children:
+  - SzeneGenerator.BiomeMapGenerator.ComputeEdgeDistanceMeters(System.Int32[0:,0:],System.Single,System.Int32)
+  - SzeneGenerator.BiomeMapGenerator.Generate(System.Int32,System.Int32,System.Int32)
+  - SzeneGenerator.BiomeMapGenerator.GenerateFieldForestWithRoad(System.Int32,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - SzeneGenerator.BiomeMapGenerator.GenerateFromHeightSlope(System.Single[0:,0:],System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Int32,System.Single,System.Single,System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: BiomeMapGenerator
+  nameWithType: BiomeMapGenerator
+  fullName: SzeneGenerator.BiomeMapGenerator
+  type: Class
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/BiomeMapGenerator.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  summary: >-
+    Generates biome distribution maps used for terrain texturing and object spawning.
+
+    Supports simple splits and height/slope-based procedural biome assignment.
+  example: []
+  syntax:
+    content: public static class BiomeMapGenerator
+    content.vb: Public Module BiomeMapGenerator
+  inheritance:
+  - System.Object
+- uid: SzeneGenerator.BiomeMapGenerator.Generate(System.Int32,System.Int32,System.Int32)
+  commentId: M:SzeneGenerator.BiomeMapGenerator.Generate(System.Int32,System.Int32,System.Int32)
+  id: Generate(System.Int32,System.Int32,System.Int32)
+  parent: SzeneGenerator.BiomeMapGenerator
+  langs:
+  - csharp
+  - vb
+  name: Generate(int, int, int)
+  nameWithType: BiomeMapGenerator.Generate(int, int, int)
+  fullName: SzeneGenerator.BiomeMapGenerator.Generate(int, int, int)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/BiomeMapGenerator.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public static int[,] Generate(int width, int depth, int seed)
+    parameters:
+    - id: width
+      type: System.Int32
+    - id: depth
+      type: System.Int32
+    - id: seed
+      type: System.Int32
+    return:
+      type: System.Int32[,]
+    content.vb: Public Shared Function Generate(width As Integer, depth As Integer, seed As Integer) As Integer(,)
+  overload: SzeneGenerator.BiomeMapGenerator.Generate*
+  nameWithType.vb: BiomeMapGenerator.Generate(Integer, Integer, Integer)
+  fullName.vb: SzeneGenerator.BiomeMapGenerator.Generate(Integer, Integer, Integer)
+  name.vb: Generate(Integer, Integer, Integer)
+- uid: SzeneGenerator.BiomeMapGenerator.ComputeEdgeDistanceMeters(System.Int32[0:,0:],System.Single,System.Int32)
+  commentId: M:SzeneGenerator.BiomeMapGenerator.ComputeEdgeDistanceMeters(System.Int32[0:,0:],System.Single,System.Int32)
+  id: ComputeEdgeDistanceMeters(System.Int32[0:,0:],System.Single,System.Int32)
+  parent: SzeneGenerator.BiomeMapGenerator
+  langs:
+  - csharp
+  - vb
+  name: ComputeEdgeDistanceMeters(int[,], float, int)
+  nameWithType: BiomeMapGenerator.ComputeEdgeDistanceMeters(int[,], float, int)
+  fullName: SzeneGenerator.BiomeMapGenerator.ComputeEdgeDistanceMeters(int[,], float, int)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/BiomeMapGenerator.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public static float[,] ComputeEdgeDistanceMeters(int[,] biome, float metersPerPixel, int maxRadiusPx = 32)
+    parameters:
+    - id: biome
+      type: System.Int32[,]
+    - id: metersPerPixel
+      type: System.Single
+    - id: maxRadiusPx
+      type: System.Int32
+    return:
+      type: System.Single[,]
+    content.vb: Public Shared Function ComputeEdgeDistanceMeters(biome As Integer(,), metersPerPixel As Single, maxRadiusPx As Integer = 32) As Single(,)
+  overload: SzeneGenerator.BiomeMapGenerator.ComputeEdgeDistanceMeters*
+  nameWithType.vb: BiomeMapGenerator.ComputeEdgeDistanceMeters(Integer(,), Single, Integer)
+  fullName.vb: SzeneGenerator.BiomeMapGenerator.ComputeEdgeDistanceMeters(Integer(,), Single, Integer)
+  name.vb: ComputeEdgeDistanceMeters(Integer(,), Single, Integer)
+- uid: SzeneGenerator.BiomeMapGenerator.GenerateFromHeightSlope(System.Single[0:,0:],System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Int32,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:SzeneGenerator.BiomeMapGenerator.GenerateFromHeightSlope(System.Single[0:,0:],System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Int32,System.Single,System.Single,System.Single,System.Single)
+  id: GenerateFromHeightSlope(System.Single[0:,0:],System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Int32,System.Single,System.Single,System.Single,System.Single)
+  parent: SzeneGenerator.BiomeMapGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateFromHeightSlope(float[,], int, int, float, float, float, int, float, float, float, float)
+  nameWithType: BiomeMapGenerator.GenerateFromHeightSlope(float[,], int, int, float, float, float, int, float, float, float, float)
+  fullName: SzeneGenerator.BiomeMapGenerator.GenerateFromHeightSlope(float[,], int, int, float, float, float, int, float, float, float, float)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/BiomeMapGenerator.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public static int[,] GenerateFromHeightSlope(float[,] heights01, int width, int depth, float metersPerPixel, float scale, float offset, int seed, float forestLineMeters, float maxForestSlopeDeg, float noiseStrength = 0.25, float noiseScale = 0.02)
+    parameters:
+    - id: heights01
+      type: System.Single[,]
+    - id: width
+      type: System.Int32
+    - id: depth
+      type: System.Int32
+    - id: metersPerPixel
+      type: System.Single
+    - id: scale
+      type: System.Single
+    - id: offset
+      type: System.Single
+    - id: seed
+      type: System.Int32
+    - id: forestLineMeters
+      type: System.Single
+    - id: maxForestSlopeDeg
+      type: System.Single
+    - id: noiseStrength
+      type: System.Single
+    - id: noiseScale
+      type: System.Single
+    return:
+      type: System.Int32[,]
+    content.vb: Public Shared Function GenerateFromHeightSlope(heights01 As Single(,), width As Integer, depth As Integer, metersPerPixel As Single, scale As Single, offset As Single, seed As Integer, forestLineMeters As Single, maxForestSlopeDeg As Single, noiseStrength As Single = 0.25, noiseScale As Single = 0.02) As Integer(,)
+  overload: SzeneGenerator.BiomeMapGenerator.GenerateFromHeightSlope*
+  nameWithType.vb: BiomeMapGenerator.GenerateFromHeightSlope(Single(,), Integer, Integer, Single, Single, Single, Integer, Single, Single, Single, Single)
+  fullName.vb: SzeneGenerator.BiomeMapGenerator.GenerateFromHeightSlope(Single(,), Integer, Integer, Single, Single, Single, Integer, Single, Single, Single, Single)
+  name.vb: GenerateFromHeightSlope(Single(,), Integer, Integer, Single, Single, Single, Integer, Single, Single, Single, Single)
+- uid: SzeneGenerator.BiomeMapGenerator.GenerateFieldForestWithRoad(System.Int32,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:SzeneGenerator.BiomeMapGenerator.GenerateFieldForestWithRoad(System.Int32,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: GenerateFieldForestWithRoad(System.Int32,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: SzeneGenerator.BiomeMapGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateFieldForestWithRoad(int, int, int, float, float, float, float, float)
+  nameWithType: BiomeMapGenerator.GenerateFieldForestWithRoad(int, int, int, float, float, float, float, float)
+  fullName: SzeneGenerator.BiomeMapGenerator.GenerateFieldForestWithRoad(int, int, int, float, float, float, float, float)
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/Scripts/Terrain/BiomeMapGenerator.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public static int[,] GenerateFieldForestWithRoad(int width, int depth, int seed, float metersPerPixel, float forestRatio = 0.5, float roadWidthMeters = 6, float roadWiggleMeters = 1, float roadNoiseScale = 0.02)
+    parameters:
+    - id: width
+      type: System.Int32
+    - id: depth
+      type: System.Int32
+    - id: seed
+      type: System.Int32
+    - id: metersPerPixel
+      type: System.Single
+    - id: forestRatio
+      type: System.Single
+    - id: roadWidthMeters
+      type: System.Single
+    - id: roadWiggleMeters
+      type: System.Single
+    - id: roadNoiseScale
+      type: System.Single
+    return:
+      type: System.Int32[,]
+    content.vb: Public Shared Function GenerateFieldForestWithRoad(width As Integer, depth As Integer, seed As Integer, metersPerPixel As Single, forestRatio As Single = 0.5, roadWidthMeters As Single = 6, roadWiggleMeters As Single = 1, roadNoiseScale As Single = 0.02) As Integer(,)
+  overload: SzeneGenerator.BiomeMapGenerator.GenerateFieldForestWithRoad*
+  nameWithType.vb: BiomeMapGenerator.GenerateFieldForestWithRoad(Integer, Integer, Integer, Single, Single, Single, Single, Single)
+  fullName.vb: SzeneGenerator.BiomeMapGenerator.GenerateFieldForestWithRoad(Integer, Integer, Integer, Single, Single, Single, Single, Single)
+  name.vb: GenerateFieldForestWithRoad(Integer, Integer, Integer, Single, Single, Single, Single, Single)
+references:
+- uid: SzeneGenerator
+  commentId: N:SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.html
+  name: SzeneGenerator
+  nameWithType: SzeneGenerator
+  fullName: SzeneGenerator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SzeneGenerator.BiomeMapGenerator.Generate*
+  commentId: Overload:SzeneGenerator.BiomeMapGenerator.Generate
+  isExternal: true
+  href: SzeneGenerator.BiomeMapGenerator.html#SzeneGenerator_BiomeMapGenerator_Generate_System_Int32_System_Int32_System_Int32_
+  name: Generate
+  nameWithType: BiomeMapGenerator.Generate
+  fullName: SzeneGenerator.BiomeMapGenerator.Generate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Int32[,]
+  isExternal: true
+  name: int[,]
+  nameWithType: int[,]
+  fullName: int[,]
+  nameWithType.vb: Integer(,)
+  fullName.vb: Integer(,)
+  name.vb: Integer(,)
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: (
+  - name: ','
+  - name: )
+- uid: SzeneGenerator.BiomeMapGenerator.ComputeEdgeDistanceMeters*
+  commentId: Overload:SzeneGenerator.BiomeMapGenerator.ComputeEdgeDistanceMeters
+  isExternal: true
+  href: SzeneGenerator.BiomeMapGenerator.html#SzeneGenerator_BiomeMapGenerator_ComputeEdgeDistanceMeters_System_Int32_0
+  name: ComputeEdgeDistanceMeters
+  nameWithType: BiomeMapGenerator.ComputeEdgeDistanceMeters
+  fullName: SzeneGenerator.BiomeMapGenerator.ComputeEdgeDistanceMeters
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Single[,]
+  isExternal: true
+  name: float[,]
+  nameWithType: float[,]
+  fullName: float[,]
+  nameWithType.vb: Single(,)
+  fullName.vb: Single(,)
+  name.vb: Single(,)
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: (
+  - name: ','
+  - name: )
+- uid: SzeneGenerator.BiomeMapGenerator.GenerateFromHeightSlope*
+  commentId: Overload:SzeneGenerator.BiomeMapGenerator.GenerateFromHeightSlope
+  isExternal: true
+  href: SzeneGenerator.BiomeMapGenerator.html#SzeneGenerator_BiomeMapGenerator_GenerateFromHeightSlope_System_Single_0
+  name: GenerateFromHeightSlope
+  nameWithType: BiomeMapGenerator.GenerateFromHeightSlope
+  fullName: SzeneGenerator.BiomeMapGenerator.GenerateFromHeightSlope
+- uid: SzeneGenerator.BiomeMapGenerator.GenerateFieldForestWithRoad*
+  commentId: Overload:SzeneGenerator.BiomeMapGenerator.GenerateFieldForestWithRoad
+  isExternal: true
+  href: SzeneGenerator.BiomeMapGenerator.html#SzeneGenerator_BiomeMapGenerator_GenerateFieldForestWithRoad_System_Int32_System_Int32_System_Int32_System_Single_System_Single_System_Single_System_Single_System_Single_
+  name: GenerateFieldForestWithRoad
+  nameWithType: BiomeMapGenerator.GenerateFieldForestWithRoad
+  fullName: SzeneGenerator.BiomeMapGenerator.GenerateFieldForestWithRoad

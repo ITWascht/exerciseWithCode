@@ -1,0 +1,2947 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GD | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GD | mysite ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Godot.GD">
+
+
+
+  <h1 id="Godot_GD" data-uid="Godot.GD" class="text-break">
+Class GD  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Godot.html">Godot</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GodotSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class GD</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">GD</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Godot_GD_BytesToVar_" data-uid="Godot.GD.BytesToVar*"></a>
+
+  <h3 id="Godot_GD_BytesToVar_System_Span_System_Byte__" data-uid="Godot.GD.BytesToVar(System.Span{System.Byte})">
+  BytesToVar(Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant BytesToVar(Span&lt;byte&gt; bytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_BytesToVarWithObjects_" data-uid="Godot.GD.BytesToVarWithObjects*"></a>
+
+  <h3 id="Godot_GD_BytesToVarWithObjects_System_Span_System_Byte__" data-uid="Godot.GD.BytesToVarWithObjects(System.Span{System.Byte})">
+  BytesToVarWithObjects(Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant BytesToVarWithObjects(Span&lt;byte&gt; bytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Compress_" data-uid="Godot.GD.Compress*"></a>
+
+  <h3 id="Godot_GD_Compress_System_Byte___Godot_FileAccess_CompressionMode_" data-uid="Godot.GD.Compress(System.Byte[],Godot.FileAccess.CompressionMode)">
+  Compress(byte[], CompressionMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] Compress(this byte[] instance, FileAccess.CompressionMode compressionMode = CompressionMode.Fastlz)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>compressionMode</code> <a class="xref" href="Godot.FileAccess.html">FileAccess</a>.<a class="xref" href="Godot.FileAccess.CompressionMode.html">CompressionMode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Convert_" data-uid="Godot.GD.Convert*"></a>
+
+  <h3 id="Godot_GD_Convert_Godot_Variant_Godot_Variant_Type_" data-uid="Godot.GD.Convert(Godot.Variant,Godot.Variant.Type)">
+  Convert(Variant, Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant Convert(Variant what, Variant.Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>what</code> <a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="Godot.Variant.html">Variant</a>.<a class="xref" href="Godot.Variant.Type.html">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Decompress_" data-uid="Godot.GD.Decompress*"></a>
+
+  <h3 id="Godot_GD_Decompress_System_Byte___System_Int64_Godot_FileAccess_CompressionMode_" data-uid="Godot.GD.Decompress(System.Byte[],System.Int64,Godot.FileAccess.CompressionMode)">
+  Decompress(byte[], long, CompressionMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] Decompress(this byte[] instance, long bufferSize, FileAccess.CompressionMode compressionMode = CompressionMode.Fastlz)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>bufferSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>compressionMode</code> <a class="xref" href="Godot.FileAccess.html">FileAccess</a>.<a class="xref" href="Godot.FileAccess.CompressionMode.html">CompressionMode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_DecompressDynamic_" data-uid="Godot.GD.DecompressDynamic*"></a>
+
+  <h3 id="Godot_GD_DecompressDynamic_System_Byte___System_Int64_Godot_FileAccess_CompressionMode_" data-uid="Godot.GD.DecompressDynamic(System.Byte[],System.Int64,Godot.FileAccess.CompressionMode)">
+  DecompressDynamic(byte[], long, CompressionMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] DecompressDynamic(this byte[] instance, long maxOutputSize, FileAccess.CompressionMode compressionMode = CompressionMode.Fastlz)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>maxOutputSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>compressionMode</code> <a class="xref" href="Godot.FileAccess.html">FileAccess</a>.<a class="xref" href="Godot.FileAccess.CompressionMode.html">CompressionMode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Hash_" data-uid="Godot.GD.Hash*"></a>
+
+  <h3 id="Godot_GD_Hash_Godot_Variant_" data-uid="Godot.GD.Hash(Godot.Variant)">
+  Hash(Variant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Hash(Variant var)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>var</code> <a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_IsEmpty_" data-uid="Godot.GD.IsEmpty*"></a>
+
+  <h3 id="Godot_GD_IsEmpty_Godot_Color___" data-uid="Godot.GD.IsEmpty(Godot.Color[])">
+  IsEmpty(Color[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEmpty(this Color[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Color.html">Color</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_IsEmpty_" data-uid="Godot.GD.IsEmpty*"></a>
+
+  <h3 id="Godot_GD_IsEmpty_Godot_Vector2I___" data-uid="Godot.GD.IsEmpty(Godot.Vector2I[])">
+  IsEmpty(Vector2I[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEmpty(this Vector2I[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector2I.html">Vector2I</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_IsEmpty_" data-uid="Godot.GD.IsEmpty*"></a>
+
+  <h3 id="Godot_GD_IsEmpty_Godot_Vector2___" data-uid="Godot.GD.IsEmpty(Godot.Vector2[])">
+  IsEmpty(Vector2[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEmpty(this Vector2[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector2.html">Vector2</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_IsEmpty_" data-uid="Godot.GD.IsEmpty*"></a>
+
+  <h3 id="Godot_GD_IsEmpty_Godot_Vector3I___" data-uid="Godot.GD.IsEmpty(Godot.Vector3I[])">
+  IsEmpty(Vector3I[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEmpty(this Vector3I[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_IsEmpty_" data-uid="Godot.GD.IsEmpty*"></a>
+
+  <h3 id="Godot_GD_IsEmpty_Godot_Vector3___" data-uid="Godot.GD.IsEmpty(Godot.Vector3[])">
+  IsEmpty(Vector3[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEmpty(this Vector3[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_IsEmpty_" data-uid="Godot.GD.IsEmpty*"></a>
+
+  <h3 id="Godot_GD_IsEmpty_Godot_Vector4I___" data-uid="Godot.GD.IsEmpty(Godot.Vector4I[])">
+  IsEmpty(Vector4I[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEmpty(this Vector4I[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector4I.html">Vector4I</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_IsEmpty_" data-uid="Godot.GD.IsEmpty*"></a>
+
+  <h3 id="Godot_GD_IsEmpty_Godot_Vector4___" data-uid="Godot.GD.IsEmpty(Godot.Vector4[])">
+  IsEmpty(Vector4[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEmpty(this Vector4[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector4.html">Vector4</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_IsEmpty_" data-uid="Godot.GD.IsEmpty*"></a>
+
+  <h3 id="Godot_GD_IsEmpty_System_Byte___" data-uid="Godot.GD.IsEmpty(System.Byte[])">
+  IsEmpty(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEmpty(this byte[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_IsEmpty_" data-uid="Godot.GD.IsEmpty*"></a>
+
+  <h3 id="Godot_GD_IsEmpty_System_Double___" data-uid="Godot.GD.IsEmpty(System.Double[])">
+  IsEmpty(double[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEmpty(this double[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_IsEmpty_" data-uid="Godot.GD.IsEmpty*"></a>
+
+  <h3 id="Godot_GD_IsEmpty_System_Int32___" data-uid="Godot.GD.IsEmpty(System.Int32[])">
+  IsEmpty(int[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEmpty(this int[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_IsEmpty_" data-uid="Godot.GD.IsEmpty*"></a>
+
+  <h3 id="Godot_GD_IsEmpty_System_Int64___" data-uid="Godot.GD.IsEmpty(System.Int64[])">
+  IsEmpty(long[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEmpty(this long[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_IsEmpty_" data-uid="Godot.GD.IsEmpty*"></a>
+
+  <h3 id="Godot_GD_IsEmpty_System_Single___" data-uid="Godot.GD.IsEmpty(System.Single[])">
+  IsEmpty(float[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEmpty(this float[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_IsEmpty_" data-uid="Godot.GD.IsEmpty*"></a>
+
+  <h3 id="Godot_GD_IsEmpty_System_String___" data-uid="Godot.GD.IsEmpty(System.String[])">
+  IsEmpty(string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEmpty(this string[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Join_" data-uid="Godot.GD.Join*"></a>
+
+  <h3 id="Godot_GD_Join_Godot_Color___System_String_" data-uid="Godot.GD.Join(Godot.Color[],System.String)">
+  Join(Color[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(this Color[] instance, string delimiter = &quot;, &quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Color.html">Color</a>[]</dt>
+    <dd></dd>
+    <dt><code>delimiter</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Join_" data-uid="Godot.GD.Join*"></a>
+
+  <h3 id="Godot_GD_Join_Godot_Vector2I___System_String_" data-uid="Godot.GD.Join(Godot.Vector2I[],System.String)">
+  Join(Vector2I[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(this Vector2I[] instance, string delimiter = &quot;, &quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector2I.html">Vector2I</a>[]</dt>
+    <dd></dd>
+    <dt><code>delimiter</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Join_" data-uid="Godot.GD.Join*"></a>
+
+  <h3 id="Godot_GD_Join_Godot_Vector2___System_String_" data-uid="Godot.GD.Join(Godot.Vector2[],System.String)">
+  Join(Vector2[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(this Vector2[] instance, string delimiter = &quot;, &quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector2.html">Vector2</a>[]</dt>
+    <dd></dd>
+    <dt><code>delimiter</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Join_" data-uid="Godot.GD.Join*"></a>
+
+  <h3 id="Godot_GD_Join_Godot_Vector3I___System_String_" data-uid="Godot.GD.Join(Godot.Vector3I[],System.String)">
+  Join(Vector3I[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(this Vector3I[] instance, string delimiter = &quot;, &quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a>[]</dt>
+    <dd></dd>
+    <dt><code>delimiter</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Join_" data-uid="Godot.GD.Join*"></a>
+
+  <h3 id="Godot_GD_Join_Godot_Vector3___System_String_" data-uid="Godot.GD.Join(Godot.Vector3[],System.String)">
+  Join(Vector3[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(this Vector3[] instance, string delimiter = &quot;, &quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+    <dt><code>delimiter</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Join_" data-uid="Godot.GD.Join*"></a>
+
+  <h3 id="Godot_GD_Join_Godot_Vector4I___System_String_" data-uid="Godot.GD.Join(Godot.Vector4I[],System.String)">
+  Join(Vector4I[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(this Vector4I[] instance, string delimiter = &quot;, &quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector4I.html">Vector4I</a>[]</dt>
+    <dd></dd>
+    <dt><code>delimiter</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Join_" data-uid="Godot.GD.Join*"></a>
+
+  <h3 id="Godot_GD_Join_Godot_Vector4___System_String_" data-uid="Godot.GD.Join(Godot.Vector4[],System.String)">
+  Join(Vector4[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(this Vector4[] instance, string delimiter = &quot;, &quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector4.html">Vector4</a>[]</dt>
+    <dd></dd>
+    <dt><code>delimiter</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Join_" data-uid="Godot.GD.Join*"></a>
+
+  <h3 id="Godot_GD_Join_System_Byte___System_String_" data-uid="Godot.GD.Join(System.Byte[],System.String)">
+  Join(byte[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(this byte[] instance, string delimiter = &quot;, &quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>delimiter</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Join_" data-uid="Godot.GD.Join*"></a>
+
+  <h3 id="Godot_GD_Join_System_Double___System_String_" data-uid="Godot.GD.Join(System.Double[],System.String)">
+  Join(double[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(this double[] instance, string delimiter = &quot;, &quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>delimiter</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Join_" data-uid="Godot.GD.Join*"></a>
+
+  <h3 id="Godot_GD_Join_System_Int32___System_String_" data-uid="Godot.GD.Join(System.Int32[],System.String)">
+  Join(int[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(this int[] instance, string delimiter = &quot;, &quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+    <dt><code>delimiter</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Join_" data-uid="Godot.GD.Join*"></a>
+
+  <h3 id="Godot_GD_Join_System_Int64___System_String_" data-uid="Godot.GD.Join(System.Int64[],System.String)">
+  Join(long[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(this long[] instance, string delimiter = &quot;, &quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</dt>
+    <dd></dd>
+    <dt><code>delimiter</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Join_" data-uid="Godot.GD.Join*"></a>
+
+  <h3 id="Godot_GD_Join_System_Single___System_String_" data-uid="Godot.GD.Join(System.Single[],System.String)">
+  Join(float[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(this float[] instance, string delimiter = &quot;, &quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>delimiter</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Join_" data-uid="Godot.GD.Join*"></a>
+
+  <h3 id="Godot_GD_Join_System_String___System_String_" data-uid="Godot.GD.Join(System.String[],System.String)">
+  Join(string[], string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Join(this string[] instance, string delimiter = &quot;, &quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+    <dt><code>delimiter</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Load_" data-uid="Godot.GD.Load*"></a>
+
+  <h3 id="Godot_GD_Load_System_String_" data-uid="Godot.GD.Load(System.String)">
+  Load(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Resource Load(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Resource.html">Resource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Load_" data-uid="Godot.GD.Load*"></a>
+
+  <h3 id="Godot_GD_Load__1_System_String_" data-uid="Godot.GD.Load``1(System.String)">
+  Load&lt;T&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Load&lt;T&gt;(string path) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Print_" data-uid="Godot.GD.Print*"></a>
+
+  <h3 id="Godot_GD_Print_System_Object___" data-uid="Godot.GD.Print(System.Object[])">
+  Print(params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Print(params object[] what)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>what</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Print_" data-uid="Godot.GD.Print*"></a>
+
+  <h3 id="Godot_GD_Print_System_String_" data-uid="Godot.GD.Print(System.String)">
+  Print(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Print(string what)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>what</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_PrintErr_" data-uid="Godot.GD.PrintErr*"></a>
+
+  <h3 id="Godot_GD_PrintErr_System_Object___" data-uid="Godot.GD.PrintErr(System.Object[])">
+  PrintErr(params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PrintErr(params object[] what)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>what</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_PrintErr_" data-uid="Godot.GD.PrintErr*"></a>
+
+  <h3 id="Godot_GD_PrintErr_System_String_" data-uid="Godot.GD.PrintErr(System.String)">
+  PrintErr(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PrintErr(string what)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>what</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_PrintRaw_" data-uid="Godot.GD.PrintRaw*"></a>
+
+  <h3 id="Godot_GD_PrintRaw_System_Object___" data-uid="Godot.GD.PrintRaw(System.Object[])">
+  PrintRaw(params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PrintRaw(params object[] what)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>what</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_PrintRaw_" data-uid="Godot.GD.PrintRaw*"></a>
+
+  <h3 id="Godot_GD_PrintRaw_System_String_" data-uid="Godot.GD.PrintRaw(System.String)">
+  PrintRaw(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PrintRaw(string what)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>what</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_PrintRich_" data-uid="Godot.GD.PrintRich*"></a>
+
+  <h3 id="Godot_GD_PrintRich_System_Object___" data-uid="Godot.GD.PrintRich(System.Object[])">
+  PrintRich(params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PrintRich(params object[] what)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>what</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_PrintRich_" data-uid="Godot.GD.PrintRich*"></a>
+
+  <h3 id="Godot_GD_PrintRich_System_String_" data-uid="Godot.GD.PrintRich(System.String)">
+  PrintRich(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PrintRich(string what)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>what</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_PrintS_" data-uid="Godot.GD.PrintS*"></a>
+
+  <h3 id="Godot_GD_PrintS_System_Object___" data-uid="Godot.GD.PrintS(System.Object[])">
+  PrintS(params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PrintS(params object[] what)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>what</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_PrintT_" data-uid="Godot.GD.PrintT*"></a>
+
+  <h3 id="Godot_GD_PrintT_System_Object___" data-uid="Godot.GD.PrintT(System.Object[])">
+  PrintT(params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PrintT(params object[] what)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>what</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_PushError_" data-uid="Godot.GD.PushError*"></a>
+
+  <h3 id="Godot_GD_PushError_System_Object___" data-uid="Godot.GD.PushError(System.Object[])">
+  PushError(params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PushError(params object[] what)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>what</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_PushError_" data-uid="Godot.GD.PushError*"></a>
+
+  <h3 id="Godot_GD_PushError_System_String_" data-uid="Godot.GD.PushError(System.String)">
+  PushError(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PushError(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_PushWarning_" data-uid="Godot.GD.PushWarning*"></a>
+
+  <h3 id="Godot_GD_PushWarning_System_Object___" data-uid="Godot.GD.PushWarning(System.Object[])">
+  PushWarning(params object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PushWarning(params object[] what)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>what</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_PushWarning_" data-uid="Godot.GD.PushWarning*"></a>
+
+  <h3 id="Godot_GD_PushWarning_System_String_" data-uid="Godot.GD.PushWarning(System.String)">
+  PushWarning(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PushWarning(string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_RandFromSeed_" data-uid="Godot.GD.RandFromSeed*"></a>
+
+  <h3 id="Godot_GD_RandFromSeed_System_UInt64__" data-uid="Godot.GD.RandFromSeed(System.UInt64@)">
+  RandFromSeed(ref ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint RandFromSeed(ref ulong seed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>seed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_RandRange_" data-uid="Godot.GD.RandRange*"></a>
+
+  <h3 id="Godot_GD_RandRange_System_Double_System_Double_" data-uid="Godot.GD.RandRange(System.Double,System.Double)">
+  RandRange(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RandRange(double from, double to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <span class="xref">double</span></dt>
+    <dd></dd>
+    <dt><code>to</code> <span class="xref">double</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">double</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_RandRange_" data-uid="Godot.GD.RandRange*"></a>
+
+  <h3 id="Godot_GD_RandRange_System_Int32_System_Int32_" data-uid="Godot.GD.RandRange(System.Int32,System.Int32)">
+  RandRange(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RandRange(int from, int to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>to</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Randf_" data-uid="Godot.GD.Randf*"></a>
+
+  <h3 id="Godot_GD_Randf" data-uid="Godot.GD.Randf">
+  Randf()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Randf()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">float</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Randfn_" data-uid="Godot.GD.Randfn*"></a>
+
+  <h3 id="Godot_GD_Randfn_System_Double_System_Double_" data-uid="Godot.GD.Randfn(System.Double,System.Double)">
+  Randfn(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Randfn(double mean, double deviation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mean</code> <span class="xref">double</span></dt>
+    <dd></dd>
+    <dt><code>deviation</code> <span class="xref">double</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">double</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Randi_" data-uid="Godot.GD.Randi*"></a>
+
+  <h3 id="Godot_GD_Randi" data-uid="Godot.GD.Randi">
+  Randi()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint Randi()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Randomize_" data-uid="Godot.GD.Randomize*"></a>
+
+  <h3 id="Godot_GD_Randomize" data-uid="Godot.GD.Randomize">
+  Randomize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Randomize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Range_" data-uid="Godot.GD.Range*"></a>
+
+  <h3 id="Godot_GD_Range_System_Int32_" data-uid="Godot.GD.Range(System.Int32)">
+  Range(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;int&gt; Range(int end)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>end</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Range_" data-uid="Godot.GD.Range*"></a>
+
+  <h3 id="Godot_GD_Range_System_Int32_System_Int32_" data-uid="Godot.GD.Range(System.Int32,System.Int32)">
+  Range(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;int&gt; Range(int start, int end)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>end</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Range_" data-uid="Godot.GD.Range*"></a>
+
+  <h3 id="Godot_GD_Range_System_Int32_System_Int32_System_Int32_" data-uid="Godot.GD.Range(System.Int32,System.Int32,System.Int32)">
+  Range(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;int&gt; Range(int start, int end, int step)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>end</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>step</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Seed_" data-uid="Godot.GD.Seed*"></a>
+
+  <h3 id="Godot_GD_Seed_System_UInt64_" data-uid="Godot.GD.Seed(System.UInt64)">
+  Seed(ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Seed(ulong seed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>seed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_StrToVar_" data-uid="Godot.GD.StrToVar*"></a>
+
+  <h3 id="Godot_GD_StrToVar_System_String_" data-uid="Godot.GD.StrToVar(System.String)">
+  StrToVar(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant StrToVar(string str)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Stringify_" data-uid="Godot.GD.Stringify*"></a>
+
+  <h3 id="Godot_GD_Stringify_Godot_Color___" data-uid="Godot.GD.Stringify(Godot.Color[])">
+  Stringify(Color[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Stringify(this Color[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Color.html">Color</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Stringify_" data-uid="Godot.GD.Stringify*"></a>
+
+  <h3 id="Godot_GD_Stringify_Godot_Vector2I___" data-uid="Godot.GD.Stringify(Godot.Vector2I[])">
+  Stringify(Vector2I[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Stringify(this Vector2I[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector2I.html">Vector2I</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Stringify_" data-uid="Godot.GD.Stringify*"></a>
+
+  <h3 id="Godot_GD_Stringify_Godot_Vector2___" data-uid="Godot.GD.Stringify(Godot.Vector2[])">
+  Stringify(Vector2[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Stringify(this Vector2[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector2.html">Vector2</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Stringify_" data-uid="Godot.GD.Stringify*"></a>
+
+  <h3 id="Godot_GD_Stringify_Godot_Vector3I___" data-uid="Godot.GD.Stringify(Godot.Vector3I[])">
+  Stringify(Vector3I[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Stringify(this Vector3I[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector3I.html">Vector3I</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Stringify_" data-uid="Godot.GD.Stringify*"></a>
+
+  <h3 id="Godot_GD_Stringify_Godot_Vector3___" data-uid="Godot.GD.Stringify(Godot.Vector3[])">
+  Stringify(Vector3[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Stringify(this Vector3[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector3.html">Vector3</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Stringify_" data-uid="Godot.GD.Stringify*"></a>
+
+  <h3 id="Godot_GD_Stringify_Godot_Vector4I___" data-uid="Godot.GD.Stringify(Godot.Vector4I[])">
+  Stringify(Vector4I[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Stringify(this Vector4I[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector4I.html">Vector4I</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Stringify_" data-uid="Godot.GD.Stringify*"></a>
+
+  <h3 id="Godot_GD_Stringify_Godot_Vector4___" data-uid="Godot.GD.Stringify(Godot.Vector4[])">
+  Stringify(Vector4[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Stringify(this Vector4[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="Godot.Vector4.html">Vector4</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Stringify_" data-uid="Godot.GD.Stringify*"></a>
+
+  <h3 id="Godot_GD_Stringify_System_Byte___" data-uid="Godot.GD.Stringify(System.Byte[])">
+  Stringify(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Stringify(this byte[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Stringify_" data-uid="Godot.GD.Stringify*"></a>
+
+  <h3 id="Godot_GD_Stringify_System_Double___" data-uid="Godot.GD.Stringify(System.Double[])">
+  Stringify(double[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Stringify(this double[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Stringify_" data-uid="Godot.GD.Stringify*"></a>
+
+  <h3 id="Godot_GD_Stringify_System_Int32___" data-uid="Godot.GD.Stringify(System.Int32[])">
+  Stringify(int[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Stringify(this int[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Stringify_" data-uid="Godot.GD.Stringify*"></a>
+
+  <h3 id="Godot_GD_Stringify_System_Int64___" data-uid="Godot.GD.Stringify(System.Int64[])">
+  Stringify(long[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Stringify(this long[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Stringify_" data-uid="Godot.GD.Stringify*"></a>
+
+  <h3 id="Godot_GD_Stringify_System_Single___" data-uid="Godot.GD.Stringify(System.Single[])">
+  Stringify(float[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Stringify(this float[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_Stringify_" data-uid="Godot.GD.Stringify*"></a>
+
+  <h3 id="Godot_GD_Stringify_System_String___" data-uid="Godot.GD.Stringify(System.String[])">
+  Stringify(string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Stringify(this string[] instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_TypeToVariantType_" data-uid="Godot.GD.TypeToVariantType*"></a>
+
+  <h3 id="Godot_GD_TypeToVariantType_System_Type_" data-uid="Godot.GD.TypeToVariantType(System.Type)">
+  TypeToVariantType(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant.Type TypeToVariantType(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Variant.html">Variant</a>.<a class="xref" href="Godot.Variant.Type.html">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_VarToBytes_" data-uid="Godot.GD.VarToBytes*"></a>
+
+  <h3 id="Godot_GD_VarToBytes_Godot_Variant_" data-uid="Godot.GD.VarToBytes(Godot.Variant)">
+  VarToBytes(Variant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] VarToBytes(Variant var)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>var</code> <a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_VarToBytesWithObjects_" data-uid="Godot.GD.VarToBytesWithObjects*"></a>
+
+  <h3 id="Godot_GD_VarToBytesWithObjects_Godot_Variant_" data-uid="Godot.GD.VarToBytesWithObjects(Godot.Variant)">
+  VarToBytesWithObjects(Variant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] VarToBytesWithObjects(Variant var)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>var</code> <a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_GD_VarToStr_" data-uid="Godot.GD.VarToStr*"></a>
+
+  <h3 id="Godot_GD_VarToStr_Godot_Variant_" data-uid="Godot.GD.VarToStr(Godot.Variant)">
+  VarToStr(Variant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string VarToStr(Variant var)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>var</code> <a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

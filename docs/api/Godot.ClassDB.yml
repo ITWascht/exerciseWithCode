@@ -1,0 +1,1667 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.ClassDB
+  commentId: T:Godot.ClassDB
+  id: ClassDB
+  parent: Godot
+  children:
+  - Godot.ClassDB.CanInstantiate(Godot.StringName)
+  - Godot.ClassDB.ClassCallStatic(Godot.StringName,Godot.StringName,Godot.Variant[])
+  - Godot.ClassDB.ClassCallStatic(Godot.StringName,Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  - Godot.ClassDB.ClassExists(Godot.StringName)
+  - Godot.ClassDB.ClassGetApiType(Godot.StringName)
+  - Godot.ClassDB.ClassGetEnumConstants(Godot.StringName,Godot.StringName,System.Boolean)
+  - Godot.ClassDB.ClassGetEnumList(Godot.StringName,System.Boolean)
+  - Godot.ClassDB.ClassGetIntegerConstant(Godot.StringName,Godot.StringName)
+  - Godot.ClassDB.ClassGetIntegerConstantEnum(Godot.StringName,Godot.StringName,System.Boolean)
+  - Godot.ClassDB.ClassGetIntegerConstantList(Godot.StringName,System.Boolean)
+  - Godot.ClassDB.ClassGetMethodArgumentCount(Godot.StringName,Godot.StringName,System.Boolean)
+  - Godot.ClassDB.ClassGetMethodList(Godot.StringName,System.Boolean)
+  - Godot.ClassDB.ClassGetProperty(Godot.GodotObject,Godot.StringName)
+  - Godot.ClassDB.ClassGetPropertyDefaultValue(Godot.StringName,Godot.StringName)
+  - Godot.ClassDB.ClassGetPropertyGetter(Godot.StringName,Godot.StringName)
+  - Godot.ClassDB.ClassGetPropertyList(Godot.StringName,System.Boolean)
+  - Godot.ClassDB.ClassGetPropertySetter(Godot.StringName,Godot.StringName)
+  - Godot.ClassDB.ClassGetSignal(Godot.StringName,Godot.StringName)
+  - Godot.ClassDB.ClassGetSignalList(Godot.StringName,System.Boolean)
+  - Godot.ClassDB.ClassHasEnum(Godot.StringName,Godot.StringName,System.Boolean)
+  - Godot.ClassDB.ClassHasIntegerConstant(Godot.StringName,Godot.StringName)
+  - Godot.ClassDB.ClassHasMethod(Godot.StringName,Godot.StringName,System.Boolean)
+  - Godot.ClassDB.ClassHasSignal(Godot.StringName,Godot.StringName)
+  - Godot.ClassDB.ClassSetProperty(Godot.GodotObject,Godot.StringName,Godot.Variant)
+  - Godot.ClassDB.GetClassList
+  - Godot.ClassDB.GetInheritersFromClass(Godot.StringName)
+  - Godot.ClassDB.GetParentClass(Godot.StringName)
+  - Godot.ClassDB.Instantiate(Godot.StringName)
+  - Godot.ClassDB.IsClassEnabled(Godot.StringName)
+  - Godot.ClassDB.IsClassEnumBitfield(Godot.StringName,Godot.StringName,System.Boolean)
+  - Godot.ClassDB.IsParentClass(Godot.StringName,Godot.StringName)
+  - Godot.ClassDB.Singleton
+  langs:
+  - csharp
+  - vb
+  name: ClassDB
+  nameWithType: ClassDB
+  fullName: Godot.ClassDB
+  type: Class
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static class ClassDB
+    content.vb: Public Module ClassDB
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Godot.ClassDB.GetClassList
+  commentId: M:Godot.ClassDB.GetClassList
+  id: GetClassList
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: GetClassList()
+  nameWithType: ClassDB.GetClassList()
+  fullName: Godot.ClassDB.GetClassList()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] GetClassList()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetClassList() As String()
+  overload: Godot.ClassDB.GetClassList*
+- uid: Godot.ClassDB.GetInheritersFromClass(Godot.StringName)
+  commentId: M:Godot.ClassDB.GetInheritersFromClass(Godot.StringName)
+  id: GetInheritersFromClass(Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: GetInheritersFromClass(StringName)
+  nameWithType: ClassDB.GetInheritersFromClass(StringName)
+  fullName: Godot.ClassDB.GetInheritersFromClass(Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] GetInheritersFromClass(StringName @class)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetInheritersFromClass([class] As StringName) As String()
+  overload: Godot.ClassDB.GetInheritersFromClass*
+- uid: Godot.ClassDB.GetParentClass(Godot.StringName)
+  commentId: M:Godot.ClassDB.GetParentClass(Godot.StringName)
+  id: GetParentClass(Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: GetParentClass(StringName)
+  nameWithType: ClassDB.GetParentClass(StringName)
+  fullName: Godot.ClassDB.GetParentClass(Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static StringName GetParentClass(StringName @class)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared Function GetParentClass([class] As StringName) As StringName
+  overload: Godot.ClassDB.GetParentClass*
+- uid: Godot.ClassDB.ClassExists(Godot.StringName)
+  commentId: M:Godot.ClassDB.ClassExists(Godot.StringName)
+  id: ClassExists(Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassExists(StringName)
+  nameWithType: ClassDB.ClassExists(StringName)
+  fullName: Godot.ClassDB.ClassExists(Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool ClassExists(StringName @class)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function ClassExists([class] As StringName) As Boolean
+  overload: Godot.ClassDB.ClassExists*
+- uid: Godot.ClassDB.IsParentClass(Godot.StringName,Godot.StringName)
+  commentId: M:Godot.ClassDB.IsParentClass(Godot.StringName,Godot.StringName)
+  id: IsParentClass(Godot.StringName,Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: IsParentClass(StringName, StringName)
+  nameWithType: ClassDB.IsParentClass(StringName, StringName)
+  fullName: Godot.ClassDB.IsParentClass(Godot.StringName, Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsParentClass(StringName @class, StringName inherits)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: inherits
+      type: Godot.StringName
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsParentClass([class] As StringName, [inherits] As StringName) As Boolean
+  overload: Godot.ClassDB.IsParentClass*
+- uid: Godot.ClassDB.CanInstantiate(Godot.StringName)
+  commentId: M:Godot.ClassDB.CanInstantiate(Godot.StringName)
+  id: CanInstantiate(Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: CanInstantiate(StringName)
+  nameWithType: ClassDB.CanInstantiate(StringName)
+  fullName: Godot.ClassDB.CanInstantiate(Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool CanInstantiate(StringName @class)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function CanInstantiate([class] As StringName) As Boolean
+  overload: Godot.ClassDB.CanInstantiate*
+- uid: Godot.ClassDB.Instantiate(Godot.StringName)
+  commentId: M:Godot.ClassDB.Instantiate(Godot.StringName)
+  id: Instantiate(Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: Instantiate(StringName)
+  nameWithType: ClassDB.Instantiate(StringName)
+  fullName: Godot.ClassDB.Instantiate(Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Variant Instantiate(StringName @class)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    return:
+      type: Godot.Variant
+    content.vb: Public Shared Function Instantiate([class] As StringName) As [Variant]
+  overload: Godot.ClassDB.Instantiate*
+- uid: Godot.ClassDB.ClassGetApiType(Godot.StringName)
+  commentId: M:Godot.ClassDB.ClassGetApiType(Godot.StringName)
+  id: ClassGetApiType(Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassGetApiType(StringName)
+  nameWithType: ClassDB.ClassGetApiType(StringName)
+  fullName: Godot.ClassDB.ClassGetApiType(Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static ClassDB.ApiType ClassGetApiType(StringName @class)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    return:
+      type: Godot.ClassDB.ApiType
+    content.vb: Public Shared Function ClassGetApiType([class] As StringName) As ClassDB.ApiType
+  overload: Godot.ClassDB.ClassGetApiType*
+- uid: Godot.ClassDB.ClassHasSignal(Godot.StringName,Godot.StringName)
+  commentId: M:Godot.ClassDB.ClassHasSignal(Godot.StringName,Godot.StringName)
+  id: ClassHasSignal(Godot.StringName,Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassHasSignal(StringName, StringName)
+  nameWithType: ClassDB.ClassHasSignal(StringName, StringName)
+  fullName: Godot.ClassDB.ClassHasSignal(Godot.StringName, Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool ClassHasSignal(StringName @class, StringName signal)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: signal
+      type: Godot.StringName
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function ClassHasSignal([class] As StringName, signal As StringName) As Boolean
+  overload: Godot.ClassDB.ClassHasSignal*
+- uid: Godot.ClassDB.ClassGetSignal(Godot.StringName,Godot.StringName)
+  commentId: M:Godot.ClassDB.ClassGetSignal(Godot.StringName,Godot.StringName)
+  id: ClassGetSignal(Godot.StringName,Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassGetSignal(StringName, StringName)
+  nameWithType: ClassDB.ClassGetSignal(StringName, StringName)
+  fullName: Godot.ClassDB.ClassGetSignal(Godot.StringName, Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Dictionary ClassGetSignal(StringName @class, StringName signal)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: signal
+      type: Godot.StringName
+    return:
+      type: Godot.Collections.Dictionary
+    content.vb: Public Shared Function ClassGetSignal([class] As StringName, signal As StringName) As Dictionary
+  overload: Godot.ClassDB.ClassGetSignal*
+- uid: Godot.ClassDB.ClassGetSignalList(Godot.StringName,System.Boolean)
+  commentId: M:Godot.ClassDB.ClassGetSignalList(Godot.StringName,System.Boolean)
+  id: ClassGetSignalList(Godot.StringName,System.Boolean)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassGetSignalList(StringName, bool)
+  nameWithType: ClassDB.ClassGetSignalList(StringName, bool)
+  fullName: Godot.ClassDB.ClassGetSignalList(Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Dictionary> ClassGetSignalList(StringName @class, bool noInheritance = false)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: noInheritance
+      type: System.Boolean
+    return:
+      type: Godot.Collections.Array{Godot.Collections.Dictionary}
+    content.vb: Public Shared Function ClassGetSignalList([class] As StringName, noInheritance As Boolean = False) As Array(Of Dictionary)
+  overload: Godot.ClassDB.ClassGetSignalList*
+  nameWithType.vb: ClassDB.ClassGetSignalList(StringName, Boolean)
+  fullName.vb: Godot.ClassDB.ClassGetSignalList(Godot.StringName, Boolean)
+  name.vb: ClassGetSignalList(StringName, Boolean)
+- uid: Godot.ClassDB.ClassGetPropertyList(Godot.StringName,System.Boolean)
+  commentId: M:Godot.ClassDB.ClassGetPropertyList(Godot.StringName,System.Boolean)
+  id: ClassGetPropertyList(Godot.StringName,System.Boolean)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassGetPropertyList(StringName, bool)
+  nameWithType: ClassDB.ClassGetPropertyList(StringName, bool)
+  fullName: Godot.ClassDB.ClassGetPropertyList(Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Dictionary> ClassGetPropertyList(StringName @class, bool noInheritance = false)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: noInheritance
+      type: System.Boolean
+    return:
+      type: Godot.Collections.Array{Godot.Collections.Dictionary}
+    content.vb: Public Shared Function ClassGetPropertyList([class] As StringName, noInheritance As Boolean = False) As Array(Of Dictionary)
+  overload: Godot.ClassDB.ClassGetPropertyList*
+  nameWithType.vb: ClassDB.ClassGetPropertyList(StringName, Boolean)
+  fullName.vb: Godot.ClassDB.ClassGetPropertyList(Godot.StringName, Boolean)
+  name.vb: ClassGetPropertyList(StringName, Boolean)
+- uid: Godot.ClassDB.ClassGetPropertyGetter(Godot.StringName,Godot.StringName)
+  commentId: M:Godot.ClassDB.ClassGetPropertyGetter(Godot.StringName,Godot.StringName)
+  id: ClassGetPropertyGetter(Godot.StringName,Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassGetPropertyGetter(StringName, StringName)
+  nameWithType: ClassDB.ClassGetPropertyGetter(StringName, StringName)
+  fullName: Godot.ClassDB.ClassGetPropertyGetter(Godot.StringName, Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static StringName ClassGetPropertyGetter(StringName @class, StringName property)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: property
+      type: Godot.StringName
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared Function ClassGetPropertyGetter([class] As StringName, [property] As StringName) As StringName
+  overload: Godot.ClassDB.ClassGetPropertyGetter*
+- uid: Godot.ClassDB.ClassGetPropertySetter(Godot.StringName,Godot.StringName)
+  commentId: M:Godot.ClassDB.ClassGetPropertySetter(Godot.StringName,Godot.StringName)
+  id: ClassGetPropertySetter(Godot.StringName,Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassGetPropertySetter(StringName, StringName)
+  nameWithType: ClassDB.ClassGetPropertySetter(StringName, StringName)
+  fullName: Godot.ClassDB.ClassGetPropertySetter(Godot.StringName, Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static StringName ClassGetPropertySetter(StringName @class, StringName property)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: property
+      type: Godot.StringName
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared Function ClassGetPropertySetter([class] As StringName, [property] As StringName) As StringName
+  overload: Godot.ClassDB.ClassGetPropertySetter*
+- uid: Godot.ClassDB.ClassGetProperty(Godot.GodotObject,Godot.StringName)
+  commentId: M:Godot.ClassDB.ClassGetProperty(Godot.GodotObject,Godot.StringName)
+  id: ClassGetProperty(Godot.GodotObject,Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassGetProperty(GodotObject, StringName)
+  nameWithType: ClassDB.ClassGetProperty(GodotObject, StringName)
+  fullName: Godot.ClassDB.ClassGetProperty(Godot.GodotObject, Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Variant ClassGetProperty(GodotObject @object, StringName property)
+    parameters:
+    - id: object
+      type: Godot.GodotObject
+    - id: property
+      type: Godot.StringName
+    return:
+      type: Godot.Variant
+    content.vb: Public Shared Function ClassGetProperty([object] As GodotObject, [property] As StringName) As [Variant]
+  overload: Godot.ClassDB.ClassGetProperty*
+- uid: Godot.ClassDB.ClassSetProperty(Godot.GodotObject,Godot.StringName,Godot.Variant)
+  commentId: M:Godot.ClassDB.ClassSetProperty(Godot.GodotObject,Godot.StringName,Godot.Variant)
+  id: ClassSetProperty(Godot.GodotObject,Godot.StringName,Godot.Variant)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassSetProperty(GodotObject, StringName, Variant)
+  nameWithType: ClassDB.ClassSetProperty(GodotObject, StringName, Variant)
+  fullName: Godot.ClassDB.ClassSetProperty(Godot.GodotObject, Godot.StringName, Godot.Variant)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Error ClassSetProperty(GodotObject @object, StringName property, Variant value)
+    parameters:
+    - id: object
+      type: Godot.GodotObject
+    - id: property
+      type: Godot.StringName
+    - id: value
+      type: Godot.Variant
+    return:
+      type: Godot.Error
+    content.vb: Public Shared Function ClassSetProperty([object] As GodotObject, [property] As StringName, value As [Variant]) As [Error]
+  overload: Godot.ClassDB.ClassSetProperty*
+- uid: Godot.ClassDB.ClassGetPropertyDefaultValue(Godot.StringName,Godot.StringName)
+  commentId: M:Godot.ClassDB.ClassGetPropertyDefaultValue(Godot.StringName,Godot.StringName)
+  id: ClassGetPropertyDefaultValue(Godot.StringName,Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassGetPropertyDefaultValue(StringName, StringName)
+  nameWithType: ClassDB.ClassGetPropertyDefaultValue(StringName, StringName)
+  fullName: Godot.ClassDB.ClassGetPropertyDefaultValue(Godot.StringName, Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Variant ClassGetPropertyDefaultValue(StringName @class, StringName property)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: property
+      type: Godot.StringName
+    return:
+      type: Godot.Variant
+    content.vb: Public Shared Function ClassGetPropertyDefaultValue([class] As StringName, [property] As StringName) As [Variant]
+  overload: Godot.ClassDB.ClassGetPropertyDefaultValue*
+- uid: Godot.ClassDB.ClassHasMethod(Godot.StringName,Godot.StringName,System.Boolean)
+  commentId: M:Godot.ClassDB.ClassHasMethod(Godot.StringName,Godot.StringName,System.Boolean)
+  id: ClassHasMethod(Godot.StringName,Godot.StringName,System.Boolean)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassHasMethod(StringName, StringName, bool)
+  nameWithType: ClassDB.ClassHasMethod(StringName, StringName, bool)
+  fullName: Godot.ClassDB.ClassHasMethod(Godot.StringName, Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool ClassHasMethod(StringName @class, StringName method, bool noInheritance = false)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: method
+      type: Godot.StringName
+    - id: noInheritance
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function ClassHasMethod([class] As StringName, method As StringName, noInheritance As Boolean = False) As Boolean
+  overload: Godot.ClassDB.ClassHasMethod*
+  nameWithType.vb: ClassDB.ClassHasMethod(StringName, StringName, Boolean)
+  fullName.vb: Godot.ClassDB.ClassHasMethod(Godot.StringName, Godot.StringName, Boolean)
+  name.vb: ClassHasMethod(StringName, StringName, Boolean)
+- uid: Godot.ClassDB.ClassGetMethodArgumentCount(Godot.StringName,Godot.StringName,System.Boolean)
+  commentId: M:Godot.ClassDB.ClassGetMethodArgumentCount(Godot.StringName,Godot.StringName,System.Boolean)
+  id: ClassGetMethodArgumentCount(Godot.StringName,Godot.StringName,System.Boolean)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassGetMethodArgumentCount(StringName, StringName, bool)
+  nameWithType: ClassDB.ClassGetMethodArgumentCount(StringName, StringName, bool)
+  fullName: Godot.ClassDB.ClassGetMethodArgumentCount(Godot.StringName, Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static int ClassGetMethodArgumentCount(StringName @class, StringName method, bool noInheritance = false)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: method
+      type: Godot.StringName
+    - id: noInheritance
+      type: System.Boolean
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function ClassGetMethodArgumentCount([class] As StringName, method As StringName, noInheritance As Boolean = False) As Integer
+  overload: Godot.ClassDB.ClassGetMethodArgumentCount*
+  nameWithType.vb: ClassDB.ClassGetMethodArgumentCount(StringName, StringName, Boolean)
+  fullName.vb: Godot.ClassDB.ClassGetMethodArgumentCount(Godot.StringName, Godot.StringName, Boolean)
+  name.vb: ClassGetMethodArgumentCount(StringName, StringName, Boolean)
+- uid: Godot.ClassDB.ClassGetMethodList(Godot.StringName,System.Boolean)
+  commentId: M:Godot.ClassDB.ClassGetMethodList(Godot.StringName,System.Boolean)
+  id: ClassGetMethodList(Godot.StringName,System.Boolean)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassGetMethodList(StringName, bool)
+  nameWithType: ClassDB.ClassGetMethodList(StringName, bool)
+  fullName: Godot.ClassDB.ClassGetMethodList(Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Array<Dictionary> ClassGetMethodList(StringName @class, bool noInheritance = false)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: noInheritance
+      type: System.Boolean
+    return:
+      type: Godot.Collections.Array{Godot.Collections.Dictionary}
+    content.vb: Public Shared Function ClassGetMethodList([class] As StringName, noInheritance As Boolean = False) As Array(Of Dictionary)
+  overload: Godot.ClassDB.ClassGetMethodList*
+  nameWithType.vb: ClassDB.ClassGetMethodList(StringName, Boolean)
+  fullName.vb: Godot.ClassDB.ClassGetMethodList(Godot.StringName, Boolean)
+  name.vb: ClassGetMethodList(StringName, Boolean)
+- uid: Godot.ClassDB.ClassCallStatic(Godot.StringName,Godot.StringName,Godot.Variant[])
+  commentId: M:Godot.ClassDB.ClassCallStatic(Godot.StringName,Godot.StringName,Godot.Variant[])
+  id: ClassCallStatic(Godot.StringName,Godot.StringName,Godot.Variant[])
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassCallStatic(StringName, StringName, params Variant[])
+  nameWithType: ClassDB.ClassCallStatic(StringName, StringName, params Variant[])
+  fullName: Godot.ClassDB.ClassCallStatic(Godot.StringName, Godot.StringName, params Godot.Variant[])
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Variant ClassCallStatic(StringName @class, StringName method, params Variant[] args)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: method
+      type: Godot.StringName
+    - id: args
+      type: Godot.Variant[]
+    return:
+      type: Godot.Variant
+    content.vb: Public Shared Function ClassCallStatic([class] As StringName, method As StringName, ParamArray args As [Variant]()) As [Variant]
+  overload: Godot.ClassDB.ClassCallStatic*
+  nameWithType.vb: ClassDB.ClassCallStatic(StringName, StringName, ParamArray Variant())
+  fullName.vb: Godot.ClassDB.ClassCallStatic(Godot.StringName, Godot.StringName, ParamArray Godot.Variant())
+  name.vb: ClassCallStatic(StringName, StringName, ParamArray Variant())
+- uid: Godot.ClassDB.ClassCallStatic(Godot.StringName,Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  commentId: M:Godot.ClassDB.ClassCallStatic(Godot.StringName,Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  id: ClassCallStatic(Godot.StringName,Godot.StringName,System.ReadOnlySpan{Godot.Variant})
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassCallStatic(StringName, StringName, ReadOnlySpan<Variant>)
+  nameWithType: ClassDB.ClassCallStatic(StringName, StringName, ReadOnlySpan<Variant>)
+  fullName: Godot.ClassDB.ClassCallStatic(Godot.StringName, Godot.StringName, System.ReadOnlySpan<Godot.Variant>)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static Variant ClassCallStatic(StringName @class, StringName method, ReadOnlySpan<Variant> args)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: method
+      type: Godot.StringName
+    - id: args
+      type: System.ReadOnlySpan{Godot.Variant}
+    return:
+      type: Godot.Variant
+    content.vb: Public Shared Function ClassCallStatic([class] As StringName, method As StringName, args As ReadOnlySpan(Of [Variant])) As [Variant]
+  overload: Godot.ClassDB.ClassCallStatic*
+  nameWithType.vb: ClassDB.ClassCallStatic(StringName, StringName, ReadOnlySpan(Of Variant))
+  fullName.vb: Godot.ClassDB.ClassCallStatic(Godot.StringName, Godot.StringName, System.ReadOnlySpan(Of Godot.Variant))
+  name.vb: ClassCallStatic(StringName, StringName, ReadOnlySpan(Of Variant))
+- uid: Godot.ClassDB.ClassGetIntegerConstantList(Godot.StringName,System.Boolean)
+  commentId: M:Godot.ClassDB.ClassGetIntegerConstantList(Godot.StringName,System.Boolean)
+  id: ClassGetIntegerConstantList(Godot.StringName,System.Boolean)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassGetIntegerConstantList(StringName, bool)
+  nameWithType: ClassDB.ClassGetIntegerConstantList(StringName, bool)
+  fullName: Godot.ClassDB.ClassGetIntegerConstantList(Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] ClassGetIntegerConstantList(StringName @class, bool noInheritance = false)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: noInheritance
+      type: System.Boolean
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function ClassGetIntegerConstantList([class] As StringName, noInheritance As Boolean = False) As String()
+  overload: Godot.ClassDB.ClassGetIntegerConstantList*
+  nameWithType.vb: ClassDB.ClassGetIntegerConstantList(StringName, Boolean)
+  fullName.vb: Godot.ClassDB.ClassGetIntegerConstantList(Godot.StringName, Boolean)
+  name.vb: ClassGetIntegerConstantList(StringName, Boolean)
+- uid: Godot.ClassDB.ClassHasIntegerConstant(Godot.StringName,Godot.StringName)
+  commentId: M:Godot.ClassDB.ClassHasIntegerConstant(Godot.StringName,Godot.StringName)
+  id: ClassHasIntegerConstant(Godot.StringName,Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassHasIntegerConstant(StringName, StringName)
+  nameWithType: ClassDB.ClassHasIntegerConstant(StringName, StringName)
+  fullName: Godot.ClassDB.ClassHasIntegerConstant(Godot.StringName, Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool ClassHasIntegerConstant(StringName @class, StringName name)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: name
+      type: Godot.StringName
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function ClassHasIntegerConstant([class] As StringName, name As StringName) As Boolean
+  overload: Godot.ClassDB.ClassHasIntegerConstant*
+- uid: Godot.ClassDB.ClassGetIntegerConstant(Godot.StringName,Godot.StringName)
+  commentId: M:Godot.ClassDB.ClassGetIntegerConstant(Godot.StringName,Godot.StringName)
+  id: ClassGetIntegerConstant(Godot.StringName,Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassGetIntegerConstant(StringName, StringName)
+  nameWithType: ClassDB.ClassGetIntegerConstant(StringName, StringName)
+  fullName: Godot.ClassDB.ClassGetIntegerConstant(Godot.StringName, Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static long ClassGetIntegerConstant(StringName @class, StringName name)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: name
+      type: Godot.StringName
+    return:
+      type: System.Int64
+    content.vb: Public Shared Function ClassGetIntegerConstant([class] As StringName, name As StringName) As Long
+  overload: Godot.ClassDB.ClassGetIntegerConstant*
+- uid: Godot.ClassDB.ClassHasEnum(Godot.StringName,Godot.StringName,System.Boolean)
+  commentId: M:Godot.ClassDB.ClassHasEnum(Godot.StringName,Godot.StringName,System.Boolean)
+  id: ClassHasEnum(Godot.StringName,Godot.StringName,System.Boolean)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassHasEnum(StringName, StringName, bool)
+  nameWithType: ClassDB.ClassHasEnum(StringName, StringName, bool)
+  fullName: Godot.ClassDB.ClassHasEnum(Godot.StringName, Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool ClassHasEnum(StringName @class, StringName name, bool noInheritance = false)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: name
+      type: Godot.StringName
+    - id: noInheritance
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function ClassHasEnum([class] As StringName, name As StringName, noInheritance As Boolean = False) As Boolean
+  overload: Godot.ClassDB.ClassHasEnum*
+  nameWithType.vb: ClassDB.ClassHasEnum(StringName, StringName, Boolean)
+  fullName.vb: Godot.ClassDB.ClassHasEnum(Godot.StringName, Godot.StringName, Boolean)
+  name.vb: ClassHasEnum(StringName, StringName, Boolean)
+- uid: Godot.ClassDB.ClassGetEnumList(Godot.StringName,System.Boolean)
+  commentId: M:Godot.ClassDB.ClassGetEnumList(Godot.StringName,System.Boolean)
+  id: ClassGetEnumList(Godot.StringName,System.Boolean)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassGetEnumList(StringName, bool)
+  nameWithType: ClassDB.ClassGetEnumList(StringName, bool)
+  fullName: Godot.ClassDB.ClassGetEnumList(Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] ClassGetEnumList(StringName @class, bool noInheritance = false)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: noInheritance
+      type: System.Boolean
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function ClassGetEnumList([class] As StringName, noInheritance As Boolean = False) As String()
+  overload: Godot.ClassDB.ClassGetEnumList*
+  nameWithType.vb: ClassDB.ClassGetEnumList(StringName, Boolean)
+  fullName.vb: Godot.ClassDB.ClassGetEnumList(Godot.StringName, Boolean)
+  name.vb: ClassGetEnumList(StringName, Boolean)
+- uid: Godot.ClassDB.ClassGetEnumConstants(Godot.StringName,Godot.StringName,System.Boolean)
+  commentId: M:Godot.ClassDB.ClassGetEnumConstants(Godot.StringName,Godot.StringName,System.Boolean)
+  id: ClassGetEnumConstants(Godot.StringName,Godot.StringName,System.Boolean)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassGetEnumConstants(StringName, StringName, bool)
+  nameWithType: ClassDB.ClassGetEnumConstants(StringName, StringName, bool)
+  fullName: Godot.ClassDB.ClassGetEnumConstants(Godot.StringName, Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static string[] ClassGetEnumConstants(StringName @class, StringName @enum, bool noInheritance = false)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: enum
+      type: Godot.StringName
+    - id: noInheritance
+      type: System.Boolean
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function ClassGetEnumConstants([class] As StringName, [enum] As StringName, noInheritance As Boolean = False) As String()
+  overload: Godot.ClassDB.ClassGetEnumConstants*
+  nameWithType.vb: ClassDB.ClassGetEnumConstants(StringName, StringName, Boolean)
+  fullName.vb: Godot.ClassDB.ClassGetEnumConstants(Godot.StringName, Godot.StringName, Boolean)
+  name.vb: ClassGetEnumConstants(StringName, StringName, Boolean)
+- uid: Godot.ClassDB.ClassGetIntegerConstantEnum(Godot.StringName,Godot.StringName,System.Boolean)
+  commentId: M:Godot.ClassDB.ClassGetIntegerConstantEnum(Godot.StringName,Godot.StringName,System.Boolean)
+  id: ClassGetIntegerConstantEnum(Godot.StringName,Godot.StringName,System.Boolean)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: ClassGetIntegerConstantEnum(StringName, StringName, bool)
+  nameWithType: ClassDB.ClassGetIntegerConstantEnum(StringName, StringName, bool)
+  fullName: Godot.ClassDB.ClassGetIntegerConstantEnum(Godot.StringName, Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static StringName ClassGetIntegerConstantEnum(StringName @class, StringName name, bool noInheritance = false)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: name
+      type: Godot.StringName
+    - id: noInheritance
+      type: System.Boolean
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared Function ClassGetIntegerConstantEnum([class] As StringName, name As StringName, noInheritance As Boolean = False) As StringName
+  overload: Godot.ClassDB.ClassGetIntegerConstantEnum*
+  nameWithType.vb: ClassDB.ClassGetIntegerConstantEnum(StringName, StringName, Boolean)
+  fullName.vb: Godot.ClassDB.ClassGetIntegerConstantEnum(Godot.StringName, Godot.StringName, Boolean)
+  name.vb: ClassGetIntegerConstantEnum(StringName, StringName, Boolean)
+- uid: Godot.ClassDB.IsClassEnumBitfield(Godot.StringName,Godot.StringName,System.Boolean)
+  commentId: M:Godot.ClassDB.IsClassEnumBitfield(Godot.StringName,Godot.StringName,System.Boolean)
+  id: IsClassEnumBitfield(Godot.StringName,Godot.StringName,System.Boolean)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: IsClassEnumBitfield(StringName, StringName, bool)
+  nameWithType: ClassDB.IsClassEnumBitfield(StringName, StringName, bool)
+  fullName: Godot.ClassDB.IsClassEnumBitfield(Godot.StringName, Godot.StringName, bool)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsClassEnumBitfield(StringName @class, StringName @enum, bool noInheritance = false)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    - id: enum
+      type: Godot.StringName
+    - id: noInheritance
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsClassEnumBitfield([class] As StringName, [enum] As StringName, noInheritance As Boolean = False) As Boolean
+  overload: Godot.ClassDB.IsClassEnumBitfield*
+  nameWithType.vb: ClassDB.IsClassEnumBitfield(StringName, StringName, Boolean)
+  fullName.vb: Godot.ClassDB.IsClassEnumBitfield(Godot.StringName, Godot.StringName, Boolean)
+  name.vb: IsClassEnumBitfield(StringName, StringName, Boolean)
+- uid: Godot.ClassDB.IsClassEnabled(Godot.StringName)
+  commentId: M:Godot.ClassDB.IsClassEnabled(Godot.StringName)
+  id: IsClassEnabled(Godot.StringName)
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: IsClassEnabled(StringName)
+  nameWithType: ClassDB.IsClassEnabled(StringName)
+  fullName: Godot.ClassDB.IsClassEnabled(Godot.StringName)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool IsClassEnabled(StringName @class)
+    parameters:
+    - id: class
+      type: Godot.StringName
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsClassEnabled([class] As StringName) As Boolean
+  overload: Godot.ClassDB.IsClassEnabled*
+- uid: Godot.ClassDB.Singleton
+  commentId: P:Godot.ClassDB.Singleton
+  id: Singleton
+  parent: Godot.ClassDB
+  langs:
+  - csharp
+  - vb
+  name: Singleton
+  nameWithType: ClassDB.Singleton
+  fullName: Godot.ClassDB.Singleton
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static ClassDBInstance Singleton { get; }
+    parameters: []
+    return:
+      type: Godot.ClassDBInstance
+    content.vb: Public Shared ReadOnly Property Singleton As ClassDBInstance
+  overload: Godot.ClassDB.Singleton*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.ClassDB.GetClassList*
+  commentId: Overload:Godot.ClassDB.GetClassList
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_GetClassList
+  name: GetClassList
+  nameWithType: ClassDB.GetClassList
+  fullName: Godot.ClassDB.GetClassList
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Godot.ClassDB.GetInheritersFromClass*
+  commentId: Overload:Godot.ClassDB.GetInheritersFromClass
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_GetInheritersFromClass_Godot_StringName_
+  name: GetInheritersFromClass
+  nameWithType: ClassDB.GetInheritersFromClass
+  fullName: Godot.ClassDB.GetInheritersFromClass
+- uid: Godot.StringName
+  commentId: T:Godot.StringName
+  parent: Godot
+  isExternal: true
+  href: Godot.StringName.html
+  name: StringName
+  nameWithType: StringName
+  fullName: Godot.StringName
+- uid: Godot.ClassDB.GetParentClass*
+  commentId: Overload:Godot.ClassDB.GetParentClass
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_GetParentClass_Godot_StringName_
+  name: GetParentClass
+  nameWithType: ClassDB.GetParentClass
+  fullName: Godot.ClassDB.GetParentClass
+- uid: Godot.ClassDB.ClassExists*
+  commentId: Overload:Godot.ClassDB.ClassExists
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassExists_Godot_StringName_
+  name: ClassExists
+  nameWithType: ClassDB.ClassExists
+  fullName: Godot.ClassDB.ClassExists
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.ClassDB.IsParentClass*
+  commentId: Overload:Godot.ClassDB.IsParentClass
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_IsParentClass_Godot_StringName_Godot_StringName_
+  name: IsParentClass
+  nameWithType: ClassDB.IsParentClass
+  fullName: Godot.ClassDB.IsParentClass
+- uid: Godot.ClassDB.CanInstantiate*
+  commentId: Overload:Godot.ClassDB.CanInstantiate
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_CanInstantiate_Godot_StringName_
+  name: CanInstantiate
+  nameWithType: ClassDB.CanInstantiate
+  fullName: Godot.ClassDB.CanInstantiate
+- uid: Godot.ClassDB.Instantiate*
+  commentId: Overload:Godot.ClassDB.Instantiate
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_Instantiate_Godot_StringName_
+  name: Instantiate
+  nameWithType: ClassDB.Instantiate
+  fullName: Godot.ClassDB.Instantiate
+- uid: Godot.Variant
+  commentId: T:Godot.Variant
+  parent: Godot
+  isExternal: true
+  href: Godot.Variant.html
+  name: Variant
+  nameWithType: Variant
+  fullName: Godot.Variant
+- uid: Godot.ClassDB.ClassGetApiType*
+  commentId: Overload:Godot.ClassDB.ClassGetApiType
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassGetApiType_Godot_StringName_
+  name: ClassGetApiType
+  nameWithType: ClassDB.ClassGetApiType
+  fullName: Godot.ClassDB.ClassGetApiType
+- uid: Godot.ClassDB.ApiType
+  commentId: T:Godot.ClassDB.ApiType
+  parent: Godot
+  isExternal: true
+  href: Godot.ClassDB.html
+  name: ClassDB.ApiType
+  nameWithType: ClassDB.ApiType
+  fullName: Godot.ClassDB.ApiType
+  spec.csharp:
+  - uid: Godot.ClassDB
+    name: ClassDB
+    isExternal: true
+    href: Godot.ClassDB.html
+  - name: .
+  - uid: Godot.ClassDB.ApiType
+    name: ApiType
+    isExternal: true
+    href: Godot.ClassDB.ApiType.html
+  spec.vb:
+  - uid: Godot.ClassDB
+    name: ClassDB
+    isExternal: true
+    href: Godot.ClassDB.html
+  - name: .
+  - uid: Godot.ClassDB.ApiType
+    name: ApiType
+    isExternal: true
+    href: Godot.ClassDB.ApiType.html
+- uid: Godot.ClassDB.ClassHasSignal*
+  commentId: Overload:Godot.ClassDB.ClassHasSignal
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassHasSignal_Godot_StringName_Godot_StringName_
+  name: ClassHasSignal
+  nameWithType: ClassDB.ClassHasSignal
+  fullName: Godot.ClassDB.ClassHasSignal
+- uid: Godot.ClassDB.ClassGetSignal*
+  commentId: Overload:Godot.ClassDB.ClassGetSignal
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassGetSignal_Godot_StringName_Godot_StringName_
+  name: ClassGetSignal
+  nameWithType: ClassDB.ClassGetSignal
+  fullName: Godot.ClassDB.ClassGetSignal
+- uid: Godot.Collections.Dictionary
+  commentId: T:Godot.Collections.Dictionary
+  parent: Godot.Collections
+  isExternal: true
+  href: Godot.Collections.Dictionary.html
+  name: Dictionary
+  nameWithType: Dictionary
+  fullName: Godot.Collections.Dictionary
+- uid: Godot.Collections
+  commentId: N:Godot.Collections
+  isExternal: true
+  href: Godot.html
+  name: Godot.Collections
+  nameWithType: Godot.Collections
+  fullName: Godot.Collections
+  spec.csharp:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+  spec.vb:
+  - uid: Godot
+    name: Godot
+    isExternal: true
+    href: Godot.html
+  - name: .
+  - uid: Godot.Collections
+    name: Collections
+    isExternal: true
+    href: Godot.Collections.html
+- uid: Godot.ClassDB.ClassGetSignalList*
+  commentId: Overload:Godot.ClassDB.ClassGetSignalList
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassGetSignalList_Godot_StringName_System_Boolean_
+  name: ClassGetSignalList
+  nameWithType: ClassDB.ClassGetSignalList
+  fullName: Godot.ClassDB.ClassGetSignalList
+- uid: Godot.Collections.Array{Godot.Collections.Dictionary}
+  commentId: T:Godot.Collections.Array{Godot.Collections.Dictionary}
+  parent: Godot.Collections
+  definition: Godot.Collections.Array`1
+  href: Godot.Collections.Array-1.html
+  name: Array<Dictionary>
+  nameWithType: Array<Dictionary>
+  fullName: Godot.Collections.Array<Godot.Collections.Dictionary>
+  nameWithType.vb: Array(Of Dictionary)
+  fullName.vb: Godot.Collections.Array(Of Godot.Collections.Dictionary)
+  name.vb: Array(Of Dictionary)
+  spec.csharp:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: <
+  - uid: Godot.Collections.Dictionary
+    name: Dictionary
+    isExternal: true
+    href: Godot.Collections.Dictionary.html
+  - name: '>'
+  spec.vb:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Collections.Dictionary
+    name: Dictionary
+    isExternal: true
+    href: Godot.Collections.Dictionary.html
+  - name: )
+- uid: Godot.Collections.Array`1
+  commentId: T:Godot.Collections.Array`1
+  parent: Godot.Collections
+  isExternal: true
+  href: Godot.Collections.Array-1.html
+  name: Array<T>
+  nameWithType: Array<T>
+  fullName: Godot.Collections.Array<T>
+  nameWithType.vb: Array(Of T)
+  fullName.vb: Godot.Collections.Array(Of T)
+  name.vb: Array(Of T)
+  spec.csharp:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Godot.Collections.Array`1
+    name: Array
+    isExternal: true
+    href: Godot.Collections.Array-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.ClassDB.ClassGetPropertyList*
+  commentId: Overload:Godot.ClassDB.ClassGetPropertyList
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassGetPropertyList_Godot_StringName_System_Boolean_
+  name: ClassGetPropertyList
+  nameWithType: ClassDB.ClassGetPropertyList
+  fullName: Godot.ClassDB.ClassGetPropertyList
+- uid: Godot.ClassDB.ClassGetPropertyGetter*
+  commentId: Overload:Godot.ClassDB.ClassGetPropertyGetter
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassGetPropertyGetter_Godot_StringName_Godot_StringName_
+  name: ClassGetPropertyGetter
+  nameWithType: ClassDB.ClassGetPropertyGetter
+  fullName: Godot.ClassDB.ClassGetPropertyGetter
+- uid: Godot.ClassDB.ClassGetPropertySetter*
+  commentId: Overload:Godot.ClassDB.ClassGetPropertySetter
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassGetPropertySetter_Godot_StringName_Godot_StringName_
+  name: ClassGetPropertySetter
+  nameWithType: ClassDB.ClassGetPropertySetter
+  fullName: Godot.ClassDB.ClassGetPropertySetter
+- uid: Godot.ClassDB.ClassGetProperty*
+  commentId: Overload:Godot.ClassDB.ClassGetProperty
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassGetProperty_Godot_GodotObject_Godot_StringName_
+  name: ClassGetProperty
+  nameWithType: ClassDB.ClassGetProperty
+  fullName: Godot.ClassDB.ClassGetProperty
+- uid: Godot.GodotObject
+  commentId: T:Godot.GodotObject
+  parent: Godot
+  isExternal: true
+  href: Godot.GodotObject.html
+  name: GodotObject
+  nameWithType: GodotObject
+  fullName: Godot.GodotObject
+- uid: Godot.ClassDB.ClassSetProperty*
+  commentId: Overload:Godot.ClassDB.ClassSetProperty
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassSetProperty_Godot_GodotObject_Godot_StringName_Godot_Variant_
+  name: ClassSetProperty
+  nameWithType: ClassDB.ClassSetProperty
+  fullName: Godot.ClassDB.ClassSetProperty
+- uid: Godot.Error
+  commentId: T:Godot.Error
+  parent: Godot
+  isExternal: true
+  href: Godot.Error.html
+  name: Error
+  nameWithType: Error
+  fullName: Godot.Error
+- uid: Godot.ClassDB.ClassGetPropertyDefaultValue*
+  commentId: Overload:Godot.ClassDB.ClassGetPropertyDefaultValue
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassGetPropertyDefaultValue_Godot_StringName_Godot_StringName_
+  name: ClassGetPropertyDefaultValue
+  nameWithType: ClassDB.ClassGetPropertyDefaultValue
+  fullName: Godot.ClassDB.ClassGetPropertyDefaultValue
+- uid: Godot.ClassDB.ClassHasMethod*
+  commentId: Overload:Godot.ClassDB.ClassHasMethod
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassHasMethod_Godot_StringName_Godot_StringName_System_Boolean_
+  name: ClassHasMethod
+  nameWithType: ClassDB.ClassHasMethod
+  fullName: Godot.ClassDB.ClassHasMethod
+- uid: Godot.ClassDB.ClassGetMethodArgumentCount*
+  commentId: Overload:Godot.ClassDB.ClassGetMethodArgumentCount
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassGetMethodArgumentCount_Godot_StringName_Godot_StringName_System_Boolean_
+  name: ClassGetMethodArgumentCount
+  nameWithType: ClassDB.ClassGetMethodArgumentCount
+  fullName: Godot.ClassDB.ClassGetMethodArgumentCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Godot.ClassDB.ClassGetMethodList*
+  commentId: Overload:Godot.ClassDB.ClassGetMethodList
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassGetMethodList_Godot_StringName_System_Boolean_
+  name: ClassGetMethodList
+  nameWithType: ClassDB.ClassGetMethodList
+  fullName: Godot.ClassDB.ClassGetMethodList
+- uid: Godot.ClassDB.ClassCallStatic*
+  commentId: Overload:Godot.ClassDB.ClassCallStatic
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassCallStatic_Godot_StringName_Godot_StringName_Godot_Variant___
+  name: ClassCallStatic
+  nameWithType: ClassDB.ClassCallStatic
+  fullName: Godot.ClassDB.ClassCallStatic
+- uid: Godot.Variant[]
+  isExternal: true
+  href: Godot.Variant.html
+  name: Variant[]
+  nameWithType: Variant[]
+  fullName: Godot.Variant[]
+  nameWithType.vb: Variant()
+  fullName.vb: Godot.Variant()
+  name.vb: Variant()
+  spec.csharp:
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: (
+  - name: )
+- uid: System.ReadOnlySpan{Godot.Variant}
+  commentId: T:System.ReadOnlySpan{Godot.Variant}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<Variant>
+  nameWithType: ReadOnlySpan<Variant>
+  fullName: System.ReadOnlySpan<Godot.Variant>
+  nameWithType.vb: ReadOnlySpan(Of Variant)
+  fullName.vb: System.ReadOnlySpan(Of Godot.Variant)
+  name.vb: ReadOnlySpan(Of Variant)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Variant
+    name: Variant
+    isExternal: true
+    href: Godot.Variant.html
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Godot.ClassDB.ClassGetIntegerConstantList*
+  commentId: Overload:Godot.ClassDB.ClassGetIntegerConstantList
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassGetIntegerConstantList_Godot_StringName_System_Boolean_
+  name: ClassGetIntegerConstantList
+  nameWithType: ClassDB.ClassGetIntegerConstantList
+  fullName: Godot.ClassDB.ClassGetIntegerConstantList
+- uid: Godot.ClassDB.ClassHasIntegerConstant*
+  commentId: Overload:Godot.ClassDB.ClassHasIntegerConstant
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassHasIntegerConstant_Godot_StringName_Godot_StringName_
+  name: ClassHasIntegerConstant
+  nameWithType: ClassDB.ClassHasIntegerConstant
+  fullName: Godot.ClassDB.ClassHasIntegerConstant
+- uid: Godot.ClassDB.ClassGetIntegerConstant*
+  commentId: Overload:Godot.ClassDB.ClassGetIntegerConstant
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassGetIntegerConstant_Godot_StringName_Godot_StringName_
+  name: ClassGetIntegerConstant
+  nameWithType: ClassDB.ClassGetIntegerConstant
+  fullName: Godot.ClassDB.ClassGetIntegerConstant
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Godot.ClassDB.ClassHasEnum*
+  commentId: Overload:Godot.ClassDB.ClassHasEnum
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassHasEnum_Godot_StringName_Godot_StringName_System_Boolean_
+  name: ClassHasEnum
+  nameWithType: ClassDB.ClassHasEnum
+  fullName: Godot.ClassDB.ClassHasEnum
+- uid: Godot.ClassDB.ClassGetEnumList*
+  commentId: Overload:Godot.ClassDB.ClassGetEnumList
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassGetEnumList_Godot_StringName_System_Boolean_
+  name: ClassGetEnumList
+  nameWithType: ClassDB.ClassGetEnumList
+  fullName: Godot.ClassDB.ClassGetEnumList
+- uid: Godot.ClassDB.ClassGetEnumConstants*
+  commentId: Overload:Godot.ClassDB.ClassGetEnumConstants
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassGetEnumConstants_Godot_StringName_Godot_StringName_System_Boolean_
+  name: ClassGetEnumConstants
+  nameWithType: ClassDB.ClassGetEnumConstants
+  fullName: Godot.ClassDB.ClassGetEnumConstants
+- uid: Godot.ClassDB.ClassGetIntegerConstantEnum*
+  commentId: Overload:Godot.ClassDB.ClassGetIntegerConstantEnum
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_ClassGetIntegerConstantEnum_Godot_StringName_Godot_StringName_System_Boolean_
+  name: ClassGetIntegerConstantEnum
+  nameWithType: ClassDB.ClassGetIntegerConstantEnum
+  fullName: Godot.ClassDB.ClassGetIntegerConstantEnum
+- uid: Godot.ClassDB.IsClassEnumBitfield*
+  commentId: Overload:Godot.ClassDB.IsClassEnumBitfield
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_IsClassEnumBitfield_Godot_StringName_Godot_StringName_System_Boolean_
+  name: IsClassEnumBitfield
+  nameWithType: ClassDB.IsClassEnumBitfield
+  fullName: Godot.ClassDB.IsClassEnumBitfield
+- uid: Godot.ClassDB.IsClassEnabled*
+  commentId: Overload:Godot.ClassDB.IsClassEnabled
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_IsClassEnabled_Godot_StringName_
+  name: IsClassEnabled
+  nameWithType: ClassDB.IsClassEnabled
+  fullName: Godot.ClassDB.IsClassEnabled
+- uid: Godot.ClassDB.Singleton*
+  commentId: Overload:Godot.ClassDB.Singleton
+  isExternal: true
+  href: Godot.ClassDB.html#Godot_ClassDB_Singleton
+  name: Singleton
+  nameWithType: ClassDB.Singleton
+  fullName: Godot.ClassDB.Singleton
+- uid: Godot.ClassDBInstance
+  commentId: T:Godot.ClassDBInstance
+  parent: Godot
+  isExternal: true
+  href: Godot.ClassDBInstance.html
+  name: ClassDBInstance
+  nameWithType: ClassDBInstance
+  fullName: Godot.ClassDBInstance

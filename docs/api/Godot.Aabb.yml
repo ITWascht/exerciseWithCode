@@ -1,0 +1,1653 @@
+### YamlMime:ManagedReference
+items:
+- uid: Godot.Aabb
+  commentId: T:Godot.Aabb
+  id: Aabb
+  parent: Godot
+  children:
+  - Godot.Aabb.#ctor(Godot.Vector3,Godot.Vector3)
+  - Godot.Aabb.#ctor(Godot.Vector3,System.Single,System.Single,System.Single)
+  - Godot.Aabb.#ctor(System.Single,System.Single,System.Single,Godot.Vector3)
+  - Godot.Aabb.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Godot.Aabb.Abs
+  - Godot.Aabb.Encloses(Godot.Aabb)
+  - Godot.Aabb.End
+  - Godot.Aabb.Equals(Godot.Aabb)
+  - Godot.Aabb.Equals(System.Object)
+  - Godot.Aabb.Expand(Godot.Vector3)
+  - Godot.Aabb.GetCenter
+  - Godot.Aabb.GetEndpoint(System.Int32)
+  - Godot.Aabb.GetHashCode
+  - Godot.Aabb.GetLongestAxis
+  - Godot.Aabb.GetLongestAxisIndex
+  - Godot.Aabb.GetLongestAxisSize
+  - Godot.Aabb.GetShortestAxis
+  - Godot.Aabb.GetShortestAxisIndex
+  - Godot.Aabb.GetShortestAxisSize
+  - Godot.Aabb.GetSupport(Godot.Vector3)
+  - Godot.Aabb.Grow(System.Single)
+  - Godot.Aabb.HasPoint(Godot.Vector3)
+  - Godot.Aabb.HasSurface
+  - Godot.Aabb.HasVolume
+  - Godot.Aabb.Intersection(Godot.Aabb)
+  - Godot.Aabb.Intersects(Godot.Aabb)
+  - Godot.Aabb.IntersectsPlane(Godot.Plane)
+  - Godot.Aabb.IntersectsSegment(Godot.Vector3,Godot.Vector3)
+  - Godot.Aabb.IsEqualApprox(Godot.Aabb)
+  - Godot.Aabb.IsFinite
+  - Godot.Aabb.Merge(Godot.Aabb)
+  - Godot.Aabb.Position
+  - Godot.Aabb.Size
+  - Godot.Aabb.ToString
+  - Godot.Aabb.ToString(System.String)
+  - Godot.Aabb.Volume
+  - Godot.Aabb.op_Equality(Godot.Aabb,Godot.Aabb)
+  - Godot.Aabb.op_Inequality(Godot.Aabb,Godot.Aabb)
+  langs:
+  - csharp
+  - vb
+  name: Aabb
+  nameWithType: Aabb
+  fullName: Godot.Aabb
+  type: Struct
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: 'public struct Aabb : IEquatable<Aabb>'
+    content.vb: Public Structure Aabb Implements IEquatable(Of Aabb)
+  implements:
+  - System.IEquatable{Godot.Aabb}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Godot.Aabb.Abs
+  commentId: M:Godot.Aabb.Abs
+  id: Abs
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Abs()
+  nameWithType: Aabb.Abs()
+  fullName: Godot.Aabb.Abs()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Aabb Abs()
+    return:
+      type: Godot.Aabb
+    content.vb: Public Function Abs() As Aabb
+  overload: Godot.Aabb.Abs*
+- uid: Godot.Aabb.GetCenter
+  commentId: M:Godot.Aabb.GetCenter
+  id: GetCenter
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: GetCenter()
+  nameWithType: Aabb.GetCenter()
+  fullName: Godot.Aabb.GetCenter()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3 GetCenter()
+    return:
+      type: Godot.Vector3
+    content.vb: Public Function GetCenter() As Vector3
+  overload: Godot.Aabb.GetCenter*
+- uid: Godot.Aabb.Encloses(Godot.Aabb)
+  commentId: M:Godot.Aabb.Encloses(Godot.Aabb)
+  id: Encloses(Godot.Aabb)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Encloses(Aabb)
+  nameWithType: Aabb.Encloses(Aabb)
+  fullName: Godot.Aabb.Encloses(Godot.Aabb)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool Encloses(Aabb with)
+    parameters:
+    - id: with
+      type: Godot.Aabb
+    return:
+      type: System.Boolean
+    content.vb: Public Function Encloses([with] As Aabb) As Boolean
+  overload: Godot.Aabb.Encloses*
+- uid: Godot.Aabb.Expand(Godot.Vector3)
+  commentId: M:Godot.Aabb.Expand(Godot.Vector3)
+  id: Expand(Godot.Vector3)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Expand(Vector3)
+  nameWithType: Aabb.Expand(Vector3)
+  fullName: Godot.Aabb.Expand(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Aabb Expand(Vector3 point)
+    parameters:
+    - id: point
+      type: Godot.Vector3
+    return:
+      type: Godot.Aabb
+    content.vb: Public Function Expand(point As Vector3) As Aabb
+  overload: Godot.Aabb.Expand*
+- uid: Godot.Aabb.GetEndpoint(System.Int32)
+  commentId: M:Godot.Aabb.GetEndpoint(System.Int32)
+  id: GetEndpoint(System.Int32)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: GetEndpoint(int)
+  nameWithType: Aabb.GetEndpoint(int)
+  fullName: Godot.Aabb.GetEndpoint(int)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3 GetEndpoint(int idx)
+    parameters:
+    - id: idx
+      type: System.Int32
+    return:
+      type: Godot.Vector3
+    content.vb: Public Function GetEndpoint(idx As Integer) As Vector3
+  overload: Godot.Aabb.GetEndpoint*
+  nameWithType.vb: Aabb.GetEndpoint(Integer)
+  fullName.vb: Godot.Aabb.GetEndpoint(Integer)
+  name.vb: GetEndpoint(Integer)
+- uid: Godot.Aabb.GetLongestAxis
+  commentId: M:Godot.Aabb.GetLongestAxis
+  id: GetLongestAxis
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: GetLongestAxis()
+  nameWithType: Aabb.GetLongestAxis()
+  fullName: Godot.Aabb.GetLongestAxis()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3 GetLongestAxis()
+    return:
+      type: Godot.Vector3
+    content.vb: Public Function GetLongestAxis() As Vector3
+  overload: Godot.Aabb.GetLongestAxis*
+- uid: Godot.Aabb.GetLongestAxisIndex
+  commentId: M:Godot.Aabb.GetLongestAxisIndex
+  id: GetLongestAxisIndex
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: GetLongestAxisIndex()
+  nameWithType: Aabb.GetLongestAxisIndex()
+  fullName: Godot.Aabb.GetLongestAxisIndex()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3.Axis GetLongestAxisIndex()
+    return:
+      type: Godot.Vector3.Axis
+    content.vb: Public Function GetLongestAxisIndex() As Vector3.Axis
+  overload: Godot.Aabb.GetLongestAxisIndex*
+- uid: Godot.Aabb.GetLongestAxisSize
+  commentId: M:Godot.Aabb.GetLongestAxisSize
+  id: GetLongestAxisSize
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: GetLongestAxisSize()
+  nameWithType: Aabb.GetLongestAxisSize()
+  fullName: Godot.Aabb.GetLongestAxisSize()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly float GetLongestAxisSize()
+    return:
+      type: System.Single
+    content.vb: Public Function GetLongestAxisSize() As Single
+  overload: Godot.Aabb.GetLongestAxisSize*
+- uid: Godot.Aabb.GetShortestAxis
+  commentId: M:Godot.Aabb.GetShortestAxis
+  id: GetShortestAxis
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: GetShortestAxis()
+  nameWithType: Aabb.GetShortestAxis()
+  fullName: Godot.Aabb.GetShortestAxis()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3 GetShortestAxis()
+    return:
+      type: Godot.Vector3
+    content.vb: Public Function GetShortestAxis() As Vector3
+  overload: Godot.Aabb.GetShortestAxis*
+- uid: Godot.Aabb.GetShortestAxisIndex
+  commentId: M:Godot.Aabb.GetShortestAxisIndex
+  id: GetShortestAxisIndex
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: GetShortestAxisIndex()
+  nameWithType: Aabb.GetShortestAxisIndex()
+  fullName: Godot.Aabb.GetShortestAxisIndex()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3.Axis GetShortestAxisIndex()
+    return:
+      type: Godot.Vector3.Axis
+    content.vb: Public Function GetShortestAxisIndex() As Vector3.Axis
+  overload: Godot.Aabb.GetShortestAxisIndex*
+- uid: Godot.Aabb.GetShortestAxisSize
+  commentId: M:Godot.Aabb.GetShortestAxisSize
+  id: GetShortestAxisSize
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: GetShortestAxisSize()
+  nameWithType: Aabb.GetShortestAxisSize()
+  fullName: Godot.Aabb.GetShortestAxisSize()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly float GetShortestAxisSize()
+    return:
+      type: System.Single
+    content.vb: Public Function GetShortestAxisSize() As Single
+  overload: Godot.Aabb.GetShortestAxisSize*
+- uid: Godot.Aabb.GetSupport(Godot.Vector3)
+  commentId: M:Godot.Aabb.GetSupport(Godot.Vector3)
+  id: GetSupport(Godot.Vector3)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: GetSupport(Vector3)
+  nameWithType: Aabb.GetSupport(Vector3)
+  fullName: Godot.Aabb.GetSupport(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Vector3 GetSupport(Vector3 dir)
+    parameters:
+    - id: dir
+      type: Godot.Vector3
+    return:
+      type: Godot.Vector3
+    content.vb: Public Function GetSupport(dir As Vector3) As Vector3
+  overload: Godot.Aabb.GetSupport*
+- uid: Godot.Aabb.Grow(System.Single)
+  commentId: M:Godot.Aabb.Grow(System.Single)
+  id: Grow(System.Single)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Grow(float)
+  nameWithType: Aabb.Grow(float)
+  fullName: Godot.Aabb.Grow(float)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Aabb Grow(float by)
+    parameters:
+    - id: by
+      type: System.Single
+    return:
+      type: Godot.Aabb
+    content.vb: Public Function Grow(by As Single) As Aabb
+  overload: Godot.Aabb.Grow*
+  nameWithType.vb: Aabb.Grow(Single)
+  fullName.vb: Godot.Aabb.Grow(Single)
+  name.vb: Grow(Single)
+- uid: Godot.Aabb.HasPoint(Godot.Vector3)
+  commentId: M:Godot.Aabb.HasPoint(Godot.Vector3)
+  id: HasPoint(Godot.Vector3)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: HasPoint(Vector3)
+  nameWithType: Aabb.HasPoint(Vector3)
+  fullName: Godot.Aabb.HasPoint(Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool HasPoint(Vector3 point)
+    parameters:
+    - id: point
+      type: Godot.Vector3
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasPoint(point As Vector3) As Boolean
+  overload: Godot.Aabb.HasPoint*
+- uid: Godot.Aabb.HasSurface
+  commentId: M:Godot.Aabb.HasSurface
+  id: HasSurface
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: HasSurface()
+  nameWithType: Aabb.HasSurface()
+  fullName: Godot.Aabb.HasSurface()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool HasSurface()
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasSurface() As Boolean
+  overload: Godot.Aabb.HasSurface*
+- uid: Godot.Aabb.HasVolume
+  commentId: M:Godot.Aabb.HasVolume
+  id: HasVolume
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: HasVolume()
+  nameWithType: Aabb.HasVolume()
+  fullName: Godot.Aabb.HasVolume()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool HasVolume()
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasVolume() As Boolean
+  overload: Godot.Aabb.HasVolume*
+- uid: Godot.Aabb.Intersection(Godot.Aabb)
+  commentId: M:Godot.Aabb.Intersection(Godot.Aabb)
+  id: Intersection(Godot.Aabb)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Intersection(Aabb)
+  nameWithType: Aabb.Intersection(Aabb)
+  fullName: Godot.Aabb.Intersection(Godot.Aabb)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Aabb Intersection(Aabb with)
+    parameters:
+    - id: with
+      type: Godot.Aabb
+    return:
+      type: Godot.Aabb
+    content.vb: Public Function Intersection([with] As Aabb) As Aabb
+  overload: Godot.Aabb.Intersection*
+- uid: Godot.Aabb.Intersects(Godot.Aabb)
+  commentId: M:Godot.Aabb.Intersects(Godot.Aabb)
+  id: Intersects(Godot.Aabb)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Intersects(Aabb)
+  nameWithType: Aabb.Intersects(Aabb)
+  fullName: Godot.Aabb.Intersects(Godot.Aabb)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool Intersects(Aabb with)
+    parameters:
+    - id: with
+      type: Godot.Aabb
+    return:
+      type: System.Boolean
+    content.vb: Public Function Intersects([with] As Aabb) As Boolean
+  overload: Godot.Aabb.Intersects*
+- uid: Godot.Aabb.IntersectsPlane(Godot.Plane)
+  commentId: M:Godot.Aabb.IntersectsPlane(Godot.Plane)
+  id: IntersectsPlane(Godot.Plane)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: IntersectsPlane(Plane)
+  nameWithType: Aabb.IntersectsPlane(Plane)
+  fullName: Godot.Aabb.IntersectsPlane(Godot.Plane)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool IntersectsPlane(Plane plane)
+    parameters:
+    - id: plane
+      type: Godot.Plane
+    return:
+      type: System.Boolean
+    content.vb: Public Function IntersectsPlane(plane As Plane) As Boolean
+  overload: Godot.Aabb.IntersectsPlane*
+- uid: Godot.Aabb.IntersectsSegment(Godot.Vector3,Godot.Vector3)
+  commentId: M:Godot.Aabb.IntersectsSegment(Godot.Vector3,Godot.Vector3)
+  id: IntersectsSegment(Godot.Vector3,Godot.Vector3)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: IntersectsSegment(Vector3, Vector3)
+  nameWithType: Aabb.IntersectsSegment(Vector3, Vector3)
+  fullName: Godot.Aabb.IntersectsSegment(Godot.Vector3, Godot.Vector3)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool IntersectsSegment(Vector3 from, Vector3 to)
+    parameters:
+    - id: from
+      type: Godot.Vector3
+    - id: to
+      type: Godot.Vector3
+    return:
+      type: System.Boolean
+    content.vb: Public Function IntersectsSegment(from As Vector3, [to] As Vector3) As Boolean
+  overload: Godot.Aabb.IntersectsSegment*
+- uid: Godot.Aabb.IsFinite
+  commentId: M:Godot.Aabb.IsFinite
+  id: IsFinite
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: IsFinite()
+  nameWithType: Aabb.IsFinite()
+  fullName: Godot.Aabb.IsFinite()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool IsFinite()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsFinite() As Boolean
+  overload: Godot.Aabb.IsFinite*
+- uid: Godot.Aabb.Merge(Godot.Aabb)
+  commentId: M:Godot.Aabb.Merge(Godot.Aabb)
+  id: Merge(Godot.Aabb)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Merge(Aabb)
+  nameWithType: Aabb.Merge(Aabb)
+  fullName: Godot.Aabb.Merge(Godot.Aabb)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly Aabb Merge(Aabb with)
+    parameters:
+    - id: with
+      type: Godot.Aabb
+    return:
+      type: Godot.Aabb
+    content.vb: Public Function Merge([with] As Aabb) As Aabb
+  overload: Godot.Aabb.Merge*
+- uid: Godot.Aabb.#ctor(Godot.Vector3,Godot.Vector3)
+  commentId: M:Godot.Aabb.#ctor(Godot.Vector3,Godot.Vector3)
+  id: '#ctor(Godot.Vector3,Godot.Vector3)'
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Aabb(Vector3, Vector3)
+  nameWithType: Aabb.Aabb(Vector3, Vector3)
+  fullName: Godot.Aabb.Aabb(Godot.Vector3, Godot.Vector3)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Aabb(Vector3 position, Vector3 size)
+    parameters:
+    - id: position
+      type: Godot.Vector3
+    - id: size
+      type: Godot.Vector3
+    content.vb: Public Sub New(position As Vector3, size As Vector3)
+  overload: Godot.Aabb.#ctor*
+  nameWithType.vb: Aabb.New(Vector3, Vector3)
+  fullName.vb: Godot.Aabb.New(Godot.Vector3, Godot.Vector3)
+  name.vb: New(Vector3, Vector3)
+- uid: Godot.Aabb.#ctor(Godot.Vector3,System.Single,System.Single,System.Single)
+  commentId: M:Godot.Aabb.#ctor(Godot.Vector3,System.Single,System.Single,System.Single)
+  id: '#ctor(Godot.Vector3,System.Single,System.Single,System.Single)'
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Aabb(Vector3, float, float, float)
+  nameWithType: Aabb.Aabb(Vector3, float, float, float)
+  fullName: Godot.Aabb.Aabb(Godot.Vector3, float, float, float)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Aabb(Vector3 position, float width, float height, float depth)
+    parameters:
+    - id: position
+      type: Godot.Vector3
+    - id: width
+      type: System.Single
+    - id: height
+      type: System.Single
+    - id: depth
+      type: System.Single
+    content.vb: Public Sub New(position As Vector3, width As Single, height As Single, depth As Single)
+  overload: Godot.Aabb.#ctor*
+  nameWithType.vb: Aabb.New(Vector3, Single, Single, Single)
+  fullName.vb: Godot.Aabb.New(Godot.Vector3, Single, Single, Single)
+  name.vb: New(Vector3, Single, Single, Single)
+- uid: Godot.Aabb.#ctor(System.Single,System.Single,System.Single,Godot.Vector3)
+  commentId: M:Godot.Aabb.#ctor(System.Single,System.Single,System.Single,Godot.Vector3)
+  id: '#ctor(System.Single,System.Single,System.Single,Godot.Vector3)'
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Aabb(float, float, float, Vector3)
+  nameWithType: Aabb.Aabb(float, float, float, Vector3)
+  fullName: Godot.Aabb.Aabb(float, float, float, Godot.Vector3)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Aabb(float x, float y, float z, Vector3 size)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: z
+      type: System.Single
+    - id: size
+      type: Godot.Vector3
+    content.vb: Public Sub New(x As Single, y As Single, z As Single, size As Vector3)
+  overload: Godot.Aabb.#ctor*
+  nameWithType.vb: Aabb.New(Single, Single, Single, Vector3)
+  fullName.vb: Godot.Aabb.New(Single, Single, Single, Godot.Vector3)
+  name.vb: New(Single, Single, Single, Vector3)
+- uid: Godot.Aabb.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Godot.Aabb.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)'
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Aabb(float, float, float, float, float, float)
+  nameWithType: Aabb.Aabb(float, float, float, float, float, float)
+  fullName: Godot.Aabb.Aabb(float, float, float, float, float, float)
+  type: Constructor
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Aabb(float x, float y, float z, float width, float height, float depth)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: z
+      type: System.Single
+    - id: width
+      type: System.Single
+    - id: height
+      type: System.Single
+    - id: depth
+      type: System.Single
+    content.vb: Public Sub New(x As Single, y As Single, z As Single, width As Single, height As Single, depth As Single)
+  overload: Godot.Aabb.#ctor*
+  nameWithType.vb: Aabb.New(Single, Single, Single, Single, Single, Single)
+  fullName.vb: Godot.Aabb.New(Single, Single, Single, Single, Single, Single)
+  name.vb: New(Single, Single, Single, Single, Single, Single)
+- uid: Godot.Aabb.op_Equality(Godot.Aabb,Godot.Aabb)
+  commentId: M:Godot.Aabb.op_Equality(Godot.Aabb,Godot.Aabb)
+  id: op_Equality(Godot.Aabb,Godot.Aabb)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Aabb, Aabb)
+  nameWithType: Aabb.operator ==(Aabb, Aabb)
+  fullName: Godot.Aabb.operator ==(Godot.Aabb, Godot.Aabb)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool operator ==(Aabb left, Aabb right)
+    parameters:
+    - id: left
+      type: Godot.Aabb
+    - id: right
+      type: Godot.Aabb
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Aabb, right As Aabb) As Boolean
+  overload: Godot.Aabb.op_Equality*
+  nameWithType.vb: Aabb.=(Aabb, Aabb)
+  fullName.vb: Godot.Aabb.=(Godot.Aabb, Godot.Aabb)
+  name.vb: =(Aabb, Aabb)
+- uid: Godot.Aabb.op_Inequality(Godot.Aabb,Godot.Aabb)
+  commentId: M:Godot.Aabb.op_Inequality(Godot.Aabb,Godot.Aabb)
+  id: op_Inequality(Godot.Aabb,Godot.Aabb)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Aabb, Aabb)
+  nameWithType: Aabb.operator !=(Aabb, Aabb)
+  fullName: Godot.Aabb.operator !=(Godot.Aabb, Godot.Aabb)
+  type: Operator
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public static bool operator !=(Aabb left, Aabb right)
+    parameters:
+    - id: left
+      type: Godot.Aabb
+    - id: right
+      type: Godot.Aabb
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Aabb, right As Aabb) As Boolean
+  overload: Godot.Aabb.op_Inequality*
+  nameWithType.vb: Aabb.<>(Aabb, Aabb)
+  fullName.vb: Godot.Aabb.<>(Godot.Aabb, Godot.Aabb)
+  name.vb: <>(Aabb, Aabb)
+- uid: Godot.Aabb.Equals(System.Object)
+  commentId: M:Godot.Aabb.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Aabb.Equals(object?)
+  fullName: Godot.Aabb.Equals(object?)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)
+        arguments:
+        - type: System.Boolean
+          value: true
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Godot.Aabb.Equals*
+  nameWithType.vb: Aabb.Equals(Object)
+  fullName.vb: Godot.Aabb.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Godot.Aabb.Equals(Godot.Aabb)
+  commentId: M:Godot.Aabb.Equals(Godot.Aabb)
+  id: Equals(Godot.Aabb)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Equals(Aabb)
+  nameWithType: Aabb.Equals(Aabb)
+  fullName: Godot.Aabb.Equals(Godot.Aabb)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public readonly bool Equals(Aabb other)
+    parameters:
+    - id: other
+      type: Godot.Aabb
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Aabb) As Boolean
+  overload: Godot.Aabb.Equals*
+  implements:
+  - System.IEquatable{Godot.Aabb}.Equals(Godot.Aabb)
+- uid: Godot.Aabb.IsEqualApprox(Godot.Aabb)
+  commentId: M:Godot.Aabb.IsEqualApprox(Godot.Aabb)
+  id: IsEqualApprox(Godot.Aabb)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: IsEqualApprox(Aabb)
+  nameWithType: Aabb.IsEqualApprox(Aabb)
+  fullName: Godot.Aabb.IsEqualApprox(Godot.Aabb)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly bool IsEqualApprox(Aabb other)
+    parameters:
+    - id: other
+      type: Godot.Aabb
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsEqualApprox(other As Aabb) As Boolean
+  overload: Godot.Aabb.IsEqualApprox*
+- uid: Godot.Aabb.GetHashCode
+  commentId: M:Godot.Aabb.GetHashCode
+  id: GetHashCode
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Aabb.GetHashCode()
+  fullName: Godot.Aabb.GetHashCode()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Godot.Aabb.GetHashCode*
+- uid: Godot.Aabb.ToString
+  commentId: M:Godot.Aabb.ToString
+  id: ToString
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Aabb.ToString()
+  fullName: Godot.Aabb.ToString()
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  example: []
+  syntax:
+    content: public override readonly string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Godot.Aabb.ToString*
+- uid: Godot.Aabb.ToString(System.String)
+  commentId: M:Godot.Aabb.ToString(System.String)
+  id: ToString(System.String)
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: ToString(string?)
+  nameWithType: Aabb.ToString(string?)
+  fullName: Godot.Aabb.ToString(string?)
+  type: Method
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly string ToString(string? format)
+    parameters:
+    - id: format
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function ToString(format As String) As String
+  overload: Godot.Aabb.ToString*
+  nameWithType.vb: Aabb.ToString(String)
+  fullName.vb: Godot.Aabb.ToString(String)
+  name.vb: ToString(String)
+- uid: Godot.Aabb.Position
+  commentId: P:Godot.Aabb.Position
+  id: Position
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: Aabb.Position
+  fullName: Godot.Aabb.Position
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 Position { readonly get; set; }
+    parameters: []
+    return:
+      type: Godot.Vector3
+    content.vb: Public Property Position As Vector3
+  overload: Godot.Aabb.Position*
+- uid: Godot.Aabb.Size
+  commentId: P:Godot.Aabb.Size
+  id: Size
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: Aabb.Size
+  fullName: Godot.Aabb.Size
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 Size { readonly get; set; }
+    parameters: []
+    return:
+      type: Godot.Vector3
+    content.vb: Public Property Size As Vector3
+  overload: Godot.Aabb.Size*
+- uid: Godot.Aabb.End
+  commentId: P:Godot.Aabb.End
+  id: End
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: Aabb.End
+  fullName: Godot.Aabb.End
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public Vector3 End { readonly get; set; }
+    parameters: []
+    return:
+      type: Godot.Vector3
+    content.vb: Public Property [End] As Vector3
+  overload: Godot.Aabb.End*
+- uid: Godot.Aabb.Volume
+  commentId: P:Godot.Aabb.Volume
+  id: Volume
+  parent: Godot.Aabb
+  langs:
+  - csharp
+  - vb
+  name: Volume
+  nameWithType: Aabb.Volume
+  fullName: Godot.Aabb.Volume
+  type: Property
+  assemblies:
+  - GodotSharp
+  namespace: Godot
+  syntax:
+    content: public readonly float Volume { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Volume As Single
+  overload: Godot.Aabb.Volume*
+references:
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  href: Godot.html
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.IEquatable{Godot.Aabb}
+  commentId: T:System.IEquatable{Godot.Aabb}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Aabb>
+  nameWithType: IEquatable<Aabb>
+  fullName: System.IEquatable<Godot.Aabb>
+  nameWithType.vb: IEquatable(Of Aabb)
+  fullName.vb: System.IEquatable(Of Godot.Aabb)
+  name.vb: IEquatable(Of Aabb)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Godot.Aabb
+    name: Aabb
+    isExternal: true
+    href: Godot.Aabb.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Godot.Aabb
+    name: Aabb
+    isExternal: true
+    href: Godot.Aabb.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Godot.Aabb.Abs*
+  commentId: Overload:Godot.Aabb.Abs
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_Abs
+  name: Abs
+  nameWithType: Aabb.Abs
+  fullName: Godot.Aabb.Abs
+- uid: Godot.Aabb
+  commentId: T:Godot.Aabb
+  parent: Godot
+  isExternal: true
+  href: Godot.Aabb.html
+  name: Aabb
+  nameWithType: Aabb
+  fullName: Godot.Aabb
+- uid: Godot.Aabb.GetCenter*
+  commentId: Overload:Godot.Aabb.GetCenter
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_GetCenter
+  name: GetCenter
+  nameWithType: Aabb.GetCenter
+  fullName: Godot.Aabb.GetCenter
+- uid: Godot.Vector3
+  commentId: T:Godot.Vector3
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector3.html
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Godot.Vector3
+- uid: Godot.Aabb.Encloses*
+  commentId: Overload:Godot.Aabb.Encloses
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_Encloses_Godot_Aabb_
+  name: Encloses
+  nameWithType: Aabb.Encloses
+  fullName: Godot.Aabb.Encloses
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Godot.Aabb.Expand*
+  commentId: Overload:Godot.Aabb.Expand
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_Expand_Godot_Vector3_
+  name: Expand
+  nameWithType: Aabb.Expand
+  fullName: Godot.Aabb.Expand
+- uid: Godot.Aabb.GetEndpoint*
+  commentId: Overload:Godot.Aabb.GetEndpoint
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_GetEndpoint_System_Int32_
+  name: GetEndpoint
+  nameWithType: Aabb.GetEndpoint
+  fullName: Godot.Aabb.GetEndpoint
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Godot.Aabb.GetLongestAxis*
+  commentId: Overload:Godot.Aabb.GetLongestAxis
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_GetLongestAxis
+  name: GetLongestAxis
+  nameWithType: Aabb.GetLongestAxis
+  fullName: Godot.Aabb.GetLongestAxis
+- uid: Godot.Aabb.GetLongestAxisIndex*
+  commentId: Overload:Godot.Aabb.GetLongestAxisIndex
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_GetLongestAxisIndex
+  name: GetLongestAxisIndex
+  nameWithType: Aabb.GetLongestAxisIndex
+  fullName: Godot.Aabb.GetLongestAxisIndex
+- uid: Godot.Vector3.Axis
+  commentId: T:Godot.Vector3.Axis
+  parent: Godot
+  isExternal: true
+  href: Godot.Vector3.html
+  name: Vector3.Axis
+  nameWithType: Vector3.Axis
+  fullName: Godot.Vector3.Axis
+  spec.csharp:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: .
+  - uid: Godot.Vector3.Axis
+    name: Axis
+    isExternal: true
+    href: Godot.Vector3.Axis.html
+  spec.vb:
+  - uid: Godot.Vector3
+    name: Vector3
+    isExternal: true
+    href: Godot.Vector3.html
+  - name: .
+  - uid: Godot.Vector3.Axis
+    name: Axis
+    isExternal: true
+    href: Godot.Vector3.Axis.html
+- uid: Godot.Aabb.GetLongestAxisSize*
+  commentId: Overload:Godot.Aabb.GetLongestAxisSize
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_GetLongestAxisSize
+  name: GetLongestAxisSize
+  nameWithType: Aabb.GetLongestAxisSize
+  fullName: Godot.Aabb.GetLongestAxisSize
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Godot.Aabb.GetShortestAxis*
+  commentId: Overload:Godot.Aabb.GetShortestAxis
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_GetShortestAxis
+  name: GetShortestAxis
+  nameWithType: Aabb.GetShortestAxis
+  fullName: Godot.Aabb.GetShortestAxis
+- uid: Godot.Aabb.GetShortestAxisIndex*
+  commentId: Overload:Godot.Aabb.GetShortestAxisIndex
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_GetShortestAxisIndex
+  name: GetShortestAxisIndex
+  nameWithType: Aabb.GetShortestAxisIndex
+  fullName: Godot.Aabb.GetShortestAxisIndex
+- uid: Godot.Aabb.GetShortestAxisSize*
+  commentId: Overload:Godot.Aabb.GetShortestAxisSize
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_GetShortestAxisSize
+  name: GetShortestAxisSize
+  nameWithType: Aabb.GetShortestAxisSize
+  fullName: Godot.Aabb.GetShortestAxisSize
+- uid: Godot.Aabb.GetSupport*
+  commentId: Overload:Godot.Aabb.GetSupport
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_GetSupport_Godot_Vector3_
+  name: GetSupport
+  nameWithType: Aabb.GetSupport
+  fullName: Godot.Aabb.GetSupport
+- uid: Godot.Aabb.Grow*
+  commentId: Overload:Godot.Aabb.Grow
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_Grow_System_Single_
+  name: Grow
+  nameWithType: Aabb.Grow
+  fullName: Godot.Aabb.Grow
+- uid: Godot.Aabb.HasPoint*
+  commentId: Overload:Godot.Aabb.HasPoint
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_HasPoint_Godot_Vector3_
+  name: HasPoint
+  nameWithType: Aabb.HasPoint
+  fullName: Godot.Aabb.HasPoint
+- uid: Godot.Aabb.HasSurface*
+  commentId: Overload:Godot.Aabb.HasSurface
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_HasSurface
+  name: HasSurface
+  nameWithType: Aabb.HasSurface
+  fullName: Godot.Aabb.HasSurface
+- uid: Godot.Aabb.HasVolume*
+  commentId: Overload:Godot.Aabb.HasVolume
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_HasVolume
+  name: HasVolume
+  nameWithType: Aabb.HasVolume
+  fullName: Godot.Aabb.HasVolume
+- uid: Godot.Aabb.Intersection*
+  commentId: Overload:Godot.Aabb.Intersection
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_Intersection_Godot_Aabb_
+  name: Intersection
+  nameWithType: Aabb.Intersection
+  fullName: Godot.Aabb.Intersection
+- uid: Godot.Aabb.Intersects*
+  commentId: Overload:Godot.Aabb.Intersects
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_Intersects_Godot_Aabb_
+  name: Intersects
+  nameWithType: Aabb.Intersects
+  fullName: Godot.Aabb.Intersects
+- uid: Godot.Aabb.IntersectsPlane*
+  commentId: Overload:Godot.Aabb.IntersectsPlane
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_IntersectsPlane_Godot_Plane_
+  name: IntersectsPlane
+  nameWithType: Aabb.IntersectsPlane
+  fullName: Godot.Aabb.IntersectsPlane
+- uid: Godot.Plane
+  commentId: T:Godot.Plane
+  parent: Godot
+  isExternal: true
+  href: Godot.Plane.html
+  name: Plane
+  nameWithType: Plane
+  fullName: Godot.Plane
+- uid: Godot.Aabb.IntersectsSegment*
+  commentId: Overload:Godot.Aabb.IntersectsSegment
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_IntersectsSegment_Godot_Vector3_Godot_Vector3_
+  name: IntersectsSegment
+  nameWithType: Aabb.IntersectsSegment
+  fullName: Godot.Aabb.IntersectsSegment
+- uid: Godot.Aabb.IsFinite*
+  commentId: Overload:Godot.Aabb.IsFinite
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_IsFinite
+  name: IsFinite
+  nameWithType: Aabb.IsFinite
+  fullName: Godot.Aabb.IsFinite
+- uid: Godot.Aabb.Merge*
+  commentId: Overload:Godot.Aabb.Merge
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_Merge_Godot_Aabb_
+  name: Merge
+  nameWithType: Aabb.Merge
+  fullName: Godot.Aabb.Merge
+- uid: Godot.Aabb.#ctor*
+  commentId: Overload:Godot.Aabb.#ctor
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb__ctor_Godot_Vector3_Godot_Vector3_
+  name: Aabb
+  nameWithType: Aabb.Aabb
+  fullName: Godot.Aabb.Aabb
+  nameWithType.vb: Aabb.New
+  fullName.vb: Godot.Aabb.New
+  name.vb: New
+- uid: Godot.Aabb.op_Equality*
+  commentId: Overload:Godot.Aabb.op_Equality
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_op_Equality_Godot_Aabb_Godot_Aabb_
+  name: operator ==
+  nameWithType: Aabb.operator ==
+  fullName: Godot.Aabb.operator ==
+  nameWithType.vb: Aabb.=
+  fullName.vb: Godot.Aabb.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Aabb.op_Equality*
+    name: ==
+    isExternal: true
+    href: Godot.Aabb.html#Godot_Aabb_op_Equality_Godot_Aabb_Godot_Aabb_
+- uid: Godot.Aabb.op_Inequality*
+  commentId: Overload:Godot.Aabb.op_Inequality
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_op_Inequality_Godot_Aabb_Godot_Aabb_
+  name: operator !=
+  nameWithType: Aabb.operator !=
+  fullName: Godot.Aabb.operator !=
+  nameWithType.vb: Aabb.<>
+  fullName.vb: Godot.Aabb.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Godot.Aabb.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: Godot.Aabb.html#Godot_Aabb_op_Inequality_Godot_Aabb_Godot_Aabb_
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Godot.Aabb.Equals*
+  commentId: Overload:Godot.Aabb.Equals
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_Equals_System_Object_
+  name: Equals
+  nameWithType: Aabb.Equals
+  fullName: Godot.Aabb.Equals
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.IEquatable{Godot.Aabb}.Equals(Godot.Aabb)
+  commentId: M:System.IEquatable{Godot.Aabb}.Equals(Godot.Aabb)
+  parent: System.IEquatable{Godot.Aabb}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Aabb)
+  nameWithType: IEquatable<Aabb>.Equals(Aabb)
+  fullName: System.IEquatable<Godot.Aabb>.Equals(Godot.Aabb)
+  nameWithType.vb: IEquatable(Of Aabb).Equals(Aabb)
+  fullName.vb: System.IEquatable(Of Godot.Aabb).Equals(Godot.Aabb)
+  spec.csharp:
+  - uid: System.IEquatable{Godot.Aabb}.Equals(Godot.Aabb)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.Aabb
+    name: Aabb
+    isExternal: true
+    href: Godot.Aabb.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Godot.Aabb}.Equals(Godot.Aabb)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Godot.Aabb
+    name: Aabb
+    isExternal: true
+    href: Godot.Aabb.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Godot.Aabb.IsEqualApprox*
+  commentId: Overload:Godot.Aabb.IsEqualApprox
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_IsEqualApprox_Godot_Aabb_
+  name: IsEqualApprox
+  nameWithType: Aabb.IsEqualApprox
+  fullName: Godot.Aabb.IsEqualApprox
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Godot.Aabb.GetHashCode*
+  commentId: Overload:Godot.Aabb.GetHashCode
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_GetHashCode
+  name: GetHashCode
+  nameWithType: Aabb.GetHashCode
+  fullName: Godot.Aabb.GetHashCode
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Godot.Aabb.ToString*
+  commentId: Overload:Godot.Aabb.ToString
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_ToString
+  name: ToString
+  nameWithType: Aabb.ToString
+  fullName: Godot.Aabb.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Godot.Aabb.Position*
+  commentId: Overload:Godot.Aabb.Position
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_Position
+  name: Position
+  nameWithType: Aabb.Position
+  fullName: Godot.Aabb.Position
+- uid: Godot.Aabb.Size*
+  commentId: Overload:Godot.Aabb.Size
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_Size
+  name: Size
+  nameWithType: Aabb.Size
+  fullName: Godot.Aabb.Size
+- uid: Godot.Aabb.End*
+  commentId: Overload:Godot.Aabb.End
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_End
+  name: End
+  nameWithType: Aabb.End
+  fullName: Godot.Aabb.End
+- uid: Godot.Aabb.Volume*
+  commentId: Overload:Godot.Aabb.Volume
+  isExternal: true
+  href: Godot.Aabb.html#Godot_Aabb_Volume
+  name: Volume
+  nameWithType: Aabb.Volume
+  fullName: Godot.Aabb.Volume

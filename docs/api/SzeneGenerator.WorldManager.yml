@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: SzeneGenerator.WorldManager
+  commentId: T:SzeneGenerator.WorldManager
+  id: WorldManager
+  parent: SzeneGenerator
+  children:
+  - SzeneGenerator.WorldManager.#ctor
+  - SzeneGenerator.WorldManager._Ready
+  langs:
+  - csharp
+  - vb
+  name: WorldManager
+  nameWithType: WorldManager
+  fullName: SzeneGenerator.WorldManager
+  type: Class
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.WorldManager_ScriptMethods.generated.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  summary: >-
+    Central coordinator responsible for building the procedural world.
+
+    Initializes sky, terrain, spawning, camera placement, and triggers
+
+    screenshot and metadata export.
+  example: []
+  syntax:
+    content: >-
+      [ScriptPath("res://Scripts/World/WorldManager.cs")]
+
+      public class WorldManager : Node3D
+    content.vb: >-
+      <ScriptPath("res://Scripts/World/WorldManager.cs")>
+
+      Public Class WorldManager Inherits Node3D
+  inheritance:
+  - System.Object
+  - Godot.GodotObject
+  - Godot.Node
+  - Godot.Node3D
+  attributes:
+  - type: Godot.ScriptPathAttribute
+    ctor: Godot.ScriptPathAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: res://Scripts/World/WorldManager.cs
+- uid: SzeneGenerator.WorldManager._Ready
+  commentId: M:SzeneGenerator.WorldManager._Ready
+  id: _Ready
+  parent: SzeneGenerator.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: _Ready()
+  nameWithType: WorldManager._Ready()
+  fullName: SzeneGenerator.WorldManager._Ready()
+  type: Method
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.WorldManager_ScriptMethods.generated.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  summary: >-
+    Entry point of the world generation pipeline.
+
+    Loads region rules, initializes environment systems, spawns terrain and objects,
+
+    positions the camera, and produces the final screenshot and JSON output.
+  example: []
+  syntax:
+    content: public override void _Ready()
+    content.vb: Public Overrides Sub _Ready()
+  overridden: Godot.Node._Ready
+  overload: SzeneGenerator.WorldManager._Ready*
+- uid: SzeneGenerator.WorldManager.#ctor
+  commentId: M:SzeneGenerator.WorldManager.#ctor
+  id: '#ctor'
+  parent: SzeneGenerator.WorldManager
+  langs:
+  - csharp
+  - vb
+  name: WorldManager()
+  nameWithType: WorldManager.WorldManager()
+  fullName: SzeneGenerator.WorldManager.WorldManager()
+  type: Constructor
+  source:
+    href: https://github.com/ITWascht/exerciseWithCode/blob/b0d4e8cb2a5a6402a319b3d584856e1ffc355b58/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/SzeneGenerator.WorldManager_ScriptMethods.generated.cs
+  assemblies:
+  - exerciseWithCode
+  namespace: SzeneGenerator
+  syntax:
+    content: public WorldManager()
+    content.vb: Public Sub New()
+  overload: SzeneGenerator.WorldManager.#ctor*
+  nameWithType.vb: WorldManager.New()
+  fullName.vb: SzeneGenerator.WorldManager.New()
+  name.vb: New()
+references:
+- uid: SzeneGenerator
+  commentId: N:SzeneGenerator
+  isExternal: true
+  href: SzeneGenerator.html
+  name: SzeneGenerator
+  nameWithType: SzeneGenerator
+  fullName: SzeneGenerator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Godot.GodotObject
+  commentId: T:Godot.GodotObject
+  parent: Godot
+  isExternal: true
+  name: GodotObject
+  nameWithType: GodotObject
+  fullName: Godot.GodotObject
+- uid: Godot.Node
+  commentId: T:Godot.Node
+  parent: Godot
+  isExternal: true
+  name: Node
+  nameWithType: Node
+  fullName: Godot.Node
+- uid: Godot.Node3D
+  commentId: T:Godot.Node3D
+  parent: Godot
+  isExternal: true
+  name: Node3D
+  nameWithType: Node3D
+  fullName: Godot.Node3D
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: Godot.Node._Ready
+  commentId: M:Godot.Node._Ready
+  parent: Godot.Node
+  isExternal: true
+  name: _Ready()
+  nameWithType: Node._Ready()
+  fullName: Godot.Node._Ready()
+  spec.csharp:
+  - uid: Godot.Node._Ready
+    name: _Ready
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Godot.Node._Ready
+    name: _Ready
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SzeneGenerator.WorldManager._Ready*
+  commentId: Overload:SzeneGenerator.WorldManager._Ready
+  isExternal: true
+  href: SzeneGenerator.WorldManager.html#SzeneGenerator_WorldManager__Ready
+  name: _Ready
+  nameWithType: WorldManager._Ready
+  fullName: SzeneGenerator.WorldManager._Ready
+- uid: SzeneGenerator.WorldManager.#ctor*
+  commentId: Overload:SzeneGenerator.WorldManager.#ctor
+  isExternal: true
+  href: SzeneGenerator.WorldManager.html#SzeneGenerator_WorldManager__ctor
+  name: WorldManager
+  nameWithType: WorldManager.WorldManager
+  fullName: SzeneGenerator.WorldManager.WorldManager
+  nameWithType.vb: WorldManager.New
+  fullName.vb: SzeneGenerator.WorldManager.New
+  name.vb: New

@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Array&lt;T&gt; | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Array&lt;T&gt; | mysite ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Godot.Collections.Array`1">
+
+
+
+  <h1 id="Godot_Collections_Array_1" data-uid="Godot.Collections.Array`1" class="text-break">
+Class Array&lt;T&gt;  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Godot.html">Godot</a>.<a class="xref" href="Godot.Collections.html">Collections</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>GodotSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Array&lt;T&gt; : IList&lt;T&gt;, ICollection&lt;T&gt;, IReadOnlyList&lt;T&gt;, IReadOnlyCollection&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Array&lt;T&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;T&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;T&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Godot_Collections_Array_1__ctor_" data-uid="Godot.Collections.Array`1.#ctor*"></a>
+
+  <h3 id="Godot_Collections_Array_1__ctor" data-uid="Godot.Collections.Array`1.#ctor">
+  Array()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1__ctor_" data-uid="Godot.Collections.Array`1.#ctor*"></a>
+
+  <h3 id="Godot_Collections_Array_1__ctor_Godot_Collections_Array_" data-uid="Godot.Collections.Array`1.#ctor(Godot.Collections.Array)">
+  Array(Array)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array(Array array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="Godot.Collections.Array.html">Array</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1__ctor_" data-uid="Godot.Collections.Array`1.#ctor*"></a>
+
+  <h3 id="Godot_Collections_Array_1__ctor_System_Collections_Generic_IEnumerable__0__" data-uid="Godot.Collections.Array`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+  Array(IEnumerable&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array(IEnumerable&lt;T&gt; collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1__ctor_" data-uid="Godot.Collections.Array`1.#ctor*"></a>
+
+  <h3 id="Godot_Collections_Array_1__ctor__0___" data-uid="Godot.Collections.Array`1.#ctor(`0[])">
+  Array(T[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array(T[] array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Godot_Collections_Array_1_Count_" data-uid="Godot.Collections.Array`1.Count*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Count" data-uid="Godot.Collections.Array`1.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_IsReadOnly_" data-uid="Godot.Collections.Array`1.IsReadOnly*"></a>
+
+  <h3 id="Godot_Collections_Array_1_IsReadOnly" data-uid="Godot.Collections.Array`1.IsReadOnly">
+  IsReadOnly
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_Item_" data-uid="Godot.Collections.Array`1.Item*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Item_System_Int32_" data-uid="Godot.Collections.Array`1.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[int index] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Godot_Collections_Array_1_Add_" data-uid="Godot.Collections.Array`1.Add*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Add__0_" data-uid="Godot.Collections.Array`1.Add(`0)">
+  Add(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(T item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_AddRange_" data-uid="Godot.Collections.Array`1.AddRange*"></a>
+
+  <h3 id="Godot_Collections_Array_1_AddRange_System_Collections_Generic_IEnumerable__0__" data-uid="Godot.Collections.Array`1.AddRange(System.Collections.Generic.IEnumerable{`0})">
+  AddRange(IEnumerable&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRange(IEnumerable&lt;T&gt; collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_BinarySearch_" data-uid="Godot.Collections.Array`1.BinarySearch*"></a>
+
+  <h3 id="Godot_Collections_Array_1_BinarySearch_System_Int32_System_Int32__0_" data-uid="Godot.Collections.Array`1.BinarySearch(System.Int32,System.Int32,`0)">
+  BinarySearch(int, int, T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BinarySearch(int index, int count, T item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>count</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_BinarySearch_" data-uid="Godot.Collections.Array`1.BinarySearch*"></a>
+
+  <h3 id="Godot_Collections_Array_1_BinarySearch__0_" data-uid="Godot.Collections.Array`1.BinarySearch(`0)">
+  BinarySearch(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BinarySearch(T item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_Clear_" data-uid="Godot.Collections.Array`1.Clear*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Clear" data-uid="Godot.Collections.Array`1.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_Contains_" data-uid="Godot.Collections.Array`1.Contains*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Contains__0_" data-uid="Godot.Collections.Array`1.Contains(`0)">
+  Contains(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(T item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_CopyTo_" data-uid="Godot.Collections.Array`1.CopyTo*"></a>
+
+  <h3 id="Godot_Collections_Array_1_CopyTo__0___System_Int32_" data-uid="Godot.Collections.Array`1.CopyTo(`0[],System.Int32)">
+  CopyTo(T[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(T[] array, int arrayIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> T[]</dt>
+    <dd></dd>
+    <dt><code>arrayIndex</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_Duplicate_" data-uid="Godot.Collections.Array`1.Duplicate*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Duplicate_System_Boolean_" data-uid="Godot.Collections.Array`1.Duplicate(System.Boolean)">
+  Duplicate(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array&lt;T&gt; Duplicate(bool deep = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>deep</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_Fill_" data-uid="Godot.Collections.Array`1.Fill*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Fill__0_" data-uid="Godot.Collections.Array`1.Fill(`0)">
+  Fill(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Fill(T value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_GetEnumerator_" data-uid="Godot.Collections.Array`1.GetEnumerator*"></a>
+
+  <h3 id="Godot_Collections_Array_1_GetEnumerator" data-uid="Godot.Collections.Array`1.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;T&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_GetSliceRange_" data-uid="Godot.Collections.Array`1.GetSliceRange*"></a>
+
+  <h3 id="Godot_Collections_Array_1_GetSliceRange_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="Godot.Collections.Array`1.GetSliceRange(System.Int32,System.Int32,System.Int32,System.Boolean)">
+  GetSliceRange(int, int, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array&lt;T&gt; GetSliceRange(int start, int end, int step = 1, bool deep = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>end</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>step</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>deep</code> <span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_IndexOf_" data-uid="Godot.Collections.Array`1.IndexOf*"></a>
+
+  <h3 id="Godot_Collections_Array_1_IndexOf__0_" data-uid="Godot.Collections.Array`1.IndexOf(`0)">
+  IndexOf(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_IndexOf_" data-uid="Godot.Collections.Array`1.IndexOf*"></a>
+
+  <h3 id="Godot_Collections_Array_1_IndexOf__0_System_Int32_" data-uid="Godot.Collections.Array`1.IndexOf(`0,System.Int32)">
+  IndexOf(T, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_Insert_" data-uid="Godot.Collections.Array`1.Insert*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Insert_System_Int32__0_" data-uid="Godot.Collections.Array`1.Insert(System.Int32,`0)">
+  Insert(int, T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, T item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_LastIndexOf_" data-uid="Godot.Collections.Array`1.LastIndexOf*"></a>
+
+  <h3 id="Godot_Collections_Array_1_LastIndexOf_Godot_Variant_" data-uid="Godot.Collections.Array`1.LastIndexOf(Godot.Variant)">
+  LastIndexOf(Variant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(Variant item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_LastIndexOf_" data-uid="Godot.Collections.Array`1.LastIndexOf*"></a>
+
+  <h3 id="Godot_Collections_Array_1_LastIndexOf_Godot_Variant_System_Int32_" data-uid="Godot.Collections.Array`1.LastIndexOf(Godot.Variant,System.Int32)">
+  LastIndexOf(Variant, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(Variant item, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_MakeReadOnly_" data-uid="Godot.Collections.Array`1.MakeReadOnly*"></a>
+
+  <h3 id="Godot_Collections_Array_1_MakeReadOnly" data-uid="Godot.Collections.Array`1.MakeReadOnly">
+  MakeReadOnly()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MakeReadOnly()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_Max_" data-uid="Godot.Collections.Array`1.Max*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Max" data-uid="Godot.Collections.Array`1.Max">
+  Max()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Max()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_Min_" data-uid="Godot.Collections.Array`1.Min*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Min" data-uid="Godot.Collections.Array`1.Min">
+  Min()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Min()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_PickRandom_" data-uid="Godot.Collections.Array`1.PickRandom*"></a>
+
+  <h3 id="Godot_Collections_Array_1_PickRandom" data-uid="Godot.Collections.Array`1.PickRandom">
+  PickRandom()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T PickRandom()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_RecursiveEqual_" data-uid="Godot.Collections.Array`1.RecursiveEqual*"></a>
+
+  <h3 id="Godot_Collections_Array_1_RecursiveEqual_Godot_Collections_Array__0__" data-uid="Godot.Collections.Array`1.RecursiveEqual(Godot.Collections.Array{`0})">
+  RecursiveEqual(Array&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RecursiveEqual(Array&lt;T&gt; other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_Remove_" data-uid="Godot.Collections.Array`1.Remove*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Remove__0_" data-uid="Godot.Collections.Array`1.Remove(`0)">
+  Remove(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(T item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_RemoveAt_" data-uid="Godot.Collections.Array`1.RemoveAt*"></a>
+
+  <h3 id="Godot_Collections_Array_1_RemoveAt_System_Int32_" data-uid="Godot.Collections.Array`1.RemoveAt(System.Int32)">
+  RemoveAt(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_Resize_" data-uid="Godot.Collections.Array`1.Resize*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Resize_System_Int32_" data-uid="Godot.Collections.Array`1.Resize(System.Int32)">
+  Resize(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Error Resize(int newSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newSize</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Error.html">Error</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_Reverse_" data-uid="Godot.Collections.Array`1.Reverse*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Reverse" data-uid="Godot.Collections.Array`1.Reverse">
+  Reverse()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reverse()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_Shuffle_" data-uid="Godot.Collections.Array`1.Shuffle*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Shuffle" data-uid="Godot.Collections.Array`1.Shuffle">
+  Shuffle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Shuffle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_Slice_" data-uid="Godot.Collections.Array`1.Slice*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Slice_System_Int32_" data-uid="Godot.Collections.Array`1.Slice(System.Int32)">
+  Slice(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array&lt;T&gt; Slice(int start)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_Slice_" data-uid="Godot.Collections.Array`1.Slice*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Slice_System_Int32_System_Int32_" data-uid="Godot.Collections.Array`1.Slice(System.Int32,System.Int32)">
+  Slice(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array&lt;T&gt; Slice(int start, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>length</code> <span class="xref">int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_Sort_" data-uid="Godot.Collections.Array`1.Sort*"></a>
+
+  <h3 id="Godot_Collections_Array_1_Sort" data-uid="Godot.Collections.Array`1.Sort">
+  Sort()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sort()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_ToString_" data-uid="Godot.Collections.Array`1.ToString*"></a>
+
+  <h3 id="Godot_Collections_Array_1_ToString" data-uid="Godot.Collections.Array`1.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Godot_Collections_Array_1_op_Addition_" data-uid="Godot.Collections.Array`1.op_Addition*"></a>
+
+  <h3 id="Godot_Collections_Array_1_op_Addition_Godot_Collections_Array__0__Godot_Collections_Array__0__" data-uid="Godot.Collections.Array`1.op_Addition(Godot.Collections.Array{`0},Godot.Collections.Array{`0})">
+  operator +(Array&lt;T&gt;, Array&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Array&lt;T&gt; operator +(Array&lt;T&gt; left, Array&lt;T&gt; right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_op_Explicit_" data-uid="Godot.Collections.Array`1.op_Explicit*"></a>
+
+  <h3 id="Godot_Collections_Array_1_op_Explicit_Godot_Collections_Array__0___Godot_Collections_Array" data-uid="Godot.Collections.Array`1.op_Explicit(Godot.Collections.Array{`0})~Godot.Collections.Array">
+  explicit operator Array?(Array&lt;T&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator Array?(Array&lt;T&gt;? from)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array.html">Array</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_op_Explicit_" data-uid="Godot.Collections.Array`1.op_Explicit*"></a>
+
+  <h3 id="Godot_Collections_Array_1_op_Explicit_Godot_Variant__Godot_Collections_Array__0_" data-uid="Godot.Collections.Array`1.op_Explicit(Godot.Variant)~Godot.Collections.Array{`0}">
+  explicit operator Array&lt;T&gt;(Variant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator Array&lt;T&gt;(Variant from)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Godot_Collections_Array_1_op_Implicit_" data-uid="Godot.Collections.Array`1.op_Implicit*"></a>
+
+  <h3 id="Godot_Collections_Array_1_op_Implicit_Godot_Collections_Array__0___Godot_Variant" data-uid="Godot.Collections.Array`1.op_Implicit(Godot.Collections.Array{`0})~Godot.Variant">
+  implicit operator Variant(Array&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Variant(Array&lt;T&gt; from)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="Godot.Collections.Array-1.html">Array</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Godot.Variant.html">Variant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
