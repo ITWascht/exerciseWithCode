@@ -32,7 +32,7 @@ public class TerrainSettings
     public float MetersPerPixel { get; set; } = 1.0f;
 
     // Terrain texture and object presets
-    public string RegionId { get; set; } = "forest_edge";
+    public string RegionId { get; set; } = "field_road_forest";
 
     // Seed for object spawning and heightmap generation (0 = random)
     public int Seed { get; set; } = 0;

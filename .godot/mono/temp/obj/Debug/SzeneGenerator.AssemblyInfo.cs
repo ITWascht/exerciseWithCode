@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SzeneGenerator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23a3d605cb18bbbfa713837ec788446d9d7a32b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0d4e8cb2a5a6402a319b3d584856e1ffc355b58")]
 [assembly: System.Reflection.AssemblyProductAttribute("SzeneGenerator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SzeneGenerator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
