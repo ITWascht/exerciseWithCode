@@ -111,6 +111,7 @@ Using this configuration, the system generates:
 
 This configuration defines a cold, snow-dominated environment with rocky slopes and sparse vegetation.
 
+`"regionId": "winter_tundra"`
 **File:** [`winter_tundra_exs.rules.json`](examples/winter_tundra_exs.rules.json)
 
 <p align="center">
